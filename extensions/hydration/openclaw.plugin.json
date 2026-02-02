@@ -1,0 +1,71 @@
+{
+  "id": "hydration",
+  "name": "Context Hydration",
+  "description": "Invisible context hydration from oPOErator Hub and local drops",
+  "kind": "hydration",
+  "version": "2026.1.29",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "description": "Enable context hydration",
+        "default": true
+      },
+      "hubUrl": {
+        "type": "string",
+        "description": "oPOErator Hub URL for fetching drops",
+        "default": "https://hub-production-f423.up.railway.app"
+      },
+      "apiKey": {
+        "type": "string",
+        "description": "API key for oPOErator Hub"
+      },
+      "userId": {
+        "type": "string",
+        "description": "User ID for oPOErator Hub"
+      },
+      "dropPaths": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Local directories to scan for drops",
+        "default": []
+      },
+      "checkpointPath": {
+        "type": "string",
+        "description": "Directory containing conversation checkpoints"
+      },
+      "maxDropAge": {
+        "type": "number",
+        "description": "Maximum age of drops to include (hours)",
+        "default": 24
+      },
+      "maxDrops": {
+        "type": "number",
+        "description": "Maximum number of recent drops to include",
+        "default": 10
+      },
+      "cacheTtl": {
+        "type": "number",
+        "description": "Cache TTL in seconds",
+        "default": 60
+      }
+    }
+  },
+  "uiHints": {
+    "hubUrl": {
+      "label": "Hub URL",
+      "placeholder": "https://hub-production-f423.up.railway.app"
+    },
+    "apiKey": {
+      "label": "API Key",
+      "placeholder": "Your oPOErator API key",
+      "sensitive": true
+    },
+    "userId": {
+      "label": "User ID",
+      "placeholder": "Your user ID (SHA-256 hash)"
+    }
+  }
+}

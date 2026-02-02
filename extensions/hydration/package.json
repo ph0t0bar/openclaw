@@ -1,0 +1,14 @@
+{
+  "name": "@openclaw/hydration",
+  "version": "2026.2.1",
+  "type": "module",
+  "description": "Invisible context hydration - loads drops, checkpoints, and intelligence before every prompt",
+  "dependencies": {
+    "@sinclair/typebox": "0.34.48"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
