@@ -33,11 +33,13 @@ RUN pnpm ui:build
 RUN mkdir -p /app/state/.openclaw && chown -R node:node /app/state
 COPY --chown=node:node .openclaw/openclaw.json /app/state/.openclaw/openclaw.json
 
+# Entrypoint wrapper: Railway injects PORT at runtime
+RUN printf '#!/bin/sh\nexec node dist/index.js gateway --bind lan --port "${PORT:-18789}"\n' > /app/start.sh && chmod +x /app/start.sh
+
 ENV NODE_ENV=production
 ENV OPENCLAW_STATE_DIR=/app/state/.openclaw
 
 # Run as non-root for security
 USER node
 
-# Railway sets PORT env var; bind to lan + require OPENCLAW_GATEWAY_TOKEN env
-CMD ["sh", "-c", "node dist/index.js gateway --bind lan --port ${PORT:-18789}"]
+ENTRYPOINT ["/app/start.sh"]
