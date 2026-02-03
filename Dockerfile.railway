@@ -39,5 +39,5 @@ ENV OPENCLAW_STATE_DIR=/app/state/.openclaw
 # Run as non-root for security
 USER node
 
-# Railway sets PORT env var; bind to 0.0.0.0 so Railway's proxy can reach us
-CMD ["sh", "-c", "node dist/index.js gateway run --bind 0.0.0.0 --port ${PORT:-18789}"]
+# Railway sets PORT env var; bind to lan + require OPENCLAW_GATEWAY_TOKEN env
+CMD ["sh", "-c", "node dist/index.js gateway run --bind lan --port ${PORT:-18789}"]
