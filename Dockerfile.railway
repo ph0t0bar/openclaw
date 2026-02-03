@@ -29,15 +29,17 @@ RUN OPENCLAW_A2UI_SKIP_MISSING=1 pnpm build
 ENV OPENCLAW_PREFER_PNPM=1
 RUN pnpm ui:build
 
-# Persistent data volume at /data (attach via Railway dashboard)
-RUN mkdir -p /data/.openclaw /data/workspace && chown -R node:node /data
+# gosu for dropping root → node in the entrypoint
+RUN apt-get update && apt-get install -y --no-install-recommends gosu && rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV=production
 ENV OPENCLAW_STATE_DIR=/data/.openclaw
 ENV OPENCLAW_WORKSPACE_DIR=/data/workspace
 
-# Run as non-root for security
-USER node
+# Entrypoint creates /data dirs (volume is root-owned at runtime) then drops to node
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+ENTRYPOINT ["docker-entrypoint.sh"]
 
 # Railway overrides via startCommand in railway.json; fallback CMD for local testing
 CMD ["node", "dist/index.js", "gateway", "--bind", "lan", "--port", "8080"]
