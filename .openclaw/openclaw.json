@@ -1,0 +1,38 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "poe/kimi-k2.5"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "poe": {
+        "baseUrl": "https://api.poe.com/v1",
+        "apiKey": "${POE_API_KEY}",
+        "api": "openai-completions",
+        "models": [
+          { "id": "kimi-k2.5", "name": "Kimi K2.5" },
+          { "id": "surpiphany", "name": "Surpiphany" },
+          { "id": "claude-3.5-sonnet", "name": "Claude 3.5 Sonnet" },
+          { "id": "claude-3-opus", "name": "Claude 3 Opus" },
+          { "id": "gpt-4o", "name": "GPT-4o" },
+          { "id": "gemini-flash", "name": "Gemini 2.0 Flash" },
+          { "id": "orchestr8", "name": "Orchestr8" },
+          { "id": "epiphanyai", "name": "EpiphanyAI" },
+          { "id": "brutallyhonestai", "name": "BrutallyHonestAI" }
+        ]
+      }
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "allowFrom": ["*"]
+    }
+  },
+  "gateway": {
+    "mode": "local"
+  }
+}
