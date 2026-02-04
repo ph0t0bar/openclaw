@@ -41,10 +41,10 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV=production
-ENV OPENCLAW_STATE_DIR=/data/.openclaw
-ENV OPENCLAW_WORKSPACE_DIR=/data/workspace
+# Volume mounts at /root/.openclaw — matches default HOME and state/workspace paths
+# No OPENCLAW_STATE_DIR needed; /root/.openclaw is already the default
 
-# Entrypoint creates /data dirs (volume is root-owned at runtime) then drops to node
+# Entrypoint seeds config + workspace templates, then starts the gateway
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["docker-entrypoint.sh"]
