@@ -3,7 +3,13 @@
     "defaults": {
       "model": {
         "primary": "poe/kimi-k2.5"
-      }
+      },
+      "workspace": "/root/.openclaw/workspace"
+    }
+  },
+  "plugins": {
+    "slots": {
+      "memory": "memory-core"
     }
   },
   "models": {
