@@ -30,8 +30,16 @@
   "channels": {
     "whatsapp": {
       "allowFrom": ["*"]
-    }
-  },
+    },
+  "hooks": {
+    "enabled": true,
+    "token": "${HOOKS_TOKEN}",
+    "entries": {
+      "session-memory": {
+        "enabled": true
+        }
+      }
+    },  
   "gateway": {
     "mode": "local",
     "trustedProxies": ["10.0.0.0/8", "100.64.0.0/10", "172.16.0.0/12"],
