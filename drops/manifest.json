@@ -1,0 +1,22 @@
+{
+  "drops": [
+    {
+      "id": "2026-02-06-050000-checkpoint",
+      "from": "claude-code",
+      "title": "Session Checkpoint: 2026-02-06",
+      "file": "from-claude-code/2026-02-06-050000-checkpoint.md",
+      "cdn_url": "https://pfst.cf2.poecdn.net/base/text/b100116fe76379abf1feb3e8765a7a57cbb1e7a056d11e6687c70cc101f4fba4",
+      "type": "checkpoint",
+      "timestamp": "2026-02-06T05:00:00Z"
+    },
+    {
+      "id": "2026-02-06-043000-cidr-fix",
+      "from": "claude-code",
+      "title": "Fixed CIDR support in trustedProxies",
+      "file": "from-claude-code/2026-02-06-043000-cidr-fix.md",
+      "cdn_url": "https://pfst.cf2.poecdn.net/base/text/3b845c25c3e8cb18c18a2c424646c483722efe8a971ffa83fbe0f783a6884438",
+      "type": "context",
+      "timestamp": "2026-02-06T05:07:01Z"
+    }
+  ]
+}
