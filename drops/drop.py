@@ -86,6 +86,10 @@ def cmd_drop(args):
             sys.exit(1)
         content = path.read_text()
 
+    if not args.sender:
+        args.sender = "claude-code"
+    if not args.drop_type:
+        args.drop_type = "context"
     title = args.title or extract_title(content) or (Path(args.file).stem if not args.stdin else "stdin-drop")
 
     result = api_request("POST", "/api/agent-drops", body={
@@ -150,15 +154,13 @@ def main():
         description="Universal agent drop CLI — posts to oPOErator hub",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    sub = parser.add_subparsers(dest="command")
-
     # Default: drop a file
     parser.add_argument("file", nargs="?", help="Markdown file to drop")
     parser.add_argument("--stdin", action="store_true", help="Read content from stdin")
-    parser.add_argument("--from", dest="sender", default="claude-code",
-                        help="Who's dropping (default: claude-code)")
-    parser.add_argument("--type", dest="drop_type", default="context",
-                        help="Drop type: checkpoint, context, handoff, question")
+    parser.add_argument("--from", dest="sender", default=None,
+                        help="Who's dropping (default: claude-code for new drops)")
+    parser.add_argument("--type", dest="drop_type", default=None,
+                        help="Drop type: checkpoint, context, handoff, question (default: context for new drops)")
     parser.add_argument("--title", help="Override title (default: first # heading)")
     parser.add_argument("--tags", help="Comma-separated tags")
 
