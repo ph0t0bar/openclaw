@@ -71,12 +71,52 @@ function parseRealIp(realIp?: string): string | undefined {
   return normalizeIp(stripOptionalPort(raw));
 }
 
+function ipv4ToNumber(ip: string): number | undefined {
+  const parts = ip.split(".");
+  if (parts.length !== 4) {
+    return undefined;
+  }
+  let num = 0;
+  for (const part of parts) {
+    const n = parseInt(part, 10);
+    if (Number.isNaN(n) || n < 0 || n > 255 || part !== String(n)) {
+      return undefined;
+    }
+    num = (num * 256 + n) >>> 0;
+  }
+  return num;
+}
+
+function matchesCIDR(ip: string, cidr: string): boolean {
+  const slash = cidr.indexOf("/");
+  if (slash === -1) {
+    return false;
+  }
+  const prefix = parseInt(cidr.slice(slash + 1), 10);
+  if (Number.isNaN(prefix) || prefix < 0 || prefix > 32) {
+    return false;
+  }
+  const network = cidr.slice(0, slash);
+  const ipNum = ipv4ToNumber(ip);
+  const netNum = ipv4ToNumber(network);
+  if (ipNum === undefined || netNum === undefined) {
+    return false;
+  }
+  const mask = prefix === 0 ? 0 : (~0 << (32 - prefix)) >>> 0;
+  return (ipNum & mask) === (netNum & mask);
+}
+
 export function isTrustedProxyAddress(ip: string | undefined, trustedProxies?: string[]): boolean {
   const normalized = normalizeIp(ip);
   if (!normalized || !trustedProxies || trustedProxies.length === 0) {
     return false;
   }
-  return trustedProxies.some((proxy) => normalizeIp(proxy) === normalized);
+  return trustedProxies.some((proxy) => {
+    if (proxy.includes("/")) {
+      return matchesCIDR(normalized, proxy);
+    }
+    return normalizeIp(proxy) === normalized;
+  });
 }
 
 export function resolveGatewayClientIp(params: {
