@@ -18,4 +18,12 @@ if [ -d /app/docs/reference/templates ]; then
   done
 fi
 
+# Sync agent drops (Claude Code → OpenClaw).
+# Fresh drops overwrite on each deploy; OpenClaw's outbound drops persist on volume.
+mkdir -p /root/.openclaw/workspace/drops/from-claude-code \
+         /root/.openclaw/workspace/drops/from-openclaw
+if [ -d /app/drops/from-claude-code ]; then
+  cp /app/drops/from-claude-code/*.md /root/.openclaw/workspace/drops/from-claude-code/ 2>/dev/null || true
+fi
+
 exec "$@"
