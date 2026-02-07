@@ -6,7 +6,7 @@
     "payload": {
       "kind": "agentTurn",
       "message": "Run ops patrol:\n1. GET https://hub-production-f423.up.railway.app/api/ops/dashboard — check system health, digest pipeline, error rates\n2. GET https://hub-production-f423.up.railway.app/api/ops/tasks?assignee=openclaw&status=pending — check for tasks assigned to you\n3. If dashboard shows issues or anomalies, POST https://hub-production-f423.up.railway.app/api/ops/propose with a fix proposal\n4. POST https://hub-production-f423.up.railway.app/api/ops/messages with a brief status update\n\nUse X-API-Key header with the INGEST_API_KEY for all requests.\nBe concise. Only propose actions for real issues, not normal operation.",
-      "model": "poe/Gemini-2.0-Flash"
+      "model": "poe/gemini-3-flash"
     }
   },
   {
@@ -16,7 +16,7 @@
     "payload": {
       "kind": "agentTurn",
       "message": "Generate morning brief for Joey (7am CST = 13:00 UTC):\n\n1. GET https://hub-production-f423.up.railway.app/api/ops/dashboard\n2. GET https://hub-production-f423.up.railway.app/api/ops/tasks?status=pending\n3. GET https://hub-production-f423.up.railway.app/api/ops/proposals?status=pending\n\nFormat a concise WhatsApp message:\n- Overnight drops and digests sent\n- System health (any errors?)\n- Poe balance and burn rate\n- Pending tasks and proposals needing approval\n- Today's priorities\n\nDeliver via WhatsApp using the hooks endpoint.\nUse X-API-Key header with INGEST_API_KEY for Hub API calls.",
-      "model": "poe/Gemini-2.0-Flash"
+      "model": "poe/gemini-3-flash"
     },
     "delivery": { "mode": "announce", "channel": "whatsapp" }
   },
@@ -27,7 +27,7 @@
     "payload": {
       "kind": "agentTurn",
       "message": "Generate evening summary for Joey (8pm CST = 02:00 UTC next day):\n\n1. GET https://hub-production-f423.up.railway.app/api/ops/dashboard\n2. GET https://hub-production-f423.up.railway.app/api/ops/tasks\n3. GET https://hub-production-f423.up.railway.app/api/ops/messages\n\nFormat a concise WhatsApp message:\n- Work done today (from ops board messages)\n- Tasks completed vs pending\n- User metrics changes\n- Tomorrow's queue\n\nDeliver via WhatsApp.\nUse X-API-Key header with INGEST_API_KEY for Hub API calls.",
-      "model": "poe/Gemini-2.0-Flash"
+      "model": "poe/gemini-3-flash"
     },
     "delivery": { "mode": "announce", "channel": "whatsapp" }
   }

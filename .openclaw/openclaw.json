@@ -2,7 +2,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "poe/Gemini-2.0-Flash"
+        "primary": "poe/gemini-3-flash"
       },
       "workspace": "/root/.openclaw/workspace"
     }
@@ -20,7 +20,7 @@
         "apiKey": "${POE_API_KEY}",
         "api": "openai-completions",
         "models": [
-          { "id": "Gemini-3-Flash", "name": "Gemini 3 Flash" },
+          { "id": "gemini-3-flash", "name": "Gemini 3 Flash" },
           { "id": "Claude-Opus-4.6", "name": "Claude Opus 4.6" },
           { "id": "kimi-k2.5", "name": "Kimi K2.5" },
           { "id": "surpiphany", "name": "Surpiphany" },
