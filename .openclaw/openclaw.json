@@ -20,15 +20,14 @@
         "apiKey": "${POE_API_KEY}",
         "api": "openai-completions",
         "models": [
+          { "id": "Gemini-3-Flash", "name": "Gemini 3 Flash" },
+          { "id": "Claude-Opus-4.6", "name": "Claude Opus 4.6" },
           { "id": "kimi-k2.5", "name": "Kimi K2.5" },
           { "id": "surpiphany", "name": "Surpiphany" },
           { "id": "claude-3.5-sonnet", "name": "Claude 3.5 Sonnet" },
           { "id": "claude-3-opus", "name": "Claude 3 Opus" },
           { "id": "gpt-4o", "name": "GPT-4o" },
-          { "id": "Gemini-3-Flash", "name": "Gemini 3 Flash" },
-          { "id": "Claude-Opus-4.6", "name": "Claude Opus 4.6" },
           { "id": "gemini-flash", "name": "Gemini 2.0 Flash" },
-          { "id": "Gemini-3-Flash", "name": "Gemini 3 Flash" },
           { "id": "orchestr8", "name": "Orchestr8" },
           { "id": "epiphanyai", "name": "EpiphanyAI" },
           { "id": "brutallyhonestai", "name": "BrutallyHonestAI" }
