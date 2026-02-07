@@ -2,7 +2,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "poe/gemini-3-flash"
+        "primary": "poe/claude-haiku-4.5"
       },
       "workspace": "/root/.openclaw/workspace"
     }
@@ -20,6 +20,7 @@
         "apiKey": "${POE_API_KEY}",
         "api": "openai-completions",
         "models": [
+          { "id": "claude-haiku-4.5", "name": "Claude Haiku 4.5" },
           { "id": "gemini-3-flash", "name": "Gemini 3 Flash" },
           { "id": "Claude-Opus-4.6", "name": "Claude Opus 4.6" },
           { "id": "kimi-k2.5", "name": "Kimi K2.5" },
