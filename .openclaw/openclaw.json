@@ -2,7 +2,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "poe/Gemini-3-Flash"
+        "primary": "poe/Gemini-2.0-Flash"
       },
       "workspace": "/root/.openclaw/workspace"
     }
@@ -27,7 +27,7 @@
           { "id": "claude-3.5-sonnet", "name": "Claude 3.5 Sonnet" },
           { "id": "claude-3-opus", "name": "Claude 3 Opus" },
           { "id": "gpt-4o", "name": "GPT-4o" },
-          { "id": "gemini-flash", "name": "Gemini 2.0 Flash" },
+          { "id": "Gemini-2.0-Flash", "name": "Gemini 2.0 Flash" },
           { "id": "orchestr8", "name": "Orchestr8" },
           { "id": "epiphanyai", "name": "EpiphanyAI" },
           { "id": "brutallyhonestai", "name": "BrutallyHonestAI" }
