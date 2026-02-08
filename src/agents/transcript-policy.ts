@@ -84,27 +84,30 @@ export function resolveTranscriptPolicy(params: {
   const isAnthropic = isAnthropicApi(params.modelApi, provider);
   const isOpenAi = isOpenAiProvider(provider) || (!provider && isOpenAiApi(params.modelApi));
   const isMistral = isMistralModel({ provider, modelId });
+  const isPoe = provider === "poe";
   const isOpenRouterGemini =
     (provider === "openrouter" || provider === "opencode") &&
     modelId.toLowerCase().includes("gemini");
+  const isPoeGemini = isPoe && modelId.toLowerCase().includes("gemini");
   const isAntigravityClaudeModel = isAntigravityClaude({
     api: params.modelApi,
     provider,
     modelId,
   });
 
-  const needsNonImageSanitize = isGoogle || isAnthropic || isMistral || isOpenRouterGemini;
+  const needsNonImageSanitize = isGoogle || isAnthropic || isMistral || isOpenRouterGemini || isPoe;
 
-  const sanitizeToolCallIds = isGoogle || isMistral;
+  const sanitizeToolCallIds = isGoogle || isMistral || isPoe;
   const toolCallIdMode: ToolCallIdMode | undefined = isMistral
     ? "strict9"
     : sanitizeToolCallIds
       ? "strict"
       : undefined;
   const repairToolUseResultPairing = isGoogle || isAnthropic;
-  const sanitizeThoughtSignatures = isOpenRouterGemini
-    ? { allowBase64Only: true, includeCamelCase: true }
-    : undefined;
+  const sanitizeThoughtSignatures =
+    isOpenRouterGemini || isPoeGemini
+      ? { allowBase64Only: true, includeCamelCase: true }
+      : undefined;
   const normalizeAntigravityThinkingBlocks = isAntigravityClaudeModel;
 
   return {
