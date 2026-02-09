@@ -4,10 +4,12 @@ set -e
 # Railway volume mounts at /root/.openclaw — ensure workspace subdir exists.
 mkdir -p /root/.openclaw/workspace
 
-# Always copy bundled config (overwrite volume's stale config on each deploy).
-# Config contains env var placeholders (${POE_API_KEY}, ${HOOKS_TOKEN}) that OpenClaw resolves at runtime.
-if [ -f /app/.openclaw/openclaw.json ]; then
+# Seed config from git ONLY if no config exists on the volume yet (first deploy).
+# After first deploy, the control UI writes changes directly to the volume config.
+# Env var overrides (below) ensure deploy-critical settings are always correct.
+if [ ! -f /root/.openclaw/openclaw.json ] && [ -f /app/.openclaw/openclaw.json ]; then
   cp /app/.openclaw/openclaw.json /root/.openclaw/openclaw.json
+  echo "[entrypoint] Seeded initial config from git"
 fi
 
 # Apply deployment overrides from environment variables.
