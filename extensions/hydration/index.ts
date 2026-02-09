@@ -631,64 +631,10 @@ const hydrationPlugin = {
     api.on("before_agent_start", async (event, agentCtx) => {
       if (!event.prompt || event.prompt.length < 3) return;
 
-      try {
-        let hydrationCtx: HydrationContext;
-
-        // Try to extract sender identity from sessionKey for multi-user hydration
-        const sessionKey = agentCtx?.sessionKey;
-        const identity = engine.extractIdentityFromSessionKey(sessionKey);
-
-        if (identity) {
-          // Multi-user mode: hydrate based on sender's identity
-          hydrationCtx = await engine.hydrateForIdentity(identity);
-        } else {
-          // Fallback: use default userId from config
-          hydrationCtx = await engine.hydrate();
-        }
-
-        const contextParts: string[] = [];
-
-        // Inject agent memory context from Hub (replaces broken memory-core plugin)
-        if (cfg.hubUrl && cfg.apiKey) {
-          try {
-            const memUrl = `${cfg.hubUrl.replace(/\/+$/, "")}/api/memory/context/openclaw?limit=20`;
-            const memRes = await fetch(memUrl, {
-              headers: { "X-API-Key": cfg.apiKey },
-            });
-            if (memRes.ok) {
-              const memData = (await memRes.json()) as { context?: string };
-              if (memData.context && memData.context.length > 50) {
-                contextParts.push(`<agent-memory>\n${memData.context}\n</agent-memory>`);
-                api.logger.info("hydration: injected agent memory context");
-              }
-            }
-          } catch (err) {
-            api.logger.warn(`hydration: failed to fetch memory context: ${err}`);
-          }
-        }
-
-        // Inject drops/sessions/digests context
-        if (
-          hydrationCtx.drops.length > 0 ||
-          hydrationCtx.sessions.length > 0 ||
-          hydrationCtx.digests.length > 0
-        ) {
-          const dropsContext = engine.buildContext(hydrationCtx);
-          if (dropsContext.length > 0) {
-            contextParts.push(dropsContext);
-          }
-        }
-
-        if (contextParts.length > 0) {
-          const identityDesc = identity ? `${identity.type}:${identity.value}` : "default";
-          api.logger.info(
-            `hydration: injecting ${hydrationCtx.drops.length} drops, ${hydrationCtx.sessions.length} sessions, ${hydrationCtx.digests.length} digests for ${identityDesc}`,
-          );
-          return { prependContext: contextParts.join("\n\n") };
-        }
-      } catch (err) {
-        api.logger.warn(`hydration: failed to hydrate: ${err}`);
-      }
+      // IMPORTANT: prependContext gets prepended directly to the user's prompt text.
+      // Injecting large context here causes small models (Haiku) to echo it back
+      // instead of responding. Keep this minimal — the agent has hub_api tool
+      // to fetch full context (memory, drops, dashboard) when it needs it.
     });
 
     // ========================================================================
