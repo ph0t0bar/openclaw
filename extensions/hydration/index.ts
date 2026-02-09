@@ -3,12 +3,14 @@
  *
  * Invisible context hydration - users drop data, everything else happens automatically.
  * Fetches drops from oPOErator Hub API and injects context before every prompt.
+ * Registers hub_api tool for full agent access to all Hub endpoints.
  */
 
-import { readdir, readFile, stat } from "node:fs/promises";
-import { join } from "node:path";
-import { homedir } from "node:os";
 import type { OpenClawPluginApi } from "openclaw/plugin-sdk";
+import { Type } from "@sinclair/typebox";
+import { readdir, readFile, stat } from "node:fs/promises";
+import { homedir } from "node:os";
+import { join } from "node:path";
 import { hydrationConfigSchema, type HydrationConfig } from "./config.js";
 
 // ============================================================================
@@ -48,13 +50,17 @@ class HubClient {
     private baseUrl: string,
     private apiKey: string,
     private fallbackUserId: string,
-    private logger: { info: (msg: string) => void; warn: (msg: string) => void }
+    private logger: { info: (msg: string) => void; warn: (msg: string) => void },
   ) {}
 
   /**
    * Fetch hydration context by user_id (fallback/default mode).
    */
-  async getHydrationContext(dropsLimit: number = 15, sessionsLimit: number = 5, digestsLimit: number = 3): Promise<HydrationResponse | null> {
+  async getHydrationContext(
+    dropsLimit: number = 15,
+    sessionsLimit: number = 5,
+    digestsLimit: number = 3,
+  ): Promise<HydrationResponse | null> {
     if (!this.fallbackUserId) return null;
 
     try {
@@ -112,7 +118,10 @@ class HubClient {
   /**
    * Check if this is a first-time sender (no user_id found for identity).
    */
-  async isFirstTimeSender(identityType: "phone" | "email", identityValue: string): Promise<boolean> {
+  async isFirstTimeSender(
+    identityType: "phone" | "email",
+    identityValue: string,
+  ): Promise<boolean> {
     const response = await this.getHydrationByIdentity(identityType, identityValue, 1, 0, 0);
     return !response || !response.matched || !response.user_id;
   }
@@ -166,7 +175,7 @@ class HubClient {
     identityValue: string,
     dropsLimit: number = 15,
     sessionsLimit: number = 5,
-    digestsLimit: number = 3
+    digestsLimit: number = 3,
   ): Promise<HydrationResponse | null> {
     try {
       const params = new URLSearchParams({
@@ -210,16 +219,11 @@ class HydrationEngine {
 
   constructor(
     private config: HydrationConfig,
-    private logger: { info: (msg: string) => void; warn: (msg: string) => void }
+    private logger: { info: (msg: string) => void; warn: (msg: string) => void },
   ) {
     // Initialize Hub client if configured (userId is now optional fallback)
     if (config.hubUrl && config.apiKey) {
-      this.hubClient = new HubClient(
-        config.hubUrl,
-        config.apiKey,
-        config.userId || "",
-        logger
-      );
+      this.hubClient = new HubClient(config.hubUrl, config.apiKey, config.userId || "", logger);
     }
   }
 
@@ -228,7 +232,10 @@ class HydrationEngine {
    * Returns the code if found, null otherwise.
    */
   parseConnectCommand(content: string): string | null {
-    const match = content.trim().toUpperCase().match(/^CONNECT\s+([A-Z0-9]{6})$/);
+    const match = content
+      .trim()
+      .toUpperCase()
+      .match(/^CONNECT\s+([A-Z0-9]{6})$/);
     return match ? match[1] : null;
   }
 
@@ -259,13 +266,16 @@ class HydrationEngine {
       this.logger.info(`hydration: connected phone ${identity.value} to user ${result.user_id}`);
       return {
         success: true,
-        message: "Phone connected successfully! Your messages will now be saved as drops and included in your daily digest."
+        message:
+          "Phone connected successfully! Your messages will now be saved as drops and included in your daily digest.",
       };
     }
 
     return {
       success: false,
-      message: result?.message || "Invalid or expired code. Please generate a new one from the DropAnywhere dashboard."
+      message:
+        result?.message ||
+        "Invalid or expired code. Please generate a new one from the DropAnywhere dashboard.",
     };
   }
 
@@ -330,7 +340,9 @@ Or just start dropping! Your messages will be saved and you can claim them later
     });
 
     if (result && result.status === "ok") {
-      this.logger.info(`hydration: captured drop for ${identity.type}:${identity.value} (vault_id: ${result.vault_id})`);
+      this.logger.info(
+        `hydration: captured drop for ${identity.type}:${identity.value} (vault_id: ${result.vault_id})`,
+      );
       return true;
     }
 
@@ -342,7 +354,9 @@ Or just start dropping! Your messages will be saved and you can claim them later
    * Session keys look like: "agent:default:+15551234567" or just "+15551234567"
    * Returns { type: "phone"|"email", value: string } or null if not extractable.
    */
-  extractIdentityFromSessionKey(sessionKey?: string): { type: "phone" | "email"; value: string } | null {
+  extractIdentityFromSessionKey(
+    sessionKey?: string,
+  ): { type: "phone" | "email"; value: string } | null {
     if (!sessionKey) return null;
 
     // Try to extract phone number (E.164 format or with common prefixes)
@@ -371,7 +385,10 @@ Or just start dropping! Your messages will be saved and you can claim them later
    * Hydrate context for a specific identity.
    * This is used for multi-user mode where each sender gets their own context.
    */
-  async hydrateForIdentity(identity: { type: "phone" | "email"; value: string }): Promise<HydrationContext> {
+  async hydrateForIdentity(identity: {
+    type: "phone" | "email";
+    value: string;
+  }): Promise<HydrationContext> {
     const now = Date.now();
     const cacheTtl = (this.config.cacheTtl ?? 60) * 1000;
     const cacheKey = `${identity.type}:${identity.value}`;
@@ -393,13 +410,15 @@ Or just start dropping! Your messages will be saved and you can claim them later
         identity.value,
         this.config.maxDrops ?? 15,
         5,
-        3
+        3,
       );
       if (hubContext && hubContext.matched) {
         drops = hubContext.drops || [];
         sessions = hubContext.sessions || [];
         digests = hubContext.digests || [];
-        this.logger.info(`hydration: found user ${hubContext.user_id} for ${identity.type}:${identity.value}`);
+        this.logger.info(
+          `hydration: found user ${hubContext.user_id} for ${identity.type}:${identity.value}`,
+        );
       }
     }
 
@@ -508,11 +527,7 @@ Or just start dropping! Your messages will be saved and you can claim them later
 
     // Fetch from Hub if configured (single optimized call)
     if (this.hubClient) {
-      const hubContext = await this.hubClient.getHydrationContext(
-        this.config.maxDrops ?? 15,
-        5,
-        3
-      );
+      const hubContext = await this.hubClient.getHydrationContext(this.config.maxDrops ?? 15, 5, 3);
       if (hubContext) {
         drops = hubContext.drops || [];
         sessions = hubContext.sessions || [];
@@ -561,7 +576,9 @@ Or just start dropping! Your messages will be saved and you can claim them later
     // Latest digest summary
     if (ctx.digests.length > 0) {
       const latest = ctx.digests[0];
-      parts.push(`<latest-digest date="${latest.date}">\n${latest.summary || "No summary"}\n</latest-digest>`);
+      parts.push(
+        `<latest-digest date="${latest.date}">\n${latest.summary || "No summary"}\n</latest-digest>`,
+      );
     }
 
     return parts.join("\n\n");
@@ -602,7 +619,9 @@ const hydrationPlugin = {
 
     const engine = new HydrationEngine(cfg, api.logger);
 
-    const sourceDesc = cfg.hubUrl ? `hub: ${cfg.hubUrl}` : `local: ${cfg.dropPaths?.length ?? 0} paths`;
+    const sourceDesc = cfg.hubUrl
+      ? `hub: ${cfg.hubUrl}`
+      : `local: ${cfg.dropPaths?.length ?? 0} paths`;
     api.logger.info(`hydration: plugin registered (${sourceDesc}, cache: ${cfg.cacheTtl}s)`);
 
     // ========================================================================
@@ -627,19 +646,45 @@ const hydrationPlugin = {
           hydrationCtx = await engine.hydrate();
         }
 
-        if (hydrationCtx.drops.length === 0 && hydrationCtx.sessions.length === 0 && hydrationCtx.digests.length === 0) {
-          return;
+        const contextParts: string[] = [];
+
+        // Inject agent memory context from Hub (replaces broken memory-core plugin)
+        if (cfg.hubUrl && cfg.apiKey) {
+          try {
+            const memUrl = `${cfg.hubUrl.replace(/\/+$/, "")}/api/memory/context/openclaw?limit=20`;
+            const memRes = await fetch(memUrl, {
+              headers: { "X-API-Key": cfg.apiKey },
+            });
+            if (memRes.ok) {
+              const memData = (await memRes.json()) as { context?: string };
+              if (memData.context && memData.context.length > 50) {
+                contextParts.push(`<agent-memory>\n${memData.context}\n</agent-memory>`);
+                api.logger.info("hydration: injected agent memory context");
+              }
+            }
+          } catch (err) {
+            api.logger.warn(`hydration: failed to fetch memory context: ${err}`);
+          }
         }
 
-        const context = engine.buildContext(hydrationCtx);
+        // Inject drops/sessions/digests context
+        if (
+          hydrationCtx.drops.length > 0 ||
+          hydrationCtx.sessions.length > 0 ||
+          hydrationCtx.digests.length > 0
+        ) {
+          const dropsContext = engine.buildContext(hydrationCtx);
+          if (dropsContext.length > 0) {
+            contextParts.push(dropsContext);
+          }
+        }
 
-        if (context.length > 0) {
+        if (contextParts.length > 0) {
           const identityDesc = identity ? `${identity.type}:${identity.value}` : "default";
           api.logger.info(
-            `hydration: injecting ${hydrationCtx.drops.length} drops, ${hydrationCtx.sessions.length} sessions, ${hydrationCtx.digests.length} digests for ${identityDesc}`
+            `hydration: injecting ${hydrationCtx.drops.length} drops, ${hydrationCtx.sessions.length} sessions, ${hydrationCtx.digests.length} digests for ${identityDesc}`,
           );
-
-          return { prependContext: context };
+          return { prependContext: contextParts.join("\n\n") };
         }
       } catch (err) {
         api.logger.warn(`hydration: failed to hydrate: ${err}`);
@@ -647,11 +692,144 @@ const hydrationPlugin = {
     });
 
     // ========================================================================
+    // Hub API Tool — gives agent full access to all Hub endpoints
+    // ========================================================================
+
+    if (cfg.hubUrl && cfg.apiKey) {
+      const hubBaseUrl = cfg.hubUrl.replace(/\/+$/, "");
+
+      api.registerTool(
+        {
+          name: "hub_api",
+          description: `Make authenticated API calls to the oPOErator Hub (${hubBaseUrl}).
+
+Key endpoints:
+- GET /api/memory/context/openclaw — your persistent memory (condensed markdown)
+- GET /api/memory?agent=openclaw&search=keyword — search memories
+- POST /api/memory — write memory: {agent, namespace, key, content, tags[]}
+- DELETE /api/memory/{id} — delete a memory
+- GET /api/ops/dashboard — system health, digest pipeline, error rates
+- GET /api/ops/tasks?assignee=openclaw&status=pending — your pending tasks
+- POST /api/ops/propose — propose an action for approval: {title, description, action_type}
+- POST /api/ops/messages — post status update: {content, from_agent}
+- GET /api/ops/proposals?status=pending — pending proposals
+- POST /api/agent-drops — create drop: {from_agent, drop_type, title, content, tags[]}
+- GET /api/agent-drops?from_agent=openclaw — list drops
+- POST /api/alerts — send alert: {project, type, message, severity}
+- POST /api/alerts/daily-summary — trigger daily summary
+- GET /api/admin/stats — user stats, drop counts, digest stats
+- POST /api/ingest — ingest a drop for a user
+- GET /api/search?q=keyword&user_id=X — search user drops
+- POST /api/dcs/code-task — create code task for DCS agent
+- GET /api/tasks/pending — pending HITL tasks
+- POST /api/tasks/approve — approve a pending task
+
+Auth is handled automatically via X-API-Key header.`,
+          parameters: Type.Object({
+            method: Type.Unsafe<"GET" | "POST" | "PATCH" | "PUT" | "DELETE">({
+              type: "string",
+              enum: ["GET", "POST", "PATCH", "PUT", "DELETE"],
+              description: "HTTP method",
+            }),
+            path: Type.String({
+              description: "API path starting with /api/ (e.g. /api/memory/context/openclaw)",
+            }),
+            body: Type.Optional(
+              Type.String({
+                description: "JSON request body (for POST/PATCH/PUT). Must be valid JSON string.",
+              }),
+            ),
+            query: Type.Optional(
+              Type.String({
+                description:
+                  'Query parameters as JSON object (e.g. {"agent": "openclaw", "limit": "10"}). Values are stringified automatically.',
+              }),
+            ),
+          }),
+          async execute(_id: string, params: Record<string, unknown>) {
+            const method = (
+              typeof params.method === "string" ? params.method : "GET"
+            ).toUpperCase();
+            const path = typeof params.path === "string" ? params.path : "";
+
+            if (!path.startsWith("/api/")) {
+              return { result: JSON.stringify({ error: "Path must start with /api/" }) };
+            }
+
+            // Build URL with optional query params
+            let url = `${hubBaseUrl}${path}`;
+            if (typeof params.query === "string" && params.query.trim()) {
+              try {
+                const qp = JSON.parse(params.query);
+                const qs = new URLSearchParams();
+                for (const [k, v] of Object.entries(qp)) {
+                  qs.append(k, String(v));
+                }
+                const qsStr = qs.toString();
+                if (qsStr) {
+                  url += (url.includes("?") ? "&" : "?") + qsStr;
+                }
+              } catch {
+                return { result: JSON.stringify({ error: "Invalid query JSON" }) };
+              }
+            }
+
+            // Build request options
+            const opts: RequestInit = {
+              method,
+              headers: {
+                "Content-Type": "application/json",
+                "X-API-Key": cfg.apiKey!,
+              },
+            };
+
+            if (typeof params.body === "string" && params.body.trim() && method !== "GET") {
+              opts.body = params.body;
+            }
+
+            try {
+              const response = await fetch(url, opts);
+              const text = await response.text();
+
+              // Truncate very large responses
+              const truncated =
+                text.length > 8000
+                  ? text.slice(0, 8000) + "\n...[truncated, " + text.length + " bytes total]"
+                  : text;
+
+              if (!response.ok) {
+                return {
+                  result: JSON.stringify({
+                    error: `HTTP ${response.status}`,
+                    body: truncated,
+                  }),
+                };
+              }
+
+              return { result: truncated };
+            } catch (err) {
+              return {
+                result: JSON.stringify({
+                  error: `Request failed: ${err instanceof Error ? err.message : String(err)}`,
+                }),
+              };
+            }
+          },
+        } as any,
+        { name: "hub_api" },
+      );
+
+      api.logger.info(`hydration: registered hub_api tool → ${hubBaseUrl}`);
+    }
+
+    // ========================================================================
     // Message Capture Hook (Zero AI Tokens)
     // ========================================================================
 
     if (cfg.captureEnabled) {
-      api.logger.info(`hydration: capture enabled for channels: ${cfg.captureChannels?.length ? cfg.captureChannels.join(", ") : "all"}`);
+      api.logger.info(
+        `hydration: capture enabled for channels: ${cfg.captureChannels?.length ? cfg.captureChannels.join(", ") : "all"}`,
+      );
 
       // Track first-time senders to avoid repeated welcome messages
       const welcomedSenders = new Set<string>();
@@ -730,9 +908,7 @@ const hydrationPlugin = {
 
     api.registerCli(
       ({ program }) => {
-        const hydrate = program
-          .command("hydrate")
-          .description("Context hydration commands");
+        const hydrate = program.command("hydrate").description("Context hydration commands");
 
         hydrate
           .command("status")
@@ -764,7 +940,7 @@ const hydrationPlugin = {
             console.log(context || "(no context to inject)");
           });
       },
-      { commands: ["hydrate"] }
+      { commands: ["hydrate"] },
     );
 
     // ========================================================================

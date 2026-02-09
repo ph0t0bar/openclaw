@@ -52,6 +52,19 @@ if (cfg.hooks && cfg.hooks.token !== '\${HOOKS_TOKEN}') {
   changed = true;
 }
 
+// Ensure hydration plugin is configured with Hub API access
+if (env.INGEST_API_KEY || env.HUB_API_KEY) {
+  cfg.plugins = cfg.plugins || {};
+  cfg.plugins.entries = cfg.plugins.entries || {};
+  cfg.plugins.entries.hydration = cfg.plugins.entries.hydration || { enabled: true, config: {} };
+  cfg.plugins.entries.hydration.enabled = true;
+  const hCfg = cfg.plugins.entries.hydration.config = cfg.plugins.entries.hydration.config || {};
+  hCfg.hubUrl = env.HUB_URL || hCfg.hubUrl || 'https://hub-production-f423.up.railway.app';
+  hCfg.apiKey = '\${INGEST_API_KEY}';
+  hCfg.userId = env.HUB_USER_ID || hCfg.userId || '';
+  changed = true;
+}
+
 // Apply full JSON overlay if provided (escape hatch for any other settings)
 if (env.OPENCLAW_CONFIG_OVERLAY) {
   try {
