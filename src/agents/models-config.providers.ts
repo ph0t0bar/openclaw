@@ -69,6 +69,16 @@ const QWEN_PORTAL_DEFAULT_COST = {
   cacheWrite: 0,
 };
 
+const OPENROUTER_API_BASE_URL = "https://openrouter.ai/api/v1";
+const OPENROUTER_DEFAULT_CONTEXT_WINDOW = 128000;
+const OPENROUTER_DEFAULT_MAX_TOKENS = 8192;
+const OPENROUTER_DEFAULT_COST = {
+  input: 0,
+  output: 0,
+  cacheRead: 0,
+  cacheWrite: 0,
+};
+
 const OLLAMA_BASE_URL = "http://127.0.0.1:11434/v1";
 const OLLAMA_API_BASE_URL = "http://127.0.0.1:11434";
 const OLLAMA_DEFAULT_CONTEXT_WINDOW = 128000;
@@ -354,6 +364,42 @@ function buildQwenPortalProvider(): ProviderConfig {
   };
 }
 
+export function buildOpenrouterProvider(): ProviderConfig {
+  return {
+    baseUrl: OPENROUTER_API_BASE_URL,
+    api: "openai-completions",
+    models: [
+      {
+        id: "qwen3-next-80b",
+        name: "Qwen3 Next 80B",
+        reasoning: false,
+        input: ["text"],
+        cost: OPENROUTER_DEFAULT_COST,
+        contextWindow: OPENROUTER_DEFAULT_CONTEXT_WINDOW,
+        maxTokens: OPENROUTER_DEFAULT_MAX_TOKENS,
+      },
+      {
+        id: "pony-alpha",
+        name: "Pony Alpha",
+        reasoning: false,
+        input: ["text"],
+        cost: OPENROUTER_DEFAULT_COST,
+        contextWindow: OPENROUTER_DEFAULT_CONTEXT_WINDOW,
+        maxTokens: OPENROUTER_DEFAULT_MAX_TOKENS,
+      },
+      {
+        id: "arcee-trinity",
+        name: "Arcee Trinity",
+        reasoning: false,
+        input: ["text"],
+        cost: OPENROUTER_DEFAULT_COST,
+        contextWindow: OPENROUTER_DEFAULT_CONTEXT_WINDOW,
+        maxTokens: OPENROUTER_DEFAULT_MAX_TOKENS,
+      },
+    ],
+  };
+}
+
 function buildSyntheticProvider(): ProviderConfig {
   return {
     baseUrl: SYNTHETIC_BASE_URL,
@@ -426,6 +472,13 @@ export async function resolveImplicitProviders(params: {
     resolveApiKeyFromProfiles({ provider: "moonshot", store: authStore });
   if (moonshotKey) {
     providers.moonshot = { ...buildMoonshotProvider(), apiKey: moonshotKey };
+  }
+
+  const openrouterKey =
+    resolveEnvApiKeyVarName("openrouter") ??
+    resolveApiKeyFromProfiles({ provider: "openrouter", store: authStore });
+  if (openrouterKey) {
+    providers.openrouter = { ...buildOpenrouterProvider(), apiKey: openrouterKey };
   }
 
   const syntheticKey =

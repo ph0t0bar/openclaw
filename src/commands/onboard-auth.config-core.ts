@@ -3,7 +3,11 @@ import {
   buildCloudflareAiGatewayModelDefinition,
   resolveCloudflareAiGatewayBaseUrl,
 } from "../agents/cloudflare-ai-gateway.js";
-import { buildXiaomiProvider, XIAOMI_DEFAULT_MODEL_ID } from "../agents/models-config.providers.js";
+import {
+  buildOpenrouterProvider,
+  buildXiaomiProvider,
+  XIAOMI_DEFAULT_MODEL_ID,
+} from "../agents/models-config.providers.js";
 import {
   buildSyntheticModelDefinition,
   SYNTHETIC_BASE_URL,
@@ -67,6 +71,31 @@ export function applyOpenrouterProviderConfig(cfg: OpenClawConfig): OpenClawConf
     alias: models[OPENROUTER_DEFAULT_MODEL_REF]?.alias ?? "OpenRouter",
   };
 
+  const providers = { ...cfg.models?.providers };
+  const existingProvider = providers.openrouter;
+  const defaultProvider = buildOpenrouterProvider();
+  const existingModels = Array.isArray(existingProvider?.models) ? existingProvider.models : [];
+  const defaultModels = defaultProvider.models ?? [];
+  const mergedModels = [
+    ...existingModels,
+    ...defaultModels.filter(
+      (model) => !existingModels.some((existing) => existing.id === model.id),
+    ),
+  ];
+  const { apiKey: existingApiKey, ...existingProviderRest } = (existingProvider ?? {}) as Record<
+    string,
+    unknown
+  > as { apiKey?: string };
+  const resolvedApiKey = typeof existingApiKey === "string" ? existingApiKey : undefined;
+  const normalizedApiKey = resolvedApiKey?.trim();
+  providers.openrouter = {
+    ...existingProviderRest,
+    baseUrl: defaultProvider.baseUrl,
+    api: defaultProvider.api,
+    ...(normalizedApiKey ? { apiKey: normalizedApiKey } : {}),
+    models: mergedModels.length > 0 ? mergedModels : defaultModels,
+  };
+
   return {
     ...cfg,
     agents: {
@@ -75,6 +104,10 @@ export function applyOpenrouterProviderConfig(cfg: OpenClawConfig): OpenClawConf
         ...cfg.agents?.defaults,
         models,
       },
+    },
+    models: {
+      mode: cfg.models?.mode ?? "merge",
+      providers,
     },
   };
 }
