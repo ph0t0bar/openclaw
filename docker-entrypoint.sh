@@ -61,8 +61,8 @@ if (env.INGEST_API_KEY || env.HUB_API_KEY) {
   cfg.plugins.entries.hydration = cfg.plugins.entries.hydration || { enabled: true, config: {} };
   cfg.plugins.entries.hydration.enabled = true;
   const hCfg = cfg.plugins.entries.hydration.config = cfg.plugins.entries.hydration.config || {};
-  hCfg.hubUrl = env.HUB_URL || hCfg.hubUrl || 'https://hub-production-f423.up.railway.app';
-  hCfg.apiKey = '\${INGEST_API_KEY}';
+  hCfg.hubUrl = env.HUB_API_URL || env.HUB_URL || hCfg.hubUrl || 'https://hub-production-f423.up.railway.app';
+  hCfg.apiKey = env.HUB_API_KEY ? '\${HUB_API_KEY}' : '\${INGEST_API_KEY}';
   hCfg.userId = env.HUB_USER_ID || hCfg.userId || '';
   changed = true;
 }
