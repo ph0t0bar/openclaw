@@ -82,7 +82,9 @@ function getHooksForName<K extends PluginHookName>(
   registry: PluginRegistry,
   hookName: K,
 ): PluginHookRegistration<K>[] {
-  return (registry.typedHooks as PluginHookRegistration<K>[])
+  const hooks = registry.typedHooks;
+  if (!Array.isArray(hooks)) return [];
+  return (hooks as PluginHookRegistration<K>[])
     .filter((h) => h.hookName === hookName)
     .toSorted((a, b) => (b.priority ?? 0) - (a.priority ?? 0));
 }
@@ -431,6 +433,7 @@ export function createHookRunner(registry: PluginRegistry, options: HookRunnerOp
    * Check if any hooks are registered for a given hook name.
    */
   function hasHooks(hookName: PluginHookName): boolean {
+    if (!Array.isArray(registry.typedHooks)) return false;
     return registry.typedHooks.some((h) => h.hookName === hookName);
   }
 
@@ -438,6 +441,7 @@ export function createHookRunner(registry: PluginRegistry, options: HookRunnerOp
    * Get count of registered hooks for a given hook name.
    */
   function getHookCount(hookName: PluginHookName): number {
+    if (!Array.isArray(registry.typedHooks)) return 0;
     return registry.typedHooks.filter((h) => h.hookName === hookName).length;
   }
 
