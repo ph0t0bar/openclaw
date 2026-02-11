@@ -586,6 +586,78 @@ Or just start dropping! Your messages will be saved and you can claim them later
 }
 
 // ============================================================================
+// Hub API Response Formatter
+// ============================================================================
+
+/**
+ * Format Hub API JSON responses into clean, model-friendly text.
+ * Known endpoints get structured summaries; unknown endpoints get pretty JSON.
+ */
+function formatHubResponse(path: string, json: any): string {
+  // Tasks endpoint
+  if (path.match(/\/api\/ops\/tasks/) && json.tasks) {
+    const tasks = json.tasks as any[];
+    if (tasks.length === 0) return "No tasks found.";
+
+    const lines = [`${tasks.length} task(s):\n`];
+    for (const t of tasks) {
+      lines.push(`- [${t.priority || "normal"}] ${t.status || "?"}: ${t.title || "untitled"}`);
+      lines.push(
+        `  assignee: ${t.assignee || "?"} | repo: ${t.target_repo || "?"} | created_by: ${t.created_by || "?"}`,
+      );
+      if (t.description) {
+        lines.push(`  desc: ${t.description.slice(0, 150)}`);
+      }
+      if (t.result) {
+        lines.push(`  result: ${t.result.slice(0, 150)}`);
+      }
+      lines.push(`  id: ${t.id || "?"} | ts: ${t.ts || "?"}`);
+    }
+    return lines.join("\n");
+  }
+
+  // Messages endpoint
+  if (path.match(/\/api\/ops\/messages/) && json.messages) {
+    const msgs = json.messages as any[];
+    if (msgs.length === 0) return "No messages found.";
+
+    const lines = [`${msgs.length} message(s):\n`];
+    for (const m of msgs) {
+      lines.push(`- [${m.priority || "normal"}] from=${m.from || "?"} (${m.ts || "?"})`);
+      lines.push(`  ${(m.message || "").slice(0, 300)}`);
+    }
+    return lines.join("\n");
+  }
+
+  // Agent drops endpoint
+  if (path.match(/\/api\/agent-drops/) && json.drops) {
+    const drops = json.drops as any[];
+    if (drops.length === 0) return "No agent drops found.";
+
+    const lines = [`${drops.length} drop(s):\n`];
+    for (const d of drops) {
+      lines.push(
+        `- [${d.type || "?"}] from=${d.from || d.from_agent || "?"} (${d.timestamp || d.ts || "?"})`,
+      );
+      lines.push(`  ${(d.content || d.title || "").slice(0, 200)}`);
+    }
+    return lines.join("\n");
+  }
+
+  // Health / status / dashboard — return pretty JSON
+  if (path.match(/\/api\/ops\/dashboard|\/api\/admin\/stats|\/health/)) {
+    return JSON.stringify(json, null, 2);
+  }
+
+  // Default: pretty-print JSON (compact for small, indented for readable)
+  const compact = JSON.stringify(json);
+  if (compact.length < 2000) {
+    return JSON.stringify(json, null, 2);
+  }
+  return compact;
+}
+
+// ============================================================================
 // Plugin Definition
 // ============================================================================
 
@@ -725,6 +797,7 @@ Auth is handled automatically via X-API-Key header.`,
               method,
               headers: {
                 "Content-Type": "application/json",
+                Accept: "application/json",
                 "X-API-Key": cfg.apiKey!,
               },
             };
@@ -737,27 +810,31 @@ Auth is handled automatically via X-API-Key header.`,
               const response = await fetch(url, opts);
               const text = await response.text();
 
-              // Truncate very large responses
-              const truncated =
-                text.length > 8000
-                  ? text.slice(0, 8000) + "\n...[truncated, " + text.length + " bytes total]"
-                  : text;
-
               if (!response.ok) {
                 return {
-                  result: JSON.stringify({
-                    error: `HTTP ${response.status}`,
-                    body: truncated,
-                  }),
+                  result: `ERROR: HTTP ${response.status} for ${method} ${path}\n${text.slice(0, 500)}`,
                 };
               }
 
-              return { result: truncated };
+              // Try to parse as JSON and format for readability
+              try {
+                const json = JSON.parse(text);
+                const formatted = formatHubResponse(path, json);
+                if (formatted.length > 8000) {
+                  return { result: formatted.slice(0, 8000) + "\n...[truncated]" };
+                }
+                return { result: formatted };
+              } catch {
+                // Not JSON — return raw text truncated
+                const truncated =
+                  text.length > 8000
+                    ? text.slice(0, 8000) + "\n...[truncated, " + text.length + " bytes total]"
+                    : text;
+                return { result: truncated };
+              }
             } catch (err) {
               return {
-                result: JSON.stringify({
-                  error: `Request failed: ${err instanceof Error ? err.message : String(err)}`,
-                }),
+                result: `ERROR: Request failed: ${err instanceof Error ? err.message : String(err)}`,
               };
             }
           },
