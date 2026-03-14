@@ -1,8 +1,17 @@
 #!/bin/sh
 set -e
 
-# Railway volume mounts config at /root/.openclaw but container runs as USER node
 CONFIG="/root/.openclaw/openclaw.json"
+
+# Wait for Railway volume mount (mounts after container start)
+echo "Waiting for volume at /root/.openclaw..."
+for i in 1 2 3 4 5 6 7 8 9 10; do
+  if [ -d "/root/.openclaw" ]; then
+    echo "Volume mounted."
+    break
+  fi
+  sleep 1
+done
 
 if [ -f "$CONFIG" ]; then
   echo "Found config at: $CONFIG"
@@ -21,13 +30,10 @@ if [ -f "$CONFIG" ]; then
     console.log('Patched controlUi.dangerouslyAllowHostHeaderOriginFallback = true');
   " "$CONFIG" || echo "Warning: config patch failed"
 else
-  echo "No config at $CONFIG, creating..."
+  echo "No config found, creating at $CONFIG..."
   mkdir -p /root/.openclaw
   echo '{"gateway":{"controlUi":{"dangerouslyAllowHostHeaderOriginFallback":true}}}' > "$CONFIG"
   echo "Created config with controlUi fallback enabled"
 fi
-
-# Point openclaw to the volume-mounted config
-export OPENCLAW_CONFIG_PATH="$CONFIG"
 
 exec "$@"
