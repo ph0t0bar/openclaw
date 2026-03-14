@@ -26,13 +26,14 @@ if [ -f "$CONFIG" ]; then
     if (!cfg.gateway) cfg.gateway = {};
     if (!cfg.gateway.controlUi) cfg.gateway.controlUi = {};
     cfg.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true;
+    cfg.gateway.controlUi.dangerouslyDisableDeviceAuth = true;
     fs.writeFileSync(process.argv[1], JSON.stringify(cfg, null, 2));
-    console.log('Patched controlUi.dangerouslyAllowHostHeaderOriginFallback = true');
+    console.log('Patched controlUi: host-header fallback + device auth disabled');
   " "$CONFIG" || echo "Warning: config patch failed"
 else
   echo "No config found, creating at $CONFIG..."
   mkdir -p /root/.openclaw
-  echo '{"gateway":{"controlUi":{"dangerouslyAllowHostHeaderOriginFallback":true}}}' > "$CONFIG"
+  echo '{"gateway":{"controlUi":{"dangerouslyAllowHostHeaderOriginFallback":true,"dangerouslyDisableDeviceAuth":true}}}' > "$CONFIG"
   echo "Created config with controlUi fallback enabled"
 fi
 
