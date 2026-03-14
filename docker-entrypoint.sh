@@ -13,28 +13,24 @@ for i in 1 2 3 4 5 6 7 8 9 10; do
   sleep 1
 done
 
-if [ -f "$CONFIG" ]; then
-  echo "Found config at: $CONFIG"
+# Ensure config exists and has required Railway settings
+node -e "
+  const fs = require('fs');
+  const path = process.argv[1];
+  let cfg = {};
+  try { cfg = JSON.parse(fs.readFileSync(path, 'utf8')); } catch {}
+  if (!cfg.gateway) cfg.gateway = {};
+  if (!cfg.gateway.controlUi) cfg.gateway.controlUi = {};
+  cfg.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true;
+  cfg.gateway.controlUi.dangerouslyDisableDeviceAuth = true;
 
-  # Auto-fix stale config keys
-  node /app/openclaw.mjs doctor --fix || echo "Warning: doctor --fix failed"
+  // Remove stale keys that cause validation errors
+  if (cfg.commands) delete cfg.commands.ownerDisplay;
+  if (cfg.channels && cfg.channels.whatsapp) delete cfg.channels.whatsapp.enabled;
 
-  # Patch controlUi for non-loopback Railway deploy
-  node -e "
-    const fs = require('fs');
-    const cfg = JSON.parse(fs.readFileSync(process.argv[1], 'utf8'));
-    if (!cfg.gateway) cfg.gateway = {};
-    if (!cfg.gateway.controlUi) cfg.gateway.controlUi = {};
-    cfg.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true;
-    cfg.gateway.controlUi.dangerouslyDisableDeviceAuth = true;
-    fs.writeFileSync(process.argv[1], JSON.stringify(cfg, null, 2));
-    console.log('Patched controlUi: host-header fallback + device auth disabled');
-  " "$CONFIG" || echo "Warning: config patch failed"
-else
-  echo "No config found, creating at $CONFIG..."
-  mkdir -p /root/.openclaw
-  echo '{"gateway":{"controlUi":{"dangerouslyAllowHostHeaderOriginFallback":true,"dangerouslyDisableDeviceAuth":true}}}' > "$CONFIG"
-  echo "Created config with controlUi fallback enabled"
-fi
+  fs.mkdirSync(require('path').dirname(path), { recursive: true });
+  fs.writeFileSync(path, JSON.stringify(cfg, null, 2));
+  console.log('Config ready at ' + path);
+" "$CONFIG" || echo "Warning: config setup failed"
 
 exec "$@"
