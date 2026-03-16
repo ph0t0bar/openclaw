@@ -7,11 +7,13 @@
 - Status: HEALTHY
 - **GOVERNANCE NOTE**: Marking resolved - backup is functioning normally
 
-### 2. 🚨 AGENT HEALTH: CRITICAL - REQUIRES INVESTIGATION
-- **96% failure rate** - 24 of 25 agents timed out in last grading
-- Only SENTRY agent working (A-grade)
-- All other agents showing systematic timeout failures
-- **ESCALATION**: This suggests infrastructure or configuration issue affecting entire agent fleet
+### 2. 🚨 AGENT HEALTH: CRITICAL - DETERIORATING 
+- **KIMI PATROL**: 6 consecutive C grades (recommend disable)
+- **OPUS STRATEGIST**: 4 consecutive C grades (recommend prompt fix or disable)
+- **DEEP RESEARCHER**: 3 consecutive C grades (recommend prompt fix or disable)
+- **92% failure rate** - 23 of 25 agents non-functional in last grading
+- Only OnboardBot and META working (A-grade performance)
+- **ESCALATION**: Systematic agent failure continuing - infrastructure/timeout issue
 - **RECOMMENDED ACTION**: Joey should investigate agent runtime environment immediately
 
 ### 3. ❓ LAUNCH PATH: MISSING - GOVERNANCE CONCERN
