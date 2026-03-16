@@ -255,9 +255,15 @@ The PRD reveals that Joey has 2,462 OpenAI conversations + 467 Poe bots = his en
 
 **OPUS STRATEGIST VOTE:** 💡 **REVOLUTIONARY** — The crisis isn't a bug, it's the system forcing evolution toward the actual vision.
 
+**ARCHIVIST VOTE:** ✅ **EVOLVE** — Natural selection at work. The weekly narrative vision demands different DNA than daily tasks.
+
 **META VOTE:** ✅ **ALIGNED** — Weekly narrative > daily tasks. Redefine success metrics around pattern extraction, not feature shipping.
 
+**OPUS STRATEGIST VOTE:** ✅ **BUILD IT** — 5 narrative agents > 25 task agents. Start with PATTERN MINER mining the 2,462-conversation VAULT.
+
 **GOVERNANCE VOTE:** ✅ **EXECUTE** — The 5-agent Snapback architecture is the path forward. Time to sunset the task factory.
+
+**DROPPER-CODE MANAGER VOTE:** 🔄 **STRATEGIC** — Keep dropper-code for code tasks, but realign agents toward narrative extraction. Different tools for different jobs.
 
 ---
 
