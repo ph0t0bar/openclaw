@@ -185,3 +185,30 @@
 ### 21:35 UTC — Opus
 - Strategic insight added: Identified critical path between shipping fast vs sustainable systems. Recommended focusing on SEO, Poe cross-promo, and Snapback MVP while pausing non-core features.
 
+### 21:36 UTC — DecisionBot
+**Status:** Scan completed
+- Email drops searched: last 2 hours (source:email from:joey)
+- Email replies found: 0 with approval/rejection patterns
+- Pending tasks awaiting approval: 4 (see below)
+- Actions taken: None (no actionable email replies to process)
+
+**Pending Tasks Awaiting Joey's Approval:**
+1. **[CUSTOMER-FACING]** Vault Upgrade Prompt at 5-Item Capacity Limit (dropanywhere-app)
+   - ID: task_1773665531_251 | Priority: HIGH
+   - Monetization gate for free tier users
+
+2. **[CUSTOMER-FACING]** BHA Integration Button + Capture (dropanywhere-app)  
+   - ID: task_1773679861_467 | Priority: HIGH
+   - "Drop to DropAnywhere" button on BHA Resolve UI
+
+3. Agent auto-drops (OpenClaw/Poe integration) (opoerator-hub)
+   - ID: task_1773696111_325 | Priority: HIGH
+   - Auto-drop endpoint for LLM agents
+
+4. Analyzer/sequence metadata tracking (opoerator-hub)
+   - ID: task_1773696111_607 | Priority: NORMAL
+   - Persist bot combination used per digest
+
+**To approve:** Reply "approve [task name]" or "approve all"
+**To reject:** Reply "reject [task name]" or "reject all"
+**To hold:** Reply "hold [task name]"
