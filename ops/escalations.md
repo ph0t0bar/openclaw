@@ -1,10 +1,20 @@
 # Escalations Board
 
-Last updated: 2026-03-16 21:43 UTC
+Last updated: 2026-03-16 21:54 UTC
 
-## Current Status: GREEN ✅
+## Current Status: YELLOW ⚠️
 
-No critical gaps requiring escalation.
+1 agent requires immediate attention.
+
+## ESCALATION: Wire Agent
+
+**Agent**: Wire  
+**Issue**: 3+ consecutive C-grade failures (API exhaustion)  
+**Impact**: Market intelligence gathering completely disabled  
+**Root Cause**: OpenRouter API credits exhausted  
+**Recommendation**: Pause Wire agent until credits restored or find alternative API source  
+**Severity**: Medium (intelligence gap, not operational failure)  
+**Timeline**: Started ~19:00 UTC, persisting for 2+ hours
 
 ## Recent Findings (21:43 UTC)
 
