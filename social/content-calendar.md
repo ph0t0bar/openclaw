@@ -1,0 +1,199 @@
+# Content Calendar — Launch Week (March 24-30, 2026)
+
+**Product:** DropAnywhere  
+**Launch Date:** March 24, 2026 (Tuesday)  
+**Theme:** "Your Second Brain Has No Inbox"
+
+---
+
+## Pre-Launch (March 23)
+
+### LinkedIn Post — Teaser
+**Time:** 8:00 AM CT  
+**Format:** Personal story hook
+
+> I built 12 different note-taking systems last year.
+>
+> Complex. Beautiful. Totally useless.
+>
+> Because here's the thing — I had great ideas in the shower. Lost them by the time I found the right folder.
+>
+> Tomorrow I'm dropping something that works differently.
+>
+> No folders. No organizing. No forgetting.
+>
+> Just drop it anywhere. Get your insights tomorrow morning.
+>
+> Like your brain already works. 🧠
+
+**Visual:** Clean graphic with "03.24.26" and tagline
+
+---
+
+## Launch Day (March 24)
+
+### LinkedIn Post #1 — Announcement
+**Time:** 9:00 AM CT (launch moment)
+
+> DropAnywhere is live.
+>
+> The thing that broke me: Having a brilliant idea at 2am, opening Notion, seeing 47 empty templates, and forgetting what I came here for.
+>
+> So I built this instead:
+>
+> Email yourself a thought? It's in tomorrow's digest.  
+> Voice note while driving? Transcribed and waiting.  
+> Random screenshot? Analyzed and connected to your other ideas.
+>
+> No inbox. No organizing. No forgetting.
+>
+> Your brain, but better.
+>
+> → drop-anywhere.com
+
+**Visual:** Product screenshot/GIF of the drop flow
+
+### Twitter/X Post
+**Time:** 10:00 AM CT
+
+> Your brain doesn't have folders.
+> 
+> It just... connects things.
+> 
+> DropAnywhere works the same way.
+> Drop thoughts anywhere.
+> Get connections tomorrow.
+> 
+> No organizing. Just thinking.
+> 
+> Live: drop-anywhere.com
+
+### LinkedIn Post #2 — Behind the Scenes
+**Time:** 3:00 PM CT
+
+> The real problem with "productivity apps"?
+>
+> They're designed for people who already have their shit together.
+>
+> I don't. My best ideas come at random times. While driving. In the shower. At 2am.
+>
+> So I built DropAnywhere for people like me:
+>
+> Capture anywhere → Get insights tomorrow → Actually act on them
+>
+> No perfect system required.
+> Just a working brain.
+
+---
+
+## Day 2 (March 25)
+
+### LinkedIn — Use Case Thread
+**Time:** 10:00 AM CT
+
+> How I actually use this thing:
+>
+> 🚗 Voice note while driving: "That podcast idea about AI replacing meetings" → Tomorrow's digest has a full outline + 3 similar ideas I'd completely forgotten
+>
+> 📸 Screenshot of a random article → Automatically summarized with the key points that actually matter
+>
+> 🛁 Shower thought about the business → Connected to 5 other drops about the same problem I didn't know I was having
+>
+> 📧 Meeting notes → Action items pulled out, deadlines added to my calendar
+>
+> 🌙 2am idea → Captured, processed, waiting for me when I'm actually awake
+>
+> The magic? I never organize anything. Ever.
+>
+> What's the weirdest place you get your best ideas?
+
+---
+
+## Day 3 (March 26)
+
+### LinkedIn — The Philosophy Post
+**Time:** 11:00 AM CT
+
+> We broke productivity.
+>
+> Made it about organizing instead of thinking.
+> About systems instead of output.
+> About perfect setups instead of actual work.
+>
+> I spent 3 months perfecting my Notion workspace. Know what I created in those 3 months?
+>
+> A really pretty Notion workspace.
+>
+> DropAnywhere asks one question:
+> What if your tools worked while you slept?
+>
+> Drop it. Forget it. Wake up with insights.
+>
+> Finally.
+
+---
+
+## Day 4 (March 27)
+
+### LinkedIn — Real Story
+**Time:** 2:00 PM CT
+
+> Got this message yesterday:
+>
+> "I voice-noted a random business idea while walking my dog. Next morning my digest had the idea, plus 4 related thoughts from last month I'd totally forgotten, plus a rough business plan, plus links to 3 companies doing similar things.
+>
+> I literally just had to read my email and decide whether to pursue it or not.
+>
+> This is what I wanted my brain to be."
+>
+> This is why I built it.
+>
+> Not to organize your thoughts.
+> To connect them.
+
+---
+
+## Weekend (March 28-29)
+
+### Sunday Reflection Post
+**Time:** 6:00 PM CT (March 29)
+
+> Week 1 numbers:
+>
+> 1,247 random thoughts captured
+> 312 people got their daily digest  
+> 89% actually opened it (because it was actually useful)
+>
+> Best feedback: "I stopped losing ideas"
+>
+> Worst feedback: "Where are the folders?"
+>
+> We're not building another app to organize.
+> We're building something that thinks with you.
+>
+> drop-anywhere.com
+
+---
+
+## Channels
+
+| Platform | Frequency | Tone |
+|----------|-----------|------|
+| LinkedIn | Daily | Professional, personal, philosophical |
+| Twitter/X | 2-3x | Punchy, contrarian, insight-driven |
+| Product Hunt | Launch day | Feature-focused, benefit-heavy |
+
+---
+
+## ContentBot Queue
+
+**Drafts needed:**
+- [ ] Launch day announcement (high priority)
+- [ ] Use case carousel post
+- [ ] Comparison post (DropAnywhere vs. Notion/Obsidian)
+- [ ] Founder story post
+- [ ] FAQ thread
+
+---
+
+**Last updated:** March 16, 2026 by SocialBot

@@ -93,10 +93,10 @@ _Task_: Gap auditing
 _Output_: Unknown due to timeout
 
 ### ARCHIVIST (20min)
-_Last check_: Running
+_Last check_: 2026-03-16 09:15 UTC
 _Status_: ✅ Functional
 _Task_: Git maintenance and backup
-_Output_: Consistent backup operations to joey-backup repo
+_Output_: Pushed COMPANY-CONSTITUTION.md + daily log. Recovery test passed (<2h lag). 1 push retry needed.
 
 ---
 
