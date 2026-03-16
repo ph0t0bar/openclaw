@@ -63,3 +63,20 @@ Last updated: 2026-03-16
 | **Reflect** | Minimal linked notes | Low - simple, privacy-first | Solo users valuing simplicity & privacy |
 
 **Key Insight for DropAnywhere:** Mem.ai's 2.0 focuses heavily on **frictionless capture** (voice, email, web) + **proactive resurfacing** (daily digest, heads up) - directly competitive with our vision. Their weakness is pricing/quotas and team collaboration.
+
+---
+
+## March 16, 2026 Research Update
+
+### Mem.ai Current State
+**Semantic Note Organization:** Core differentiator is treating notes as unified AI knowledge base vs traditional folders/tags
+- **Agentic Chat**: Can create/edit/organize notes based on entire note history
+- **Smart Search**: Intent-based ("revenue forecasting" finds "projected income") 
+- **Auto-tags**: AI generates contextual tags, eliminates manual organization
+- **Voice Mode**: Transforms rambling thoughts into organized, searchable notes
+- **Proactive Resurfacing**: "Heads Up" feature surfaces relevant old notes contextually
+- **Efficiency Claims**: Users report 60% reduction in search/recall time
+
+**Key Positioning**: "Your notes become the AI's unified knowledge base" - direct competitor to our "second brain" approach
+
+**Market Validation**: Most thoroughly documented of the three major players, suggests strong product-market fit and marketing execution
