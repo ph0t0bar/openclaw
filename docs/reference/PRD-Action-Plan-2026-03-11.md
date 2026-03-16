@@ -9,7 +9,15 @@
 
 ## 1. Executive Summary
 
-**March 3-16 velocity:** 29+ PRs shipped across 4 repos. Poe Orchestrator live with 16 shadow bots. DA at 100 users (+54% since Mar 11), 12 active in 24h. BHA at 259 users (+23%), 12 active in 24h, 73 active in 7d. 2 Pro subs confirmed. Dropper-Code autonomous pipeline operational (12+ tasks completed, 10 PRs queued Mar 15-16).
+**March 3-16 velocity:** 29+ PRs shipped across 4 repos. Poe Orchestrator live with 16 shadow bots. DA at 100 users (+54% since Mar 11), 11 active in 24h. BHA at 259 users (+23%), 11 active in 24h, 70 active in 7d. 2 Pro subs confirmed. Dropper-Code autonomous pipeline operational (12+ tasks completed, 10 PRs queued Mar 15-16).
+
+**March 16 (14:31 UTC) — DocBot Metrics Refresh:**
+- DA: 100 users, 11 active 24h, 843 total drops (+0), 28 drops 24h, 3 digests sent
+- BHA: 259 total, 11 active 24h, 70 active 7d, 2 Pro, 7 new 24h
+- Poe: 47,297 balance ⚠️ (~0.9 days at 50K/6h burn), 49,866 pts/6h usage — **CRITICAL: Top burners are IdealPrompt (16K) and Tippiy (15K)**
+- Stripe: 0 charges 4h
+- Resend: 95 sent 24h, 94 delivered, 1 delayed
+- GitHub: 10 PRs completed (#180-189) via Dropper-Code
 
 **March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction — not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
 
