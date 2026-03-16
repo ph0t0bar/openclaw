@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>🦜 Agent Company Dashboard</title>
+<title>🦜 Agent Company</title>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -11,16 +11,58 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro',system-ui,sans-serif;background:#0a0a0f;color:#e0e0e0;min-height:100vh}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:#333;border-radius:2px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes slideIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.pulse{animation:pulse 2s ease-in-out infinite}
+.slide-in{animation:slideIn .3s ease-out}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <script type="text/babel">
-const { useState, useEffect, useRef } = React
+const {useState,useEffect,useRef,useCallback} = React
+
+// CONFIG — point these at your gateway
+const GATEWAY = 'https://openclaw-gateway-production-54a0.up.railway.app'
+const HUB = 'https://hub-production-f423.up.railway.app'
+const GITHUB_REPO = 'ph0t0bar/joey-backup'
+
+// Fetch daily log from GitHub (public content via API)
+async function fetchDailyLog() {
+  const date = new Date().toISOString().slice(0,10)
+  try {
+    const r = await fetch(`${HUB}/api/ops/dashboard`)
+    if (r.ok) return await r.json()
+  } catch(e) {}
+  return null
+}
+
+// Fetch agent board from GitHub
+async function fetchBoard() {
+  const date = new Date().toISOString().slice(0,10)
+  try {
+    // Try fetching the raw board from GitHub API
+    const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/specs/agent-board.md`)
+    if (r.ok) {
+      const d = await r.json()
+      return atob(d.content)
+    }
+  } catch(e) {}
+  return null
+}
+
+// Fetch latest commits (proxy for activity)
+async function fetchActivity() {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/commits?per_page=15`)
+    if (r.ok) return await r.json()
+  } catch(e) {}
+  return []
+}
 
 const DEPTS = [
   {name:'Executive',icon:'🎯',color:'#22c55e',agents:[
-    {name:'Claw',model:'Opus',cadence:'always',role:'Co-CEO',status:'green'},
+    {name:'Claw',model:'Opus',cadence:'always',role:'Co-CEO'},
     {name:'Chief of Staff',model:'Opus',cadence:'20m',role:'Gap Finder'},
   ]},
   {name:'Product',icon:'📋',color:'#3b82f6',agents:[
@@ -68,110 +110,216 @@ const DEPTS = [
   ]},
 ]
 
-const PIPE = ['Drop/Idea','Wire','Pitch','Spec','Task','Code','PR','Ship','Docs','Backup']
 const mc = m => m==='Opus'?'#f59e0b':m==='Sonnet'?'#3b82f6':'#22c55e'
-const sc = s => ({green:'#22c55e',yellow:'#eab308',red:'#ef4444'}[s]||'#444')
 
-function Dept({d}) {
+function Dept({d, activity}) {
   const [open,setOpen] = useState(true)
-  return <div style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:10,padding:12,borderLeft:`3px solid ${d.color}`}}>
+  // Check if any agent name appears in recent activity
+  const agentActive = (name) => {
+    if (!activity?.length) return 'pending'
+    const recent = activity.slice(0, 10).map(a => a?.commit?.message || '').join(' ').toLowerCase()
+    const n = name.toLowerCase()
+    if (recent.includes(n) || recent.includes(n.replace('bot',''))) return 'green'
+    return 'pending'
+  }
+  const sc = s => ({green:'#22c55e',yellow:'#eab308',red:'#ef4444'}[s]||'#333')
+  
+  return <div style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:10,padding:12,borderLeft:`3px solid ${d.color}`,transition:'all .2s'}}>
     <div onClick={()=>setOpen(!open)} style={{display:'flex',alignItems:'center',gap:6,cursor:'pointer',marginBottom:open?8:0}}>
       <span style={{fontSize:14}}>{d.icon}</span>
       <span style={{fontSize:12,fontWeight:600,color:'#ccc',flex:1}}>{d.name}</span>
       <span style={{fontSize:9,color:'#555'}}>{d.agents.length}</span>
+      <span style={{fontSize:10,color:'#444'}}>{open?'▾':'▸'}</span>
     </div>
-    {open && d.agents.map((a,i) => <div key={i} style={{display:'flex',alignItems:'center',gap:6,padding:'4px 6px',borderRadius:5,fontSize:10,marginBottom:2}}>
-      <div style={{width:7,height:7,borderRadius:'50%',background:sc(a.status),boxShadow:a.status==='green'?'0 0 6px #22c55e44':'none',flexShrink:0}}/>
-      <span style={{color:'#aaa',flex:1}}>{a.name}</span>
-      <span style={{color:'#666',fontSize:8}}>{a.role}</span>
-      <span style={{color:mc(a.model),fontSize:8,fontWeight:600}}>{a.model}</span>
-      <span style={{color:'#444',fontSize:8,fontFamily:'monospace'}}>{a.cadence}</span>
-    </div>)}
+    {open && d.agents.map((a,i) => {
+      const st = agentActive(a.name)
+      return <div key={i} style={{display:'flex',alignItems:'center',gap:6,padding:'4px 6px',borderRadius:5,fontSize:10,marginBottom:2}}>
+        <div className={st==='green'?'pulse':''} style={{width:7,height:7,borderRadius:'50%',background:sc(st),boxShadow:st==='green'?'0 0 8px #22c55e55':'none',flexShrink:0}}/>
+        <span style={{color:st==='green'?'#ddd':'#777',flex:1,fontWeight:st==='green'?500:400}}>{a.name}</span>
+        <span style={{color:'#555',fontSize:8}}>{a.role}</span>
+        <span style={{color:mc(a.model),fontSize:8,fontWeight:600}}>{a.model}</span>
+        <span style={{color:'#444',fontSize:8,fontFamily:'monospace'}}>{a.cadence}</span>
+      </div>
+    })}
+  </div>
+}
+
+function ActivityFeed({activity}) {
+  if (!activity?.length) return <div style={{color:'#444',fontSize:11,padding:20,textAlign:'center'}}>Loading activity...</div>
+  return <div style={{maxHeight:300,overflow:'auto'}}>
+    {activity.map((c,i) => {
+      const msg = c?.commit?.message || '?'
+      const time = c?.commit?.author?.date || ''
+      const short = time.slice(11,16)
+      const agent = msg.split(':')[0] || '?'
+      const detail = msg.split(':').slice(1).join(':').trim().slice(0,80)
+      // Color by agent type
+      const agentColor = msg.includes('opus')||msg.includes('strategy')||msg.includes('gap') ? '#f59e0b'
+        : msg.includes('research')||msg.includes('content')||msg.includes('sonnet')||msg.includes('security')||msg.includes('meta')||msg.includes('governance') ? '#3b82f6'
+        : msg.includes('archivist')||msg.includes('patrol')||msg.includes('wire') ? '#22c55e'
+        : '#666'
+      return <div key={i} className="slide-in" style={{display:'flex',gap:8,padding:'6px 0',borderBottom:'1px solid #1a1a2a',fontSize:10}}>
+        <span style={{color:'#444',fontFamily:'monospace',minWidth:40}}>{short}</span>
+        <span style={{color:agentColor,minWidth:65,fontWeight:500}}>{agent.slice(0,12)}</span>
+        <span style={{color:'#777',flex:1,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>{detail||msg}</span>
+      </div>
+    })}
+  </div>
+}
+
+function HubStats({stats}) {
+  if (!stats) return null
+  return <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(80px,1fr))',gap:6,marginBottom:16}}>
+    {Object.entries(stats).slice(0,8).map(([k,v],i) => 
+      <div key={i} style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:6,padding:6,textAlign:'center'}}>
+        <div style={{fontSize:14,fontWeight:700,color:typeof v==='number'&&v>0?'#22c55e':'#fff'}}>{typeof v==='object'?'—':String(v).slice(0,8)}</div>
+        <div style={{fontSize:7,color:'#555',marginTop:1}}>{k.replace(/_/g,' ').toUpperCase()}</div>
+      </div>
+    )}
   </div>
 }
 
 function Chat() {
   const [open,setOpen] = useState(false)
-  const [msgs,setMsgs] = useState([{from:'claw',text:'Hey Joey 🦜 Dashboard is live. Chat with me here — wire this to the gateway webhook for real responses.'}])
+  const [msgs,setMsgs] = useState([{from:'claw',text:'Hey 🦜 I\'m connected to this dashboard. Wire me up to the gateway webhook to chat live!'}])
   const [input,setInput] = useState('')
   const ref = useRef()
   useEffect(()=>{ref.current?.scrollIntoView({behavior:'smooth'})},[msgs])
-  const send = () => {
+  const send = async () => {
     if(!input.trim())return
-    setMsgs(p=>[...p,{from:'joey',text:input}])
+    const msg = input
+    setMsgs(p=>[...p,{from:'joey',text:msg}])
     setInput('')
-    setTimeout(()=>setMsgs(p=>[...p,{from:'claw',text:'🦜 Connect this to POST /hooks/agent with OPENCLAW_HOOK_TOKEN for live responses!'}]),800)
+    // Try hitting the gateway hook
+    try {
+      const r = await fetch(`${GATEWAY}/hooks/agent`, {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({text: msg, source: 'dashboard'})
+      })
+      if (r.ok) {
+        const d = await r.json()
+        setMsgs(p=>[...p,{from:'claw',text:d.response || d.message || '🦜 Received! Check WhatsApp for my response.'}])
+      } else {
+        setMsgs(p=>[...p,{from:'claw',text:'🦜 Gateway returned ' + r.status + '. Need OPENCLAW_HOOK_TOKEN in the request header.'}])
+      }
+    } catch(e) {
+      setMsgs(p=>[...p,{from:'claw',text:'🦜 Can\'t reach gateway directly from browser (CORS). Use WhatsApp or webchat to talk to me!'}])
+    }
   }
-  if(!open) return <div onClick={()=>setOpen(true)} style={{position:'fixed',bottom:20,right:20,width:50,height:50,borderRadius:'50%',background:'linear-gradient(135deg,#22c55e,#10b981)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',boxShadow:'0 4px 20px #22c55e44',fontSize:24,zIndex:999}}>🦜</div>
-  return <div style={{position:'fixed',bottom:20,right:20,width:340,height:420,background:'#12121a',border:'1px solid #2a2a3e',borderRadius:12,display:'flex',flexDirection:'column',boxShadow:'0 8px 40px #00000088',zIndex:999}}>
-    <div style={{padding:'10px 14px',borderBottom:'1px solid #1e1e2e',display:'flex',alignItems:'center',gap:8}}>
+  if(!open) return <div onClick={()=>setOpen(true)} style={{position:'fixed',bottom:16,right:16,width:48,height:48,borderRadius:'50%',background:'linear-gradient(135deg,#22c55e,#10b981)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',boxShadow:'0 4px 24px #22c55e33',fontSize:22,zIndex:999,transition:'transform .2s'}} onMouseOver={e=>e.target.style.transform='scale(1.1)'} onMouseOut={e=>e.target.style.transform='scale(1)'}>🦜</div>
+  return <div style={{position:'fixed',bottom:16,right:16,width:320,height:400,background:'#0d0d15',border:'1px solid #2a2a3e',borderRadius:14,display:'flex',flexDirection:'column',boxShadow:'0 8px 40px #00000088',zIndex:999}}>
+    <div style={{padding:'10px 14px',borderBottom:'1px solid #1e1e2e',display:'flex',alignItems:'center',gap:8,background:'#12121a',borderRadius:'14px 14px 0 0'}}>
       <span>🦜</span><span style={{fontSize:12,fontWeight:600,color:'#ccc',flex:1}}>Claw</span>
-      <span onClick={()=>setOpen(false)} style={{cursor:'pointer',color:'#555',fontSize:18}}>×</span>
+      <div className="pulse" style={{width:6,height:6,borderRadius:'50%',background:'#22c55e'}}/>
+      <span onClick={()=>setOpen(false)} style={{cursor:'pointer',color:'#555',fontSize:16,marginLeft:4}}>×</span>
     </div>
     <div style={{flex:1,overflow:'auto',padding:10}}>
-      {msgs.map((m,i)=><div key={i} style={{marginBottom:8,textAlign:m.from==='joey'?'right':'left'}}>
-        <div style={{display:'inline-block',maxWidth:'80%',padding:'6px 10px',borderRadius:8,fontSize:11,background:m.from==='joey'?'#22c55e22':'#1e1e2e',color:m.from==='joey'?'#22c55e':'#aaa'}}>{m.text}</div>
+      {msgs.map((m,i)=><div key={i} className="slide-in" style={{marginBottom:8,textAlign:m.from==='joey'?'right':'left'}}>
+        <div style={{display:'inline-block',maxWidth:'85%',padding:'7px 11px',borderRadius:m.from==='joey'?'10px 10px 2px 10px':'10px 10px 10px 2px',fontSize:11,lineHeight:1.4,background:m.from==='joey'?'#22c55e18':'#1a1a2a',color:m.from==='joey'?'#22c55e':'#aaa',border:m.from==='joey'?'1px solid #22c55e22':'1px solid #222'}}>{m.text}</div>
       </div>)}
       <div ref={ref}/>
     </div>
     <div style={{padding:8,borderTop:'1px solid #1e1e2e',display:'flex',gap:6}}>
-      <input value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>e.key==='Enter'&&send()} placeholder="Message Claw..." style={{flex:1,background:'#1a1a2a',border:'1px solid #2a2a3e',borderRadius:6,padding:'6px 10px',color:'#ccc',fontSize:11,outline:'none'}}/>
-      <button onClick={send} style={{background:'#22c55e',border:'none',borderRadius:6,padding:'6px 12px',color:'#000',fontSize:11,fontWeight:600,cursor:'pointer'}}>→</button>
+      <input value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>e.key==='Enter'&&send()} placeholder="Talk to Claw..." style={{flex:1,background:'#1a1a2a',border:'1px solid #2a2a3e',borderRadius:8,padding:'7px 10px',color:'#ccc',fontSize:11,outline:'none'}}/>
+      <button onClick={send} style={{background:'#22c55e',border:'none',borderRadius:8,padding:'7px 14px',color:'#000',fontSize:11,fontWeight:600,cursor:'pointer'}}>↑</button>
     </div>
   </div>
 }
 
 function App() {
-  const [now,setNow] = useState(new Date())
-  useEffect(()=>{const t=setInterval(()=>setNow(new Date()),30000);return()=>clearInterval(t)},[])
+  const [activity, setActivity] = useState([])
+  const [hubStats, setHubStats] = useState(null)
+  const [lastRefresh, setLastRefresh] = useState(null)
+  const [refreshing, setRefreshing] = useState(false)
+  
+  const refresh = useCallback(async () => {
+    setRefreshing(true)
+    const [acts, hub] = await Promise.all([fetchActivity(), fetchDailyLog()])
+    if (acts?.length) setActivity(acts)
+    if (hub) setHubStats(hub)
+    setLastRefresh(new Date())
+    setRefreshing(false)
+  }, [])
+  
+  useEffect(() => { refresh(); const t = setInterval(refresh, 60000); return () => clearInterval(t) }, [refresh])
+  
   const total = DEPTS.reduce((s,d)=>s+d.agents.length,0)
-  return <div style={{padding:20}}>
-    <h1 style={{fontSize:18,color:'#fff',marginBottom:2}}>🦜 DropAnywhere Agent Company</h1>
-    <p style={{fontSize:10,color:'#555',marginBottom:16}}>{now.toISOString().slice(0,16)} UTC — Live Dashboard</p>
+  const launchDate = new Date('2026-03-24')
+  const daysToLaunch = Math.max(0, Math.ceil((launchDate - new Date()) / 86400000))
+  
+  return <div style={{padding:16,maxWidth:1200,margin:'0 auto'}}>
+    <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:2}}>
+      <h1 style={{fontSize:18,color:'#fff'}}>🦜 Agent Company</h1>
+      <button onClick={refresh} style={{background:'none',border:'1px solid #333',borderRadius:6,padding:'2px 8px',color:refreshing?'#22c55e':'#555',fontSize:9,cursor:'pointer',marginLeft:'auto'}}>
+        {refreshing ? '⟳ refreshing...' : '⟳ refresh'}
+      </button>
+    </div>
+    <p style={{fontSize:10,color:'#444',marginBottom:14}}>
+      {lastRefresh ? `Updated ${lastRefresh.toLocaleTimeString()}` : 'Loading...'} · Auto-refreshes every 60s
+    </p>
     
-    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(90px,1fr))',gap:8,marginBottom:16}}>
-      {[{v:total,l:'AGENTS',c:'#22c55e'},{v:10,l:'DEPTS',c:'#fff'},{v:'~1.5K',l:'CYCLES/DAY',c:'#22c55e'},{v:3,l:'MODELS',c:'#fff'},{v:'8d',l:'TO LAUNCH',c:'#eab308'}].map((s,i)=>
-        <div key={i} style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:8,padding:8,textAlign:'center'}}>
-          <div style={{fontSize:20,fontWeight:700,color:s.c}}>{s.v}</div>
+    {/* Stats */}
+    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(85px,1fr))',gap:6,marginBottom:14}}>
+      {[
+        {v:total,l:'AGENTS',c:'#22c55e'},
+        {v:10,l:'DEPTS',c:'#fff'},
+        {v:'~1.5K',l:'CYCLES/DAY',c:'#22c55e'},
+        {v:daysToLaunch+'d',l:'TO LAUNCH',c:daysToLaunch<=7?'#ef4444':'#eab308'},
+        {v:activity.length?'🟢':'⏳',l:'GITHUB',c:'#22c55e'},
+      ].map((s,i)=>
+        <div key={i} style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:8,padding:'8px 4px',textAlign:'center'}}>
+          <div style={{fontSize:18,fontWeight:700,color:s.c}}>{s.v}</div>
           <div style={{fontSize:8,color:'#555'}}>{s.l}</div>
         </div>
       )}
     </div>
     
-    <div style={{display:'flex',gap:12,marginBottom:12,fontSize:9}}>
+    {/* Hub Stats (live from API) */}
+    <HubStats stats={hubStats}/>
+    
+    {/* Legend */}
+    <div style={{display:'flex',gap:10,marginBottom:10,fontSize:9,flexWrap:'wrap'}}>
       <span><span style={{color:'#f59e0b'}}>●</span> Opus</span>
       <span><span style={{color:'#3b82f6'}}>●</span> Sonnet</span>
       <span><span style={{color:'#22c55e'}}>●</span> Kimi</span>
-      <span style={{marginLeft:'auto',color:'#444'}}>🟢 ok · 🟡 slow · 🔴 error · ⚫ pending</span>
+      <span style={{color:'#444',marginLeft:'auto'}}>● active (in recent commits) · <span style={{color:'#333'}}>●</span> idle</span>
     </div>
     
-    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:8,marginBottom:16}}>
-      {DEPTS.map((d,i)=><Dept key={i} d={d}/>)}
-    </div>
-    
-    <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>🔄 Value Pipeline</div>
-    <div style={{display:'flex',alignItems:'center',gap:3,flexWrap:'wrap',background:'#12121a',border:'1px solid #1e1e2e',borderRadius:8,padding:10,marginBottom:16}}>
-      {PIPE.map((p,i)=><React.Fragment key={i}>
-        <span style={{color:'#22c55e',background:'#0f1f0f',padding:'3px 7px',borderRadius:4,fontSize:9,border:'1px solid #22c55e22'}}>{p}</span>
-        {i<PIPE.length-1&&<span style={{color:'#333',fontSize:9}}>→</span>}
-      </React.Fragment>)}
-    </div>
-    
-    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:8,marginBottom:16}}>
-      {[{m:'Kimi K2.5',t:'120s',n:18,c:'#22c55e',d:'Fast ops'},{m:'Sonnet',t:'240s',n:5,c:'#3b82f6',d:'Build/research'},{m:'Opus',t:'300-420s',n:2,c:'#f59e0b',d:'Strategy'}].map((t,i)=>
-        <div key={i} style={{background:'#12121a',border:`1px solid ${t.c}22`,borderRadius:8,padding:10}}>
-          <div style={{fontSize:14,fontWeight:700,color:t.c}}>{t.m}</div>
-          <div style={{fontSize:10,color:'#888',marginTop:2}}>{t.n} agents · {t.t}</div>
-          <div style={{fontSize:9,color:'#555',marginTop:2}}>{t.d}</div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:12}}>
+      {/* LEFT: Org */}
+      <div>
+        <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>🏢 Departments</div>
+        <div style={{display:'grid',gap:6}}>
+          {DEPTS.map((d,i)=><Dept key={i} d={d} activity={activity}/>)}
         </div>
-      )}
-    </div>
-    
-    <div style={{display:'flex',gap:6,marginBottom:16,fontSize:9,flexWrap:'wrap'}}>
-      <span style={{background:'#2a0a0a',color:'#ef4444',padding:'3px 8px',borderRadius:4}}>🔴 RESTRICTED</span>
-      <span style={{background:'#2a1a0a',color:'#f59e0b',padding:'3px 8px',borderRadius:4}}>🟠 CONFIDENTIAL</span>
-      <span style={{background:'#1a1a0a',color:'#eab308',padding:'3px 8px',borderRadius:4}}>🟡 INTERNAL</span>
-      <span style={{background:'#0a1a0a',color:'#22c55e',padding:'3px 8px',borderRadius:4}}>🟢 PUBLIC</span>
+      </div>
+      
+      {/* RIGHT: Activity */}
+      <div>
+        <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>📋 Live Activity <span style={{fontSize:9,color:'#444'}}>(GitHub commits)</span></div>
+        <div style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:10,padding:10,marginBottom:12}}>
+          <ActivityFeed activity={activity}/>
+        </div>
+        
+        <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>🔄 Value Pipeline</div>
+        <div style={{display:'flex',alignItems:'center',gap:3,flexWrap:'wrap',background:'#12121a',border:'1px solid #1e1e2e',borderRadius:8,padding:10,marginBottom:12}}>
+          {['Drop','Wire','Pitch','Spec','Task','Code','PR','Ship','Docs','Backup'].map((p,i)=><React.Fragment key={i}>
+            <span style={{color:'#22c55e',background:'#0f1f0f',padding:'3px 6px',borderRadius:4,fontSize:8,border:'1px solid #22c55e22'}}>{p}</span>
+            {i<9&&<span style={{color:'#222',fontSize:8}}>→</span>}
+          </React.Fragment>)}
+        </div>
+        
+        <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>⏱ DCS Tiers</div>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:6}}>
+          {[{m:'Kimi',t:'120s',n:18,c:'#22c55e'},{m:'Sonnet',t:'240s',n:5,c:'#3b82f6'},{m:'Opus',t:'420s',n:2,c:'#f59e0b'}].map((t,i)=>
+            <div key={i} style={{background:'#12121a',border:`1px solid ${t.c}22`,borderRadius:6,padding:8,textAlign:'center'}}>
+              <div style={{fontSize:12,fontWeight:700,color:t.c}}>{t.m}</div>
+              <div style={{fontSize:9,color:'#666'}}>{t.n} · {t.t}</div>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
     
     <Chat/>
