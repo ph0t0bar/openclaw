@@ -210,6 +210,7 @@
 | use-case-thread-linkedin.md | 8.5/10 | ✅ Ready as-is — authentic voice, strong hook, perfect concrete examples |
 | pitches.md (internal mirror) | 7/10 | ⚠️ Week 3+ content — good framework, needs Joey-specific story, cut the woo |
 | launch-day-linkedin-JOEY-VOICE.md | 9/10 | ✅ THIS IS THE ONE — authentic, raw, post and pin |
+| launch-day-linkedin-final.md | 9/10 | ✅ POLISHED & SHIP-READY — tightened opening, killer 2am hook, strong metrics |
 
 ---
 
