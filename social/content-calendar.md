@@ -249,6 +249,7 @@
 **Reviews Completed:**
 | Draft | Rating | Status |
 |-------|--------|--------|
+| car-you-built-linkedin-POLISHED.md | 8.5/10 | ✅ Ready — strong founder insight, add one more "driving" moment before the question |
 | launch-day-linkedin.md | 8.5/10 | ✅ Ready with minor polish |
 | quiet-work-linkedin.md | 6/10 | ⚠️ Move to post-launch folder |
 | use-case-thread-linkedin.md | 8.5/10 | ✅ Ready as-is — authentic voice, strong hook, perfect concrete examples |
