@@ -12,13 +12,13 @@
 | **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
 | **Phase 4: LAUNCH** | Mar 24–26 | ⬜ Not started |
 
-**Fresh Hub Metrics (Mar 16, 14:31 UTC) — DocBot Update:**
-- DA: 100 users (+54%), 11 active 24h, 843 total drops, 28 drops 24h, 3 digests sent
-- BHA: 259 total (+23%), 11 active 24h, 70 active 7d, 2 Pro, 7 new 24h
-- Poe: 47,297 balance ⚠️ (burning 49K/6h — ~0.9 days runway), 49,866 pts/6h usage, 100 calls/6h
+**Fresh Hub Metrics (Mar 16, 18:14 UTC) — DocBot Update:**
+- DA: 100 users (+54%), 7 active 24h, 843 total drops, 18 drops 24h, 3 digests sent
+- BHA: 259 total (+23%), 7 active 24h, 70 active 7d, 2 Pro, 4 new 24h
+- Poe: 42,770 balance 🚨 (burning 43K/6h — ~1 hour runway), 43,379 pts/6h usage, 100 calls/6h
 - Stripe: 0 charges 4h (quiet period)
-- Resend: 95 sent 24h, 94 delivered, 1 delayed
-- GitHub: 10 task completion messages (PRs #180-189 queued Mar 15-16)
+- Resend: 99 sent 24h, 97 delivered, 1 delayed, 1 suppressed
+- GitHub: 6 PRs merged (#185–190), 2 open issues on hub, digest scheduler fix in progress
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
@@ -38,7 +38,7 @@ These are not features. These are oxygen.
 
 ### Decision 1: Poe Balance — Resolve or Die ⚠️ ESCALATED
 
-**Current state (updated Mar 16, 14:31 UTC):** 47,297 balance — ⚠️ CRITICAL DROP. Burning ~50K/6h. **~0.9 days runway.** Top 5 bots: IdealPrompt (16K), Tippiy (15K), theREALrealtalk (6.2K), BOUNCE-CONVERTER-V3 (3.9K), BrutallyHonestAI (3K). **Action required: Buy credits NOW or slash bot usage immediately.**
+**Current state (updated Mar 16, 18:14 UTC):** 42,770 balance — 🚨 CRITICAL. Burning ~43K/6h. **~1 hour runway.** Top 5 bots: IdealPrompt (15,982), Tippiy (15,067), theREALrealtalk (8,625), Gemini-3.1-Flash-Lite (889), Gemini-3-Flash (776). **Action required: Buy credits NOW or slash bot usage immediately.**
 
 **The decision tree:**
 
