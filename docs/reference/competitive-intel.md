@@ -46,22 +46,36 @@ Source: Perplexity search March 16, 2026
 
 ---
 
-### Mar 16, 2026 — Mem AI 2.0 Deep Dive
+### Mar 16, 2026 — Competitive Update
 
-**"Parallel Mind" Positioning:** Mem 2.0 launching as workflow management assistant vs just note storage
+**Mem AI 2.0:**
+- **New Positioning:** "AI thought partner" - mature semantic knowledge management
+- **Pricing:** $8-12/month personal plans with free tier
+- **Key Features:** 
+  - Mem Chat: GPT-style chat over entire knowledge base
+  - Smart Tags & auto-organization now "reliable in 2026"
+  - Daily Digest + proactive "Heads Up" feature
+  - Meeting capture & transcription
+- **Claims:** 60% faster note finding, 20%+ productivity gains
+- **Target:** Consultants, researchers, writers who hate manual organization
+- **Gap:** Still manual note entry model
 
-**Core Features:**
-- Notes Researcher AI: Natural language search with source citations
-- Smart AI Writer: Style learning + existing note integration for drafts  
-- Auto-organizer: Groups similar content without manual tagging
-- Template system: Meeting notes, project briefs, recurring formats
-- Calendar integration: Centralizes knowledge across tools
+**Notion AI (Major 2026 Updates):**
+- **Custom Agents:** Autonomous agents run on schedules/triggers (March 2026)
+- **Mobile AI Agent:** Full feature parity on mobile (January 2026)  
+- **Image Generation:** Direct image creation/editing in pages (March 9, 2026)
+- **Multi-model Access:** Claude Sonnet 4.5, Opus 4.5, Gemini 3 Pro, ChatGPT 5.1 for $10/month
+- **Performance:** 27% faster on Windows, 11% faster on Mac
+- **Direction:** All-in-one workspace with AI automation
 
-**Performance Claims:**
-- 60% faster note discovery
-- Zero setup time (vs Notion's configuration overhead)
-- Learns continuously, gets smarter with use
+**Reflect:**
+- **Core:** AI-powered networked notes with GPT-4 + Whisper
+- **Features:** Voice transcription, backlinking, knowledge graph, semantic search
+- **Positioning:** Privacy-focused, minimalist, end-to-end encrypted
+- **Target:** Users wanting clean interface + AI enhancement without complexity
 
-**Strategic Insight:** Mem focusing on personal knowledge workers who want AI-first experience with minimal setup. Still manual note creation model.
-
-**DropAnywhere Advantage:** Multi-channel capture (email/SMS/voice/chat) + async processing vs manual entry. Our "no inbox" philosophy addresses friction they still have.
+**Strategic Implications:**
+- AI search & auto-organization are table stakes now
+- Autonomous agents becoming expected (Notion leading here)
+- Multi-channel ingestion still our unique advantage
+- Daily digest model vs real-time remains differentiator
