@@ -104,4 +104,29 @@ DocBot pattern: 1) Read source (Hub dashboard), 2) Compare to baseline (PRD Sect
 
 ---
 
+## 2026-03-16 — Digest Pipeline Stall Detection
+
+**What happened:**
+Hub alert monitor flagged 15 users with stalled digests (no digest in 36+ hours). Dashboard confirmed only 3 digests sent in 24h when ~85+ expected. Resend email delivery healthy (99% delivery rate), Hub responsive, last deploy successful (Mar 14). Root cause isolated to digest scheduler, not email infrastructure.
+
+**Why it happened:**
+- `DISABLE_CRONS=1` environment variable on Hub explicitly disables cron-based digest generation
+- Hub relies on external trigger (separate cron service) for digest scheduling
+- Alert monitors run on Hub but digests require external orchestration
+- Gap between monitoring infrastructure and execution infrastructure
+
+**How to prevent:**
+- Document cron architecture clearly: Hub has monitors, external service has schedulers
+- Add monitor that checks "last digest sent timestamp" across user base, not just error rates
+- Surface cron configuration status in dashboard (SHOW that crons are disabled)
+- Build redundancy: if external scheduler fails, Hub should self-heal or alert more visibly
+
+**How to replicate the fix:**
+1. Confirm `DISABLE_CRONS` env var status in Hub variables
+2. Check external cron service health (separate from Hub)
+3. Manual trigger: `POST /api/alerts/daily-summary` to verify pipeline works when kicked
+4. Long-term: migrate digest scheduling to Hub-side with fallback alerting
+
+---
+
 *End of log.*
