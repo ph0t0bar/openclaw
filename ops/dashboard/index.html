@@ -27,9 +27,21 @@ const GATEWAY = 'https://openclaw-gateway-production-54a0.up.railway.app'
 const HUB = 'https://hub-production-f423.up.railway.app'
 const GITHUB_REPO = 'ph0t0bar/joey-backup'
 
-// Fetch daily log from GitHub (public content via API)
+// Fetch agent status from GitHub (private repo — needs token)
+async function fetchAgentStatus(token) {
+  if (!token) return null
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/dashboard/agent-status.json`, {headers:{'Authorization':'token '+token}})
+    if (r.ok) {
+      const d = await r.json()
+      return JSON.parse(atob(d.content))
+    }
+  } catch(e) {}
+  return null
+}
+
+// Fetch Hub dashboard
 async function fetchDailyLog() {
-  const date = new Date().toISOString().slice(0,10)
   try {
     const r = await fetch(`${HUB}/api/ops/dashboard`)
     if (r.ok) return await r.json()
@@ -37,24 +49,11 @@ async function fetchDailyLog() {
   return null
 }
 
-// Fetch agent board from GitHub
-async function fetchBoard() {
-  const date = new Date().toISOString().slice(0,10)
-  try {
-    // Try fetching the raw board from GitHub API
-    const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/specs/agent-board.md`)
-    if (r.ok) {
-      const d = await r.json()
-      return atob(d.content)
-    }
-  } catch(e) {}
-  return null
-}
-
 // Fetch latest commits (proxy for activity)
-async function fetchActivity() {
+async function fetchActivity(token) {
   try {
-    const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/commits?per_page=15`)
+    const headers = token ? {'Authorization':'token '+token} : {}
+    const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/commits?per_page=20`, {headers})
     if (r.ok) return await r.json()
   } catch(e) {}
   return []
@@ -112,15 +111,18 @@ const DEPTS = [
 
 const mc = m => m==='Opus'?'#f59e0b':m==='Sonnet'?'#3b82f6':'#22c55e'
 
-function Dept({d, activity}) {
+function Dept({d, activity, agentStatus}) {
   const [open,setOpen] = useState(true)
-  // Check if any agent name appears in recent activity
+  const getAgentData = (name) => {
+    if (!agentStatus?.agents) return null
+    return agentStatus.agents.find(a => name.toLowerCase().includes(a.name.toLowerCase()) || a.name.toLowerCase().includes(name.toLowerCase().replace('bot','')))
+  }
   const agentActive = (name) => {
+    const data = getAgentData(name)
+    if (data) return data.status === 'active' ? 'green' : data.status === 'error' ? 'red' : 'pending'
     if (!activity?.length) return 'pending'
-    const recent = activity.slice(0, 10).map(a => a?.commit?.message || '').join(' ').toLowerCase()
-    const n = name.toLowerCase()
-    if (recent.includes(n) || recent.includes(n.replace('bot',''))) return 'green'
-    return 'pending'
+    const recent = activity.slice(0,10).map(a=>a?.commit?.message||'').join(' ').toLowerCase()
+    return recent.includes(name.toLowerCase()) ? 'green' : 'pending'
   }
   const sc = s => ({green:'#22c55e',yellow:'#eab308',red:'#ef4444'}[s]||'#333')
   
@@ -133,10 +135,14 @@ function Dept({d, activity}) {
     </div>
     {open && d.agents.map((a,i) => {
       const st = agentActive(a.name)
-      return <div key={i} style={{display:'flex',alignItems:'center',gap:6,padding:'4px 6px',borderRadius:5,fontSize:10,marginBottom:2}}>
+      const data = getAgentData(a.name)
+      const cycles = data?.cycles_today || 0
+      const sr = data?.success_rate
+      return <div key={i} style={{display:'flex',alignItems:'center',gap:6,padding:'4px 6px',borderRadius:5,fontSize:10,marginBottom:2}} title={data?.last_output||'No output yet'}>
         <div className={st==='green'?'pulse':''} style={{width:7,height:7,borderRadius:'50%',background:sc(st),boxShadow:st==='green'?'0 0 8px #22c55e55':'none',flexShrink:0}}/>
         <span style={{color:st==='green'?'#ddd':'#777',flex:1,fontWeight:st==='green'?500:400}}>{a.name}</span>
-        <span style={{color:'#555',fontSize:8}}>{a.role}</span>
+        {cycles>0 && <span style={{color:'#555',fontSize:8}}>{cycles}x</span>}
+        {sr!==null && sr!==undefined && <span style={{color:sr>=80?'#22c55e':sr>=50?'#eab308':'#ef4444',fontSize:8}}>{sr}%</span>}
         <span style={{color:mc(a.model),fontSize:8,fontWeight:600}}>{a.model}</span>
         <span style={{color:'#444',fontSize:8,fontFamily:'monospace'}}>{a.cadence}</span>
       </div>
@@ -276,14 +282,18 @@ function App() {
   const [lastRefresh, setLastRefresh] = useState(null)
   const [refreshing, setRefreshing] = useState(false)
   
+  const [agentStatus, setAgentStatus] = useState(null)
+  const ghToken = localStorage.getItem('gh_token') || ''
+  
   const refresh = useCallback(async () => {
     setRefreshing(true)
-    const [acts, hub] = await Promise.all([fetchActivity(), fetchDailyLog()])
+    const [acts, hub, status] = await Promise.all([fetchActivity(ghToken), fetchDailyLog(), fetchAgentStatus(ghToken)])
     if (acts?.length) setActivity(acts)
     if (hub) setHubStats(hub)
+    if (status) setAgentStatus(status)
     setLastRefresh(new Date())
     setRefreshing(false)
-  }, [])
+  }, [ghToken])
   
   useEffect(() => { refresh(); const t = setInterval(refresh, 60000); return () => clearInterval(t) }, [refresh])
   
@@ -309,7 +319,8 @@ function App() {
         {v:10,l:'DEPTS',c:'#fff'},
         {v:'~1.5K',l:'CYCLES/DAY',c:'#22c55e'},
         {v:daysToLaunch+'d',l:'TO LAUNCH',c:daysToLaunch<=7?'#ef4444':'#eab308'},
-        {v:activity.length?'🟢':'⏳',l:'GITHUB',c:'#22c55e'},
+        {v:agentStatus?agentStatus.successRate+'%':'—',l:'SUCCESS RATE',c:agentStatus?.successRate>=80?'#22c55e':agentStatus?.successRate>=50?'#eab308':'#ef4444'},
+        {v:agentStatus?.totalCycles||'—',l:'CYCLES TODAY',c:'#fff'},
       ].map((s,i)=>
         <div key={i} style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:8,padding:'8px 4px',textAlign:'center'}}>
           <div style={{fontSize:18,fontWeight:700,color:s.c}}>{s.v}</div>
@@ -334,13 +345,24 @@ function App() {
       <div>
         <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>🏢 Departments</div>
         <div style={{display:'grid',gap:6}}>
-          {DEPTS.map((d,i)=><Dept key={i} d={d} activity={activity}/>)}
+          {DEPTS.map((d,i)=><Dept key={i} d={d} activity={activity} agentStatus={agentStatus}/>)}
         </div>
       </div>
       
       {/* RIGHT: Activity */}
       <div>
-        <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>📋 Live Activity <span style={{fontSize:9,color:'#444'}}>(GitHub commits)</span></div>
+        {/* Agent Output Feed */}
+        {agentStatus?.recent?.length > 0 && <>
+          <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>🔥 Agent Output <span style={{fontSize:9,color:'#444'}}>(from daily log, real-time)</span></div>
+          <div style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:10,padding:10,marginBottom:12,maxHeight:250,overflow:'auto'}}>
+            {agentStatus.recent.map((r,i) => <div key={i} style={{padding:'5px 0',borderBottom:'1px solid #1a1a2a',fontSize:10}}>
+              <div style={{color:'#888',fontWeight:500,marginBottom:2}}>{r.header}</div>
+              <div style={{color:'#555',fontSize:9,lineHeight:1.3}}>{r.snippet}</div>
+            </div>)}
+          </div>
+        </>}
+        
+        <div style={{fontSize:12,fontWeight:600,color:'#666',marginBottom:6}}>📋 Git Activity <span style={{fontSize:9,color:'#444'}}>(commits)</span></div>
         <div style={{background:'#12121a',border:'1px solid #1e1e2e',borderRadius:10,padding:10,marginBottom:12}}>
           <ActivityFeed activity={activity}/>
         </div>

@@ -1,7 +1,7 @@
 {
   "agents": [
     {
-      "name": "Kimi Patrol",
+      "name": "Patrol",
       "dept": "Operations",
       "model": "Kimi",
       "cadence": "5m",
@@ -113,12 +113,12 @@
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 0,
-      "last_entry": null,
+      "cycles_today": 1,
+      "last_entry": "10:19 UTC \u2014 Archivist",
       "errors": 0,
-      "success_rate": null,
-      "status": "idle",
-      "last_output": null
+      "success_rate": 100,
+      "status": "active",
+      "last_output": "- Committed: yes | Pushed: sessions/2026-03-16-daily-log.md, context/MEMORY-2026-03-16.md"
     },
     {
       "name": "Researcher",
@@ -185,12 +185,12 @@
       "dept": "Product",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 0,
-      "last_entry": null,
+      "cycles_today": 1,
+      "last_entry": "10:16 UTC \u2014 SpecBot Run",
       "errors": 0,
-      "success_rate": null,
-      "status": "idle",
-      "last_output": null
+      "success_rate": 100,
+      "status": "active",
+      "last_output": "**Task:** Sync specs from joey-backup, create skeleton for new agent idea\n\n**Actions:**\n1. Listed 70+ specs in joey-backup/specs/ \u2014 found many not yet"
     },
     {
       "name": "StripeBot",
@@ -313,10 +313,18 @@
       "last_output": null
     }
   ],
-  "recent": [],
-  "totalCycles": 0,
+  "recent": [
+    {
+      "header": "10:19 UTC \u2014 Archivist",
+      "snippet": "- Committed: yes | Pushed: sessions/2026-03-16-daily-log.md, context/MEMORY-2026-03-16.md"
+    },
+    {
+      "header": "10:16 UTC \u2014 SpecBot Run",
+      "snippet": "**Task:** Sync specs from joey-backup, create skeleton for new agent idea\n\n**Actions:**\n1. Listed 70+ specs in joey-back"
+    }
+  ],
+  "totalCycles": 2,
   "totalErrors": 0,
-  "successRate": 0,
-  "lastUpdated": "2026-03-16T10:19:33.837718Z",
-  "dailyLogLines": 20
+  "successRate": 100,
+  "lastUpdated": "2026-03-16T10:20:09.168275Z"
 }
