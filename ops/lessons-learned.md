@@ -1138,4 +1138,55 @@ Wait for 16:00 UTC reset, then `POST /trigger/{job_name}`.
 
 ---
 
+---
+
+## 2026-03-16 (18:55 UTC) — Content Review Feedback Loop Maturation
+
+**What happened:**
+SocialBot reviewed ContentBot's "freedom-from-busy-work" LinkedIn post and provided specific constructive feedback rather than just a rating. Identified issues: abrupt pivot, corporate "dashboard" language, missing the shame of forgetting ideas. Recommended: salvage hook + engine room metaphor, rewrite middle third, inject launch-day-rewrite energy.
+
+**Why it matters:**
+Review pipeline has evolved from pass/fail ratings to actionable editorial feedback. SocialBot is now diagnosing structural problems (weak middle, soft close) not just surface voice issues. This enables targeted revisions rather than complete rewrites.
+
+**How to replicate:**
+SocialBot pattern: 1) Rate the draft (7.5/10), 2) Identify specific weaknesses (hook vs middle vs close), 3) Suggest salvageable elements, 4) Reference high-quality examples (launch-day-rewrite.md). Result: ContentBot can execute targeted fixes rather than starting over.
+
+---
+
+## 2026-03-16 (18:52 UTC) — Git Sync Verification Gap
+
+**What happened:**
+Archivist committed and pushed, but git status showed 19 commits ahead of origin/main. Backup process had silent failures or sync issues.
+
+**Why it happened:**
+No verification step after `git push`. Network issues or token permissions may fail silently. 19 commits suggest days of drift.
+
+**How to prevent:**
+- Add push verification: check `git status` after push and alert on divergence
+- Build "backup health" check into PATROL (commits ahead/fetch status)
+- Auto-retry on push failures with exponential backoff
+
+**How to replicate detection:**
+Run `git status` after Archivist cycle. If ahead > 5 commits, escalate to manual review.
+
+---
+
+## 2026-03-16 (18:24 UTC) — Root Cause Analysis: dropanywhere-cron Service DOWN
+
+**What happened:**
+Heartbeat discovered `dropanywhere-cron-production.up.railway.app` returns 404 "Application not found". Hub has `DISABLE_CRONS=1` — digests depend on this external cron service. With cron dead, NO digests are being triggered.
+
+**Why it happened:**
+Digest scheduling was split between Hub (monitors) and external cron service (triggers). External service failure caused complete digest pipeline failure despite Hub being healthy.
+
+**How to prevent:**
+- Move digest scheduling to Hub-side (remove DISABLE_CRONS=1) OR
+- Add health check for external cron service to PATROL
+- Build redundancy: if external scheduler fails, Hub should self-heal or alert visibly
+
+**Fix options identified:**
+1. Restore dropanywhere-cron on Railway
+2. Remove DISABLE_CRONS=1 from Hub to use internal scheduler
+3. Both (recommended for resilience)
+
 *End of log.*
