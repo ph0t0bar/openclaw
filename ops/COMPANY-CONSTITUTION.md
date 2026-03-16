@@ -3,53 +3,72 @@
 ## Mission
 Build and operate DropAnywhere: an AI-native productivity ecosystem including email-first capture, daily digests, BrutallyHonest.ai persona marketplace, and personal AI assistant infrastructure.
 
-## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-16 17:19 UTC)
+## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-16 19:45 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (31/35 total - 89% operational rate)
+### ✅ CURRENTLY ACTIVE AGENTS (25/40 total - 62% operational rate)
 
-**Core Operations (High Frequency):**
-- **KIMI PATROL** (Operations) — 5min — Kimi K2.5 — ✅ Running (last: 16:58, next: 17:20)
-- **DEEP RESEARCHER** (Intelligence) — 10min — Sonnet 4 — ✅ Running (last: 17:06, next: 17:16)
-- **OPUS STRATEGIST** (Meta) — 15min — Opus 4 — ✅ Running (last: 17:02, next: 17:17)
-- **SENTRY AI** (Security) — 15min — Sonnet 4 — ✅ Running (last: 17:02, next: 17:17)
-- **WIRE** (Intelligence) — 15min — Kimi K2.5 — ✅ Running (last: 17:03, next: 17:18)
-- **DASHBOARD MESSENGER** (Communications) — 2min — Kimi K2.5 — ✅ Running (last: 17:08, next: 17:18)
+**High Frequency Operations (2-10min cycles):**
+- **KIMI PATROL** (Operations) — 5min — Kimi K2.5 — ✅ Running
+- **DEEP RESEARCHER** (Intelligence) — 10min — Sonnet 4 — ✅ Running  
+- **DASHBOARD MESSENGER** (Communications) — 2min/10min — Kimi K2.5 — ✅ Running
 
-**Management & Operations (Medium Frequency):**
-- **CHIEF OF STAFF** (Executive) — 20min — Sonnet 4 — ✅ Running (last: 16:43, next: 17:23)
-- **META** (Meta) — 20min — Sonnet 4 — ✅ Running (last: 17:03, next: 17:23)
-- **DOCBOT** (Product) — 20min — Kimi K2.5 — ✅ Running (last: 16:55, next: 17:15)
-- **USERHEALTHBOT** (Customer Success) — 20min — Kimi K2.5 — ✅ Running (last: 17:05, next: 17:25)
-- **ARCHIVIST** (Meta) — 20min — Kimi K2.5 — ✅ Running (last: 16:43, next: 17:03)
-- **RAILWAYBOT** (Operations) — 20min — Kimi K2.5 — ✅ Running (last: 16:50, next: 17:10)
-- **CONTENTBOT** (Marketing) — 20min — Sonnet 4 — ✅ Running (last: 17:05, next: 17:25)
+**Medium Frequency Operations (15-20min cycles):**
+- **OPUS STRATEGIST** (Meta) — 15min — Opus 4 — ✅ Running
+- **SENTRY AI** (Security) — 15min — Sonnet 4 — ✅ Running
+- **WIRE** (Intelligence/News) — 15min — Kimi K2.5 — ✅ Running
+- **CHIEF OF STAFF** (Executive) — 20min — Sonnet 4 — ✅ Running
+- **META** (Meta/Performance) — 20min — Sonnet 4 — ✅ Running
+- **USERHEALTHBOT** (Customer Success) — 20min — Kimi K2.5 — ✅ Running
+- **ARCHIVIST** (Meta/Backup) — 20min — Kimi K2.5 — ✅ Running
+- **RAILWAYBOT** (Operations) — 20min — Kimi K2.5 — ✅ Running
+- **CONTENTBOT** (Marketing) — 20min — Sonnet 4 — ✅ Running
 
-**Specialized Departments (30min Cycles):**
-- **DC MANAGER** (Engineering) — 30min — Kimi K2.5 — ✅ Running (last: 16:50, next: 17:20)
-- **FRONTENDBOT** (Engineering) — 30min — Kimi K2.5 — ✅ Running (last: 17:01, next: 17:31)
-- **BHABOT** (Engineering) — 30min — Kimi K2.5 — ✅ Running (last: 17:01, next: 17:31)
-- **SPECBOT** (Product) — 30min — Kimi K2.5 — ✅ Running (last: 16:47, next: 17:17)
-- **POEBOT** (Revenue) — 30min — Kimi K2.5 — ✅ Running (last: 16:48, next: 17:18)
-- **STRIPEBOT** (Revenue) — 30min — Kimi K2.5 — ✅ Running (last: 16:50, next: 17:20)
-- **SOCIALBOT** (Marketing) — 30min — Kimi K2.5 — ✅ Running (last: 16:53, next: 17:23)
-- **SEOBOT** (Marketing) — 30min — Kimi K2.5 — ✅ Running (last: 16:52, next: 17:22)
-- **FOUNDERVOICE** (Communications) — 30min — Sonnet 4 — ✅ Running (last: 16:42, next: 17:12)
-- **CONTENTPITCH** (Intelligence) — 30min — Kimi K2.5 — ✅ Running (last: 16:52, next: 17:22)
-- **PATTERNBOT** (Intelligence) — 30min — Kimi K2.5 — ✅ Running (last: 16:54, next: 17:27)
-- **LEARNINGBOT** (Meta) — 30min — Kimi K2.5 — ✅ Running (last: 17:00, next: 17:30)
-- **ONBOARDBOT** (Customer Success) — 30min — Kimi K2.5 — ✅ Running (last: 16:50, next: 17:20)
+**Department Specialists (30min cycles):**
+- **DC MANAGER** (Engineering) — 30min — Kimi K2.5 — ✅ Running (errors but functional)
+- **FRONTENDBOT** (Engineering) — 30min — Kimi K2.5 — ✅ Running
+- **BHABOT** (Engineering) — 30min — Kimi K2.5 — ✅ Running
+- **STRIPEBOT** (Revenue) — 30min — Kimi K2.5 — ✅ Running
+- **POEBOT** (Revenue) — 30min — Kimi K2.5 — ✅ Running
+- **SOCIALBOT** (Marketing) — 30min — Kimi K2.5 — ✅ Running
+- **SEOBOT** (Marketing) — 30min — Kimi K2.5 — ✅ Running
+- **FOUNDERVOICE** (Communications) — 30min — Sonnet 4 — ✅ Running
+- **CONTENTPITCH** (Intelligence) — 30min — Kimi K2.5 — ✅ Running
+- **LEARNINGBOT** (Meta) — 30min — Kimi K2.5 — ✅ Running
+- **ONBOARDBOT** (Customer Success) — 30min — Kimi K2.5 — ✅ Running
 
-**Email & Notifications:**
-- **EMAIL DIGEST** (Communications) — 2h — Kimi K2.5 — ✅ Running (last: 16:40, next: 18:40)
+**Scheduled/Periodic Operations:**
+- **EMAIL DIGEST** (Communications) — 2h — Kimi K2.5 — ✅ Running
+- **GOVERNANCE** (Meta) — 30min — Sonnet 4 — ✅ Running (manual/scheduled)
 
-### 🔴 DISABLED AGENTS (4 total)
+**Daily Scheduled Maintenance:**
+- **METRICS SNAPSHOT** — 8,14,20,2 UTC — Kimi K2.5 — ✅ Running
+- **DAILY GITHUB SYNC** — 11:00 UTC — Kimi K2.5 — 🟡 WhatsApp delivery error
+- **DAILY METRICS REFRESH** — 14:00 UTC — Kimi K2.5 — ✅ Scheduled
 
-**Sonnet Deep Work** (Multi-department) — 10min — Sonnet 4 — 🔴 DISABLED (WhatsApp delivery errors)
-**Backlog Grinder series** (Product) — Various — Kimi/Sonnet — 🔴 ONE-TIME COMPLETED/FAILED
-**Weekly Opus Sweep** (Meta) — Weekly — Opus 4 — 🔴 DELIVERY ERROR (WhatsApp issue)
-**Weekly Full Refresh** (Meta) — Weekly — Kimi K2.5 — 🔴 DELIVERY ERROR (WhatsApp issue)
+### ⚠️ PROBLEMATIC AGENTS (2 total)
 
-**GOVERNANCE CORRECTION**: Previous constitution was severely outdated — claiming only 4 agents active when 30/31 are actually running successfully.
+**DOCBOT** (Product) — 20min — Kimi K2.5 — ⚠️ Timeout errors (2 consecutive)
+**PATTERNBOT** (Intelligence) — 30min — Kimi K2.5 — ⚠️ Timeout errors  
+**SPECBOT** (Product) — 30min — Kimi K2.5 — ⚠️ Timeout errors
+
+### 🔴 DISABLED/FAILED AGENTS (13 total)
+
+**Core Infrastructure Issues:**
+- **SONNET DEEP WORK** (Multi-department) — 10min — Sonnet 4 — 🔴 DISABLED (WhatsApp delivery errors)
+- **WEEKLY OPUS SWEEP** (Meta) — Weekly — Opus 4 — 🔴 WhatsApp delivery error
+- **WEEKLY FULL REFRESH** (Meta) — Weekly — Kimi K2.5 — 🔴 WhatsApp delivery error
+
+**One-Time Backlog Grinders (Completed/Failed):**
+- **SOFT LAUNCH USER LIST** — 🔴 WhatsApp delivery error (one-time)
+- **BUILDER PACK SPEC** — 🔴 Timeout/delivery error (one-time)
+- **LINKEDIN POST + CAROUSEL** — 🔴 WhatsApp delivery error (one-time)  
+- **LAUNCH CHECKLIST AUDIT** — 🔴 Timeout error (one-time)
+- **REEL POLISH** — 🔴 WhatsApp delivery error (one-time)
+
+**Weekly Scheduled (Not Yet Due):**
+- **DROP MINING** — Next: Wednesday 22:00 UTC — Scheduled
+
+**GOVERNANCE FINDINGS**: System recovering from WhatsApp delivery crisis. 25/40 agents functional (62%). Core operations stable, but timeout errors affecting some agents. Weekly scheduled jobs blocked by delivery errors.
 
 **Operations Dept (4/4 active):**
 - ✅ Patrol (5min Kimi) — 3 cycles today (errors but running)
