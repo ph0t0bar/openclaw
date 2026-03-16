@@ -21,10 +21,10 @@ How I actually use this thing:
 🛁 **Shower thought about the business**  
 → Connected to 5 other drops about the same problem I didn't know I was having
 
-📧 **Meeting notes**  
+📧 **Meeting scribbles**  
 → Action items pulled out, deadlines added to my calendar
 
-🌙 **2am idea**  
+🌙 **2am breakthrough**  
 → Captured, processed, waiting for me when I'm actually awake
 
 **The magic?** I never organize anything. Ever.
