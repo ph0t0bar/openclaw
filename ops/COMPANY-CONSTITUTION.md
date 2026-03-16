@@ -3,73 +3,82 @@
 ## Mission
 Build and operate DropAnywhere: an AI-native productivity ecosystem including email-first capture, daily digests, BrutallyHonest.ai persona marketplace, and personal AI assistant infrastructure.
 
-## Active Agent Roster (as of 2026-03-16 13:34 UTC)
+## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-16 14:14 UTC)
 
-### ✅ ACTUALLY ACTIVE AGENTS (Ran Today)
+### ✅ ACTUALLY ACTIVE AGENTS (Ran Today - 4 total)
 
 **GOVERNANCE** (Constitutional Keeper) — 30min — Sonnet 4
-- Status: ✅ Active (this session, updating constitution)
+- Status: ✅ Active (this session 14:14, correcting constitution)
 - Responsibilities: Constitution updates, roster maintenance, team governance
+- Last: 13:34 UTC — constitutional reality check completed
 
-**KIMI PATROL** (Fast Ops) — 5min — Kimi K2.5
-- Status: ✅ Active (last run 13:34, hub health checks)
-- Responsibilities: Hub health, dashboard monitoring, quick checks
-
-**DASHBOARD MESSENGER** (Real-time Comms) — 1min — Kimi K2.5
-- Status: ✅ Active (running every minute)
-- Responsibilities: Dashboard inbox monitoring and responses
-
-**CHIEF OF STAFF** (Gap Finder) — 20min — Opus 4
+**CHIEF OF STAFF** (Gap Finder) — 20min — Opus 4  
 - Status: ✅ Active (last run 13:29, found Poe crisis + family issues)
 - Responsibilities: Finding missing work, backup audits, commitment tracking
+- Last output: CRITICAL Poe balance at 47,530 (<6h to service interruption)
 
 **DEEP RESEARCHER** (Intelligence) — 10min — Sonnet 4
-- Status: ✅ Active (last run 13:27, competitive research on Mem.ai)
+- Status: ✅ Active (last run 13:27, competitive research on Mem.ai)  
 - Responsibilities: Competitive intel and goldmine mining
+- Last output: Mem.ai claims 60% faster note retrieval through semantic search
 
 **SPECBOT** (Product) — 30min — Kimi K2.5
 - Status: ✅ Active (last run 13:30, synced 4 specs from joey-backup)
-- Responsibilities: Requirements engineering
+- Responsibilities: Requirements engineering  
+- Last output: Synced LOOPSLAP-MASTER-PRD, SOFT-LAUNCH-LIST, PLATFORM-DEPARTMENT
 
-**UserHealthBot** (Customer Success) — 20min — Kimi K2.5
+**UserHealthBot** (Customer Success) — 20min — Kimi K2.5  
 - Status: ✅ Active (last run 13:32, ESCALATED FAMILY CRISIS)
 - Responsibilities: User retention tracking
+- Last output: Lisa 12 days inactive, Danny 0 drops ever
 
-**WIRE** (News Intelligence) — 15min — Kimi K2.5
-- Status: ✅ Active (last run ~13:20)
-- Responsibilities: News/feed ingestion
+### 🔴 ALL OTHER AGENTS IDLE (21 total - 0 cycles today)
 
-### 🟡 IDLE AGENTS (Scheduled But Not Running Today)
+**CRITICAL FINDING**: Constitution was claiming 23+ agents "stable/active" but agent-status.json shows only 4 ran today.
 
-*Note: These agents show as "enabled" in cron but have 0 cycles today per agent-status.json*
+**Operations Dept (0/5 active):**
+- Patrol (5min Kimi) — 0 cycles  
+- Sentry (15min Sonnet) — 0 cycles
+- RailwayBot (20min Kimi) — 0 cycles  
+- Archivist (20min Kimi) — 0 cycles
+- DC Manager (30min Kimi) — 0 cycles
 
-**ARCHIVIST** (Operations) — 20min — Kimi K2.5
-- Status: 🟡 Scheduled but idle (0 cycles today)
-- Responsibilities: Essential backup function and git commits
+**Intelligence Dept (1/4 active):**  
+- Wire (15min Kimi) — 0 cycles
+- ContentPitch (30min Kimi) — 0 cycles
+- PatternBot (30min Kimi) — 0 cycles  
+- ✅ Researcher (10min Sonnet) — ACTIVE
 
-**PatternBot, LearningBot, OnboardBot, FrontEndBot, BHABot, SocialBot, RailwayBot, DocBot, SEOBot, ContentBot, FounderVoiceBot, StripeBot, PoeBot, ContentPitchBot**
-- Status: 🟡 All show enabled in cron but 0 cycles today
-- Issue: Cron/agent execution gap needs investigation
+**Engineering Dept (0/3 active):**
+- FrontEndBot (30min Kimi) — 0 cycles
+- BHABot (30min Kimi) — 0 cycles
+- DocBot (20min Kimi) — 0 cycles
 
-### 🟡 PARTIALLY FUNCTIONAL (Delivery Issues)
+**Meta Dept (1/4 active):**
+- Opus (15min Opus) — 0 cycles  
+- Meta (20min Sonnet) — 0 cycles
+- LearningBot (30min Kimi) — 0 cycles
+- ✅ Governance (30min Sonnet) — ACTIVE
 
-**DROPPER-CODE MANAGER** (Engineering Ops) — 30min — Kimi K2.5
-- Status: 🟡 5 consecutive WhatsApp errors (but logic still runs)
-- Issue: WhatsApp delivery failing but task processing works
+**Revenue Dept (0/2 active):**  
+- StripeBot (30min Kimi) — 0 cycles
+- PoeBot (30min Kimi) — 0 cycles
 
-### 🔴 FAILING AGENTS (5+ Consecutive Errors)
+**Marketing Dept (0/3 active):**
+- ContentBot (20min Sonnet) — 0 cycles  
+- SocialBot (30min Kimi) — 0 cycles
+- SEOBot (30min Kimi) — 0 cycles
 
-**META** (Org Effectiveness) — 20min — Sonnet 4
-- Status: 🔴 5 consecutive errors (edit failures)
-- Issue: Cannot write to daily log files
+**Customer Success (1/2 active):**
+- OnboardBot (30min Kimi) — 0 cycles
+- ✅ UserHealth (20min Kimi) — ACTIVE  
 
-**WIRE** (Intelligence) — 15min — Kimi K2.5
-- Status: 🔴 5 consecutive WhatsApp errors
-- Issue: News ingestion failing delivery
+**Communications (0/1 active):**
+- FounderVoice (30min Sonnet) — 0 cycles
 
-**OPUS STRATEGIST** (Executive) — 15min — Opus 4
-- Status: 🔴 6 consecutive edit failures
-- Issue: Strategic planning blocked by file write errors
+**Product (1/2 active):**  
+- ✅ SpecBot (30min Kimi) — ACTIVE
+- Executive (1/1 active): ✅ Chief of Staff (20min Opus) — ACTIVE
 
 ### 📅 SCHEDULED MAINTENANCE (Functional)
 
@@ -85,19 +94,19 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Sonnet Deep Work** (disabled)
 - **Backlog Grinder series** (one-time jobs, completed/failed)
 
-## System Recovery Status (March 16 13:34 UTC Update)
+## System Recovery Status (March 16 14:14 UTC - GOVERNANCE CORRECTED)
 
-### 🔴 CRITICAL STATUS: Multiple Urgent Issues Active
-**Current Status**: Most agents are IDLE despite showing as "stable" in cron system
+### 🔴 CRITICAL STATUS: Agent System Mostly Offline
+**Actual Status**: Only 4/25 agents actually running (16% operational rate)
+**Root Cause**: Massive cron/execution disconnect - agents show "enabled" but aren't executing  
 **Key Crisis**: 🚨 Poe balance at 47.5K (<6h to service interruption)
-**Key Issues**: Missing critical path doc, family members at risk, low agent activity
-**Today's Activity**: Only ~8 agents actually ran (vs 25+ scheduled)
+**Today's Reality**: 4 agents ran, 21 idle despite cron schedule
 
 **CRITICAL ISSUES** (IMMEDIATE ACTION REQUIRED):
+🔴 **Agent Execution Crisis** — 84% of agent workforce offline despite cron claiming "enabled"  
 🔴 **Poe Service Crisis** — 47.5K balance, burning 50K/6h, <6 hours to interruption
-🔴 **Family Escalation** — Lisa & family members 9-12 days inactive, Danny has 0 drops ever
-🔴 **Missing launch critical path** — `/root/.openclaw/workspace/docs/LAUNCH-CRITICAL-PATH-2026-03-14.md` not found
-🔴 **Agent Reality Gap** — Constitution claims agents "stable" but most are idle/not running
+🔴 **Family Escalation** — Lisa 12 days inactive, Danny 0 drops ever (UserHealthBot escalated)
+🔴 **Constitutional Accuracy** — Previous constitution claimed stability while system was failing
 
 **Functional Systems**:
 ✅ Hub dashboard operational (100 users, 32 drops today)
@@ -144,12 +153,13 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **DropAnywhere Frontend**: https://drop-anywhere.com
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
-## Success Metrics (March 16 Recovery Update)
-- **Agent Completion Rate**: Target >90% (Current: ~85% - major recovery from 20%)
+## Success Metrics (March 16 14:14 UTC - REALITY CORRECTED)  
+- **Agent Operational Rate**: Target >90% (🔴 Current: 16% - only 4/25 agents running)
+- **Agent Completion Rate**: Target >90% (Current: 83% among the few that run)
 - **Cross-Agent Collaboration**: Target 50+ board votes/day (Need to check agent-board.md)
-- **Backup Integrity**: Target <2h GitHub lag (✅ ARCHIVIST RESTORED - active commits)
-- **Service Uptime**: Target 99.9% (✅ Meeting target for all core services)
-- **WhatsApp Delivery**: Target 100% (Current: ~90% - most agents fixed)
+- **Backup Integrity**: Target <2h GitHub lag (🔴 ARCHIVIST OFFLINE - 0 cycles today)
+- **Service Uptime**: Target 99.9% (✅ Meeting target for core infrastructure)  
+- **WhatsApp Delivery**: Target 100% (🔴 Multiple delivery failures across agents)
 
 ## Performance by Department
 - **Revenue**: ✅ 100% functional (StripeBot, PoeBot stable)
