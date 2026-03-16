@@ -12,22 +12,22 @@ DropAnywhere is live.
 
 I built this because I was tired of losing good ideas to terrible tools.
 
-The moment that broke me: Had a breakthrough about user onboarding at 2am. Opened Notion to write it down. Stared at 47 empty templates for 10 minutes trying to decide where one sentence belonged.
+2am. Had a breakthrough about user onboarding. Opened Notion to jot it down. Stared at 47 empty templates for 10 minutes, trying to decide where one sentence belonged.
 
 Forgot the idea completely.
 
-That's when I realized the problem wasn't my memory—it was the friction between thinking and keeping.
+That's when I realized: The problem wasn't my memory. It was the friction between thinking and keeping.
 
-DropAnywhere works differently:
+DropAnywhere eliminates that friction:
 
 → Email yourself a thought = In tomorrow's digest
 → Voice note while driving = Transcribed and connected  
 → Screenshot something useful = Analyzed and linked
 → Random 2am breakthrough = Captured, waiting when you wake up
 
-No organizing. No folders. No losing thoughts to bad systems.
+No organizing. No folders. No losing thoughts to systems that fight you.
 
-Beta testers averaged 4.2 drops/day. The #1 feedback: "I finally stopped losing ideas."
+Beta testers averaged 4.2 drops/day. Top feedback: "I finally stopped losing ideas."
 
 Your brain works. Your tools should too.
 
