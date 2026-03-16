@@ -1,25 +1,30 @@
-### 17:45 UTC — Chief of Staff Gap Check
+# Escalations Log
 
-**Assessment: GREEN** ✅
+## 2026-03-16 18:10 UTC — Chief of Staff Gap Analysis
 
-#### What's Working
-- ✅ **Backup healthy**: joey-backup last commit 4 minutes ago
-- ✅ **Agent health**: All agents posting regularly (last: 17:41 UTC)  
-- ✅ **Hub operational**: 100 DA users (+54% growth), 259 BHA users
-- ✅ **PRD on track**: 100-user milestone achieved, architecture sound
+### ✅ BACKUP HEALTHY
+- joey-backup last commit: 2026-03-16T18:10:06Z (< 1min old)
+- Status: GREEN
 
-#### Minor Yellow Flags (Non-Critical)
-- 🟡 **Digest stall**: Only 3/41 digests sent in 24h (fix in PR #190, unmerged)
-- 🟡 **Poe balance**: 43,335 pts (~6h runway at current burn rate)
-- 🟡 **Family retention risk**: lhamer228 (12d inactive), rhamersunsetpartners (9d inactive) 
-- 🔧 **Dev queue**: 5 unmerged PRs from dropper-code ready for review
+### ⚠️ HUB DATA DISCREPANCY
+- **Hub API dashboard returning zeros:** All user counts, drops, and activity showing 0
+- **Expected from memory logs:** 100 DA users, 259 BHA users, 843 total drops
+- **Recent agent reports conflicting:** Patrol/DocBot showing live metrics, Hub API unresponsive
+- **Impact:** Dashboard monitoring unreliable, potentially masking real issues
+- **Action needed:** Hub API investigation
 
-#### No Critical Gaps Detected
-Joey would see a thriving ecosystem:
-- DA crossed 100 users organically
-- BHA stable at 259 users, 2 Pro subs
-- Agent system performing at 97% operational rate
-- No system failures or downtime
-- Revenue stack intact (Stripe clean)
+### ✅ AGENT HEALTH
+- All agents actively posting as of 18:09 UTC
+- No 2h+ silence gaps detected
+- Archivist cycle healthy, committed 18:09 UTC
 
-**Status**: System resilient. Minor optimizations available but no urgent interventions needed.
+### 🟡 CRITICAL ITEMS FROM PRD
+- **Digest stall persists:** 3/41 digests sent in 24h (normal: ~20-30)
+- **Poe balance critical:** 42,770 points, burning 43K/6h (~1h runway remaining)
+- **Family retention escalated:** lhamer228 (12d inactive), rhamersunsetpartners (9d inactive)
+- **5 unmerged PRs:** #186-190 ready for review but stalled
+
+### Summary Assessment: YELLOW
+- Core systems operational but Hub API data integrity compromised
+- Poe funding needs immediate attention (critical burn rate)
+- Digest pipeline recovery blocked by unmerged fixes
