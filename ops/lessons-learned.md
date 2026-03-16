@@ -739,4 +739,169 @@ Wasted API calls, duplicate memory log entries, harder signal/noise ratio.
 
 ---
 
+---
+
+## 2026-03-16 (17:46 UTC) — LearningBot Batch: Post-Heartbeat Lessons
+
+### Lesson 9: Hub Redeploy Interrupts Digest Scheduler
+**What happened:**
+Hub redeployed at 17:17 UTC, interrupting the digest scheduler mid-cycle. Alert fired for 15 users with stalled digests (no digest in 36+ hours). Dashboard showed only 3 digests sent in 24h when ~85+ expected.
+
+**Why it happened:**
+- Hub's digest scheduler runs in-memory; redeploy kills the process
+- No graceful shutdown or state persistence for scheduler
+- External cron trigger depends on Hub being continuously up
+- `DISABLE_CRONS=1` env var means Hub relies entirely on external triggers
+
+**How to prevent:**
+- Move digest scheduling to stateful cron service (not Hub in-memory)
+- Add pre-deploy hook to pause scheduler gracefully
+- Build scheduler recovery on Hub startup (check missed windows, backfill)
+- Document: Hub redeploy = digest delay (set expectations)
+
+**How to replicate the fix:**
+Hub redeployed at 17:17 UTC. Monitoring for auto-recovery on next scheduler tick. If no recovery in 30min, manual trigger via `POST /api/alerts/daily-summary`.
+
+---
+
+### Lesson 10: Claude Code Quota as Predictable Failure Mode (Confirmed Pattern)
+**What happened:**
+Task `task_1773674991_519` failed with "Claude Code out of extra usage, resets 4pm UTC." Same error pattern from earlier cycle — Dropper-Code doesn't respect quota limits.
+
+**Why it keeps happening:**
+- Dropper-Code spawns tasks without checking `X-RateLimit-Remaining`
+- Burst pattern: multiple parallel tasks exhaust quota before reset
+- No backoff/retry logic with quota awareness
+
+**How to prevent:**
+- Add quota check as first step in Dropper-Code task template
+- Schedule compute-heavy tasks to start just after 16:00 UTC reset
+- Implement deferred task queue: if quota < 20%, queue for post-reset
+
+**How to replicate:**
+Manual recovery: wait for 16:00 UTC reset, then `POST /trigger/{job_name}`.
+
+---
+
+### Lesson 11: API Credit Exhaustion Cascading Impact
+**What happened:**
+SEOBot and Wire both failed with "credits exhausted" errors (OpenRouter 402, Perplexity credits exhausted). Competitive intelligence pipeline temporarily blind.
+
+**Why it happened:**
+- Multiple agents share same API credits without coordination
+- No "budget manager" to prioritize critical vs. nice-to-have research
+- No graceful degradation (fail completely rather than reduce scope)
+
+**How to prevent:**
+- Create shared budget tracker for paid APIs (OpenRouter, Perplexity)
+- Prioritize research tasks: SEO/indexing critical; broad trend research optional
+- Build fallback mode: if credits low, use cached data or skip non-critical checks
+- Set up usage alerts at 50%, 75%, 90% thresholds
+
+**How to replicate recovery:**
+Top up OpenRouter credits. Review agent API usage patterns to identify heavy consumers.
+
+---
+
+### Lesson 12: Agent Pause Consensus Execution
+**What happened:**
+Opus and Meta agents converged on "pause non-essential agents" directive. Clear consensus to execute core 5 pause + message bottle protocol. System self-regulating resource usage.
+
+**Why it worked:**
+- Governance agent (Meta) identified redundancy
+- Strategic agent (Opus) validated with votes
+- Clear decision criteria: cost vs. value, timeout risk, redundancy
+- No bureaucratic delay — agents self-orchestrated
+
+**How to replicate:**
+The pattern: Detection (Meta) → Validation (Opus vote) → Execution (Chief of Staff coordination). Governance working as designed.
+
+---
+
+### Lesson 13: Family Retention Escalation Persistence
+**What happened:**
+UserHealth escalated family at-risk users 3 times (17:12, 17:36, 16:48 UTC): lhamer228 (12d inactive, premium), rhamersunsetpartners (9d inactive). Escalation reached Claw but no resolution path exists.
+
+**Why it's stuck:**
+- Identification works (UserHealth detects)
+- Escalation works (flagged to Claw)
+- No intervention workflow (what happens after escalation?)
+- No VIP user treatment in product (family = regular user in system)
+
+**How to prevent future escalations to nowhere:**
+- Build "personal touch" workflow: family inactive → WhatsApp Joey → suggested message
+- Create VIP segmentation with custom thresholds (3d vs 7d inactivity)
+- Auto-pause digests for at-risk to reduce noise, not increase it
+- Track escalation to resolution time (currently: infinite)
+
+---
+
+### Lesson 14: Content Pipeline Maturation — 9/10 Launch Posts Ready
+**What happened:**
+SocialBot confirmed 9/9 drafted posts ready for launch week (Mar 24-30). FounderVoiceBot validated authentic Joey voice. Content review pipeline (Generate → Voice → Strategic) now operating at scale.
+
+**Why it succeeded:**
+- Narrow scope per agent (ContentBot = polish, FounderVoice = voice, SocialBot = strategy)
+- Clear output format (ratings, specific feedback, action tags)
+- Non-destructive workflow (reviews appended, originals preserved)
+- Voice fingerprint established and referenced
+
+**Key metric:**
+9/10 posts rated 8.5+/10 and marked launch-ready. Only FAQ thread outstanding.
+
+**How to replicate:**
+The three-gate pattern with rating thresholds: < 7/10 = rework, 7-8 = polish, 8.5+ = ready.
+
+---
+
+### Lesson 15: SpecBot Cross-Repo Sync Success
+**What happened:**
+SpecBot synced specs between local `docs/specs/` and `joey-backup/specs/`:
+- Pulled SPEC-Weekly-Catch-Progressive-Disclosure.md (638 lines, was missing locally)
+- Pushed SPEC-VAULT-Archaeologist.md (184 lines, was local-only)
+- Found 29 remote files not yet local; 1 local-only now synced
+
+**Why it worked:**
+- Clear bidirectional sync logic (pull missing, push orphans)
+- Git-based consistency (commits after sync)
+- Specs as versioned artifacts (not scattered notes)
+
+**Gap identified:**
+29 specs still in joey-backup not local. Full reconciliation needed.
+
+---
+
+### Lesson 16: Digest Stall Fix — Deployment Blocked on HITL
+**What happened:**
+PR #190 contains digest stall fix. Code written, tested, merged — but Hub redeploy at 17:17 UTC suggests fix may not be deployed. Digest stall persists (3/41 in 24h).
+
+**Why it's stuck:**
+- Dropper-Code writes PRs but Joey must merge for Railway deploy
+- HITL policy blocks autonomous deployment of customer-facing fixes
+- Gap between "code ready" and "fix live"
+
+**How to prevent:**
+- Fast-track approval for bug fixes (vs. feature PRs)
+- Auto-deploy hotfixes to staging, manual promote to prod
+- Alert: "PR fixes active incident → review within 1h"
+
+**Action needed:**
+Joey to verify PR #190 is merged AND deployed. If merged, check Railway deploy status. If not merged, review and merge.
+
+---
+
+### Lesson 17: Competitive Intel Validates Product Direction
+**What happened:**
+Researcher and Wire independently confirmed AI Productivity Paradox: 89% execs claim AI boosts productivity, but net gain is only 16min/week after validation time. DropAnywhere's digest model sidesteps this.
+
+**Why it matters:**
+- Market validation of the problem DropAnywhere solves
+- Positioning angle: "AI that doesn't waste your time validating AI"
+- Content goldmine for launch week (Day 3 or 4 post)
+
+**How to leverage:**
+Create "The AI Productivity Paradox" LinkedIn post citing ActivTrak 2026 data. Position DropAnywhere as the antidote.
+
+---
+
 *End of log.*

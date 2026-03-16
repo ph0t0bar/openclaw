@@ -247,9 +247,10 @@
 | launch-day-linkedin-final.md | 9/10 | ✅ POLISHED & SHIP-READY — tightened opening, killer 2am hook, strong metrics |
 | comparison-post-linkedin.md | New | ✅ Written — Day 4 morning, comparison vs Notion/Obsidian/Apple Notes |
 | founder-story-linkedin.md | New | ✅ Written — Saturday March 28, origin story with shower-idea hook |
+| launch-day-linkedin-final-REWRITE.md | 9/10 | ✅ **BEST VERSION** — Joey's authentic voice, punchy closer "Your tools just suck", pin on launch day |
 
 ---
 
 **Coverage Status:** 8 days of launch week = 9 posts drafted/ready. Only FAQ thread still outstanding.
 
-**Last updated:** March 16, 2026 by SocialBot (16:38 UTC)
+**Last updated:** March 16, 2026 by SocialBot (17:45 UTC)
