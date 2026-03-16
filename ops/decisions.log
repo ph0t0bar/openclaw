@@ -1,20 +1,10 @@
-# DecisionBot Log
-# Tracks CEO reply processing and task approvals
+### 21:57 UTC — DecisionBot Run
+- **Status:** No actions required
+- **Email drops found:** 0 (last 2h)
+- **Pending tasks:** 0 awaiting approval
+- **Recent activity:** 22 drops today, 7 active users in 24h
 
-## 2026-03-16 21:46 UTC (Run)
-**Status:** No action required  
-**Email Drops Checked:** 0 new in last 2 hours  
-**Pending Tasks:** 0 awaiting approval  
-**Actions Taken:** None  
-
----
-
-## Log Format
-Each entry tracks:
-- Timestamp (UTC)
-- Pending tasks found and processed
-- Approval/rejection patterns detected
-- Actions executed via Hub API
-- Creative feedback routed
-- Strategic questions logged
-
+**Notes:**
+- Digest pipeline stable (3 digests sent in 24h — waitlist phase, Joey-only delivery)
+- No CEO replies requiring action in this window
+- 81 total tasks tracked, most completed via Dropper-Code
