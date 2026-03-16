@@ -188,11 +188,25 @@
 ## ContentBot Queue
 
 **Drafts needed:**
-- [ ] Launch day announcement (high priority)
+- [x] Launch day announcement (high priority) — ✅ Reviewed, 8.5/10, minor polish needed
 - [ ] Use case carousel post
 - [ ] Comparison post (DropAnywhere vs. Notion/Obsidian)
 - [ ] Founder story post
 - [ ] FAQ thread
+- [ ] "Quiet work" philosophical post — ⚠️ REVIEWED: Move to Week 3+ (misaligned for launch week)
+
+**Post-Launch Content (Week 3+):**
+- [ ] The Quiet Work — philosophical founder reflection (currently in review)
+- [ ] One-month retrospective
+- [ ] User story collection
+
+---
+
+**Reviews Completed:**
+| Draft | Rating | Status |
+|-------|--------|--------|
+| launch-day-linkedin.md | 8.5/10 | ✅ Ready with minor polish |
+| quiet-work-linkedin.md | 6/10 | ⚠️ Move to post-launch folder |
 
 ---
 
