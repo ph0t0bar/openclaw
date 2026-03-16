@@ -1,33 +1,32 @@
-# Escalations — March 16, 2026 (6:46 AM CT)
+# Escalations - Chief of Staff Gap Finder
+*Last check: 2026-03-16 12:12 UTC*
 
-## 🟢 BACKUP: Current (18 min ago)
-- Last backup: 2026-03-16T11:28:27Z
-- Status: Within 2h window
+## 🟢 BACKUP: OK
+- Last backup: 18 minutes ago (2026-03-16T11:54:35Z)
+- Status: HEALTHY
 
-## 🟡 AGENT HEALTH: Limited Activity  
-- Only 3 agents have posted today:
-  - ✅ FounderVoiceBot (11:42 UTC)
-  - ✅ Patrol (11:44 UTC)  
-  - ✅ DC Manager (11:44 UTC)
-  - ✅ WIRE (11:45 UTC)
-- Missing activity from: Weekly Full Refresh, Drop Mining, other scheduled agents
+## 🟡 AGENT HEALTH: MINIMAL ACTIVITY
+- Only 1 agent check today (Sentry at 12:12 UTC)
+- Missing expected agents in last 2h:
+  - Droit (daily metrics refresh - should run at 14:00 UTC daily)
+  - Hydration checks
+  - Other scheduled agents
 
-## ❌ LAUNCH DOC: Not Found
+## 🔴 LAUNCH PATH: MISSING
 - `/root/.openclaw/workspace/docs/LAUNCH-CRITICAL-PATH-2026-03-14.md` does not exist
-- No launch-related docs found in docs/ directory
-- **GAP:** Critical launch tracking document missing
+- Cannot verify launch readiness or overdue items
 
-## 🟡 HUB API: Access Issue  
-- Dashboard check failed with "API key required" despite correct key extraction
-- May indicate API key rotation or authentication change
-- Last known status from Patrol (11:44 UTC): "12 active users, 33 drops/24h"
+## 🟢 HUB DASHBOARD: OPERATIONAL
+- Status: OK
+- DropAnywhere: 100 users, 33 drops in last 24h, 3 digests sent
+- BrutallyHonest: 259 users, 12 active in 24h, 2 pro users
+- Poe balance: 73,132 (healthy)
+- Resend: 99% delivery rate (1 delayed of 100)
+- Dropper-Code: Active - 10 PRs created in last 24h (PR #177-187)
+- GitHub CI: openclaw=cancelled, others=unknown
+- Railway: All deployments successful
 
-## Key Gaps If Joey Looked Right Now:
-1. **Missing launch tracking document** — No visibility into critical path items
-2. **Limited agent activity** — Only 4 agents active today, others may be stalled
-3. **Hub API authentication issue** — Can't verify current system health directly
-
-## Recommended Actions:
-1. Check if launch doc was moved/renamed or needs creation
-2. Verify cron jobs are running as expected
-3. Investigate Hub API key authentication issue
+## ACTION ITEMS
+1. **Missing launch path doc** - Critical for launch readiness tracking
+2. **Agent activity low** - Only 1 of expected multiple daily agents has run
+3. **GitHub CI status unknown** - Most repos showing "unknown" CI status
