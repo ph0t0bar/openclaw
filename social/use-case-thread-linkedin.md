@@ -10,26 +10,28 @@
 
 ## The Post
 
-How I actually use this thing:
+Here's how I actually use this thing:
 
-🚗 **Voice note while driving:** "That podcast idea about AI replacing meetings"  
-→ Tomorrow's digest has a full outline + 3 similar ideas I'd completely forgotten
+Voice note while driving: "That podcast idea about AI replacing meetings"  
+Next morning: full outline + 3 similar ideas I'd completely forgotten I had.
 
-📸 **Screenshot of a random article**  
-→ Automatically summarized with the key points that actually matter
+Screenshot of some random article.  
+Gets summarized automatically. Just the parts that matter.
 
-🛁 **Shower thought about the business**  
-→ Connected to 5 other drops about the same problem I didn't know I was having
+Shower thought about the business.  
+Connects to 5 other drops about the same problem I didn't know I was tracking.
 
-📧 **Meeting scribbles**  
-→ Action items pulled out, deadlines added to my calendar
+Meeting scribbles on a napkin.  
+Action items get pulled out. Deadlines show up in my calendar.
 
-🌙 **2am breakthrough**  
-→ Captured, processed, waiting for me when I'm actually awake
+2am breakthrough that would normally disappear.  
+Captured. Processed. Waiting for me when I'm actually awake.
 
-**The magic?** I never organize anything. Ever.
+I don't organize anything. I just drop it and forget it.
 
-**What's the weirdest place you get your best ideas?**
+The system thinks while I sleep.
+
+What's the weirdest place you get your best ideas?
 
 ---
 
@@ -46,7 +48,7 @@ How I actually use this thing:
 - Sleep processing (captures 2am moments)
 - Zero organization required
 
-**Voice:** Practical Joey - no fluff, just "here's how it works for me."
+**Voice:** ✅ REWRITTEN — More authentically Joey. Dropped the performative "magic" language, made it more conversational and grounded. Added "drop it and forget it" energy.
 
 **No woo-woo violations:** ✅ Concrete examples, no "clarity" or "patterns"
 
