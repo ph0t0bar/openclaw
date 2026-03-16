@@ -181,39 +181,82 @@ function HubStats({stats}) {
 
 function Chat() {
   const [open,setOpen] = useState(false)
-  const [msgs,setMsgs] = useState([{from:'claw',text:'Hey 🦜 I\'m connected to this dashboard. Wire me up to the gateway webhook to chat live!'}])
+  const [msgs,setMsgs] = useState([{from:'claw',text:'Hey Joey 🦜 Type a message — it goes to my inbox via GitHub. I check every 2 min and respond here.'}])
   const [input,setInput] = useState('')
+  const [ghToken,setGhToken] = useState(localStorage.getItem('gh_token')||'')
+  const [showAuth,setShowAuth] = useState(!localStorage.getItem('gh_token'))
   const ref = useRef()
   useEffect(()=>{ref.current?.scrollIntoView({behavior:'smooth'})},[msgs])
+  
+  // Poll outbox for Claw's responses
+  useEffect(()=>{
+    if(!ghToken) return
+    const poll = async()=>{
+      try {
+        const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/dashboard/dashboard-outbox.json`,{headers:{'Authorization':'token '+ghToken}})
+        if(r.ok){
+          const d = await r.json()
+          const outbox = JSON.parse(atob(d.content))
+          if(outbox.messages?.length){
+            const newMsgs = outbox.messages.filter(m=>!m.shown)
+            if(newMsgs.length){
+              setMsgs(p=>[...p,...newMsgs.map(m=>({from:'claw',text:m.text}))])
+              // Mark as shown
+              outbox.messages.forEach(m=>m.shown=true)
+              const updated = btoa(JSON.stringify(outbox))
+              await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/dashboard/dashboard-outbox.json`,{
+                method:'PUT',headers:{'Authorization':'token '+ghToken,'Content-Type':'application/json'},
+                body:JSON.stringify({message:'mark shown',content:updated,sha:d.sha})
+              })
+            }
+          }
+        }
+      }catch(e){}
+    }
+    poll()
+    const t = setInterval(poll, 30000)
+    return ()=>clearInterval(t)
+  },[ghToken])
+  
   const send = async () => {
-    if(!input.trim())return
+    if(!input.trim()||!ghToken)return
     const msg = input
     setMsgs(p=>[...p,{from:'joey',text:msg}])
     setInput('')
-    // Try hitting the gateway hook
     try {
-      const r = await fetch(`${GATEWAY}/hooks/agent`, {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({text: msg, source: 'dashboard'})
+      // Read current inbox
+      const r = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/dashboard/dashboard-inbox.json`,{headers:{'Authorization':'token '+ghToken}})
+      const d = await r.json()
+      const inbox = JSON.parse(atob(d.content))
+      inbox.messages.push({text:msg, time:new Date().toISOString(), read:false})
+      const updated = btoa(JSON.stringify(inbox))
+      await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/dashboard/dashboard-inbox.json`,{
+        method:'PUT',headers:{'Authorization':'token '+ghToken,'Content-Type':'application/json'},
+        body:JSON.stringify({message:'dashboard msg: '+msg.slice(0,30),content:updated,sha:d.sha})
       })
-      if (r.ok) {
-        const d = await r.json()
-        setMsgs(p=>[...p,{from:'claw',text:d.response || d.message || '🦜 Received! Check WhatsApp for my response.'}])
-      } else {
-        setMsgs(p=>[...p,{from:'claw',text:'🦜 Gateway returned ' + r.status + '. Need OPENCLAW_HOOK_TOKEN in the request header.'}])
-      }
+      setMsgs(p=>[...p,{from:'claw',text:'📨 Sent to Claw\'s inbox. Response within 2 min.'}])
     } catch(e) {
-      setMsgs(p=>[...p,{from:'claw',text:'🦜 Can\'t reach gateway directly from browser (CORS). Use WhatsApp or webchat to talk to me!'}])
+      setMsgs(p=>[...p,{from:'claw',text:'❌ Failed to send: '+e.message}])
     }
   }
+  
+  const saveToken = () => { localStorage.setItem('gh_token',ghToken); setShowAuth(false) }
   if(!open) return <div onClick={()=>setOpen(true)} style={{position:'fixed',bottom:16,right:16,width:48,height:48,borderRadius:'50%',background:'linear-gradient(135deg,#22c55e,#10b981)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',boxShadow:'0 4px 24px #22c55e33',fontSize:22,zIndex:999,transition:'transform .2s'}} onMouseOver={e=>e.target.style.transform='scale(1.1)'} onMouseOut={e=>e.target.style.transform='scale(1)'}>🦜</div>
   return <div style={{position:'fixed',bottom:16,right:16,width:320,height:400,background:'#0d0d15',border:'1px solid #2a2a3e',borderRadius:14,display:'flex',flexDirection:'column',boxShadow:'0 8px 40px #00000088',zIndex:999}}>
     <div style={{padding:'10px 14px',borderBottom:'1px solid #1e1e2e',display:'flex',alignItems:'center',gap:8,background:'#12121a',borderRadius:'14px 14px 0 0'}}>
       <span>🦜</span><span style={{fontSize:12,fontWeight:600,color:'#ccc',flex:1}}>Claw</span>
-      <div className="pulse" style={{width:6,height:6,borderRadius:'50%',background:'#22c55e'}}/>
-      <span onClick={()=>setOpen(false)} style={{cursor:'pointer',color:'#555',fontSize:16,marginLeft:4}}>×</span>
+      <div className="pulse" style={{width:6,height:6,borderRadius:'50%',background:ghToken?'#22c55e':'#ef4444'}}/>
+      <span onClick={()=>setShowAuth(!showAuth)} style={{cursor:'pointer',color:'#555',fontSize:10}}>⚙</span>
+      <span onClick={()=>setOpen(false)} style={{cursor:'pointer',color:'#555',fontSize:16,marginLeft:2}}>×</span>
     </div>
+    {showAuth && <div style={{padding:8,borderBottom:'1px solid #1e1e2e',background:'#0d0d12'}}>
+      <div style={{fontSize:9,color:'#666',marginBottom:4}}>GitHub PAT (repo scope, for joey-backup access):</div>
+      <div style={{display:'flex',gap:4}}>
+        <input type="password" value={ghToken} onChange={e=>setGhToken(e.target.value)} placeholder="ghp_..." style={{flex:1,background:'#1a1a2a',border:'1px solid #2a2a3e',borderRadius:6,padding:'5px 8px',color:'#ccc',fontSize:10,outline:'none'}}/>
+        <button onClick={saveToken} style={{background:'#22c55e',border:'none',borderRadius:6,padding:'5px 10px',color:'#000',fontSize:9,fontWeight:600,cursor:'pointer'}}>Save</button>
+      </div>
+      <div style={{fontSize:8,color:'#444',marginTop:3}}>Stored in localStorage only. Never sent anywhere except GitHub API.</div>
+    </div>}
     <div style={{flex:1,overflow:'auto',padding:10}}>
       {msgs.map((m,i)=><div key={i} className="slide-in" style={{marginBottom:8,textAlign:m.from==='joey'?'right':'left'}}>
         <div style={{display:'inline-block',maxWidth:'85%',padding:'7px 11px',borderRadius:m.from==='joey'?'10px 10px 2px 10px':'10px 10px 10px 2px',fontSize:11,lineHeight:1.4,background:m.from==='joey'?'#22c55e18':'#1a1a2a',color:m.from==='joey'?'#22c55e':'#aaa',border:m.from==='joey'?'1px solid #22c55e22':'1px solid #222'}}>{m.text}</div>
@@ -221,8 +264,8 @@ function Chat() {
       <div ref={ref}/>
     </div>
     <div style={{padding:8,borderTop:'1px solid #1e1e2e',display:'flex',gap:6}}>
-      <input value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>e.key==='Enter'&&send()} placeholder="Talk to Claw..." style={{flex:1,background:'#1a1a2a',border:'1px solid #2a2a3e',borderRadius:8,padding:'7px 10px',color:'#ccc',fontSize:11,outline:'none'}}/>
-      <button onClick={send} style={{background:'#22c55e',border:'none',borderRadius:8,padding:'7px 14px',color:'#000',fontSize:11,fontWeight:600,cursor:'pointer'}}>↑</button>
+      <input value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>e.key==='Enter'&&send()} placeholder={ghToken?'Talk to Claw...':'Set GitHub token first ↑'} disabled={!ghToken} style={{flex:1,background:'#1a1a2a',border:'1px solid #2a2a3e',borderRadius:8,padding:'7px 10px',color:'#ccc',fontSize:11,outline:'none',opacity:ghToken?1:0.5}}/>
+      <button onClick={send} disabled={!ghToken} style={{background:ghToken?'#22c55e':'#333',border:'none',borderRadius:8,padding:'7px 14px',color:'#000',fontSize:11,fontWeight:600,cursor:'pointer'}}>↑</button>
     </div>
   </div>
 }
