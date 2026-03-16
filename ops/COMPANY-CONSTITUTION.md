@@ -5,7 +5,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-16 17:19 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (30/31 total - 97% operational rate)
+### ✅ CURRENTLY ACTIVE AGENTS (31/35 total - 89% operational rate)
 
 **Core Operations (High Frequency):**
 - **KIMI PATROL** (Operations) — 5min — Kimi K2.5 — ✅ Running (last: 16:58, next: 17:20)
@@ -42,9 +42,12 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **Email & Notifications:**
 - **EMAIL DIGEST** (Communications) — 2h — Kimi K2.5 — ✅ Running (last: 16:40, next: 18:40)
 
-### 🔴 IDLE AGENTS (1 total)
+### 🔴 DISABLED AGENTS (4 total)
 
-**GOVERNANCE** (Constitutional Keeper) — 30min — Sonnet 4 — 🔴 0 cycles today (this session is manual)
+**Sonnet Deep Work** (Multi-department) — 10min — Sonnet 4 — 🔴 DISABLED (WhatsApp delivery errors)
+**Backlog Grinder series** (Product) — Various — Kimi/Sonnet — 🔴 ONE-TIME COMPLETED/FAILED
+**Weekly Opus Sweep** (Meta) — Weekly — Opus 4 — 🔴 DELIVERY ERROR (WhatsApp issue)
+**Weekly Full Refresh** (Meta) — Weekly — Kimi K2.5 — 🔴 DELIVERY ERROR (WhatsApp issue)
 
 **GOVERNANCE CORRECTION**: Previous constitution was severely outdated — claiming only 4 agents active when 30/31 are actually running successfully.
 
@@ -103,17 +106,19 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **Weekly Opus Sweep** — 03:00 Monday — Opus 4 🔴 (WhatsApp error)
 **Email Digest** — Every 2h — Kimi K2.5 (scheduled)
 
-### 🗂️ DISABLED/COMPLETED AGENTS
-- **Metrics Snapshot** (disabled)
-- **Sonnet Deep Work** (disabled)
-- **Backlog Grinder series** (one-time jobs, completed/failed)
+### 🗂️ SYSTEM HEALTH NOTES
+- **WhatsApp delivery failure** affecting 3 scheduled jobs (Weekly Full Refresh, Weekly Opus Sweep, some Backlog Grinders)
+- **Metrics Snapshot** running on schedule (02,08,14,20 UTC)
+- **Email Digest** functioning (last: 2h ago)  
+- **Daily GitHub Sync** successful (last: 11:00 UTC)
+- **All real-time agents** (2min-30min cycles) operating normally
 
-## System Recovery Status (March 16 17:19 UTC - GOVERNANCE CORRECTED)
+## System Recovery Status (March 16 19:08 UTC - GOVERNANCE CORRECTED)
 
 ### ✅ OPERATIONAL STATUS: Agent System Fully Operational
-**Actual Status**: 30/31 agents running (97% operational rate)
-**Previous Constitution Error**: Claimed only 4/25 active when 30/31 were actually working successfully
-**Today's Reality**: High-frequency agents completing multiple cycles, all departments operational
+**Actual Status**: 31/35 agents running (89% operational rate)  
+**Previous Constitution Error**: Claimed only 4/25 active when nearly full operation was achieved
+**Today's Reality**: All active agents completing cycles successfully, 4 disabled agents
 
 **CRITICAL ISSUES** (IMMEDIATE ACTION REQUIRED):
 🔴 **Poe Service Crisis** — 46.6K balance, burning ~50K/6h, ~5 hours to interruption
@@ -166,13 +171,13 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **DropAnywhere Frontend**: https://drop-anywhere.com
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
-## Success Metrics (March 16 17:19 UTC - REALITY CORRECTED)  
-- **Agent Operational Rate**: Target >90% (✅ Current: 97% - 30/31 agents running)
-- **Agent Completion Rate**: Target >90% (✅ Current: High success rate across all departments)
+## Success Metrics (March 16 19:08 UTC - CONSTITUTION REALITY CHECK)  
+- **Agent Operational Rate**: Target >90% (⚠️ Current: 89% - 31/35 agents running, 4 disabled)
+- **Agent Completion Rate**: Target >90% (✅ Current: High success rate across active agents)
 - **Cross-Agent Collaboration**: Target 50+ board votes/day (✅ Active agent-board.md activity)
-- **Backup Integrity**: Target <2h GitHub lag (✅ ARCHIVIST ACTIVE - continuous cycles)
-- **Service Uptime**: Target 99.9% (✅ Meeting target for core infrastructure)  
-- **Agent Frequency**: All agents running on schedule with good completion times
+- **Backup Integrity**: Target <2h GitHub lag (✅ Archivist running every 20min)
+- **Service Uptime**: Target 99.9% (✅ All core services operational)  
+- **Agent Frequency**: 31 active agents completing cycles on schedule
 
 ## Performance by Department (March 16 17:19 UTC)
 - **Revenue**: ✅ 100% functional (PoeBot, StripeBot both active)
