@@ -40,5 +40,23 @@ The "second brain" concept—digital systems for capturing, organizing, and retr
 - Pricing moving toward subscription tiers with usage-based components
 
 ---
+### March 16, 2026 — Latest Intelligence
+
+**Adoption Milestone:** 75% of knowledge workers now use generative AI for work (up from earlier estimates). Primary use cases: saving time, prioritizing work, increasing creativity[1].
+
+**The "Brain Fry" Paradox:** Despite adoption, AI isn't reducing workloads—it's straining employees:
+- Time spent emailing has **doubled** since AI integration
+- Deep focus work has **fallen** as AI creates more interruptions
+- Workers report feeling *more* overwhelmed, not less
+
+**Platform Positioning Shifts:**
+- **Notion AI:** Focus on conversational querying across scattered documents
+- **Microsoft Copilot:** Enterprise knowledge training on company files
+- **Google Gemini:** Cross-Workspace topic tracking and thread summarization
+- **Claude:** Large context window for comprehensive synthesis
+
+**Strategic Implication for DropAnywhere:** The "no inbox" philosophy and async daily digest model directly addresses the emerging backlash against always-on AI interruptions. Positioning opportunity: "Second brain without the brain fry."
+
+---
 *Research conducted: March 16, 2026*
-*Sources: Vagon.io, Zapier, Fortune, PeopleManagingPeople*
+*Sources: Coursera, Fortune, Zapier, PeopleManagingPeople*

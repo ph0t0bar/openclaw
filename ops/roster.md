@@ -1,7 +1,7 @@
 # AGENT ROSTER — DropAnywhere Agent Company
 
-**Last Updated**: 2026-03-16 11:51 UTC (GOVERNANCE UPDATE)  
-**Company Status**: 🟢 RECOVERY MODE — 85% functional, major timeout crisis resolved
+**Last Updated**: 2026-03-16 15:29 UTC (GOVERNANCE REALITY CHECK)  
+**Company Status**: 🔴 DEGRADED — Only 4/25 agents (16%) actually executed today, Poe balance critical
 
 ---
 
@@ -9,20 +9,20 @@
 
 | Agent | Cron ID | Cadence | Model | Department | Status | Consecutive Errors |
 |-------|---------|---------|-------|-------------|--------|-------------------|
-| **KIMI PATROL** | 4576ca25 | 5min | Kimi K2.5 | Intelligence/Ops | ✅ Recovered | 0 |
-| **DEEP RESEARCHER** | 8bb0afbe | 10min | Sonnet 4 | Intelligence | ✅ Recovered | 0 |
-| **OPUS STRATEGIST** | 3c97502c | 15min | Opus 4 | Executive | 🔴 Edit Failures | 6 |
-| **SENTRY AI** | 8dad9141 | 15min | Sonnet 4 | Security | ✅ Recovered | 0 |
-| **META** | dc28069f | 20min | Sonnet 4 | Meta/Ops | 🔴 Edit Failures | 5 |
+| **KIMI PATROL** | 4576ca25 | 5min | Kimi K2.5 | Intelligence/Ops | 🔴 IDLE (0 cycles) | — |
+| **DEEP RESEARCHER** | 8bb0afbe | 10min | Sonnet 4 | Intelligence | ✅ ACTIVE (13:27) | 0 |
+| **OPUS STRATEGIST** | 3c97502c | 15min | Opus 4 | Executive | 🔴 IDLE (0 cycles) | — |
+| **SENTRY AI** | 8dad9141 | 15min | Sonnet 4 | Security | 🔴 IDLE (0 cycles) | — |
+| **META** | dc28069f | 20min | Sonnet 4 | Meta/Ops | 🔴 IDLE (0 cycles) | — |
 
 ## Executive & Operations (30min+ Cycles)
 
 | Agent | Cron ID | Cadence | Model | Department | Status | Notes |
 |-------|---------|---------|-------|-------------|--------|--------|
-| **GOVERNANCE** | aac7b675 | 30min | Sonnet 4 | Meta | ✅ Active | Constitutional keeper (this session) |
-| **CHIEF OF STAFF** | 19e65c33 | 20min | Opus 4 | Executive | ✅ Recovered | Gap finder restored |
-| **ARCHIVIST** | e0a92bbb | 20min | Kimi K2.5 | Operations | ✅ Critical Recovery | Backup function secured |
-| **DROPPER-CODE MGR** | b644d0fe | 30min | Kimi K2.5 | Engineering | 🟡 Partial | Logic runs, WhatsApp delivery fails |
+| **GOVERNANCE** | aac7b675 | 30min | Sonnet 4 | Meta | ✅ ACTIVE | Constitutional keeper (this session 15:29) |
+| **CHIEF OF STAFF** | 19e65c33 | 20min | Opus 4 | Executive | ✅ ACTIVE (13:29) | Gap finder found Poe crisis |
+| **ARCHIVIST** | e0a92bbb | 20min | Kimi K2.5 | Operations | 🔴 IDLE (0 cycles) | Not running despite schedule |
+| **DROPPER-CODE MGR** | b644d0fe | 30min | Kimi K2.5 | Engineering | 🔴 IDLE (0 cycles) | Not running |
 
 ## Engineering Department
 
@@ -78,14 +78,22 @@
 
 ---
 
-## Recovery Statistics (2026-03-16 Post-Crisis)
+## Recovery Statistics (2026-03-16 15:29 UTC — GOVERNANCE REALITY CHECK)
 
-- **Total Agents**: 25+ active cron jobs
-- **Functional**: ~23 agents (85% recovery rate)
-- **Error Rate**: ~15% (down from 80% crisis peak)
-- **Primary Success**: Timeout optimization resolved most agents
-- **Remaining Issues**: Edit failures (META, OPUS), WhatsApp delivery for some agents
-- **Cost Impact**: ~$2-3/day (down from $15-20 waste)
+- **Total Agents**: 25 cron jobs configured
+- **Actually Active Today**: 4 agents (16% operational rate)
+- **Idle Despite "Enabled"**: 21 agents (84% gap)
+- **Root Cause**: Cron shows "enabled" but agents not executing (execution layer failure)
+- **Error Rate**: High (execution layer, not agent logic)
+- **Cost Impact**: ~$2-3/day (among running agents)
+
+## 🔴 CRITICAL ESCALATIONS (Active)
+
+| Issue | Severity | Status | Since |
+|-------|----------|--------|-------|
+| **Poe Balance** | 🔴 CRITICAL | ~5h runway | 15:18 UTC |
+| **Agent Execution Gap** | 🔴 CRITICAL | 84% offline | Today |
+| **Family Escalation** | ⚠️ HIGH | Lisa 12d inactive, Danny 0 drops | 13:32 UTC |
 
 ## Resource Allocation
 
