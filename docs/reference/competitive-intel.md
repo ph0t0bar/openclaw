@@ -1,51 +1,32 @@
 # Competitive Intelligence
 
-## 2026-03-16 — Mem.ai, Notion AI, Reflect App Analysis
+## 2026-03-16 — AI Productivity Tools Landscape
 
-### Key Findings
+### Mem.ai, Notion AI, Reflect App Analysis
 
-**Mem.ai** (Leading AI-first approach):
-- Positions as "second brain" with zero-setup AI
-- **60% faster search** than competitors (vs Notion)
-- **Auto-linking** eliminates manual organization 
-- **Notes Researcher AI** sources answers from entire knowledge base
-- **Smart AI Writer** personalizes content based on user's writing style
-- **20%+ productivity boost** over traditional tools
-- Integrates: Google Calendar, Google Docs
-- **Weakness:** Less structured than Notion (no databases)
+**Key Finding:** Mem.ai leads in AI-powered auto-organization and intelligent search for personal knowledge management, while Notion AI dominates team workspaces and Reflect focuses on networked thought capture.
 
-**Notion AI** (All-in-one workspace):
-- Broader feature set: databases, project management, team collaboration
-- AI for content generation and search
-- **Weakness:** Slower AI search setup, requires manual organization
-- Better for **team workspaces** vs personal knowledge management
+#### Mem.ai 2026 Capabilities
+- **Notes Researcher AI**: Natural language queries across all notes with cited sources
+- **Smart AI Writer**: Generates content based on user's writing style and notes 
+- **Note Finder**: Auto-surfaces related content, reduces search time by 60%
+- **Zero Setup**: Users capture 8-10 ideas daily vs. 2-3 before, no folder organization needed
+- **Positioning**: "AI-powered second brain" for individual knowledge workers
 
-**Reflect App** (Networked notes):
-- Limited 2026 data available
-- Known for: backlinks, daily notes, personal knowledge bases
-- Likely still emphasizes simplicity + bidirectional links
-- May have added AI search capabilities but not prominently featured
+#### Notion AI vs Competition
+- **Strength**: Feature-rich for teams, databases, collaborative workflows
+- **Weakness**: Requires manual setup (folders/tags), slower AI search vs. Mem.ai
+- **Use Case**: Better for structured team projects than personal knowledge management
 
-### Market Position Analysis
+#### Reflect App Position
+- **Focus**: Bidirectional linking, networked notes (Obsidian-like)
+- **Advantage**: Local-first privacy, speed for thought capture
+- **Gap**: Less proactive AI compared to Mem.ai's auto-linking and querying
 
-| Tool | Best For | AI Strength | Setup Complexity |
-|------|----------|-------------|------------------|
-| Mem.ai | Personal "second brain" | Highest (auto-organize, smart search) | Zero setup |
-| Notion AI | Team collaboration | Medium (manual setup required) | High |
-| Reflect | Networked personal notes | Unknown/Limited | Low |
+#### Strategic Implications for DropAnywhere
+1. **Differentiation Opportunity**: Mem.ai's success validates AI-driven auto-organization
+2. **Market Gap**: Integration between capture (DropAnywhere) and intelligent search (Mem.ai-like) 
+3. **Competitive Moat**: Multi-channel ingestion + daily digest is unique vs. manual note-taking
+4. **Feature Parity**: Need proactive AI search/connections to compete with Mem.ai's cognitive assistant positioning
 
-### Emerging Frameworks
-- **Mem0**: Agent memory layers for persistent recall across sessions
-- **memU**: Knowledge graphs for multi-layer learning (short-term, long-term, procedural)
-- **Capacities**: Auto-organizes by note type, AI chats across knowledge bases
-
-### Strategic Implications for DropAnywhere
-1. **Zero-setup AI** is becoming table stakes
-2. **Auto-linking** and contextual connections are differentiators  
-3. **Personal vs team** focus creates market segmentation opportunities
-4. **Speed of search** (60% improvement) is a measurable competitive advantage
-5. **Writing style personalization** could be a key feature for DropAnywhere's digest system
-
-*Source: Perplexity search, March 2026*
-
----
+**Source**: Perplexity search, March 2026 data
