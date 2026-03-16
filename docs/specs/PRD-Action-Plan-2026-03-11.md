@@ -773,18 +773,18 @@ From the Ingestion hydration context, Joey's Mac runs:
 | DA drops 24h | — | — | — | **51** | **33** | steady | **31** |
 | DA digests sent total | 93 | 147 | 147+ | **161** | **177** | +16 | **177** |
 | DA digests sent 24h | — | — | — | **15** | **3** | light send day | **3** |
-| BHA users | 172 | 198 | **211** | **215** | **259** | +44 (+20%) | **259** (+7) |
-| BHA active 24h | — | — | — | **13** | **12** | steady | **12** (+7) |
-| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | +11% | **70** (+8) |
+| BHA users | 172 | 198 | **211** | **215** | **259** | stable | **259** |
+| BHA active 24h | — | — | — | **13** | **11** | steady | **11** |
+| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | stable | **70** |
 | BHA pro subs | — | — | **3** | **2** | **2** | stable | **2** |
-| BHA new users 24h | — | — | — | **7** | **8** | steady | **7** |
+| BHA new users 24h | — | — | — | **7** | **7** | steady | **7** |
 | BHA weekly visitors (GA) | — | — | **531** | — | **—** | — | **—** |
 | BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | stable | **$21** |
-| Poe balance | 835K | 530K | **427K** | **385K** | **74,620** | **🚨 CRITICAL** | **47,297** |
-| Poe burn/6h points | — | — | ~13K | **27,694** | **29,547** | theREALrealtalk hot | **49,866** 🔥 |
+| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** | **🚨 CRITICAL** | **46,583** |
+| Poe burn/6h points | — | — | ~13K | **27,694** | **49,866** | theREALrealtalk hot | **49,586** 🔥 |
 | Poe calls/6h | — | — | — | **100** | **100** | — | **100** |
-| Email sent 24h | 46 | 85 | **100** | **79** | **100** | normal | **98** |
-| Email delivery | 100% | 100% | **98%** | **100%** | **99%** (99/100) | ✅ | **99%** (97/98) |
+| Email sent 24h | 46 | 85 | **100** | **79** | **98** | normal | **96** |
+| Email delivery | 100% | 100% | **98%** | **100%** | **99%** (97/98) | ✅ | **99%** (95/96) |
 | Dropper-Code tasks | — | 9 | **12** | **15** | **15+** | 10 PRs queued | **9 PRs merged** ✅ |
 | Open issues | 0 | 0 | **0** | **0** | **5** | new items | **5** |
 | joey-backup commits | — | — | — | **40+** | **—** | — | **—** |
@@ -930,4 +930,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 14:04 UTC — Daily Metrics Refresh. 9 Dropper-Code PRs merged (#181-189). Section 8 metrics updated. Poe balance flagged critical (47K points, 50K burn/6h). Bug list updated with completed items. 🦜*
+*Last auto-refreshed: 2026-03-16 15:06 UTC — DocBot manual refresh. Section 8 metrics updated from Hub dashboard. Poe balance: 46,583 points (critical, ~5h remaining). Dropper-Code: 10 PRs queued (#181-190). 🦜*
+ted items. 🦜*
+���*
+ted items. 🦜*
