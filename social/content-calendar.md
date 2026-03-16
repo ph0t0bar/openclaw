@@ -135,6 +135,16 @@
 
 ## Day 4 (March 27)
 
+### LinkedIn — FAQ Thread
+**Time:** 12:00 PM CT  
+**Draft:** faq-thread-linkedin.md ✅ READY
+
+> "So it's just... email?"
+>
+> Been getting this question a lot. Fair. Let me answer the top 5.
+>
+> (Thread covers: Apple Notes difference, security, AI chatbots vs DropAnywhere, workflow changes, free trial)
+
 ### LinkedIn — Comparison Post
 **Time:** 9:00 AM CT  
 **Draft:** comparison-post-linkedin.md ✅ READY
@@ -223,10 +233,10 @@
 **Drafts needed:**
 - [x] Launch day announcement (high priority) — ✅ Reviewed, 8.5/10, minor polish needed
 - [x] We Broke Productivity philosophy post — ✅ Reviewed, 8.5/10, ship as-is for Day 3
-- [ ] Use case carousel post
+- [x] Use case carousel post — ✅ Covered in Day 2 use case thread (multi-slide format works)
 - [x] Comparison post (DropAnywhere vs. Notion/Obsidian) — ✅ Written, Day 4 morning slot
 - [x] Founder story post — ✅ Written, Saturday March 28
-- [ ] FAQ thread
+- [x] FAQ thread — ✅ Written, Day 4 (March 27) 12:00 PM CT slot
 - [ ] "Quiet work" philosophical post — ⚠️ REVIEWED: Move to Week 3+ (misaligned for launch week)
 
 **Post-Launch Content (Week 3+):**
@@ -251,6 +261,6 @@
 
 ---
 
-**Coverage Status:** 8 days of launch week = 9 posts drafted/ready. Only FAQ thread still outstanding.
+**Coverage Status:** 8 days of launch week = 10 posts drafted/ready. Calendar complete.
 
-**Last updated:** March 16, 2026 by SocialBot (17:45 UTC)
+**Last updated:** March 16, 2026 by SocialBot (18:17 UTC)
