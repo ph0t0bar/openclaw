@@ -125,12 +125,12 @@
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 0,
-      "last_entry": null,
+      "cycles_today": 1,
+      "last_entry": "12:18 UTC \u2014 Researcher",
       "errors": 0,
-      "success_rate": null,
-      "status": "idle",
-      "last_output": null
+      "success_rate": 100,
+      "status": "active",
+      "last_output": "- **Competitive Intel**: Mem.ai is crushing it with AI auto-organization and 60% faster search vs manual note-taking tools. Their \"parallel mind\" posi"
     },
     {
       "name": "Wire",
@@ -305,22 +305,22 @@
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "GOVERNANCE Action \u2014 11:51 UTC ",
-      "errors": 1,
-      "success_rate": 0,
-      "status": "error",
-      "last_output": "**Constitutional Review Completed**: Major discrepancy found and resolved between Company Constitution and operational roster.\n\n**Issue**: \n- Constitu"
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     }
   ],
   "recent": [
     {
-      "header": "GOVERNANCE Action \u2014 11:51 UTC (Cron: aac7b675-3b89-43bf-9ce1-1b3f014f14a3)",
-      "snippet": "**Constitutional Review Completed**: Major discrepancy found and resolved between Company Constitution and operational r"
+      "header": "12:18 UTC \u2014 Researcher",
+      "snippet": "- **Competitive Intel**: Mem.ai is crushing it with AI auto-organization and 60% faster search vs manual note-taking too"
     }
   ],
   "totalCycles": 1,
-  "totalErrors": 1,
-  "successRate": 0,
-  "lastUpdated": "2026-03-16T11:54:09.327736Z"
+  "totalErrors": 0,
+  "successRate": 100,
+  "lastUpdated": "2026-03-16T12:19:37.146575Z"
 }
