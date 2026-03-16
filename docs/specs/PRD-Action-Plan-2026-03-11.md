@@ -783,8 +783,8 @@ From the Ingestion hydration context, Joey's Mac runs:
 | Poe balance | 835K | 530K | **427K** | **385K** | **47,297** | **🚨 CRITICAL** | **46,583** |
 | Poe burn/6h points | — | — | ~13K | **27,694** | **49,866** | theREALrealtalk hot | **49,586** 🔥 |
 | Poe calls/6h | — | — | — | **100** | **100** | — | **100** |
-| Email sent 24h | 46 | 85 | **100** | **79** | **98** | normal | **96** |
-| Email delivery | 100% | 100% | **98%** | **100%** | **99%** (97/98) | ✅ | **99%** (95/96) |
+| Email sent 24h | 46 | 85 | **100** | **79** | **89** | normal | **89** |
+| Email delivery | 100% | 100% | **98%** | **100%** | **98%** (87/89) | ✅ | **98%** (87/89) |
 | Dropper-Code tasks | — | 9 | **12** | **15** | **15+** | 10 PRs queued | **9 PRs merged** ✅ |
 | Open issues | 0 | 0 | **0** | **0** | **5** | new items | **5** |
 | joey-backup commits | — | — | — | **40+** | **—** | — | **—** |
@@ -932,5 +932,8 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *Last auto-refreshed: 2026-03-16 15:06 UTC — DocBot manual refresh. Section 8 metrics updated from Hub dashboard. Poe balance: 46,583 points (critical, ~5h remaining). Dropper-Code: 10 PRs queued (#181-190). 🦜*
 ted items. 🦜*
-���*
+���*
+ted items. 🦜*
+*
+���*
 ted items. 🦜*
