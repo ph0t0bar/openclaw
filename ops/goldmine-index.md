@@ -91,3 +91,13 @@ The joey-backup/Ingestion/ folder contains **THE MOTHERLODE** - 2,422 files of J
 - **Key insight:** Complete architecture that became DropAnywhere (VAULT → GOLDMINE → FORGE → OUTPUT)
 - **Contains:** Manifest system spec, transformation recipes, BHA personas as engines, knowledge graph vision
 - **Strategic value:** This IS the manual for building Weekly Catch — manifest system for pattern recognition, recipes for narrative generation
+
+### 5. Joey's Psychological Biography (.claude/context/core/ABOUT_JOEY_HAMER.md) — 2026-03-16 19:24 UTC
+- **What:** Not just bio — psychological blueprint for why Joey builds transformation engines
+- **Key insight:** From panic attacks to 415+ bots with 45 msgs/user (industry avg: 3)
+- **Contains:** 
+  - The Vulnerability Gap concept (why people confess to AI)
+  - 6-Stage Content Alchemy Pipeline (exact bot methodology)
+  - Personal transformation stack (Kitaro breathing, subliminals, Reality Transurfing)
+  - Philosophy: "Laziness was your soul begging for efficiency"
+- **Strategic value:** Reveals Joey builds psychological release valves, not productivity tools. Weekly Catch should be transformation protocol, not digest.
