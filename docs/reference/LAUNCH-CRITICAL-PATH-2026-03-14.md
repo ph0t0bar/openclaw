@@ -7,10 +7,18 @@
 
 | Phase | Window | Status |
 |-------|--------|--------|
-| **Phase 1: SURVIVAL** | Mar 14–15 | 🟡 In progress — Poe critical, bugs TBD |
-| **Phase 2: STABILIZE** | Mar 16–19 | ⬜ Not started — Stripe billing **deferred to Week 2** per Issue #1 review |
+| **Phase 1: SURVIVAL** | Mar 14–15 | ✅ Complete — Poe funded (74K balance), bugs cleared |
+| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 In progress — L1-L10 checklist active |
 | **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
 | **Phase 4: LAUNCH** | Mar 24–26 | ⬜ Not started |
+
+**Fresh Hub Metrics (Mar 16, 09:58 UTC):**
+- DA: 100 users (+54%), 12 active 24h, 843 total drops, 33 drops 24h, 3 digests sent
+- BHA: 259 total (+23%), 12 active 24h, 73 active 7d, 2 Pro, 8 new 24h
+- Poe: 74,801 balance, 29,696 pts/6h usage, 100 calls/6h
+- Stripe: 0 charges 4h (quiet period)
+- Resend: 98 sent 24h, 97 delivered, 1 delayed
+- GitHub: 10 task completion messages queued (PRs ready for review)
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
@@ -30,7 +38,7 @@ These are not features. These are oxygen.
 
 ### Decision 1: Poe Balance — Resolve or Die ⚠️ ESCALATED
 
-**Current state (updated Mar 15):** 33K balance, down from 153K. Burning ~32K/6h. **Less than 1 day of runway.** This is now past "resolve or die" — it's "resolve or dead." If Poe hits zero, every bot stops responding, 86% of your drop volume disappears (BHA bot conversations), and theREALrealtalk (your #1 revenue bot at 10,097 points/6h) goes dark.
+**Current state (updated Mar 16):** 74,801 balance — crisis averted! Recovered from 33K low. Burning ~30K/6h. **~2.5 days runway.** theREALrealtalk still #1 at 12,001 points/6h. Top 5 bots: theREALrealtalk (12K), Tippiy (5K), BOUNCE-CONVERTER-V3 (3.9K), BrutallyHonestAI (3K), PROproductphotosXL (2K).
 
 **The decision tree:**
 
