@@ -57,4 +57,30 @@
 
 **Competitive Gap:** Neither Mem nor Notion offers frictionless external capture like our email/SMS/voice ingestion. This validates the "Your Second Brain Has No Inbox" positioning.
 
+## March 2026 Deep Dive: Mem.ai Feature Analysis
+
+**Key Features Identified:**
+- **Hybrid Memory Search** - Combines semantic + keyword search with temporal filtering ("what happened last week")
+- **Notes Researcher AI** - Cross-document search that answers questions in plain English with sources
+- **Smart AI Writer** - Learns personal writing style to draft emails/summaries
+- **AI Organizer** - Automatic note grouping without manual folders/tags
+- **Real-time Integrations** - Google Calendar, Docs sync for meeting prep with related notes
+
+**Performance Claims:**
+- 60% reduction in note search time
+- 20%+ productivity boost reported by users
+- Near real-time dashboard data refresh
+
+**Technical Advantages:**
+- Memory Categorization Webhooks for workflow automation
+- Graph Status in Events API for processing transparency
+- Redesigned export builder for flexible data extraction
+
+**Positioning vs DropAnywhere:**
+- **Mem's Strength:** Real-time AI organization, zero manual setup
+- **Our Advantage:** Multi-channel ingestion (email/SMS/voice) that Mem lacks entirely
+- **Market Opportunity:** Position async digest model as "sustainable focus" vs their real-time approach
+
+**Threat Level:** Medium-High. Their zero-setup + AI-first positioning directly competes with our philosophy, but they lack our multi-channel capture advantage.
+
 *Last updated: 2026-03-16*
