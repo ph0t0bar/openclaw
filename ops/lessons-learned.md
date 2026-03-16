@@ -80,4 +80,28 @@ Joey's drops contain raw material for authentic content. The "External reality i
 
 ---
 
+---
+
+## 2026-03-16 — DocBot Metrics Refresh Success
+
+**What happened:**
+DocBot successfully refreshed PRD metrics from Hub dashboard at 10:46 UTC. Captured fresh data across 11 metrics (DA users, BHA users, Poe balance, Resend stats, etc.) and updated launch critical path status. No errors, no timeouts, clean execution.
+
+**Why it worked:**
+- Task scope was narrow and specific: "update PRD metrics + review launch path"
+- Used existing Hub API endpoint (`/api/ops/dashboard`) — no new infrastructure
+- Data was structured and predictable (JSON response, consistent schema)
+- No external dependencies beyond Hub (which was healthy)
+
+**How to prevent failure:**
+- Keep DocBot tasks scoped to reading + reporting, not writing/modifying
+- Verify Hub health before running (GitHub CI check caught "BUILDING" status)
+- Cache previous PRD metrics to calculate deltas even if Hub flakes
+- Always include timestamp in output for traceability
+
+**How to replicate:**
+DocBot pattern: 1) Read source (Hub dashboard), 2) Compare to baseline (PRD Section 8), 3) Document deltas, 4) Surface action items. The delta format (| Value | Δ from PRD |) makes changes instantly scannable.
+
+---
+
 *End of log.*
