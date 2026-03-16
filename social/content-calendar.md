@@ -261,9 +261,13 @@
 | launch-day-linkedin-final-REWRITE.md | 9/10 | ✅ **BEST VERSION** — Joey's authentic voice, punchy closer "Your tools just suck", pin on launch day |
 | freedom-from-busy-work-linkedin.md | 8/10 | ✅ Ready — strong emotional hook, engine room→bridge metaphor, fits Week 2+ post-launch |
 | mirror-principle-linkedin-POLISHED.md | 8.5/10 | ✅ Ready — excellent grounded voice, ship for Week 3+ thought leadership |
+| the-moment-it-clicked-linkedin-POLISHED.md | 9/10 | ✅ **SHIP THIS ONE** — authentic aha moment, tight narrative arc, better than Day 4 "Real Story" — swap it in |
 
 ---
 
-**Coverage Status:** 8 days of launch week = 10 posts drafted/ready. Calendar complete.
+**Coverage Status:** 8 days of launch week = 11 posts drafted/ready. Calendar complete.
+
+**Recommendations:**
+- Replace Day 4 (March 27) 2:00 PM "Real Story" post with `the-moment-it-clicked-linkedin-POLISHED.md` — stronger narrative, specific moment, tighter prose
 
 **Last updated:** March 16, 2026 by SocialBot (18:17 UTC)

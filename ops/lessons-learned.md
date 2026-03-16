@@ -252,4 +252,141 @@ Implement in core 5 agents as pilot. Message bottles replace sync coordination.
 
 ---
 
-*End of LearningBot cycle 20:16 UTC*
+---
+
+## 2026-03-16 (21:25 UTC) — LearningBot: Hub Data Integrity & Wire Agent Escalation
+
+### Lesson: Hub API Data Integrity Compromised
+
+**What happened:**
+Chief of Staff 20:54 UTC flagged Hub API returning "unknown" status — all metrics showing 0 during check. PATROL 18:11 UTC and RailwayBot 20:48 UTC reported healthy Hub with real data. Cross-check revealed Chief of Staff hitting stale/degraded endpoint while other agents got valid responses.
+
+**Why it matters:**
+Data integrity failures create false alarms. If Chief of Staff sees "unknown" during critical escalation check, might miss real issues or escalate phantom problems. Inconsistent API responses = unreliable monitoring.
+
+**Root cause:**
+Hub has multiple API endpoints with different caching/query paths. Some paths return stale data or timeout to "unknown" while others work fine. Chief of Staff hitting problematic path.
+
+**How to prevent:**
+- Add health check retries with endpoint rotation
+- Cross-validate critical metrics across 2+ agents before escalation
+- Document which endpoints are authoritative vs cached
+- Add circuit breaker: if "unknown" received, retry with PATROL endpoint
+
+**Action taken:**
+PATROL and RailwayBot confirmed actual Hub health — no real crisis. Chief of Staff's "unknown" status was false alarm.
+
+---
+
+### Lesson: Wire Agent Consecutive Failure Escalation (Pattern 128)
+
+**What happened:**
+Wire agent hit 3+ consecutive C-grades due to API exhaustion (OpenRouter credits, Perplexity limits). Meta 20:51 UTC escalated: "PAUSE recommended until OpenRouter credits restored." Governance verified in constitution: Wire now showing 100% success after credit top-up.
+
+**Why it matters:**
+Consecutive failures = systematic issue, not isolated glitch. Resource exhaustion propagates across multiple research agents (SEOBot also affected). Waste cycles compound when agent keeps trying without capacity.
+
+**Pattern 128:**
+Resource exhaustion cascade → affects multiple agents using same API provider → requires coordinated pause, not individual retries.
+
+**How to handle:**
+- Detect 3+ consecutive failures → auto-pause until resource restored
+- Document resource dependencies (OpenRouter credits, Perplexity limits)
+- Set hard pause threshold: consecutive C-grades = stop, don't retry
+- Resume only after capacity confirmed restored
+
+**Action:**
+Wire paused temporarily. Governance verified resolution. Agent resumed after credits restored.
+
+---
+
+### Lesson: 101 User Milestone — Growth Continues
+
+**What happened:**
+Crossed 100 users milestone earlier today (16:09 UTC), now at 101 users 20:53 UTC. +1 user growth continuing. 55 active 7d, 7 active 24h. BHA driving 5 new users today alone.
+
+**Why it matters:**
+100 users was psychological barrier. Crossing it and continuing growth validates product-market fit. 5 new users in single day = accelerating acquisition, not just milestone vanity metric.
+
+**Key metrics:**
+- 101 total users (+1 since milestone)
+- 55 weekly active (54% WAU rate)
+- 79% of drops from BHA (208/264)
+- 5 new users today from BHA channel
+
+**How to replicate:**
+BHA → DropAnywhere funnel is working. Maintain integration, consider doubling down on BHA bot CTAs for cross-sell.
+
+---
+
+### Lesson: Launch Content 100% Ready — Three-Gate Pipeline Proven
+
+**What happened:**
+SocialBot 18:18 UTC confirmed final FAQ thread completed. All 10/10 launch week posts (Mar 24-30) drafted, reviewed, polished. FounderVoice validated authentic Joey voice across all content. ContentBot polished drafts. Three-gate pipeline: Generate → Voice Validate → Strategy Review.
+
+**Content inventory:**
+| Day | Post | Status | Rating |
+|-----|------|--------|--------|
+| Mon | Launch Day (final-rewrite) | Ready | 9/10 |
+| Tue | Use-case thread | Ready | 8.5/10 |
+| Wed | We Broke Productivity | Ready | 9/10 |
+| Thu | Comparison post | Ready | 8.5/10 |
+| Fri | FAQ thread | Ready | 8/10 |
+| Sat | Founder story | Ready | 8.5/10 |
+| Sun | Freedom from busy work | Ready | 8/10 |
+| +3 more | Mirror principle, Car you built, Moment it clicked | Ready | 8.5/10 |
+
+**Why it succeeded:**
+Non-destructive workflow preserves iteration history. Each gate has single responsibility. Rating thresholds: <7 = rework, 7-8 = polish, 8.5+ = ready.
+
+**How to replicate:**
+Use three-gate pipeline for all public-facing content. Gate 1 (ContentBot) generates, Gate 2 (FounderVoice) validates authenticity, Gate 3 (SocialBot) validates strategy. No gate skips.
+
+---
+
+### Lesson: Message Bottle Protocol Spec Created
+
+**What happened:**
+SpecBot 20:22 UTC and 18:40 UTC created formal specs for async agent communication:
+- SPEC-Message-Bottle-Protocol.md — async communication standard
+- SPEC-DigestBot.md — monitoring/diagnosis/recovery phases
+- SPEC-PATTERN-WEAVER.md — time-spanning pattern recognition
+- SPEC-NARRATIVE-ENGINE.md — Weekly Catch narrative assembly
+- SPEC-MOMENTUM-TRACKER.md — stuck/flow energy analysis
+
+**Why it matters:**
+Timeout crisis exposed need for async coordination. Message bottles = formalized async handoff between agents. Prevents cascade failures when one agent times out waiting for another.
+
+**Archipelago architecture taking shape:**
+- Core 5 agents (Patrol, Researcher, Sentry, Chief of Staff, Archivist)
+- Async message bottles replace sync coordination
+- 600s+ timeout windows for narrative work
+- Non-blocking communication between islands
+
+**Next step:**
+Opus 20:43 UTC and 21:02 UTC wrote implementation spec. Time to execute: archive non-essential agents, implement Core 5 with message bottles.
+
+---
+
+### Lesson: Future Self Letter System Discovered
+
+**What happened:**
+Opus 19:35 UTC mined `_FROM-JOEY.md` from goldmine — complete Future Self Letter system. Strategic insight: Joey's Dec 2025 system transforms anxiety → certainty via future narratives. Weekly Catch should be "Future Self Briefing" not backward-looking digest.
+
+**Key mechanics:**
+- Write FROM achieved state, not TOWARD it
+- Method of loci: Rancho Mirage mansion anchors all scenes
+- The Filter: "Does this make me lighter or heavier?"
+- Anchor: "Drop it. Forget it. Wake up lighter."
+
+**Product implication:**
+Weekly Catch = manifestation protocol, not summary. Frame digest as "Message from your future self who has it all handled" vs "Here are yesterday's drops."
+
+**How to leverage:**
+- Reframe digest copy as future-looking
+- Add "What would your future self know about this?" to capture flow
+- Build transurfing philosophy into product DNA
+
+---
+
+*End of LearningBot cycle 21:25 UTC*
