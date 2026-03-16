@@ -2,16 +2,16 @@
 
 ## Immediate Response (Auto-ACK)
 When ANY email arrives from Joey:
-1. Hub webhook triggers OpenClaw immediately (not batched)
+1. Hub webhook triggers OpenDrop immediately (not batched)
 2. Auto-send acknowledgment: "Got it. Processing..."
 3. Classify urgency based on content
 
 ## Priority Levels
 
-**🔴 URGENT** — Immediate human (Claw) attention
+**🔴 URGENT** — Immediate human (Drop) attention
 Triggers: "urgent", "emergency", "down", "broken", "critical", "$", "revenue"
 Response: < 5 minutes
-Action: Claw drops everything, emails back immediately
+Action: Drop drops everything, emails back immediately
 
 **🟡 STANDARD** — DecisionBot processes
 Triggers: "approve", "reject", "feedback", "question", "thought"
@@ -34,4 +34,4 @@ Body:
 - "Reply URGENT to escalate"
 
 ## WhatsApp Override
-If truly critical and email feels too slow: WhatsApp "911" → immediate Claw response
+If truly critical and email feels too slow: WhatsApp "911" → immediate Drop response

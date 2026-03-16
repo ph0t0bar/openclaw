@@ -1,10 +1,10 @@
 #!/bin/bash
 # Send a Brooke-themed, threaded, deliverability-compliant email via Resend
 # Usage: send-threaded-email.sh <thread> <subject> <body_html_file> [preheader]
-# Threads: morning-brief, creative-review, ops-tasks, claw-convo, weekly-report
+# Threads: morning-brief, creative-review, ops-tasks, drop-convo, weekly-report
 
-THREAD="${1:-claw-convo}"
-SUBJECT="${2:-💬 Claw}"
+THREAD="${1:-drop-convo}"
+SUBJECT="${2:-💬 Drop}"
 BODY_FILE="${3:-/tmp/email-body.html}"
 PREHEADER="${4:-}"
 
@@ -37,7 +37,7 @@ html = f"""<html>
 
 <tr><td style="padding:25px 0 0 0; border-top:1px solid #E8E0D8; text-align:center;">
 <p style="margin:0; color:#999; font-size:12px; line-height:1.8;">
-Reply to this email &mdash; Claw reads every reply. &#x1F99C;<br>
+Reply to this email &mdash; Drop reads every reply. &#x1F99C;<br>
 <a href="mailto:hello@drop-anywhere.com" style="color:#C17F59; text-decoration:none;">hello@drop-anywhere.com</a><br><br>
 DropAnywhere &middot; Chicago, IL &middot; USA<br>
 <a href="mailto:unsubscribe@drop-anywhere.com?subject=unsubscribe" style="color:#999; text-decoration:underline;">Unsubscribe</a> &middot;

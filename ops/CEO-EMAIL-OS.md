@@ -34,7 +34,7 @@
 - Service down
 - Payment failures
 - Family user at risk
-**Reply:** Instructions → Claw acts on them
+**Reply:** Instructions → Drop acts on them
 
 ### 5. 📊 Weekly Report (Sunday evening)
 **Subject:** "📊 Week in Review — [date range]"
@@ -45,8 +45,8 @@
 - Next week priorities
 **Reply:** Direction setting → updates PRD
 
-### 6. 💬 Claw Conversation (replaces WhatsApp)
-**Subject:** "💬 Claw — [topic]" or RE: ongoing thread
+### 6. 💬 Drop Conversation (replaces WhatsApp)
+**Subject:** "💬 Drop — [topic]" or RE: ongoing thread
 - Anything I'd normally say on WhatsApp
 - Context-rich, searchable, persistent
 - Threaded conversation via email replies
@@ -62,7 +62,7 @@ ALL replies to hello@drop-anywhere.com hit:
 3. FeedbackBot + DecisionBot read drops, route actions:
    - "approve" / "reject" → Hub task API
    - Creative feedback → agent board + review files
-   - Questions/conversation → triggers Claw response email
+   - Questions/conversation → triggers Drop response email
    - Strategic direction → PRD updates
 
 ## What Dies

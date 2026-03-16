@@ -6,7 +6,7 @@
 - From: `DropAnywhere <hello@drop-anywhere.com>`
 - Reply-To: `hello@drop-anywhere.com`
 
-**NEVER use:** noreply@, joey@, OpenClaw, or any other from address.
+**NEVER use:** noreply@, joey@, OpenClaw (internal only), or any other from address.
 
 ---
 
@@ -53,7 +53,7 @@ Every email MUST include thread headers per EMAIL-THREADING.md:
 }
 ```
 
-Thread IDs: morning-brief, creative-review, ops-tasks, claw-convo, weekly-report
+Thread IDs: morning-brief, creative-review, ops-tasks, drop-convo, weekly-report
 
 ---
 
@@ -66,8 +66,8 @@ Thread IDs: morning-brief, creative-review, ops-tasks, claw-convo, weekly-report
 | Ops & Tasks | ⚙️ | ops-tasks |
 | Alerts | 🚨 | ops-tasks |
 | Weekly Report | 📊 | weekly-report |
-| Claw Conversation | 💬 | claw-convo |
-| Documents/PDFs | 📄 | claw-convo |
+| Drop Conversation | 💬 | drop-convo |
+| Documents/PDFs | 📄 | drop-convo |
 
 ---
 
@@ -118,7 +118,7 @@ EVERY email body MUST follow this structure:
   <!-- Footer (MANDATORY — deliverability) -->
   <tr><td style="padding:25px 0 0 0; border-top:1px solid #E8E0D8; text-align:center;">
     <p style="margin:0; color:#999; font-size:12px; line-height:1.8;">
-      Reply to this email — Claw reads every reply. 🦜<br>
+      Reply to this email — Drop reads every reply. 🦜<br>
       <a href="mailto:hello@drop-anywhere.com" style="color:#C17F59; text-decoration:none;">hello@drop-anywhere.com</a><br><br>
       DropAnywhere · Chicago, IL · USA<br>
       <a href="mailto:unsubscribe@drop-anywhere.com?subject=unsubscribe" style="color:#999; text-decoration:underline;">Unsubscribe</a> · 

@@ -55,3 +55,14 @@ For creative feedback:
 
 ### 21:50 UTC — Opus Vote
 ✅ **21:35 Strategic Note** - Clear priorities, pragmatic focus on revenue + proven features
+
+### 22:06 UTC — Opus Strategist
+**📍 Method of Loci Alignment Check:** The PRD shows Joey living his own product vision — the Rancho Mirage slide is happening NOW through the system he's building. Three critical insights:
+
+1. **The Archive is the Product:** 2,462 ChatGPT conversations + 467 Poe bots aren't just content — they're the raw material for the transformation engine (VAULT→GOLDMINE). Batch-0001 proves the pipeline works. This isn't a future feature; it's running silently, waiting to be productized.
+
+2. **Snapback Changes Everything:** Not a feature — THE product. Joey proved it on himself (stuck on music → narrative → made music → 30-day challenge). The 7-day trial IS the demo. Weekly Catch > Daily Digest. This is the container that creates freedom.
+
+3. **Invisible Loop = B2B Wedge:** Danny doesn't know he's using DropAnywhere. That's the point. Every advisory firm, coach, therapist becomes a distribution channel without onboarding. The product sells itself through the quality of output.
+
+**Strategic directive:** Stop building features. Start mining gold. The system already works — Joey's living proof. Now scale what's proven: SEO (free users), Poe cross-promo (convert existing), Snapback MVP (the core loop that changes lives).

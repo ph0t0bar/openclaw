@@ -11,7 +11,7 @@ Each stream gets a persistent thread ID based on a stable Message-ID.
 | Morning Brief | `<morning-brief@drop-anywhere.com>` | ☀️ Morning Brief |
 | Creative Review | `<creative-review@drop-anywhere.com>` | 🦜 Creative Review |
 | Ops & Tasks | `<ops-tasks@drop-anywhere.com>` | ⚙️ Ops |
-| Claw Conversation | `<claw-convo@drop-anywhere.com>` | 💬 Claw |
+| Drop Conversation | `<drop-convo@drop-anywhere.com>` | 💬 Drop |
 | Weekly Report | `<weekly-report@drop-anywhere.com>` | 📊 Week in Review |
 
 ## Implementation
