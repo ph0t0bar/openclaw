@@ -101,12 +101,12 @@
       "dept": "Marketing",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 0,
-      "last_entry": null,
+      "cycles_today": 1,
+      "last_entry": "12:40 UTC - ContentBot Marketi",
       "errors": 0,
-      "success_rate": null,
-      "status": "idle",
-      "last_output": null
+      "success_rate": 100,
+      "status": "active",
+      "last_output": "**Task:** Polish social media content for DropAnywhere launch week\n\n**Action:** Refined LinkedIn use-case thread post (`social/use-case-thread-linkedi"
     },
     {
       "name": "Archivist",
@@ -125,12 +125,12 @@
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 1,
-      "last_entry": "12:18 UTC \u2014 Researcher",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- **Competitive Intel**: Mem.ai is crushing it with AI auto-organization and 60% faster search vs manual note-taking tools. Their \"parallel mind\" posi"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Wire",
@@ -315,12 +315,12 @@
   ],
   "recent": [
     {
-      "header": "12:18 UTC \u2014 Researcher",
-      "snippet": "- **Competitive Intel**: Mem.ai is crushing it with AI auto-organization and 60% faster search vs manual note-taking too"
+      "header": "12:40 UTC - ContentBot Marketing Task",
+      "snippet": "**Task:** Polish social media content for DropAnywhere launch week\n\n**Action:** Refined LinkedIn use-case thread post (`"
     }
   ],
   "totalCycles": 1,
   "totalErrors": 0,
   "successRate": 100,
-  "lastUpdated": "2026-03-16T12:19:37.146575Z"
+  "lastUpdated": "2026-03-16T12:41:19.362253Z"
 }
