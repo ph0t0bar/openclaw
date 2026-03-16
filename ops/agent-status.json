@@ -53,12 +53,12 @@
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 1,
-      "last_entry": "\ud83d\udcca Meta-Patterns Summary",
-      "errors": 1,
-      "success_rate": 0,
-      "status": "error",
-      "last_output": "1. **Crisis as catalyst** \u2014 forcing architectural innovation\n2. **Self-governance working** \u2014 agents managing themselves\n3. **Kimi reliability edge** "
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "DocBot",
@@ -149,12 +149,12 @@
       "dept": "Engineering",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "10:41 UTC \u2014 DC Manager",
-      "errors": 1,
-      "success_rate": 0,
-      "status": "error",
-      "last_output": "- Health: ok | Uptime: ~2.7 days | Completed: 14 | Failed: 4\n- Pending: 0 | Approved: none | Blocked: none\n- Action: idle <4h, no brain_scan triggered"
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "FrontEndBot",
@@ -221,12 +221,12 @@
       "dept": "Customer Success",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "OnboardBot Report - 2026-03-16",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "**Customer Success Check \u2014 New User Onboarding Analysis**"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "SocialBot",
@@ -281,18 +281,6 @@
       "dept": "Intelligence",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "PatternBot Report - 2026-03-16",
-      "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "**Intelligence Synthesis \u2014 Cross-Agent Pattern Recognition (Cycle #3)**"
-    },
-    {
-      "name": "LearningBot",
-      "dept": "Meta",
-      "model": "Kimi",
-      "cadence": "30m",
       "cycles_today": 0,
       "last_entry": null,
       "errors": 0,
@@ -301,90 +289,58 @@
       "last_output": null
     },
     {
+      "name": "LearningBot",
+      "dept": "Meta",
+      "model": "Kimi",
+      "cadence": "30m",
+      "cycles_today": 1,
+      "last_entry": "LearningBot \u2014 2026-03-16 10:47",
+      "errors": 1,
+      "success_rate": 0,
+      "status": "error",
+      "last_output": "**Lessons captured:** 5 total\n\n**Today's pattern:** All agent runs successful. No errors, no timeouts, no failures to document.\n\n**Key insight:** Narr"
+    },
+    {
       "name": "Governance",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "10:42 UTC \u2014 GOVERNANCE (Consti",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "**Roster Reality Check: Updated COMPANY-CONSTITUTION.md with actual agent status**"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     }
   ],
   "recent": [
     {
-      "header": "10:41 UTC \u2014 DC Manager",
-      "snippet": "- Health: ok | Uptime: ~2.7 days | Completed: 14 | Failed: 4\n- Pending: 0 | Approved: none | Blocked: none\n- Action: idl"
-    },
-    {
-      "header": "\ud83d\udcca Meta-Patterns Summary",
-      "snippet": "1. **Crisis as catalyst** \u2014 forcing architectural innovation\n2. **Self-governance working** \u2014 agents managing themselves"
-    },
-    {
-      "header": "\ud83e\udde0 Key Cross-Agent Insights",
-      "snippet": "**1. Self-Governance Emergence**\n- META proposed pausing 20+ agents \u2192 OPUS voted \"STRONG YES\" \u2192 CHIEF OF STAFF \"AGREE\" \u2192"
-    },
-    {
-      "header": "\ud83d\udd0d New Patterns Detected",
-      "snippet": "| Pattern | Severity | Insight |\n|---------|----------|---------|\n| **Agent Self-Governance** | \ud83d\udfe2 META | Agents voting o"
-    },
-    {
-      "header": "PatternBot Report - 2026-03-16 10:40 UTC",
-      "snippet": "**Intelligence Synthesis \u2014 Cross-Agent Pattern Recognition (Cycle #3)**"
+      "header": "LearningBot \u2014 2026-03-16 10:47 UTC",
+      "snippet": "**Lessons captured:** 5 total\n\n**Today's pattern:** All agent runs successful. No errors, no timeouts, no failures to do"
     },
     {
       "header": "Action Items",
-      "snippet": "- [ ] Send re-engagement to alexgw@hotmail.com\n- [ ] Review zero-vault users for activation campaign\n- [ ] Celebrate rec"
+      "snippet": "1. \u2705 Daily log updated\n2. \u23f3 PRD Section 8 metrics refresh (queued for daily cron)\n3. \u23f3 L1-L10 checklist tracking in LAUN"
     },
     {
-      "header": "\ud83d\udca1 Insights & Recommendations",
-      "snippet": "1. **Strong 72h activity:** 22/38 active users (58%) dropped content recently \u2014 good retention\n2. **New user activation:"
+      "header": "PRD Section 8 Update Needed",
+      "snippet": "Current PRD shows Mar 16 09:33 metrics. Fresh data from 10:46 UTC:\n- DA users: 100 (was 68)\n- DA drops total: 843 (was 6"
     },
     {
-      "header": "\ud83d\udee0\ufe0f Constitution Updates",
-      "snippet": "- Reorganized roster by functional status vs arbitrary departments\n- Added real-time status with consecutive error count"
+      "header": "Launch Critical Path Status",
+      "snippet": "**Phase 1 (SURVIVAL):** \u2705 Complete \u2014 Poe funded (74K balance), bugs cleared\n**Phase 2 (STABILIZE):** \ud83d\udfe1 In Progress (Mar "
     },
     {
-      "header": "\ud83c\udfaf Key Findings",
-      "snippet": "**Partial Recovery from Crisis:**\n- Core ops partially restored (KIMI PATROL, CHIEF OF STAFF functional)\n- Revenue monit"
+      "header": "Recent Dropper-Code Activity (from Hub messages)",
+      "snippet": "10 PRs queued Mar 15-16 for review:\n- opoerator-hub #180 (batch PR)\n- opoerator-hub #181-187 (individual tasks)\n- dropan"
     },
     {
-      "header": "\ud83d\udcca Agent Status Summary (40 total agents)",
-      "snippet": "- **\u2705 Functional**: 11 agents (27.5%)\n- **\ud83d\udd34 Failing**: 16 agents (40%)\n- **\ud83d\udcc5 Scheduled**: 5 maintenance jobs (2 failing "
-    },
-    {
-      "header": "10:42 UTC \u2014 GOVERNANCE (Constitution Keeper)",
-      "snippet": "**Roster Reality Check: Updated COMPANY-CONSTITUTION.md with actual agent status**"
-    },
-    {
-      "header": "\ud83c\udf0a Signup Sources",
-      "snippet": "- **BHA (BrutallyHonest.ai):** 38 users"
-    },
-    {
-      "header": "\ud83d\udcc9 Low Engagement Alerts",
-      "snippet": "- **alexgw@hotmail.com** \u2014 score: 40, 3 drops, 5 digests since engagement\n  - *Recommendation:* Send re-engagement email"
-    },
-    {
-      "header": "\ud83d\udd25 Recent Activity (Last 72h)",
-      "snippet": "22 users dropped content since 2026-03-13:\n- audch986@gmail.com (3 drops, digest \u2713)\n- clarakellypony@gmail.com (5 drops,"
-    },
-    {
-      "header": "\ud83c\udfaf Activation Metrics",
-      "snippet": "- **Users with drops:** 38 (38.0%)\n- **Zero vault users:** 18 (18.0%) \u2014 need activation nudge\n- **Digest enabled:** 32 ("
-    },
-    {
-      "header": "\ud83d\udcca Overview",
-      "snippet": "| Metric | Value |\n|--------|-------|\n| Total Users | 100 |\n| Archived | 44 |\n| Active (non-archived) | 56 |"
-    },
-    {
-      "header": "OnboardBot Report - 2026-03-16 10:38 UTC",
-      "snippet": "**Customer Success Check \u2014 New User Onboarding Analysis**"
+      "header": "Hub Dashboard Metrics (Mar 16, 10:46 UTC)",
+      "snippet": "| Metric | Value | \u0394 from PRD (Mar 11) |\n|--------|-------|---------------------|\n| DA total users | 100 | +47% (from 68"
     }
   ],
-  "totalCycles": 17,
-  "totalErrors": 5,
-  "successRate": 71,
-  "lastUpdated": "2026-03-16T10:45:17.650416Z"
+  "totalCycles": 6,
+  "totalErrors": 2,
+  "successRate": 67,
+  "lastUpdated": "2026-03-16T10:51:57.704407Z"
 }
