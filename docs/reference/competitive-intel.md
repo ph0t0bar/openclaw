@@ -178,3 +178,48 @@ Key breakthrough features launched October 2025:
 - Missing multi-channel capture keeps our core advantage intact
 
 *Research Task: COMPETITIVE completed - 2026-03-16 15:15 UTC*
+
+## March 16, 2026 - 15:49 UTC: Mem.ai vs Notion vs Reflect Comparison
+
+**Research Source:** Perplexity search (sonar-pro)
+
+### Mem AI 2.0 Deep Dive
+
+**Core Value Proposition**: Built as a "parallel mind" for complex workflows with intelligent AI search and automatic knowledge connections.
+
+**Key Capabilities (2026):**
+- **Notes Researcher AI** - Answers questions by searching all notes, provides sourced responses
+- **Smart AI Writer** - Drafts content based on existing notes, learns personal writing style
+- **Zero-setup organization** - No manual folders/tags needed; AI auto-connects similar notes
+- **Note Finder** - Proactively surfaces related notes while working
+- **Performance Claims**: 20%+ productivity improvement, 60% faster note retrieval
+
+### Notion Positioning
+
+- Remains the **top all-in-one workspace** combining notes, databases, and project management
+- More total features than Mem AI but requires significant initial setup
+- AI search capabilities lag behind Mem's specialized approach
+- Strength: integrated project management alongside note-taking
+
+### Reflect App Status
+
+- **No significant 2026 coverage found** in competitive search results
+- Suggests potential market consolidation/decline or niche positioning
+- Minimal public information available for direct comparison
+
+### Strategic Comparison Matrix
+
+| Use Case | Best Choice |
+|----------|------------|
+| Fast note discovery & auto-organization | Mem AI |
+| Unified workspace with databases/projects | Notion |
+| Meeting transcription/summaries | Sembly AI, Fireflies AI |
+| Multi-channel capture (email/SMS/voice) | **DropAnywhere** |
+
+### Key Insight for DropAnywhere
+
+**Mem.ai's positioning validates our zero-setup philosophy** but executes on real-time AI organization vs our async digest model. This creates an opportunity to position our approach as "sustainable focus" - intentional information consumption vs reactive surfacing.
+
+**Our sustained advantage**: Neither Mem nor Notion offers frictionless multi-channel ingestion. Their capture is limited to in-app entry, while we support email, SMS, voice, and chat - keeping "Your Second Brain Has No Inbox" differentiation intact.
+
+*Research Task: COMPETITIVE completed - 2026-03-16 15:49 UTC*
