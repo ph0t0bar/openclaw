@@ -756,41 +756,36 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 11, 09:45 UTC)
+## 8. System Health & Metrics (March 16, 11:34 UTC)
 
-| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 09:45 | Δ (24h) |
-|--------|-------|-------|--------|--------------|---------|
-| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | post-consent migration (44 archived) |
-| DA archived users | — | — | — | **44** | BHA-only / non-consented |
-| DA active real users | — | — | **~20** | **24** (active 7d) | healthy core |
-| DA active 24h | 13 | 16 | **19** | **12** | ⬇ normal variance |
-| DA active 7d | 24 | 47 | 47+ | **60** | +28% |
-| DA drops total | 456 | 589 | **668** | **690** | +22 |
-| DA drops 24h | — | — | — | **51** | strong |
-| DA digests sent total | 93 | 147 | 147+ | **161** | +14 |
-| DA digests sent 24h | — | — | — | **15** | clean |
-| BHA users | 172 | 198 | **211** | **215** | +4 |
-| BHA active 24h | — | — | — | **13** | new data |
-| BHA active 7d | 38 | 53 | 53+ | **63** | +19% ✅ |
-| BHA pro subs | — | — | **3** | **2** *(stripe source)* | ⚠️ 1 churn or tracking |
-| BHA new users 24h | — | — | — | **7** | steady |
-| BHA weekly visitors (GA) | — | — | **531** | — | (last GA pull Mar 10) |
-| BHA new users 7d (GA) | — | — | **523** (98.5%) | — | — |
-| BHA avg session | — | — | **5m 55s** | — | — |
-| BHA bounce rate | — | — | **38.4%** | — | — |
-| BHA Google organic % | — | — | **63%** | — | — |
-| BHA MRR | $21 | $21 | **$21** | **$21** | stable |
-| Poe balance | 835K | 530K | **427K** | **385K** | -42K |
-| Poe burn/6h points | — | — | ~13K | **27,694** | theREALrealtalk hot |
-| Poe calls/6h | — | — | — | **100** | — |
-| Email sent 24h | 46 | 85 | **100** | **79** | normal |
-| Email delivery | 100% | 100% | **98%** | **100%** (79/79) | ✅ |
-| Dropper-Code tasks | — | 9 | **12** | **15** | +3 shipped today |
-| Open issues | 0 | 0 | **0** | **0** | clean |
-| joey-backup commits today | — | — | — | **40+** | major archive + Snapback expansion session |
-| GOLDMINE excavations | — | — | — | **batch-0001** | first automated VAULT→GOLDMINE extraction |
-| VAULT documents added | — | — | — | **40+** | Poe conversations (Jan 2026) + BHA pipeline + reference docs |
-| Snapback prototypes | — | — | — | **3** | music + songwriting + product vision visualizations |
+| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 | Δ (24h) |
+|--------|-------|-------|--------|--------|--------|---------|
+| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | +54% post-cleanup |
+| DA archived users | — | — | — | **44** | **44** | stable |
+| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | healthy growth |
+| DA active 24h | 13 | 16 | **19** | **12** | **12** | normal variance |
+| DA active 7d | 24 | 47 | 47+ | **60** | **—** | — |
+| DA drops total | 456 | 589 | **668** | **690** | **843** | +153 (5 days) |
+| DA drops 24h | — | — | — | **51** | **33** | steady |
+| DA digests sent total | 93 | 147 | 147+ | **161** | **—** | — |
+| DA digests sent 24h | — | — | — | **15** | **3** | light send day |
+| BHA users | 172 | 198 | **211** | **215** | **259** | +44 (+20%) |
+| BHA active 24h | — | — | — | **13** | **12** | steady |
+| BHA active 7d | 38 | 53 | 53+ | **63** | **72** | +14% ✅ |
+| BHA pro subs | — | — | **3** | **2** | **2** | stable |
+| BHA new users 24h | — | — | — | **7** | **8** | steady |
+| BHA weekly visitors (GA) | — | — | **531** | — | **—** | (last GA pull Mar 10) |
+| BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | stable |
+| Poe balance | 835K | 530K | **427K** | **385K** | **74,620** | crisis averted, 2.5d runway |
+| Poe burn/6h points | — | — | ~13K | **27,694** | **29,547** | theREALrealtalk hot |
+| Poe calls/6h | — | — | — | **100** | **100** | — |
+| Email sent 24h | 46 | 85 | **100** | **79** | **100** | normal |
+| Email delivery | 100% | 100% | **98%** | **100%** | **99%** (99/100) | ✅ |
+| Dropper-Code tasks | — | 9 | **12** | **15** | **15+** | 10 PRs queued Mar 15-16 |
+| Open issues | 0 | 0 | **0** | **0** | **4** | new items filed |
+| joey-backup commits | — | — | — | **40+** | **—** | — |
+| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | — |
+| Snapback prototypes | — | — | — | **3** | **3** | — |
 
 ### BHA Search Console Highlights (Feb 2026 data)
 
