@@ -101,12 +101,12 @@
       "dept": "Marketing",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 1,
-      "last_entry": "12:40 UTC - ContentBot Marketi",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "**Task:** Polish social media content for DropAnywhere launch week\n\n**Action:** Refined LinkedIn use-case thread post (`social/use-case-thread-linkedi"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Archivist",
@@ -125,12 +125,12 @@
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 0,
-      "last_entry": null,
+      "cycles_today": 1,
+      "last_entry": "13:09 UTC \u2014 Researcher",
       "errors": 0,
-      "success_rate": null,
-      "status": "idle",
-      "last_output": null
+      "success_rate": 100,
+      "status": "active",
+      "last_output": "- COMPETITIVE: Mem AI positioning as zero-setup AI-first note platform with 60% faster search, automatic linking, and Notes Researcher AI that sources"
     },
     {
       "name": "Wire",
@@ -315,12 +315,16 @@
   ],
   "recent": [
     {
-      "header": "12:40 UTC - ContentBot Marketing Task",
-      "snippet": "**Task:** Polish social media content for DropAnywhere launch week\n\n**Action:** Refined LinkedIn use-case thread post (`"
+      "header": "13:09 UTC \u2014 Researcher",
+      "snippet": "- COMPETITIVE: Mem AI positioning as zero-setup AI-first note platform with 60% faster search, automatic linking, and No"
+    },
+    {
+      "header": "2026-03-16 Daily Log",
+      "snippet": ""
     }
   ],
-  "totalCycles": 1,
+  "totalCycles": 2,
   "totalErrors": 0,
   "successRate": 100,
-  "lastUpdated": "2026-03-16T12:41:19.362253Z"
+  "lastUpdated": "2026-03-16T13:10:13.475096Z"
 }
