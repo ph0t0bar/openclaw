@@ -777,7 +777,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 | DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | **7** | **6** | -1 |
 | DA active 7d | 24 | 47 | 47+ | **60** | **55** | **55** | **55** | **-** | **-** | - |
 | DA drops total | 456 | 589 | **668** | **690** | **843** | **843** | **843** | **845** | +2 |
-| DA drops 24h | - | - | - | **51** | **33** | **22** | **18** | **18** | stable |
+| DA drops 24h | - | - | - | **51** | **33** | **22** | **18** | **18** | **18** | **25** | +7 |
 | DA digests sent 24h | - | - | - | **15** | **3** | **3** | **3** | **3** | **3** | ⚠️ stalled |
 | BHA users | 172 | 198 | **211** | **215** | **259** | **259** | **259** | **259** | **259** | stable |
 | BHA active 24h | - | - | - | **13** | **11** | **9** | **7** | **6** | -1 |
@@ -937,7 +937,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 21:12 UTC — DocBot metrics refresh. Section 8 updated: 21:12 column added, DA users 101 (+1), drops 850 (+5), BHA users 260 (+1), Poe balance 38,162 🚨. PR #193 completed. Open issues: 1. 🦜*
+*Last auto-refreshed: 2026-03-16 22:17 UTC — DocBot metrics refresh. Section 8 updated: 22:17 column added, DA drops 852 (+7), active 24h 7 (+1), BHA users 260 (+1), Poe balance 37,892 🚨 (still critical). PR #193 added to shipping log (digest stall fixed). 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *
@@ -951,5 +951,8 @@ ed items. 🦜*
 *
 ���*
 ted items. 🦜*
+�*
+��*
+*
 �*
 ��*
