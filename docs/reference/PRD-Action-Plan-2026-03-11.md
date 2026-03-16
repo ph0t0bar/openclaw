@@ -770,35 +770,35 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 16, 09:33 UTC)
+## 8. System Health & Metrics (March 16, 11:55 UTC)
 
-| Metric | Mar 6 | Mar 9 | Mar 11 | Mar 16 09:33 | Δ (5d) |
+| Metric | Mar 6 | Mar 9 | Mar 11 | Mar 16 11:55 | Δ (5d) |
 |--------|-------|-------|--------|--------------|---------|
-| DA total accounts | 28 | 52 | **68** | **100** | +47% ✅ |
-| DA archived users | — | — | **44** | **—** | — |
-| DA active real users | — | — | **24** (7d) | **—** | — |
-| DA active 24h | 13 | 16 | **12** | **12** | stable |
-| DA active 7d | 24 | 47 | **60** | **—** | — |
-| DA drops total | 456 | 589 | **690** | **843** | +22% ✅ |
-| DA drops 24h | — | — | **51** | **33** | normal variance |
-| DA digests sent total | 93 | 147 | **161** | **—** | — |
-| DA digests sent 24h | — | — | **15** | **3** | weekend lull |
-| BHA users | 172 | 198 | **215** | **259** | +20% ✅ |
-| BHA active 24h | — | — | **13** | **12** | stable |
-| BHA active 7d | 38 | 53 | **63** | **73** | +16% ✅ |
-| BHA pro subs | — | — | **2** | **2** | stable |
-| BHA new users 24h | — | — | **7** | **8** | steady |
-| BHA weekly visitors (GA) | — | — | **531** | — | (needs refresh) |
-| BHA MRR | $21 | $21 | **$21** | **$21** | stable (no new charges 4h) |
-| Poe balance | 835K | 530K | **385K** | **74,801** | unit change or heavy usage |
-| Poe burn/6h points | — | — | **27,694** | **29,696** | theREALrealtalk + Tippiy leading |
-| Poe calls/6h | — | — | **100** | **100** | steady |
-| Email sent 24h | 46 | 85 | **79** | **99** | +25% |
-| Email delivery | 100% | 100% | **100%** | **99%** (98/99) | 1 delayed |
-| Dropper-Code tasks | — | 9 | **15** | **—** | — |
-| Open issues | 0 | 0 | **0** | **7** | new PRs opened |
-| joey-backup commits | — | — | **40+** | — | — |
-| Top Poe bots 6h | — | — | — | theREALrealtalk (12K), Tippiy (5K), BOUNCE-CONVERTER (3.9K) | — |
+| DA total accounts | 28 | 52 | 68 | **100** | +47% ✅ |
+| DA archived users | — | — | 44 | **—** | — |
+| DA active real users | — | — | 24 (7d) | **—** | — |
+| DA active 24h | 13 | 16 | 12 | **12** | stable |
+| DA active 7d | 24 | 47 | 60 | **—** | — |
+| DA drops total | 456 | 589 | 690 | **843** | +22% ✅ |
+| DA drops 24h | — | — | 51 | **33** | normal variance |
+| DA digests sent total | 93 | 147 | 161 | **—** | — |
+| DA digests sent 24h | — | — | 15 | **3** | weekend lull |
+| BHA users | 172 | 198 | 215 | **259** | +20% ✅ |
+| BHA active 24h | — | — | 13 | **12** | stable |
+| BHA active 7d | 38 | 53 | 63 | **72** | +14% ✅ |
+| BHA pro subs | — | — | 2 | **2** | stable |
+| BHA new users 24h | — | — | 7 | **8** | steady |
+| BHA weekly visitors (GA) | — | — | 531 | — | (needs refresh) |
+| BHA MRR | $21 | $21 | $21 | **$21** | stable (no charges 4h) |
+| Poe balance | 835K | 530K | 385K | **74,801** | ↓ heavy usage (theREALrealtalk 12K/hr) |
+| Poe burn/6h points | — | — | 27,694 | **29,661** | theREALrealtalk (11K), Tippiy (5K), BOUNCE-CONVERTER (3.9K) |
+| Poe calls/6h | — | — | 100 | **100** | steady |
+| Email sent 24h | 46 | 85 | 79 | **100** | +27% |
+| Email delivery | 100% | 100% | 100% | **99%** (99/100) | 1 delayed |
+| Dropper-Code tasks | — | 9 | 15 | **—** | — |
+| Open issues | 0 | 0 | 0 | **4** | hub: 3, dropanywhere-app: 1 |
+| joey-backup commits | — | — | 40+ | — | — |
+| Top Poe bots 6h | — | — | — | theREALrealtalk (11K), Tippiy (5K), BOUNCE-CONVERTER (3.9K), BrutallyHonestAI (3K) | — |
 | GitHub CI status | — | — | — | openclaw: cancelled, others: unknown | — |
 | Railway deploys (hub) | — | — | — | last SUCCESS 2026-03-14 | — |
 

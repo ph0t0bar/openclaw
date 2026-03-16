@@ -125,24 +125,24 @@
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 1,
-      "last_entry": "11:24 UTC \u2014 Researcher (VOICE)",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- **Finding:** Joey's latest feature thinking centers on \"truly effortless\" AI assistance with session continuity, auto-context loading, and proactive"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Wire",
       "dept": "Intelligence",
       "model": "Kimi",
       "cadence": "15m",
-      "cycles_today": 1,
-      "last_entry": "11:28 UTC \u2014 WIRE (Feed Ingesti",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- **Slot:** #2 \u2014 Mem.ai / Notion AI / Reflect competitor watch\n- **Finding:** No major March 2026 launches from the three queried products\n- **\ud83d\udfe1 Relev"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "DC Manager",
@@ -161,12 +161,12 @@
       "dept": "Engineering",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "FrontEndBot Check \u2014 11:25 UTC",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "**dropanywhere-app repo status:**"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "BHABot",
@@ -293,66 +293,34 @@
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "11:26 UTC \u2014 LearningBot Captur",
-      "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- **Lesson documented:** Digest pipeline stall root cause analysis\n- **Key finding:** `DISABLE_CRONS=1` on Hub creates gap between monitoring (works) "
-    },
-    {
-      "name": "Governance",
-      "dept": "Meta",
-      "model": "Sonnet",
-      "cadence": "30m",
       "cycles_today": 0,
       "last_entry": null,
       "errors": 0,
       "success_rate": null,
       "status": "idle",
       "last_output": null
+    },
+    {
+      "name": "Governance",
+      "dept": "Meta",
+      "model": "Sonnet",
+      "cadence": "30m",
+      "cycles_today": 1,
+      "last_entry": "GOVERNANCE Action \u2014 11:51 UTC ",
+      "errors": 1,
+      "success_rate": 0,
+      "status": "error",
+      "last_output": "**Constitutional Review Completed**: Major discrepancy found and resolved between Company Constitution and operational roster.\n\n**Issue**: \n- Constitu"
     }
   ],
   "recent": [
     {
-      "header": "11:27 UTC \u2014 Heartbeat",
-      "snippet": "- Dropper-Code: \u2705 healthy, 14 completed, 4 failed, polling normally\n- Pending tasks: 0\n- \u26a0\ufe0f Digest pipeline stall alert:"
-    },
-    {
-      "header": "11:26 UTC \u2014 Daily Ops Summary (Hub Alert)",
-      "snippet": "- DA: 100 users (+16% from 86), 33 drops today, 843 total, 3 digests (24h)\n- BHA: 259 users (+7% from 241), 12 active, 2"
-    },
-    {
-      "header": "11:26 UTC \u2014 LearningBot Capture",
-      "snippet": "- **Lesson documented:** Digest pipeline stall root cause analysis\n- **Key finding:** `DISABLE_CRONS=1` on Hub creates g"
-    },
-    {
-      "header": "11:26 UTC \u2014 Hub Alert: Digest Pipeline Stall",
-      "snippet": "- Alert: 15 users with stalled digests (82257ff0, 233fe95f, 3025e8e4, 7c9c07fe, 8f290ddc, b1617556, 59b87e60, e1743f64, "
-    },
-    {
-      "header": "Open Issues",
-      "snippet": "- None\n\n**Assessment:** Clean slate for engineering. PR #150 is a QA/testing PR, not launch-blocking. No critical issues"
-    },
-    {
-      "header": "Open PRs (1)",
-      "snippet": "- #150 `[brain-scan] Full digest QA with Joey\u2014test all recent fixes`"
-    },
-    {
-      "header": "FrontEndBot Check \u2014 11:25 UTC",
-      "snippet": "**dropanywhere-app repo status:**"
-    },
-    {
-      "header": "11:28 UTC \u2014 WIRE (Feed Ingestion)",
-      "snippet": "- **Slot:** #2 \u2014 Mem.ai / Notion AI / Reflect competitor watch\n- **Finding:** No major March 2026 launches from the thre"
-    },
-    {
-      "header": "11:24 UTC \u2014 Researcher (VOICE)",
-      "snippet": "- **Finding:** Joey's latest feature thinking centers on \"truly effortless\" AI assistance with session continuity, auto-"
+      "header": "GOVERNANCE Action \u2014 11:51 UTC (Cron: aac7b675-3b89-43bf-9ce1-1b3f014f14a3)",
+      "snippet": "**Constitutional Review Completed**: Major discrepancy found and resolved between Company Constitution and operational r"
     }
   ],
-  "totalCycles": 9,
-  "totalErrors": 2,
-  "successRate": 78,
-  "lastUpdated": "2026-03-16T11:28:09.282493Z"
+  "totalCycles": 1,
+  "totalErrors": 1,
+  "successRate": 0,
+  "lastUpdated": "2026-03-16T11:54:09.327736Z"
 }
