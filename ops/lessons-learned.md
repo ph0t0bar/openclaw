@@ -474,4 +474,101 @@ When critical insights emerge from one agent, cross-check with another angle. Tr
 
 ---
 
+## 2026-03-16 (16:40 UTC) — Poe Balance Burn Rate Warning
+
+**What happened:**
+Poe balance dropped from 45,910 → 44,003 in ~26 minutes (16:12 → 16:37 UTC), a burn rate of ~6,600 pts/hour. PoeBot flagged 46,145 pts burned in the last 6h. At this rate, balance drops to ~0 in ~6–7 hours.
+
+**Why it happened:**
+Poe is the LLM backend for BrutallyHonest.ai bot conversations. High burn correlates with active user engagement — 70 BHA users active in the last 7 days with 4 new today. This is not a bug, but it's also not sustainable without revenue.
+
+**How to prevent crisis:**
+- Alert threshold of 10K is good but may need a 20K "early warning" alert added
+- Consider auto-pausing expensive bots during off-peak hours
+- Revenue from BHA ($21 MRR) needs to scale to cover Poe costs — closing that gap is a P1 business priority
+- Track burn-per-user to identify high-cost personas that may need rate limiting
+
+**How to replicate the monitoring:**
+PoeBot runs `GET /poe/v1/usage` or equivalent. Schedule alerts when 6h burn > 25K (warning) or > 40K (critical). This pattern caught the issue before zero-balance failure.
+
+---
+
+## 2026-03-16 (16:40 UTC) — Claude Code Usage Limit as Failure Mode
+
+**What happened:**
+Task `task_1773665531_251` and `task_1773674991_519` both failed with "Claude Code out of extra usage, resets 4pm UTC." Two separate Dropper-Code tasks in the same cycle hit the same limit.
+
+**Why it happened:**
+Claude Code has a per-period usage cap. When Dropper-Code autonomously spins up multiple Claude Code sessions (for different PRs/tasks), they can exhaust the limit before the reset window. The reset at 16:00 UTC is predictable but the burst pattern is not being respected.
+
+**How to prevent:**
+- Dropper-Code should check remaining Claude Code quota before spinning up new tasks
+- Batch tasks rather than running all concurrently during heavy cycles
+- Schedule compute-heavy Dropper-Code tasks to start just after the 16:00 UTC reset
+- Add a quota-check step as the first action in each Dropper-Code task
+
+**How to replicate the fix:**
+If tasks fail with this error: wait for reset (16:00 UTC daily), then re-trigger the task manually via `POST /trigger/{job_name}`. Both failed tasks are recoverable — not data-loss failures.
+
+---
+
+## 2026-03-16 (16:40 UTC) — SEO Blind Spot: Domain Not Indexed
+
+**What happened:**
+SEOBot discovered drop-anywhere.com is NOT indexed on Google. Competing domain `dropmeanywhere.com` and company `DROPPANYWHERE LTD` are capturing search traffic for similar terms. This is a critical growth blocker.
+
+**Why it happened:**
+No sitemap submitted to Google Search Console, no pillar content targeting high-volume keywords, and no backlink strategy. The domain is live but invisible to search engines despite having 100 users.
+
+**How to prevent ongoing damage:**
+- Immediately: Submit sitemap.xml to Google Search Console
+- Short-term: Create pillar content around "second brain no inbox," "AI daily digest," "capture anywhere organize once"
+- Mid-term: Build comparison pages (DropAnywhere vs Notion, vs Mem.ai) targeting existing demand
+- Long-term: Template gallery to drive organic discovery
+
+**How to replicate the discovery:**
+SEOBot used keyword research + competitor analysis pattern. Run monthly to catch domain authority gaps before they compound. "Notion AI" at 110K/month low difficulty is the best entry point per SEOBot findings.
+
+---
+
+## 2026-03-16 (16:40 UTC) — Perfect Agent Cycle Pattern (11/11 A-Grades)
+
+**What happened:**
+Meta reported a perfect 11/11 A-grade cycle at 16:17 UTC — described as "perfect performance cycle." This follows a documented crisis cycle the day before. The turnaround happened in a single orchestration cycle.
+
+**Why it succeeded:**
+- Agents had narrow, specific tasks post-crisis reset
+- Each agent had a single clear deliverable (file to write, API to check, report to generate)
+- No overlapping responsibilities causing confusion
+- Chief of Staff and Archivist provided stable coordination backbone
+
+**How to replicate:**
+- Define success criteria per agent upfront (not just "check X")
+- Keep task scope < 3 steps per agent
+- Rotate broad analysis tasks to PatternBot/Meta post-cycle, not inside the cycle
+- Use the crisis→reset pattern deliberately: a chaos cycle that reveals problems, then a clean precision cycle
+
+**Pattern to watch for:**
+If two consecutive cycles score below B-average, it's structural (not random). Redesign the affected agent's scope rather than retry with the same prompt.
+
+---
+
+## 2026-03-16 (16:40 UTC) — Digest Stall: Fix Ready But Blocked on Review
+
+**What happened:**
+Heartbeat at 16:28 UTC noted: "Digest stall persists: still 3/41 in 24h. PR #190 (fix) is done but unmerged/undeployed." The fix exists, the code is written, the PR is open — but it's not deployed.
+
+**Why it's stalling:**
+Dropper-Code autonomously writes and opens PRs, but customer-facing changes are blocked by `DC Manager` policy (HITL — human-in-the-loop review required). Joey must review and merge before it deploys.
+
+**How to prevent future stalls:**
+- Add a cron alert: "PR open > 4h with 'fix' in title → alert Joey on WhatsApp"
+- Chief of Staff should flag unreviewed PRs that fix active incidents as P1 in every cycle
+- Consider a "fast-track" approval pathway for single-line bug fixes vs. feature PRs
+
+**How to replicate the unblock:**
+Joey needs to: (1) review PR #190 on GitHub, (2) merge to main, (3) Railway auto-deploys in ~2min. Fix is likely already complete — the bottleneck is review, not code.
+
+---
+
 *End of log.*

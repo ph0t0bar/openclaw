@@ -135,7 +135,25 @@
 
 ## Day 4 (March 27)
 
-### LinkedIn — Real Story
+### LinkedIn — Comparison Post
+**Time:** 9:00 AM CT  
+**Draft:** comparison-post-linkedin.md ✅ READY
+
+> You've tried them all. So have I.
+>
+> Notion: Beautiful. Powerful. Requires a PhD in you to maintain.
+> Obsidian: Incredible for *finding* things. Terrible for *capturing* them at 70mph.
+> Apple Notes: Graveyard. You know what I mean.
+>
+> Here's the problem with every single one: They're *storage*. They hold what you give them. They do nothing while you sleep.
+>
+> DropAnywhere is *active*.
+>
+> Storage vs. thinking partner. That's the real difference.
+>
+> → drop-anywhere.com
+
+### LinkedIn — Real Story (original slot, move to afternoon)
 **Time:** 2:00 PM CT
 
 > Got this message yesterday:
@@ -154,6 +172,21 @@
 ---
 
 ## Weekend (March 28-29)
+
+### Saturday — Founder Story
+**Time:** 10:00 AM CT (March 28)  
+**Draft:** founder-story-linkedin.md ✅ READY
+
+> Three years ago I lost a business idea in the shower.
+>
+> I rebuilt 12 note-taking systems trying to solve the problem. Each one worked for about two weeks.
+>
+> The real problem wasn't my apps. It was me trying to organize my brain from the outside.
+>
+> Your brain doesn't work in folders. It works in connections, associations, random sparks at 2am.
+>
+> So I stopped trying to build a system.
+> I built DropAnywhere instead.
 
 ### Sunday Reflection Post
 **Time:** 6:00 PM CT (March 29)
@@ -191,8 +224,8 @@
 - [x] Launch day announcement (high priority) — ✅ Reviewed, 8.5/10, minor polish needed
 - [x] We Broke Productivity philosophy post — ✅ Reviewed, 8.5/10, ship as-is for Day 3
 - [ ] Use case carousel post
-- [ ] Comparison post (DropAnywhere vs. Notion/Obsidian)
-- [ ] Founder story post
+- [x] Comparison post (DropAnywhere vs. Notion/Obsidian) — ✅ Written, Day 4 morning slot
+- [x] Founder story post — ✅ Written, Saturday March 28
 - [ ] FAQ thread
 - [ ] "Quiet work" philosophical post — ⚠️ REVIEWED: Move to Week 3+ (misaligned for launch week)
 
@@ -212,8 +245,11 @@
 | pitches.md (internal mirror) | 7/10 | ⚠️ Week 3+ content — good framework, needs Joey-specific story, cut the woo |
 | launch-day-linkedin-JOEY-VOICE.md | 9/10 | ✅ THIS IS THE ONE — authentic, raw, post and pin |
 | launch-day-linkedin-final.md | 9/10 | ✅ POLISHED & SHIP-READY — tightened opening, killer 2am hook, strong metrics |
+| comparison-post-linkedin.md | New | ✅ Written — Day 4 morning, comparison vs Notion/Obsidian/Apple Notes |
+| founder-story-linkedin.md | New | ✅ Written — Saturday March 28, origin story with shower-idea hook |
 
 ---
 
-**Last updated:** March 16, 2026 by SocialBot
-updated:** March 16, 2026 by SocialBot
+**Coverage Status:** 8 days of launch week = 9 posts drafted/ready. Only FAQ thread still outstanding.
+
+**Last updated:** March 16, 2026 by SocialBot (16:38 UTC)
