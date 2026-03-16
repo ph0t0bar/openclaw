@@ -85,3 +85,9 @@ The joey-backup/Ingestion/ folder contains **THE MOTHERLODE** - 2,422 files of J
 - **Key insight:** Already LIVE on Poe, processing real human transformation
 - **Contains:** Dilemma → Transurfing Analysis → Somatic Release → HTML Canvas → Future Self Letter
 - **Strategic value:** Weekly Catch should follow theProtocol's transformation pattern
+
+### 4. SYSTEM_ARCHITECTURE.md (Ingestion/SYSTEM_ARCHITECTURE.md) — 2026-03-16 18:48 UTC
+- **What:** December 2025 master blueprint for content transformation at scale
+- **Key insight:** Complete architecture that became DropAnywhere (VAULT → GOLDMINE → FORGE → OUTPUT)
+- **Contains:** Manifest system spec, transformation recipes, BHA personas as engines, knowledge graph vision
+- **Strategic value:** This IS the manual for building Weekly Catch — manifest system for pattern recognition, recipes for narrative generation
