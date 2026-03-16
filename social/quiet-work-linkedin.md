@@ -2,29 +2,31 @@
 
 I used to think success meant grinding harder.
 
-Then I learned it actually means untying knots.
+Then I learned it actually means fixing the right problems.
 
-Your calendar is chaotic? Look at your internal boundaries.
-Your team keeps missing deadlines? Look at your clarity (or lack of it).  
-Your pitch keeps getting rejected? Look at the story you're telling yourself about worthiness.
+Your calendar is chaotic? You don't need more productivity apps.
+Your team keeps missing deadlines? You don't need better project management.  
+Your pitch keeps getting rejected? You don't need more features.
 
-This isn't abstract advice. It's systems thinking applied to the self.
+You need to stop and figure out what's actually broken.
 
-External reality = Internal state, rendered in HD.
+Most startup problems aren't tactical. They're foundational.
 
-The "struggle" we glorify in startup culture? Often just resistance to looking inward. The real work is quieter. It's the knot-untying work. The clarity work. The "change the image you hold" work.
+I've been building in public for 2+ years. The biggest wins weren't from new growth hacks or better funnels. They came from stepping back and asking: "What am I assuming here that's wrong?"
 
-I've been building in public for 2+ years. The biggest inflection points weren't new tactics. They were internal shifts that then rippled outward into real results.
+Example: I spent months optimizing my note-taking system. Templates, tags, perfect organization. Meanwhile, I kept losing ideas because the friction to capture them was too high.
+
+The real problem wasn't organization. It was capture.
+
+Solution: Build a system that works when you're half-asleep, distracted, or driving.
 
 Here's the thing nobody tells you:
 
-Success doesn't have to be a struggle. It can be flow.
-
-But only if you're brave enough to look at the projector instead of cursing the screen.
+The hardest work isn't hustling harder. It's stopping long enough to see what you're actually solving for.
 
 —
 
-*P.S. This is why I built DropAnywhere with no folders, no templates, no organizing anxiety. Your brain already knows how to connect ideas. Your tools should just get out of the way.*
+*P.S. This is why DropAnywhere has no folders or templates. Sometimes the solution is simpler than the problem you think you're solving.*
 
 ---
 
