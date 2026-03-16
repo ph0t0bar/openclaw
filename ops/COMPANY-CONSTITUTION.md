@@ -133,34 +133,30 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Sonnet Deep Work** (disabled)
 - **Backlog Grinder series** (one-time jobs, completed/failed)
 
-## System Recovery Status (March 16 Recovery Update)
+## System Recovery Status (March 16 Current Update)
 
-### ✅ MAJOR RECOVERY: Agent Team Back Online
-**Current Status**: ~85% functional (23 functional, 3 failing, 7 scheduled)
-**Primary Achievement**: Most agents recovered from timeout/delivery crisis
-**Remaining Issue**: WhatsApp delivery still down for some jobs
-**Resolved**: Timeout issues mostly resolved with better task scoping
+### 🟡 PARTIAL RECOVERY: Progress But Gaps Remain
+**Current Status**: ~85% functional roster but minimal activity today
+**Key Issue**: Only 1 agent ran today (vs expected 10+), missing critical path doc
+**Achievement**: Most timeout issues resolved, core functions stable
+**Priority**: Agent activation and launch readiness tracking
 
-**Complete Recoveries**:
-✅ ARCHIVIST restored (backup system secured)
-✅ SENTRY AI restored (security monitoring active)
-✅ DEEP RESEARCHER restored (intelligence gathering resumed)
-✅ All engineering bots functional (Frontend, BHA, Railway, Doc)
-✅ All revenue monitoring stable (Stripe, Poe)
-✅ Content pipeline fully functional
-✅ Customer success bots operational
+**Current Gaps**:
+🔴 **Missing launch critical path doc** — `/root/.openclaw/workspace/docs/LAUNCH-CRITICAL-PATH-2026-03-14.md` not found
+🔴 **Low agent activity** — Only SENTRY ran today, missing daily metrics refresh at 14:00 UTC
+🟡 **CI status unknown** — Most GitHub repos showing unknown CI status
 
-**Remaining Issues**:
-🔴 META agent (edit failures to daily logs)
-🔴 WIRE agent (WhatsApp delivery error)
-🔴 OPUS STRATEGIST (edit failures)
-🟡 DROPPER-CODE MANAGER (logic runs but WhatsApp delivery fails)
+**Functional Systems**:
+✅ Hub dashboard operational (100 users, 33 drops, healthy metrics)
+✅ Backup system active (<18 min lag)
+✅ Core infrastructure stable (Railway, Stripe, Resend)
+✅ Dropper-Code active (10 PRs created today)
 
 **Outstanding Actions**:
-1. **MEDIUM**: Fix edit failures for META and OPUS agents (file write permissions?)
-2. **LOW**: Restore WhatsApp channel for remaining delivery errors
-3. **COMPLETED**: ✅ Timeout limit optimization (agents running sub-120s now)
-4. **COMPLETED**: ✅ Delivery mode optimization (most using 'none' now)
+1. **HIGH**: Create missing launch critical path document
+2. **HIGH**: Verify daily agent scheduling (metrics refresh at 14:00 UTC)
+3. **MEDIUM**: Investigate GitHub CI unknown status
+4. **LOW**: Restore complete agent activity levels
 
 ## Three Core Laws (Unchanged)
 
