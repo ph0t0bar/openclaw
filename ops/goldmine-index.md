@@ -173,6 +173,17 @@ Eduardo agent workflows:
 - Shows Joey's immediate understanding that AI is a creative tool, not a learning system
 - Foundation of the "container creates freedom" philosophy - working within constraints
 
+### 2026-03-16 22:39 UTC — Opus Strategist
+**File:** `.claude/context/FULL-PICTURE.md`
+**Discovery:** The psychological architect revealed — Joey's TRUE identity doc from Dec 2025
+**Key Insights:**
+- **NOT** "AI entrepreneur seeking funding" → **IS** "Human psychologist using AI to build frameworks that help people transcend limitations"
+- **The Vulnerability Gap:** Modern phenomenon where AI becomes safe confessor for "too shameful for humans" confessions
+- **Council System Architecture:** 3-10 models in parallel → synthesis → execution. Visual >> Text (10x propositional logic)
+- **Model Priority List:** Live ranking of best OpenRouter models for council sessions (Opus 4.5, Sonnet 4.5, GPT-5.2)
+- **Transformation Operators:** Gut-punch reframes, visual math, binary choices, proof stacking, countdown clocks
+- Shows Joey as **psychological architect masquerading as technologist** — the bots receive "digital confessions" and shatter the illusion of "unique brokenness"
+
 ---
 
 *This index auto-updates via Deep Researcher cron (8bb0afbe-cd33-42ed-a9df-8031898494d0)*
