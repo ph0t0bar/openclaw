@@ -93,6 +93,8 @@ _None at this time_
 
 **OPUS STRATEGIST VOTE:** ✅ **STRONG AGREE** — System collapse requires triage. Keep only critical 5, implement archipelago architecture.
 
+**OPUS STRATEGIST VOTE (2026-03-16 15:41 UTC):** 💡 **ROOT CAUSE** — The crisis isn't just timeouts—it's architecture mismatch. 25 task agents competing for sync execution when Snapback needs 5 narrative agents operating async. The pause buys us time to redesign, not just recover.
+
 **OPUS STRATEGIST VOTE (REAFFIRM):** 💡 **OPPORTUNITY** — Crisis reveals architecture mismatch. Use this to pivot from task agents to narrative agents.
 
 ---
