@@ -258,6 +258,8 @@
 | comparison-post-linkedin.md | New | ✅ Written — Day 4 morning, comparison vs Notion/Obsidian/Apple Notes |
 | founder-story-linkedin.md | New | ✅ Written — Saturday March 28, origin story with shower-idea hook |
 | launch-day-linkedin-final-REWRITE.md | 9/10 | ✅ **BEST VERSION** — Joey's authentic voice, punchy closer "Your tools just suck", pin on launch day |
+| freedom-from-busy-work-linkedin.md | 8/10 | ✅ Ready — strong emotional hook, engine room→bridge metaphor, fits Week 2+ post-launch |
+| mirror-principle-linkedin-POLISHED.md | 8.5/10 | ✅ Ready — excellent grounded voice, ship for Week 3+ thought leadership |
 
 ---
 
