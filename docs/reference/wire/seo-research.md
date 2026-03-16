@@ -1,170 +1,80 @@
 # SEO Research — DropAnywhere
 
-*Research log for keyword targeting and competitive positioning.*
+Research log for keyword targeting and competitive positioning.
 
 ---
 
-## 2026-03-16 — SEOBot Run
+## 2026-03-16 17:25 UTC — SEOBot
 
-### Current Indexing Status: drop-anywhere.com
+### Keywords to Target: AI Daily Digest / Productivity Space
 
-**Result: NOT INDEXED**
-- Site: searches return zero pages from drop-anywhere.com
-- Conflicting hits: dropmeanywhere.com (travel site), DROPPANYWHERE LTD (dissolved UK company)
-- **Action needed:** Submit sitemap to Google Search Console, get initial indexing
+**High-Value Keywords Found:**
+| Keyword | Context | Priority |
+|---------|---------|----------|
+| AI daily digest | Core offering match | 🔥 Primary |
+| AI email digest | Direct competitor to SaneBox/Readless | 🔥 Primary |
+| email productivity tool | 117 emails/day pain point | 🔥 Primary |
+| inbox management AI | 70% cite email as top stress | High |
+| AI thought partner | Mem.ai positioning — differentiate | High |
+| second brain app | No-inbox philosophy | Medium |
+| daily brief | Alternative to "digest" | Medium |
+| newsletter summarizer | Readless competitor space | Medium |
 
----
+**Long-Tail Opportunities:**
+- "AI daily digest from multiple sources"
+- "morning brief productivity tool"
+- "how to reduce email overload"
+- "best AI email summary tool 2025"
+- "drop anywhere capture ideas"
 
-### Target Keyword Research: "AI daily digest email"
+**Pain Points to Address in Content:**
+- 117 emails/day average (cite this stat)
+- 70% of workers cite email as top stress source
+- 90% time reduction possible (90min → 10min)
+- 49% of founders save 6+ hours weekly with AI email tools
 
-**Market Context:**
-- Average knowledge worker receives 117 emails daily
-- 70% of professionals cite email as top workplace stress source
-- AI digest tools claim 90% reduction in email reading time
-- Users report: 90 min → 10 min daily email review (35 min/day saved documented)
-- 26-55% productivity improvements across AI email tools
+**Competitor Landscape:**
+| Tool | Positioning | Weakness We Can Exploit |
+|------|-------------|------------------------|
+| **SaneBox** | Daily Digest feature | Legacy, expensive, email-only |
+| **Readless** | Newsletter summarizer | Single-purpose, $4.90/mo |
+| **Mem.ai** | "AI thought partner" | Complex, team-focused |
+| **Notion AI** | All-in-one workspace | Overwhelming, not focused |
+| **Google CC** | Inbox agent (experimental) | Google-only, beta |
 
-**Feature expectations:**
-- Morning/afternoon digest scheduling
-- Thread summarization + consolidation
-- Task conversion (emails → todos)
-- Smart deduplication for newsletters
-- 10-15 minute setup time
+### DropAnywhere.com Indexing Check
 
-**Competitors in this space:**
-- Read.ai (daily email digests)
-- Readless.app (newsletter summarizer)
-- Gmail Smart Compose (native)
-- n8n workflows (DIY automation)
-- MeetJamie.ai
+**Current State:**
+- ✅ Homepage indexed: "DropAnywhere is a productivity tool designed to help you capture and organize thoughts from any app or device"
+- ✅ Core value prop present: "single, clear brief delivered to you each morning"
+- ⚠️ Limited rich results / site links detected
+- ⚠️ No clear blog/content hub for long-tail keywords
 
-**Keyword opportunities:**
-- "AI daily digest email" — informational intent, high research phase
-- "email productivity tool" — broader, transactional intent
-- "automatic email summarizer" — specific feature
-- "reduce email time" — pain-point driven
-- "morning email digest" — behavior-based
+**Recommendations:**
+1. Add `/blog` with posts targeting: "AI daily digest", "second brain no inbox", "morning brief productivity"
+2. Optimize meta: "Your Second Brain Has No Inbox — DropAnywhere"
+3. Create comparison page: "DropAnywhere vs SaneBox vs Mem.ai"
+4. Add schema markup for SoftwareApplication
 
----
+### Competitor SEO: Mem.ai
 
-### Competitor: Mem.ai
+**Their Keywords (estimated):**
+- "AI note-taking"
+- "knowledge management"
+- "AI thought partner"
+- "team collaboration tools"
+- "AI organization software"
 
-**Positioning:** AI-organized knowledge base, meeting notes → searchable
-**Key phrase:** "lets AI organize your team's work"
-**SEO status:** No specific ranking data available, but strong brand presence
+**Their Weaknesses We Can Attack:**
+- Team-focused (we're personal/individual)
+- Complex setup (we're frictionless capture)
+- Heavy AI buzzwords (we're practical daily value)
 
-**Features to note:**
-- Bidirectional linking
-- Mem Chat for conversational queries
-- Auto-organization (no manual folders)
-- Targets: busy professionals, quick capture without filing
+**AEO (Answer Engine Optimization) Note:**
+Modern SEO is shifting to AI citations. We need clear value propositions within 160 characters for ChatGPT/Perplexity to cite us:
 
-**Target keywords inferred:**
-- "AI knowledge base"
-- "automatic note organization"
-- "team knowledge management"
-- "meeting notes AI"
-
----
-
-### Competitor: Notion AI
-
-**Primary keyword:** "Notion AI" — 110,000 monthly searches, LOW difficulty
-**Strategy:** Hub-and-spoke with long-tail variations
-
-**Ranking long-tail keywords:**
-- "how to use Notion AI for productivity"
-- "Notion AI for project management"
-- "Notion AI tips for project management"
-- "integrate Notion into daily workflows"
-
-**Template SEO play:** Notion ranks via template marketplace
-- /templates/ai-driven-seo-tag-generator
-- /templates/seo-tracker
-- /templates/keyword-tracker
-
-**Lesson:** Template galleries = organic acquisition channel
+> "DropAnywhere captures your scattered thoughts from any app and delivers a single morning brief. No inbox. No overwhelm."
 
 ---
 
-### Target Keyword: "Second brain app"
-
-**Definition:** Personal knowledge management (PKM) tool, centralized digital repository
-
-**Core features users expect:**
-- Single source of truth
-- Bidirectional linking
-- Visual graph connections
-- Smart search (concepts, not just keywords)
-- AI auto-organization + summarization
-
-**AI-enhanced competitors:**
-| Tool | Differentiator |
-|------|----------------|
-| Mem | Pure AI, no folders, natural language capture |
-| Saner.AI | Targets ADHD/busy pros, calendar + task integration |
-| Notion | AI features in premium, flexible templates |
-| NotePlan | AI summarization + voice-to-text |
-
-**Audience segments:**
-- Busy professionals (auto-organization)
-- Students/researchers (complex subject management)
-- Creative thinkers (visual idea mapping)
-- Anyone reducing cognitive load
-
-**Keyword variations to target:**
-- "second brain app" — head term
-- "personal knowledge management" — technical/professional
-- "AI note organization" — feature-driven
-- "digital second brain" — modifier
-- "best second brain app 2026" — comparison/query
-- "second brain for productivity" — use case
-
----
-
-## Recommended Keyword Strategy for DropAnywhere
-
-### Primary (High Intent)
-| Keyword | Intent | Notes |
-|---------|--------|-------|
-| "second brain no inbox" | Unique positioning | **Our differentiation** |
-| "AI daily digest" | Feature | Core offering |
-| "capture anywhere organize once" | Brand/tagline | Memorable hook |
-
-### Secondary (Long-tail)
-- "drop anything remember everything"
-- "SMS to notes AI"
-- "email yourself notes organized"
-- "voice capture second brain"
-- "daily digest from scattered inputs"
-
-### Comparison/Competitive
-- "Mem.ai alternative"
-- "Notion AI vs "
-- "second brain app without folders"
-- "automatic note organization app"
-
-### Action Items
-1. **Immediate:** Submit sitemap to Google Search Console
-2. **Content:** Create "What is a Second Brain (Without the Inbox)" pillar page
-3. **Templates:** Build Notion-style template gallery for viral SEO
-4. **Comparison:** Create "DropAnywhere vs Mem.ai vs Notion" page
-5. **Landing pages:** /daily-digest, /second-brain, /capture-anywhere
-
----
-
-*Next research: SERP analysis for "second brain app" — who's actually ranking?*
-
----
-
-### 16:51 UTC — 2026-03-16 — SEOBot Run (Competitor SEO Research Attempt)
-
-**Status:** ⚠️ Web search unavailable — OpenRouter credits exhausted (402 error)
-
-**Queued for next run:**
-- Competitor SEO: Mem.ai + Notion AI keyword rankings
-- "AI daily digest email productivity tool" keyword research
-- drop-anywhere.com indexing check
-
-**Action needed:** Top up OpenRouter credits at https://openrouter.ai/settings/credits
-
+*Next research: Notion AI keyword analysis, backlink gap analysis*
