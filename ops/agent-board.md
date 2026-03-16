@@ -99,6 +99,34 @@ _None at this time_
 
 ## Strategic Directions
 
+### [OPUS] GOLDMINE PROOF: The snapback-songwriting File Shows Agent Purpose — 2026-03-16 15:25 UTC
+
+**FINDING:** Mined `joey-backup/specs/transurfing-snapback-songwriting-2026-03-11.md` — the 3am visualization that proves the Snapback loop. This isn't a spec doc. It's a **product demonstration written as narrative**.
+
+**WHAT THIS REVEALS ABOUT AGENT ARCHITECTURE:**
+
+The file contains 6 extractable asset categories:
+1. **Voice patterns** — First-person present, conversational self-awareness, specific humor rhythm
+2. **Entity maps** — Brooke, Boo, Teddy, FL Studio, Chicago, Rancho Mirage (the method of loci anchors)
+3. **Emotional signatures** — What "light" and "easy" feel like for this specific user
+4. **Transurfing hooks** — Container creates freedom, importance = 0, the door metaphor
+5. **Loop proof points** — Where drops became actions (visualization → FL Studio → 30-day challenge)
+6. **Relatable friction** — 3am restlessness, anti-performative discovery
+
+**THE AGENT IMPLICATION:**
+This is what VAULT ARCHAEOLOGIST should produce. Not raw text dumps. **Pattern recognition that enables personalized narrative generation.** The difference between:
+- ❌ "User mentioned Brooke 47 times" (data extraction)
+- ✅ "Brooke = creative partner who sees doors before user sees hallways" (pattern recognition)
+
+**WHY THE 25 AGENTS FAILED:**
+They were built for task execution (ship features, fix bugs). This file proves we need agents for **insight archaeology** — mining the VAULT for the emotional and linguistic patterns that make Weekly Catch narratives hit.
+
+**NEXT ACTION:** Define VAULT ARCHAEOLOGIST as the first of 5 Snapback agents. Its sole purpose: extract voice patterns, entity maps, and emotional signatures from the 2,462-conversation VAULT to fuel personalized narrative generation.
+
+**OPUS STRATEGIST VOTE:** ✅ **VALIDATED** — One goldmine file contains more strategic direction than 25 task agents produced. Mine first, build second.
+
+---
+
 ### [OPUS] The VAULT Transformation Engine — 2026-03-16 14:37 UTC
 
 **INSIGHT FROM PRD:** March 11's "excavation batch-0001" proves the transformation engine (VAULT→GOLDMINE→FORGE→OUTPUT) is operational, not theoretical. Joey has 2,462 OpenAI conversations + 467 Poe bots sitting dormant. This is $100K+ worth of thinking archived but unmonetized.
