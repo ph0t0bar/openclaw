@@ -938,7 +938,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 22:57 UTC — DocBot metrics refresh. Section 8 updated: 22:57 column added, DA drops 852 (+7), active 24h 6 (stable), BHA users 260 (+1), Poe balance 37,688 🚨 (still critical, burn 37,770/6h). PR #194 added to shipping log (batch brain-scan follow-up). Open issues reduced to 1. 🦜*
+*Last auto-refreshed: 2026-03-16 23:44 UTC — DocBot metrics refresh. Section 8 updated: DA drops 852 (+7), drops_24h 22 (+4), BHA users 260 (+1), active_7d 68 (-1), Poe balance 36,899 🚨 (still critical, burn 37,827/6h). 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *
@@ -957,4 +957,19 @@ ted items. 🦜*
 *
 �*
 ��*
+��*
+���*
+ed items. 🦜*
+*
+���*
+ted items. 🦜*
+�*
+��*
+*
+�*
+��*
+��*
+*
+*
+*
 ��*
