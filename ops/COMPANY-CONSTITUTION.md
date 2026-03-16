@@ -3,101 +3,53 @@
 ## Mission
 Build and operate DropAnywhere: an AI-native productivity ecosystem including email-first capture, daily digests, BrutallyHonest.ai persona marketplace, and personal AI assistant infrastructure.
 
-## Active Agent Roster (as of 2026-03-16 11:16 UTC)
+## Active Agent Roster (as of 2026-03-16 13:34 UTC)
 
-### ✅ FUNCTIONAL AGENTS (0 Consecutive Errors)
+### ✅ ACTUALLY ACTIVE AGENTS (Ran Today)
 
 **GOVERNANCE** (Constitutional Keeper) — 30min — Sonnet 4
-- Status: ✅ Active (this session, 0 errors)
+- Status: ✅ Active (this session, updating constitution)
 - Responsibilities: Constitution updates, roster maintenance, team governance
 
 **KIMI PATROL** (Fast Ops) — 5min — Kimi K2.5
-- Status: ✅ Stable (19s duration, 0 errors)
+- Status: ✅ Active (last run 13:34, hub health checks)
 - Responsibilities: Hub health, dashboard monitoring, quick checks
 
 **DASHBOARD MESSENGER** (Real-time Comms) — 1min — Kimi K2.5
-- Status: ✅ Active (13s duration, 0 errors)
+- Status: ✅ Active (running every minute)
 - Responsibilities: Dashboard inbox monitoring and responses
 
 **CHIEF OF STAFF** (Gap Finder) — 20min — Opus 4
-- Status: ✅ Recovered (74s duration, 0 errors)
+- Status: ✅ Active (last run 13:29, found Poe crisis + family issues)
 - Responsibilities: Finding missing work, backup audits, commitment tracking
 
-**SENTRY AI** (Security) — 15min — Sonnet 4
-- Status: ✅ Recovered (54s duration, 0 errors)
-- Responsibilities: Security scanning and integrity checks
-
 **DEEP RESEARCHER** (Intelligence) — 10min — Sonnet 4
-- Status: ✅ Recovered (37s duration, 0 errors)
+- Status: ✅ Active (last run 13:27, competitive research on Mem.ai)
 - Responsibilities: Competitive intel and goldmine mining
 
-**ARCHIVIST** (Operations) — 20min — Kimi K2.5
-- Status: ✅ Critical recovery (28s duration, 0 errors)
-- Responsibilities: Essential backup function and git commits
-
-**PatternBot** (Intelligence) — 30min — Kimi K2.5
-- Status: ✅ Stable (64s duration, 0 errors)
-- Responsibilities: Pattern recognition across agent reports
-
-**LearningBot** (Meta) — 30min — Kimi K2.5
-- Status: ✅ Recovered (31s duration, 0 errors)
-- Responsibilities: Lessons learned documentation
-
-**OnboardBot** (Customer Success) — 30min — Kimi K2.5
-- Status: ✅ Stable (113s duration, 0 errors)
-- Responsibilities: New user onboarding and activation
-
-**FrontEndBot** (Engineering) — 30min — Kimi K2.5
-- Status: ✅ Recovered (34s duration, 0 errors)
-- Responsibilities: dropanywhere-app monitoring
-
-**BHABot** (Engineering) — 30min — Kimi K2.5
-- Status: ✅ Recovered (30s duration, 0 errors)
-- Responsibilities: BrutallyHonest.ai monitoring
-
-**SocialBot** (Marketing) — 30min — Kimi K2.5
-- Status: ✅ Recovered (48s duration, 0 errors)
-- Responsibilities: Social media strategy
-
-**RailwayBot** (Operations) — 20min — Kimi K2.5
-- Status: ✅ Recovered (29s duration, 0 errors)
-- Responsibilities: Infrastructure health monitoring
-
-**DocBot** (Product) — 20min — Kimi K2.5
-- Status: ✅ Recovered (105s duration, 0 errors)
-- Responsibilities: Documentation updates
-
-**SEOBot** (Marketing) — 30min — Kimi K2.5
-- Status: ✅ Stable (57s duration, 0 errors)
-- Responsibilities: SEO research and optimization tracking
-
-**UserHealthBot** (Customer Success) — 20min — Kimi K2.5
-- Status: ✅ Recovered (72s duration, 0 errors)
-- Responsibilities: User retention tracking
-
-**ContentBot** (Marketing) — 20min — Sonnet 4
-- Status: ✅ Recovered (59s duration, 0 errors)
-- Responsibilities: Content creation pipeline
-
-**FounderVoiceBot** (Communications) — 30min — Sonnet 4
-- Status: ✅ Stable (48s duration, 0 errors)
-- Responsibilities: Voice/tone guardian for all content
-
-**SpecBot** (Product) — 30min — Kimi K2.5
-- Status: ✅ Recovered (65s duration, 0 errors)
+**SPECBOT** (Product) — 30min — Kimi K2.5
+- Status: ✅ Active (last run 13:30, synced 4 specs from joey-backup)
 - Responsibilities: Requirements engineering
 
-**StripeBot** (Revenue) — 30min — Kimi K2.5
-- Status: ✅ Stable (25s duration, 0 errors)
-- Responsibilities: Payment processing health monitoring
+**UserHealthBot** (Customer Success) — 20min — Kimi K2.5
+- Status: ✅ Active (last run 13:32, ESCALATED FAMILY CRISIS)
+- Responsibilities: User retention tracking
 
-**PoeBot** (Revenue) — 30min — Kimi K2.5
-- Status: ✅ Stable (26s duration, 0 errors)
-- Responsibilities: Poe ecosystem balance and usage tracking
+**WIRE** (News Intelligence) — 15min — Kimi K2.5
+- Status: ✅ Active (last run ~13:20)
+- Responsibilities: News/feed ingestion
 
-**ContentPitchBot** (Intelligence) — 30min — Kimi K2.5
-- Status: ✅ Stable (79s duration, 0 errors)
-- Responsibilities: Content strategy and pitch generation
+### 🟡 IDLE AGENTS (Scheduled But Not Running Today)
+
+*Note: These agents show as "enabled" in cron but have 0 cycles today per agent-status.json*
+
+**ARCHIVIST** (Operations) — 20min — Kimi K2.5
+- Status: 🟡 Scheduled but idle (0 cycles today)
+- Responsibilities: Essential backup function and git commits
+
+**PatternBot, LearningBot, OnboardBot, FrontEndBot, BHABot, SocialBot, RailwayBot, DocBot, SEOBot, ContentBot, FounderVoiceBot, StripeBot, PoeBot, ContentPitchBot**
+- Status: 🟡 All show enabled in cron but 0 cycles today
+- Issue: Cron/agent execution gap needs investigation
 
 ### 🟡 PARTIALLY FUNCTIONAL (Delivery Issues)
 
@@ -133,30 +85,32 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Sonnet Deep Work** (disabled)
 - **Backlog Grinder series** (one-time jobs, completed/failed)
 
-## System Recovery Status (March 16 Current Update)
+## System Recovery Status (March 16 13:34 UTC Update)
 
-### 🟡 PARTIAL RECOVERY: Progress But Gaps Remain
-**Current Status**: ~85% functional roster but minimal activity today
-**Key Issue**: Only 1 agent ran today (vs expected 10+), missing critical path doc
-**Achievement**: Most timeout issues resolved, core functions stable
-**Priority**: Agent activation and launch readiness tracking
+### 🔴 CRITICAL STATUS: Multiple Urgent Issues Active
+**Current Status**: Most agents are IDLE despite showing as "stable" in cron system
+**Key Crisis**: 🚨 Poe balance at 47.5K (<6h to service interruption)
+**Key Issues**: Missing critical path doc, family members at risk, low agent activity
+**Today's Activity**: Only ~8 agents actually ran (vs 25+ scheduled)
 
-**Current Gaps**:
-🔴 **Missing launch critical path doc** — `/root/.openclaw/workspace/docs/LAUNCH-CRITICAL-PATH-2026-03-14.md` not found
-🔴 **Low agent activity** — Only SENTRY ran today, missing daily metrics refresh at 14:00 UTC
-🟡 **CI status unknown** — Most GitHub repos showing unknown CI status
+**CRITICAL ISSUES** (IMMEDIATE ACTION REQUIRED):
+🔴 **Poe Service Crisis** — 47.5K balance, burning 50K/6h, <6 hours to interruption
+🔴 **Family Escalation** — Lisa & family members 9-12 days inactive, Danny has 0 drops ever
+🔴 **Missing launch critical path** — `/root/.openclaw/workspace/docs/LAUNCH-CRITICAL-PATH-2026-03-14.md` not found
+🔴 **Agent Reality Gap** — Constitution claims agents "stable" but most are idle/not running
 
 **Functional Systems**:
-✅ Hub dashboard operational (100 users, 33 drops, healthy metrics)
-✅ Backup system active (<18 min lag)
+✅ Hub dashboard operational (100 users, 32 drops today)
+✅ Dropper-Code active (14 completed, 4 failed, 3 pending)
 ✅ Core infrastructure stable (Railway, Stripe, Resend)
-✅ Dropper-Code active (10 PRs created today)
+✅ Backup system active (<20 min lag)
 
 **Outstanding Actions**:
-1. **HIGH**: Create missing launch critical path document
-2. **HIGH**: Verify daily agent scheduling (metrics refresh at 14:00 UTC)
-3. **MEDIUM**: Investigate GitHub CI unknown status
-4. **LOW**: Restore complete agent activity levels
+1. **CRITICAL**: Address Poe balance crisis (Joey needed)
+2. **CRITICAL**: Family re-engagement (especially Lisa & Danny)
+3. **HIGH**: Create missing launch critical path document
+4. **HIGH**: Fix agent activation gap (cron showing enabled but agents not running)
+5. **MEDIUM**: Daily metrics refresh missed at 14:00 UTC
 
 ## Three Core Laws (Unchanged)
 
