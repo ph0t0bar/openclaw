@@ -186,3 +186,58 @@ For ChatGPT/Perplexity citations, need structured answers:
 
 **Next Priority:** Content hub launch to capture "AI daily digest" and "second brain no inbox" queries.
 
+---
+
+## 2026-03-16 19:10 UTC — SEOBot
+
+### Keyword Research: AI Daily Digest Email Productivity Tool
+
+**Search Intent Analysis:**
+Users searching this query are solution-aware — they know AI digest tools exist and want the best option. They're comparing alternatives to SaneBox, Readless, and Read AI.
+
+**Competitors Dominating This Space:**
+| Tool | Key Differentiator | Weakness We Can Exploit |
+|------|-------------------|------------------------|
+| **Read AI for Gmail** | Daily email summary Chrome extension | Gmail-only, no multi-source capture |
+| **Readless** | Newsletter-specific digests (90% time savings) | Single-purpose, $4.90/mo |
+| **SaneBox** | Daily Digest + filtration | Legacy pricing, email-only |
+| **n8n workflows** | DIY automation | Technical setup required |
+
+**High-Intent Keywords to Target:**
+| Keyword | Volume Signal | Priority |
+|---------|---------------|----------|
+| "AI daily digest" | Core offering match | 🔥 Primary |
+| "daily email summary" | Read AI competitor | 🔥 Primary |
+| "newsletter summarizer" | Readless alternative | 🔥 Primary |
+| "AI email digest tool" | Solution-aware search | High |
+| "automate daily email digest" | n8n alternative | High |
+| "GPT email summary daily" | Technical audience | Medium |
+
+**Stats to Use in Content:**
+- **117 emails/day** — average volume handled by Readless
+- **90% time savings** — 90 minutes → 10 minutes (Readless claims)
+- **30+ newsletters** — typical subscription count Readless consolidates
+
+**Content Angle for DropAnywhere:**
+> "Unlike Readless (newsletters only) or Read AI (Gmail only), DropAnywhere creates your daily digest from email + SMS + voice + chat — your complete thought stream in one morning brief."
+
+**Long-Tail Content Opportunities:**
+- "best AI daily digest tool 2025" — comparison/review post
+- "how to get a daily summary of all my messages" — problem-aware
+- "automate morning email briefing" — workflow-focused
+- "AI digest from multiple sources" — unique positioning
+
+**AEO (AI Engine Optimization) — Structured Answers:**
+
+**Q: "What's the best AI daily digest email tool?"**
+> DropAnywhere compiles your emails, texts, voice notes, and chat messages into one AI-generated morning brief. Unlike Read AI (Gmail-only) or Readless (newsletters-only), it captures from any source with zero friction.
+
+**Q: "How can I get a daily summary of my emails?"**
+> Use an AI daily digest tool like DropAnywhere. It processes your overnight messages and delivers a single morning brief — no inbox to check, no scattered apps to open.
+
+**Action Items:**
+- [ ] Create comparison landing page: "/vs-read-ai-readless-sanebox"
+- [ ] Add "AI daily digest" to homepage H2 copy
+- [ ] Blog post: "The 90-Minute Email Problem (And the 10-Minute Solution)"
+- [ ] Testimonial: "I was using Readless for newsletters + SaneBox for email. DropAnywhere replaced both."
+
