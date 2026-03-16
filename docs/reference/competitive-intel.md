@@ -46,6 +46,31 @@ Source: Perplexity search March 16, 2026
 
 ---
 
+### Mar 16, 2026 — Competitive Update (v2 - Deep Researcher Cron)
+
+**Mem.ai 2.0 (Early 2026 Launch):**
+- **Major Rebuild:** Complete v2.0 release focused on speed, reliability, and intelligence
+- **Full Offline Support:** Now works offline across web, desktop, and mobile
+- **Core Value Prop:** "AI-powered second brain" — notes as unified source of truth for AI context
+- **Key Differentiators:**
+  - **Semantic Search:** Intent-based (not keyword) — finds "revenue forecasting" when notes say "projected income"
+  - **Mem Chat:** Conversational AI with source citations from entire note history
+  - **Agentic Chat:** Can CREATE, EDIT, and ORGANIZE notes directly with version history
+  - **Smart Tags:** Auto-analysis and tagging without manual organization
+  - **Related Mems:** Real-time sidebar surfacing semantically similar notes while writing
+  - **Heads Up:** Proactively resurfaces relevant older notes
+  - **Daily Digest:** Curated morning summaries
+  - **Voice Mode + Meeting Transcription:** Brain dumps → organized searchable notes
+- **User Claims:** 60% reduction in search time
+- **Target:** Knowledge workers, writers, researchers — prolific note-takers wanting AI that "understands" their history
+
+**Notion AI & Reflect App:**
+- Limited 2026-specific intelligence in this search pass
+- Previous intelligence (see above) shows Notion moving toward autonomous agents
+- Reflect still positioned as privacy-focused local-first alternative
+
+---
+
 ### Mar 16, 2026 — Competitive Update
 
 **Mem AI 2.0:**
