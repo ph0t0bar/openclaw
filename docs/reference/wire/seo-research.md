@@ -137,3 +137,52 @@ For ChatGPT/Perplexity citations, need structured answers:
 
 *Next research: Backlink gap analysis vs Readless, SaneBox; Reddit keyword mining*
 
+---
+
+## 2026-03-16 18:34 UTC — SEOBot
+
+### Drop-Anywhere.com Live Indexing Check
+
+**Homepage Analysis (Live Fetch):**
+- ✅ Site is live and responding (200 OK)
+- **Title:** "DropAnywhere — Bring your memory to things"
+- **Navigation:** /how-it-works, /login, /signup
+- **Core CTA:** "Drop in under 10 seconds" — strong frictionless positioning
+
+**Current On-Page SEO Observations:**
+| Element | Status | Notes |
+|---------|--------|-------|
+| Title tag | ✅ Present | "Bring your memory to things" — poetic but vague for SEO |
+| Meta description | ⚠️ Needs audit | Not visible in fetch — verify in Search Console |
+| H1 | ✅ "it all lands here" | Clear value prop |
+| H2 | ✅ "processing overnight" | Reinforces async delivery |
+| H3 | ✅ "Drop in under 10 seconds" | Feature/benefit clear |
+| Keywords on page | ⚠️ Weak | Missing: "AI digest", "daily brief", "second brain" |
+
+**Content Gaps vs Keywords We Want to Rank For:**
+- ❌ No mention of "AI" or "artificial intelligence" on homepage
+- ❌ No mention of "daily digest" or "morning brief" in visible text
+- ❌ No mention of "email productivity" or "inbox zero"
+- ❌ No mention of "second brain" (our core philosophy!)
+
+**Recommendations:**
+1. **Add keyword-rich subheadings:**
+   - "Your AI-Powered Daily Digest"
+   - "A Second Brain With No Inbox"
+   
+2. **Expand hero section copy:**
+   - Current: "Capture any thought, any device, zero friction"
+   - Better: "Capture thoughts anywhere. Wake up to an AI-powered daily digest."
+
+3. **Add social proof section with keyword anchors:**
+   - "Users save 90 minutes daily on email"
+   - "The only AI productivity tool with no inbox"
+
+**Indexing Status:**
+- ✅ Homepage indexed (confirmed via search)
+- ⚠️ No rich results detected
+- ⚠️ Limited site links (indicates thin content architecture)
+- ❌ No /blog or content hub for long-tail SEO
+
+**Next Priority:** Content hub launch to capture "AI daily digest" and "second brain no inbox" queries.
+
