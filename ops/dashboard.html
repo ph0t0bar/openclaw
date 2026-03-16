@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DropAnywhere Agent Company — Live Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans-serif; background: #0a0a0f; color: #e0e0e0; padding: 20px; min-height: 100vh; }
+  
+  h1 { font-size: 18px; color: #fff; margin-bottom: 4px; }
+  .subtitle { font-size: 11px; color: #666; margin-bottom: 20px; }
+  
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  
+  .dept { background: #12121a; border: 1px solid #1e1e2e; border-radius: 10px; padding: 14px; }
+  .dept-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .dept-icon { font-size: 16px; }
+  .dept-name { font-size: 13px; font-weight: 600; color: #ccc; }
+  .dept-count { font-size: 10px; color: #555; margin-left: auto; }
+  
+  .agent { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 6px; margin-bottom: 4px; font-size: 11px; transition: background 0.2s; }
+  .agent:hover { background: #1a1a2a; }
+  .agent-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .dot-green { background: #22c55e; box-shadow: 0 0 6px #22c55e44; }
+  .dot-yellow { background: #eab308; box-shadow: 0 0 6px #eab30844; }
+  .dot-red { background: #ef4444; box-shadow: 0 0 6px #ef444444; }
+  .dot-gray { background: #444; }
+  .agent-name { color: #aaa; flex: 1; }
+  .agent-model { color: #555; font-size: 9px; }
+  .agent-time { color: #444; font-size: 9px; font-family: monospace; }
+  
+  .flow { background: #12121a; border: 1px solid #1e1e2e; border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+  .flow-title { font-size: 13px; font-weight: 600; color: #ccc; margin-bottom: 10px; }
+  
+  .log-entry { display: flex; gap: 8px; padding: 4px 0; border-bottom: 1px solid #1a1a2a; font-size: 10px; }
+  .log-entry:last-child { border-bottom: none; }
+  .log-time { color: #555; font-family: monospace; white-space: nowrap; min-width: 45px; }
+  .log-agent { color: #7c8aff; min-width: 70px; font-weight: 500; }
+  .log-msg { color: #888; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .log-status { font-size: 9px; }
+  
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-bottom: 20px; }
+  .stat { background: #12121a; border: 1px solid #1e1e2e; border-radius: 8px; padding: 10px; text-align: center; }
+  .stat-value { font-size: 22px; font-weight: 700; color: #fff; }
+  .stat-label { font-size: 9px; color: #555; margin-top: 2px; }
+  .stat-green .stat-value { color: #22c55e; }
+  .stat-yellow .stat-value { color: #eab308; }
+  .stat-red .stat-value { color: #ef4444; }
+  
+  .pipeline { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin: 8px 0; }
+  .pipe-node { background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 6px; padding: 4px 8px; font-size: 9px; color: #888; }
+  .pipe-arrow { color: #333; font-size: 10px; }
+  .pipe-active { border-color: #22c55e44; color: #22c55e; }
+  .pipe-blocked { border-color: #ef444444; color: #ef4444; }
+  
+  .section-title { font-size: 14px; font-weight: 600; color: #999; margin: 16px 0 8px; }
+  
+  #changelog { max-height: 300px; overflow-y: auto; }
+  #changelog::-webkit-scrollbar { width: 4px; }
+  #changelog::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<h1>🦜 DropAnywhere Agent Company</h1>
+<div class="subtitle">Live Organizational Dashboard — <span id="timestamp"></span></div>
+
+<!-- TOP STATS -->
+<div class="stats" id="stats"></div>
+
+<!-- ORG CHART -->
+<div class="section-title">🏢 Departments</div>
+<div class="grid" id="org"></div>
+
+<!-- PIPELINE -->
+<div class="section-title">🔄 Value Pipeline</div>
+<div class="flow">
+  <div class="pipeline" id="pipeline"></div>
+</div>
+
+<!-- LIVE CHANGELOG -->
+<div class="section-title">📋 Live Changelog</div>
+<div class="flow" id="changelog"></div>
+
+<script>
+// ============ DATA (injected by Claw) ============
+const ORG_DATA = /*ORG_JSON*/null;
+const LOG_DATA = /*LOG_JSON*/null;
+
+// Fallback static data for initial render
+const DEPARTMENTS = [
+  { name: "Executive", icon: "🎯", agents: [
+    { name: "Claw", model: "Opus", cadence: "always", status: "green" },
+    { name: "Chief of Staff", model: "Opus", cadence: "20min", status: "pending" }
+  ]},
+  { name: "Product", icon: "📋", agents: [
+    { name: "DocBot", model: "Kimi", cadence: "20min", status: "pending" },
+    { name: "SpecBot", model: "Kimi", cadence: "30min", status: "pending" }
+  ]},
+  { name: "Engineering", icon: "⚙️", agents: [
+    { name: "DC Manager", model: "Kimi", cadence: "30min", status: "pending" },
+    { name: "FrontEndBot", model: "Kimi", cadence: "30min", status: "pending" },
+    { name: "BHABot", model: "Kimi", cadence: "30min", status: "pending" },
+    { name: "RailwayBot", model: "Kimi", cadence: "20min", status: "pending" }
+  ]},
+  { name: "Operations", icon: "🔒", agents: [
+    { name: "Kimi Patrol", model: "Kimi", cadence: "5min", status: "pending" },
+    { name: "Sentry", model: "Sonnet", cadence: "15min", status: "pending" }
+  ]},
+  { name: "Revenue", icon: "💰", agents: [
+    { name: "StripeBot", model: "Kimi", cadence: "30min", status: "pending" },
+    { name: "PoeBot", model: "Kimi", cadence: "30min", status: "pending" }
+  ]},
+  { name: "Customer Success", icon: "🤝", agents: [
+    { name: "UserHealthBot", model: "Kimi", cadence: "20min", status: "pending" },
+    { name: "OnboardBot", model: "Kimi", cadence: "30min", status: "pending" }
+  ]},
+  { name: "Marketing", icon: "📣", agents: [
+    { name: "ContentBot", model: "Sonnet", cadence: "20min", status: "pending" },
+    { name: "SocialBot", model: "Kimi", cadence: "30min", status: "pending" },
+    { name: "SEOBot", model: "Kimi", cadence: "30min", status: "pending" }
+  ]},
+  { name: "Communications", icon: "📡", agents: [
+    { name: "FounderVoice", model: "Sonnet", cadence: "30min", status: "pending" }
+  ]},
+  { name: "Intelligence", icon: "🧠", agents: [
+    { name: "Researcher", model: "Sonnet", cadence: "10min", status: "pending" },
+    { name: "Wire", model: "Kimi", cadence: "15min", status: "pending" },
+    { name: "ContentPitch", model: "Kimi", cadence: "30min", status: "pending" },
+    { name: "PatternBot", model: "Kimi", cadence: "30min", status: "pending" }
+  ]},
+  { name: "Meta", icon: "⚡", agents: [
+    { name: "Opus Strategy", model: "Opus", cadence: "15min", status: "pending" },
+    { name: "Meta", model: "Sonnet", cadence: "20min", status: "pending" },
+    { name: "Governance", model: "Sonnet", cadence: "30min", status: "pending" },
+    { name: "Archivist", model: "Kimi", cadence: "20min", status: "pending" },
+    { name: "LearningBot", model: "Kimi", cadence: "30min", status: "pending" }
+  ]}
+];
+
+const PIPELINE = [
+  { label: "Drop/Idea", status: "active" },
+  { label: "Wire/Research", status: "active" },
+  { label: "ContentPitch", status: "active" },
+  { label: "Spec", status: "active" },
+  { label: "Task", status: "active" },
+  { label: "Dropper-Code", status: "active" },
+  { label: "PR Review", status: "active" },
+  { label: "Ship", status: "active" },
+  { label: "Docs", status: "active" },
+  { label: "Backup", status: "active" }
+];
+
+// ============ RENDER ============
+function render() {
+  document.getElementById('timestamp').textContent = new Date().toISOString().slice(0,16) + ' UTC';
+  
+  // Stats
+  const totalAgents = DEPARTMENTS.reduce((s,d) => s + d.agents.length, 0);
+  const statsHtml = `
+    <div class="stat stat-green"><div class="stat-value">${totalAgents}</div><div class="stat-label">AGENTS ACTIVE</div></div>
+    <div class="stat"><div class="stat-value">10</div><div class="stat-label">DEPARTMENTS</div></div>
+    <div class="stat stat-green"><div class="stat-value">~1.5K</div><div class="stat-label">CYCLES / DAY</div></div>
+    <div class="stat"><div class="stat-value">3</div><div class="stat-label">MODELS</div></div>
+    <div class="stat stat-yellow"><div class="stat-value">8d</div><div class="stat-label">TO LAUNCH</div></div>
+  `;
+  document.getElementById('stats').innerHTML = statsHtml;
+  
+  // Org chart
+  let orgHtml = '';
+  DEPARTMENTS.forEach(dept => {
+    orgHtml += `<div class="dept">
+      <div class="dept-header">
+        <span class="dept-icon">${dept.icon}</span>
+        <span class="dept-name">${dept.name}</span>
+        <span class="dept-count">${dept.agents.length} agents</span>
+      </div>`;
+    dept.agents.forEach(a => {
+      const dotClass = a.status === 'green' ? 'dot-green' : a.status === 'red' ? 'dot-red' : a.status === 'yellow' ? 'dot-yellow' : 'dot-gray';
+      orgHtml += `<div class="agent">
+        <div class="agent-dot ${dotClass}"></div>
+        <span class="agent-name">${a.name}</span>
+        <span class="agent-model">${a.model}</span>
+        <span class="agent-time">${a.cadence}</span>
+      </div>`;
+    });
+    orgHtml += '</div>';
+  });
+  document.getElementById('org').innerHTML = orgHtml;
+  
+  // Pipeline
+  let pipeHtml = '';
+  PIPELINE.forEach((p, i) => {
+    const cls = p.status === 'blocked' ? 'pipe-blocked' : p.status === 'active' ? 'pipe-active' : '';
+    pipeHtml += `<div class="pipe-node ${cls}">${p.label}</div>`;
+    if (i < PIPELINE.length - 1) pipeHtml += '<span class="pipe-arrow">→</span>';
+  });
+  document.getElementById('pipeline').innerHTML = pipeHtml;
+}
+
+render();
+</script>
+</body>
+</html>
