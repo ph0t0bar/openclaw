@@ -1,9 +1,9 @@
-# PRD: DropAnywhere Ecosystem — Master Action Plan
+# PRD: DropAnywhere Ecosystem - Master Action Plan
 
-**Author:** Claw (OpenClaw) + Joey  
-**Date:** 2026-03-11 (v4 — Snapback breakthrough)  
-**Status:** Active — the single source of truth  
-**Incorporates:** Both PRDs (Mar 9 + 10), DA TODO.md (Gates A-D), TODO-PROPOSED.md (Gate D: Invisible Assistant), BHA TODO.md, 100+ Joey vault drops, FULL-PICTURE.md, REVENUE_SUMMIT_OUTCOME.md, GitHub state (34+ PRs), Hub metrics (live), Poe fleet + GA/SEO data, joey-backup asset inventory, all Ingestion subfolder strategic docs (txt, md, csv), and **Snapback / The Weekly Catch breakthrough session (Mar 11, 3am)** — `joey-backup/specs/SNAPBACK-INTEGRATION-2026-03-11.md` + offer + visualizations.
+**Author:** Claw (OpenClaw) + Joey
+**Date:** 2026-03-11 (v4 - Snapback breakthrough)
+**Status:** Active - the single source of truth
+**Incorporates:** Both PRDs (Mar 9 + 10), DA TODO.md (Gates A-D), TODO-PROPOSED.md (Gate D: Invisible Assistant), BHA TODO.md, 100+ Joey vault drops, FULL-PICTURE.md, REVENUE_SUMMIT_OUTCOME.md, GitHub state (34+ PRs), Hub metrics (live), Poe fleet + GA/SEO data, joey-backup asset inventory, all Ingestion subfolder strategic docs (txt, md, csv), and **Snapback / The Weekly Catch breakthrough session (Mar 11, 3am)** - `joey-backup/specs/SNAPBACK-INTEGRATION-2026-03-11.md` + offer + visualizations.
 
 ---
 
@@ -13,24 +13,24 @@
 
 **March 16 metrics update:** DA now at 100 users (+54%), 843 total drops, 7 active in 24h. BHA at 259 users (+23%), 70 active weekly, 7 active in 24h. 2 Pro subs via Stripe. Poe balance critical at 42,770 points (burning ~43K/6h).
 
-**March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction — not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
+**March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction - not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
 
-**March 11 (05:00-09:45 UTC) — Archive & Snapback expansion session:**
-- **Excavation batch-0001** committed to `Ingestion/1_GOLDMINE/` — first automated extraction from the VAULT. The transformation engine (VAULT → GOLDMINE → FORGE → OUTPUT) is now live, not just theoretical.
+**March 11 (05:00-09:45 UTC) - Archive & Snapback expansion session:**
+- **Excavation batch-0001** committed to `Ingestion/1_GOLDMINE/` - first automated extraction from the VAULT. The transformation engine (VAULT → GOLDMINE → FORGE → OUTPUT) is now live, not just theoretical.
 - **40+ Poe conversation documents** uploaded to `Ingestion/0_VAULT/Documents/` (Jan 2026 conversations: MIC DROP BMM SURPIPHANY, HOLOGRAM MHC TRANSURFING, Context as a Service, ANTIGRAVITY HOLISTIC SYNC, SOMATIC SURPIPHANY, etc.). These are Joey's raw thinking captured from Poe sessions.
-- **New reference docs added:** `AUTONOMOUS-REVENUE-STACK.md` + `SFP_OPERATIONAL_HYDRATION.md` — strategic planning documents from the archive.
-- **BHA content pipeline** data (`CONTENT_PIPELINE.json`) added — BHA's content generation infrastructure exported from Notion.
+- **New reference docs added:** `AUTONOMOUS-REVENUE-STACK.md` + `SFP_OPERATIONAL_HYDRATION.md` - strategic planning documents from the archive.
+- **BHA content pipeline** data (`CONTENT_PIPELINE.json`) added - BHA's content generation infrastructure exported from Notion.
 - **Time capsule** for March 11 created (`Ingestion/20260310/time-capsule-2026-03-11.json`) + chat transcript saved.
 - **Three Transurfing visualizations** committed: music (FL Studio), songwriting (30-day challenge with Brooke), and the product vision piece ("Snap Back III: The Weekly Catch").
-- **Snapback Offer copy expanded** with new supporting language: *"We all find ourselves getting stuck... unable to drop that thing."* — the empathy-first hook that grounds the product promise in relatable daily friction (dentist at 2, gym bag, therapy, bills).
+- **Snapback Offer copy expanded** with new supporting language: *"We all find ourselves getting stuck... unable to drop that thing."* - the empathy-first hook that grounds the product promise in relatable daily friction (dentist at 2, gym bag, therapy, bills).
 - **Archive reorganization:** Old PRDs moved to `specs/archive/`. `PRD-Action-Plan-latest.md` established as the canonical copy in joey-backup.
-- **Total joey-backup commits today: 30+** — this was a major archive, content, and product vision session.
+- **Total joey-backup commits today: 30+** - this was a major archive, content, and product vision session.
 
 **What the Ingestion archive reveals that prior PRDs missed:**
 - Joey's vision has been consistent since Jan 2025: one intake → AI analysis → clarity delivered. The "Letter From My Future Self" (Dec 2025) describes *exactly* what DA now does. He's living inside his own product vision.
 - **2,462 OpenAI conversations** and **467 Poe bots** are untapped content/product assets. The transformation engine (VAULT → GOLDMINE → FORGE → OUTPUT) is architecturally sound but not yet productized.
 - **Danny Advisory Package** is the clearest demo of DA's B2B use case: email loop, invisible AI processing, human-curated output. Danny doesn't even know he's using DropAnywhere.
-- **Cash Burn Tracker** (Mar 9) shows another advisory use case being served through conversational AI — structured financial planning via chat → spreadsheet.
+- **Cash Burn Tracker** (Mar 9) shows another advisory use case being served through conversational AI - structured financial planning via chat → spreadsheet.
 - **MythOS doctrine** (Jan 2026) articulates the cognitive architecture that should govern OpenClaw, Dropper-Code, and any future multi-agent system.
 - **BHA SEO is the growth engine:** 63% of traffic is Google organic. "brutally honest ai" and "honest ai" queries are the moat. Poe→BHA funnel leaks badly (only 4% of traffic is Poe referral despite massive bot usage).
 - **Poe fleet = 467 bots, 70K+ users, $6,400+ lifetime revenue.** But 96% comes from 5 bots. The long tail is dormant.
@@ -40,20 +40,20 @@
 ## 2. The Vision (Joey's Words)
 
 > *"You wake up without an alarm. There is no frantic reach for the phone to check notifications, because you know the System has already triaged the world for you... You open your device, not to work, but to Review."*
-> — Letter From My Future Self, December 2025
+> - Letter From My Future Self, December 2025
 
 > *"I didn't need another place to store things. I needed something that would think with me."*
-> — Birthday launch post, February 27, 2026
+> - Birthday launch post, February 27, 2026
 
 > *"Drop it. Forget it. Wake up lighter."*
-> — Core promise
+> - Core promise
 
 > *"Laziness was your soul begging for efficiency."*
-> — The epiphany that started everything
+> - The epiphany that started everything
 
 **The Container Creates Freedom.** Structure enables presence. Capture everywhere, think nowhere, wake up to clarity.
 
-**Joey's Target Slide — The Rancho Mirage Mansion (2026-03-11):**
+**Joey's Target Slide - The Rancho Mirage Mansion (2026-03-11):**
 The method of loci visualization that anchors every decision. First person, all happening now: the mansion, the pool table, the podcast/music studio, Boo and Teddy playing outside, swimming with Brooke, fancy dinners, driving with arm out the window, a text from the AI saying "everything's handled and feedback is incredible," the world becoming better for everyone, abundance flowing, hanging with Kevin Smith on a new project, shooting a pilot with Larry David, working on comedy, posting funny videos, writing a book in the perfect office. All linked to one environment. All happening. The feeling: light, happy, excited, in control by letting go. *This is what the system exists to enable.*
 
 ---
@@ -85,19 +85,19 @@ FORGE (staging, drafts, experiments)
 OUTPUT (posts, products, tools, exports)
 ```
 
-This architecture exists in the Ingestion folder and **excavation batch-0001 was committed on Mar 11** — the first automated extraction from VAULT to GOLDMINE. The transformation engine is now live, not just theoretical. Scripts exist (watch.py, pan.py, extract_insights.py). Productizing this = a "Knowledge OS" layer on top of DA.
+This architecture exists in the Ingestion folder and **excavation batch-0001 was committed on Mar 11** - the first automated extraction from VAULT to GOLDMINE. The transformation engine is now live, not just theoretical. Scripts exist (watch.py, pan.py, extract_insights.py). Productizing this = a "Knowledge OS" layer on top of DA.
 
 ### 3c. The Invisible Loop (from Danny Advisory Package)
 
 ```
-Joey captures context → System processes → Joey curates → 
+Joey captures context → System processes → Joey curates →
 Recipient replies → Reply becomes new drop → Loop continues
 
 The recipient never knows they're using DropAnywhere.
 They're just getting incredibly thoughtful emails.
 ```
 
-This is the B2B wedge. Advisory firms, coaches, therapists — anyone who serves clients through ongoing conversation. DropAnywhere becomes the invisible intelligence layer.
+This is the B2B wedge. Advisory firms, coaches, therapists - anyone who serves clients through ongoing conversation. DropAnywhere becomes the invisible intelligence layer.
 
 ---
 
@@ -107,9 +107,9 @@ This is the B2B wedge. Advisory firms, coaches, therapists — anyone who serves
 
 The AI council (Gemini, oPOErator-Pro, Surpiphany, Orchestr8) analyzed the full codebase and recommended:
 
-1. **Genesis Orchestrator** ($97) — "Council in a Box" product for Gumroad
-2. **Agency in a Box** ($497) — mid-tier bundle
-3. **Mythos Cloud SaaS** — continuity play (long-term)
+1. **Genesis Orchestrator** ($97) - "Council in a Box" product for Gumroad
+2. **Agency in a Box** ($497) - mid-tier bundle
+3. **Mythos Cloud SaaS** - continuity play (long-term)
 
 **Status:** Genesis Orchestrator was packaged (dist/genesis-orchestrator-product.zip, SALES_COPY.md written) but never launched on Gumroad due to API blocker. The product exists, the sales copy exists, the distribution channel exists. It just needs to be listed.
 
@@ -122,13 +122,13 @@ Key findings from Tippiy market research:
 - Best distribution: Direct website + Gumroad (highest margins, customer control)
 - **Joey's moat:** 467 bots with 70K+ users is a distribution network most startups would kill for
 
-### 4c. MythOS Doctrine (Jan 2026) — Architecture Principle
+### 4c. MythOS Doctrine (Jan 2026) - Architecture Principle
 
 **"The Executive Layer Never Reaches Down."**
 
 This applies to:
 - **OpenClaw:** Should orchestrate via sub-agents, not do everything in main context
-- **Dropper-Code:** Already follows this — brain-scan proposes, human approves, executor builds
+- **Dropper-Code:** Already follows this - brain-scan proposes, human approves, executor builds
 - **DA Architecture:** The monolith (24K-line main.py) needs layered separation eventually
 - **Product design:** Users should never see the machinery. They just "drop it and forget it."
 
@@ -211,7 +211,7 @@ The **Hydration Score (H-Score)** measures contextual integrity across:
 - Badge notification when digest is ready
 - **Owner:** Dropper-Code (dropanywhere-app)
 
-#### 5.6 "Droppings" — Contextual Drop Tagging
+#### 5.6 "Droppings" - Contextual Drop Tagging
 - **Source drops:** *"the dropping - the contextual beacon"* + *"ensure every one of these drops become 'droppings'"*
 - Auto-tag with source metadata (web/email/sms/voice/poe/api) + timestamp + device type
 - Display tags in vault list view. Let users see and edit.
@@ -222,7 +222,7 @@ The **Hydration Score (H-Score)** measures contextual integrity across:
 - Options: hybrid (originals for discovery, shadows for intelligence), full cutover, or Poe support escalation
 - **Decision point:** End of week
 
-#### 5.8 Desktop vs Mobile App Split — Phase 1
+#### 5.8 Desktop vs Mobile App Split - Phase 1
 - **PRD:** `PRD-Desktop-Mobile-Split-2026-03-10.md`
 - "Capture Instrument" (mobile) vs "Reflection Studio" (desktop)
 - Phase 1: `useIsMobile()` hook + conditional rendering. No new components.
@@ -247,44 +247,44 @@ The **Hydration Score (H-Score)** measures contextual integrity across:
 - **Why this matters:** "Drop it. Forget it." only works if the system closes the loop. Right now drops are text blobs. This makes them actionable.
 
 #### 5.12 Snapback / The Weekly Catch ← 🚨 PROMOTED FROM P2 → P0 (2026-03-11)
-- **Source:** Joey's Mar 9 drop + 3am breakthrough session Mar 11 — **he was user zero. It already worked.**
+- **Source:** Joey's Mar 9 drop + 3am breakthrough session Mar 11 - **he was user zero. It already worked.**
 - **Full spec:** `joey-backup/specs/SNAPBACK-INTEGRATION-2026-03-11.md` (the definitive document)
 - **What it is:** Drop all week → system watches, connects, detects pendulum patterns → one Weekly Catch narrative on Sunday, told in first-person in the user's own voice, using their own details and language
 - **The loop:** Drop (raw feeling) → System catches → Narrative returned → Creator creates → Drops more
 - **Snapback is ADDITIVE, not a replacement for daily digests.** The multi-analyzer daily digest pipeline stays. Users love it. Both coexist: `digest_mode = 'daily'` (default, proven) or `'snapback'` (new layer, expanding gradually). Weekly Catch = a new experience layer alongside daily digests, not a pivot away from them.
 - **Technical summary (from spec):** New `snapback_generator.py` + `user_profile_builder.py` + `email_prompt_scheduler.py`. Feature-flagged: `digest_mode = 'daily' | 'snapback' | 'both'`. Daily digest code fully preserved and untouched. DB: `snapback_stories` table + `snapback_profile` JSONB column.
 - **What doesn't change:** All capture infra, Hub processing, PostgreSQL, Intelligence Map, Resend, Dropper-Code, BHA integration
-- **Brand evolution:** "Drop it. Forget it. Wake up lighter." remains core. "Drop all week. Catch it Sunday." is the Snapback layer — ADDITIVE, not a replacement.
+- **Brand evolution:** "Drop it. Forget it. Wake up lighter." remains core. "Drop all week. Catch it Sunday." is the Snapback layer - ADDITIVE, not a replacement.
 - **⚠️ CRITICAL (Joey, Mar 11 14:08 UTC): Snapback is ADDITIVE to daily digests, NOT a replacement.** The multi-analyzer daily digest pipeline is fire. Users love it. Don't kill that code. Snapback / Weekly Catch is a NEW product layer that opens up slowly alongside existing digests. Daily digest = proven, shipping, users love it. Weekly Catch = new experience, starts with Joey as user zero, expands gradually. Both coexist via `digest_mode` feature flag.
-- **Naming (updated Mar 11):** "Snapback" (one word, not "Snap Back"). Also on the docket: **Loopslap** — originated from Joey's timelapse photography concept "loops and lapses," evolved into "slapping you out of the loops, gently, helping you snap back into the ideal version of you." Loopslap is more ownable (unique word, no trademark conflicts). Possible positioning: *Loopslap* as the brand, *Snapback* as the mechanism ("Loopslap: your weekly Snapback"), or vice versa. Decision pending.
+- **Naming (updated Mar 11):** "Snapback" (one word, not "Snap Back"). Also on the docket: **Loopslap** - originated from Joey's timelapse photography concept "loops and lapses," evolved into "slapping you out of the loops, gently, helping you snap back into the ideal version of you." Loopslap is more ownable (unique word, no trademark conflicts). Possible positioning: *Loopslap* as the brand, *Snapback* as the mechanism ("Loopslap: your weekly Snapback"), or vice versa. Decision pending.
 - **This is the product nobody else has.** Transurfing + NLP personalization + email-first delivery + narrative (not summary) = unique moat.
 - **Offer framing (from `snapback-offer-2026-03-11.md`):** "Bring me one problem. Talk about it for a week. I'll show you what you're not seeing." The free week IS the demo. They FEEL the vault when scattered drops come back as a story.
 - **New supporting copy (added Mar 11 09:41 UTC):** *"We all find ourselves getting stuck... unable to drop that thing."* Then relatable examples: "Dentist at 2, Jeremy practice at 4, Dinner at 5. Don't forget your gym bag" | "I can't believe I said that" | "I've seen 5 therapists and read every self help book" | "how will I pay those bills?" → *"Drop here. We'll catch it. Organize it. Analyze it. Package it up. Debate it. Connect it. You'll have one less thing to carry in one week."* Core positioning: **"All you need is an email."**
-- **Key learning (Mar 11):** Snapback narratives MUST come from the actual backend pipeline (Hub orchestrator + Claude Sonnet + real user drops + NLP/personalization), NOT from creative writing. The 3am session worked because it reflected Joey's OWN words back. The later visualizations Claw wrote were "meh" — portraits, not mirrors. The product is a mirror. The moment it becomes performative, it loses the thing that makes it hit.
-- **Three Transurfing visualizations committed (Mar 11):** Music (`transurfing-snapback-music`), Songwriting (`transurfing-snapback-songwriting`), Product Vision (`transurfing-snapback-product-vision`). These serve as Snapback prototypes — first-person, present-tense narratives using Joey's own details, people, and language. They ARE the product.
+- **Key learning (Mar 11):** Snapback narratives MUST come from the actual backend pipeline (Hub orchestrator + Claude Sonnet + real user drops + NLP/personalization), NOT from creative writing. The 3am session worked because it reflected Joey's OWN words back. The later visualizations Claw wrote were "meh" - portraits, not mirrors. The product is a mirror. The moment it becomes performative, it loses the thing that makes it hit.
+- **Three Transurfing visualizations committed (Mar 11):** Music (`transurfing-snapback-music`), Songwriting (`transurfing-snapback-songwriting`), Product Vision (`transurfing-snapback-product-vision`). These serve as Snapback prototypes - first-person, present-tense narratives using Joey's own details, people, and language. They ARE the product.
 - **Implementation:** See Section 5.12a below
 
-#### 5.12a Snapback — Implementation Roadmap (from SNAPBACK-INTEGRATION-2026-03-11.md)
+#### 5.12a Snapback - Implementation Roadmap (from SNAPBACK-INTEGRATION-2026-03-11.md)
 
 **Phase 1: MVP (1-2 weeks)**
-- [ ] Build `snapback_generator.py` — weekly narrative generation (Claude Sonnet)
+- [ ] Build `snapback_generator.py` - weekly narrative generation (Claude Sonnet)
 - [ ] `user_profiles` table or `snapback_profile` JSONB column on `users`
 - [ ] Weekly cron (Sunday) alongside daily digest (feature-flagged)
 - [ ] Basic Weekly Catch email template (narrative, not sections)
 - [ ] Feature flag: `digest_mode = 'snapback' | 'daily'`
-- [ ] Test with Joey first (user zero — prototype already worked)
+- [ ] Test with Joey first (user zero - prototype already worked)
 
 **Phase 2: Personalization (2-4 weeks)**
-- [ ] `user_profile_builder.py` — language pattern learning, emotional baseline, entity map
+- [ ] `user_profile_builder.py` - language pattern learning, emotional baseline, entity map
 - [ ] Emotional tone detection at ingest (sentiment + pendulum detection)
 - [ ] Transurfing phase detection (awakening / detached / aligned / creating)
-- [ ] `email_prompt_scheduler.py` — Tue/Thu/Sat drop encouragement emails
+- [ ] `email_prompt_scheduler.py` - Tue/Thu/Sat drop encouragement emails
 - [ ] Previous-Snapback continuity in generation prompt
 - [ ] Beta with 5-10 willing users from current base
 
 **Phase 3: Scale + Revenue (Month 2-3)**
 - [ ] Free vs Pro narrative differentiation (summary vs full story)
-- [ ] Snapback+ tier ($19/mo — Transurfing-aware, custom style)
+- [ ] Snapback+ tier ($19/mo - Transurfing-aware, custom style)
 - [ ] Advisory Mode (white-label Weekly Catch for coaches/advisors)
 - [ ] Onboarding flow rewrite (email-first: "Reply to start. That's it.")
 - [ ] Brand update: "The Weekly Catch" / "Drop all week. Catch it Sunday."
@@ -306,14 +306,14 @@ The **Hydration Score (H-Score)** measures contextual integrity across:
 ---
 
 #### 5.13 B2B Advisory Loop (Danny Use Case)
-- **Source:** `_DANNY-ADVISORY-PACKAGE.md` — the complete playbook
+- **Source:** `_DANNY-ADVISORY-PACKAGE.md` - the complete playbook
 - Danny doesn't know he's using DropAnywhere. He replies to joey@drop-anywhere.com, it becomes a drop, system processes, Joey sends curated follow-up.
-- **Productize as:** "Advisory Mode" — a white-label email loop for coaches, consultants, therapists
+- **Productize as:** "Advisory Mode" - a white-label email loop for coaches, consultants, therapists
 - **Revenue model:** $49-149/mo per advisor seat
 - **Cash Burn Tracker** (Mar 9 Ingestion) is another proof point: structured financial planning delivered via conversational AI
 
 #### 5.14 NotebookLM Meditation Generation
-- **Source:** Joey's Mar 5 drop — NotebookLM-generated meditation while running
+- **Source:** Joey's Mar 5 drop - NotebookLM-generated meditation while running
 - Generate personalized meditations from vault themes
 - Quick path: document Joey's manual workflow → replicate → productize
 
@@ -323,7 +323,7 @@ The **Hydration Score (H-Score)** measures contextual integrity across:
   - Archive/deprecate bottom 400 bots (reduce maintenance surface)
   - Cross-promo between top 5 (currently zero bot-to-bot cross-promo)
   - Add `param_definitions` (premium toggles like "Deep Mode") to top earners
-  - Poe API `PATCH` for param_definitions works (unlike prompts) — quick win
+  - Poe API `PATCH` for param_definitions works (unlike prompts) - quick win
 
 #### 5.16 Productivity Metrics Dashboard
 - **Source drop:** *"Keep track of metrics like time spent on here. Be able to tell what was productive, what was kinda meh."*
@@ -332,14 +332,14 @@ The **Hydration Score (H-Score)** measures contextual integrity across:
 
 ---
 
-### 🔮 P3: GATE D VISION — The Invisible Assistant (from TODO-PROPOSED.md)
+### 🔮 P3: GATE D VISION - The Invisible Assistant (from TODO-PROPOSED.md)
 
 This is the full product evolution from "capture tool" to "invisible operating system."
 
 #### 5.17 Context-Aware Daily Briefing
 - Morning brief that knows your calendar, weather, recent drops, active threads
 - Delivered via preferred channel (email, WhatsApp, voice)
-- Not just a digest — a briefing that says "Here's what matters today"
+- Not just a digest - a briefing that says "Here's what matters today"
 
 #### 5.18 Smart Reminders with Entity Resolution
 - "Remind me to send Robin a 70th gift" → system extracts entity (Robin), creates persistent reminder, surfaces in digest until dismissed
@@ -349,7 +349,7 @@ This is the full product evolution from "capture tool" to "invisible operating s
 - Drops about the same topic/person auto-group
 - "Show me everything about Robin" → all drops, reminders, actions
 
-#### 5.20 "Drop It Like It's Hot" — Universal Capture Button
+#### 5.20 "Drop It Like It's Hot" - Universal Capture Button
 - **Source drop:** *"I love the idea of the drop anywhere being a button you tap no matter where you are"*
 - One persistent capture button across: PWA, Chrome extension, iOS Shortcut, Apple Watch
 - The "drop" gesture becomes muscle memory
@@ -362,7 +362,7 @@ This is the full product evolution from "capture tool" to "invisible operating s
 #### 5.22 The Knowledge OS Layer
 - Productize the VAULT → GOLDMINE → FORGE → OUTPUT transformation engine
 - Scripts already exist: `watch.py`, `pan.py`, `extract_insights.py`, `search.py`
-- **Product:** "Your Second Brain Has No Inbox" — literally. It has a transformation pipeline.
+- **Product:** "Your Second Brain Has No Inbox" - literally. It has a transformation pipeline.
 
 ---
 
@@ -387,7 +387,7 @@ This is the full product evolution from "capture tool" to "invisible operating s
 | DA Pro tier launch ($9/mo) | Month 2 | $90-270/mo (10-30 users convert) | 2 weeks |
 | Advisory Mode beta (Danny-style) | Month 3 | $49-149/seat × 3-5 pilots | 4 weeks |
 
-**Conservative 90-day MRR target:** $200-500/mo  
+**Conservative 90-day MRR target:** $200-500/mo
 **Stretch:** $500-1,000/mo if Advisory Mode lands 3 paying pilots
 
 ### 6c. Pricing Reference (from AI Agent Summit research)
@@ -428,12 +428,12 @@ This is the full product evolution from "capture tool" to "invisible operating s
 17. *"the whole thing should work with just email"* → Email-only mode (exists via drop@drop-anywhere.com)
 18. *"I want Danny to just reply to emails and not know he's using the product"* → B2B invisible loop (5.13)
 19. *"can the digest recommend which bot to talk to based on my drops?"* → Bot recommendation engine
-20. (2026-03-11) *"export/import CSV in vault view"* → Bulk data management with all fields, scale edits, revert capability. **Deferred** — admin dashboard (P1-2) solves this more elegantly. Revisit if immediate bulk op needed before dashboard ships.
-21. (2026-03-11) *"feedback isn't just within drop-anywhere. it's an email being sent to a user, it's a user sending an email to any of my properties. it's a feedback submission. it's a like on a linkedin post. it's a text to me saying great job. feedback should all funnel into one single place where openclaw can help me spearhead these things."* → **Unified Feedback Funnel** — all feedback signals (DA feedback, emails to any property, LinkedIn engagement, texts, submissions) flow into one inbox where OpenClaw triages, prioritizes, and helps respond
-22. (2026-03-11, 3am) *"The Snapback / Weekly Catch"* → **THIS IS THE PRODUCT.** Drop all week. System catches, classifies, builds narrative. Weekly Catch arrives Sunday in first-person, written in the user's own voice using their own details. Not a summary, not a task list — a story. Full spec: `joey-backup/specs/SNAPBACK-INTEGRATION-2026-03-11.md`. **PROMOTED TO P0.** See Section 5.12.
+20. (2026-03-11) *"export/import CSV in vault view"* → Bulk data management with all fields, scale edits, revert capability. **Deferred** - admin dashboard (P1-2) solves this more elegantly. Revisit if immediate bulk op needed before dashboard ships.
+21. (2026-03-11) *"feedback isn't just within drop-anywhere. it's an email being sent to a user, it's a user sending an email to any of my properties. it's a feedback submission. it's a like on a linkedin post. it's a text to me saying great job. feedback should all funnel into one single place where openclaw can help me spearhead these things."* → **Unified Feedback Funnel** - all feedback signals (DA feedback, emails to any property, LinkedIn engagement, texts, submissions) flow into one inbox where OpenClaw triages, prioritizes, and helps respond
+22. (2026-03-11, 3am) *"The Snapback / Weekly Catch"* → **THIS IS THE PRODUCT.** Drop all week. System catches, classifies, builds narrative. Weekly Catch arrives Sunday in first-person, written in the user's own voice using their own details. Not a summary, not a task list - a story. Full spec: `joey-backup/specs/SNAPBACK-INTEGRATION-2026-03-11.md`. **PROMOTED TO P0.** See Section 5.12.
 23. (2026-03-11, 3am) *"Everything is email"* → The entire product experience (onboarding, capture, prompts, delivery) lives in email. No app required. Reply to start. That's it. Core UX principle for Snapback.
 24. (2026-03-11, 3am) *"Bring me one problem. Talk about it for a week. I'll show you what you're not seeing."* → The Snapback Offer / acquisition hook. 7-day free trial with one focus problem. Day 8 they get the narrative. The free week IS the demo. See `joey-backup/specs/snapback-offer-2026-03-11.md`.
-25. (2026-03-11, 3am) *"Email prompts — 2-3/week, casual, designed to elicit raw material"* → Drop encouragement cadence (Tue/Thu/Sat). Not "Submit your weekly reflection." More like a friend texting "what happened today?"
+25. (2026-03-11, 3am) *"Email prompts - 2-3/week, casual, designed to elicit raw material"* → Drop encouragement cadence (Tue/Thu/Sat). Not "Submit your weekly reflection." More like a friend texting "what happened today?"
 26. (2026-03-11, 3am) *"The container creates freedom"* → 30-day songwriting challenge with Brooke born same session. Structured cadence (daily constraints) creates creative output. Snapback IS the container for the user's week.
 
 ### OpenClaw Multi-Agent Architecture (2026-03-10)
@@ -444,33 +444,33 @@ Joey's blueprint for optimizing the agent system from monolith → specialized t
 
 **Architecture Principles:**
 - **Tiered model strategy:** Free-tier models (Gemini Flash, Qwen) for grunt work → paid models (Claude, GPT-4) for planning/reasoning only
-- **Event-driven > time-based:** Use reactive triggers over cron where possible — agents respond to conditions, not clocks
-- **Least privilege:** Not every agent needs every tool. Scope permissions tightly — reduces errors, cost, hallucination risk
+- **Event-driven > time-based:** Use reactive triggers over cron where possible - agents respond to conditions, not clocks
+- **Least privilege:** Not every agent needs every tool. Scope permissions tightly - reduces errors, cost, hallucination risk
 - **Memory decay:** Old memories auto-deprioritize so context stays relevant (QMD markdown-based memory)
 - **Weekly capability evolution loop:** Audit gaps → propose new skills → test → deploy → repeat (via a "capability evolver" agent)
 
 **Implementation Roadmap:**
-1. Audit current setup — map each agent's role and minimum required skills
+1. Audit current setup - map each agent's role and minimum required skills
 2. Assign model tiers based on task complexity
 3. Configure memory with decay settings
 4. Set event-driven triggers instead of cron where possible
 5. Deploy capability evolver agent on weekly schedule
-6. Restrict tool access per agent — least privilege
+6. Restrict tool access per agent - least privilege
 
 **Cost Optimization:** Free Gemini (chat/grunt), free Qwen Coder (code gen), free Exa Search (web research), paid Claude (architecture/audit/planning only). Most people build one monolithic agent. The power move is a specialized team where each agent does one thing well, communicates through shared memory, and evolves weekly.
 
-### "Fire Yourself From Manager" — The Stream Philosophy (2026-03-10)
+### "Fire Yourself From Manager" - The Stream Philosophy (2026-03-10)
 
 *"You have built a cathedral and now you are exhausted from sweeping the floor."*
 
 Joey's insight on the transition from note-taking app → intelligence infrastructure:
 
-**The diagnosis:** The Recent Capture list frustration isn't a bug — it's the "final death rattle of the Filing Cabinet Mindset." DA wasn't built to give another list to manage. It was built to let you *forget*.
+**The diagnosis:** The Recent Capture list frustration isn't a bug - it's the "final death rattle of the Filing Cabinet Mindset." DA wasn't built to give another list to manage. It was built to let you *forget*.
 
 **Three product actions embedded in this:**
-1. **Merge checklist into the Stream** — The Stream is the present moment, Activity is momentum. Stop checking tasks, start witnessing progress. Turn a chore into a celebration.
-2. **One-click sovereignty** — When Intelligence surfaces a project, it builds the container for you. Don't ask the user to file it; ask them to *bless* it. Connect Intelligence component directly to vault postgres.
-3. **Shrink Recent Capture → Pulse** — Show last 3 drops as tiny, elegant breadcrumbs to the full Vault. Stop showing the whole museum on the front porch. Drops don't need constant supervision.
+1. **Merge checklist into the Stream** - The Stream is the present moment, Activity is momentum. Stop checking tasks, start witnessing progress. Turn a chore into a celebration.
+2. **One-click sovereignty** - When Intelligence surfaces a project, it builds the container for you. Don't ask the user to file it; ask them to *bless* it. Connect Intelligence component directly to vault postgres.
+3. **Shrink Recent Capture → Pulse** - Show last 3 drops as tiny, elegant breadcrumbs to the full Vault. Stop showing the whole museum on the front porch. Drops don't need constant supervision.
 
 **The philosophical shift:** *"You are not a manager. You are the Creator. The Drop is the Operator."* The system tells you what matters. That feeling is what we're automating next.
 
@@ -479,7 +479,7 @@ Joey's insight on the transition from note-taking app → intelligence infrastru
 ### Gate D: Invisible Assistant (from TODO-PROPOSED.md)
 
 - **Phase D.1:** Smart context injection (vault themes → chat hydration)
-- **Phase D.2:** Proactive nudges ("You mentioned X 3 times this week — want to act on it?")
+- **Phase D.2:** Proactive nudges ("You mentioned X 3 times this week - want to act on it?")
 - **Phase D.3:** Calendar + location awareness → contextual briefings
 - **Phase D.4:** Multi-user advisory mode (Danny use case scaled)
 - **Phase D.5:** Voice interface (Siri Shortcut → drop → confirmation → digest)
@@ -499,7 +499,7 @@ Joey's insight on the transition from note-taking app → intelligence infrastru
 - Individual bot SEO pages with keyword-rich descriptions
 - `/store` conversion optimization (currently 3.2% CTR from search)
 
-### Positive Signals (What's Working — Don't Break These)
+### Positive Signals (What's Working - Don't Break These)
 
 - **theREALrealtalk PMF signal:** 17,474 Poe points in 6h, Gen Z demographic, deeply personal sessions
 - **Google organic = 63% of BHA traffic:** SEO is the moat. Every improvement compounds.
@@ -544,14 +544,14 @@ Special: INVALID (spam/bot/bounce)
 
 ### Admin Dashboard Requirements
 - **Unified Feedback Inbox:** One place for all real feedback (digest ratings, !feedback, email replies, explicit feedback drops). Excludes BHA emotional language.
-- **User Context Cards:** Full journey visibility per user — entry point, products used, drops, digests, feedback, outreach history
+- **User Context Cards:** Full journey visibility per user - entry point, products used, drops, digests, feedback, outreach history
 - **Outreach from Admin:** Send personalized emails with context-aware templates. Track responses.
-- **Per-Pool Views:** DA-native vs BHA crossover vs Active — different funnels, different strategies
+- **Per-Pool Views:** DA-native vs BHA crossover vs Active - different funnels, different strategies
 - **Suggested Actions:** System recommends what Joey should do for each user
 
 ### Automated Lifecycle Responses (10 triggers)
 - 48h no drops → nudge
-- Drop 3 received → auto-admit + "digest tomorrow" 
+- Drop 3 received → auto-admit + "digest tomorrow"
 - 7 days pending → "drop one more to fast-track"
 - 3 unopened digests → "wrong time/format?"
 - 3 days inactive → "everything okay?"
@@ -562,8 +562,8 @@ Special: INVALID (spam/bot/bounce)
 - First digest → "check your email! 👍/👎?"
 
 ### Dropper-Code Tasks Filed
-1. ✅ Fix false-positive feedback (exclude BHA from keyword scan) — approved, in progress
-2. ⏳ Admin User Lifecycle API — Phase 1 (pending Joey approval, customer-facing)
+1. ✅ Fix false-positive feedback (exclude BHA from keyword scan) - approved, in progress
+2. ⏳ Admin User Lifecycle API - Phase 1 (pending Joey approval, customer-facing)
 
 ---
 
@@ -587,12 +587,12 @@ Digest generates 5 great action items → user checks one off ("I did it") → n
 The dashboard has a **persistent, prioritized action list** that:
 
 1. **Receives** new actions from each digest (already works via `_write_digest_actions_to_db`)
-2. **Persists** across days — an undone action from Monday is still there on Friday
-3. **Escalates** — if an action isn't completed in 3 days, it moves UP in priority (not down)
-4. **Tracks completion** — "I did it" writes `status=completed, completed_at=now` to postgres
-5. **Shows on dashboard** — top section, always visible, sorted by priority + age
-6. **Connects to drops** — each action links back to the drop(s) that generated it (`drop_ids` column exists)
-7. **Distinguishes digest actions from manual** — `source=digest` vs `source=manual` vs `source=intelligence`
+2. **Persists** across days - an undone action from Monday is still there on Friday
+3. **Escalates** - if an action isn't completed in 3 days, it moves UP in priority (not down)
+4. **Tracks completion** - "I did it" writes `status=completed, completed_at=now` to postgres
+5. **Shows on dashboard** - top section, always visible, sorted by priority + age
+6. **Connects to drops** - each action links back to the drop(s) that generated it (`drop_ids` column exists)
+7. **Distinguishes digest actions from manual** - `source=digest` vs `source=manual` vs `source=intelligence`
 
 ### Priority Logic
 
@@ -602,7 +602,7 @@ MUST DO (priority: critical)
 ├── Uncompleted actions from 3+ days ago (auto-escalated)
 └── Manually pinned by user
 
-HIGH (priority: high)  
+HIGH (priority: high)
 ├── Actions from digest "Also on Deck"
 ├── Uncompleted actions from 2 days ago
 └── Intelligence Map-sourced actions
@@ -642,13 +642,13 @@ DONE (status: completed)
 
 ### Implementation
 
-**Phase 1 (Backend — fix the pipeline):**
+**Phase 1 (Backend - fix the pipeline):**
 - [ ] Ensure `_write_digest_actions_to_db` correctly tags `source=digest`, `priority`, and `source_digest_id`
 - [ ] Digest "I did it" button → PATCH `/api/actions/{id}` with `status=completed` (not client-side)
 - [ ] Auto-escalation cron: daily, bump priority of actions older than 2 days
 - [ ] Clean up Joey's 13 existing actions (remove raw drops that aren't real actions)
 
-**Phase 2 (Frontend — dashboard integration):**
+**Phase 2 (Frontend - dashboard integration):**
 - [ ] Action queue widget on dashboard (MUST DO / TODAY / DONE sections)
 - [ ] Checkbox → API call → instant feedback
 - [ ] Swipe to dismiss/postpone (mobile)
@@ -667,28 +667,28 @@ DONE (status: completed)
 
 | Time (UTC) | Repo | Commit | What |
 |------------|------|--------|------|
-| 18:27 | opoerator-hub | — | PR #191 — Agent Auto-drops endpoint (`/api/integrations/auto-drop`) for OpenClaw/Poe bot session summaries |
-| 14:40 | opoerator-hub | — | PR #190 — Digest scheduler error budget + alerting (digest stall fix) |
-| 09:41 | joey-backup | `7145dad` | Snapback Offer — quote additions (quote on organizing thoughts/reminders) |
-| 09:29 | joey-backup | `fd2e3cb` | `specs/snapback-offer-2026-03-11.md` — The Snapback Offer doc ("Bring me one problem, one week, one story") |
-| 09:21 | joey-backup | `c0d125d` | `specs/SNAPBACK-INTEGRATION-2026-03-11.md` — Full Snapback product integration spec (12-section deep doc, architecture, NLP personalization, revenue model, implementation roadmap) |
-| 09:20 | joey-backup | `51d6804` | `specs/transurfing-snapback-product-vision-2026-03-11.md` — "Snap Back III: The Weekly Catch" — 3am product vision visualization, the moment the product revealed itself |
-| 09:03 | joey-backup | `9a5cd2d` | `specs/transurfing-snapback-songwriting-2026-03-11.md` — Snapback songwriting visualization (Brooke + 30-day challenge) |
-| 08:00 | joey-backup | `fe57951` | `specs/transurfing-snapback-music-2026-03-11.md` — Snapback music visualization (FL Studio, the pendulum release) |
-| 05:05 | joey-backup | `e835461` | `Ingestion/1_GOLDMINE/excavations/batch-0001.json` — 30-file excavation batch (claude_context + early reference) |
-| 04:04 | joey-backup | `877a9d8` | `specs/content-transformation-system-dec2025.md` — Dec 2025 origin story: the manual VAULT/GOLDMINE/FORGE/OUTPUT system Joey built before DA had a name |
+| 18:27 | opoerator-hub | - | PR #191 - Agent Auto-drops endpoint (`/api/integrations/auto-drop`) for OpenClaw/Poe bot session summaries |
+| 14:40 | opoerator-hub | - | PR #190 - Digest scheduler error budget + alerting (digest stall fix) |
+| 09:41 | joey-backup | `7145dad` | Snapback Offer - quote additions (quote on organizing thoughts/reminders) |
+| 09:29 | joey-backup | `fd2e3cb` | `specs/snapback-offer-2026-03-11.md` - The Snapback Offer doc ("Bring me one problem, one week, one story") |
+| 09:21 | joey-backup | `c0d125d` | `specs/SNAPBACK-INTEGRATION-2026-03-11.md` - Full Snapback product integration spec (12-section deep doc, architecture, NLP personalization, revenue model, implementation roadmap) |
+| 09:20 | joey-backup | `51d6804` | `specs/transurfing-snapback-product-vision-2026-03-11.md` - "Snap Back III: The Weekly Catch" - 3am product vision visualization, the moment the product revealed itself |
+| 09:03 | joey-backup | `9a5cd2d` | `specs/transurfing-snapback-songwriting-2026-03-11.md` - Snapback songwriting visualization (Brooke + 30-day challenge) |
+| 08:00 | joey-backup | `fe57951` | `specs/transurfing-snapback-music-2026-03-11.md` - Snapback music visualization (FL Studio, the pendulum release) |
+| 05:05 | joey-backup | `e835461` | `Ingestion/1_GOLDMINE/excavations/batch-0001.json` - 30-file excavation batch (claude_context + early reference) |
+| 04:04 | joey-backup | `877a9d8` | `specs/content-transformation-system-dec2025.md` - Dec 2025 origin story: the manual VAULT/GOLDMINE/FORGE/OUTPUT system Joey built before DA had a name |
 | 04:12 | joey-backup | `165b8a3` | Daily log backup: 2026-03-11 Ingestion archive discovery session |
 | 04:12 | joey-backup | `01b77f7` | TOOLS.md backup: documented Ingestion archive |
 | 04:12 | joey-backup | `e3167e5` | MEMORY.md backup: documented Ingestion archive |
-| 03:35–03:39 | joey-backup | `842299d`–`05c5824` | PRD cleanup: CSV export item + Target Slide added, old PRD versions archived to `specs/archive/` |
+| 03:35-03:39 | joey-backup | `842299d`-`05c5824` | PRD cleanup: CSV export item + Target Slide added, old PRD versions archived to `specs/archive/` |
 | 03:20 | joey-backup | `c85272c`/`39857a8` | USER.md + HEARTBEAT.md: Added "Current Test" (Transurfing filter) |
-| 01:20 | opoerator-hub | `b1dae71` | ✅ Admin User Lifecycle API — Phase 1 (lifecycle stages, user context, feedback inbox) (#167) |
+| 01:20 | opoerator-hub | `b1dae71` | ✅ Admin User Lifecycle API - Phase 1 (lifecycle stages, user context, feedback inbox) (#167) |
 | 01:10 | opoerator-hub | `a72f1b3` | ✅ Manual admission + pure opt-out tracking + default digest off (#166) |
 | 00:50 | opoerator-hub | `7ddd916` | ✅ Fix false-positive feedback: exclude BHA sessions from keyword scan (#165) |
 
 ### Key Insight from Today's Commits
 
-The Content Transformation System doc (`specs/content-transformation-system-dec2025.md`) confirms Joey designed the VAULT→GOLDMINE→FORGE→OUTPUT pipeline in December 2025 — before DropAnywhere had its current form. Tonight's Snapback breakthrough is the same insight arriving again, now with working infrastructure underneath it. The product was always there. The infrastructure finally caught up.
+The Content Transformation System doc (`specs/content-transformation-system-dec2025.md`) confirms Joey designed the VAULT→GOLDMINE→FORGE→OUTPUT pipeline in December 2025 - before DropAnywhere had its current form. Tonight's Snapback breakthrough is the same insight arriving again, now with working infrastructure underneath it. The product was always there. The infrastructure finally caught up.
 
 ---
 
@@ -714,20 +714,20 @@ The Content Transformation System doc (`specs/content-transformation-system-dec2
 | Asset | Size | Status |
 |-------|------|--------|
 | OpenAI conversations | 2,462+ | Exported to 0_VAULT/conversations |
-| Poe conversation docs | 40+ (Jan 2026) | Uploaded Mar 11 to 0_VAULT/Documents — MIC DROP, HOLOGRAM, Context as a Service, ANTIGRAVITY, SOMATIC SURPIPHANY, etc. |
+| Poe conversation docs | 40+ (Jan 2026) | Uploaded Mar 11 to 0_VAULT/Documents - MIC DROP, HOLOGRAM, Context as a Service, ANTIGRAVITY, SOMATIC SURPIPHANY, etc. |
 | Poe bot fleet | 467 bots, 72 public | Live on Poe |
 | God Mode 15 prompts | 47K chars (Personality Layer v2.0) | Live in Hub orchestrator |
 | Notion databases | 40+ JSON exports (BHA) | In Ingestion/0_VAULT/BHA |
-| BHA Content Pipeline | 1 JSON export | Added Mar 11 — `CONTENT_PIPELINE.json` |
+| BHA Content Pipeline | 1 JSON export | Added Mar 11 - `CONTENT_PIPELINE.json` |
 | Transurfing bookmarks | 2 files | In Ingestion |
 | Time capsules | 5 JSON files (Feb-Mar 2026) | +1 added Mar 11 |
 | Bot personality patterns | JSON | In Ingestion |
 | BHA Search Console data | 7 CSVs (Feb 2026) | In Ingestion |
-| GOLDMINE excavations | batch-0001 | **NEW Mar 11** — first automated extraction from VAULT. Transformation engine is now live. |
+| GOLDMINE excavations | batch-0001 | **NEW Mar 11** - first automated extraction from VAULT. Transformation engine is now live. |
 | Strategic reference docs | AUTONOMOUS-REVENUE-STACK.md, SFP_OPERATIONAL_HYDRATION.md | Added Mar 11 |
-| Snapback visualizations | 3 files | Music, Songwriting, Product Vision — all committed Mar 11 |
-| Snapback Offer | 1 file | `snapback-offer-2026-03-11.md` — expanded with empathy-first copy |
-| Snapback Integration Spec | 1 file | `SNAPBACK-INTEGRATION-2026-03-11.md` — the definitive spec |
+| Snapback visualizations | 3 files | Music, Songwriting, Product Vision - all committed Mar 11 |
+| Snapback Offer | 1 file | `snapback-offer-2026-03-11.md` - expanded with empathy-first copy |
+| Snapback Integration Spec | 1 file | `SNAPBACK-INTEGRATION-2026-03-11.md` - the definitive spec |
 
 ### 7b-iii. Products Ready or Near-Ready
 
@@ -760,42 +760,42 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 16, 17:51 UTC) — DocBot Refresh
+## 8. System Health & Metrics (March 16, 17:51 UTC) - DocBot Refresh
 
 > **🚨 Poe Balance Critical:** Down to **42,770 points** with **43,379 burned/6h** (100 calls). At current burn rate, balance depletes within ~1 hour. Top bots: IdealPrompt (15,982), Tippiy (15,067), theREALrealtalk (8,625). Top-up urgently or disable non-essential bots.
 
-> **⚠️ Digest Scheduler Stalled:** PR #190 is open (not merged) — fix in progress. Only 3/100 eligible users got digests in 24h. PRs #184–185 closed (superseded). Active open PRs #186–190 addressing stall. Brain scan proposed Zapier integration, Agent auto-drops, and BHA capture button (pending approval). Open issues reduced from 6 to 2.
+> **⚠️ Digest Scheduler Stalled:** PR #190 is open (not merged) - fix in progress. Only 3/100 eligible users got digests in 24h. PRs #184-185 closed (superseded). Active open PRs #186-190 addressing stall. Brain scan proposed Zapier integration, Agent auto-drops, and BHA capture button (pending approval). Open issues reduced from 6 to 2.
 
 > **✅ OpenClaw Deploy:** Latest gateway deploy SUCCESS at 2026-03-16 14:12 UTC.
 
 | Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:01 | Mar 16 17:51 | Δ |
 |--------|-------|-------|--------|--------|-------------|-------------|-------------|-------------|---|
 | DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | **100** | **100** | stable |
-| DA archived users | — | — | — | **44** | **44** | **44** | **44** | **44** | **44** | stable |
-| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | stable |
+| DA archived users | - | - | - | **44** | **44** | **44** | **44** | **44** | **44** | stable |
+| DA active real users | - | - | **~20** | **24** | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | stable |
 | DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | **9** | **7** | **7** | stable |
-| DA active 7d | 24 | 47 | 47+ | **60** | **55** | **55** | **55** | **—** | **—** | — |
+| DA active 7d | 24 | 47 | 47+ | **60** | **55** | **55** | **55** | **-** | **-** | - |
 | DA drops total | 456 | 589 | **668** | **690** | **843** | **843** | **843** | **843** | **843** | stable |
-| DA drops 24h | — | — | — | **51** | **33** | **22** | **22** | **19** | **18** | -1 |
-| DA digests sent 24h | — | — | — | **15** | **3** | **3** | **3** | **3** | **3** | ⚠️ stalled |
+| DA drops 24h | - | - | - | **51** | **33** | **22** | **22** | **19** | **18** | -1 |
+| DA digests sent 24h | - | - | - | **15** | **3** | **3** | **3** | **3** | **3** | ⚠️ stalled |
 | BHA users | 172 | 198 | **211** | **215** | **259** | **259** | **259** | **259** | **259** | stable |
-| BHA active 24h | — | — | — | **13** | **11** | **9** | **9** | **7** | **7** | stable |
+| BHA active 24h | - | - | - | **13** | **11** | **9** | **9** | **7** | **7** | stable |
 | BHA active 7d | 38 | 53 | 53+ | **63** | **70** | **70** | **70** | **70** | **70** | stable |
-| BHA pro subs | — | — | **3** | **2** | **2** | **2** | **2** | **2** | **2** | stable |
-| BHA new users 24h | — | — | — | **7** | **7** | **4** | **4** | **4** | **4** | steady |
-| BHA weekly visitors (GA) | — | — | **531** | — | **—** | **—** | **—** | **—** | **—** | — |
+| BHA pro subs | - | - | **3** | **2** | **2** | **2** | **2** | **2** | **2** | stable |
+| BHA new users 24h | - | - | - | **7** | **7** | **4** | **4** | **4** | **4** | steady |
+| BHA weekly visitors (GA) | - | - | **531** | - | **-** | **-** | **-** | **-** | **-** | - |
 | BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | stable |
 | Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **43,544** 🚨 | **42,770** 🚨 | **42,770** 🚨 | stable |
-| Poe burn/6h points | — | — | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,449** 🔥 | **43,379** 🔥 | **43,379** 🔥 | stable |
-| Poe calls/6h | — | — | — | **100** | **100** | **100** | **100** | **100** | **100** | — |
+| Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,449** 🔥 | **43,379** 🔥 | **43,379** 🔥 | stable |
+| Poe calls/6h | - | - | - | **100** | **100** | **100** | **100** | **100** | **100** | - |
 | Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | **100** | **100** | stable |
 | Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** | **98%** (87/89) | **98%** (98/100) | **98%** (98/100) | ✅ |
-| Hub open PRs (all) | — | — | — | — | — | 4 open | **5 open** (digest fix) | **5 open** (#186–190) | **5 open** (#186–190, #191 pending) | ⚠️ digest stall |
-| Hub merged PRs | — | 9 | **12** | **15** | **#175–176** | **#176** latest | **#176** latest | **#176** latest | **pending review** | — |
+| Hub open PRs (all) | — | — | — | — | — | 4 open | **5 open** (digest fix) | **5 open** (#186–190) | **6 open** (#186-191) | ⚠️ digest stall |
+| Hub merged PRs | - | 9 | **12** | **15** | **#175-176** | **#176** latest | **#176** latest | **#176** latest | **pending review** | - |
 | Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | **6** | **2** | **2** | stable |
-| joey-backup commits | — | — | — | **40+** | **—** | **—** | **—** | **—** | **—** | — |
+| joey-backup commits | - | - | - | **40+** | **-** | **-** | **-** | **-** | **-** | - |
 | GOLDMINE excavations | — | — | — | **batch-0001** | **—** | **—** | **—** | **—** | **—** | — |
-| Snapback prototypes | — | — | — | **3** | **3** | **3** | **3** | **3** | **3** | — |
+| Snapback prototypes | - | - | - | **3** | **3** | **3** | **3** | **3** | **3** | - |
 
 ### BHA Search Console Highlights (Feb 2026 data)
 
@@ -816,23 +816,23 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 | Bug | Status | Impact | Owner |
 |-----|--------|--------|-------|
-| **Admin feedback false positives** | ✅ Fixed Mar 11 — PR #165 merged | High — 62 fake negatives from BHA therapy convos | Dropper-Code |
-| **BHA users getting unsolicited digests** | ✅ Fixed Mar 11 — migration disabled 57 BHA-only users | Critical (consent/trust) | Claw |
-| **No pure opt-out tracking** | ✅ Fixed Mar 11 — PR #166 merged | Medium — can't distinguish unsub from admin disable | Dropper-Code |
-| **New signups default to digest on** | ✅ Fixed Mar 11 — PR #166 merged, default off + manual admit | High (sending to unconverted users) | Dropper-Code |
-| **Admin User Lifecycle API — Phase 1** | ✅ Fixed Mar 11 — PR #167 merged | High — lifecycle stages, user context | Dropper-Code |
-| **Snapback Engine** | ✅ Fixed Mar 11 — PR #168 merged | High — narrative generation engine | Dropper-Code |
-| **Golden Thread: Persistent Action Queue** | ✅ Fixed Mar 11 — PR #168 merged | High — one-click completion links | Dropper-Code |
+| **Admin feedback false positives** | ✅ Fixed Mar 11 - PR #165 merged | High - 62 fake negatives from BHA therapy convos | Dropper-Code |
+| **BHA users getting unsolicited digests** | ✅ Fixed Mar 11 - migration disabled 57 BHA-only users | Critical (consent/trust) | Claw |
+| **No pure opt-out tracking** | ✅ Fixed Mar 11 - PR #166 merged | Medium - can't distinguish unsub from admin disable | Dropper-Code |
+| **New signups default to digest on** | ✅ Fixed Mar 11 - PR #166 merged, default off + manual admit | High (sending to unconverted users) | Dropper-Code |
+| **Admin User Lifecycle API - Phase 1** | ✅ Fixed Mar 11 - PR #167 merged | High - lifecycle stages, user context | Dropper-Code |
+| **Snapback Engine** | ✅ Fixed Mar 11 - PR #168 merged | High - narrative generation engine | Dropper-Code |
+| **Golden Thread: Persistent Action Queue** | ✅ Fixed Mar 11 - PR #168 merged | High - one-click completion links | Dropper-Code |
 | Intelligence Map shows completed items | Filed + approved | Medium | Dropper-Code |
 | Hub BHA subscriber count misreporting | Filed + approved | High (false $0 MRR alarm) | Dropper-Code |
-| **Poe balance critically low** | 🚨 **NEW Mar 16** — 47K points, 50K burn/6h | Critical — bots will stop in ~6h | Joey/Claw |
+| **Poe balance critically low** | 🚨 **NEW Mar 16** - 47K points, 50K burn/6h | Critical - bots will stop in ~6h | Joey/Claw |
 | Poe API 500s on PATCH to prompt bots | External (Poe bug) | Blocks shadow cutover | Poe support |
 | Hub API tool returns empty | Known workaround (curl) | Low (heartbeat annoyance) | OpenClaw |
 | `.some()` error hourly in gateway | Non-critical | Zero user impact | Upstream |
 | Homepage gibberish placeholders | Commit f7ed463 cleanup | Visual QA needed | Dropper-Code |
 | main.py monolith (24K+ lines) | Tech debt | Long-term maintainability | Future refactor |
 | Local cron jobs may conflict with cloud | Unknown | Audit needed | Joey |
-| Digest email replies go nowhere | Not filed yet | Critical — user feedback lost | TBD |
+| Digest email replies go nowhere | Not filed yet | Critical - user feedback lost | TBD |
 
 ---
 
@@ -842,20 +842,20 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 | Priority | Item | Time | Owner | Status |
 |----------|------|------|-------|--------|
-| **P0-1** | ✅ BHA consent migration — stop sending digests to unconverted users | Done | Claw | **Shipped Mar 11** |
-| **P0-2** | ✅ Manual admission + opt-out tracking + default digest off | 2-4h | Dropper-Code | **Shipped Mar 11** — PR #166 merged |
-| **P0-3** | ✅ Fix admin feedback false positives (exclude BHA from keyword scan) | 1-2h | Dropper-Code | **Shipped Mar 11** — PR #165 merged |
-| **P0-4** | ✅ Admin User Lifecycle API — Phase 1 (lifecycle stages, user context) | 4-6h | Dropper-Code | **Shipped Mar 11** — PR #167 merged |
-| **P0-5** | Shadow bot cross-promo descriptions | 10 min | Joey (manual) | **Paste-ready** — `docs/poe-funnel-paste-ready.md` + `joey-backup/specs/` |
-| **P0-6** | Funnel prompt paste into original bots | 10 min | Joey (manual) | **Paste-ready** — same doc, system prompt CTA blocks for all 5 bots |
-| **P0-7** | List Genesis Orchestrator on Gumroad | 30 min | Joey (manual) | **Copy ready** — `docs/gumroad-genesis-listing.md` + `joey-backup/specs/` |
-| **P0-8** | ✅ **Snapback Engine** — `snapback_generator.py` (306 lines): language pattern extraction, narrative generation, HTML rendering. Feature flag `digest_mode` + `snapback_profile` on user schema. | Done | Dropper-Code | **Shipped Mar 11** — PR #168 merged. Engine exists. |
-| **P0-8a** | ✅ **Wire Snapback weekly cron** — Sunday trigger that fires `snapback_generator` for users with `digest_mode=snapback`. Store narratives in `snapback_stories` table. Skip users with <3 drops/week. | 2-4h | Dropper-Code | **Shipped Mar 15** — PR #181 merged |
-| **P0-8b** | ✅ **Email prompt scheduler** — Tue/Thu/Sat drip using copy from `docs/snapback-email-prompts.md`. Track day-in-sequence per user. Nudge if no reply by Day 4. | 2-4h | Dropper-Code | **Shipped Mar 15** — PR #182 merged |
-| **P0-8c** | ✅ **Capture email replies as Snapback session drops** — Route Resend webhook replies back as drops tagged with `snapback_session_id` + day number. Snapback generator pulls session-tagged drops. | 2-4h | Dropper-Code | **Shipped Mar 16** — PR #187 merged |
-| **P0-9** | ✅ **Golden Thread: Persistent Action Queue** — "Done ✓" one-click links in digest emails, HMAC-tokenized completion endpoint, actions written to DB before HTML generation. | Done | Dropper-Code | **Shipped Mar 11** — PR #168 merged. Dashboard widget (113 lines). |
-| **P1-1** | Unified Feedback Inbox (API + frontend) — one place for all feedback | 1-2w | Dropper-Code | Spec ready |
-| **P1-2** | Admin Lifecycle Dashboard — frontend (funnel viz, user cards, outreach) | 1-2w | Dropper-Code | Spec ready |
+| **P0-1** | ✅ BHA consent migration - stop sending digests to unconverted users | Done | Claw | **Shipped Mar 11** |
+| **P0-2** | ✅ Manual admission + opt-out tracking + default digest off | 2-4h | Dropper-Code | **Shipped Mar 11** - PR #166 merged |
+| **P0-3** | ✅ Fix admin feedback false positives (exclude BHA from keyword scan) | 1-2h | Dropper-Code | **Shipped Mar 11** - PR #165 merged |
+| **P0-4** | ✅ Admin User Lifecycle API - Phase 1 (lifecycle stages, user context) | 4-6h | Dropper-Code | **Shipped Mar 11** - PR #167 merged |
+| **P0-5** | Shadow bot cross-promo descriptions | 10 min | Joey (manual) | **Paste-ready** - `docs/poe-funnel-paste-ready.md` + `joey-backup/specs/` |
+| **P0-6** | Funnel prompt paste into original bots | 10 min | Joey (manual) | **Paste-ready** - same doc, system prompt CTA blocks for all 5 bots |
+| **P0-7** | List Genesis Orchestrator on Gumroad | 30 min | Joey (manual) | **Copy ready** - `docs/gumroad-genesis-listing.md` + `joey-backup/specs/` |
+| **P0-8** | ✅ **Snapback Engine** - `snapback_generator.py` (306 lines): language pattern extraction, narrative generation, HTML rendering. Feature flag `digest_mode` + `snapback_profile` on user schema. | Done | Dropper-Code | **Shipped Mar 11** - PR #168 merged. Engine exists. |
+| **P0-8a** | ✅ **Wire Snapback weekly cron** - Sunday trigger that fires `snapback_generator` for users with `digest_mode=snapback`. Store narratives in `snapback_stories` table. Skip users with <3 drops/week. | 2-4h | Dropper-Code | **Shipped Mar 15** - PR #181 merged |
+| **P0-8b** | ✅ **Email prompt scheduler** - Tue/Thu/Sat drip using copy from `docs/snapback-email-prompts.md`. Track day-in-sequence per user. Nudge if no reply by Day 4. | 2-4h | Dropper-Code | **Shipped Mar 15** - PR #182 merged |
+| **P0-8c** | ✅ **Capture email replies as Snapback session drops** - Route Resend webhook replies back as drops tagged with `snapback_session_id` + day number. Snapback generator pulls session-tagged drops. | 2-4h | Dropper-Code | **Shipped Mar 16** - PR #187 merged |
+| **P0-9** | ✅ **Golden Thread: Persistent Action Queue** - "Done ✓" one-click links in digest emails, HMAC-tokenized completion endpoint, actions written to DB before HTML generation. | Done | Dropper-Code | **Shipped Mar 11** - PR #168 merged. Dashboard widget (113 lines). |
+| **P1-1** | Unified Feedback Inbox (API + frontend) - one place for all feedback | 1-2w | Dropper-Code | Spec ready |
+| **P1-2** | Admin Lifecycle Dashboard - frontend (funnel viz, user cards, outreach) | 1-2w | Dropper-Code | Spec ready |
 | **P1-3** | BHA SEO meta optimization | 4h | Dropper-Code | File task |
 | **P1-4** | Chrome extension enhancements | 2-4h | Dropper-Code | File task |
 | **P1-5** | Droppings auto-tagging | 2-3h | Dropper-Code | File task |
@@ -863,7 +863,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 | **P1-7** | Shadow cutover decision | Decision | Joey | After P0-5, P0-6 |
 | **P1-8** | Capture digest email replies as drops/feedback | 2-4h | Dropper-Code | Not filed yet |
 | **P2-1** | Unified Drop Classification v2 | 2-3w | Dropper-Code | Spec exists |
-| **P2-2** | ~~Snap Back Protocol~~ | — | — | **PROMOTED TO P0-8** (Snapback MVP) |
+| **P2-2** | ~~Snap Back Protocol~~ | - | - | **PROMOTED TO P0-8** (Snapback MVP) |
 | **P2-3** | B2B Advisory Mode beta | 4w | Team | Danny = pilot |
 | **P2-4** | NotebookLM meditation | 2-4h | Joey (explore) | Idea stage |
 | **P2-5** | Poe fleet optimization | 1w | Claw | Analysis ready |
@@ -873,36 +873,36 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ## 11. Lessons Learned (Operational Memory)
 
-1. **Text > Brain** — Mental notes don't survive restarts. Files do.
-2. **Hydrate before opining** — H-score ≥ 0.90 before giving decisions.
-3. **Surgical edits > chainsaw** — Don't gut a 4000-line homepage to 1200 lines.
-4. **NEVER self-deploy without HITL** — Gateway deploys = potential self-destruction.
-5. **Backup to joey-backup** — Recovery path if Railway volume dies.
-6. **The two highest-ROI actions are usually the simplest** — 10-minute paste jobs beat 2-week builds.
-7. **Joey's voice writes in fragments** — Short punches, then a longer beat. Second person. Reveal structure.
-8. **The product promise is emotional, not feature-driven** — "Drop it. Forget it. Wake up lighter." Not "AI-powered note organization."
-9. **Danny doesn't know he's using DropAnywhere** — That's the design. The best product is invisible.
-10. **100 abandoned projects is a feature** — Joey's creative exhaust is the raw material. The system's job is to surface what sticks.
-11. **218 users ≠ 218 customers** (2026-03-11) — BHA webhook auto-created DA accounts for everyone who talked to a Poe bot. 57 "users" were actually therapy conversations auto-synced. Only ~20 are real DA-native users. Ran consent migration to disable BHA-only digests. Now: manual admission only. Know every person getting a digest by name.
-12. **Opt-outs are sacred** (2026-03-11) — Three states: not-admitted, admin-disabled, pure-opt-out. A user who clicks unsubscribe should NEVER be re-enabled by automation. Only their own explicit action can re-subscribe them.
-13. **Use your own product** (2026-03-11) — Joey dropped a raw feeling at 3am. Got a Snapback. Made music. Started a 30-day songwriting challenge with Brooke. Then realized: "Wait. This IS the product." The Snapback wasn't a feature request — it was a prototype that already worked because Joey was user zero. The best product insights come from living inside the system, not from feature meetings.
-14. **Everything is email** (2026-03-11) — Three years of platforms, dashboards, daily digests, feature flags, ingestion pipelines. The answer was always the simplest thing: the channel everyone already has, the interface nobody needs to learn, the inbox that's already open. The onboarding is email. The drops are email. The delivery is email. Simplest version = truest version.
-15. **The transformation engine is real** (2026-03-11) — Excavation batch-0001 proved the VAULT → GOLDMINE pipeline works. Joey designed this architecture by hand in December 2025 (Content Transformation System). DropAnywhere automated what he was already doing manually with folders and willpower.
-13. **Use the product yourself first** (2026-03-11, 3am) — The Snapback breakthrough happened because Joey was user zero. He dropped a raw feeling. The system caught it. He read the narrative back and went and made music. The product revealed itself through lived use, not strategy. The best product insight isn't a whiteboard session — it's *becoming the user*.
-14. **The simplest version is the truest one** (2026-03-11, 3am) — Three years of platforms, dashboards, daily digests, feature flags. The answer was email. Everyone has it. No app to learn. Reply to start. The path of least resistance isn't lazy — it's elegant.
-15. **A 3am session can change the roadmap** — Don't dismiss insights that arrive at unusual hours. The Rancho Mirage method of loci, the Snapback breakthrough, the "everything is email" clarity — all late night. Check `joey-backup/specs/` for captured breakthroughs.
+1. **Text > Brain** - Mental notes don't survive restarts. Files do.
+2. **Hydrate before opining** - H-score ≥ 0.90 before giving decisions.
+3. **Surgical edits > chainsaw** - Don't gut a 4000-line homepage to 1200 lines.
+4. **NEVER self-deploy without HITL** - Gateway deploys = potential self-destruction.
+5. **Backup to joey-backup** - Recovery path if Railway volume dies.
+6. **The two highest-ROI actions are usually the simplest** - 10-minute paste jobs beat 2-week builds.
+7. **Joey's voice writes in fragments** - Short punches, then a longer beat. Second person. Reveal structure.
+8. **The product promise is emotional, not feature-driven** - "Drop it. Forget it. Wake up lighter." Not "AI-powered note organization."
+9. **Danny doesn't know he's using DropAnywhere** - That's the design. The best product is invisible.
+10. **100 abandoned projects is a feature** - Joey's creative exhaust is the raw material. The system's job is to surface what sticks.
+11. **218 users ≠ 218 customers** (2026-03-11) - BHA webhook auto-created DA accounts for everyone who talked to a Poe bot. 57 "users" were actually therapy conversations auto-synced. Only ~20 are real DA-native users. Ran consent migration to disable BHA-only digests. Now: manual admission only. Know every person getting a digest by name.
+12. **Opt-outs are sacred** (2026-03-11) - Three states: not-admitted, admin-disabled, pure-opt-out. A user who clicks unsubscribe should NEVER be re-enabled by automation. Only their own explicit action can re-subscribe them.
+13. **Use your own product** (2026-03-11) - Joey dropped a raw feeling at 3am. Got a Snapback. Made music. Started a 30-day songwriting challenge with Brooke. Then realized: "Wait. This IS the product." The Snapback wasn't a feature request - it was a prototype that already worked because Joey was user zero. The best product insights come from living inside the system, not from feature meetings.
+14. **Everything is email** (2026-03-11) - Three years of platforms, dashboards, daily digests, feature flags, ingestion pipelines. The answer was always the simplest thing: the channel everyone already has, the interface nobody needs to learn, the inbox that's already open. The onboarding is email. The drops are email. The delivery is email. Simplest version = truest version.
+15. **The transformation engine is real** (2026-03-11) - Excavation batch-0001 proved the VAULT → GOLDMINE pipeline works. Joey designed this architecture by hand in December 2025 (Content Transformation System). DropAnywhere automated what he was already doing manually with folders and willpower.
+13. **Use the product yourself first** (2026-03-11, 3am) - The Snapback breakthrough happened because Joey was user zero. He dropped a raw feeling. The system caught it. He read the narrative back and went and made music. The product revealed itself through lived use, not strategy. The best product insight isn't a whiteboard session - it's *becoming the user*.
+14. **The simplest version is the truest one** (2026-03-11, 3am) - Three years of platforms, dashboards, daily digests, feature flags. The answer was email. Everyone has it. No app to learn. Reply to start. The path of least resistance isn't lazy - it's elegant.
+15. **A 3am session can change the roadmap** - Don't dismiss insights that arrive at unusual hours. The Rancho Mirage method of loci, the Snapback breakthrough, the "everything is email" clarity - all late night. Check `joey-backup/specs/` for captured breakthroughs.
 
 ---
 
-## 12. Document Maintenance — How This PRD Stays Alive
+## 12. Document Maintenance - How This PRD Stays Alive
 
 This is a living document. Three automated cron jobs keep it current:
 
 | Job | Cron ID | Schedule | What It Updates |
 |-----|---------|----------|-----------------|
 | **Daily Metrics Refresh** | `ff0d3303` | 8am CST (14:00 UTC) daily | Section 8 metrics table, Section 9 bugs, completed items in Section 10 |
-| **Weekly Full Refresh** | `a366288a` | Sunday 7pm CST (Mon 01:00 UTC) | ALL sections — metrics, GitHub PRs, Joey's drops → 6b backlog, Dropper-Code status, priorities, bugs. Pushes backup to joey-backup. Sends Joey a 3-5 bullet WhatsApp summary. |
-| **Drop Mining** | `048491b8` | Wed + Sat 4pm CST (22:00 UTC) | Section 6b backlog — mines Joey's recent drops for new feature requests, product ideas, and priority signals. Silent. |
+| **Weekly Full Refresh** | `a366288a` | Sunday 7pm CST (Mon 01:00 UTC) | ALL sections - metrics, GitHub PRs, Joey's drops → 6b backlog, Dropper-Code status, priorities, bugs. Pushes backup to joey-backup. Sends Joey a 3-5 bullet WhatsApp summary. |
+| **Drop Mining** | `048491b8` | Wed + Sat 4pm CST (22:00 UTC) | Section 6b backlog - mines Joey's recent drops for new feature requests, product ideas, and priority signals. Silent. |
 
 ### Update Rules
 
@@ -934,7 +934,15 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *Generated from: MEMORY.md, TOOLS.md, TODO.md (DA + BHA), TODO-PROPOSED.md, FULL-PICTURE.md, REVENUE_SUMMIT_OUTCOME.md, GitHub (34+ PRs), Hub API (live), Poe fleet, GA/Search Console, joey-backup asset inventory, and 25+ files from Ingestion subfolders (strategic docs, session transcripts, CSVs, personality patterns, architecture specs, time capsules, and Joey's original voice).*
 
-*First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
+*First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC - Snapback engine + Golden Thread shipped (PR #168).*
+
+*Last auto-refreshed: 2026-03-16 18:36 UTC - DocBot metrics refresh. Section 8 updated: 18:36 column added, drops_24h 18 (-1), PR #191 added to shipping log (Agent Auto-drops endpoint live). Poe balance 42,770 🚨 (burn 43K/6h - critical). Digest stall: 3 sent, 5 PRs open (#186-190, #191). 🦜*
+ted items. 🦜*
+ed items. 🦜*
+*
+���*
+ted items. 🦜*
+ 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
 *Last auto-refreshed: 2026-03-16 18:36 UTC — DocBot metrics refresh. Section 8 updated: 18:36 column added, drops_24h 18 (-1), PR #191 added to shipping log (Agent Auto-drops endpoint live). Poe balance 42,770 🚨 (burn 43K/6h — critical). Digest stall: 3 sent, 5 PRs open (#186-190, #191). 🦜*
 ted items. 🦜*
@@ -942,3 +950,5 @@ ed items. 🦜*
 *
 ���*
 ted items. 🦜*
+�*
+��*
