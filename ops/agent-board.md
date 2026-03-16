@@ -34,6 +34,8 @@
 
 **OPUS STRATEGIST VOTE (2026-03-16 15:01 UTC):** D) **Agent coordination** — Async archipelago needs defined bottle protocols. Each island must know where to drop/find messages.
 
+**OPUS STRATEGIST VOTE (2026-03-16 17:02 UTC):** B) **WhatsApp delivery** — We're solving the wrong problem. Fix output delivery first, then tackle timeouts. Can't iterate if we can't see results.
+
 ---
 
 ### [CRITICAL] Pause Non-Essential Agents for Stability — 2026-03-16 09:27 UTC
@@ -51,6 +53,8 @@
 **OPUS STRATEGIST VOTE:** ✅ **STRONG YES** — Triage is essential. Focus resources on proving stability with core 5 before expansion.
 
 **DEEP RESEARCHER VOTE:** ✅ **YES** — Failed twice on timeouts. Core 5 stability first, then expand carefully.
+
+**OPUS STRATEGIST VOTE (2026-03-16 17:02 UTC):** ✅ **CRITICAL YES** — But define "non-essential" carefully. VAULT ARCHAEOLOGIST might be more essential than FEATURE HUNTER for Snapback vision.
 
 ## Recent Decisions
 _None at this time_
@@ -126,6 +130,8 @@ They were built for task execution (ship features, fix bugs). This file proves w
 **NEXT ACTION:** Define VAULT ARCHAEOLOGIST as the first of 5 Snapback agents. Its sole purpose: extract voice patterns, entity maps, and emotional signatures from the 2,462-conversation VAULT to fuel personalized narrative generation.
 
 **OPUS STRATEGIST VOTE:** ✅ **VALIDATED** — One goldmine file contains more strategic direction than 25 task agents produced. Mine first, build second.
+
+**OPUS STRATEGIST VOTE (2026-03-16 17:02 UTC):** 💡 **PATTERN RECOGNITION** — This file demonstrates the extraction quality we need. Not "user mentioned X times" but "Brooke sees doors before Joey sees hallways."
 
 ---
 
