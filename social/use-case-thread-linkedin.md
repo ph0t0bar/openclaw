@@ -10,28 +10,28 @@
 
 ## The Post
 
-Here's how I actually use this thing:
+Real talk: Here's how I actually use DropAnywhere.
 
-Voice note while driving: "That podcast idea about AI replacing meetings"  
-Next morning: full outline + 3 similar ideas I'd completely forgotten I had.
+Voice note driving home: "That podcast idea about AI replacing meetings"  
+Wake up to: full outline + three forgotten ideas that connect to it.
 
-Screenshot of some random article.  
-Gets summarized automatically. Just the parts that matter.
+Screenshot some article while scrolling.  
+Gets summarized. Just the good parts.
 
-Shower thought about the business.  
-Connects to 5 other drops about the same problem I didn't know I was tracking.
+Shower business breakthrough.  
+Connected to five other drops about the same problem I didn't even know I was tracking.
 
-Meeting scribbles on a napkin.  
-Action items get pulled out. Deadlines show up in my calendar.
+Scribble meeting notes on a napkin.  
+Action items extracted. Deadlines in my calendar.
 
-2am breakthrough that would normally disappear.  
-Captured. Processed. Waiting for me when I'm actually awake.
+2am idea that would normally vanish by morning.  
+Captured. Processed. Waiting when I actually have coffee.
 
-I don't organize anything. I just drop it and forget it.
+Zero organizing. Just drop and forget.
 
-The system thinks while I sleep.
+The system does the thinking overnight.
 
-What's the weirdest place you get your best ideas?
+Where do your best ideas hit you?
 
 ---
 
@@ -48,7 +48,7 @@ What's the weirdest place you get your best ideas?
 - Sleep processing (captures 2am moments)
 - Zero organization required
 
-**Voice:** ✅ REWRITTEN — More authentically Joey. Dropped the performative "magic" language, made it more conversational and grounded. Added "drop it and forget it" energy.
+**Voice:** ✅ POLISHED — Tightened language, removed filler words. More conversational flow. Better rhythm. Stronger ending hook.
 
 **No woo-woo violations:** ✅ Concrete examples, no "clarity" or "patterns"
 
