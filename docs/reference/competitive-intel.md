@@ -1,79 +1,34 @@
-# COMPETITIVE INTELLIGENCE
+# Competitive Intelligence
 
-## Last Updated: 2026-03-16 08:59 UTC
+## 2026-03-16 — Mem.ai Dominance, Notion AI/Reflect Quiet
 
----
+**Key Finding:** Mem.ai (now Mem0) is aggressively shipping advanced features while Notion AI and Reflect appear to have slowed their public development pace in early 2026.
 
-## Key Competitors Analysis
+### Mem.ai/Mem0 — Active Development
+**Recent 2026 Features:**
+- Memory Categorization Webhooks (real-time notifications)
+- Temporal Search Filtering ("what happened last week")
+- Hybrid Memory Search (semantic + keyword)
+- Graph Memory Status Tracking via Events API
+- Redesigned Billing & Usage Dashboard
+- Memory Exports Overhaul
 
-### Mem.ai
-**Position**: AI-powered note-taking/"second brain"
-- **Pricing**: Free tier + Pro at $12/month + Custom Teams
-- **2026 Status**: Enhanced AI connections & smart search; Mem 2.0 with structured notes
-- **Strengths**: Smart connections, scholarly/research focus, generous free plan
-- **Weaknesses**: iOS bugs persist, Pro required for full AI features
-- **Threat Level**: 🟡 Medium - Strong AI features but technical debt
+**Competitive Advantages:**
+- Notes Researcher AI (searches with sources, connects unlinked info)
+- Smart AI Writer (pulls from personal notes, adapts to style)
+- AI Organizer (auto-groups without folders/tags)
+- Note Finder (proactively surfaces related notes)
+- Google Calendar/Docs integration for unified knowledge base
 
-### Notion AI  
-**Position**: All-in-one workspace with AI integration
-- **Pricing**: Free + Plus ~$10/month
-- **2026 Status**: Stable, no major changes noted
-- **Strengths**: Mature ecosystem, database functionality
-- **Weaknesses**: Complexity for simple note-taking
-- **Threat Level**: 🟢 Low - Different market position (workspace vs capture)
+**User Benefits:** 60% faster note-finding, 20%+ productivity gains reported
 
-### Reflect
-**Position**: Privacy-focused second brain for Apple users
-- **Pricing**: $10/month (annual billing)
-- **2026 Status**: Steady feature development, calendar integration
-- **Strengths**: End-to-end encryption, Apple ecosystem integration, Kindle sync
-- **Weaknesses**: iOS/macOS only, no collaboration, individual-focused
-- **Threat Level**: 🟡 Medium - Strong in Apple niche but limited scope
+**Roadmap:** Advanced voice/visual features, predictive analytics, deeper tool integrations toward full AI digital assistant
 
-### Capacities
-**Position**: Visual knowledge graphs for idea organization  
-- **Pricing**: Free + $9/month
-- **2026 Status**: Positioned as Mem alternative
-- **Strengths**: Visual approach, object-based notes
-- **Weaknesses**: Less AI integration
-- **Threat Level**: 🟢 Low - Niche visual approach
+### Notion AI & Reflect
+- **No visible 2026 updates** in search results
+- Notion positioned as "database-focused but less proactive AI"
+- Reflect absent from competitive discussions
 
-### Meeting Tools (Otter.ai, Grain)
-**Position**: AI meeting transcription and summaries
-- **Otter Pricing**: Free (limited AI) + Pro ~$20/month + Enterprise ~$65/month
-- **Grain Pricing**: Free (5 summaries) + Premium $15-19/month + Team $39/month
-- **2026 Status**: Stable pricing, unlimited free recordings common
-- **Threat Level**: 🟢 Low - Different use case (meetings vs daily capture)
+**Strategic Implication:** Mem.ai is setting the pace for AI-native note management. Their webhook system and hybrid search could be features to watch/consider for DropAnywhere's context bank evolution.
 
 ---
-
-## Market Insights
-
-### Pricing Trends
-- **Free tiers** are table stakes - all major players offer meaningful free usage
-- **Pro tiers** cluster around $10-20/month 
-- **No major price increases** detected in 2026 (market stability)
-
-### Feature Trends
-- **AI-powered connections** becoming standard (Mem leading)
-- **Privacy/encryption** as differentiator (Reflect)
-- **Platform specialization** (Reflect = Apple, others = cross-platform)
-- **Integration depth** (calendar, Kindle, etc.) vs breadth
-
-### DropAnywhere Positioning
-**Opportunity**: Email-first capture is underserved
-- Competitors focus on manual note-taking or meeting capture
-- None emphasize seamless email ingestion as primary UX
-- Our "drop anywhere" approach could differentiate vs dedicated note apps
-
-**Competitive Moats**:
-- Email-first workflow vs app-first
-- Railway deployment simplicity vs complex setups
-- Focus on rapid capture vs knowledge management
-
----
-
-## Action Items
-- [FOR:OPUS] Strategic positioning vs "second brain" category
-- [FOR:SONNET] Content highlighting email-first advantages
-- [FOR:DC] Monitor Railway deployment as competitive advantage
