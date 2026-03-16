@@ -756,40 +756,39 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 16, 14:04 UTC) — Daily Refresh
+## 8. System Health & Metrics (March 16, 16:35 UTC) — DocBot Refresh
 
-> **🚨 Poe Balance Critical:** Down to **47,297 points** with **49,866 burned/6h**. At current burn rate, balance will deplete in ~6 hours. theREALrealtalk traffic remains hot. Consider temporarily disabling or rate-limiting non-essential bots.
+> **🚨 Poe Balance Critical:** Down to **44,003 points** with **44,055 burned/6h** (100 calls). At current burn rate, balance depletes in ~6 hours. Top bots: IdealPrompt (15,982), Tippiy (15,067), theREALrealtalk (8,261). Consider disabling non-essential bots or topping up.
 
-> **✅ Dropper-Code Shipping Frenzy:** 9 PRs merged Mar 15-16 (#181-189). Tasks completed: Zapier integration, vault capacity upgrade prompt, digest pipeline error alerting, and 6 Snapback bridging tasks.
+> **✅ Dropper-Code Shipping Frenzy:** 10 PRs merged Mar 15-16 (#181-190). Latest: PR #190 completed 16:40 UTC today. Tasks completed: Zapier integration, vault capacity upgrade prompt, digest pipeline error alerting, Snapback bridging tasks, and more.
 
-| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 | Δ (24h) | Mar 17 |
-|--------|-------|-------|--------|--------|--------|---------|--------|
-| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | +2% | **100** |
-| DA archived users | — | — | — | **44** | **44** | stable | **44** |
-| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | healthy growth | **~30** (active 7d) |
-| DA active 24h | 13 | 16 | **19** | **12** | **12** | — | **12** |
-| DA active 7d | 24 | 47 | 47+ | **60** | **55** | -8% | **55** |
-| DA drops total | 456 | 589 | **668** | **690** | **843** | +31 (5 days) | **843** |
-| DA drops 24h | — | — | — | **51** | **33** | steady | **31** |
-| DA digests sent total | 93 | 147 | 147+ | **161** | **177** | +16 | **177** |
-| DA digests sent 24h | — | — | — | **15** | **3** | light send day | **3** |
-| BHA users | 172 | 198 | **211** | **215** | **259** | stable | **259** |
-| BHA active 24h | — | — | — | **13** | **11** | steady | **11** |
-| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | stable | **70** |
-| BHA pro subs | — | — | **3** | **2** | **2** | stable | **2** |
-| BHA new users 24h | — | — | — | **7** | **7** | steady | **7** |
-| BHA weekly visitors (GA) | — | — | **531** | — | **—** | — | **—** |
-| BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | stable | **$21** |
-| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** | **🚨 CRITICAL** | **46,583** |
-| Poe burn/6h points | — | — | ~13K | **27,694** | **49,866** | theREALrealtalk hot | **49,586** 🔥 |
-| Poe calls/6h | — | — | — | **100** | **100** | — | **100** |
-| Email sent 24h | 46 | 85 | **100** | **79** | **89** | normal | **89** |
-| Email delivery | 100% | 100% | **98%** | **100%** | **98%** (87/89) | ✅ | **98%** (87/89) |
-| Dropper-Code tasks | — | 9 | **12** | **15** | **15+** | 10 PRs queued | **9 PRs merged** ✅ |
-| Open issues | 0 | 0 | **0** | **0** | **5** | new items | **5** |
-| joey-backup commits | — | — | — | **40+** | **—** | — | **—** |
-| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | — | **—** |
-| Snapback prototypes | — | — | — | **3** | **3** | — | **3** |
+| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Δ |
+|--------|-------|-------|--------|--------|-------------|-------------|---|
+| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | stable |
+| DA archived users | — | — | — | **44** | **44** | **44** | stable |
+| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | **~30** (active 7d) | stable |
+| DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | -25% |
+| DA active 7d | 24 | 47 | 47+ | **60** | **55** | **55** | stable |
+| DA drops total | 456 | 589 | **668** | **690** | **843** | **843** | stable |
+| DA drops 24h | — | — | — | **51** | **33** | **22** | steady |
+| DA digests sent 24h | — | — | — | **15** | **3** | **3** | light send day |
+| BHA users | 172 | 198 | **211** | **215** | **259** | **259** | stable |
+| BHA active 24h | — | — | — | **13** | **11** | **9** | steady |
+| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | **70** | stable |
+| BHA pro subs | — | — | **3** | **2** | **2** | **2** | stable |
+| BHA new users 24h | — | — | — | **7** | **7** | **4** | steady |
+| BHA weekly visitors (GA) | — | — | **531** | — | **—** | **—** | — |
+| BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | stable |
+| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | -7% (30 min) |
+| Poe burn/6h points | — | — | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | hot |
+| Poe calls/6h | — | — | — | **100** | **100** | **100** | — |
+| Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | normal |
+| Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** (85/87) | ✅ |
+| Dropper-Code PRs merged | — | 9 | **12** | **15** | **#181-189** | **#181-190** ✅ | +1 |
+| Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | stable |
+| joey-backup commits | — | — | — | **40+** | **—** | **—** | — |
+| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | **—** | — |
+| Snapback prototypes | — | — | — | **3** | **3** | **3** | — |
 
 ### BHA Search Console Highlights (Feb 2026 data)
 
@@ -930,12 +929,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 16:06 UTC — DocBot metrics refresh. Section 8 updated. Poe balance: 45,910 points (critical, ~5h remaining). Drops 24h: 22. BHA new: 4. 🦜*
-ted items. 🦜*
-���*
-ted items. 🦜*
-*
-���*
+*Last auto-refreshed: 2026-03-16 16:35 UTC — DocBot metrics refresh. Section 8 updated with fresh dashboard data. Poe balance: 44,003 points (critical, depleting ~7K/30min). Drops 24h: 22. BHA new 24h: 4. PR #190 merged. 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *
