@@ -49,3 +49,69 @@
 3. Publish comparison: "Best AI Daily Digest Tools 2026"
 4. Target "no inbox" messaging — unique differentiator vs competitors
 
+---
+
+## 2026-03-16 23:07 UTC — SEOBot Keyword Research (Update)
+
+### Search Query: "AI daily digest email productivity tool"
+
+### Key Statistics for Content Marketing
+
+| Stat | Source | Use Case |
+|------|--------|----------|
+| 117 emails + 153 Teams messages daily | Readless | Hook for "information overload" posts |
+| 90% time reduction (90 min → 10 min) | Readless | ROI calculator / landing page |
+| 26-55% productivity gains | Industry research | B2B sales enablement |
+| 70% cite email as top workplace stress | Readless | Emotional pain-point messaging |
+| 42% describe inbox as "out of control" | Readless | Problem-solution framework |
+| 71% of B2B marketers use newsletters | Readless | Target persona: marketers |
+
+### Competitors Discovered
+
+| Tool | Positioning | Keyword Targets | Gap for DropAnywhere |
+|------|-------------|-----------------|---------------------|
+| **Readless** | Newsletter summarizer (30+/day) | "AI newsletter summarizer" | Email-only, no SMS/voice |
+| **Read AI** | Daily email summaries + meeting notes | "daily email digest" | Requires inbox access |
+| **BatchedInbox** | Scheduled email batching | "batch emails" "email scheduling" | No AI summarization |
+| **MailMaestro** | Real-time email processing | "AI email assistant" | No digest format |
+| **Gemini/Copilot** | Native email summaries | "Gmail AI summary" | Platform-locked |
+
+### New Keyword Opportunities
+
+**Problem-aware (High intent):**
+- "email overload solution" — 70% stress stat backs this
+- "newsletter consolidation tool" — B2B marketer angle
+- "too many newsletters" — casual search, high volume potential
+- "email anxiety productivity" — emotional/psychological angle
+
+**Solution-aware:**
+- "batched email digest" — BatchedInbox competitor term
+- "scheduled email summary" — delivery-time differentiation
+- "multi-channel daily digest" — DropAnywhere differentiator (SMS+email+voice)
+
+**Comparison/Transactional:**
+- "Readless vs Superhuman vs DropAnywhere" — capture comparison traffic
+- "AI digest tool without inbox access" — privacy angle
+- "daily digest from multiple sources" — multi-channel positioning
+
+### Recommended Content Pieces
+
+1. **"The Real Cost of Email Overload: 117 Emails/Day Is Breaking Knowledge Workers"**
+   - Target: "email overload statistics" "workplace email stress"
+   - Hook: The 70% / 42% stats above
+
+2. **"AI Daily Digest Tools Compared: Readless vs Read AI vs DropAnywhere (2026)"**
+   - Target: "best AI email digest tool" "daily digest comparison"
+   - Angle: Multi-channel (SMS/voice/email) as differentiator
+
+3. **"How to Reclaim 10.8 Hours/Week with Automated Email Digests"**
+   - Target: "automated email digest" "email productivity tool"
+   - Hook: 90% time reduction stat
+
+### Next Actions
+
+- [ ] Create `/tools/ai-daily-digest-comparison` landing page
+- [ ] Add "117 emails/day" stat to homepage hero
+- [ ] Write "Email Overload Statistics 2026" blog post for backlinks
+- [ ] Update metadata: include "multi-channel" in title tags
+
