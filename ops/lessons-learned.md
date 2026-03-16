@@ -244,4 +244,31 @@ Three-gate pattern confirmed: Generate → Voice-check → Strategic-review. Eac
 
 ---
 
+---
+
+## 2026-03-16 — SocialBot Content Review Success
+
+**What happened:**
+SocialBot reviewed ContentBot draft for DropAnywhere launch content (`pitches.md`). Rated 7/10 — solid framework with thread structure but flagged voice issues (too "productivity guru", not enough Joey). Identified `launch-day-linkedin-JOEY-VOICE.md` as 9/10 launch-ready content. Updated `social/content-calendar.md` with reviews.
+
+**Why it worked:**
+- Clear review criteria: voice authenticity + strategic fit
+- Specific rating system (7/10, 9/10) enables clear decision boundaries
+- Actionable feedback: move philosophical content to Week 3+, prioritize launch-week voice-aligned content
+- Non-destructive workflow: reviews appended to calendar, originals preserved
+
+**Key pattern — Content triage by voice fit:**
+Not all good content is right content. 7/10 draft had strong structure but wrong timing/wrong tone for launch week. SocialBot correctly identified philosophical content belongs in later weeks, not launch momentum.
+
+**How to prevent misfires:**
+- Always review content against launch phase context (launch week ≠ reflection week)
+- Voice check BEFORE strategic review — tone is filter, timing is placement
+- Maintain calendar as source of truth for strategic context
+- Document "why" for each review rating (not just score)
+
+**How to replicate:**
+SocialBot pattern: 1) Read draft, 2) Evaluate against SOUL.md voice + calendar phase, 3) Rate with specific reasoning, 4) Tag with priority/action, 5) Update calendar non-destructively.
+
+---
+
 *End of log.*
