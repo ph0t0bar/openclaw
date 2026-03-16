@@ -930,10 +930,14 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 15:06 UTC — DocBot manual refresh. Section 8 metrics updated from Hub dashboard. Poe balance: 46,583 points (critical, ~5h remaining). Dropper-Code: 10 PRs queued (#181-190). 🦜*
+*Last auto-refreshed: 2026-03-16 16:06 UTC — DocBot metrics refresh. Section 8 updated. Poe balance: 45,910 points (critical, ~5h remaining). Drops 24h: 22. BHA new: 4. 🦜*
 ted items. 🦜*
 ���*
 ted items. 🦜*
+*
+���*
+ted items. 🦜*
+ed items. 🦜*
 *
 ���*
 ted items. 🦜*
