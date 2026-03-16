@@ -65,3 +65,23 @@ The joey-backup/Ingestion/ folder contains **THE MOTHERLODE** - 2,422 files of J
 - **Brain State:** 10+ structured knowledge files
 
 *This is not just backup data - it's a complete archaeological record of Joey's digital thinking from 2022-2026. Pure gold for understanding preferences, patterns, and potential.*
+
+## Mined Goldmines
+
+### 1. Content Transformation System (specs/content-transformation-system-dec2025.md) — 2026-03-16 17:15 UTC
+- **What:** December 2025 manual prototype that became DropAnywhere
+- **Key insight:** VAULT → GOLDMINE → FORGE → OUTPUT pipeline = today's Capture → Process → Consume → Deliver
+- **Contains:** Exact manifest system spec, transformation recipes, folder architecture
+- **Strategic value:** This is the rosetta stone — Joey manually proved the system before automating it
+
+### 2. snapback-songwriting (specs/transurfing-snapback-songwriting-2026-03-11.md) — 2026-03-16 15:25 UTC
+- **What:** 3am visualization that proved the Snapback loop
+- **Key insight:** Product demonstration written as narrative, not spec
+- **Contains:** 6 extractable asset categories (voice patterns, entity maps, emotional signatures)
+- **Strategic value:** Shows what VAULT ARCHAEOLOGIST should produce — pattern recognition, not data dumps
+
+### 3. theProtocol Architecture (.claude/context/personas/theProtocol-ARCHITECTURE.md) — 2026-03-16 17:41 UTC
+- **What:** Complete multi-bot orchestrator for personal transformation
+- **Key insight:** Already LIVE on Poe, processing real human transformation
+- **Contains:** Dilemma → Transurfing Analysis → Somatic Release → HTML Canvas → Future Self Letter
+- **Strategic value:** Weekly Catch should follow theProtocol's transformation pattern
