@@ -16,29 +16,33 @@ Turned it into organizing instead of thinking.
 Into folder structures instead of output.  
 Into perfect setups instead of actual work.
 
-I spent three months on my Notion workspace last year.
+I spent three months building my Notion workspace last year.
 
 Color-coded. Templated. Beautiful.
 
-Know what I created?
-
-A really pretty Notion workspace.
+Know what I created? A really pretty Notion workspace.
 
 Meanwhile the ideas kept coming at 2am and vanishing by morning. The shower thoughts went down the drain. The voice notes piled up, untranscribed, because who has time to turn rambling into structure?
 
-We built tools for people who already have their shit together.
+We built tools for people who already have their lives together.
 
 Forgot about the rest of us.
 
-The ones with ideas at inconvenient times. The ones who can't maintain a system longer than two weeks. The ones who just want to think and have something useful show up tomorrow.
+The ones with ideas at inconvenient times. The ones who abandon systems after two weeks. The ones who just want to think and find insights waiting tomorrow.
 
-So here's the question I built around:
+So here's the question I built DropAnywhere around:
 
 What if your tools worked while you slept?
 
 Not harder. Smarter.
 
-Drop it. Forget it. Wake up with insights.
+Email yourself a thought while walking → Tomorrow's digest connects it to last month's similar idea.
+
+Voice note a realization → Transcribed and linked to relevant drops automatically.
+
+Screenshot something useful → Analyzed and tagged without you touching a folder.
+
+Drop it. Forget it. Wake up smarter.
 
 Your brain already connects ideas. Your tools should just get out of the way.
 
