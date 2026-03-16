@@ -19,20 +19,18 @@ I was trying to do a machine's job with a human brain.
 
 Routing emails. Triaging notifications. Turning voice notes into tasks. Connecting random thoughts from Tuesday to that important idea from last month.
 
-My brain wasn't broken. It was begging for efficiency.
+My brain wasn't broken. It was begging for backup.
 
-Here's what changed:
+So I built DropAnywhere because I got tired of being the router in my own life.
 
-I built DropAnywhere because I got tired of being the router in my own life.
+Now the system triages while I sleep. Voice notes become outlined projects. Random ideas connect to previous insights automatically. Emails get sorted, analyzed, and drafted responses wait for my approval.
 
-Now the system triages while I sleep. Voice notes become outlined projects. Random ideas connect to previous insights automatically. Emails get sorted, analyzed, and drafted responses wait for my "yes/no."
+Yesterday I woke up without an alarm. No frantic phone check. Just quiet certainty.
 
-Yesterday I woke up without an alarm. No frantic phone check. Just... quiet certainty.
-
-The dashboard was clean. Everything handled.
+Dashboard was clean. Everything handled.
 
 Time to approve the important stuff: 14 minutes.
-Time freed up for actual thinking: Everything else.
+Time freed up for actual thinking: The rest of my life.
 
 It feels like going from being in the engine room shoveling coal to standing on the bridge with coffee, steering with one finger.
 
