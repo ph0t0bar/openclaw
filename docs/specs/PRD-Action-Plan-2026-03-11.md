@@ -761,17 +761,17 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 16, 20:23 UTC) - DocBot Refresh
+## 8. System Health & Metrics (March 16, 21:12 UTC) - DocBot Refresh
 
-> **🚨 Poe Balance Critical:** Down to **39,168 points** with **37,484 burned/6h** (100 calls). At current burn rate, balance depletes within ~1 hour. Top bots: IdealPrompt (14,190), theREALrealtalk (10,492), Tippiy (10,018). Top-up urgently or disable non-essential bots.
+> **🚨 Poe Balance Critical:** Down to **38,162 points** with **37,786 burned/6h** (100 calls). Balance continues declining. Top bots: IdealPrompt (14,190), theREALrealtalk (10,806), Tippiy (10,018). Top-up urgently or disable non-essential bots.
 
-> **⚠️ Digest Scheduler Stalled:** PR #190 is open (not merged) - fix in progress. Only 3/100 eligible users got digests in 24h. PRs #184-185 closed (superseded). Active open PRs #186-190 addressing stall. Brain scan proposed Zapier integration, Agent auto-drops, and BHA capture button (pending approval). Open issues reduced from 6 to 2.
+> **⚠️ Digest Scheduler Stalled:** 3/100 eligible users got digests in 24h. PR #193 just completed (task_1773695187_803). Active open PRs #186-193. Open issues reduced from 2 to 1.
 
 > **✅ OpenClaw Deploy:** Latest gateway deploy SUCCESS at 2026-03-16 14:12 UTC.
 
-| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:51 | Mar 16 20:23 | Δ |
-|--------|-------|-------|--------|--------|-------------|-------------|-------------|-------------|---|
-| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | **100** | **100** | stable |
+| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:51 | Mar 16 20:23 | Mar 16 21:12 | Δ |
+|--------|-------|-------|--------|--------|-------------|-------------|-------------|-------------|-------------|---|
+| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | **100** | **100** | **101** | +1 |
 | DA archived users | - | - | - | **44** | **44** | **44** | **44** | **44** | stable |
 | DA active real users | - | - | **~20** | **24** | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | stable |
 | DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | **7** | **6** | -1 |
@@ -781,7 +781,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 | DA digests sent 24h | - | - | - | **15** | **3** | **3** | **3** | **3** | **3** | ⚠️ stalled |
 | BHA users | 172 | 198 | **211** | **215** | **259** | **259** | **259** | **259** | **259** | stable |
 | BHA active 24h | - | - | - | **13** | **11** | **9** | **7** | **6** | -1 |
-| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | **70** | **70** | **69** | -1 |
+| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | **70** | **70** | **69** | **69** | stable |
 | BHA pro subs | - | - | **3** | **2** | **2** | **2** | **2** | **2** | **2** | stable |
 | BHA new users 24h | - | - | - | **7** | **7** | **4** | **4** | **4** | **4** | steady |
 | BHA weekly visitors (GA) | - | - | **531** | - | **-** | **-** | **-** | **-** | **-** | - |
@@ -791,12 +791,12 @@ From the Ingestion hydration context, Joey's Mac runs:
 | Poe calls/6h | - | - | - | **100** | **100** | **100** | **100** | **100** | **100** | - |
 | Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | **100** | **100** | stable |
 | Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** | **98%** (87/89) | **98%** (98/100) | **98%** (98/100) | ✅ |
-| Hub open PRs (all) | — | — | — | — | — | 4 open | **6 open** (#186-191) | **7 open** (#186-192) | ⚠️ digest stall |
+| Hub open PRs (all) | - | - | - | - | - | 4 open | **6 open** (#186-191) | **7 open** (#186-192) | ⚠️ digest stall |
 | Hub merged PRs | - | 9 | **12** | **15** | **#175-176** | **#176** latest | **#176** latest | **#176** latest | **pending review** | - |
 | Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | **6** | **2** | **2** | stable |
 | joey-backup commits | - | - | - | **40+** | **-** | **-** | **-** | **-** | **-** | - |
-| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | **—** | **—** | **—** | **—** | — |
-| Snapback prototypes | - | - | - | **3** | **3** | **3** | **3** | **3** | **3** | - |
+| GOLDMINE excavations | - | - | - | **batch-0001** | **-** | **-** | **-** | **-** | **-** | - |
+| Snapback prototypes | - | - | - | **3** | **3** | **3** | **3** | **3** | **3** | **3** | stable |
 
 ### BHA Search Console Highlights (Feb 2026 data)
 
@@ -935,17 +935,17 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *Generated from: MEMORY.md, TOOLS.md, TODO.md (DA + BHA), TODO-PROPOSED.md, FULL-PICTURE.md, REVENUE_SUMMIT_OUTCOME.md, GitHub (34+ PRs), Hub API (live), Poe fleet, GA/Search Console, joey-backup asset inventory, and 25+ files from Ingestion subfolders (strategic docs, session transcripts, CSVs, personality patterns, architecture specs, time capsules, and Joey's original voice).*
 
-*First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC - Snapback engine + Golden Thread shipped (PR #168).*
+*First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 18:36 UTC - DocBot metrics refresh. Section 8 updated: 18:36 column added, drops_24h 18 (-1), PR #191 added to shipping log (Agent Auto-drops endpoint live). Poe balance 42,770 🚨 (burn 43K/6h - critical). Digest stall: 3 sent, 5 PRs open (#186-190, #191). 🦜*
+*Last auto-refreshed: 2026-03-16 21:12 UTC — DocBot metrics refresh. Section 8 updated: 21:12 column added, DA users 101 (+1), drops 850 (+5), BHA users 260 (+1), Poe balance 38,162 🚨. PR #193 completed. Open issues: 1. 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *
 ���*
 ted items. 🦜*
- 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
+ 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC - Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 18:36 UTC — DocBot metrics refresh. Section 8 updated: 18:36 column added, drops_24h 18 (-1), PR #191 added to shipping log (Agent Auto-drops endpoint live). Poe balance 42,770 🚨 (burn 43K/6h — critical). Digest stall: 3 sent, 5 PRs open (#186-190, #191). 🦜*
+*Last auto-refreshed: 2026-03-16 18:36 UTC - DocBot metrics refresh. Section 8 updated: 18:36 column added, drops_24h 18 (-1), PR #191 added to shipping log (Agent Auto-drops endpoint live). Poe balance 42,770 🚨 (burn 43K/6h - critical). Digest stall: 3 sent, 5 PRs open (#186-190, #191). 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *

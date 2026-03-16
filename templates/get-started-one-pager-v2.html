@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #FDFBF7;
+    color: #2D2A26;
+    line-height: 1.5;
+    font-size: 13px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    padding: 28px 0 20px;
+    border-bottom: 2px solid #C17F59;
+    margin-bottom: 22px;
+  }
+  .logo-mark {
+    display: inline-block;
+    width: 44px; height: 44px;
+    background: #C17F59;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .logo-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px; height: 18px;
+    border: 3px solid #FDFBF7;
+    border-radius: 50%;
+    border-top-color: transparent;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .brand-name {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #2D2A26;
+  }
+  .tagline {
+    font-size: 14px;
+    color: #5B7B6A;
+    font-weight: 500;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  /* SECTION TITLES */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #C17F59;
+    margin-bottom: 12px;
+  }
+
+  /* GET STARTED */
+  .steps {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .step {
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; height: 30px;
+    background: #C17F59;
+    color: #FDFBF7;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .step-title {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #2D2A26;
+  }
+  .step-desc {
+    font-size: 11.5px;
+    color: #6B6560;
+    line-height: 1.45;
+  }
+  .step-email {
+    font-weight: 600;
+    color: #C17F59;
+  }
+
+  /* BEST PRACTICES */
+  .two-col {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .col-left { flex: 1; }
+  .col-right { flex: 1; }
+
+  .practices {
+    list-style: none;
+    padding: 0;
+  }
+  .practices li {
+    position: relative;
+    padding: 7px 0 7px 22px;
+    font-size: 12px;
+    color: #3A3733;
+    border-bottom: 1px solid #F0ECE6;
+  }
+  .practices li:last-child { border-bottom: none; }
+  .practices li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 13px;
+    width: 8px; height: 8px;
+    background: #5B7B6A;
+    border-radius: 50%;
+  }
+  .practices li strong {
+    color: #2D2A26;
+  }
+
+  /* WHAT TO EXPECT */
+  .expect-box {
+    background: #5B7B6A;
+    color: #FDFBF7;
+    border-radius: 12px;
+    padding: 18px 22px;
+    font-size: 12.5px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .expect-box .section-title {
+    color: rgba(253,251,247,0.7);
+    margin-bottom: 8px;
+  }
+
+  /* FAQ */
+  .faq-grid {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .faq-item {
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .faq-q {
+    font-weight: 700;
+    font-size: 12px;
+    color: #C17F59;
+    margin-bottom: 5px;
+  }
+  .faq-a {
+    font-size: 11.5px;
+    color: #6B6560;
+    line-height: 1.45;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding-top: 14px;
+    border-top: 1px solid #E8E3DC;
+    color: #A09A93;
+    font-size: 11px;
+  }
+  .footer-email {
+    color: #C17F59;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .footer-anchor {
+    display: block;
+    margin-top: 4px;
+    font-style: italic;
+    color: #5B7B6A;
+    font-size: 11px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-mark"></div>
+    <div class="brand-name">DropAnywhere</div>
+    <div class="tagline">Drop your thoughts anywhere. Wake up lighter.</div>
+  </div>
+
+  <!-- GET STARTED -->
+  <div class="section-title">Get Started in 60 Seconds</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title">Email your thought</div>
+      <div class="step-desc">Send anything to<br><span class="step-email">drop@drop-anywhere.com</span><br>Ideas, notes, links, shower thoughts.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title">That's it. Seriously.</div>
+      <div class="step-desc">No signup. No setup. No app to download. Just send an email and forget about it.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title">Check your inbox</div>
+      <div class="step-desc">Tomorrow morning, your daily digest arrives with themes, insights, and connections.</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <!-- BEST PRACTICES -->
+    <div class="col-left">
+      <div class="section-title">Best Practices</div>
+      <ul class="practices">
+        <li><strong>Drop often, don't edit</strong> -- raw thoughts beat polished notes every time</li>
+        <li><strong>Email is your superpower</strong> -- forward articles, voice-to-text, shower thoughts</li>
+        <li><strong>One thought per email</strong> -- makes it easier for AI to find connections</li>
+        <li><strong>Don't organize</strong> -- the system finds the patterns for you</li>
+        <li><strong>Read your daily digest</strong> -- it's your "wake up lighter" moment</li>
+      </ul>
+    </div>
+
+    <!-- WHAT TO EXPECT -->
+    <div class="col-right">
+      <div class="expect-box">
+        <div class="section-title">What to Expect</div>
+        Every morning, you'll receive an email digest. It finds the threads between your scattered thoughts and weaves them into something coherent. No app to open. No dashboard to check. Just email.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-title">Common Questions</div>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-q">Is it private?</div>
+      <div class="faq-a">Yes. Your thoughts are yours. They're encrypted, never shared, and never used to train AI models.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How is this different from Notes?</div>
+      <div class="faq-a">Notes stores your thoughts. DropAnywhere thinks about them -- finding patterns and connections you'd miss.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if I forget to check?</div>
+      <div class="faq-a">That's the whole point. Drop and forget. The digest finds you in your inbox when you're ready.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span class="footer-email">drop@drop-anywhere.com</span>
+    <span class="footer-anchor">Drop it. Forget it. Wake up lighter.</span>
+  </div>
+
+</div>
+</body>
+</html>

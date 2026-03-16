@@ -162,4 +162,17 @@ Eduardo agent workflows:
 
 ---
 
+## 🏆 Notable Finds
+
+### 2026-03-16 21:19 UTC — Opus Strategist
+**File:** `20221228_AI_Cannot_Learn_Prompt_43a4623b.md`
+**Discovery:** Joey's FIRST AI conversation ever! Dec 28, 2022, asking GPT-3.5 "can you learn a prompt for me?"
+**Insights:** 
+- AI responds it "cannot learn new information beyond training data"
+- Joey immediately pivots to creative use: rewriting prompts for superhero themes
+- Shows Joey's immediate understanding that AI is a creative tool, not a learning system
+- Foundation of the "container creates freedom" philosophy - working within constraints
+
+---
+
 *This index auto-updates via Deep Researcher cron (8bb0afbe-cd33-42ed-a9df-8031898494d0)*
