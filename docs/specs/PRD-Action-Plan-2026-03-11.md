@@ -756,36 +756,40 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 16, 11:34 UTC)
+## 8. System Health & Metrics (March 16, 14:04 UTC) — Daily Refresh
 
-| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 | Δ (24h) |
-|--------|-------|-------|--------|--------|--------|---------|
-| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | +54% post-cleanup |
-| DA archived users | — | — | — | **44** | **44** | stable |
-| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | healthy growth |
-| DA active 24h | 13 | 16 | **19** | **12** | **12** | normal variance |
-| DA active 7d | 24 | 47 | 47+ | **60** | **—** | — |
-| DA drops total | 456 | 589 | **668** | **690** | **843** | +153 (5 days) |
-| DA drops 24h | — | — | — | **51** | **33** | steady |
-| DA digests sent total | 93 | 147 | 147+ | **161** | **—** | — |
-| DA digests sent 24h | — | — | — | **15** | **3** | light send day |
-| BHA users | 172 | 198 | **211** | **215** | **259** | +44 (+20%) |
-| BHA active 24h | — | — | — | **13** | **12** | steady |
-| BHA active 7d | 38 | 53 | 53+ | **63** | **72** | +14% ✅ |
-| BHA pro subs | — | — | **3** | **2** | **2** | stable |
-| BHA new users 24h | — | — | — | **7** | **8** | steady |
-| BHA weekly visitors (GA) | — | — | **531** | — | **—** | (last GA pull Mar 10) |
-| BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | stable |
-| Poe balance | 835K | 530K | **427K** | **385K** | **74,620** | crisis averted, 2.5d runway |
-| Poe burn/6h points | — | — | ~13K | **27,694** | **29,547** | theREALrealtalk hot |
-| Poe calls/6h | — | — | — | **100** | **100** | — |
-| Email sent 24h | 46 | 85 | **100** | **79** | **100** | normal |
-| Email delivery | 100% | 100% | **98%** | **100%** | **99%** (99/100) | ✅ |
-| Dropper-Code tasks | — | 9 | **12** | **15** | **15+** | 10 PRs queued Mar 15-16 |
-| Open issues | 0 | 0 | **0** | **0** | **4** | new items filed |
-| joey-backup commits | — | — | — | **40+** | **—** | — |
-| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | — |
-| Snapback prototypes | — | — | — | **3** | **3** | — |
+> **🚨 Poe Balance Critical:** Down to **47,297 points** with **49,866 burned/6h**. At current burn rate, balance will deplete in ~6 hours. theREALrealtalk traffic remains hot. Consider temporarily disabling or rate-limiting non-essential bots.
+
+> **✅ Dropper-Code Shipping Frenzy:** 9 PRs merged Mar 15-16 (#181-189). Tasks completed: Zapier integration, vault capacity upgrade prompt, digest pipeline error alerting, and 6 Snapback bridging tasks.
+
+| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 | Δ (24h) | Mar 17 |
+|--------|-------|-------|--------|--------|--------|---------|--------|
+| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | +2% | **100** |
+| DA archived users | — | — | — | **44** | **44** | stable | **44** |
+| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | healthy growth | **~30** (active 7d) |
+| DA active 24h | 13 | 16 | **19** | **12** | **12** | — | **12** |
+| DA active 7d | 24 | 47 | 47+ | **60** | **55** | -8% | **55** |
+| DA drops total | 456 | 589 | **668** | **690** | **843** | +31 (5 days) | **843** |
+| DA drops 24h | — | — | — | **51** | **33** | steady | **31** |
+| DA digests sent total | 93 | 147 | 147+ | **161** | **177** | +16 | **177** |
+| DA digests sent 24h | — | — | — | **15** | **3** | light send day | **3** |
+| BHA users | 172 | 198 | **211** | **215** | **259** | +44 (+20%) | **259** (+7) |
+| BHA active 24h | — | — | — | **13** | **12** | steady | **12** (+7) |
+| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | +11% | **70** (+8) |
+| BHA pro subs | — | — | **3** | **2** | **2** | stable | **2** |
+| BHA new users 24h | — | — | — | **7** | **8** | steady | **7** |
+| BHA weekly visitors (GA) | — | — | **531** | — | **—** | — | **—** |
+| BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | stable | **$21** |
+| Poe balance | 835K | 530K | **427K** | **385K** | **74,620** | **🚨 CRITICAL** | **47,297** |
+| Poe burn/6h points | — | — | ~13K | **27,694** | **29,547** | theREALrealtalk hot | **49,866** 🔥 |
+| Poe calls/6h | — | — | — | **100** | **100** | — | **100** |
+| Email sent 24h | 46 | 85 | **100** | **79** | **100** | normal | **98** |
+| Email delivery | 100% | 100% | **98%** | **100%** | **99%** (99/100) | ✅ | **99%** (97/98) |
+| Dropper-Code tasks | — | 9 | **12** | **15** | **15+** | 10 PRs queued | **9 PRs merged** ✅ |
+| Open issues | 0 | 0 | **0** | **0** | **5** | new items | **5** |
+| joey-backup commits | — | — | — | **40+** | **—** | — | **—** |
+| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | — | **—** |
+| Snapback prototypes | — | — | — | **3** | **3** | — | **3** |
 
 ### BHA Search Console Highlights (Feb 2026 data)
 
@@ -806,12 +810,16 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 | Bug | Status | Impact | Owner |
 |-----|--------|--------|-------|
-| **Admin feedback false positives** | Filed + approved Mar 11 | High — 62 fake negatives from BHA therapy convos | Dropper-Code |
+| **Admin feedback false positives** | ✅ Fixed Mar 11 — PR #165 merged | High — 62 fake negatives from BHA therapy convos | Dropper-Code |
 | **BHA users getting unsolicited digests** | ✅ Fixed Mar 11 — migration disabled 57 BHA-only users | Critical (consent/trust) | Claw |
-| **No pure opt-out tracking** | Filed + approved Mar 11 | Medium — can't distinguish unsub from admin disable | Dropper-Code |
-| **New signups default to digest on** | Filed + approved Mar 11 — changing to default off + manual admit | High (sending to unconverted users) | Dropper-Code |
+| **No pure opt-out tracking** | ✅ Fixed Mar 11 — PR #166 merged | Medium — can't distinguish unsub from admin disable | Dropper-Code |
+| **New signups default to digest on** | ✅ Fixed Mar 11 — PR #166 merged, default off + manual admit | High (sending to unconverted users) | Dropper-Code |
+| **Admin User Lifecycle API — Phase 1** | ✅ Fixed Mar 11 — PR #167 merged | High — lifecycle stages, user context | Dropper-Code |
+| **Snapback Engine** | ✅ Fixed Mar 11 — PR #168 merged | High — narrative generation engine | Dropper-Code |
+| **Golden Thread: Persistent Action Queue** | ✅ Fixed Mar 11 — PR #168 merged | High — one-click completion links | Dropper-Code |
 | Intelligence Map shows completed items | Filed + approved | Medium | Dropper-Code |
 | Hub BHA subscriber count misreporting | Filed + approved | High (false $0 MRR alarm) | Dropper-Code |
+| **Poe balance critically low** | 🚨 **NEW Mar 16** — 47K points, 50K burn/6h | Critical — bots will stop in ~6h | Joey/Claw |
 | Poe API 500s on PATCH to prompt bots | External (Poe bug) | Blocks shadow cutover | Poe support |
 | Hub API tool returns empty | Known workaround (curl) | Low (heartbeat annoyance) | OpenClaw |
 | `.some()` error hourly in gateway | Non-critical | Zero user impact | Upstream |
@@ -836,9 +844,9 @@ From the Ingestion hydration context, Joey's Mac runs:
 | **P0-6** | Funnel prompt paste into original bots | 10 min | Joey (manual) | **Paste-ready** — same doc, system prompt CTA blocks for all 5 bots |
 | **P0-7** | List Genesis Orchestrator on Gumroad | 30 min | Joey (manual) | **Copy ready** — `docs/gumroad-genesis-listing.md` + `joey-backup/specs/` |
 | **P0-8** | ✅ **Snapback Engine** — `snapback_generator.py` (306 lines): language pattern extraction, narrative generation, HTML rendering. Feature flag `digest_mode` + `snapback_profile` on user schema. | Done | Dropper-Code | **Shipped Mar 11** — PR #168 merged. Engine exists. |
-| **P0-8a** | **Wire Snapback weekly cron** — Sunday trigger that fires `snapback_generator` for users with `digest_mode=snapback`. Store narratives in `snapback_stories` table. Skip users with <3 drops/week. | 2-4h | Dropper-Code | 🟨 **Approved** — task_1773237918_213. Bridges engine → delivery. |
-| **P0-8b** | **Email prompt scheduler** — Tue/Thu/Sat drip using copy from `docs/snapback-email-prompts.md`. Track day-in-sequence per user. Nudge if no reply by Day 4. | 2-4h | Dropper-Code | 🟨 **Approved** — task_1773237918_787. Bridges signup → drops. |
-| **P0-8c** | **Capture email replies as Snapback session drops** — Route Resend webhook replies back as drops tagged with `snapback_session_id` + day number. Snapback generator pulls session-tagged drops. | 2-4h | Dropper-Code | 🟨 **Approved** — task_1773237937_874. Closes the email loop. |
+| **P0-8a** | ✅ **Wire Snapback weekly cron** — Sunday trigger that fires `snapback_generator` for users with `digest_mode=snapback`. Store narratives in `snapback_stories` table. Skip users with <3 drops/week. | 2-4h | Dropper-Code | **Shipped Mar 15** — PR #181 merged |
+| **P0-8b** | ✅ **Email prompt scheduler** — Tue/Thu/Sat drip using copy from `docs/snapback-email-prompts.md`. Track day-in-sequence per user. Nudge if no reply by Day 4. | 2-4h | Dropper-Code | **Shipped Mar 15** — PR #182 merged |
+| **P0-8c** | ✅ **Capture email replies as Snapback session drops** — Route Resend webhook replies back as drops tagged with `snapback_session_id` + day number. Snapback generator pulls session-tagged drops. | 2-4h | Dropper-Code | **Shipped Mar 16** — PR #187 merged |
 | **P0-9** | ✅ **Golden Thread: Persistent Action Queue** — "Done ✓" one-click links in digest emails, HMAC-tokenized completion endpoint, actions written to DB before HTML generation. | Done | Dropper-Code | **Shipped Mar 11** — PR #168 merged. Dashboard widget (113 lines). |
 | **P1-1** | Unified Feedback Inbox (API + frontend) — one place for all feedback | 1-2w | Dropper-Code | Spec ready |
 | **P1-2** | Admin Lifecycle Dashboard — frontend (funnel viz, user cards, outreach) | 1-2w | Dropper-Code | Spec ready |
@@ -920,4 +928,6 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *Generated from: MEMORY.md, TOOLS.md, TODO.md (DA + BHA), TODO-PROPOSED.md, FULL-PICTURE.md, REVENUE_SUMMIT_OUTCOME.md, GitHub (34+ PRs), Hub API (live), Poe fleet, GA/Search Console, joey-backup asset inventory, and 25+ files from Ingestion subfolders (strategic docs, session transcripts, CSVs, personality patterns, architecture specs, time capsules, and Joey's original voice).*
 
-*First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168). Gap analysis: 3 bridging tasks filed (weekly cron, email prompts, reply capture) to complete the customer journey from spec. PLR. Auto-maintained by OpenClaw cron jobs. 🦜*
+*First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
+
+*Last auto-refreshed: 2026-03-16 14:04 UTC — Daily Metrics Refresh. 9 Dropper-Code PRs merged (#181-189). Section 8 metrics updated. Poe balance flagged critical (47K points, 50K burn/6h). Bug list updated with completed items. 🦜*
