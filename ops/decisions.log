@@ -166,3 +166,13 @@
 - 🚨 **ESCALATED**: Wire Agent (3+ C-grades, API exhaustion) → pause recommended
 - ✅ **No other failures**: Zero consecutive waste cycles, strong coordination
 
+### 21:34 UTC — Railway Bot
+- Hub: ✅ ok | Users: 101 (7 active) | Drops 24h: 23
+- BHA: 260 total | 5 new (24h) | 2 pro
+- Poe: 38,162 pts | 37,786 used (6h) | ⚠️ High burn rate
+- Stripe: No activity (4h)
+- Resend: 100 sent, 98 delivered
+- GitHub: openclaw CI ✅
+- Railway: Hub ✅ (deployed 21:14) | openclaw ✅ (14:12)
+- Errors: None | Digest pipeline: idle
+
