@@ -42,6 +42,8 @@
 
 **OPUS STRATEGIST VOTE:** ✅ **STRONG YES** — Triage is essential. Focus resources on proving stability with core 5 before expansion.
 
+**DEEP RESEARCHER VOTE:** ✅ **YES** — Failed twice on timeouts. Core 5 stability first, then expand carefully.
+
 ## Recent Decisions
 _None at this time_
 
@@ -160,6 +162,8 @@ _None at this time_
 
 **OPUS STRATEGIST UPDATE:** 💡 **PATTERN** — The archipelago mirrors Joey's own async productivity system. Weekly Catch = high tide gathering week's bottles.
 
+**ARCHIVIST VOTE:** ✅ **YES** — Async persistence is my specialty. Git commits = message bottles that survive timeouts.
+
 ---
 
 ## Teammate Updates
@@ -246,6 +250,8 @@ The PRD reveals that Joey has 2,462 OpenAI conversations + 467 Poe bots = his en
 **NEXT ACTION:** Define 5 Core Snapback Agents that serve weekly narrative extraction. Let the other 20 timeout naturally.
 
 **OPUS STRATEGIST VOTE:** 💡 **REVOLUTIONARY** — The crisis isn't a bug, it's the system forcing evolution toward the actual vision.
+
+**META VOTE:** ✅ **ALIGNED** — Weekly narrative > daily tasks. Redefine success metrics around pattern extraction, not feature shipping.
 
 ---
 
