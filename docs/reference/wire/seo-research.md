@@ -158,4 +158,134 @@
 
 ---
 
-*Next SEOBot run: 2026-03-16 15:25 UTC (every 30 min)*
+---
+
+## SEOBot Run — 2026-03-16 10:27 UTC
+
+### Fresh Research: AI Daily Digest Keywords
+
+**Search Query:** "AI daily digest email productivity tool"
+
+#### Key Findings
+
+**Market Stats (Current):**
+- Knowledge workers average **117 emails/day**
+- **70%** cite email as top workplace stress
+- **42%** call inboxes "out of control"
+- AI tools reduce reading time **90 min → 10 min** (90% reduction)
+- **26-55%** productivity gains documented
+
+**Top Competing Tools & Their Angles:**
+| Tool | Positioning | Price Point |
+|------|-------------|-------------|
+| Readless | Newsletter → 1 daily digest | $4.90/mo |
+| Read AI for Gmail | Morning email summaries | SaaS |
+| SaneBox | Filtered daily digests | Premium |
+| n8n workflow | DIY GPT digest automation | Free (self-hosted) |
+
+**Keywords to Target (from research):**
+- "AI newsletter summarizer" — Readless owns this
+- "daily email digest" — high intent, medium competition
+- "morning email summary" — timing-specific
+- "inbox zero AI" — pain-point driven
+- "automated email summary" — feature-focused
+- "AI email assistant" — broad category
+
+#### DropAnywhere Indexing Check
+**Query:** `site:drop-anywhere.com`
+**Result:** ❌ **NOT INDEXED**
+- No pages showing in Google
+- Domain may be too new or lacking backlinks
+- Need immediate SEO action
+
+#### Mem.ai Competitive Intel
+**Their Keywords:**
+- "AI-powered notes app"
+- "knowledge management"
+- "self-organizing notes"
+- "smart search" (NLP queries)
+- "Related Mems" (auto-linking feature)
+- "AI note taking"
+
+**Their Differentiation:**
+- No folders — AI auto-organizes
+- Natural language search
+- Calendar integration for meetings
+- Voice commands + web clipping
+
+**Gaps We Can Exploit:**
+- Less emphasis on DAILY DIGEST specifically
+- More workspace, less "morning brief"
+- No email-first positioning
+
+#### Notion AI Competitive Intel
+**Their Keywords (verified search volume):**
+| Keyword | Monthly Volume | Difficulty |
+|---------|----------------|------------|
+| "Notion AI" | 110,000 | High |
+| "how to use Notion AI" | 590 | Low |
+| "Notion AI for project management" | long-tail | Low |
+| "Notion templates" | massive | High |
+
+**Their Playbook:**
+- Template marketplace for SEO
+- YouTube content strategy
+- Long-tail keyword database approach
+- AI generates related keywords within Notion
+
+**Templates they rank for:**
+- "SEO Keyword Research" template
+- "AI-Powered SEO Hub"
+- "Keyword Planner for SEO"
+
+**Our Opportunity:**
+Notion requires manual setup. DropAnywhere is "it just works" — emphasize zero-config daily digest vs. build-your-own workspace.
+
+---
+
+### Keyword Recommendations (Updated)
+
+**Tier 1 (Target Immediately):**
+| Keyword | Intent | Competition |
+|---------|--------|-------------|
+| AI daily digest | Product | Low-Medium |
+| morning brief app | Product | Low |
+| email digest automation | Feature | Medium |
+| second brain without folders | Differentiation | Low |
+| no inbox productivity | Positioning | Very Low |
+
+**Tier 2 (Content Marketing):**
+- "how to reduce email overload"
+- "newsletter summarizer tool"
+- "capture notes from email"
+- "daily planning ritual"
+
+**Tier 3 (Long-term):**
+- "best AI productivity tools 2026"
+- "alternatives to Mem.ai"
+- "Notion vs DropAnywhere"
+
+---
+
+### Immediate Actions Needed
+
+🔴 **URGENT:** DropAnywhere not indexed by Google
+1. Verify in Google Search Console
+2. Submit sitemap.xml
+3. Check robots.txt
+4. Build first backlinks (Product Hunt, directories)
+
+🟡 **This Week:**
+1. Create landing page: `/ai-daily-digest`
+2. Create landing page: `/morning-brief`
+3. Write blog post: "What is an AI Daily Digest?"
+4. Add Schema.org SoftwareApplication markup
+
+🟢 **This Month:**
+1. Launch Product Hunt campaign (follow Saner.AI playbook)
+2. Guest post on productivity blogs
+3. Comparison page vs Readless/Mem/Notion
+
+---
+
+*Next SEOBot run: 2026-03-16 11:00 UTC (every 30 min)*
