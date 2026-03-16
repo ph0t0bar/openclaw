@@ -790,8 +790,8 @@ From the Ingestion hydration context, Joey's Mac runs:
 | BHA new users 24h | — | — | 7 | **8** | steady |
 | BHA weekly visitors (GA) | — | — | 531 | — | (needs refresh) |
 | BHA MRR | $21 | $21 | $21 | **$21** | stable (no charges 4h) |
-| Poe balance | 835K | 530K | 385K | **74,801** | ↓ heavy usage (theREALrealtalk 12K/hr) |
-| Poe burn/6h points | — | — | 27,694 | **29,661** | theREALrealtalk (11K), Tippiy (5K), BOUNCE-CONVERTER (3.9K) |
+| Poe balance | 835K | 530K | 385K | **73,132** | ↓ heavy usage (theREALrealtalk 11K/hr) |
+| Poe burn/6h points | — | — | 27,694 | **29,562** | theREALrealtalk (11K), Tippiy (5K), BOUNCE-CONVERTER (3.9K) |
 | Poe calls/6h | — | — | 100 | **100** | steady |
 | Email sent 24h | 46 | 85 | 79 | **100** | +27% |
 | Email delivery | 100% | 100% | 100% | **99%** (99/100) | 1 delayed |
