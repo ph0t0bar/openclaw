@@ -43,3 +43,25 @@ Last updated: March 16, 2026
 - Async processing model vs real-time
 
 Source: Perplexity search March 16, 2026
+
+---
+
+### Mar 16, 2026 — Mem AI 2.0 Deep Dive
+
+**"Parallel Mind" Positioning:** Mem 2.0 launching as workflow management assistant vs just note storage
+
+**Core Features:**
+- Notes Researcher AI: Natural language search with source citations
+- Smart AI Writer: Style learning + existing note integration for drafts  
+- Auto-organizer: Groups similar content without manual tagging
+- Template system: Meeting notes, project briefs, recurring formats
+- Calendar integration: Centralizes knowledge across tools
+
+**Performance Claims:**
+- 60% faster note discovery
+- Zero setup time (vs Notion's configuration overhead)
+- Learns continuously, gets smarter with use
+
+**Strategic Insight:** Mem focusing on personal knowledge workers who want AI-first experience with minimal setup. Still manual note creation model.
+
+**DropAnywhere Advantage:** Multi-channel capture (email/SMS/voice/chat) + async processing vs manual entry. Our "no inbox" philosophy addresses friction they still have.
