@@ -22,25 +22,21 @@ Color-coded. Templated. Beautiful.
 
 Know what I created? A really pretty Notion workspace.
 
-Meanwhile the ideas kept coming at 2am and vanishing by morning. The shower thoughts went down the drain. The voice notes piled up, untranscribed, because who has time to turn rambling into structure?
+Meanwhile the ideas kept coming at 2am and vanishing by morning. Shower thoughts went down the drain. Voice notes piled up, untranscribed, because who has time to turn rambling into structure?
 
-We built tools for people who already have their lives together.
+Everyone's building tools for people who already have their shit together.
 
-Forgot about the rest of us.
+What about the rest of us?
 
-The ones with ideas at inconvenient times. The ones who abandon systems after two weeks. The ones who just want to think and find insights waiting tomorrow.
+The ones with ideas at inconvenient times. The ones who abandon systems after two weeks. The ones who just want to think out loud and find insights waiting tomorrow.
 
-So here's the question I built DropAnywhere around:
-
-What if your tools worked while you slept?
-
-Not harder. Smarter.
+I built DropAnywhere because I got tired of choosing between capturing and organizing.
 
 Email yourself a thought while walking → Tomorrow's digest connects it to last month's similar idea.
 
-Voice note a realization → Transcribed and linked to relevant drops automatically.
+Voice note a realization → Transcribed and linked automatically.
 
-Screenshot something useful → Analyzed and tagged without you touching a folder.
+Screenshot something useful → Analyzed and tagged without touching a folder.
 
 Drop it. Forget it. Wake up smarter.
 
