@@ -30,9 +30,18 @@
 
 ### System Performance 📊
 - **Agent Success Rate:** 84% (excellent)
-- **Zero consecutive C-grade failures**
+- **Wire Agent:** 3+ consecutive C-grade failures (API exhaustion)
 - **Infrastructure:** All services healthy
 - **Digest Pipeline:** Intentionally off (waitlist admission policy)
 
+### Agent Escalations 🔧
+
+**Wire Agent - RECOMMENDED PAUSE**
+- **Issue:** OpenRouter API credit exhaustion causing 3+ consecutive failures
+- **Pattern:** 20:35, 20:58, 21:12 UTC - all API 402 responses
+- **Fix:** Restore OpenRouter credits or pause until funding available
+- **Type:** Technical constraint, not prompt failure
+- **Status:** Isolated issue, not affecting other agents
+
 **Chief of Staff Assessment: GREEN**
-No critical intervention required. System is thriving.
+One technical escalation identified. System otherwise thriving.
