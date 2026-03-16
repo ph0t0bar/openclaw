@@ -1,5 +1,19 @@
 # Escalations Log
 
+## 2026-03-16 23:03 UTC — Wire Agent Escalation
+
+### 🚨 CRITICAL: Wire Agent API Failures
+
+**Issue**: Wire Agent has 3+ consecutive C-grade failures due to API credit exhaustion
+**Impact**: Unable to perform web research and market intelligence gathering
+**Recommendation**: Pause Wire Agent until OpenRouter/Perplexity credits are restored
+
+**Pattern**: Multiple agents hitting API limits (SEOBot, Researcher affected)
+**Root Cause**: Credit exhaustion across external API services
+**Action Required**: Top up API credits or pause affected agents
+
+---
+
 ## 2026-03-16 22:45 UTC — Chief of Staff Gap Assessment
 
 ### ✅ BACKUP: Healthy
