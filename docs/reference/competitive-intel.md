@@ -110,3 +110,36 @@ Mem.ai is gaining significant traction with their "Notes Researcher AI" feature 
 Their zero-setup + AI-first positioning validates our philosophy but with real-time execution that could appeal to immediate-gratification users.
 
 *Research conducted: 2026-03-16 14:47 UTC*
+
+## March 16, 2026 - 15:03 UTC: Deep Researcher Analysis
+
+**Mem 2.0 Feature Deep Dive:**
+
+Key breakthrough features launched October 2025:
+
+1. **Voice Mode with Auto-Organization**: Transcribes rambling thoughts into structured, searchable notes. Meeting transcription without bots.
+
+2. **Agentic Chrome Extension**: One-click webpage → formatted note conversion with automatic categorization.
+
+3. **Deep Search**: Natural language queries ("that Q3 budget conversation") vs exact keywords. 
+
+4. **Heads Up Feature**: Proactive note surfacing - client history automatically appears before meetings.
+
+5. **Daily Digest**: AI-curated morning summaries based on current work context.
+
+**Performance Metrics:**
+- 60% reduction in search time (validated user reports)
+- Semantic similarity algorithms for real-time related note discovery
+- OCR + AI image recognition for visual content search
+
+**Strategic Assessment:**
+- **Direct Threat**: Zero-setup positioning challenges our "no inbox" philosophy
+- **Market Gap**: No multi-channel ingestion (email/SMS/voice) - our key differentiator intact
+- **Opportunity**: Their real-time approach vs our async digest model creates positioning opportunity around "sustainable focus"
+
+**Technical Learnings:**
+- Semantic search performance benchmarks set user expectations
+- Proactive surfacing (Heads Up) similar to our context bank concept
+- AI-powered daily summaries validate digest approach but with different timing model
+
+**Recommendation**: Monitor their user growth metrics and develop counter-positioning around multi-channel capture + async processing benefits.
