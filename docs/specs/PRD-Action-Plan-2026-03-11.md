@@ -756,39 +756,42 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 16, 16:35 UTC) — DocBot Refresh
+## 8. System Health & Metrics (March 16, 17:01 UTC) — DocBot Refresh
 
-> **🚨 Poe Balance Critical:** Down to **44,003 points** with **44,055 burned/6h** (100 calls). At current burn rate, balance depletes in ~6 hours. Top bots: IdealPrompt (15,982), Tippiy (15,067), theREALrealtalk (8,261). Consider disabling non-essential bots or topping up.
+> **🚨 Poe Balance Critical:** Down to **43,544 points** with **43,449 burned/6h** (100 calls). At current burn rate, balance depletes within hours. Top bots: IdealPrompt (15,982), Tippiy (15,067), theREALrealtalk (8,706). Top-up urgently or disable non-essential bots.
 
-> **✅ Dropper-Code Shipping Frenzy:** 10 PRs merged Mar 15-16 (#181-190). Latest: PR #190 completed 16:40 UTC today. Tasks completed: Zapier integration, vault capacity upgrade prompt, digest pipeline error alerting, Snapback bridging tasks, and more.
+> **⚠️ Digest Scheduler Stalled:** PR #190 is open (not merged) — fix in progress. Only 3/41 eligible users got digests in 24h. PRs #184–185 closed (superseded). Active open PRs #186–190 addressing stall. Brain scan also proposed Zapier integration, Agent auto-drops, and BHA capture button (pending approval).
 
-| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Δ |
-|--------|-------|-------|--------|--------|-------------|-------------|---|
-| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | stable |
-| DA archived users | — | — | — | **44** | **44** | **44** | stable |
-| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | **~30** (active 7d) | stable |
-| DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | -25% |
-| DA active 7d | 24 | 47 | 47+ | **60** | **55** | **55** | stable |
-| DA drops total | 456 | 589 | **668** | **690** | **843** | **843** | stable |
-| DA drops 24h | — | — | — | **51** | **33** | **22** | steady |
-| DA digests sent 24h | — | — | — | **15** | **3** | **3** | light send day |
-| BHA users | 172 | 198 | **211** | **215** | **259** | **259** | stable |
-| BHA active 24h | — | — | — | **13** | **11** | **9** | steady |
-| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | **70** | stable |
-| BHA pro subs | — | — | **3** | **2** | **2** | **2** | stable |
-| BHA new users 24h | — | — | — | **7** | **7** | **4** | steady |
-| BHA weekly visitors (GA) | — | — | **531** | — | **—** | **—** | — |
-| BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | stable |
-| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | -7% (30 min) |
-| Poe burn/6h points | — | — | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | hot |
-| Poe calls/6h | — | — | — | **100** | **100** | **100** | — |
-| Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | normal |
-| Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** (85/87) | ✅ |
-| Dropper-Code PRs merged | — | 9 | **12** | **15** | **#181-189** | **#181-190** ✅ | +1 |
-| Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | stable |
-| joey-backup commits | — | — | — | **40+** | **—** | **—** | — |
-| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | **—** | — |
-| Snapback prototypes | — | — | — | **3** | **3** | **3** | — |
+> **✅ OpenClaw Deploy:** Latest gateway deploy SUCCESS at 2026-03-16 14:12 UTC.
+
+| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:01 | Δ |
+|--------|-------|-------|--------|--------|-------------|-------------|-------------|---|
+| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | **100** | stable |
+| DA archived users | — | — | — | **44** | **44** | **44** | **44** | stable |
+| DA active real users | — | — | **~20** | **24** | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | stable |
+| DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | **9** | stable |
+| DA active 7d | 24 | 47 | 47+ | **60** | **55** | **55** | **55** | stable |
+| DA drops total | 456 | 589 | **668** | **690** | **843** | **843** | **843** | stable |
+| DA drops 24h | — | — | — | **51** | **33** | **22** | **22** | stable |
+| DA digests sent 24h | — | — | — | **15** | **3** | **3** | **3** | ⚠️ stalled |
+| BHA users | 172 | 198 | **211** | **215** | **259** | **259** | **259** | stable |
+| BHA active 24h | — | — | — | **13** | **11** | **9** | **9** | stable |
+| BHA active 7d | 38 | 53 | 53+ | **63** | **70** | **70** | **70** | stable |
+| BHA pro subs | — | — | **3** | **2** | **2** | **2** | **2** | stable |
+| BHA new users 24h | — | — | — | **7** | **7** | **4** | **4** | steady |
+| BHA weekly visitors (GA) | — | — | **531** | — | **—** | **—** | **—** | — |
+| BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | **$21** | stable |
+| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **43,544** 🚨 | -1% (25 min) |
+| Poe burn/6h points | — | — | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,449** 🔥 | hot |
+| Poe calls/6h | — | — | — | **100** | **100** | **100** | **100** | — |
+| Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | normal |
+| Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** | **98%** (87/89) | ✅ |
+| Hub open PRs (all) | — | — | — | — | — | 4 open | **5 open** (digest fix) | ⚠️ digest stall |
+| Hub merged PRs | — | 9 | **12** | **15** | **#175–176** | **#176** latest | **#176** latest | pending review |
+| Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | **6** | stable |
+| joey-backup commits | — | — | — | **40+** | **—** | **—** | **—** | — |
+| GOLDMINE excavations | — | — | — | **batch-0001** | **—** | **—** | **—** | — |
+| Snapback prototypes | — | — | — | **3** | **3** | **3** | **3** | — |
 
 ### BHA Search Console Highlights (Feb 2026 data)
 
@@ -929,7 +932,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 16:35 UTC — DocBot metrics refresh. Section 8 updated with fresh dashboard data. Poe balance: 44,003 points (critical, depleting ~7K/30min). Drops 24h: 22. BHA new 24h: 4. PR #190 merged. 🦜*
+*Last auto-refreshed: 2026-03-16 17:01 UTC — DocBot metrics refresh. Section 8 updated: Poe balance 43,544 🚨 (burn 43K/6h — top-up urgent). Digest stall confirmed: only 3/41 sent, 5 open PRs on hub fixing scheduler. DA drops 843 total. BHA 259 users, 4 new 24h. Email 89 sent/98% delivery. 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *
