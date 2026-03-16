@@ -667,6 +667,7 @@ DONE (status: completed)
 
 | Time (UTC) | Repo | Commit | What |
 |------------|------|--------|------|
+| 22:38 | opoerator-hub | - | PR #194 - Batch PR (brain-scan follow-up tasks) |
 | 19:23 | opoerator-hub | - | PR #192 - Task completed (details pending) |
 | 18:27 | opoerator-hub | - | PR #191 - Agent Auto-drops endpoint (`/api/integrations/auto-drop`) for OpenClaw/Poe bot session summaries |
 | 14:40 | opoerator-hub | - | PR #190 - Digest scheduler error budget + alerting (digest stall fix) |
@@ -786,14 +787,14 @@ From the Ingestion hydration context, Joey's Mac runs:
 | BHA new users 24h | - | - | - | **7** | **7** | **4** | **4** | **4** | **4** | steady |
 | BHA weekly visitors (GA) | - | - | **531** | - | **-** | **-** | **-** | **-** | **-** | - |
 | BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | stable |
-| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **42,770** 🚨 | **39,168** 🚨 | -3,602 |
-| Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,379** 🔥 | **37,484** 🔥 | -5,895 |
+| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **42,770** 🚨 | **39,168** 🚨 | **37,688** 🚨 | -1,480 |
+| Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,379** 🔥 | **37,484** 🔥 | **37,770** 🔥 | +286 |
 | Poe calls/6h | - | - | - | **100** | **100** | **100** | **100** | **100** | **100** | - |
 | Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | **100** | **100** | stable |
 | Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** | **98%** (87/89) | **98%** (98/100) | **98%** (98/100) | ✅ |
 | Hub open PRs (all) | - | - | - | - | - | 4 open | **6 open** (#186-191) | **7 open** (#186-192) | ⚠️ digest stall |
 | Hub merged PRs | - | 9 | **12** | **15** | **#175-176** | **#176** latest | **#176** latest | **#176** latest | **pending review** | - |
-| Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | **6** | **2** | **2** | stable |
+| Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | **6** | **2** | **2** | **1** | -1 |
 | joey-backup commits | - | - | - | **40+** | **-** | **-** | **-** | **-** | **-** | - |
 | GOLDMINE excavations | - | - | - | **batch-0001** | **-** | **-** | **-** | **-** | **-** | - |
 | Snapback prototypes | - | - | - | **3** | **3** | **3** | **3** | **3** | **3** | **3** | stable |
@@ -937,7 +938,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 22:17 UTC — DocBot metrics refresh. Section 8 updated: 22:17 column added, DA drops 852 (+7), active 24h 7 (+1), BHA users 260 (+1), Poe balance 37,892 🚨 (still critical). PR #193 added to shipping log (digest stall fixed). 🦜*
+*Last auto-refreshed: 2026-03-16 22:57 UTC — DocBot metrics refresh. Section 8 updated: 22:57 column added, DA drops 852 (+7), active 24h 6 (stable), BHA users 260 (+1), Poe balance 37,688 🚨 (still critical, burn 37,770/6h). PR #194 added to shipping log (batch brain-scan follow-up). Open issues reduced to 1. 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *
@@ -955,4 +956,5 @@ ted items. 🦜*
 ��*
 *
 �*
+��*
 ��*
