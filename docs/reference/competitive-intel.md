@@ -84,3 +84,29 @@
 **Threat Level:** Medium-High. Their zero-setup + AI-first positioning directly competes with our philosophy, but they lack our multi-channel capture advantage.
 
 *Last updated: 2026-03-16*
+
+## March 16, 2026: Mem.ai Market Momentum Analysis
+
+**Latest Intelligence:**
+
+Mem.ai is gaining significant traction with their "Notes Researcher AI" feature that can answer complex questions across entire knowledge bases. Key differentiators emerging:
+
+1. **AI-First Architecture**: Unlike Notion's database-first approach, Mem built from ground up for AI-powered knowledge discovery
+2. **Zero Organization Overhead**: Users report complete elimination of folder/tag management time
+3. **Cross-Note Intelligence**: AI automatically surfaces related content while writing - similar to our context bank concept but real-time
+4. **Personal AI Writer**: Learns individual writing style to draft content - potential threat to our digest personalization
+
+**Market Signals:**
+- Strong user testimonials about 60% faster information retrieval
+- Growing adoption among knowledge workers frustrated with Notion's complexity
+- Positioning as "Notion for people who hate organizing"
+
+**Strategic Response Opportunities:**
+1. **Double down on multi-channel capture** - their weakness, our strength
+2. **Emphasize async digest benefits** - frame as "sustainable focus" vs their real-time interruption model
+3. **Develop cross-drop intelligence** - similar to their cross-note surfacing but for our drop ecosystem
+
+**Competitive Threat Level:** Elevated (Medium-High)
+Their zero-setup + AI-first positioning validates our philosophy but with real-time execution that could appeal to immediate-gratification users.
+
+*Research conducted: 2026-03-16 14:47 UTC*
