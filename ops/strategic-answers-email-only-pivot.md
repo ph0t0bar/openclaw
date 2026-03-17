@@ -1,181 +1,218 @@
-# Strategic Answers: Email-Only Pivot
-**Date:** 2026-03-16  
-**Context:** DropAnywhere's foundational product decisions for email-only launch (March 24)  
-**Audience:** Joey decision-making  
-
----
-
-## 1. TRIAGE SYSTEM
-
-### The Practical Answer (What We Do)
-
-DropAnywhere's email triage system is a **smart routing layer** that sits between Resend (our email provider) and user inboxes. When an email arrives, it follows this path:
 
 ```
-Inbound Email → Resend → Hub Webhook → Triage Router → Processing Queue
-```
 
-**How Routing Works:**
-
-| Email Type | Detection Rule | Routing Decision |
-|------------|---------------|------------------|
-| **User Drop** | `to` matches `drops+*@drop-anywhere.com` | Ingest to vault → analyze → include in next digest |
-| **Reply to Digest** | `in-reply-to` header matches digest ID | Thread continuation → add to existing intelligence map group |
-| **Joey's Direct Email** | `from: joeyhamer@gmail.com` | **PRIORITY LANE** → instant WhatsApp alert + CEO triage |
-| **Reply to Admission** | `to: hello@drop-anywhere.com` + thread match | Human review queue → Joey or auto-response |
-| **Unknown/Bounce** | No match above | Spam folder analysis → quarantine if suspicious |
-
-**The Admission Flow (Critical Journey):**
-
-```
-Waitlist Signup (landing page)
-    ↓
-Email 1: Welcome (immediate)
-    ↓
-Joey admits via Hub admin (manual trigger)
-    ↓
-Email 2: You're In + Drop Address (immediate)
-    ↓
-[User sends first drop]
-    ↓
-Email 3: First Intelligence Map (next morning ~7am)
-```
-
-**Email Cadence Rules:**
-
-| User State | Email Frequency | Timing |
-|------------|-----------------|--------|
-| Waitlisted | 1 email only | Immediate confirmation |
-| Admitted, pre-first-drop | 1 email | Immediate after admission |
-| Active (has drops) | Daily (max 1) | 7:00 AM user's timezone (default CDT) |
-| Dormant (no drops 7+ days) | 1 email | Weekly "We miss you" nudge with summary |
-| Unsubscribed | 0 emails | Removed from all lists (compliance) |
-
-**Feedback Incorporation:**
-- **Explicit:** Reply to any email → parsed for commands (`pause`, `more often`, `less frequent`, `help`)
-- **Implicit:** Email opens, link clicks (tracked via Resend) → digest timing optimization
-- **Direct:** Users can request features/changes via reply → drops into Joey's priority lane for manual review
-
-### The Strategic Thinking (Why)
-
-**Why This Routing Architecture:**
-
-1. **Email-First, Not Email-Only Forever** — This system sets up the data pipeline so when dashboard launches, all intelligence is already organized
-2. **Joey's Context is Irreplaceable** — The "Joey priority lane" isn't just convenience; it's product research. Every email Joey sends teaches the system what actually matters
-3. **Frictionless > Feature-Rich** — Users don't configure cadence; we learn it. Default daily, auto-adjust based on engagement. Reduces decision fatigue
-4. **Admission Gate = Quality Control** — Manual admission lets Joey curate early users, gathering qualitative feedback before scaling
-
-**Cadence Philosophy:**
-- **Daily default:** The "Intelligence Map" is designed to be *glanceable* — if there's nothing new, the email says so (no noise)
-- **Morning timing:** Catches users in "review mode" not "reactive mode" — different psychology than midday emails
-- **No batching options:** Intentional constraint. The product teaches users to trust the daily rhythm (`Drop it. Forget it.`)
-
-### The Implementation Path (How)
-
-**Phase 1: Launch-Ready (Mar 24)**
+**Hub Webhook Integration:**
 
 ```python
-# Hub webhook handler (pseudo-structure)
-def handle_inbound_email(email_payload):
-    # 1. Identify email type
-    email_type = classify_email(email_payload)
-    
-    # 2. Route accordingly
-    if email_type == 'USER_DROP':
-        user = extract_user_from_address(email_payload.to)
-        drop = ingest_drop(email_payload, user)
-        queue_for_digest(drop, user)
-        
-    elif email_type == 'JOEY_DIRECT':
-        ingest_drop(email_payload, user=joey)  # Archive it
-        send_whatsapp_alert(f"Email from Joey: {email_payload.subject}")
-        
-    elif email_type == 'DIGEST_REPLY':
-        thread = find_thread(email_payload.in_reply_to)
-        append_to_thread(thread, email_payload)
-        
-    elif email_type == 'REPLY_TO_ADMISSION':
-        queue_for_human_review(email_payload)
+# /api/waitlist endpoint
+@app.post("/api/waitlist")
+async def join_waitlist(email: str, source: str = "landing_page"):
+    # 1. Validate email
+    # 2. Check if already admitted
+    # 3. Create user record with status='waitlisted'
+    # 4. Add to Resend DA-Waitlist audience
+    resend.contacts.create(
+        email=email,
+        first_name=extract_first_name(email),  # best effort
+        audience_id="da_waitlist_v1",
+        unsubscribed=False,
+    )
+    # 5. Trigger Email 1 via Resend
+    resend.emails.send({
+        "from": "DropAnywhere <hello@drop-anywhere.com>",
+        "to": email,
+        "subject": "You're on the list — DropAnywhere is coming",
+        "html": render_template("email-01-welcome-waitlist.html", email=email),
+    })
+    return {"status": "waitlisted"}
 ```
 
-**Key Components:**
-1. **Resend Inbound Webhook** (`/api/webhook/email`) — already implemented per MASTER-REPORT-v2
-2. **Email Classifier** — simple rule-based for launch (regex patterns, header analysis)
-3. **Priority Queue** — Joey's emails bypass normal processing
-4. **Digest Scheduler** — runs daily at 7am per `DIGEST-POLICY.md` (currently disabled via `DISABLE_CRONS=1`)
+**Soft Launch Tiers (Already Defined):**
 
-**Phase 2: Smart Cadence (Post-Launch)**
+| Tier | List Segment | When | Criteria |
+|------|-------------|------|----------|
+| Tier 1 | friends-family | Mar 24 09:00 | Immediate personal support (Lisa, Danny, Bob) |
+| Tier 2 | feedback-core subset | Mar 24 12:00 | If Tier 1 digests clean |
+| Tier 3 | BHA Engaged subset | Mar 24 17:00 | If Tier 2 stable |
 
-- ML-based open-rate prediction
-- Dynamic timing (e.g., this user opens emails at 8:30am, adjust send time)
-- Engagement-based frequency (high engagement → option for twice-daily; low → weekly digest)
+**Migration Path:**
+- Waitlist users → Admitted (manual promotion)
+- BHA users → BHA+DA (future cross-sell campaign)
+- Friends/Family → Full users (immediate admission)
 
 ### Decisions Joey Needs to Make
 
 **Immediate (Before Mar 24):**
-1. **Timezone handling** — Default to CDT for all users initially, or ask during waitlist signup?
-2. **Joey's WhatsApp urgency threshold** — All emails from you get WhatsApp alerts, or only certain subjects/keywords?
-3. **Dormant user definition** — No drops for 7 days triggers "we miss you" email? Or 14 days?
+1. **Tier 1 list** — Confirm who goes in first batch (family emails)
+2. **Tier 2 list** — Who are the 5-6 "feedback core" users for second wave?
+3. **BHA cross-sell now?** — Do we email BHA list about DA launch, or wait until DA is stable?
+4. **Waitlist cap** — Soft limit to stop admitting when? (50 users? 100?)
 
 **Post-Launch:**
-1. **Auto-admission threshold** — At what volume do we switch from manual admission to automatic?
-2. **Cadence customization** — Do we ever let users choose daily/weekly, or do we maintain the "one way" philosophy?
+1. **Admission velocity** — How many users per day after launch? (5? 20? Unlimited?)
+2. **BHA migration** — Automated campaign or personal outreach from Joey?
+3. **List consolidation** — At what scale do we merge Feedback Core into Admitted?
 
 ---
 
-## 2. CUSTOM STRIPE PAYMENT
+## 4. TIERS & PRICING
 
 ### The Practical Answer (What We Do)
 
-DropAnywhere's payment flow is designed for **zero-friction conversion** with a "freemium → paid" natural progression:
+DropAnywhere uses a **simple 2-tier model** (Free/Pro) at launch, with a clear roadmap to more granular tiers as we learn:
 
-**The Trial Philosophy:**
-- **No credit card required** for waitlist admission
-- **Full features for 14 days** after first digest
-- **Soft paywall** on day 14 — digest still arrives but with "Upgrade" CTA for "priority scheduling" and "unlimited drops"
+**Current Tiers (Launch):**
 
-**What We Allow (Billing Paths):**
+| Feature | Free (Forever) | Pro ($9/month) |
+|---------|----------------|----------------|
+| Drops per week | 10 | Unlimited |
+| Digest frequency | 3x/week (Mon/Wed/Fri) | Daily (7 days) |
+| Digest timing | Default 7am CDT | User-selected timezone/time |
+| Drop addresses | 1 (drops+id@) | 3 (work/personal/custom) |
+| Email support | Community | Priority (48hr response) |
+| Export data | CSV (manual request) | CSV + API access |
+| Price | $0 | $9/month or $90/year |
 
-| Path | User Journey | Stripe Integration |
-|------|--------------|-------------------|
-| **Free → Pro** | Waitlist → Admit → 14 days free → Upgrade prompt | Stripe Checkout session, one-click |
-| **Gift/Referral** | Joey admits to "Founders" tier directly | Stripe subscription with 100% off coupon |
-| **B2B Advisory** | Custom invoicing (outside Stripe) | Manual contract → Stripe subscription later |
-| **Poe Bridge** | BHA users discover DA via bots | No direct Stripe linkage — separate conversion flow |
+**Future Tier Evolution (Roadmap):**
 
-**Most Impactful Billing Path (The No-Brainer):**
+| Tier | Price | Target User | Differentiators |
+|------|-------|-------------|-----------------|
+| **Free** | $0 | Try-before-buy | 10 drops/week, limited digest timing |
+| **Pro** | $9/mo | Personal power users | Unlimited drops, daily digest, custom timing |
+| **Team** (Q2) | $29/mo | Small teams | Shared drop addresses, team vault, admin controls |
+| **Business** (Q3) | $99/mo | Advisory firms | Custom domain, white-label digest, API access |
+| **API-Only** (Q3) | Usage-based | Developers | BYO key, headless API, no digest |
+
+**Feature-Based Pricing Dimensions (Future):**
+
+The full feature matrix we can price on:
 
 ```
-User receives 3rd digest → Email subject: "Unlock priority timing & unlimited drops"
-    ↓
-Email body: "Your free week was a taste. Pro users get:
-  • Digests at your preferred time (not default 7am)
-  • Unlimited drops (free = 10/week)
-  • Custom drop addresses (work@, personal@)
-  • Priority support"
-    ↓
-Button: "Upgrade ($9/mo)" → Stripe Checkout (pre-filled email)
-    ↓
-One click → Card entry → Active subscription
+Volume:        drops/month, files/month, characters processed
+Processing:    AI model quality (basic/advanced), analysis depth
+Timing:        digest frequency, real-time alerts
+Access:        API access, webhooks, integrations (Zapier, etc.)
+Identity:      custom drop addresses, custom domains, white-label
+Support:       community, email, priority, dedicated
+History:       retention period (30d/1yr/forever), archive export
 ```
 
-**Friction Removers:**
-1. **Pre-filled email** — from their drop address, no typing
-2. **No plan selection** — Pro is the only paid tier (simpler than tiers)
-3. **Monthly default** — Annual option shown but not pre-selected (lower commitment)
-4. **Receipt to drop address** — payment confirmation = drop in their vault (trust signal)
-5. **One-click downgrade** — downgrade link in every receipt email (removes fear)
+**The No-Brainer Billing Path:**
 
-**Stripe Setup:**
+```
+Free User Journey:
+Week 1-2: 10 drops/week, love the product
+Week 3: Hit 10 drop limit on Wednesday → email: "You've reached your limit"
+Week 4: Same thing → now frustrated
+Week 5: Digest subject changes: "Upgrade for unlimited drops"
+    ↓
+Same digest, but with upgrade section highlighted
+    ↓
+Click → Stripe Checkout → $9 → immediate unlimited
+```
 
-```javascript
-// Stripe Checkout Session creation
-const session = await stripe.checkout.sessions.create({
-  customer_email: user.email,  // Pre-filled
-  line_items: [{
-    price: 'price_dropanywhere_pro_monthly', // $9/mo
-    quantity: 1,
-  }],
-  mode: 'subscription',
-  success_url: `${BASE_URL}/welcome-pro?session_id={CHECKOUT_SESSION_ID}`,
-  cancel_url: `${BASE_URL}/digest-preview`,
+### The Strategic Thinking (Why)
+
+**Why Simple 2-Tier at Launch:**
+
+1. **Speed to market** — Every tier is complexity: pricing pages, upgrade flows, downgrade handling, feature gates. Launch with one paid tier.
+2. **Single success metric** — "Are users upgrading to Pro?" is clearer than "Are users choosing the right tier?"
+3. **No analysis paralysis** — Users don't compare 3 plans; they decide "Is this worth $9/month?" (yes/no)
+
+**Why $9/month (Not $5 or $15):**
+
+- **$5** = "cheap tool" positioning, attracts price-sensitive, high-churn users
+- **$15** = "premium" but may exclude early adopters
+- **$9** = "coffee per month" — justifiable, accessible, signals real value without being expensive
+
+**Why Free is Limited (Not Time-Based):**
+- Time-based trials (14 days then pay) work for event-driven products
+- Usage-based free tier works for ongoing products like DA
+- Users who hit 10 drops/week are **demonstrating value** — the limit itself creates conversion trigger
+
+**Future Tier Philosophy:**
+- **Pro** = personal use (individual productivity)
+- **Team** = collaborative use (shared context)
+- **Business** = invisible assistant (client-facing, white-label)
+- **API-Only** = developers building on top (different product, really)
+
+### The Implementation Path (How)
+
+**Phase 1: Launch Tiers (Mar 24)**
+
+Database schema:
+```sql
+users:
+  - id, email, created_at
+  - tier: 'free' | 'pro'
+  - status: 'trialing' | 'active' | 'canceled'
+  - trial_ends_at: timestamp
+  - stripe_customer_id, stripe_subscription_id
+
+usage_limits:
+  - user_id
+  - drops_this_week: int
+  - drops_reset_at: timestamp
+  - max_drops_per_week: 10 (free) | null (pro)
+```
+
+Feature gating:
+```python
+def can_user_drop(user_id):
+    user = get_user(user_id)
+    if user.tier == 'pro' or user.status == 'trialing':
+        return True
+    
+    usage = get_usage(user_id)
+    if usage.drops_this_week >= 10:
+        return False  # Soft gate: warn but allow
+    return True
+
+def get_digest_config(user_id):
+    user = get_user(user_id)
+    if user.tier == 'pro':
+        return {
+            'frequency': 'daily',
+            'time': user.preferred_time or '07:00',
+            'timezone': user.timezone or 'America/Chicago'
+        }
+    else:
+        return {
+            'frequency': 'mon_wed_fri',
+            'time': '07:00',
+            'timezone': 'America/Chicago'
+        }
+```
+
+**Phase 2: Team Tier (Q2 2026)**
+
+- Shared vault: multiple users, shared drops
+- Drop addresses per team: `teamname+topic@drop-anywhere.com`
+- Admin dashboard (first exposure of dashboard UI!)
+- Price: $29/month for up to 5 team members
+
+**Phase 3: Business/Advisory Tier (Q3 2026)**
+
+- Custom domain: `drops@joeyhamer.com` (not `@drop-anywhere.com`)
+- White-label digest: your logo, your colors, sent from your domain
+- Client separation: each client's drops isolated
+- Price: $99/month + usage
+
+**Phase 4: API-Only (Q3-Q4 2026)**
+
+- Bring Your Own OpenAI/Anthropic key
+- Headless: no digest, just API access to ingestion/analysis
+- Usage-based billing: $0.001 per drop processed
+- Target: developers building AI apps
+
+### Decisions Joey Needs to Make
+
+**Immediate (Before Mar 24):**
+1. **Pro price** — $9, $7, or $12? Annual option now or later?
+2. **Free tier limits** — 10 drops/week feels right? Or 5? Or 20?
+3. **Trial length** — 14 days? Or extend to 30 for early adopters?
+4. **Stripe product IDs** — Confirm configured or need setup?
+
+**Near-Term (April):**
+1. **Team tier priority** — Is B2B (advisory firms) the growth engine or secondary?
+2. **API pricing** — Usage-based or flat rate? What does "prosumer"
