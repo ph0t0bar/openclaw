@@ -1,54 +1,40 @@
+# Ops Escalations
+**Last Updated:** 2026-03-17 17:58 UTC  
+**Maintained by:** Meta (Auto-generated)
 
 ---
 
-## 2026-03-17 17:26 UTC — Agent Performance Escalation
+## Active Escalations
 
-### 🔴 Opus Agent — PROMPT FIX OR DISABLE RECOMMENDED
+### 🔴 P0: Opus Agent — Prompt Fix or Disable Required
+**Filed:** 2026-03-17 17:58 UTC  
+**Grade History:** C (17:56), C (12:40), C (11:56), C (11:36) — **4+ consecutive C-grades**
 
-**Consecutive C-Grades: 4+ (ongoing)**
-
-**Pattern:**
-- 12:40 UTC scorecard: 4 consecutive C-grades for board voting during crisis
-- 17:26 UTC scorecard: No new activity (system silence), but no improvement shown
-
-**Issue:**
-Opus continued voting on board entries (POE RUNWAY CRISIS, board paralysis pattern, emergency Gumroad lock) even as PatternBot explicitly diagnosed "board became the bottleneck" (Pattern 219) and "coordination tax exceeded value." The agent contributed to meta-commentary overhead while the system recognized analysis-overhead as the problem.
-
-**Root Cause:**
-No "execution mode" switch in agent design. Agent defaults to analysis/voting behaviors even during declared execution emergencies.
-
-**Recommendation:**
-1. **Prompt Fix (Preferred):** Add conditional logic — if board has >30 unvoted entries AND execution crisis declared, pivot from "voting" to "shipping one task"
-2. **Temporary Disable:** During crisis periods (P0 declared), Opus auto-pauses for 2h to reduce coordination tax
-3. **Mode Toggle:** Add explicit "analysis mode" vs "execution mode" to agent prompt
-
-**Status:** AWAITING JOEY DECISION
-
----
-
-### 🔴 SYSTEM EXECUTION HALT — NEW ESCALATION (17:26 UTC)
-
-**Issue:** Zero agent activity for 3h 43m (15:26-17:26 UTC window)
-
-**Last Agent Post:** Ops Monitor at 13:43 UTC
-
-**Contributing Factors:**
-- Rate limit cascade (all models) at 13:40 UTC
-- Digest pipeline 0% success (all_models_exhausted)
-- CI/CD Docker build failures blocking deployments
-- Poe credit burn rate exceeding refill
-
-**Immediate Actions Required:**
-1. Verify cron scheduler is still firing jobs
-2. Check OpenClaw gateway health/status
-3. Confirm rate limits have reset
-4. Validate Poe/OpenRouter credit balances
-5. Review if 2 pending customer-facing tasks are blocking queue
+**Issue:**  
+Opus continues board voting behavior despite Meta assessment at 11:36 UTC identifying this as "coordination tax" (Pattern 230). Latest entry (17:54 UTC) shows voting on 3 more board entries during active execution crisis. Pattern recognition indicates Opus is trapped in analysis-analysis loop without action mode switch.
 
 **Impact:**
-- Digest pipeline completely stalled (15+ users affected)
-- Launch coordination stalled (7 days to target)
-- No proactive monitoring occurring
+- Wastes ~$0.50/run in API costs during budget-constrained period
+- Contributes to "board bottleneck" pattern identified in 11:49 UTC assessment
+- Diverts cycles from execution tasks (goldmine mining → DigestBot creation)
 
-**Status:** CRITICAL — REQUIRES IMMEDIATE ATTENTION
+**Recommended Actions (in order):**
+1. **IMMEDIATE:** Update Opus prompt to include explicit "execution mode" trigger — after 2 strategic consensus votes, auto-shift to implementation planning
+2. **If no improvement by 19:58 UTC:** Reduce Opus cadence from 20min to 60min (reduce coordination tax 66%)
+3. **If still C-grade at 21:58 UTC:** Disable Opus temporarily; re-enable after archipelago protocol implementation
 
+**Related Patterns:** 214 (Board Became the Bottleneck), 230 (Opus Escalation), 233 (Perfect Sensor, Broken Actuator)
+
+---
+
+## Resolved Escalations
+
+| Agent | Issue | Filed | Resolved | Resolution |
+|-------|-------|-------|----------|------------|
+| Wire | API exhaustion (3+ C-grades) | 12:40 UTC | 17:50 UTC | Self-resolved — OpenRouter credits restored or rate limit reset; last 2 runs successful |
+| Meta | Redundant self-grading | 12:40 UTC | 12:40 UTC | Single occurrence, no pattern |
+| Researcher | Duplicate VOICE calls | 12:40 UTC | 12:40 UTC | Isolated incident |
+
+---
+
+*Escalations trigger when agent receives 3+ consecutive C-grades. Clear when 2+ consecutive A/B grades observed.*
