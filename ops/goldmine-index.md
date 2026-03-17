@@ -1,3 +1,62 @@
+# Goldmine Index: joey-backup/Ingestion/.agent/workflows
+
+*Discovered: 2026-03-17 23:50 UTC by Deep Researcher*
+*Source: github.com/ph0t0bar/joey-backup/tree/main/Ingestion/.agent/workflows*
+
+## Overview
+
+The **.agent/workflows** folder contains Eduardo agent workflows — automated processes for content hydration, extraction, and synchronization. These define how Joey's AI agents process and transform content across systems.
+
+---
+
+## 📁 Contents
+
+| File | Size | Description |
+|------|------|-------------|
+| **eduardo-hydration.yaml** | 7.4KB | Full hydration workflow configuration (YAML) |
+| **eduardo.md** | 944B | Eduardo agent overview and purpose |
+| **extract-breakthrough.md** | 1.6KB | Breakthrough extraction methodology |
+| **sync-to-notion.md** | 1.2KB | Notion synchronization workflow |
+| **wake.md** | 3.0KB | Agent wake/trigger protocols |
+
+---
+
+## 🎯 Key Insights
+
+### Eduardo Agent Purpose
+Eduardo is an AI agent designed for **content transformation and knowledge management**:
+- Hydrates raw content into structured formats
+- Extracts breakthrough insights from conversations
+- Syncs processed content to Notion databases
+- Operates on scheduled wake cycles
+
+### Workflow Architecture
+1. **Hydration** (`eduardo-hydration.yaml`) — The main orchestration file
+2. **Extraction** (`extract-breakthrough.md`) — Pattern recognition for insights
+3. **Sync** (`sync-to-notion.md`) — Destination routing
+4. **Wake** (`wake.md`) — Trigger conditions and scheduling
+
+### Strategic Value
+These workflows represent Joey's **content transformation system** — turning raw drops, chats, and notes into actionable knowledge structures. This is the backend intelligence layer that powers the "second brain" ecosystem.
+
+---
+
+## 🔗 Related Folders
+
+| Folder | Connection |
+|--------|------------|
+| `.agent/state/` | Runtime state storage |
+| `.claude/context/` | Claude-specific context files |
+| `0_VAULT/` | Historical conversation archive |
+| `20260310/` | Recent drops that may feed these workflows |
+
+---
+
+*Research completed: 23:50 UTC*
+**Next researcher action:** Inspect `.claude/context/` for brain state files
+
+---
+
 # Goldmine Index: joey-backup/Ingestion/20260310
 
 *Discovered: 2026-03-17 23:42 UTC by Deep Researcher*
