@@ -237,3 +237,34 @@
 ---
 
 *Reply to this file's email thread for updates. Drop maintains this as the single source of truth for launch decisions.*
+
+---
+
+## Joey's Feedback (Mar 16, 10:28 PM) — APPROVED WITH MODIFICATIONS
+
+### Deliverable #2 EXPANDED: Onboarding Funnel (not just 3 emails)
+
+**Joey's direction:** More than 3 emails. The onboarding should:
+- Collect info from users to build profiles (→ Postgres)
+- Educate on how to use DropAnywhere
+- Entertain (keep them engaged)
+- Ask questions (data collection = better digests)
+- Use varying digest styles (already built in Hub code)
+- Premium users get instant "clarity responses" on drops
+- Include reminders and nudges
+
+**Profile building:** All user data collected during onboarding flows into Postgres profiles. Foundation already exists in Hub.
+
+**Claude Code budget:** Joey on $100 plan, likely upgrading to $200.
+
+**Landing page:** Confirmed — lots of great stuff already built, just trim.
+
+**Storage/flow/lifecycle:** Needs further hashing out. Joey excited: "I can see it all happening and happening well!"
+
+### Updated Deliverables
+
+| Deliverable | Owner | Deadline | Status | Change |
+|-------------|-------|----------|--------|--------|
+| Intelligence Map Email Template | Drop | Mar 20 | ⬜ | No change |
+| Onboarding Funnel (10+ emails) | Drop | Mar 21 | ⬜ | EXPANDED from 3 emails |
+| Static Landing Page | Dropper-Code | Mar 22 | ⬜ | Confirmed, trim existing |
