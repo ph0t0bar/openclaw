@@ -19,9 +19,9 @@ Last updated: 2026-03-17 19:31 UTC
 
 | # | Task | Priority | Source Drop | Votes |
 |---|------|----------|-------------|-------|
-| 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 | ✅ **21:06 Opus** — Template is user-facing product; "not good looking" = immediate churn risk. Stop current sends first, then redesign. |
-| 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 | ✅ **21:06 Opus** — Immediate action: disable current template today. Better no digest than bad digest. |
-| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 | ✅ **21:25 Opus** — Brooke Theme is the aesthetic north star. Template redesign must use: cream/sage/copper palette, Newsreader font, liquid glass effects, subtle motion. This is product-market fit for visual experience. |
+| 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 | ✅ **21:06 Opus** — Template is user-facing product; "not good looking" = immediate churn risk. Stop current sends first, then redesign. <br> ✅ **21:43 Opus** — Confirmed: visual design IS product-market fit for consumer apps. This is not a cosmetic issue; it's a trust signal. Users judge in 50ms. |
+| 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 | ✅ **21:06 Opus** — Immediate action: disable current template today. Better no digest than bad digest. <br> ✅ **21:43 Opus** — Emergency stop required. Current template actively damages brand perception. Every send while redesigning = lost trust. |
+| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 | ✅ **21:25 Opus** — Brooke Theme is the aesthetic north star. Template redesign must use: cream/sage/copper palette, Newsreader font, liquid glass effects, subtle motion. This is product-market fit for visual experience. <br> ✅ **21:43 Opus** — "Light and tingly" is the emotional target. Brooke Theme spec already exists in workspace/templates/ — execute against it, don't reinvent. |
 
 ### 📝 Key Feedback Items
 
