@@ -31,3 +31,24 @@
 - Learning/adaptive AI becomes differentiator
 
 Source: Web search 2026-03-17
+
+## 2026-03-17 18:40 UTC — Mem.ai vs Competition Analysis
+
+### Key Market Insights
+- **Mem.ai dominates personal knowledge management** with AI-first approach
+- **Zero-setup philosophy** is winning vs manual organization (Notion)
+- **Query-based retrieval** ("What did client say about pricing?") is expected UX
+- **Learning AI that adapts to user style** becoming differentiator
+- **Fast search (60% improvement)** drives adoption over feature breadth
+
+### Competitive Gaps
+- Reflect app showing limited 2026 innovation
+- Notion AI strong on collaboration but weaker on personal AI search
+- memU and other agent frameworks targeting developers, not end-users
+
+### Strategic Takeaways for DropAnywhere
+1. AI search speed and accuracy is table stakes
+2. Auto-organization without manual tagging critical
+3. Personal learning/adaptation creates stickiness  
+4. Citation/source linking builds trust
+5. "Second brain" positioning validated by market leader
