@@ -1,30 +1,23 @@
-## Mem.ai 2.0 (2026) - Major Rebuild & Intelligence Boost
+## 2026-03-17 Research: Mem.ai vs Notion AI Competition
 
-**Release:** Early 2026 - complete rebuild for speed, reliability, and intelligence
+### Key Finding: Mem 2.0 as "Parallel Mind" 
+Mem AI has evolved into "Mem 2.0" positioning itself as a "parallel mind" for complex workflows, claiming:
+- **60% faster note finding** with natural language queries
+- **Zero manual organization** (AI auto-connects similar notes)
+- **20%+ productivity gains** reported by users
+- **Smart AI Writer** that learns user writing style
 
-### Key Features
-- **Voice Mode:** Convert speech to organized, searchable notes + meeting transcription
-- **Agentic Chrome Extension:** One-click web capture with auto-organization
-- **Smart Tags:** AI auto-categorization based on semantic meaning
-- **Semantic Search:** Intent-based search (not just keywords) 
-- **Deep Search:** Conversational queries ("that Q3 budget conversation")
-- **Heads Up:** Proactive note resurfacing at relevant moments
-- **Daily Digest:** AI-curated morning summary based on current work
-- **Mem Chat:** GPT-powered assistant querying entire note history with citations
-- **Agentic Chat:** Creates/edits notes based on requests with version history
+### Competitive Positioning
+- **Mem AI**: Excels at AI-powered search and automatic organization
+- **Notion**: Broader all-in-one workspace features but weaker AI search
+- **Reflect**: No current 2026 data available
 
-### Platform Support
-- Mac, Windows, iOS, Web
-- Full offline support with seamless cross-device sync
+### Notable Features (Mem 2.0)
+- Notes Researcher AI with source citations
+- Template creation for consistency
+- Google Calendar integration
+- Summarization of long documents
 
-### Positioning
-- **No manual organization required** - AI handles folder structures automatically
-- **Becomes more useful with messier input** - opposite of traditional note apps
-- Users report **60% reduction in search/recall time**
-
-### Competitive Advantage vs Traditional Tools
-Unlike Notion (manual folder structures), Mem's AI handles organization automatically, making it increasingly valuable for unstructured note-taking.
+**Takeaway**: Mem is doubling down on AI-first note management vs Notion's database/workspace approach. Gap opportunity: Neither seems to offer DropAnywhere's multi-channel ingestion approach.
 
 ---
-*Research date: 2026-03-17 10:58 UTC*
-*Note: Limited 2026 data found for Notion AI and Reflect app comparisons*
