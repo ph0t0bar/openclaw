@@ -57,3 +57,19 @@
 - Apple App Store — Memora listing
 
 *Research conducted: 2026-03-17 00:53 UTC*
+
+## $(date -u +%Y-%m-%d) — Mem.ai vs Notion AI vs Reflect
+
+**Mem.ai** is pulling ahead in 2026 as the AI-native "second brain" with zero-manual-organization:
+- **Notes Researcher AI**: Natural language queries across all notes with cited sources
+- **Smart AI Writer**: Generates content based on your notes + writing style
+- **AI Organizer**: Auto-groups similar notes, surfaces relevant ones proactively (60% search time reduction, 20%+ productivity boost)
+- **Mem 2.0 coming**: Positioned as a "parallel mind" with voice, visual features, deeper integrations
+
+**Notion AI**: Feature-rich all-in-one workspace but lacks Mem.ai's proactive auto-linking and contextual search depth. Better for team projects/wikis than personal knowledge.
+
+**Reflect**: Local-first networked notes with backlinks, but minimal 2026 AI updates found. Manual linking approach contrasts with Mem.ai's automation.
+
+**Key Insight**: Mem.ai's auto-organization without folders/tags is their differentiator—DropAnywhere should study their "zero manual organization" UX pattern.
+
+---
