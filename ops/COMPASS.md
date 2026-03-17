@@ -1,8 +1,10 @@
 # COMPASS — DropAnywhere Strategic North Star
 
-**Version:** 2026-03-16-v1 (Email-Only Pivot)
+**Version:** 2026-03-17-v2 (Onboarding Expansion)
 **Status:** APPROVED by Joey — this supersedes PRD.md for launch decisions
 **Next Review:** Post-launch (Mar 31, 2026)
+
+> ⚠️ **v2 Changes (Joey feedback 03-17 02:43 UTC):** Onboarding sequence expanded beyond 3 emails. See Section 6 below.
 
 ---
 
@@ -25,7 +27,7 @@
 | Deliverable | Owner | Deadline | Status |
 |-------------|-------|----------|--------|
 | Intelligence Map Email Template | Drop | Mar 20 | ⬜ Not started |
-| 3-Email Admission Sequence | Drop | Mar 21 | ⬜ Not started |
+| Expanded Onboarding Sequence (>3 emails) | Drop | Mar 21 | ⬜ Not started |
 | Static Landing Page | Dropper-Code | Mar 22 | ⬜ Not started |
 
 ---
@@ -188,11 +190,49 @@
 
 ---
 
+---
+
+## 6. ONBOARDING SEQUENCE (Joey Modifications — v2)
+
+**Decision:** Onboarding is MORE than 3 emails. Collect user context first.
+
+**Joey's feedback (03-17 02:43 UTC):**
+> "I believe we need to consider more than a 3 email onboarding. We have to collect info from them so we can understand what they need (this is where varying digests will come in handy - the ones we already created and live in hub code). Ideally we educate, entertain, ask questions."
+
+**Updated onboarding philosophy:**
+- **Educate** — teach them how to drop, what the Intelligence Map is, why it works
+- **Entertain** — make them look forward to the next email
+- **Ask questions** — collect context so we know which digest variant to use
+
+**Intelligence Map gate:**
+- Generated and always available once enough drops are collected (not time-gated)
+- Users earn it by dropping, not by waiting
+
+**Digest variants in Hub (existing, to be activated):**
+- Use existing digest type variants already in `opoerator-hub` codebase
+- FeedbackBot to pull list from Hub code — not reinvent this
+
+**Sequence structure (to be designed):**
+1. Welcome + "How to drop" (immediate)
+2. First drop confirmation + what happens next
+3. Educate: "What your Intelligence Map will look like"
+4. Ask: "What are you trying to figure out?" (context collection)
+5. Entertain: Example Intelligence Map + real user story
+6. Engage: "You're almost there — X more drops to unlock your map"
+7. Unlock: First Intelligence Map delivery
+8. Ask again: "Daily or weekly? What topics matter most?"
+- ... (ongoing based on behavior)
+
+**Key constraint:** Sequence must use existing Hub digest variants — don't build new infrastructure.
+
+---
+
 ## Version History
 
 | Date | Version | Change |
 |------|---------|--------|
 | Mar 16 | v1 | Email-only pivot approved |
+| Mar 17 | v2 | Onboarding expanded (Joey feedback) — >3 emails, educate/entertain/ask model, Intelligence Map unlocked by drops |
 
 ---
 
