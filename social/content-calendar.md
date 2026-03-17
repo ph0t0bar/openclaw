@@ -314,6 +314,8 @@
 **Latest Reviews:**
 | Draft | Rating | Status |
 |-------|--------|--------|
+| launch-week-momentum-linkedin-JOEY-VOICE.md | 8.5/10 | ✅ Ready — strong personal hook, good metrics, natural product tie-in. Consider trimming "47 apps" to "40+" |
+| mindset-shift-linkedin-POLISHED.md | 8/10 | ✅ Ready — "Flow beats force" is quotable. Note: shower reference appears in multiple posts, diversify insight moments |
 | stop-rowing-upstream-linkedin-POLISHED.md | 8.5/10 | ✅ Ready — schedule Week 2-3 (March 31/Apr 1). Trim "magical thinking" line, fix CTA |
 | the-captain-metaphor-linkedin-POLISHED.md | 9/10 | ✅ **SCHEDULE MARCH 30** — best vision/transformation post in the library. "Engine room → bridge" metaphor is killer. Strong closer for launch week. |
 | simplicity-wins-linkedin-POLISHED.md | 8.5/10 | ✅ Schedule March 29 afternoon — clean, minimalist. "The best tool is the one you forget you're using" is quotable. |

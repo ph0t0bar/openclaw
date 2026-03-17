@@ -5,7 +5,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 10:59 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (39 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 10:59 UTC)
+### ✅ CURRENTLY ACTIVE AGENTS (38 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 11:33 UTC)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -59,7 +59,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **WEEKLY OPUS SWEEP** — 03:00 Mon UTC — Opus 4 — ⚠️ WhatsApp delivery error (functional)
 - **DROP MINING** — 22:00 Wed/Sat UTC — Kimi K2.5 — ✅ Scheduled
 
-### 🔴 DISABLED AGENTS (17 agents temporarily disabled)
+### 🔴 DISABLED AGENTS (11 agents disabled out of 49 total)
 
 **Backlog Grinder Series** (one-time tasks completed/failed 2026-03-16):
 - DISABLED: Backlog Grinder — LinkedIn Post + Carousel (WhatsApp delivery error)
@@ -101,12 +101,13 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **Agent Consolidation** — Unified Ops Monitor replaces 5 separate monitoring bots (Railway, Stripe, Poe, Patrol, etc.)
 **Backup Systems** — Archivist + Sync Auditor ensuring comprehensive data protection
 
-**GOVERNANCE FINDINGS** (2026-03-17 10:59 UTC): System is operating at 39 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
+**GOVERNANCE FINDINGS** (2026-03-17 11:33 UTC): System is operating at 38 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging active, GitHub backup functional with some timeouts, and launch tracking active with file edit errors.
 
 **Current Issues Requiring Immediate Attention:**
-- **CRITICAL**: Launch Coordinator escalated digest pipeline stall (LAUNCH BLOCKER - only 3 digests sent/24h vs normal 15-20/day)
-- **DocBot** — 2 consecutive timeout errors (180s limit, investigating)
-- **Launch Coordinator** — 1 file edit error on recent run (non-critical)
+- **DocBot** — 2 consecutive timeout errors (180s limit, needs review)
+- **Launch Coordinator** — 1 consecutive error (file edit failure, needs review)
+- **Unified Ops Monitor** — 1 consecutive error (message delivery failed)
+- **Daily GitHub Sync** — 2 consecutive timeout errors (300s limit)
 - **WhatsApp Delivery** — 3 scheduled jobs affected (functional but notifications fail)
 
 **System Health**: Core operations stable with real-time agents (2-15min cycles) all functioning. Email workflow complete and dashboard messaging active. **Launch coordination flagged CRITICAL RISK** due to digest pipeline stall requiring immediate intervention before March 24 launch.
