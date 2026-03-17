@@ -31,10 +31,25 @@
 - Claimed: 60% reduction in search time
 - Positioned as active AI assistant vs manual organization tools
 
-### Reflect App - Status Quo  
-**No 2026 updates found in public sources**
+### Reflect App - March 2026 Update
+**Active development with GPT-4 integration**
 - Pricing: $10/month (no free tier)
-- Focus: AI note-taking similar to Mem
+- Key AI Features:
+  - GPT-4 powered writing suggestions, editing, brainstorming
+  - Conversational AI chat and search across notes
+  - Voice transcription
+  - Automatic backlinks for networked notes ("second brain")
+  - End-to-end encryption (limits some AI to on-device)
+- Platforms: Web, Mac, iOS (no Windows/Android)
+- Position: Privacy-first individual users (journalists, sensitive data)
+- **Gaps:** No team collaboration, limited formatting, no API access
+
+**Competitive Comparison Table:**
+| App | Pricing | Standout AI | Platforms |
+|-----|---------|-------------|-----------|
+| Reflect | $10/mo | GPT-4 chat, voice, backlinks | Web, Mac, iOS |
+| Mem | Free-$10/mo | AI search, meeting briefs | Web, Mac, iOS |
+| Heptabase | $8.99-$17.99 | AI chat, whiteboard AI | Web, Mac, Win, iOS |
 
 ### Key Competitive Insights
 
@@ -63,4 +78,7 @@
 - Superior daily digest UX vs Notion's workspace overwhelm
 
 ---
-*Last updated: March 17, 2026 - 19:31 UTC*
+*Last updated: March 17, 2026 - 20:17 UTC*
+
+## Key Finding - March 17, 2026
+**Reflect app is actively competing with GPT-4 integration** — Previously thought stagnant, Reflect has shipped GPT-4 chat, voice transcription, and maintains its privacy/encryption differentiation. Heptabase emerging as new competitor with whiteboard AI at $8.99/mo. All three (Mem, Reflect, Heptabase) now offer voice capture — gap in DropAnywhere's feature set.
