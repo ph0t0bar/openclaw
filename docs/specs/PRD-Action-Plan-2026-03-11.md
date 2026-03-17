@@ -788,7 +788,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 | BHA weekly visitors (GA) | - | - | **531** | - | **-** | **-** | **-** | **-** | **-** | - |
 | BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | stable |
 | Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **42,770** 🚨 | **39,168** 🚨 | **37,688** 🚨 | -1,480 |
-| Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,379** 🔥 | **37,484** 🔥 | **37,770** 🔥 | +286 |
+| Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,379** 🔥 | **37,484** 🔥 | **37,770** 🔥 | **26,794** | -10,976 |
 | Poe calls/6h | - | - | - | **100** | **100** | **100** | **100** | **100** | **100** | - |
 | Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | **100** | **100** | stable |
 | Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** | **98%** (87/89) | **98%** (98/100) | **98%** (98/100) | ✅ |
@@ -938,7 +938,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-16 23:44 UTC — DocBot metrics refresh. Section 8 updated: DA drops 852 (+7), drops_24h 22 (+4), BHA users 260 (+1), active_7d 68 (-1), Poe balance 36,899 🚨 (still critical, burn 37,827/6h). 🦜*
+*Last auto-refreshed: 2026-03-17 00:26 UTC — DocBot metrics refresh. Section 8 updated: DA drops 858 (+13), drops_24h 28 (+10), active_24h 7 (+1), BHA users 260 (+1), active_24h 7 (+1), Poe balance 36,116 🚨 (still critical, burn down to 26,794/6h). 🦜*
 ted items. 🦜*
 ed items. 🦜*
 *
@@ -958,7 +958,7 @@ ted items. 🦜*
 �*
 ��*
 ��*
-���*
+���*
 ed items. 🦜*
 *
 ���*
@@ -973,3 +973,4 @@ ted items. 🦜*
 *
 *
 ��*
+*
