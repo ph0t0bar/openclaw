@@ -15,8 +15,8 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 
 - **Account:** ph0t0bar
 - **CLI:** Authenticated via `GH_TOKEN` env var
-- **Two PATs in `.env.local`:** `GH_TOKEN` (EXPIRED, bad credentials) + `GITHUB_TOKEN` (ACTIVE, verified 2026-03-15)
-- **Working PAT:** `GITHUB_TOKEN` from `/root/.openclaw/.env.local` — use this one for API calls
+- **Two PATs in `.env.local`:** `GH_TOKEN` (ACTIVE, verified 2026-03-17) + `GITHUB_TOKEN` (EXPIRED, bad credentials)
+- **Working PAT:** `GH_TOKEN` from `/root/.openclaw/.env.local` — use this one for API calls
 - **⚠️ `gh` CLI not installed** — use `curl` with GitHub API directly. The npm `gh` package is NOT GitHub CLI.
 - **Recovery note:** If GITHUB_TOKEN ever expires, check old session transcripts in `/root/.openclaw/agents/main/sessions/` with `grep -o "github_pat_[A-Za-z0-9_]*"`
 - **GitHub API pattern:** `curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/ph0t0bar/REPO/...`
