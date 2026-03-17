@@ -198,6 +198,30 @@
 > So I stopped trying to build a system.
 > I built DropAnywhere instead.
 
+### Saturday — Future Self Letter
+**Time:** 7:00 PM CT (March 28)  
+**Draft:** future-self-letter-linkedin-POLISHED.md ✅ READY
+
+> I wrote myself a letter from the future yesterday.
+>
+> From November 2026. From the version of me that wakes up without the anxiety.
+>
+> Here's what that version wrote back...
+
+*(See draft for full post — personal letter format, closes with launch CTA)*
+
+### Sunday — Simplicity Wins
+**Time:** 3:00 PM CT (March 29)  
+**Draft:** simplicity-wins-linkedin-POLISHED.md ✅ READY
+
+> Every productivity tool promises to fix you.
+>
+> "Just set up these 17 automations."
+>
+> We went the other way.
+>
+> The best productivity tool is the one you forget you're using.
+
 ### Sunday Reflection Post
 **Time:** 6:00 PM CT (March 29)
 
@@ -215,6 +239,22 @@
 > We're building something that thinks with you.
 >
 > drop-anywhere.com
+
+## Day 7 / Post-Launch Monday (March 30)
+
+### The Captain Metaphor
+**Time:** 8:00 AM CT (March 30)  
+**Draft:** the-captain-metaphor-linkedin-POLISHED.md ✅ READY
+
+> I finally got out of my own way.
+>
+> For years I was in the engine room of my own life. Shoveling coal.
+>
+> Now I'm on the bridge. Captain of my own ship. Steering with a single finger while holding coffee.
+>
+> DropAnywhere did that.
+
+*(Strong closing post for launch week — vision, transformation, aspirational)*
 
 ---
 
@@ -275,5 +315,16 @@
 | Draft | Rating | Status |
 |-------|--------|--------|
 | stop-rowing-upstream-linkedin-POLISHED.md | 8.5/10 | ✅ Ready — schedule Week 2-3 (March 31/Apr 1). Trim "magical thinking" line, fix CTA |
+| the-captain-metaphor-linkedin-POLISHED.md | 9/10 | ✅ **SCHEDULE MARCH 30** — best vision/transformation post in the library. "Engine room → bridge" metaphor is killer. Strong closer for launch week. |
+| simplicity-wins-linkedin-POLISHED.md | 8.5/10 | ✅ Schedule March 29 afternoon — clean, minimalist. "The best tool is the one you forget you're using" is quotable. |
+| future-self-letter-linkedin-POLISHED.md | 8/10 | ✅ Schedule March 28 evening — creative letter format stands out. Emotional resonance. Slightly vulnerable but in a good way. |
+| mega-make-email-great-again-linkedin-FINAL.md | 9/10 | ✅ **STRONG CONTENDER** — bold opening ($47B stat), "Make Email Great Again" angle is contrarian + viral. Best for Week 2 (Apr 1-2) when buzz needs sustaining. Don't bury in launch week — save for second wave. |
 
-**Last updated:** March 17, 2026 by SocialBot (02:49 UTC)
+**Coverage Status (UPDATED):** Launch week now has 15 polished posts covering Mar 23 → Mar 30. Cal is overstocked — Joey should pick 1-2 per day max, not all.
+
+**Recommended Posting Density:**
+- Max 2 LinkedIn posts/day (morning + afternoon) to avoid algorithm penalty
+- Prioritize: launch-day-final-REWRITE (9/10) > the-captain-metaphor (9/10) > the-moment-it-clicked (9/10) > mega-make-email (9/10)
+- Twitter/X: 1x daily, shorter punchy versions of each LinkedIn post
+
+**Last updated:** March 17, 2026 by SocialBot (03:55 UTC)
