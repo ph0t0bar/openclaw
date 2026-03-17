@@ -5,7 +5,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 00:43 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (34 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 02:31 UTC)
+### ✅ CURRENTLY ACTIVE AGENTS (34 enabled agents out of 38 total cron jobs - Governance Updated 2026-03-17 08:17 UTC)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -73,16 +73,16 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **Launch Coordination** — Dedicated Launch Coordinator tracking March 24 soft launch (8 days remaining)
 **Agent Consolidation** — Unified Ops Monitor replaces separate monitoring bots
 
-**GOVERNANCE FINDINGS** (2026-03-17 07:08 UTC): System is operating at 34 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
+**GOVERNANCE FINDINGS** (2026-03-17 08:17 UTC): System is operating at 34 enabled agents out of 38 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
 
 **Current Issues Requiring Attention:**
-- **Governance Agent** — 2 consecutive timeouts (this session resolving)
-- **PatternBot** — OpenRouter billing error (Kimi K2.5 credits depleted)
-- **SpecBot** — 1 timeout error on last run
-- **WhatsApp Delivery Issues** — 3 scheduled jobs functional but notification delivery fails
-- **OpenRouter Credits** — Multiple agents affected by Kimi K2.5 billing issues
+- **OnboardBot** — 1 timeout error on last run (timeout after 180s, non-critical)
+- **Daily GitHub Sync** — WhatsApp delivery error but job functional
+- **Weekly Full Refresh** — WhatsApp delivery error but job functional  
+- **Weekly Opus Sweep** — WhatsApp delivery error but job functional
+- **Critical Digest Pipeline** — Only 3 digests sent in 24h (normally 15-20/day), launch-blocking issue escalated
 
-**System Health**: Core operations stable with real-time agents (2-15min cycles) all functioning. Email workflow complete and dashboard messaging active. Launch coordination on track for March 24.
+**System Health**: Core operations stable with real-time agents (2-15min cycles) all functioning. Email workflow complete and dashboard messaging active. Launch coordination on track for March 24, but digest pipeline stall requires immediate attention.
 
 **Operations Dept (4/4 active):**
 - ✅ Patrol (5min Kimi) — 3 cycles today (errors but running)
@@ -146,10 +146,10 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Daily GitHub Sync** successful (last: 11:00 UTC)
 - **All real-time agents** (2min-30min cycles) operating normally
 
-## System Status (March 17 02:01 UTC - GOVERNANCE UPDATED)
+## System Status (March 17 08:17 UTC - GOVERNANCE UPDATED)
 
 ### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem  
-**Current Status**: 34 enabled agents (of 49 total cron jobs) with comprehensive email workflow and operations coverage
+**Current Status**: 34 enabled agents (of 38 total cron jobs) with comprehensive email workflow and operations coverage
 **Architecture**: Full-stack operations including automated email workflows, dashboard messaging, and proactive monitoring
 **Performance**: Stable operations with proper HITL controls and escalation paths
 
@@ -169,10 +169,10 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 ✅ PRD maintenance automated with Launch Coordinator oversight
 
 **Current Issues**:
-🔥 **Poe Balance Depletion** — 35,363 points, burning 24,303/6h, ~8.7 hours to zero (CRITICAL)
-⚠️ **Digest Pipeline Stalled** — 3 digests in 24h (should be ~30-40 for 101 users)
-⚠️ **WhatsApp delivery failures** on some scheduled jobs (functionality intact, notifications fail)
-ℹ️ **5 agents disabled** — PoeBot, Wire, StripeBot, RailwayBot, Dropper-Code Manager consolidated/disabled
+🚨 **Digest Pipeline Stalled** — Only 3 digests sent in 24h (normally 15-20/day), LAUNCH-BLOCKING issue
+⚠️ **WhatsApp delivery failures** on 3 scheduled jobs (functionality intact, notifications fail)
+⚠️ **OnboardBot timeout** — 1 timeout error on last run (non-critical)
+✅ **Poe Balance Recovered** — 282,276 points (healthy level restored)
 
 ## Three Core Laws (Unchanged)
 
@@ -206,8 +206,8 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **DropAnywhere Frontend**: https://drop-anywhere.com
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
-## Success Metrics (March 17 02:31 UTC - CONSTITUTION REALITY CHECK)  
-- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 34 enabled agents out of 49 total cron jobs)
+## Success Metrics (March 17 08:17 UTC - CONSTITUTION REALITY CHECK)  
+- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 34 enabled agents out of 38 total cron jobs)
 - **Department Coverage**: Target 100% (✅ Current: All departments operational + full email workflow automation)
 - **Launch Readiness**: Target March 24 (✅ Launch Coordinator actively tracking, 8 days remaining)
 - **Email Automation**: Target 100% (✅ Complete workflow: auto-ack, decision routing, creative review, morning briefs)
