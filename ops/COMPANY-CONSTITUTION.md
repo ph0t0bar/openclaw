@@ -3,9 +3,9 @@
 ## Mission
 Build and operate DropAnywhere: an AI-native productivity ecosystem including email-first capture, daily digests, BrutallyHonest.ai persona marketplace, and personal AI assistant infrastructure.
 
-## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-16 23:39 UTC)
+## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 00:43 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (38 total agents - Mature operational system)
+### ✅ CURRENTLY ACTIVE AGENTS (34 enabled agents out of 49 total cron jobs - Mature operational system)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -68,11 +68,12 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ### ✅ RECENT SYSTEM IMPROVEMENTS
 
-**Agent Consolidation** — Unified Ops Monitor now replaces 5 separate monitoring bots
-**Email Operations** — Full email workflow with Auto-Ack, DecisionBot, FeedbackBot, and Creative Review
-**Launch Coordination** — Dedicated Launch Coordinator tracking critical path to March 24 soft launch
+**Email Automation** — Complete workflow: Auto-Ack (2min), DecisionBot (10min), FeedbackBot (2h), Task Approvals (2h), Creative Review (4h), Morning Brief (daily)
+**Dashboard Integration** — Real-time messaging via joey-backup GitHub (Dashboard Messenger every 2min)
+**Launch Coordination** — Dedicated Launch Coordinator tracking March 24 soft launch (8 days remaining)
+**Agent Consolidation** — Unified Ops Monitor replaces separate monitoring bots
 
-**GOVERNANCE FINDINGS** (2026-03-16 22:31 UTC): System has evolved into a mature 37-agent ecosystem. The agent company architecture is fully operational with specialized departments, clear escalation paths, and automated workflows. Key improvements: consolidated monitoring, comprehensive email operations, launch coordination, and proactive backup systems. Core operations are stable with proper HITL controls in place.
+**GOVERNANCE FINDINGS** (2026-03-17 00:43 UTC): System has stabilized at 34 active agents out of 49 total cron jobs. Full email workflow operational, comprehensive GitHub backup via Archivist, and proactive monitoring. Key operational improvements: dashboard messaging, automated email threading, launch tracking, and consolidated monitoring. Launch preparation on track with 8 days remaining.
 
 **Operations Dept (4/4 active):**
 - ✅ Patrol (5min Kimi) — 3 cycles today (errors but running)
@@ -136,10 +137,10 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Daily GitHub Sync** successful (last: 11:00 UTC)
 - **All real-time agents** (2min-30min cycles) operating normally
 
-## System Status (March 17 00:10 UTC - GOVERNANCE UPDATED)
+## System Status (March 17 00:43 UTC - GOVERNANCE UPDATED)
 
 ### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem  
-**Current Status**: 38 active agents with comprehensive email workflow and operations coverage
+**Current Status**: 34 enabled agents (of 49 total cron jobs) with comprehensive email workflow and operations coverage
 **Architecture**: Full-stack operations including automated email workflows, dashboard messaging, and proactive monitoring
 **Performance**: Stable operations with proper HITL controls and escalation paths
 
@@ -159,9 +160,10 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 ✅ PRD maintenance automated with Launch Coordinator oversight
 
 **Current Issues**:
+🔥 **Poe Balance Depletion** — 35,363 points, burning 24,303/6h, ~8.7 hours to zero (CRITICAL)
+⚠️ **Digest Pipeline Stalled** — 3 digests in 24h (should be ~30-40 for 101 users)
 ⚠️ **WhatsApp delivery failures** on some scheduled jobs (functionality intact, notifications fail)
-⚠️ **OnboardBot timeout** — needs cycle time optimization
-ℹ️ **Legacy agents removed** — Patrol, RailwayBot, StripeBot consolidated into Unified Ops Monitor
+ℹ️ **5 agents disabled** — PoeBot, Wire, StripeBot, RailwayBot, Dropper-Code Manager consolidated/disabled
 
 ## Three Core Laws (Unchanged)
 
@@ -195,8 +197,8 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **DropAnywhere Frontend**: https://drop-anywhere.com
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
-## Success Metrics (March 17 00:10 UTC - CONSTITUTION REALITY CHECK)  
-- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 38 active agents with comprehensive coverage)
+## Success Metrics (March 17 00:43 UTC - CONSTITUTION REALITY CHECK)  
+- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 34 enabled agents out of 49 total cron jobs)
 - **Department Coverage**: Target 100% (✅ Current: All departments operational + full email workflow automation)
 - **Launch Readiness**: Target March 24 (✅ Launch Coordinator actively tracking, 7 days remaining)
 - **Email Automation**: Target 100% (✅ Complete workflow: auto-ack, decision routing, creative review, morning briefs)
