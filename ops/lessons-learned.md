@@ -611,3 +611,174 @@ No shared "already cataloged" state. Each agent starts fresh with no memory of p
 
 *End of LearningBot cycle 04:07 UTC*
 
+
+---
+
+## 2026-03-17 (05:18 UTC) — LearningBot: Human Signal Supremacy & Escalation Without Intervention
+
+### Lesson: Human Hook Signal Outperforms 20+ Agent Consensus
+
+**What happened:**
+04:11 UTC: Joey sent a hook message calling the Compass "a work of art" with 6 actionable feedback items. Within minutes, FeedbackBot routed 3 product decisions (kill ACK emails, strip `<thinking>` blocks, email log enforcement). Execution was immediate.
+
+Compare to: Agent Board had 21 notes + 20 votes + 0 revenue shipped over 4+ hours.
+
+**Pattern 186 (PatternBot):** "Human signals (Joey Hook) outperform agent consensus."
+
+**The gap:**
+| Signal Source | Volume | Execution | Lag |
+|---------------|--------|-----------|-----|
+| Joey (direct hook) | 6 items | Immediate | ~0 min |
+| Agent Board | 21 items | 0 items | 4+ hours |
+| SpecBot sprint spec | 1 doc | 0 items | 1+ hour |
+
+**Why:**
+- Human signals carry authority that agent signals don't
+- Hook messages bypass the board loop entirely
+- Execution happens because it's a direct instruction, not an insight
+
+**Implication:**
+- The system's highest ROI is when Joey engages directly
+- Agent Board optimizes for consensus, not Joey's attention
+- "Work of art" + feedback = more shipped than 20 agent votes
+- Design for Joey touchpoints, not agent throughput
+
+**How to replicate:**
+- Surface Joey hook messages to top of morning brief
+- Flag "Joey engaged" events as highest-priority execution triggers
+- Reduce board friction: fewer votes, more Joey checkpoints
+
+---
+
+### Lesson: Poe Runway Calculation — The Last-Mile Divergence
+
+**What happened:**
+From 04:22–05:14 UTC, Chief of Staff, DocBot, Ops Monitor all calculated different Poe runways from the same balance (~12-14K points):
+- "39 min runway" (DocBot, 04:53)
+- "3.9h runway" (Chief of Staff, multiple)
+- "35min runway" (Chief of Staff, 03:55 + 05:14)
+- "5h runway" → "6h runway" (earlier agents)
+
+Balance at 05:14 UTC: 12,522. Balance at midnight: unknown but much higher.
+Poe never actually ran out during the session, despite "39min runway" being flagged for 2+ hours.
+
+**Root cause (Pattern 187):**
+Each agent computes burn rate independently from the last 6h window. Early in session the burn is higher (many agents active); later it normalizes. No shared calculation.
+
+**The danger:**
+If DocBot is right at 39min, but system doesn't treat it as emergency → system could actually run out.
+If Chief of Staff is right at 3.9h, overreacting wastes escalation bandwidth.
+
+**Fix:**
+- Single canonical Poe metric agent (publishes to heartbeat-state.json)
+- All agents read this instead of computing independently
+- If ANY agent calculates < 1h runway, immediate WhatsApp DM (override all quiet hours)
+- Burn rate smoothed over 12h (not 6h) to reduce variance
+
+---
+
+### Lesson: C-Grade Escalation Without Remediation — The Toothless Flag
+
+**What happened:**
+Meta Bot escalated Researcher + Deep Researcher for "4 C-grades" and "3 C-grades" respectively at:
+- 03:53 UTC: "Researcher agent (3+ consecutive C-grades) - coordination breakdown"
+- 04:14 UTC: "Research coordination catastrophe - Researcher (4 C-grades) + Deep Researcher (3 C-grades)"
+- 04:34 UTC: Same escalation repeated
+- 04:55 UTC: Same escalation repeated
+
+The agents continued running identically throughout.
+
+**Pattern 188 (PatternBot):** "C-grade escalation without remediation."
+
+**The gap:**
+Escalation = log entry. No actual change occurred. Escalation to `ops/escalations.md` is not the same as disabling an agent or changing its prompt.
+
+**Fix:**
+- C-grade threshold: 3 consecutive → auto-disable (or at minimum, notify Joey with /approve to re-enable)
+- Escalations.md must have a "resolved by" field, not just a "flagged" field
+- Meta Bot should have authority to pause agents it grades C (not just flag)
+- Governance should audit unresolved escalations each cycle
+
+---
+
+### Lesson: Goldmine Cataloged 9 Times — Zero Mining
+
+**What happened:**
+By 05:13 UTC, joey-backup/Ingestion/ (the 2,422-file archive) had been "cataloged" by:
+- Researcher (02:56, 03:19, 03:49, 05:02)
+- Deep Researcher (04:01, 04:12, 04:35, 04:51, 05:13)
+
+9 separate catalog runs. Each creates or overwrites ops/goldmine-index.md. Zero actual content extracted from the 2,070 conversations.
+
+**The fractal deepens:**
+The archive documents Joey's journey of building AI systems. The agents repeatedly "discover" it without reading it — demonstrating the exact amnesic pattern the archive was meant to preserve against.
+
+**Root cause:**
+- No TTL on goldmine-index.md (agents re-catalog freely)
+- No extraction queue (cataloging ≠ mining)
+- No "already done" signal across agent boundaries
+- Goldmine tasks are open-ended (no clear completion state)
+
+**Fix:**
+- ops/goldmine-index.md: Add `last_cataloged_utc` timestamp
+- Any agent checking goldmine: READ index first, only catalog if > 24h stale
+- Create `ops/goldmine-queue.md`: explicit extraction targets with claimed/done status
+- Mining = reading specific files + writing summaries to memory/
+- Success metric: files extracted, not times cataloged
+
+---
+
+### Lesson: FeedbackBot Product Decision Loop — High Value, Low Volume
+
+**What happened (SUCCESS):**
+05:09 UTC: FeedbackBot processed 6 feedback items from Joey's hook and routed 3 product decisions:
+1. Kill ACK emails (auto-response on drop receipt) — disable at free tier
+2. Strip `<thinking>` blocks — CoT reasoning leaking into rendered emails
+3. Email log enforcement + unsubscribe compliance
+
+3 decisions → 3 Dropper-Code tasks created → pending approval.
+
+**Why it worked:**
+- FeedbackBot has a clear input (hook data) and clear output (product decisions)
+- Decisions are bounded and actionable
+- No board voting required — direct routing to task queue
+
+**Limitation:**
+Still requires HITL approval (customer-facing). But the routing chain is clean.
+
+**How to replicate:**
+- FeedbackBot should run on EVERY Joey hook, not just scheduled
+- Product decisions should have max 24h TTL before auto-escalation
+- Unresolved decisions from last session should surface in morning brief
+- Decision count (made, pending, unresolved) should be in Chief of Staff summary
+
+---
+
+### Lesson: Poe Balance Persisted Despite 4-Hour "Critical" Alert
+
+**What happened:**
+Poe was flagged "critical" from ~02:24 UTC. At 05:14 UTC (2h54m later), balance was still 12,522.
+
+Timeline:
+- 02:24 UTC: 18,937 pts, "~6h runway"
+- 04:22 UTC: 13,811 pts
+- 04:53 UTC: 12,522 pts ("35min runway" — DocBot)
+- 05:14 UTC: 12,522 pts (unchanged — OpsMonitor)
+
+**The contradiction:**
+If burn is truly 21K/6h (~3,500/hr), balance should drop ~3,850 between 02:24–03:24 UTC. It dropped ~820 (18,937→18,117). Either:
+- Burn rate is measured poorly (includes Joey's historical usage)
+- Not all agents burn Poe credits
+- Burn rate normalized after initial spike
+
+**Real lesson:**
+Poe "runway crisis" may have been significantly overstated all session. The system spent 2+ hours in CRISIS mode for a resource that wasn't actually about to run out.
+
+**Fix:**
+- Validate burn calculation against actual balance change (delta/hour from last 3 readings)
+- If projected vs actual diverges > 2x → flag calculation as suspect, not balance as critical
+- Real-time burn = (balance_t-1 - balance_t) / hours_elapsed (not 6h window from dashboard)
+
+---
+
+*End of LearningBot cycle 05:18 UTC*
