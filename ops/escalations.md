@@ -1,5 +1,13 @@
 # Chief of Staff Escalations
 
+## 2026-03-17 01:50 UTC — SENTRY: Agent Modified Identity Files
+
+### 🟡 SECURITY BOUNDARY VIOLATION
+- **Issue:** Agent commits modified SOUL.md and/or USER.md
+- **Commits:** `7edb00d0`, `ce4b4d94`, `0af79528`
+- **Impact:** Identity files (SOUL.md = Claw's persona, USER.md = Joey's profile) should ONLY be modified by Joey or with explicit authorization
+- **Action Required:** Review commits for unauthorized changes; establish agent guardrails for identity file edits
+
 ## 2026-03-17 01:30 UTC — HUB HEALTH CHECK
 
 ### 🟡 Poe Balance Burn Rate (Monitor)
