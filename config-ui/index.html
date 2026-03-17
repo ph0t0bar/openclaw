@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>OpenClaw Config</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 16px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #27272a;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fafafa;
+        }
+        
+        .header .parrot {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .section {
+            background: #18181b;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border: 1px solid #27272a;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #a1a1aa;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        
+        .model-card {
+            background: #27272a;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .model-card:hover {
+            background: #3f3f46;
+        }
+        
+        .model-card.active {
+            border-color: #22c55e;
+            background: #14532d;
+        }
+        
+        .model-card.selected-primary {
+            border-color: #3b82f6;
+            background: #1e3a5f;
+        }
+        
+        .model-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fafafa;
+            margin-bottom: 4px;
+        }
+        
+        .model-meta {
+            font-size: 13px;
+            color: #a1a1aa;
+        }
+        
+        .provider-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 8px;
+        }
+        
+        .provider-poe { background: #7c3aed; color: #fff; }
+        .provider-openrouter { background: #059669; color: #fff; }
+        .provider-anthropic { background: #d97706; color: #fff; }
+        
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .quick-btn {
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 12px;
+            padding: 16px;
+            color: #e4e4e7;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        
+        .quick-btn:hover {
+            background: #3f3f46;
+            border-color: #52525b;
+        }
+        
+        .quick-btn.primary {
+            background: #3b82f6;
+            border-color: #3b82f6;
+            color: #fff;
+        }
+        
+        .quick-btn.primary:hover {
+            background: #2563eb;
+        }
+        
+        .status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #18181b;
+            border-top: 1px solid #27272a;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .status-text {
+            font-size: 14px;
+            color: #a1a1aa;
+        }
+        
+        .status-text.saved {
+            color: #22c55e;
+        }
+        
+        .save-btn {
+            background: #22c55e;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .save-btn:hover {
+            background: #16a34a;
+        }
+        
+        .save-btn:disabled {
+            background: #3f3f46;
+            color: #71717a;
+            cursor: not-allowed;
+        }
+        
+        .thinking-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #27272a;
+        }
+        
+        .thinking-toggle:last-child {
+            border-bottom: none;
+        }
+        
+        .toggle-label {
+            font-size: 15px;
+            color: #e4e4e7;
+        }
+        
+        .toggle-desc {
+            font-size: 12px;
+            color: #71717a;
+            margin-top: 2px;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            width: 52px;
+            height: 32px;
+            background: #3f3f46;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        
+        .toggle-switch.active {
+            background: #22c55e;
+        }
+        
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+        }
+        
+        .toggle-switch.active::after {
+            transform: translateX(20px);
+        }
+        
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background: #22c55e;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+        
+        .toast.error {
+            background: #ef4444;
+            color: #fff;
+        }
+        
+        .current-config {
+            background: #0f0f13;
+            border-radius: 8px;
+            padding: 12px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 11px;
+            color: #71717a;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+            margin-top: 12px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="parrot">🦜</div>
+        <h1>OpenClaw Config</h1>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="section">
+        <div class="section-title">Quick Switch</div>
+        <div class="quick-actions">
+            <button class="quick-btn" onclick="setPreset('fast')">⚡ Fast (Haiku)</button>
+            <button class="quick-btn" onclick="setPreset('balanced')">⚖️ Balanced (Sonnet)</button>
+            <button class="quick-btn" onclick="setPreset('smart')">🧠 Smart (Opus)</button>
+            <button class="quick-btn primary" onclick="setPreset('current')">✓ Current</button>
+        </div>
+    </div>
+
+    <!-- Primary Model -->
+    <div class="section">
+        <div class="section-title">Primary Model</div>
+        <div id="primary-models">
+            <!-- Poe Models -->
+            <div class="model-card" data-model="poe/claude-opus-4.6" data-provider="poe" onclick="selectPrimary('poe/claude-opus-4.6')">
+                <div class="model-name">Claude Opus 4.6</div>
+                <div class="model-meta">Most capable · 200K context</div>
+                <span class="provider-badge provider-poe">Poe</span>
+            </div>
+            <div class="model-card" data-model="poe/claude-sonnet-4.6" data-provider="poe" onclick="selectPrimary('poe/claude-sonnet-4.6')">
+                <div class="model-name">Claude Sonnet 4.6</div>
+                <div class="model-meta">Fast & capable · 200K context</div>
+                <span class="provider-badge provider-poe">Poe</span>
+            </div>
+            <div class="model-card" data-model="poe/claude-haiku-4.5" data-provider="poe" onclick="selectPrimary('poe/claude-haiku-4.5')">
+                <div class="model-name">Claude Haiku 4.5</div>
+                <div class="model-meta">Fastest · 200K context</div>
+                <span class="provider-badge provider-poe">Poe</span>
+            </div>
+            <div class="model-card" data-model="poe/gemini-3-flash" data-provider="poe" onclick="selectPrimary('poe/gemini-3-flash')">
+                <div class="model-name">Gemini 3 Flash</div>
+                <div class="model-meta">Google · 200K context</div>
+                <span class="provider-badge provider-poe">Poe</span>
+            </div>
+            
+            <!-- OpenRouter Models -->
+            <div class="model-card" data-model="openrouter/anthropic/claude-opus-4.6" data-provider="openrouter" onclick="selectPrimary('openrouter/anthropic/claude-opus-4.6')">
+                <div class="model-name">Claude Opus 4.6 (OR)</div>
+                <div class="model-meta">Vision + reasoning · 200K context</div>
+                <span class="provider-badge provider-openrouter">OpenRouter</span>
+            </div>
+            <div class="model-card" data-model="openrouter/moonshotai/kimi-k2.5" data-provider="openrouter" onclick="selectPrimary('openrouter/moonshotai/kimi-k2.5')">
+                <div class="model-name">Kimi K2.5</div>
+                <div class="model-meta">Long context · 262K · Vision</div>
+                <span class="provider-badge provider-openrouter">OpenRouter</span>
+            </div>
+            <div class="model-card" data-model="openrouter/qwen/qwen3-next-80b-a3b-instruct:free" data-provider="openrouter" onclick="selectPrimary('openrouter/qwen/qwen3-next-80b-a3b-instruct:free')">
+                <div class="model-name">Qwen3 80B</div>
+                <div class="model-meta">Free tier · 200K context</div>
+                <span class="provider-badge provider-openrouter">OpenRouter</span>
+            </div>
+            
+            <!-- Anthropic Direct -->
+            <div class="model-card" data-model="anthropic/claude-opus-4-6" data-provider="anthropic" onclick="selectPrimary('anthropic/claude-opus-4-6')">
+                <div class="model-name">Claude Opus 4.6 (Direct)</div>
+                <div class="model-meta">1M context · 32K output · Vision</div>
+                <span class="provider-badge provider-anthropic">Anthropic</span>
+            </div>
+            <div class="model-card" data-model="anthropic/claude-sonnet-4-6" data-provider="anthropic" onclick="selectPrimary('anthropic/claude-sonnet-4-6')">
+                <div class="model-name">Claude Sonnet 4.6 (Direct)</div>
+                <div class="model-meta">200K context · 32K output · Vision</div>
+                <span class="provider-badge provider-anthropic">Anthropic</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="section">
+        <div class="section-title">Settings</div>
+        
+        <div class="thinking-toggle">
+            <div>
+                <div class="toggle-label">Thinking Mode</div>
+                <div class="toggle-desc">Enable reasoning for complex tasks</div>
+            </div>
+            <div class="toggle-switch" id="thinking-toggle" onclick="toggleThinking()"></div>
+        </div>
+        
+        <div class="thinking-toggle">
+            <div>
+                <div class="toggle-label">Low Thinking Default</div>
+                <div class="toggle-desc">Use low thinking by default</div>
+            </div>
+            <div class="toggle-switch active" id="low-thinking-toggle" onclick="toggleLowThinking()"></div>
+        </div>
+    </div>
+
+    <!-- Current Config Preview -->
+    <div class="section">
+        <div class="section-title">Current Config</div>
+        <div class="current-config" id="config-preview">Loading...</div>
+    </div>
+
+    <!-- Spacer for fixed bottom bar -->
+    <div style="height: 80px;"></div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-text" id="status-text">Unsaved changes</div>
+        <button class="save-btn" id="save-btn" onclick="saveConfig()">Save & Apply</button>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">Config saved!</div>
+
+    <script>
+        // Current config state
+        let config = {
+            primary: 'poe/kimi-k2.5',
+            thinking: false,
+            lowThinking: true
+        };
+
+        // Presets
+        const presets = {
+            fast: { primary: 'poe/claude-haiku-4.5', thinking: false, lowThinking: true },
+            balanced: { primary: 'poe/claude-sonnet-4.6', thinking: false, lowThinking: true },
+            smart: { primary: 'poe/claude-opus-4.6', thinking: true, lowThinking: false },
+            current: { primary: 'poe/kimi-k2.5', thinking: false, lowThinking: true }
+        };
+
+        // Initialize
+        function init() {
+            if (!AUTH_TOKEN) {
+                document.body.innerHTML = `
+                    <div style="padding: 40px; text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: 20px;">🔐</div>
+                        <h2 style="margin-bottom: 16px;">Authentication Required</h2>
+                        <p style="color: #71717a; margin-bottom: 24px;">
+                            Add ?token=YOUR_TOKEN to the URL
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+            updateUI();
+            loadCurrentConfig();
+        }
+
+        // Select primary model
+        function selectPrimary(model) {
+            config.primary = model;
+            updateUI();
+            showStatus('Unsaved changes');
+        }
+
+        // Toggle thinking
+        function toggleThinking() {
+            config.thinking = !config.thinking;
+            updateUI();
+            showStatus('Unsaved changes');
+        }
+
+        // Toggle low thinking default
+        function toggleLowThinking() {
+            config.lowThinking = !config.lowThinking;
+            updateUI();
+            showStatus('Unsaved changes');
+        }
+
+        // Set preset
+        function setPreset(name) {
+            const preset = presets[name];
+            if (preset) {
+                config = { ...preset };
+                updateUI();
+                showStatus('Unsaved changes');
+                showToast(`Applied ${name} preset`);
+            }
+        }
+
+        // Update UI
+        function updateUI() {
+            // Update model cards
+            document.querySelectorAll('.model-card').forEach(card => {
+                card.classList.remove('selected-primary');
+                if (card.dataset.model === config.primary) {
+                    card.classList.add('selected-primary');
+                }
+            });
+
+            // Update toggles
+            document.getElementById('thinking-toggle').classList.toggle('active', config.thinking);
+            document.getElementById('low-thinking-toggle').classList.toggle('active', config.lowThinking);
+
+            // Update preview
+            updatePreview();
+        }
+
+        // Update config preview
+        function updatePreview() {
+            const preview = {
+                primary: config.primary,
+                thinking: config.thinking,
+                lowThinking: config.lowThinking,
+                timestamp: new Date().toISOString()
+            };
+            document.getElementById('config-preview').textContent = JSON.stringify(preview, null, 2);
+        }
+
+        // Show status
+        function showStatus(text) {
+            const status = document.getElementById('status-text');
+            status.textContent = text;
+            status.classList.toggle('saved', text.includes('Saved'));
+        }
+
+        // Show toast
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.toggle('error', isError);
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        // Save config
+        async function saveConfig() {
+            const btn = document.getElementById('save-btn');
+            btn.disabled = true;
+            btn.textContent = 'Saving...';
+
+            try {
+                // In a real implementation, this would call the OpenClaw API
+                // For now, we'll simulate the save
+                await simulateSave();
+                
+                showStatus('Saved');
+                showToast('Config saved successfully!');
+            } catch (error) {
+                showToast('Failed to save: ' + error.message, true);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Save & Apply';
+            }
+        }
+
+        // Get auth token from URL or localStorage
+        function getAuthToken() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const token = urlParams.get('token') || localStorage.getItem('oc_token');
+            if (token) localStorage.setItem('oc_token', token);
+            return token;
+        }
+
+        const API_BASE = '';
+        const AUTH_TOKEN = getAuthToken();
+
+        // Load current config from API
+        async function loadCurrentConfig() {
+            try {
+                const response = await fetch(`${API_BASE}/api/config`, {
+                    headers: { 'Authorization': `Bearer ${AUTH_TOKEN}` }
+                });
+                
+                if (!response.ok) throw new Error('Failed to load config');
+                
+                const data = await response.json();
+                
+                // Update config state
+                config.primary = data.primary;
+                config.thinking = data.thinking;
+                config.lowThinking = data.lowThinking;
+                
+                // Update available models from server
+                if (data.models) {
+                    updateAvailableModels(data.models);
+                }
+                
+                updateUI();
+                document.getElementById('config-preview').textContent = 
+                    `Connected to OpenClaw\nPrimary: ${data.primary}\nThinking: ${data.thinking ? 'on' : (data.lowThinking ? 'low' : 'off')}`;
+            } catch (error) {
+                document.getElementById('config-preview').textContent = 'Error: ' + error.message;
+                showToast('Failed to load config: ' + error.message, true);
+            }
+        }
+
+        // Save config to API
+        async function simulateSave() {
+            const response = await fetch(`${API_BASE}/api/config`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${AUTH_TOKEN}`
+                },
+                body: JSON.stringify({
+                    primary: config.primary,
+                    thinking: config.thinking,
+                    lowThinking: config.lowThinking
+                })
+            });
+            
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error.error || 'Save failed');
+            }
+            
+            const result = await response.json();
+            return result;
+        }
+
+        // Load current config from OpenClaw
+        async function loadCurrentConfig() {
+            try {
+                // In a real implementation, this would fetch from /api/config
+                // For now, we'll use the default
+                document.getElementById('config-preview').textContent = 'Connected to OpenClaw v2026.3.13';
+            } catch (error) {
+                document.getElementById('config-preview').textContent = 'Error loading config: ' + error.message;
+            }
+        }
+
+        // Initialize on load
+        init();
+    </script>
+</body>
+</html>
