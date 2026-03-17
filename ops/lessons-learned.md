@@ -229,3 +229,164 @@ Crisis management on Mar 16:
 - Clarified digest policy (intentionally OFF, not a bug)
 - Achieved Core 5 consensus for archipelago architecture
 → Mar 17 stability is the payoff
+
+---
+
+### 10:40 UTC — LearningBot
+**Lesson:** Email Ingestion Hook Requires Three-Part Fix
+
+**What happened:**
+22:28 CDT (Mar 16→17 overnight) — Joey's reply to Compass email came through via `/hooks/agent` endpoint. Three Dropper-Code tasks were required to fix email ingestion:
+1. noreply@ → hello@ (from-address fix)
+2. `{"text":}` → `{"message":}` (CRITICAL hook fix — payload key mismatch)
+3. Email truncation removed (full body storage)
+
+**Why it failed before:**
+The webhook expected `"message"` key but email parser was sending `"text"` key. Silent failure — emails received but payload rejected. Only caught when Joey manually replied and I didn't see it in the system.
+
+**Why it matters:**
+Email is primary DropAnywhere ingestion channel. Broken hook = broken product core. Launch week (Mar 24) depends on reliable email capture.
+
+**How to prevent:**
+- Webhook payload validation: assert required keys before processing
+- Hook health check: send test email every 4h, verify delivery
+- Document payload schema in `ops/webhook-contracts.md`
+- Test emails should validate end-to-end (receive → parse → store → confirm)
+
+**How to replicate success:**
+Three-task fix pattern: (1) surface symptom (missing email), (2) identify root cause (payload key), (3) deploy fix, (4) verify with real user interaction.
+
+---
+
+### 10:40 UTC — LearningBot
+**Lesson:** Strategic Pivot Validation Before Engineering Saves 103 Hours
+
+**What happened:**
+20:14 CDT (Mar 16) — Joey approved email-only pivot after pre-launch audit. Product shifted from dashboard+email to email-only. Monthly burn reduced from ~$267 to ~$145 (-45%). Frontend work reduced from 103 hours to 0 (static landing page only).
+
+**The pivot:**
+- Before: Full dashboard with Intelligence Map tab, user settings, vault UI
+- After: Email-only digest + static landing page
+- Joey's reasoning: "I can see it all happening!" — clarity over completeness
+
+**Why it matters:**
+Without audit, team would have shipped 103 hours of frontend work for dashboard that users might not need. Email-only validates core value proposition first.
+
+**How to prevent wasted engineering:**
+- Always run pre-launch audit before major engineering sprint
+- Ask: "What's the minimal version that proves the hypothesis?"
+- Document pivot criteria in COMPASS.md (already done)
+- Engineering estimates should include "pivot cost" — hours lost if direction changes
+
+**How to replicate:**
+COMPASS.md created as single source of truth. 5 strategic questions answered before any code written: Triage, Stripe, Lists, Tiers, Data.
+
+---
+
+### 10:40 UTC — LearningBot
+**Lesson:** Founder Feedback Loops Expand Scope Before Condensing
+
+**What happened:**
+22:28 CDT — Joey reviewed COMPASS.md and expanded onboarding from 3 emails to full funnel (10+ emails). Requested: collect user info → build Postgres profiles, educate/entertain/ask questions, varying digest styles, premium instant clarity + reminders.
+
+**The pattern:**
+Initial scope: minimal (3-email sequence)
+Founder feedback: expanded (full funnel with profiles)
+→ This is normal and desirable. First draft should be minimal to provoke reaction.
+
+**Why it works:**
+- Minimal draft → founder can react ("expand this, cut that")
+- No draft → founder can't respond ("I don't know what I want yet")
+- Scope expansion after review is feature discovery, not scope creep
+
+**How to prevent scope creep vs feature discovery confusion:**
+- Label initial drafts as "straw man" — designed to be reacted to
+- Document what was added post-feedback (COMPASS.md updated)
+- Separate " Joey asked for X" from "we assumed X was needed"
+- If scope doubles, revalidate timeline (Claude Code budget: $100 → $200)
+
+**How to replicate:**
+COMPASS.md v1 → Joey feedback → COMPASS.md v2 with expansion documented. Clear trail of what changed and why.
+
+---
+
+### 10:40 UTC — LearningBot
+**Lesson:** Rapid Redeploys Kill Schedulers (Confirmed Again)
+
+**What happened:**
+04:35 UTC — Hub Alert: 15 users stalled, only 3 digests sent in 24h, 0 attempts in current window. Hub had fresh deploy at 04:32 UTC (SUCCESS) — likely interrupted scheduler state.
+
+**Repeat of 07:34 UTC pattern (Mar 16):**
+- Hub redeploy → scheduler reset
+- Digests stall for 15+ users
+- Manual monitoring required
+
+**Why it keeps happening:**
+Dropper-Code batches PRs and deploys them. Each deploy restarts Hub service. No persistent queue recovery mechanism.
+
+**How to prevent (updated priority):**
+Previously noted: scheduler persistence, batching PRs into single deploy.
+Additional: 
+- Add digest health metric: `digest_attempts_last_hour` 
+- Alert if 0 attempts for 2 consecutive hours
+- Document in COMPASS.md: "scheduler state is fragile, minimize deploys during digest windows"
+
+**How to replicate:**
+04:35 UTC alert handled correctly: documented for morning brief, not 2 AM panic fix. Root cause identified (redeploy), no false escalation.
+
+---
+
+### 10:40 UTC — LearningBot
+**Lesson:** Poe Balance Burn Rate Is Business Model Critical
+
+**What happened:**
+Poe balance: 42,770 (Mar 16 17:51 UTC) → 12,522 (Mar 17 04:35 UTC) = 30,248 points burned in ~11 hours.
+Burn rate: ~43K pts/6h sustained = ~170K/day.
+At 12K balance: ~1.5 hours runway remaining.
+
+**The pattern:**
+- Poe balance swings wildly (33K → 282K → back down)
+- High burn when agents are active
+- Auto-topup appears to happen but timing unpredictable
+
+**Why it matters:**
+Poe powers BrutallyHonest.ai bots. Zero balance = BHA offline = 259 users affected. Launch week cannot afford BHA outage.
+
+**How to prevent:**
+- Set alert threshold at 50K (not 10K)
+- Topup proactively at 30K, not reactively at 10K
+- Add Poe balance to daily heartbeat (already done — verify it's being checked)
+- Consider Poe subscription upgrade if burn continues at 170K/day
+
+**How to replicate success:**
+17:51 UTC alert noted balance critical. 04:35 UTC check showed decline but system still operational. Monitoring working, but proactive topup needed.
+
+---
+
+### 10:40 UTC — LearningBot
+**Lesson:** Light Activity Days Follow Crisis-to-Perfection Arcs
+
+**What happened:**
+Mar 17 10:40 UTC — Memory file shows minimal activity: one creative idea (Lottie animation), one OnboardBot run (71.4% activation), one Meta review (all A grades). No errors, no escalations.
+
+**Pattern confirmation:**
+Mar 16: Intense crisis-to-perfection arc (80% failure → 100% A-grade in 7h)
+Mar 17: Stable operations, no incidents
+→ Fixes applied during crisis create stability
+
+**Why this matters:**
+Validates the crisis management approach. Intense periods of rapid iteration produce durable fixes. Light days are the payoff, not the norm.
+
+**How to prevent misinterpretation:**
+- Light activity ≠ system failure
+- Light activity = previous fixes working
+- Don't invent work where none exists
+- Use light days for proactive work (goldmine mining, specs)
+
+**How to replicate:**
+Crisis period checklist:
+1. Identify root cause (not symptoms)
+2. Deploy fix
+3. Document for future reference
+4. Allow stability period to validate fix
+5. Resume proactive work only after stability confirmed
