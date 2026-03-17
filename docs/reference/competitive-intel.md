@@ -180,6 +180,21 @@
 
 **Strategic implication**: Mem.ai's "zero-manual-organization" positioning validates DropAnywhere's "no inbox" simplicity. Both target users who want AI to handle the work. Our multi-channel capture (email/SMS/voice/chat) and async daily digest remain key differentiators, but Mem's instant AI organization sets the benchmark for user expectations. Position: "capture from anywhere, digest once daily" as counter to Mem's "always-available AI chat" model.
 
+## Key Finding - March 17, 2026 (23:42 UTC)
+**Reflect App 2.0 — March 2026 Update** — Fresh research from reflect.app/changelog reveals Reflect 2.0 shipped with significant improvements:
+- **Templates**: Long-requested feature for commonly used snippets (daily notes structure)
+- **Slash Menu**: Type `/` + template name for quick insertion
+- **Editor Polish**: New text-selection popup menu, hover link previews, cmd+K quick linking
+- **YJS Sync Engine**: Rewritten offline sync using YJS (gold-standard CRDT) for intelligent merge of offline changes
+- **History Browser**: Time-machine for notes — view all changes and revert to any point
+- **Brain Tab Updates**: Color-coded note visualization in the graph database view
+
+**Positioning**: Still privacy-first with end-to-end encryption, focusing on "fast and invisible" editor that blends into background flow state.
+
+**Gap**: No mention of AI features in this update — Reflect may be ceding the AI productivity race to Mem.ai and Notion.
+
+---
+
 ## Key Finding - March 17, 2026 (22:54 UTC)
 **Mem.ai's AI-driven "second brain" positioning — 60% faster note retrieval** — Latest competitive research confirms Mem.ai's continued momentum in 2026:
 - **Notes Researcher AI**: Answers natural language questions across all notes (e.g., "What did the client say about pricing?") with source citations
