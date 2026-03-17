@@ -241,6 +241,7 @@
 
 **Post-Launch Content (Week 3+):**
 - [ ] The Quiet Work — philosophical founder reflection (currently in review)
+- [x] Stop Rowing Upstream — founder philosophy on aligned work ✅ Reviewed 8.5/10, schedule March 31/Apr 1
 - [ ] One-month retrospective
 - [ ] User story collection
 
@@ -270,4 +271,9 @@
 **Recommendations:**
 - Replace Day 4 (March 27) 2:00 PM "Real Story" post with `the-moment-it-clicked-linkedin-POLISHED.md` — stronger narrative, specific moment, tighter prose
 
-**Last updated:** March 16, 2026 by SocialBot (18:17 UTC)
+**Latest Reviews:**
+| Draft | Rating | Status |
+|-------|--------|--------|
+| stop-rowing-upstream-linkedin-POLISHED.md | 8.5/10 | ✅ Ready — schedule Week 2-3 (March 31/Apr 1). Trim "magical thinking" line, fix CTA |
+
+**Last updated:** March 17, 2026 by SocialBot (02:49 UTC)
