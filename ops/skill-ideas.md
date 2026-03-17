@@ -153,13 +153,82 @@
 
 ---
 
+## NEW PATTERNS FROM 2026-03-17 SESSIONS
+
+### Recurring Workflows Observed:
+
+1. **Morning Brief Template Crisis Response** — 25min unanimous consensus (Pattern 251)
+   - Visual design feedback → immediate agent mobilization
+   - 3 Opus votes on same issue within 1 hour
+   - Emergency stop + redesign protocol activated
+
+2. **Agent Scorecard Reporting** — Meta runs 5+ times/day
+   - A/B/C grade classification
+   - Excellence cluster identification
+   - Escalation pattern detection
+
+3. **Digest Pipeline Monitoring** — Chief of Staff + Patrol + Heartbeat
+   - 3/41 digests sent = stall detected
+   - Root cause: dropanywhere-cron service DOWN (404)
+   - Cross-agent validation of same metrics
+
+4. **Goldmine Mining Acceleration** — 4+ agents independently
+   - joey-backup/Ingestion/ = 2,422 files
+   - theProtocol, SYSTEM_ARCHITECTURE.md discoveries
+   - Pattern: "One wisdom file > 25 task agents"
+
+5. **Family Retention Escalation** — UserHealth 8+ times
+   - lhamer228@gmail.com: 12d inactive, flagged repeatedly
+   - Same 3 family members across 6+ checks
+   - No automated follow-through after escalation
+
+### Existing Skills Inventory (56 skills):
+- **Infrastructure:** healthcheck, node-connect, skill-creator
+- **Content:** poe-cdn-upload, nano-banana-pro, openai-image-gen
+- **Communication:** discord, slack, imsg, bluebubbles, himalaya
+- **Productivity:** 1password, apple-notes, apple-reminders, bear-notes, notion, obsidian
+- **Media:** video-frames, openai-whisper-api, sag, gifgrep
+- **Dev:** github, gh-issues, coding-agent, tmux
+- **Utility:** weather, canvas, model-usage, oracle
+
+### Skill Gaps Identified:
+1. **No unified health monitoring** — Patrol + Chief of Staff + RailwayBot overlap
+2. **No pattern aggregation skill** — PatternBot catalogs but doesn't weave
+3. **No retention automation** — UserHealth escalates but doesn't act
+4. **No competitive monitoring** — Researcher runs ad-hoc, not scheduled
+5. **No content pipeline skill** — ContentPitch + SocialBot + FounderVoice coordination manual
+
+## PRIORITIZED SKILL IDEAS (Post-Session Analysis)
+
+### Tier 1: High Impact, Clear Trigger
+| Skill | Votes | Trigger | Evidence |
+|-------|-------|---------|----------|
+| poe-balance-guardian | +1 | Balance < 20K | 43K burn/6h, ~6h runway pattern |
+| family-retention-guardian | +1 | Family inactive >7d | 8+ escalations, no action |
+| heartbeat-consolidator | +1 | Every 30min | 3 agents doing same checks |
+
+### Tier 2: Medium Impact, Needs Refinement
+| Skill | Votes | Trigger | Evidence |
+|-------|-------|---------|----------|
+| pattern-weaver | 0 | 3+ agents report similar | Pattern 251-150 cataloged |
+| goldmine-miner | 0 | Research request | 2,422 files, 4+ discoveries |
+| content-pipeline | 0 | Launch week active | 10/10 posts, 3-gate system |
+
+### Tier 3: Conceptual, Needs Joey Input
+| Skill | Votes | Trigger | Evidence |
+|-------|-------|---------|----------|
+| agent-orchestrator | 0 | "Run the agents" | 25 agents, manual dispatch |
+| decision-router | 0 | Email drops arrive | 6 drops → 5 tasks queued |
+| launch-coordinator | 0 | Launch week | Mar 24-30 coordination |
+
 ## NEXT STEPS
 
-1. **Vote on ideas** — Need 3+ votes to proceed to skill creation
-2. **Mine GitHub** — Extract reusable scripts from joey-backup
-3. **Create first skill** — Start with highest-voted idea
+1. **Vote on Tier 1 ideas** — 2 more votes needed for poe-balance-guardian
+2. **Mine GitHub scripts** — Extract reusable patterns from joey-backup/Ingestion/
+3. **Create first skill** — poe-balance-guardian has strongest case (clear trigger, recurring, measurable)
 
 ---
 
 *Mined by: SkillMiner*
-*Date: 2026-03-17 21:40 UTC*
+*Last Updated: 2026-03-17 22:30 UTC*
+*Session Coverage: 2026-03-17 (full day)*
