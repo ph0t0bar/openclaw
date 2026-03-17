@@ -178,4 +178,115 @@ Other infrastructure tasks should follow Sync Auditor pattern:
 
 ---
 
+### 17:45 UTC — LearningBot (12:44-17:44 UTC Session)
+
+**Lesson:** Digest Pipeline Death Spiral — Infrastructure Failures Cascade
+
+**What happened:**
+- 12:44 UTC: Heartbeat detected digest pipeline DOWN — 0% success rate, `all_models_exhausted`
+- 12:19 UTC: 15 users stalled, only 2/100+ digests sent in 24h
+- 17:28 UTC: Rate limit cascade caused 3h 43m system silence (15:26-17:26 UTC)
+- 17:42 UTC: Dropper-Code Claude usage exhausted — 5 task failures, brain-scan failed
+
+**Why this matters:**
+Pattern 226-227: System execution halted when API credits depleted. The digest pipeline failure cascaded into agent silence, which prevented fixing the digest pipeline. A death spiral.
+
+**Root cause chain:**
+1. Poe/OpenRouter credit depletion (from burn rate + retry loops)
+2. `all_models_exhausted` errors on digest analyzer
+3. Heartbeat agents couldn't function (rate limits)
+4. Auto-approved tasks couldn't execute (Dropper-Code quota exhausted)
+5. 3h 43m silence while problems compounded
+
+**How to prevent:**
+- Circuit breaker on retry loops (don't hammer exhausted APIs)
+- Graceful degradation: if AI models fail, send plaintext digests
+- Separate credit pools: critical infrastructure (Dropper-Code) vs. content agents
+- Rate limit budget: reserve capacity for heartbeats/monitoring
+
+**How to replicate recovery:**
+Hub alert monitors flagged the issue; tasks were auto-approved per HEARTBEAT.md rules. The system detected and documented, but couldn't execute due to quota exhaustion. Need: non-AI fallback for critical fixes.
+
+---
+
+**Lesson:** CI/CD Failure Blocking Deploys — Last-Mile Delivery Risk
+
+**What happened:**
+- 13:38 UTC: openclaw Docker Release workflow FAILED
+- Both amd64 and arm64 builds failing at "Build and push image" step
+- Commit d6cb567 (email templates) couldn't deploy
+- Pattern 228: CI Failure Blocking Deploys
+
+**Why this matters:**
+Even when code is ready, if CI/CD fails, nothing ships. The system had approved tasks waiting but couldn't deploy fixes because the build pipeline was broken.
+
+**Root cause:**
+- Likely dependency issue, Dockerfile syntax, or registry auth
+- No immediate rollback or bypass mechanism
+- CI failure not surfaced until Archivist attempted commit
+
+**How to prevent:**
+- CI health check before approving deployment tasks
+- Separate staging/production build verification
+- Alert on CI failure within 15 minutes, not hours
+- Manual deploy override for critical fixes
+
+**How to replicate:**
+Task_1773754790_862 was auto-approved to investigate/fix CI. Dropper-Code would handle if quota available. Pattern: detection works, execution blocked by infrastructure.
+
+---
+
+**Lesson:** Family ESCALATION Pattern — Personal Relationships Require Human Touch
+
+**What happened:**
+- 12:00 UTC: UserHealth flagged FAMILY ESCALATION — lhamer228 (13d inactive), rhamersunsetpartners (10d inactive)
+- 12:30 UTC: Chief of Staff repeated gap: "Family ESCALATION in User Health"
+- 17:28 UTC: Pattern 231: "Family ESCALATION in User Health — family members at risk, no re-engagement action"
+
+**Why this matters:**
+Family members (mom, dad) disengaging from the product is emotionally significant and requires personal outreach, not automated re-engagement emails. The system detected but couldn't appropriately respond.
+
+**Root cause:**
+- Auto-re-engagement inappropriate for family
+- No "personal touch" workflow exists
+- Detection without actionable path for sensitive relationships
+
+**How to prevent:**
+- Flag family relationships for manual review only
+- Suggest personal outreach (call, text) not automated emails
+- Create "family health check" template for Joey to use personally
+
+**How to replicate success:**
+UserHealth correctly identified and escalated. Next step: surface to Joey in morning brief with suggested personal touch, not automated action.
+
+---
+
+**Lesson:** Meta-Pattern 233 — Perfect Sensor, Broken Actuator
+
+**What happened:**
+- PatternBot at 17:44 UTC: "Perfect Sensor, Broken Actuator — detection 100%, execution 10%"
+- Every critical issue was detected: Stripe, digest, CI, family, rate limits
+- Almost none were resolved by agents — blocked by consensus, quota, or infrastructure
+
+**Why this matters:**
+The system excels at observation but struggles at action. The board architecture optimized for sensing (PatternBot, Chief of Staff, Ops Monitor) but not actuation (Dropper-Code quota exhausted, tasks pending approval).
+
+**The imbalance:**
+| Detection | Execution |
+|-----------|-----------|
+| 22 agents active | 1 Dropper-Code (quota exhausted) |
+| 100% gap coverage | 10% resolution rate |
+| Real-time alerts | Manual Joey intervention required |
+
+**How to prevent:**
+- Rebalance agent allocation: fewer sensors, more actuators
+- Guaranteed execution capacity for P0 issues (reserve quota)
+- Auto-approval threshold expansion (not just backend fixes)
+- Joey delegation: "Fix without asking" vs. "Ask before fixing"
+
+**How to replicate:**
+Today's session shows the pattern clearly. The fix requires architectural change, not agent tuning.
+
+---
+
 *Previous lessons preserved below*
