@@ -36,49 +36,53 @@ Web search for current competitive landscape (Mem.ai, Notion AI, Reflect) was bl
 
 ---
 
----
-
-## March 17, 2026 — Mem.ai Competitive Intelligence (06:48 UTC)
+## March 17, 2026 — Mem.ai Competitive Intelligence (07:54 UTC)
 
 **Source:** Web search (Perplexity)  
 **Query:** Mem.ai OR Notion AI OR Reflect app 2026
 
-### Mem.ai Positioning
-The leading **"zero-manual-organization AI"** second brain tool:
+### Mem.ai 2026 Positioning
+The leading **"zero-manual-organization AI"** second brain tool with significant competitive advantages:
 
-| Feature | Mem.ai | Notion AI | Reflect |
-|---------|--------|-----------|---------|
-| AI Search Speed | ⭐⭐⭐⭐⭐ (60% faster) | ⭐⭐⭐ | Not ranked |
-| Auto-organization | Zero setup required | Manual structure | Backlinks only |
-| Pricing (Pro) | $12/mo | $10/mo | Unknown |
-| Rating | 4.0/5 | 4.5/5 | — |
+| Feature | Mem.ai | Notion AI | DropAnywhere |
+|---------|--------|-----------|--------------|
+| AI Search Speed | ⭐⭐⭐⭐⭐ (60% faster) | ⭐⭐⭐ | Unknown |
+| Auto-organization | Zero setup required | Manual structure | Human+AI hybrid |
+| Capture Method | Manual app entry | Manual app entry | Multi-channel (email/SMS/voice) |
+| Delivery Model | On-demand search | On-demand search | Daily digest (async) |
+| Productivity Boost | +20% (reported) | General | TBD |
+| Pricing (Pro) | $12/mo | $10/mo | TBD |
 
-### Mem.ai 2026 Features
+### Mem.ai 2026 Feature Set
 - **Notes Researcher AI**: Plain English search, auto-links unrelated info, cites sources
-- **Smart AI Writer**: Drafts in your voice from existing notes
+- **Smart AI Writer**: Drafts in your voice from existing notes  
 - **AI Organizer/Note Finder**: Auto-groups without folders/tags
 - **Summarization + Templates**: Meeting minutes, journal formats
 - **Calendar Integration**: Google Calendar sync
 
-### Pricing (2026)
-| Plan | Price | Key Limitation |
-|------|-------|----------------|
-| Free | $0 | Limited AI features |
-| Pro | $12/mo | Unlimited AI |
-| Teams | Custom | Collaboration tools |
-
 ### Strategic Insights
-1. **Market Positioning:** Mem.ai = "parallel mind" for workflows; Notion = structured collaboration; Reflect not competitive in AI search
-2. **Moat:** Zero-setup auto-organization vs Notion's manual structure
-3. **Weakness:** iOS app "occasionally buggy" — opportunity for DropAnywhere mobile
-4. **Reflect App:** Effectively absent from 2026 competitive conversation
 
-### Comparison: DropAnywhere vs Mem.ai
-| Dimension | Mem.ai | DropAnywhere Opportunity |
-|-----------|--------|--------------------------|
-| Capture | Manual app | Multi-channel (email/SMS/voice) |
-| Organization | Auto-AI | Human+AI hybrid |
-| Delivery | On-demand search | Daily digest (async) |
+**Mem.ai's Moat:**
+1. Zero-setup auto-organization (vs Notion's manual structure)
+2. 60% faster note finding through AI search
+3. Context-aware writing that adapts to user style
+
+**Market Gap — DropAnywhere Opportunity:**
+| Dimension | Current Market (Mem.ai) | DropAnywhere Advantage |
+|-----------|------------------------|------------------------|
+| Capture Friction | Still requires opening app | True ambient capture (email/SMS/voice) |
 | Philosophy | "Second brain" | "Second brain has no inbox" |
+| Usage Pattern | Active search/retrieval | Passive daily digest |
+| Mental Model | Repository to query | Living system to inhabit |
 
-*Research Task: Rotate between competitive analysis, market trends, goldmine cataloging, and voice research.*
+**Reflect App Status:** 
+- Effectively absent from 2026 competitive conversation
+- No significant AI features or market presence
+
+### Competitive Positioning Summary
+1. **Mem.ai leads in AI-powered search/organization** — zero-setup auto-grouping is their key differentiator
+2. **Notion AI strong in collaboration** — better for teams, more manual for individuals
+3. **Market gap in capture friction** — all current tools still require deliberate "note-taking" behavior
+4. **DropAnywhere's unique angle** — transition from "tool you use" to "system you live in" through ambient capture + async delivery
+
+---
