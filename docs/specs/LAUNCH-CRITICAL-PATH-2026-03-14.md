@@ -3,7 +3,7 @@
 
 ---
 
-## Status Update (Mar 17 08:26 UTC - Launch Coordinator)
+## Status Update (Mar 17 10:31 UTC - Launch Coordinator)
 
 **🚨 LAUNCH STATUS: CRITICAL RISK - 7 DAYS REMAINING**
 
@@ -14,81 +14,26 @@
 | **Phase 3: PREPARE** | Mar 20–23 | 🔴 AT RISK — 3 days to solve Phase 1+2 |
 | **Phase 4: LAUNCH** | Mar 24–26 | 🔴 LAUNCH AT RISK — Digest is make-or-break |
 
-**RECENT WINS (Mar 17 08:26 UTC):**
-- ✅ **POE BALANCE RESTORED** — Topped up to 283,939 points (was 12,522 💀). Burn ~80K/6h.
+**RECENT WINS (Mar 17 10:31 UTC):**
+- ✅ **POE BALANCE RESTORED** — 283,939 points (was 12,522 💀). Burn ~76K/6h.
 - ✅ Email webhook → OpenClaw (PR #193 merged Mar 16)
 - ✅ Email address fix: noreply@ → hello@drop-anywhere.com (PR #195 merged Mar 17)
 - ✅ Drop received emails reply in-thread (PR #198 merged Mar 17)
 - ✅ Re-engagement emails disabled - only Joey receives (PR #197 merged Mar 17)
 - ✅ Digest stall alerts suppressed (PR #192 merged Mar 16)
 - ✅ Auto-response emails fixed — disabled at free tier + `<thinking>` stripped (PR #199 merged Mar 17)
-- ✅ Zapier integration (assumed via earlier batch PRs)
-- ✅ **6 HUB PRs MERGED TODAY** — #195-199 (massive email fixes batch)
+- ✅ **7 HUB PRS MERGED** — #193, #195-199 (email fixes batch)
 
 **CRITICAL BLOCKERS (LAUNCH KILLER):**
 - 🚨 **DIGEST STALL UNRESOLVED** — Only 3/103 eligible users received digests in 24h
-  - Open PRs: #190, #191 (opoerator-hub), #194 (open) — stalled digest fixes
-  - Open PR: #151 (dropanywhere-app) — "URGENT: Investigate and fix digest stall"
-  - **NO ACTIVE WORK ON FIX** — Requires immediate escalation
-  - **DROPPER-CODE STATUS UNKNOWN** — Cannot access task queue without Hub API key
-- ⚠️ **LAUNCH CHECKLIST ALL BLOCKED** — Cannot test L1-L10 items until digest works
+  - **OPEN PRS:** #190, #191 (opoerator-hub), #151 (dropanywhere-app) — ALL OPEN, NO MERGES
+  - **DROPPer-Code QUEUE: EMPTY** — 0 tasks pending/approved/in-progress
+  - **NO ACTIVE WORK ON FIX** — Escalation filed ops/escalations.md
+  - **ROOT CAUSE:** Scheduler does not recover after Hub redeploy (#191)
+- ⚠️ **LAUNCH CHECKLIST ALL BLOCKED** — L1-L10 cannot be tested until digest works
 
-**ESCALATION REQUIRED:**
-Digest stall is 72+ hours unresolved. PRs are open but no active development. Manual intervention or new Dropper-Code task needed immediately.
-
-## CRITICAL PATH ANALYSIS (Mar 17 04:18 UTC)
-
-**SHIPPED ITEMS (7 days):**
-- ✅ Email webhook → OpenClaw integration (PR #193) 
-- ✅ Email from-address fix: noreply@ → hello@drop-anywhere.com (PR #195)
-- ✅ Drop received emails reply in-thread with Brooke (PR #198)
-- ✅ Re-engagement emails disabled - only Joey receives (PR #197)
-- ✅ Digest stall alert suppression (PR #192) 
-- ✅ Zapier integration for drop capture (PR #189)
-
-**IN PROGRESS (CRITICAL):**
-- 🔴 Digest scheduler fix - 2 PRs open (#190, #191) - **LAUNCH BLOCKER**
-- 🔴 Dropper-Code cancelled latest fix attempt - **ESCALATION NEEDED**
-- 🔄 2 more Dropper-Code tasks in review (PR #194, #196)
-
-**BLOCKED/NOT STARTED:**
-- 🔴 All 10 launch checklist items (L1-L10) - Blocked by digest stall
-- 🚨 Poe balance critical - 13,869 points, ~39 min runway
-- ⚠️ Weekly Catch validation - Cannot test until digest works
-
-**7-DAY PROJECTION:**
-- **Current trajectory:** Launch unlikely without immediate intervention
-- **If digest + Poe fixed by Mar 18:** Compressed timeline still possible
-- **If not fixed by Mar 18:** Hard delay to Mar 31+ required
-
-**Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
-
-**Issue #2 (Agent Company v2.0):** Architecture documented in `AGENT-COMPANY-v2.md` + expanded to v3 in `AGENT-COMPANY-v3.md`. Agent spawning deferred to post-launch (Week of Mar 29+). PRD Section 6 updated to reference org design.
-
----
-
-## The Situation in One Breath
-
-You have a working product, a breakthrough direction (Snapback / The Weekly Catch), ~90 PRs shipped, and a March 24 soft launch target. You also have three existential blockers that will kill the launch if unresolved in the next 48 hours: Poe balance hitting zero (~2 days at 90K/day burn), three critical bugs breaking core flows (dashboard ingestion, vault editing, `<thinking>` tag leaks), and a Hub AI fallback chain that's Poe→Poe→Poe with no real diversity. Everything else is noise until these three are handled. Below is the exact sequence.
-
----
-
-## Phase 1: SURVIVAL (March 14–15) — 48 Hours
-
-These are not features. These are oxygen.
-
-### Decision 1: Poe Balance — Resolve or Die ⚠️ ESCALATED
-
-**Current state (updated Mar 15):** 33K balance, down from 153K. Burning ~32K/6h. **Less than 1 day of runway.** This is now past "resolve or die" — it's "resolve or dead." If Poe hits zero, every bot stops responding, 86% of your drop volume disappears (BHA bot conversations), and theREALrealtalk (your #1 revenue bot at 10,097 points/6h) goes dark.
-
-**The decision tree:**
-
-| Option | Action | Time | Outcome |
-|--------|--------|------|---------|
-| A. Buy Poe credits | Fund account directly | 10 min | Buys weeks. |
-| B. Slash bot usage | Disable bottom 400 bots, keep top 5 only | 30 min | Reduces burn dramatically. 96% of revenue comes from 5 bots anyway. |
-| C. Migrate Hub to OpenRouter | Replace Poe API calls with OpenRouter HTTP (key already available) | 1–2 days | Permanent fix. Decouples from Poe. |
-| **D. All three, in order** | **A now, B today, C this week** | **Staggered** | **Only real answer.** |
+**ESCALATION FILED (ops/escalations.md):**
+Digest stall 72+ hours unresolved. PRs open but unmerged, no Dropper-Code tasks active. Manual intervention or emergency task assignment required immediately.
 
 ### Decision 2: Fix the Three Critical Bugs
 
@@ -111,7 +56,7 @@ These are not features. These are oxygen.
 
 ## Phase 2: STABILIZE (March 16–19) — 4 Days
 
-### Launch-Ready Checklist (Updated Mar 17 02:11 UTC)
+### Launch-Ready Checklist (Updated Mar 17 10:31 UTC)
 
 | # | Item | Target Date | Status | GitHub PR/Issue |
 |---|------|-------------|--------|--------------------|
@@ -122,14 +67,14 @@ These are not features. These are oxygen.
 | L5 | Hub fallback chain (OpenRouter) | Mar 18 | 🔴 BLOCKED | Cannot test with digest stall |
 | L6 | New user onboarding QA | Mar 18 | 🔴 BLOCKED | Cannot test with digest stall |
 | L7 | Stripe failed charge investigation | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
-| L8 | `<thinking>` fix verified in prod | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
+| L8 | `<thinking>` fix verified in prod | Mar 16 | ✅ DONE | PR #199 merged |
 | L9 | Tools tab (P1-10 remaining) | Mar 19 | 🔴 BLOCKED | Cannot test with digest stall |
 | L10 | Compass settings verified | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
 
 **🚨 SINGLE POINT OF FAILURE: DIGEST STALL**
-- 4 open PRs attempting fix: #151, #186, #190, #191 (all stalled)
-- 3 consecutive Dropper-Code attempts failed/cancelled
-- **ESCALATION NEEDED: Manual intervention required**
+- 3 open PRs attempting fix: #151 (app), #190, #191 (hub) — ALL UNMERGED
+- Dropper-Code queue: EMPTY (0 tasks pending/approved/in-progress)
+- **ESCALATION FILED: Manual intervention required**
 
 ### Snapback Validation (Mar 16–22)
 
