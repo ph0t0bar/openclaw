@@ -32,3 +32,28 @@
 ---
 
 *Research conducted: 2026-03-17 00:42 UTC*
+
+---
+
+## Competitive Landscape Update — March 17, 2026
+
+### Mem.ai vs Notion AI vs Reflect (Memora) — 2026 Comparison
+
+| Tool | Key 2026 Strengths | Best For | Limitations |
+|------|---------------------|----------|-------------|
+| **Mem.ai** | AI search (60% faster), auto-organization, note researcher, templates, integrations | Personal knowledge base, quick retrieval | Less deep than Notion for teams/databases |
+| **Notion AI** | All-in-one (notes, DBs, PM), AI writing/summaries | Workspaces, collaboration | More manual setup, slower AI search |
+| **Reflect (Memora)** | On-device private knowledge graph, persistent memory | Secure, personal recall | Focused on privacy over broad integrations |
+
+### Key Trends Identified:
+1. **AI Memory Frameworks**: All three leverage 2026 AI memory frameworks (semantic search, fact extraction) to create agent-like assistants
+2. **Mem.ai Lead**: Positions as "parallel mind" — claims 20%+ productivity boost for individuals
+3. **Reflect Rebrand**: Now marketed as "Memora" — private AI assistant with on-device knowledge graph
+4. **Market Direction**: Shift toward "zero-manual organization" — apps that learn and anticipate vs requiring user tagging/structuring
+
+### Sources:
+- Fahim AI analysis (fahimai.com)
+- Machine Learning Mastery — AI Agent Memory Frameworks 2026
+- Apple App Store — Memora listing
+
+*Research conducted: 2026-03-17 00:53 UTC*
