@@ -1,6 +1,6 @@
 # AGENT ROSTER — DropAnywhere Agent Company
 
-**Last Updated**: 2026-03-17 01:27 UTC (GOVERNANCE REALITY CHECK)  
+**Last Updated**: 2026-03-17 07:08 UTC (GOVERNANCE REALITY CHECK)  
 **Company Status**: ✅ OPERATIONAL — 34 enabled agents out of 49 total cron jobs (Mature ecosystem)
 
 ---
@@ -134,14 +134,14 @@
 | **Opus 4** | ~4 | ~$3.00 | Strategic oversight |
 | **Total** | 34 | ~$4.00 | Full ecosystem coverage |
 
-## 🔴 CRITICAL SYSTEM ALERTS
+## 🔴 CURRENT SYSTEM ISSUES
 
 | Issue | Severity | Status | Details |
 |-------|----------|--------|---------|
-| **Poe Balance** | 🔴 CRITICAL | ⚠️ DEGRADED | 35,363 pts, ~8.7h to zero |
-| **Hub Dashboard** | 🔴 HIGH | 🚨 ACTIVE | Returning `healthy: false` |
-| **Digest Pipeline** | ⚠️ MEDIUM | ⚠️ STALLED | 3 digests/24h (should be 30-40) |
-| **Family Escalation** | ⚠️ MEDIUM | ⚠️ ONGOING | Lisa 12d inactive, Danny 0 drops |
+| **OpenRouter Credits** | 🔴 HIGH | 🚨 BILLING ERROR | Kimi K2.5 out of credits, affecting PatternBot |
+| **Governance Agent** | ⚠️ MEDIUM | ⚠️ TIMEOUT | 2 consecutive timeouts (resolving this session) |
+| **SpecBot** | ⚠️ MEDIUM | ⚠️ TIMEOUT | 1 timeout error on last run |
+| **WhatsApp Delivery** | ⚠️ MEDIUM | ⚠️ FUNCTIONAL | 3 scheduled jobs work but notifications fail |
 
 ## Success Metrics (GOVERNANCE TRACKING)
 
