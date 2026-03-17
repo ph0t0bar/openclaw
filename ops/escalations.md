@@ -1,68 +1,52 @@
 # Escalations Log
 
-## 2026-03-17 20:52 UTC — Chief of Staff Gap Check
+## 2026-03-17 21:27 UTC — Chief of Staff Gap Check
 
-### 1. BACKUP STATUS ✅
-- **Last commit:** 2026-03-17T20:39:11Z (13 minutes ago)
-- **Status:** HEALTHY (<2h threshold)
-- **Action:** None needed
+### Gaps Found:
 
-### 2. AGENT HEALTH ⚠️ GAPS FOUND
+#### 🔴 CRITICAL: Dropper-Code Stalled
+- **Status:** Claude Code usage exhausted — 5 tasks failed, brain-scan failed
+- **Impact:** Autonomous pipeline completely halted until Mar 20 3am UTC
+- **Action Required:** Manual intervention or wait for reset
+- **Failed Tasks:** task_1773751545_335, task_1773752442_801, task_1773753772_790, task_1773754790_862, task_1773754891_855
 
-| Agent | Last Post | Status | Gap |
-|-------|-----------|--------|-----|
-| LearningBot | 20:29 UTC | 🟢 OK | 23 min |
-| Opus | 20:51 UTC | 🟢 OK | 1 min |
-| Researcher | 20:52 UTC | 🟢 OK | 0 min |
-| Meta | 20:45 UTC | 🟡 STALE | 7 min |
-| Sentry | 20:45 UTC | 🟡 STALE | 7 min |
-| FrontEndBot | 20:46 UTC | 🟡 STALE | 6 min |
-| FeedbackBot | 20:49 UTC | 🟢 OK | 3 min |
-| ContentBot | 20:40 UTC | 🟡 STALE | 12 min |
-| FounderVoice | 20:42 UTC | 🟡 STALE | 10 min |
-| Archivist | 20:39 UTC | 🟡 STALE | 13 min |
+#### 🟡 WARNING: Digest Pipeline Stalled
+- **Status:** Only 2 digests sent in 24h (should be ~100)
+- **Hub Dashboard:** digest_pipeline.attempts = 0 for current window
+- **Impact:** Users not receiving daily digests — retention risk
+- **Action Required:** Investigate scheduler/cron health
 
-**Gap summary:** 6 agents haven't posted in 6-13 minutes. Within normal window.
+#### 🟡 WARNING: openclaw CI Failure
+- **Status:** GitHub CI showing "failure" for openclaw repo
+- **Impact:** Potential deployment blocker
+- **Action Required:** Check GitHub Actions for failure details
 
-### 3. LAUNCH STATUS — PRD OVERDUE ITEMS 🔴
+#### 🟢 OK: Backup Status
+- **Last joey-backup commit:** 2026-03-17T21:24:54Z (3 min ago)
+- **Status:** Fresh, within 2h window ✅
 
-**CRITICAL (P0) — Still Pending:**
-- [ ] **P0-5:** Shadow bot cross-promo descriptions (MANUAL - 10 min) — NOT DONE
-- [ ] **P0-6:** Funnel prompt paste into original bots (MANUAL - 10 min) — NOT DONE
-- [ ] **P0-7:** List Genesis Orchestrator on Gumroad (MANUAL - 30 min) — NOT DONE
+#### 🟢 OK: Agent Health
+- **Recent agent activity (from memory/2026-03-17.md):**
+  - Sentry: 21:09, 21:26 UTC ✅
+  - SpecBot: 21:11 UTC ✅
+  - ContentBot: 21:13 UTC ✅
+  - Researcher: 21:20 UTC ✅
+  - Meta: 21:23 UTC ✅
+  - Archivist: 21:23 UTC ✅
+  - Opus: 21:26 UTC ✅
+- **All agents posted within 2h window ✅**
 
-**These are 10-minute tasks that have been ready for 6+ days.**
-
-### 4. HUB HEALTH 🔴 GAPS FOUND
-
-| System | Status | Issue |
-|--------|--------|-------|
-| **Dropper-Code** | 🔴 **STALLED** | Claude Code usage exhausted — 5 tasks failed, brain-scan failed |
-| **Digest Pipeline** | 🔴 **STALLED** | Only 2 digests sent in 24h (should be ~20-30) |
-| **Poe Balance** | 🟡 **BURNING** | 172,651 points (was 180K), burning 47K/6h |
-| **OpenClaw CI** | 🔴 **FAILURE** | GitHub CI showing failure status |
-| **Resend** | 🟡 **2 bounces** | 98/100 delivered (2 bounced) |
-
-**CRITICAL ISSUES:**
-1. **Dropper-Code autonomous pipeline DOWN** — Claude usage resets Mar 20 3am UTC (~2.5 days away)
-2. **Digest stall persists** — 2/107 eligible users got digests (intentional pause per DIGEST-POLICY.md? Verify.)
-3. **OpenClaw CI failure** — needs investigation
-
-### 5. SUMMARY — WHAT'S MISSING?
-
-**If Joey looked right now:**
-
-1. **🚨 Dropper-Code is down** — No autonomous code tasks running until Mar 20. 5 failed tasks in queue.
-2. **🚨 3 P0 manual tasks still pending** — 10-min jobs (Poe cross-promo, funnel paste, Gumroad listing) have been ready for 6 days.
-3. **⚠️ Digest pipeline** — Only 2 digests sent (may be intentional per waitlist policy, but worth confirming).
-4. **⚠️ OpenClaw CI failing** — Gateway health check failing.
-
-**Recommended Actions:**
-- [ ] Joey: Do the 3 manual P0 tasks (30 min total, high revenue impact)
-- [ ] Claw: Verify digest stall is intentional (DIGEST-POLICY.md) vs bug
-- [ ] Claw: Investigate OpenClaw CI failure
-- [ ] Monitor: Dropper-Code auto-recovery on Mar 20 3am UTC
+#### 🟢 OK: Hub Core Services
+- **Status:** All green (users, drops, email delivery 98%)
+- **Deploys:** SUCCESS today at 10:17 UTC (Hub), 17:24 UTC (OpenClaw)
+- **Poe balance:** 86,717 points (burning 50K/6h)
 
 ---
 
-*Next check: 20min*
+### Summary
+**2 escalations require attention:**
+1. Dropper-Code autonomous pipeline down (Claude usage exhausted)
+2. Digest pipeline stalled (2/107 users getting digests)
+
+**1 warning to monitor:**
+- openclaw CI failure
