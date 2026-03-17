@@ -87,3 +87,118 @@ Target "capture anywhere, review once" messaging — no competitor owns this wor
 
 ---
 
+## SEOBot Research — 2026-03-17 10:16 UTC
+
+### 5. Additional Keyword Research: "automatic daily email summary AI second brain"
+
+**More Competing Tools Discovered:**
+| Tool | Pricing | Key Feature |
+|------|---------|-------------|
+| **NewMail AI** | Free trial → $15/mo | Daily briefings with action items + smart drafts |
+| **Remy** | Unknown | Newsletter summarizer into single daily digest |
+| **Spark Mail +AI** | Freemium | Instant summaries (short/detailed/action points) |
+| **Mapify** | Unknown | Mind map summaries of emails by category |
+
+**Pricing Intel:**
+- NewMail AI: Free for one-time report on last 50 emails, then $15/mo for daily features
+- This validates our pricing strategy — users expect freemium → paid for daily AI features
+
+**New Keyword Opportunities:**
+| Keyword | Intent | Notes |
+|---------|--------|-------|
+| "automatic daily email summary" | High | Matches our core value prop |
+| "AI second brain email" | Medium | Bridges knowledge management + email |
+| "smart email drafts AI" | Medium | NewMail feature we could add |
+| "mind map from emails" | Low | Visual organization angle (Mapify niche) |
+| "email action items AI" | High | Task extraction — strong use case |
+
+---
+
+### 6. Competitor Deep Dive: Mem.ai vs Notion AI SEO
+
+**Mem.ai SEO Strategy:**
+- **Primary positioning:** "AI note taking" / "AI second brain" / "thought partner"
+- **Differentiator:** Deep semantic search (not just keyword matching)
+- **Content strategy:** Heavy YouTube presence (multiple tutorials in SERPs)
+- **Gap:** No strong email integration messaging — they focus on notes only
+
+**Notion AI SEO Reality:**
+- **Branded dominance:** 162.5M visits, but AI subdomain (notion.ai) only gets 346 visits
+- **Missed opportunity:** They own "notion" but NOT "AI workspace" or "AI notes"
+- **Template SEO:** Ranks for "Notion SEO template" — meta play, not product
+
+**DropAnywhere Advantage:**
+- Mem = notes without email capture
+- Notion = workspace without daily digest
+- **We bridge both:** Multi-channel capture + daily summary delivery
+
+**Recommended Positioning Statement for SEO:**
+> "The only AI second brain that captures from anywhere and delivers a daily digest — no inbox, no clutter, just insights."
+
+---
+
+### 7. Indexing Crisis Confirmed
+
+**Second verification:** site:drop-anywhere.com returns ZERO indexed pages
+
+**Root Cause Hypotheses:**
+1. **DNS not pointing correctly** — Check if A/CNAME records point to Railway
+2. **Noindex meta tag** — Check homepage source for robots meta
+3. **robots.txt blocking** — May have `Disallow: /` accidentally
+4. **No sitemap submitted** — Google doesn't know about the site
+5. **Domain too new** — If recently registered, may still be in sandbox
+
+**Immediate Actions Required (Priority Order):**
+1. Check DNS: `nslookup drop-anywhere.com` should resolve to Railway
+2. Check meta tags: View-source for `<meta name="robots" content="noindex">`
+3. Check robots.txt: `https://drop-anywhere.com/robots.txt`
+4. Generate sitemap.xml and submit to Google Search Console
+5. Request indexing manually for homepage
+
+**Impact:** Without indexing, ALL SEO work is wasted. Fix this before keyword optimization.
+
+---
+
+### 8. New Keyword Gap: "Newsletter Summarizer"
+
+**Readless.app dominates this term:**
+- "Turn 30+ newsletters into one AI digest"
+- Claims 90% time savings (90 min → 10 min)
+- Handles deduplication, topic organization, trend alerts
+
+**DropAnywhere Angle:**
+We already have newsletter capture via email (hello@drop-anywhere.com). We can position:
+- "Newsletter summarizer with SMS/voice/chat capture too" — broader input
+- "One digest from ALL your inputs" — not just newsletters
+
+**Target content:** Blog post "Best AI Newsletter Summarizers (2026)" — include Readless, Needle, and us as the "multi-channel" option.
+
+---
+
+### 9. Summary: Action Items for Joey
+
+**URGENT (This Week):**
+- [ ] Fix drop-anywhere.com indexing — DNS/robots/sitemap check
+- [ ] Add Google Search Console verification
+- [ ] Create basic marketing pages with target keywords
+
+**HIGH PRIORITY (Next 2 Weeks):**
+- [ ] Write comparison post: "AI Daily Digest Tools Compared" (position vs Readless, NewMail)
+- [ ] Optimize homepage title/meta: "AI Daily Digest | Your Second Brain Has No Inbox"
+- [ ] Add structured data (Schema.org) for SoftwareApplication
+
+**CONTENT OPPORTUNITIES:**
+- "How to Build an AI Second Brain Without the Inbox Anxiety"
+- "Morning Email Digest: 5 Tools That Save 80 Minutes/Day"
+- "From 117 Emails to 1 Summary: AI Email Digests Explained"
+
+**Keywords to Target (In Order):**
+1. "AI daily digest" — own this term
+2. "second brain no inbox" — branded differentiator
+3. "automatic daily email summary" — feature-specific
+4. "newsletter summarizer" — content play
+5. "SMS to notes AI" — unique feature
+
+---
+
+*Research appended by SEOBot cron — 2026-03-17*

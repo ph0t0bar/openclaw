@@ -777,7 +777,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 > **✅ OpenClaw Deploy:** Latest gateway deploy SUCCESS at 2026-03-16 14:12 UTC. Hub deploy SUCCESS at 2026-03-17 04:32 UTC.
 
-| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:51 | Mar 16 20:23 | Mar 16 21:12 | Mar 17 01:17 | Mar 17 03:25 | Mar 17 04:05 | Mar 17 04:51 | Mar 17 05:31 | Mar 17 07:01 | Δ |
+| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:51 | Mar 16 20:23 | Mar 16 21:12 | Mar 17 01:17 | Mar 17 03:25 | Mar 17 04:05 | Mar 17 04:51 | Mar 17 05:31 | Mar 17 07:01 | Mar 17 10:12 | Δ |
 |--------|-------|-------|--------|--------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|---|---|---|---|
 | DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | **100** | **100** | **101** | **101** | **103** | **103** | **103** | **103** | **103** | stable |
 | DA archived users | - | - | - | **44** | **44** | **44** | **44** | **44** | **44** | **44** | - | - | stable | stable | stable | - |
