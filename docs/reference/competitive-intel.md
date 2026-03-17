@@ -1,38 +1,53 @@
-## Competitive Intelligence
+# Competitive Intelligence — DropAnywhere Ecosystem
 
-### 2026-03-17 12:14 UTC — Mem.ai / Notion AI / Reflect Analysis
-
-**Key Finding:** Mem.ai has emerged as the clear leader in AI-powered note organization with "zero-manual-organization" approach, reporting 20%+ productivity boosts and 60% faster note retrieval.
-
-#### Mem.ai 2.0 — "Parallel Mind" Features
-- **Notes Researcher AI**: Natural language queries across all notes ("What did the client say about pricing?") with source citations
-- **Smart AI Writer**: Learns writing style, drafts emails/summaries using personal note context
-- **AI Organizer**: Auto-groups notes without folders/tags, surfaces related content contextually
-- **Summarization**: Condenses long docs, extracts specific details (budgets from meetings)
-- **Templates & Integrations**: Google Calendar/Docs integration, pre-built meeting/project templates
-- **User Metrics**: Note search time drops from 15+ to under 5 minutes, 100% auto-organization
-
-#### Notion AI — Workspace Integration Focus
-- Positioned as all-in-one tool (notes + databases + PM)
-- 2026 emphasis on broader AI workspaces vs. standalone note enhancements
-- Strong for users needing structured databases alongside notes
-- Less emphasis on auto-linking/contextual recall than Mem
-
-#### Reflect App — Limited 2026 Presence
-- No significant 2026 feature updates found
-- May not rank prominently among AI note alternatives
-- Limited data suggests reduced market position vs. Mem, Capacities, Tana
-
-#### Competitive Landscape Trends
-- **Focus shift**: Context-aware AI chats and auto-structure over manual organization
-- **Target users**: Mem leads for "unstructured thinkers" who want zero setup
-- **Integration**: Meeting tools (Sembly AI, Fireflies) increasingly pair with note apps
-- **Metrics-driven**: Productivity tools emphasizing measurable time savings (Mem's 60% search improvement)
-
-**Strategic Implications for DropAnywhere:**
-- Zero-manual-organization is becoming table stakes
-- Users expect measurable productivity gains (time savings, search improvements)
-- Context-aware AI that learns writing style is differentiating
-- Integration with existing workflows (calendar, meetings) critical for adoption
+*Deep researcher findings appended here. Last updated: auto.*
 
 ---
+
+## 2026-03-17 — Joey's Latest Vision: "Joey AI Builder Pack" v11.1
+
+**Source:** Joey Work OS drop (Hub vault ID 1773741379750104)
+**Timestamp:** 2026-03-17T09:56:19Z
+
+### Product Definition
+
+**Working Name:** Joey AI Builder Pack
+
+**One-liner:**
+> "AI-native Work OS that learns your team's reality and ships done work, not just task lists — live in 24 hours, not 24 weeks."
+
+### Target ICP (Wedge Strategy)
+
+Don't boil the ocean. Pick ONE to start:
+
+1. **Founders / small teams (2–20 people)** — who feel "we're drowning in tools but nothing's getting done"
+2. **Agencies / consultancies** — juggling 10+ clients, need visibility without status meetings
+3. **Product/ops leads** — at slightly larger cos (20–100) who inherited a mess
+
+### Key Differentiators Emerging
+
+| Competitor | Their Pitch | Joey's Counter |
+|------------|-------------|----------------|
+| Notion AI | "All-in-one workspace" | Ships *done work*, not just docs |
+| Mem.ai | "Self-organizing workspace" | Learns *team's reality*, not just files |
+| Reflect | "Notes that think" | Lives in 24hrs, not 24 weeks |
+| Linear | "Issue tracking" | Work OS, not just task lists |
+
+### Strategic Notes
+
+- **Intelligence Map** = generated once enough drops collected (not static onboarding)
+- **Onboarding** = educate + entertain + ask questions (not just 3 emails)
+- **Agency backend team** = future enterprise tier foundation
+- **Varying digests** already exist in Hub code — personalization engine ready
+
+### Open Questions from Joey
+
+- Cover all user scenarios (exercise previously done, needs retrieval from GitHub MD files)
+- Content ideas for pre-launch (under development)
+
+---
+
+## Previous Findings
+
+*(Append new competitive research below this line)*
+
