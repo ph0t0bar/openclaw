@@ -3,14 +3,26 @@
 
 ---
 
-## Status Update (Mar 15)
+## Status Update (Mar 16 - Launch Coordinator)
+
+**🚨 LAUNCH STATUS: HIGH RISK - 8 DAYS REMAINING**
 
 | Phase | Window | Status |
 |-------|--------|--------|
-| **Phase 1: SURVIVAL** | Mar 14–15 | 🟡 In progress — Poe critical, bugs TBD |
-| **Phase 2: STABILIZE** | Mar 16–19 | ⬜ Not started — Stripe billing **deferred to Week 2** per Issue #1 review |
+| **Phase 1: SURVIVAL** | Mar 14–15 | 🟡 Partial — Email processing ✅ DONE, Poe balance ⚠️ CRITICAL (42K points), digest stall ⚠️ ACTIVE ISSUE |
+| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 Starting — Several launch items IN PROGRESS, digest reliability blocking |
 | **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
 | **Phase 4: LAUNCH** | Mar 24–26 | ⬜ Not started |
+
+**RECENT WINS (Mar 16):**
+- ✅ Email webhook → OpenClaw (PR #193 merged)
+- ✅ Digest stall alerts suppressed (PR #192 merged)
+- ✅ Task dedup guard added (PR #187 merged)
+
+**ACTIVE BLOCKERS:**
+- 🚨 Digest scheduler stalled affecting 15 users (PRs #151, #186, #190, #191 open)
+- ⚠️ Poe balance at 42K points - burning ~43K/6h (less than 24h runway)
+- ⚠️ Multiple digest pipeline recovery attempts failed (cancelled/failed tasks in queue)
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
@@ -62,20 +74,23 @@ These are not features. These are oxygen.
 
 ## Phase 2: STABILIZE (March 16–19) — 4 Days
 
-### Launch-Ready Checklist
+### Launch-Ready Checklist (Updated Mar 16)
 
-| # | Item | Target Date |
-|---|------|-------------|
-| L1 | Mobile Safari QA — full flow | Mar 16 |
-| L2 | Sentry/error tracking | Mar 17 |
-| L3 | Unsubscribe verification | Mar 16 |
-| L4 | Rate limiting on /api/ingest | Mar 17 |
-| L5 | Hub fallback chain (OpenRouter) | Mar 18 |
-| L6 | New user onboarding QA | Mar 18 |
-| L7 | Stripe failed charge investigation | Mar 16 |
-| L8 | `<thinking>` fix verified in prod | Mar 16 |
-| L9 | Tools tab (P1-10 remaining) | Mar 19 |
-| L10 | Compass settings verified | Mar 16 |
+| # | Item | Target Date | Status |
+|---|------|-------------|--------|
+| L1 | Mobile Safari QA — full flow | Mar 16 | 🔄 IN PROGRESS |
+| L2 | Sentry/error tracking | Mar 17 | ⬜ BLOCKED |
+| L3 | Unsubscribe verification | Mar 16 | ⬜ BLOCKED |
+| L4 | Rate limiting on /api/ingest | Mar 17 | ⬜ BLOCKED |
+| L5 | Hub fallback chain (OpenRouter) | Mar 18 | ⬜ BLOCKED |
+| L6 | New user onboarding QA | Mar 18 | ⬜ BLOCKED |
+| L7 | Stripe failed charge investigation | Mar 16 | ⬜ BLOCKED |
+| L8 | `<thinking>` fix verified in prod | Mar 16 | ⬜ BLOCKED |
+| L9 | Tools tab (P1-10 remaining) | Mar 19 | ⬜ BLOCKED |
+| L10 | Compass settings verified | Mar 16 | ⬜ BLOCKED |
+
+**🚨 DIGEST STALL IS BLOCKING ALL OTHER WORK**
+Until digest pipeline is reliable, other launch items cannot be properly tested or validated.
 
 ### Snapback Validation (Mar 16–22)
 
