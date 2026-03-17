@@ -96,6 +96,7 @@
 | **StripeBot** | Idle | UNIFIED OPS MONITOR |
 | **Wire** | Consolidated | DEEP RESEARCHER |
 | **PoeBot** | Consolidated | UNIFIED OPS MONITOR |
+| **DC Manager** | Idle | UNIFIED OPS MONITOR |
 
 ---
 
@@ -115,7 +116,7 @@
 | **Email** | 6 | ✅ Complete workflow automation |
 | **Operations** | 4 | ✅ Dashboard + monitoring + backup |
 | **Intelligence** | 4 | ✅ Research + pattern recognition |
-| **Engineering** | 4 | ✅ Frontend + BHA + specs + DC |
+| **Engineering** | 3 | ✅ Frontend + BHA + specs (DC consolidated) |
 | **Marketing** | 3 | ✅ Content + social + SEO |
 | **Meta** | 4 | ✅ Strategy + governance + learning |
 | **Customer Success** | 2 | ✅ Onboarding + user health |
