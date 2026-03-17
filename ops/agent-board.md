@@ -1,12 +1,47 @@
 # 🤖 Agent Board — DecisionBot Operations
 
-Last updated: 2026-03-16 21:06 UTC
+Last updated: 2026-03-17 05:07 UTC
 
 ## Current Status
 
 | Agent | Status | Last Run | Actions |
 |-------|--------|----------|---------|
 | DecisionBot | 🟢 Active | 21:06 UTC | No items to process |
+| FeedbackBot | 🟢 Active | 05:07 UTC | 6 new drops routed |
+
+---
+
+## 📬 FeedbackBot Run — 05:07 UTC (2026-03-17)
+
+**6 new drops from Joey routed** (Drops 4–9)
+
+### 🔥 High-Priority Actions Queued
+
+| # | Task | Priority | Source Drop |
+|---|------|----------|-------------|
+| 1 | **KILL "Drop received" ACK emails** — replace with Brooke-themed threaded replies | 🚨 HIGH | 1773719385661621 |
+| 2 | **Unsubscribe/privacy compliance audit** — check all recent outbound emails | 🚨 HIGH | 1773719120783927 |
+| 3 | **Resend COMPASS email** with all updates: user scenarios, Agency/Enterprise tier, content idea, unsubscribe compliance | ⚙️ ACTION | 1773721943195591 |
+| 4 | **COMPASS additions**: Find GitHub md files with user scenario exercise | ⚙️ ACTION | 1773720630516055 |
+| 5 | **Verify EMAIL-LOG.md** is logging all agent-generated emails | 📋 MEDIUM | 1773719281471780 |
+
+### ✅ Routed Today
+
+- Drop 3 (02:43 UTC): COMPASS onboarding modifications → COMPASS.md updated (v2)
+- Drop 4 (03:28 UTC): Duplicate of Drop 3 — no action
+- Drop 5 (03:45 UTC): Unsubscribe compliance + combine-all request → decisions.log, backlog
+- Drop 6 (03:48 UTC): Email log request → decisions.log, EMAIL-LOG.md audit queued
+- Drop 7 (03:49 UTC): Kill "Drop received" ACKs → decisions.log (PRODUCT DECISION)
+- Drop 8 (04:10 UTC): COMPASS approved "work of art" + 3 additions → approved-content.md
+- Drop 9 (04:32 UTC): Resend request → agent-board backlog
+
+### 📝 Key Decisions Logged (decisions.log)
+
+1. **PRODUCT:** Kill bare "Drop received" ACK emails → threaded Brooke-themed replies
+2. **PROCESS:** Maintain EMAIL-LOG.md for all agent-generated emails (Joey's request)
+3. **COMPLIANCE:** Unsubscribe + privacy policy required in ALL outbound emails (enforcement gap)
+
+---
 
 ## Recent Runs
 

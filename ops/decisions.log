@@ -1,3 +1,27 @@
+### 05:07 UTC — FeedbackBot (2026-03-17)
+
+**PRODUCT DECISION: Kill "Drop received" ACK emails**  
+- Source: Joey reply (Drop 1773719385661621, 03:49 UTC)  
+- Decision: Remove/disable the bare "Drop received" auto-acknowledgment emails  
+- Replace with: Threaded replies on the originating email thread, styled in Brooke theme (Brooke cream/copper/sage palette)  
+- Status: ⏳ Pending hub engineering implementation  
+- Priority: HIGH — this is a UX regression Joey explicitly flagged
+
+**PROCESS DECISION: Maintain persistent email log**  
+- Source: Joey (Drop 1773719281471780, 03:48 UTC)  
+- Decision: ops/EMAIL-LOG.md must log every agent-generated email (subject, to, timestamp, thread ID, summary)  
+- Status: EMAIL-LOG.md exists — audit and enforce logging cadence  
+- Priority: MEDIUM
+
+**COMPLIANCE ISSUE: Unsubscribe/privacy missing from some emails**  
+- Source: Joey (Drop 1773719120783927, 03:45 UTC)  
+- Decision: ALL outbound emails MUST include unsubscribe link + privacy policy link in footer  
+- Note: EMAIL-STANDARDS.md already specifies this — enforcement gap exists  
+- Status: ⏳ Audit recent outbound emails for compliance  
+- Priority: HIGH — legal/deliverability risk
+
+---
+
 ### 21:57 UTC — DecisionBot Run
 - **Status:** No actions required
 - **Email drops found:** 0 (last 2h)
