@@ -19,11 +19,17 @@
 
 **Pricing:** $10-20/user/month ($8-20 annually), free tier with limited AI
 
-### Mem.ai - Status Quo
-**No 2026 updates found in public sources**
-- Pricing: Free basic + $10-12/month Pro ($8 annually)
-- Core: AI organization, semantic search, automatic connections
-- Teams pricing: Custom
+### Mem.ai - Mem 2.0 Released (Early 2026)
+**Major update positioning Mem as "AI Thought Partner"**
+- Full rebuild for speed, reliability, full offline support across web/desktop/mobile
+- **Smart Tags**: AI generates tags based on content semantics (client names, themes like "pricing objections")
+- **Deep Search**: Natural language intent-based search (e.g., "Q3 budget concerns") with source citations
+- **Mem Chat**: Proactive AI researcher - summarizes notes, answers from history, generates content, edits/organizes
+- **Voice Mode**: Transcribes brain dumps/meetings into organized notes
+- **Agentic Chrome Extension**: Auto-saves webpages as formatted notes
+- **Daily Digest**: Curates relevant notes, auto-resurfaces old content for meetings
+- Claimed: 60% reduction in search time
+- Positioned as active AI assistant vs manual organization tools
 
 ### Reflect App - Status Quo  
 **No 2026 updates found in public sources**
@@ -33,9 +39,10 @@
 ### Key Competitive Insights
 
 1. **Notion is aggressively pushing autonomous AI** - Custom Agents is a major differentiator
-2. **Mem.ai and Reflect appear stagnant** - no visible 2026 innovation
-3. **Agent-first approach** - Notion betting on AI that works without prompting
+2. **Mem.ai is BACK with Mem 2.0** - Major early 2026 release with proactive AI features, offline support, voice capture
+3. **Agent-first approach** - Both Notion and Mem betting on AI that works without prompting
 4. **Integration depth** - Notion's MCP support (Linear, Figma, HubSpot) vs our API-first approach
+5. **Voice/Meeting capture** - Mem 2.0's voice transcription is a gap in DropAnywhere's current feature set
 
 ### DropAnywhere Competitive Position
 
@@ -56,4 +63,4 @@
 - Superior daily digest UX vs Notion's workspace overwhelm
 
 ---
-*Last updated: March 17, 2026 - 18:55 UTC*
+*Last updated: March 17, 2026 - 19:31 UTC*
