@@ -769,7 +769,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 17, 05:31 UTC) - DocBot Refresh
+## 8. System Health & Metrics (March 17, 09:25 UTC) - DocBot Refresh
 
 > **✅ Poe Balance RESTORED:** Topped up to **283,939 points** (was 12,522 💀 at 04:51 — crisis resolved!). Burn rate now **80,030/6h** (100 calls). Top bots: idealstate (47,793), theREALrealtalk (16,956), EpiphanyAI (9,849). 3.5h runway at current burn. Dropper-code shipped PRs #193–#199 tonight. Hub deploy SUCCESS at 04:32 UTC. ✅
 
@@ -800,7 +800,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 | Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | **100** | **100** | **100** | **100** | **100** ✅ | **100** ✅ | **100** ✅ | **100** ✅ | stable |
 | Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** | **98%** (87/89) | **98%** (98/100) | **98%** (98/100) | **98%** | **98%** (98/100) | **99%** (99/100) ✅ | **99%** (99/100) ✅ | **99%** (99/100) ✅ | **99%** (99/100) ✅ | stable |
 | Hub open PRs (all) | - | - | - | - | - | 4 open | **6 open** (#186-191) | **7 open** (#186-192) | - | - | **6 open** (#191-196) | **0 open** ✅ | **0 open** ✅ | **0 open** ✅ | **0 open** ✅ | stable |
-| Hub merged PRs | - | 9 | **12** | **15** | **#175-176** | **#176** latest | **#176** latest | **#176** latest | **pending** | **#190-194** | **#190-196** | **#190-196** | **#190-199** | **#190-199** | **#190-199** | stable |
+| Hub merged PRs | - | 9 | **12** | **15** | **#175-176** | **#176** latest | **#176** latest | **#176** latest | **pending** | **#190-194** | **#190-196** | **#190-196** | **#190-199** | **#190-199** | **#190-199** | **#190-199** | stable |
 | Open issues (hub) | 0 | 0 | **0** | **0** | **6** | **6** | **6** | **2** | **2** | **1** | **0** | **0** ✅ | **0** ✅ | **0** ✅ | **0** ✅ | stable |
 | joey-backup commits | - | - | - | **40+** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | - |
 | GOLDMINE excavations | - | - | - | **batch-0001** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | - |
@@ -946,4 +946,6 @@ Joey or Claw can edit this document at any time. When doing so:
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
 *Last auto-refreshed: 2026-03-17 05:31 UTC — DocBot metrics refresh. Section 8 updated: Mar 17 05:31 column added. **Big story: Poe topped up 12,522→283,939 ✅ (crisis resolved).** Burn now 80,030/6h (top bots: idealstate 47,793, theREALrealtalk 16,956, EpiphanyAI 9,849). DA drops stable at 889 total, 49/24h. BHA 261 users, 63 active/7d, 2 new/24h. Hub deploy SUCCESS at 04:32 UTC. Digest stall persists: 3/day. 🦜*
+
+y. 🦜*
 
