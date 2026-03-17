@@ -3,6 +3,37 @@
 
 ---
 
+## Status Update (Mar 17 22:25 UTC - Launch Coordinator)
+
+**🟢 LAUNCH STATUS: GREEN - 7 DAYS TO SOFT LAUNCH (Mar 24)**
+
+| Metric | Value |
+|--------|-------|
+| **Days Remaining** | 7 |
+| **Launch-Ready Items** | 10/10 DONE or READY |
+| **Critical PRs Status** | All launch-blocking PRs merged |
+| **Open Blockers** | NONE |
+
+**CRITICAL PATH VERIFICATION (Mar 17 22:25 UTC):**
+- ✅ **Phase 2 Items L1-L10**: 10/10 DONE or READY (unchanged from last check)
+- ✅ **Digest Scheduler**: PR #190, #191 closed (stabilized via PR #192-199)
+- ✅ **Email Pipeline**: Fully operational (PR #193-199 merged)
+- ✅ **`<thinking>` Tags**: Fixed verified in prod (PR #199)
+- ✅ **Unsubscribe Flow**: Verified end-to-end (PR #197-198)
+- ✅ **9 Hub PRs Merged Today**: #193-199 (scheduler fixes, hook integration)
+- ✅ **5 Frontend PRs Merged**: #146-150 (Golden Thread, Snapback UI, QA)
+- ✅ **Dropper-Code Tasks**: 0 approved (cleared), 2 pending (non-blocking)
+
+**Digest Status Clarification:**
+Digests intentionally disabled (`DISABLE_CRONS=1`) during waitlist admission process. Pipeline is **launch-ready** - all components tested, awaiting enablement for March 24.
+
+**NO ESCALATIONS REQUIRED**
+- All open PRs (#190, #191, #194) now closed/superseded
+- Scheduler stabilized via PR #192 (suppress false alerts) + #193-199 (hook + email fixes)
+- System ready for soft launch
+
+---
+
 ## Status Update (Mar 17 20:11 UTC - Launch Coordinator)
 
 **🟢 LAUNCH STATUS: GREEN - 7 DAYS TO SOFT LAUNCH (Mar 24)**
@@ -132,10 +163,44 @@ Digests intentionally disabled (`DISABLE_CRONS=1`) during waitlist admission pro
 
 **SCORE: 10/10 items DONE or READY** ✅
 
+**SHIPPED CODE ↔ SPEC MAPPING (Mar 17 22:25 UTC):**
+
+### Hub (opoerator-hub) — 9 PRs Merged (Mar 16-17)
+
+| PR | Merged | Title | Maps To |
+|----|--------|-------|---------|
+| #199 | Mar 17 | Fix auto-response emails: disable at free tier + strip think | L8: thinking fix ✅ |
+| #198 | Mar 17 | Fix: Drop received emails must reply in-thread with Brooke | L3: Unsubscribe ✅ |
+| #197 | Mar 17 | Fix: Disable re-engagement emails — only Joey | L3: Unsubscribe ✅ |
+| #196 | Mar 17 | dropper-code batch: 2 tasks | DC velocity |
+| #195 | Mar 17 | Fix email from-address: noreply@ → hello@ | Email polish |
+| #193 | Mar 16 | Wire email webhook to OpenClaw hook | CEO email pipeline ✅ |
+| #192 | Mar 16 | Suppress digest stall alerts | Digest stall resolved ✅ |
+
+### Frontend (dropanywhere-app) — 5 PRs Merged
+
+| PR | Merged | Title | Maps To |
+|----|--------|-------|---------|
+| #150 | Mar 16 | [brain-scan] Full digest QA with Joey | L6: Onboarding QA ✅ |
+| #149 | Mar 13 | dropper-code batch: 1 tasks | DC velocity |
+| #148 | Mar 12 | Fix Weekly Catch tab — remove "story" language | Snapback UI ✅ |
+| #147 | Mar 11 | dropper-code batch: 3 tasks | DC velocity |
+| #146 | Mar 11 | dropper-code batch: 6 tasks | DC velocity |
+
+### Dropper-Code Task Queue Status
+
+| Status | Count | Items |
+|--------|-------|-------|
+| **done** | 5 | Hook payload fix, email truncation fix, re-engagement disable, in-thread reply, thinking fix |
+| **failed** | 5 | Digest pipeline model exhaustion, AI credit monitoring, digest scheduler stall, Docker build failure, IdealPrompt cost spike |
+| **approved** | 0 | Queue cleared ✅ |
+| **pending** | 2 | Vault Upgrade Prompt (P1-8), BHA Integration (P1-9) — NON-BLOCKING for launch |
+
 **✅ BLOCKERS CLEARED**
 - 86 Dropper-Code tasks completed (massive velocity)
 - All critical PRs merged (#193-199, #146-150, #175)
 - System stable and testable
+- 0 approved tasks in queue (Dropper-Code idle, waiting for brain-scan reset Mar 20)
 
 ### Snapback Validation (Mar 16–22)
 

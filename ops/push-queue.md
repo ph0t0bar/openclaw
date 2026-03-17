@@ -9,3 +9,12 @@ Last cleared: 2026-03-17 22:16 UTC by Archivist
 ---
 ## Queue (add new entries below)
 
+### Added by Creative Review — 2026-03-17 22:25 UTC
+- social/your-second-brain-has-no-inbox-linkedin.md
+- social/pitches.md
+- social/launch-week-inbox-was-mistake-linkedin.md
+- social/launch-week-day3-capture-guilt-linkedin.md
+- social/why-simple-feels-scary-linkedin.md
+- social/the-inbox-was-a-mistake-linkedin.md
+- social/the-inbox-was-a-mistake-linkedin-POLISHED.md
+
