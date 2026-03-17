@@ -7,13 +7,17 @@ const util = require('util');
 const execAsync = util.promisify(exec);
 const app = express();
 const PORT = process.env.PORT || 3000;
+const CONTROL_UI_PORT = process.env.CONTROL_UI_PORT || 3001;
 
 // Config paths
 const CONFIG_PATH = '/root/.openclaw/openclaw.json';
 const BACKUP_DIR = '/root/.openclaw/config-backups';
 
+// Mount path for the control UI (can be set via env)
+const CONTROL_UI_MOUNT_PATH = process.env.CONTROL_UI_MOUNT_PATH || '/control';
+
 // Simple auth token from env
-const AUTH_TOKEN = process.env.CONFIG_UI_TOKEN || 'dev-token-change-in-production';
+const AUTH_TOKEN = process.env.CONFIG_UI_TOKEN || process.env.OPENCLAW_GATEWAY_TOKEN || 'dev-token-change-in-production';
 
 // Middleware
 app.use(express.json());
