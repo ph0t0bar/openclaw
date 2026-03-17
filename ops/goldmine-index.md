@@ -321,3 +321,63 @@ joey-backup/Ingestion/
 *Research completed:* 12:54 UTC  
 **Files cataloged:** 30 pre-excavated + metadata links to 30+ source files  
 **Next researcher action:** Cross-reference Council Protocol with OpenClaw's current agent system
+
+---
+
+## 🎯 COMPASS User Scenarios — Mining Result
+
+*Discovered: 2026-03-17 13:16 UTC by Opus Strategist*  
+*Task: COMPASS additions — Find GitHub md files with user scenario exercise*
+
+### Files Located for User Scenario Extraction
+
+| File Path | Size | Relevance |
+|-----------|------|-----------|
+| `Ingestion/0_VAULT/conversations/` | 1,000+ files | ChatGPT conversations Dec 2022-Jul 2024 — **direct user scenario goldmine** |
+| `Ingestion/.claude/context/FULL-PICTURE.md` | 10.6 KB | Joey's psychological framework for user pain points |
+| `Ingestion/.claude/context/ABOUT_JOEY_HAMER.md` | ~TBD | Joey's complete origin story — persona development source |
+| `Ingestion/1_GOLDMINE/excavations/batch-0001.json` | ~272KB | Pre-mined metadata with 30 file analyses including user patterns |
+
+### Immediate COMPASS Applications
+
+**From FULL-PICTURE.md — The Vulnerability Gap Thesis:**
+- User scenario: "Authentic humanness became too performative/risky for human-to-human interaction"
+- User quote pattern: "Your pain isn't unique - it's the most common prayer of the 21st century"
+- Hook: Users believe their pain is uniquely shameful — epiphany is showing them it's universal
+
+**From batch-0001.json — 1,564 patterns mined:**
+- Top user language: "your" (949 occurrences), "actually" (643), "time" (pattern)
+- Retention data: 45 msgs/user vs industry avg 3 — **proves deep engagement scenario**
+- 68,142 Poe users with $0 marketing — **organic growth user scenario**
+
+### Recommended Extraction Strategy
+
+1. **ChatGPT conversations (0_VAULT/conversations/)** — Mine 2023-2024 for:
+   - Joey asking for help with BHA/personal projects = *founder persona use case*
+   - Technical problem-solving patterns = *power user scenario*
+   - Creative ideation flows = *creator persona use case*
+
+2. **BHA Notion exports (0_VAULT/BHA/)** — 52 JSON files with:
+   - `Users.json` + `Messages.json` = *actual user behavior patterns*
+   - `Personas.json` + `Persona_Prompts.json` = *how users interact with AI personas*
+   - `Onboarding_Flow.json` = *proven user journey mapping*
+
+3. **ABOUT_JOEY_HAMER.md** — Founder-as-user scenario:
+   - Panic attack 2014 → depression → breakthrough sequence = *emotional transformation arc*
+   - Build pain → product → 68K users = *founder-product-market fit story*
+
+### Actionables for COMPASS v2
+
+- [ ] Extract 3-5 user scenarios from `conversations/` folder (early BHA dev period)
+- [ ] Pull actual user quotes from `BHA/Messages.json` (anonymized)
+- [ ] Build "Joey's Journey" founder-as-user narrative from ABOUT_JOEY_HAMER.md
+- [ ] Cross-reference INDEX.json (80+ bots) with persona → user mapping
+
+*These aren't generic user scenarios — they're Joey's actual patterns, proven in 68K+ user interactions.*
+
+---
+
+*Research completed:* 13:16 UTC  
+**Source:** github.com/ph0t0bar/joey-backup via GitHub API  
+**Files identified:** 4 primary sources + 1,050+ secondary sources  
+**Next action:** Deep extraction of 0_VAULT/conversations/ for scenario scripts
