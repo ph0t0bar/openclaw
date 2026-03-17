@@ -47,6 +47,60 @@ Don't boil the ocean. Pick ONE to start:
 
 ---
 
+---
+
+## 2026-03-17 — Mem AI vs Notion AI Competitive Intel
+
+**Source:** Web research (Perplexity Sonar Pro)  
+**Timestamp:** 2026-03-17 17:55 UTC
+
+### Key Finding: Mem AI Leading AI-First Positioning
+
+**Mem AI has established itself as the strongest AI-first note-taking option as of 2026**, while Notion offers broader feature depth but requires more setup time.
+
+### Mem AI 2026 Core Features
+
+| Feature | What It Does | DropAnywhere Parity? |
+|---------|--------------|---------------------|
+| **Notes Researcher AI** | Natural language search across notes with source citations | ✅ Vault search exists, needs citation layer |
+| **Smart AI Writer** | Generates drafts by analyzing existing notes & learning writing style | ⚠️ Partial — daily digest generation exists |
+| **Note Finder** | Auto-surfaces related notes by meaning (semantic matching) | ❌ Not implemented — opportunity gap |
+| **AI Knowledge Base** | Connects related notes, identifies patterns without manual tagging | ⚠️ Hub has clustering, not exposed to users |
+| **Summarization** | Extracts details from long documents | ✅ Daily digest does this |
+| **Voice Mode** | Auto-transcribes brain dumps to structured notes | ❌ Not implemented — major opportunity |
+| **Mem 2.0** | "Parallel mind" for complex workflows, predictive analytics coming | ⚠️ Intelligence Map concept similar |
+
+### Pricing Intel
+
+- **Mem AI:** Free (25 notes, 25 chat/mo) → Pro $12/mo unlimited
+- **Notion AI:** Add-on pricing model
+- **DropAnywhere:** Currently free tier focused — pricing gap to close
+
+### Competitive Positioning
+
+| Aspect | Mem AI | Notion | **DropAnywhere Opportunity** |
+|--------|--------|--------|------------------------------|
+| AI Search | Superior semantic | Keyword-based | **Beat both with Hub intelligence** |
+| Setup | Zero setup | Extensive config | **One-drop onboarding** |
+| Feature Breadth | Narrow, deep | Wide, shallow | **Focused workflow completion** |
+| Best For | Knowledge workers | Project teams | **Founders/agencies shipping work** |
+
+### Strategic Takeaways
+
+1. **Voice Mode = Gap** — Mem has auto-transcribe brain dumps. DropAnywhere has iOS shortcut but no voice-to-structure.
+2. **Semantic Note Finder = Gap** — We have Hub clustering but don't surface "related drops" to users.
+3. **Pricing clarity needed** — Mem's $12/mo unlimited is clean. Our model TBD.
+4. **Mem 2.0 "parallel mind"** — Similar to our Intelligence Map concept. Race to ship.
+
+### Action Items
+
+- [ ] Audit: How hard to add "related drops" suggestion to digest?
+- [ ] Spike: Voice-to-structure transcription (Whisper API + format)
+- [ ] Pricing: Define clear free/paid tier boundaries
+- [ ] Positioning: Double down on "ships done work" vs "organizes notes"
+
+---
+
 ## Previous Findings
 
 *(Append new competitive research below this line)*
