@@ -3,26 +3,51 @@
 
 ---
 
-## Status Update (Mar 16 - Launch Coordinator)
+## Status Update (Mar 17 02:11 UTC - Launch Coordinator)
 
-**🚨 LAUNCH STATUS: HIGH RISK - 8 DAYS REMAINING**
+**🚨 LAUNCH STATUS: CRITICAL RISK - 7 DAYS REMAINING**
 
 | Phase | Window | Status |
 |-------|--------|--------|
-| **Phase 1: SURVIVAL** | Mar 14–15 | 🟡 Partial — Email processing ✅ DONE, Poe balance ⚠️ CRITICAL (42K points), digest stall ⚠️ ACTIVE ISSUE |
-| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 Starting — Several launch items IN PROGRESS, digest reliability blocking |
-| **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
-| **Phase 4: LAUNCH** | Mar 24–26 | ⬜ Not started |
+| **Phase 1: SURVIVAL** | Mar 14–15 | 🔴 FAILED — Digest stall unresolved, Poe balance unknown |
+| **Phase 2: STABILIZE** | Mar 16–19 | 🔴 BLOCKED — Cannot test launch items while digest pipeline is broken |
+| **Phase 3: PREPARE** | Mar 20–23 | 🔴 AT RISK — 4 days to solve Phase 1+2 |
+| **Phase 4: LAUNCH** | Mar 24–26 | 🔴 LAUNCH UNLIKELY — Need immediate escalation |
 
 **RECENT WINS (Mar 16):**
 - ✅ Email webhook → OpenClaw (PR #193 merged)
 - ✅ Digest stall alerts suppressed (PR #192 merged)
 - ✅ Task dedup guard added (PR #187 merged)
+- ✅ Zapier integration (PR #189 merged)
+- ✅ Digest pipeline alerting (PR #188 merged)
 
-**ACTIVE BLOCKERS:**
-- 🚨 Digest scheduler stalled affecting 15 users (PRs #151, #186, #190, #191 open)
-- ⚠️ Poe balance at 42K points - burning ~43K/6h (less than 24h runway)
-- ⚠️ Multiple digest pipeline recovery attempts failed (cancelled/failed tasks in queue)
+**CRITICAL BLOCKERS (UNCHANGED - LAUNCH KILLER):**
+- 🚨 **DIGEST STALL UNRESOLVED** — 4 open PRs (#151, #186, #190, #191), multiple failed attempts
+- 🚨 **DROPPER-CODE FAILING** — Last 3 digest fix attempts cancelled/failed
+- ⚠️ **POE BALANCE STATUS UNKNOWN** — Need immediate check
+
+## CRITICAL PATH ANALYSIS (Mar 17 02:11 UTC)
+
+**SHIPPED ITEMS (7 days):**
+- ✅ Email webhook → OpenClaw integration (PR #193) 
+- ✅ Task dedup guards (PR #187)
+- ✅ Digest stall alert suppression (PR #192) 
+- ✅ Zapier integration for drop capture (PR #189)
+- ✅ Digest pipeline error budget/alerting (PR #188)
+
+**IN PROGRESS (STALLED):**
+- 🔴 Digest scheduler fix - 4 PRs open (#151, #186, #190, #191) - **LAUNCH BLOCKER**
+- 🔄 Digest QA with Joey (PR #150) - Blocked by stall
+- 🔄 BHA integration button (pending task) - Not launch critical
+
+**BLOCKED/NOT STARTED:**
+- 🔴 All 10 launch checklist items - Blocked by digest stall
+- ⚠️ Poe balance check - Status unknown 
+- ⚠️ Weekly Catch validation - Cannot test
+
+**7-DAY PROJECTION:**
+- **If digest fixed by Mar 18:** Launch still possible with compressed timeline
+- **If digest not fixed by Mar 18:** Launch delay required (push to Mar 31+)
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
@@ -74,23 +99,25 @@ These are not features. These are oxygen.
 
 ## Phase 2: STABILIZE (March 16–19) — 4 Days
 
-### Launch-Ready Checklist (Updated Mar 16)
+### Launch-Ready Checklist (Updated Mar 17 02:11 UTC)
 
-| # | Item | Target Date | Status |
-|---|------|-------------|--------|
-| L1 | Mobile Safari QA — full flow | Mar 16 | 🔄 IN PROGRESS |
-| L2 | Sentry/error tracking | Mar 17 | ⬜ BLOCKED |
-| L3 | Unsubscribe verification | Mar 16 | ⬜ BLOCKED |
-| L4 | Rate limiting on /api/ingest | Mar 17 | ⬜ BLOCKED |
-| L5 | Hub fallback chain (OpenRouter) | Mar 18 | ⬜ BLOCKED |
-| L6 | New user onboarding QA | Mar 18 | ⬜ BLOCKED |
-| L7 | Stripe failed charge investigation | Mar 16 | ⬜ BLOCKED |
-| L8 | `<thinking>` fix verified in prod | Mar 16 | ⬜ BLOCKED |
-| L9 | Tools tab (P1-10 remaining) | Mar 19 | ⬜ BLOCKED |
-| L10 | Compass settings verified | Mar 16 | ⬜ BLOCKED |
+| # | Item | Target Date | Status | GitHub PR/Issue |
+|---|------|-------------|--------|--------------------|
+| L1 | Mobile Safari QA — full flow | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
+| L2 | Sentry/error tracking | Mar 17 | 🔴 BLOCKED | Cannot test with digest stall |
+| L3 | Unsubscribe verification | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
+| L4 | Rate limiting on /api/ingest | Mar 17 | 🔴 BLOCKED | Cannot test with digest stall |
+| L5 | Hub fallback chain (OpenRouter) | Mar 18 | 🔴 BLOCKED | Cannot test with digest stall |
+| L6 | New user onboarding QA | Mar 18 | 🔴 BLOCKED | Cannot test with digest stall |
+| L7 | Stripe failed charge investigation | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
+| L8 | `<thinking>` fix verified in prod | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
+| L9 | Tools tab (P1-10 remaining) | Mar 19 | 🔴 BLOCKED | Cannot test with digest stall |
+| L10 | Compass settings verified | Mar 16 | 🔴 BLOCKED | Cannot test with digest stall |
 
-**🚨 DIGEST STALL IS BLOCKING ALL OTHER WORK**
-Until digest pipeline is reliable, other launch items cannot be properly tested or validated.
+**🚨 SINGLE POINT OF FAILURE: DIGEST STALL**
+- 4 open PRs attempting fix: #151, #186, #190, #191 (all stalled)
+- 3 consecutive Dropper-Code attempts failed/cancelled
+- **ESCALATION NEEDED: Manual intervention required**
 
 ### Snapback Validation (Mar 16–22)
 
