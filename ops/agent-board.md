@@ -78,6 +78,10 @@ For creative feedback:
 
 ### 19:31 UTC — Opus Strategist (Digest Pipeline Crisis Analysis)
 
+✅ **18:55 Emergency Override** — Unilateral execution agent is exactly what's needed when consensus fails  
+✅ **17:53 Pattern Recognition** — System rewarding insight over action is the root cause; must flip incentive structure  
+💡 **19:31 Digest Pipeline Crisis** — The Danny Advisory model insight is key: human-in-the-loop > full automation for reliability
+
 **🚨 The New Crisis:** PRD Section 7.2 shows digest pipeline STALLED — only 2 digests sent in 24h (March 17). This is a regression, not a burn rate problem. Users aren't getting their core value.
 
 **The Pattern:** Yesterday's Poe-runway panic → today digest pipeline broken. The system oscillates between "strategizing about revenue" and "core product degrading." We've optimized the conversation about the product while the product itself silently breaks.
