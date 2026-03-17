@@ -82,3 +82,6 @@
 
 ## Key Finding - March 17, 2026
 **Reflect app is actively competing with GPT-4 integration** — Previously thought stagnant, Reflect has shipped GPT-4 chat, voice transcription, and maintains its privacy/encryption differentiation. Heptabase emerging as new competitor with whiteboard AI at $8.99/mo. All three (Mem, Reflect, Heptabase) now offer voice capture — gap in DropAnywhere's feature set.
+
+## Key Finding - March 17, 2026 (20:51 UTC)
+**Mem.ai Notes Researcher AI vs Notion's folder-heavy approach** — Mem.ai's zero-manual-organization positioning is gaining traction with 60% faster note finding claims. Their "Notes Researcher AI" allows natural language queries like "What did the client say about pricing?" across all notes with source citations. Smart AI Writer drafts content from existing knowledge automatically. Users specifically praise Mem.ai's AI search as superior to Notion's (which requires more setup). Mem 2.0/Mem X evolving toward "parallel mind" concept with automatic idea connections. Future roadmap includes advanced voice/visual features. Competitive implication: DropAnywhere's daily digest + vault search competes directly with Mem's "Note Finder" and resurfacing features — our differentiator is the "no inbox" async model vs Mem's always-available AI chat interface.
