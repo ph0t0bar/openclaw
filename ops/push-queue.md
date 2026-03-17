@@ -1,4 +1,19 @@
-# Sync Auditor Push Queue — Generated $(date -u +%Y-%m-%d\ %H:%M\ UTC)
+# Sync Auditor Push Queue — Generated 2026-03-17 18:12 UTC
+
+## Creative Review Additions (March 17)
+- /root/.openclaw/workspace/social/digest-experience-linkedin-POLISHED.md
+- /root/.openclaw/workspace/social/digest-experience-linkedin.md
+- /root/.openclaw/workspace/social/launch-week-authentic-voice-linkedin-POLISHED.md
+- /root/.openclaw/workspace/social/launch-week-authentic-voice-linkedin.md
+- /root/.openclaw/workspace/social/launch-week-momentum-linkedin-JOEY-VOICE.md
+- /root/.openclaw/workspace/social/mindset-shift-linkedin-POLISHED.md
+- /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-FINAL-POLISH.md
+- /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-FINAL.md
+- /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-JOEY-VOICE-REWRITE.md
+- /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-JOEY-VOICE.md
+- /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-POLISHED.md
+- /root/.openclaw/workspace/social/pitches.md
+- /root/.openclaw/workspace/social/content-calendar.md
 
 ## Rescued Artifacts
 - /root/.openclaw/workspace/templates/morning-brief.html (from /tmp/)

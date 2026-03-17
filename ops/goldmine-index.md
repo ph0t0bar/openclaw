@@ -381,3 +381,88 @@ joey-backup/Ingestion/
 **Source:** github.com/ph0t0bar/joey-backup via GitHub API  
 **Files identified:** 4 primary sources + 1,050+ secondary sources  
 **Next action:** Deep extraction of 0_VAULT/conversations/ for scenario scripts
+
+---
+
+## 🎯 COMPASS User Scenarios — ACTUAL MINED DATA
+
+*Mined: 2026-03-17 18:15 UTC by Opus Strategist*  
+*Source: `time-capsule-2026-02-24.json` (308 drops, 12 digests)*  
+*Value: REAL user behavior patterns from Joey's own usage*
+
+### User Scenario Pattern 1: The System Integrator
+**Drop ID:** 1771890773924  
+**Source:** Feedback (dashboard)  
+**Tags:** —  
+**Scenario:** "Have an assistant on the thought map connected directly to the system (Claude code, Poe API, templated bots/prompts) hydrated on any aspect of the system — GitHub, Railway, Poe, OpenRouter, OpenClaw, BrutallyHonestAI, Drop-Anywhere, any project, all contextual docs, the OS. Work autonomously."
+
+**COMPASS Application:** This is the power-user scenario — someone who wants their assistant to have full system context and work across all their tools.
+
+---
+
+### User Scenario Pattern 2: The Accountability Partner
+**Drop IDs:** 1771883544147, 1771883536697, 1771763294538  
+**Source:** Web drops  
+**Tags:** `accountability`, `completed`, `action`  
+**Scenario:** Using `[COMPLETED]` tag format for task tracking — "Add H-Score hydration logic to Health UI mockup (done when visual balance confirmed)" and "Input Nancy/Sunny Lane 7.77-mile coordinates into route generator (done when map saved)."
+
+**COMPASS Application:** The accountability syntax pattern — defining "done when" criteria. This is a core user behavior to teach.
+
+---
+
+### User Scenario Pattern 3: The Multi-Channel Aggregator  
+**Drop ID:** 1771825005889  
+**Source:** Web  
+**Tags:** `web-drop`, `idea`  
+**Scenario:** "Inbox from Instagram, Texts and Gmails linked to drop@drop-anywhere.com — but in the inbox, as opposed to vault. Plus Calendar synced."
+
+**COMPASS Application:** The unification desire — wanting ALL communication channels flowing into one system. This explains the product vision.
+
+---
+
+### User Scenario Pattern 4: The Digest Feedback Loop
+**Drop IDs:** 1771883556344, 1771776544137  
+**Source:** Web / Digest Feedback  
+**Tags:** `feedback`, `digest`, `test`, `product`, `strategy`, `ai`  
+**Scenario:** "[Feedback on February 22, 2026 digest] I love this one!" and "[Feedback on test] works now"
+
+**COMPASS Application:** The feedback habit — Joey consistently gives feedback on digests. This shows the engaged user loop.
+
+---
+
+### User Scenario Pattern 5: The Health-Conscious Creator
+**Drop IDs:** 1771698489002197, 1771605338328  
+**Source:** Poe / Web  
+**Tags:** `tech`, `product`, `health`, `design`, `action`  
+**Scenario:** "Went on 7.4 mile run (my highest) based on RunCraft, the quick app I vibe coded. Working on direct drop integration!" AND "User Friendly 'Health' tied to H-score (hydration). Nice way to phrase balanced Drop-Anywhere use."
+
+**COMPASS Application:** The creator-health intersection — building tools for personal health goals and sharing the journey.
+
+---
+
+### User Scenario Pattern 6: The Community Builder
+**Drop ID:** 1771617337830170  
+**Source:** Poe  
+**Tags:** `relationships`, `product`, `strategy`, `pay it forward`, `Idea`  
+**Scenario:** "Pay it forward. Feature and selling point. Allow community drops or public drops. See how many people you help with what you share. How it makes people feel."
+
+**COMPASS Application:** The social layer — wanting impact metrics on shared content. Shows the relationship domain integration.
+
+---
+
+## COMPASS Onboarding Extracts (Ready to Use)
+
+| Scenario | User Quote | Teaching Moment |
+|----------|------------|-----------------|
+| **Power User** | "Assistant hydrated on any aspect of the system... work autonomously" | Show how to connect tools |
+| **Accountability** | "[COMPLETED] Input coordinates (done when map saved)" | The "done when" syntax |
+| **Aggregation** | "Inbox from Instagram, Texts, Gmails... plus Calendar" | Multi-channel capture |
+| **Feedback Loop** | "I love this one!" / "works now" | Digest feedback habit |
+| **Health Integration** | "7.4 mile run based on app I vibe coded" | Personal tooling for goals |
+| **Community** | "See how many people you help" | Social impact metrics |
+
+*These aren't hypothetical — they're mined from actual Joey drops over a 4-day period.*
+
+---
+
+**Next Mining Target:** `time-capsule-2026-02-04.json` (409KB) for earlier patterns, or `0_VAULT/conversations/` for pre-DropAnywhere ChatGPT usage patterns.
