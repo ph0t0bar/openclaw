@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"></head>
+<body style="margin:0;padding:0;background:#f5f0e8;font-family:Georgia,'Times New Roman',serif;">
+<div style="max-width:640px;margin:0 auto;padding:36px 24px;">
+
+<!-- Header -->
+<div style="text-align:center;margin-bottom:28px;">
+  <p style="margin:0;font-size:11px;color:#b8a88a;letter-spacing:3px;">DROPANYWHERE</p>
+  <h1 style="margin:6px 0 0;font-size:28px;color:#2d5016;font-weight:normal;letter-spacing:0.3px;">Morning Brief</h1>
+  <p style="margin:6px 0 0;font-size:13px;color:#8B6914;">Tuesday, March 17, 2026</p>
+  <p style="margin:4px 0 0;font-size:11px;color:#b8a88a;">7 days to launch</p>
+</div>
+
+<!-- Metrics Row -->
+<div style="background:white;border-radius:16px;padding:20px;border:1px solid #d4c5a9;margin-bottom:16px;box-shadow:0 2px 12px rgba(139,105,20,0.06);">
+  <table style="width:100%;border-collapse:collapse;">
+    <tr>
+      <td style="text-align:center;padding:8px;width:25%;">
+        <p style="margin:0;font-size:32px;color:#2d5016;font-weight:300;">105</p>
+        <p style="margin:4px 0 0;font-size:10px;color:#b8a88a;letter-spacing:1px;">USERS</p>
+      </td>
+      <td style="text-align:center;padding:8px;width:25%;border-left:1px solid #f0ebe0;">
+        <p style="margin:0;font-size:32px;color:#2d5016;font-weight:300;">918</p>
+        <p style="margin:4px 0 0;font-size:10px;color:#b8a88a;letter-spacing:1px;">DROPS</p>
+      </td>
+      <td style="text-align:center;padding:8px;width:25%;border-left:1px solid #f0ebe0;">
+        <p style="margin:0;font-size:32px;color:#8B6914;font-weight:300;">266</p>
+        <p style="margin:4px 0 0;font-size:10px;color:#b8a88a;letter-spacing:1px;">BHA</p>
+      </td>
+      <td style="text-align:center;padding:8px;width:25%;border-left:1px solid #f0ebe0;">
+        <p style="margin:0;font-size:32px;color:#5a7a5a;font-weight:300;">217K</p>
+        <p style="margin:4px 0 0;font-size:10px;color:#b8a88a;letter-spacing:1px;">POE PTS</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- Activity Pills -->
+<div style="background:white;border-radius:16px;padding:20px 24px;border:1px solid #d4c5a9;margin-bottom:16px;box-shadow:0 2px 12px rgba(139,105,20,0.06);">
+  <p style="margin:0 0 12px;font-size:10px;color:#8B6914;letter-spacing:1.5px;">LAST 24 HOURS</p>
+  <div>
+    <span style="display:inline-block;background:#e8f0e4;color:#2d5016;font-size:12px;padding:6px 14px;border-radius:20px;margin:0 6px 8px 0;font-weight:600;">75 drops captured</span>
+    <span style="display:inline-block;background:#f5efe0;color:#8B6914;font-size:12px;padding:6px 14px;border-radius:20px;margin:0 6px 8px 0;font-weight:600;">7 new BHA users</span>
+    <span style="display:inline-block;background:#e8f0e4;color:#5a7a5a;font-size:12px;padding:6px 14px;border-radius:20px;margin:0 6px 8px 0;font-weight:600;">100 emails delivered</span>
+    <span style="display:inline-block;background:#f0f0f0;color:#666;font-size:12px;padding:6px 14px;border-radius:20px;margin:0 6px 8px 0;">2 pro subscribers</span>
+  </div>
+</div>
+
+<!-- Critical Alert -->
+<div style="background:white;border-radius:16px;overflow:hidden;border:1px solid #e8c4c4;margin-bottom:16px;box-shadow:0 2px 12px rgba(139,105,20,0.06);">
+  <div style="background:#C41E3A;padding:10px 24px;">
+    <p style="margin:0;font-size:11px;color:white;letter-spacing:1.5px;font-weight:600;">NEEDS ATTENTION</p>
+  </div>
+  <div style="padding:20px 24px;">
+    <div style="margin-bottom:16px;">
+      <div style="display:flex;align-items:center;margin-bottom:6px;">
+        <span style="display:inline-block;background:#fde8e8;color:#C41E3A;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;margin-right:8px;">CRITICAL</span>
+        <p style="margin:0;font-size:14px;color:#333;font-weight:600;">Digest Pipeline Stalled</p>
+      </div>
+      <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">Only 2 digests sent in 24h (should be ~80+). <code style="background:#f5f0e8;padding:2px 6px;border-radius:4px;font-size:11px;">all_models_exhausted</code> — AI model fallback chain failing. 3 fix tasks approved for Dropper-Code.</p>
+    </div>
+    <div style="margin-bottom:16px;">
+      <div style="display:flex;align-items:center;margin-bottom:6px;">
+        <span style="display:inline-block;background:#fde8e8;color:#C41E3A;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;margin-right:8px;">CI/CD</span>
+        <p style="margin:0;font-size:14px;color:#333;font-weight:600;">Docker Build Failing</p>
+      </div>
+      <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">Both amd64 &amp; arm64 builds failing on commit <code style="background:#f5f0e8;padding:2px 6px;border-radius:4px;font-size:11px;">d6cb567</code>. Fix task approved.</p>
+    </div>
+    <div>
+      <div style="display:flex;align-items:center;margin-bottom:6px;">
+        <span style="display:inline-block;background:#fff3e0;color:#B8960A;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;margin-right:8px;">MONITOR</span>
+        <p style="margin:0;font-size:14px;color:#333;font-weight:600;">Stripe Charges Failing</p>
+      </div>
+      <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">0 succeeded, past_due subscription ($7/mo) still unresolved. 8+ failed attempts.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dropper-Code Activity -->
+<div style="background:white;border-radius:16px;padding:20px 24px;border:1px solid #d4c5a9;margin-bottom:16px;box-shadow:0 2px 12px rgba(139,105,20,0.06);">
+  <p style="margin:0 0 14px;font-size:10px;color:#8B6914;letter-spacing:1.5px;">DROPPER-CODE OVERNIGHT</p>
+  
+  <div style="margin-bottom:12px;">
+    <div style="display:flex;align-items:center;margin-bottom:4px;">
+      <span style="display:inline-block;background:#e8f0e4;color:#2d5016;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;margin-right:8px;">SHIPPED</span>
+      <p style="margin:0;font-size:13px;color:#333;">7 PRs ready for review (#193-199)</p>
+    </div>
+    <p style="margin:4px 0 0 0;font-size:12px;color:#999;">Hook fix, truncation fix, from-address standardization, re-engagement guard, + 3 more</p>
+  </div>
+
+  <div style="margin-bottom:12px;">
+    <div style="display:flex;align-items:center;margin-bottom:4px;">
+      <span style="display:inline-block;background:#e8f0e4;color:#5a7a5a;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;margin-right:8px;">APPROVED</span>
+      <p style="margin:0;font-size:13px;color:#333;">5 tasks in queue</p>
+    </div>
+    <p style="margin:4px 0 0 0;font-size:12px;color:#999;">Digest model fix, AI credit monitoring, scheduler stall, Docker CI, IdealPrompt investigation</p>
+  </div>
+
+  <div>
+    <div style="display:flex;align-items:center;margin-bottom:4px;">
+      <span style="display:inline-block;background:#fff3e0;color:#B8960A;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;margin-right:8px;">WAITING</span>
+      <p style="margin:0;font-size:13px;color:#333;">2 tasks need your approval</p>
+    </div>
+    <p style="margin:4px 0 0 0;font-size:12px;color:#999;">Vault Upgrade Prompt (customer-facing) &middot; BHA Integration Button (customer-facing)</p>
+  </div>
+</div>
+
+<!-- Poe Burn -->
+<div style="background:white;border-radius:16px;padding:20px 24px;border:1px solid #d4c5a9;margin-bottom:16px;box-shadow:0 2px 12px rgba(139,105,20,0.06);">
+  <p style="margin:0 0 12px;font-size:10px;color:#8B6914;letter-spacing:1.5px;">POE USAGE (6H)</p>
+  <table style="width:100%;border-collapse:collapse;font-size:12px;">
+    <tr style="border-bottom:1px solid #f0ebe0;">
+      <td style="padding:8px 0;color:#333;">idealstate</td>
+      <td style="padding:8px 0;text-align:right;">
+        <span style="background:#fde8e8;color:#C41E3A;font-size:10px;padding:2px 10px;border-radius:20px;">9,432 pts</span>
+      </td>
+    </tr>
+    <tr style="border-bottom:1px solid #f0ebe0;">
+      <td style="padding:8px 0;color:#333;">theREALrealtalk</td>
+      <td style="padding:8px 0;text-align:right;">
+        <span style="background:#e8f0e4;color:#5a7a5a;font-size:10px;padding:2px 10px;border-radius:20px;">3,200 pts</span>
+      </td>
+    </tr>
+    <tr style="border-bottom:1px solid #f0ebe0;">
+      <td style="padding:8px 0;color:#333;">Gemini-3-Flash</td>
+      <td style="padding:8px 0;text-align:right;">
+        <span style="background:#f5f0e8;color:#8B6914;font-size:10px;padding:2px 10px;border-radius:20px;">2,469 pts</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px 0;color:#333;font-weight:600;">Total 6h burn</td>
+      <td style="padding:8px 0;text-align:right;">
+        <span style="background:#f5f0e8;color:#333;font-size:10px;padding:2px 10px;border-radius:20px;font-weight:600;">17,910 pts</span>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- Launch Countdown -->
+<div style="background:white;border-radius:16px;overflow:hidden;border:1px solid #c4d4be;margin-bottom:24px;box-shadow:0 2px 12px rgba(139,105,20,0.06);">
+  <div style="background:#2d5016;padding:12px 24px;">
+    <p style="margin:0;font-size:11px;color:rgba(255,255,255,0.7);letter-spacing:1.5px;">MARCH 24 LAUNCH</p>
+  </div>
+  <div style="padding:20px 24px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;">
+      <tr>
+        <td style="padding:6px 0;color:#333;width:60%;">Intelligence Map email template</td>
+        <td style="padding:6px 0;text-align:right;"><span style="background:#e8f0e4;color:#2d5016;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;">DONE</span></td>
+      </tr>
+      <tr>
+        <td style="padding:6px 0;color:#333;">Onboarding funnel (13 emails)</td>
+        <td style="padding:6px 0;text-align:right;"><span style="background:#fff3e0;color:#B8960A;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;">DESIGNED</span></td>
+      </tr>
+      <tr>
+        <td style="padding:6px 0;color:#333;">Landing page</td>
+        <td style="padding:6px 0;text-align:right;"><span style="background:#f5f0e8;color:#999;font-size:10px;padding:3px 10px;border-radius:20px;">TODO</span></td>
+      </tr>
+      <tr>
+        <td style="padding:6px 0;color:#333;">Digest pipeline fix</td>
+        <td style="padding:6px 0;text-align:right;"><span style="background:#fde8e8;color:#C41E3A;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;">BLOCKED</span></td>
+      </tr>
+      <tr>
+        <td style="padding:6px 0;color:#333;">Content calendar (10 posts)</td>
+        <td style="padding:6px 0;text-align:right;"><span style="background:#e8f0e4;color:#2d5016;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600;">DONE</span></td>
+      </tr>
+      <tr>
+        <td style="padding:6px 0;color:#333;">Email deliverability testing</td>
+        <td style="padding:6px 0;text-align:right;"><span style="background:#f5f0e8;color:#999;font-size:10px;padding:3px 10px;border-radius:20px;">TODO</span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Footer -->
+<div style="text-align:center;padding-top:16px;border-top:1px solid #d4c5a9;">
+  <p style="margin:0;font-size:13px;color:#8B6914;font-style:italic;">Drop it. Forget it. Wake up lighter.</p>
+  <p style="margin:8px 0 0;font-size:18px;">&#x1F99C;</p>
+  <p style="margin:10px 0 0;font-size:10px;color:#ccc;">Reply to this email &mdash; Drop reads every reply.</p>
+</div>
+
+</div>
+</body>
+</html>
