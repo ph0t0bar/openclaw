@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Your Daily Digest — DropAnywhere</title>
+<!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><![endif]-->
+<style>
+  @media (prefers-color-scheme: dark) {
+    body { background-color: #1a1917 !important; }
+    .outer-wrap { background-color: #1a1917 !important; }
+    .card { background-color: #2D2A26 !important; border-color: #3A3733 !important; }
+    .card-inner { background-color: #2D2A26 !important; }
+    .body-text { color: #e0ddd8 !important; }
+    .muted-text { color: #9e9a94 !important; }
+    .hero-section { background: linear-gradient(150deg, #1a1917, #2D2A26) !important; }
+    .footer-text { color: #7a7670 !important; }
+  }
+  @media only screen and (max-width: 620px) {
+    .inner-wrap { padding: 16px !important; }
+    .card { padding: 20px !important; }
+    .stat-cell { display: block !important; width: 50% !important; float: left !important; }
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#FAF8F5;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;">
+<!-- Preheader -->
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Your vault processed {{drop_count}} drops overnight. Here's what emerged.&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</div>
+
+<table role="presentation" class="outer-wrap" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FAF8F5;">
+<tr><td align="center" style="padding:24px 16px;">
+<table role="presentation" class="inner-wrap" width="580" cellpadding="0" cellspacing="0" style="max-width:580px;width:100%;">
+
+<!-- DARK HERO -->
+<tr><td>
+  <table role="presentation" class="hero-section" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(150deg,#2D2A26,#3A3733);border-radius:22px 22px 0 0;">
+  <tr><td style="padding:36px 32px 28px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td style="font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:1.5px;text-transform:uppercase;">Daily Digest</td>
+      <td align="right" style="font-size:12px;color:rgba(255,255,255,0.4);">{{date}}</td>
+    </tr>
+    </table>
+    <p style="margin:16px 0 4px;font-size:24px;font-weight:700;color:#FFFEFA;line-height:1.3;">Your vault is {{vault_mood}}</p>
+    <p style="margin:0;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.5;">{{drop_count}} drops processed · {{theme_count}} themes detected · {{signal_count}} signals</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- STAT CARDS ROW -->
+<tr><td>
+  <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" style="background:#FFFEFA;border:0.5px solid rgba(45,42,38,0.08);border-top:none;padding:20px 24px;">
+  <tr>
+    <td class="stat-cell" align="center" style="padding:12px 8px;">
+      <p style="margin:0;font-size:28px;font-weight:700;color:#2D2A26;">{{drop_count}}</p>
+      <p style="margin:4px 0 0;font-size:10px;color:#9e9a94;letter-spacing:1px;text-transform:uppercase;">Drops</p>
+    </td>
+    <td class="stat-cell" align="center" style="padding:12px 8px;border-left:1px solid rgba(45,42,38,0.06);">
+      <p style="margin:0;font-size:28px;font-weight:700;color:#2D2A26;">{{theme_count}}</p>
+      <p style="margin:4px 0 0;font-size:10px;color:#9e9a94;letter-spacing:1px;text-transform:uppercase;">Themes</p>
+    </td>
+    <td class="stat-cell" align="center" style="padding:12px 8px;border-left:1px solid rgba(45,42,38,0.06);">
+      <p style="margin:0;font-size:28px;font-weight:700;color:#2D2A26;">{{signal_count}}</p>
+      <p style="margin:4px 0 0;font-size:10px;color:#9e9a94;letter-spacing:1px;text-transform:uppercase;">Signals</p>
+    </td>
+    <td class="stat-cell" align="center" style="padding:12px 8px;border-left:1px solid rgba(45,42,38,0.06);">
+      <p style="margin:0;font-size:28px;font-weight:700;color:#2D2A26;">{{vault_total}}</p>
+      <p style="margin:4px 0 0;font-size:10px;color:#9e9a94;letter-spacing:1px;text-transform:uppercase;">In Vault</p>
+    </td>
+  </tr>
+  </table>
+</td></tr>
+
+<!-- AI SYNTHESIS / SIGNAL CARD -->
+<tr><td style="padding:16px 0 0;">
+  <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" style="background:#FFFEFA;border:0.5px solid rgba(45,42,38,0.08);border-radius:22px;box-shadow:0 1px 8px rgba(45,42,38,0.04);padding:28px;">
+  <tr><td>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <span style="display:inline-block;background:rgba(45,42,38,0.06);color:#2D2A26;font-size:10px;font-weight:600;letter-spacing:1px;padding:4px 12px;border-radius:30px;text-transform:uppercase;">Signal</span>
+      </td>
+    </tr>
+    </table>
+    <p class="body-text" style="margin:16px 0 0;font-size:15px;color:#2D2A26;line-height:1.7;font-style:italic;">"{{ai_synthesis}}"</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- THEMED CLUSTERS -->
+<tr><td style="padding:16px 0 0;">
+  <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" style="background:#FFFEFA;border:0.5px solid rgba(45,42,38,0.08);border-radius:22px;box-shadow:0 1px 8px rgba(45,42,38,0.04);padding:24px 28px;">
+  <tr><td>
+    <p style="margin:0 0 16px;font-size:10px;color:#9e9a94;letter-spacing:1.5px;text-transform:uppercase;">Themes Today</p>
+
+    <!-- Theme 1 -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+    <tr>
+      <td style="width:8px;"><div style="width:4px;height:4px;border-radius:2px;background:#2D2A26;margin-top:7px;"></div></td>
+      <td style="padding-left:10px;">
+        <p style="margin:0;font-size:14px;font-weight:600;color:#2D2A26;">{{theme_1_name}}</p>
+        <p class="muted-text" style="margin:2px 0 0;font-size:12px;color:#9e9a94;">{{theme_1_count}} drops — {{theme_1_summary}}</p>
+      </td>
+    </tr>
+    </table>
+
+    <!-- Theme 2 -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+    <tr>
+      <td style="width:8px;"><div style="width:4px;height:4px;border-radius:2px;background:#2D2A26;margin-top:7px;"></div></td>
+      <td style="padding-left:10px;">
+        <p style="margin:0;font-size:14px;font-weight:600;color:#2D2A26;">{{theme_2_name}}</p>
+        <p class="muted-text" style="margin:2px 0 0;font-size:12px;color:#9e9a94;">{{theme_2_count}} drops — {{theme_2_summary}}</p>
+      </td>
+    </tr>
+    </table>
+
+    <!-- Theme 3 -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td style="width:8px;"><div style="width:4px;height:4px;border-radius:2px;background:#2D2A26;margin-top:7px;"></div></td>
+      <td style="padding-left:10px;">
+        <p style="margin:0;font-size:14px;font-weight:600;color:#2D2A26;">{{theme_3_name}}</p>
+        <p class="muted-text" style="margin:2px 0 0;font-size:12px;color:#9e9a94;">{{theme_3_count}} drops — {{theme_3_summary}}</p>
+      </td>
+    </tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- DROP LIST -->
+<tr><td style="padding:16px 0 0;">
+  <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" style="background:#FFFEFA;border:0.5px solid rgba(45,42,38,0.08);border-radius:22px;box-shadow:0 1px 8px rgba(45,42,38,0.04);padding:24px 28px;">
+  <tr><td>
+    <p style="margin:0 0 16px;font-size:10px;color:#9e9a94;letter-spacing:1.5px;text-transform:uppercase;">Today's Drops</p>
+
+    <!-- Drop item repeater -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid rgba(45,42,38,0.06);padding-bottom:12px;margin-bottom:12px;">
+    <tr>
+      <td style="vertical-align:top;padding-right:12px;">
+        <span style="display:inline-block;background:rgba(45,42,38,0.06);color:#9e9a94;font-size:9px;padding:3px 8px;border-radius:30px;">{{drop_1_source}}</span>
+      </td>
+      <td>
+        <p class="body-text" style="margin:0;font-size:13px;color:#2D2A26;line-height:1.5;">{{drop_1_excerpt}}</p>
+        <p class="muted-text" style="margin:4px 0 0;font-size:11px;color:#9e9a94;">{{drop_1_time}}</p>
+      </td>
+    </tr>
+    </table>
+
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid rgba(45,42,38,0.06);padding-bottom:12px;margin-bottom:12px;">
+    <tr>
+      <td style="vertical-align:top;padding-right:12px;">
+        <span style="display:inline-block;background:rgba(45,42,38,0.06);color:#9e9a94;font-size:9px;padding:3px 8px;border-radius:30px;">{{drop_2_source}}</span>
+      </td>
+      <td>
+        <p class="body-text" style="margin:0;font-size:13px;color:#2D2A26;line-height:1.5;">{{drop_2_excerpt}}</p>
+        <p class="muted-text" style="margin:4px 0 0;font-size:11px;color:#9e9a94;">{{drop_2_time}}</p>
+      </td>
+    </tr>
+    </table>
+
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td style="vertical-align:top;padding-right:12px;">
+        <span style="display:inline-block;background:rgba(45,42,38,0.06);color:#9e9a94;font-size:9px;padding:3px 8px;border-radius:30px;">{{drop_3_source}}</span>
+      </td>
+      <td>
+        <p class="body-text" style="margin:0;font-size:13px;color:#2D2A26;line-height:1.5;">{{drop_3_excerpt}}</p>
+        <p class="muted-text" style="margin:4px 0 0;font-size:11px;color:#9e9a94;">{{drop_3_time}}</p>
+      </td>
+    </tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- CTA -->
+<tr><td align="center" style="padding:24px 0;">
+  <a href="{{vault_url}}" style="display:inline-block;background:#2D2A26;color:#FFFEFA;font-size:14px;font-weight:600;text-decoration:none;padding:16px 36px;border-radius:100px;">Open Your Vault</a>
+</td></tr>
+
+<!-- FOOTER -->
+<tr><td style="padding:16px 0 0;text-align:center;">
+  <p class="footer-text" style="margin:0 0 8px;font-size:13px;color:#9e9a94;font-style:italic;">Your second brain has no inbox.</p>
+  <p style="margin:0 0 12px;font-size:20px;">🦜</p>
+  <p class="footer-text" style="margin:0;font-size:11px;color:#b8b4ae;">
+    <a href="{{unsubscribe_url}}" style="color:#9e9a94;text-decoration:underline;">Unsubscribe</a>
+    &nbsp;&middot;&nbsp;
+    <a href="{{preferences_url}}" style="color:#9e9a94;text-decoration:underline;">Preferences</a>
+    &nbsp;&middot;&nbsp;
+    <a href="{{privacy_url}}" style="color:#9e9a94;text-decoration:underline;">Privacy</a>
+  </p>
+  <p class="footer-text" style="margin:8px 0 0;font-size:10px;color:#ccc;">DropAnywhere · Chicago, IL</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>
