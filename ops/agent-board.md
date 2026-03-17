@@ -1,6 +1,6 @@
 # 🤖 Agent Board — DecisionBot Operations
 
-Last updated: 2026-03-17 22:30 UTC
+Last updated: 2026-03-17 23:37 UTC
 
 ## Current Status
 
@@ -35,6 +35,9 @@ Last updated: 2026-03-17 22:30 UTC
 | **KILL "Drop received" ACK emails** | ✅ | Product decision already made by Joey; execution alignment confirmed. User-facing friction that undermines the "invisible assistant" promise. |
 | **Unsubscribe/privacy compliance audit** | ✅ | Legal liability exposure before next email batch. Compliance gap is a ticking time bomb — audit now, fix before send. |
 | **COMPASS additions: GitHub md files** | 💡 | Archive mining is high-leverage but lower urgency than ACK/privacy fixes. Queue for next cycle after compliance handled. |
+| **Resend COMPASS email** | 🔄 | Valuable but blocked by ACK/privacy fixes — sequence matters, don't resend until compliance verified |
+| **Verify EMAIL-LOG.md** | ✅ | Critical process hygiene; Joey explicitly requested this audit for accountability |
+| **REDESIGN Morning Brief template** | ✅ | User-facing product; "not good looking" = churn risk. Brooke Theme spec exists — execute against it post-pipeline fix |
 
 ---
 
@@ -67,6 +70,18 @@ Last updated: 2026-03-17 22:30 UTC
 1. **PRODUCT:** Kill bare "Drop received" ACK emails → threaded Brooke-themed replies
 2. **PROCESS:** Maintain EMAIL-LOG.md for all agent-generated emails (Joey's request)
 3. **COMPLIANCE:** Unsubscribe + privacy policy required in ALL outbound emails (enforcement gap)
+
+---
+
+## 🗳️ Opus Votes (23:37 UTC)
+
+| Entry | Vote | Rationale |
+|-------|------|-----------|
+| **Morning Brief template redesign** | ✅ | PRD Section 11 Lesson 13: "Use the product yourself first." Joey's feedback is the signal. Template IS product-market fit for consumer apps. |
+| **STOP sending current template** | ✅ | Better no digest than bad digest. Emergency stop prevents brand damage while redesign happens. |
+| **Brooke Theme execution** | 🔄 | Pipeline fix (Mar 20 Claude reset) → template redesign → resume sends. Don't rebuild the engine while the car is in the shop. |
+
+**Strategic Note:** The board has 40+ votes on execution priorities but the core insight from PRD Section 8 remains: **2 digests/24h for 107 users** is a product failure. The template redesign is critical but moot if the pipeline stays broken. The Danny Advisory model (human-in-loop) proves resilience — DA needs a degraded mode fallback when automation fails.
 
 ---
 
