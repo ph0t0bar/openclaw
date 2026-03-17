@@ -3,9 +3,9 @@
 ## Mission
 Build and operate DropAnywhere: an AI-native productivity ecosystem including email-first capture, daily digests, BrutallyHonest.ai persona marketplace, and personal AI assistant infrastructure.
 
-## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 00:43 UTC)
+## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 10:59 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (38 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 10:28 UTC)
+### ✅ CURRENTLY ACTIVE AGENTS (39 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 10:59 UTC)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -86,41 +86,50 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - WEEKLY OPUS SWEEP — functional but WhatsApp delivery error
 - ALL Backlog Grinder jobs — completed work but notification delivery failed
 
-### ✅ RECENT SYSTEM IMPROVEMENTS
+### ✅ RECENT SYSTEM IMPROVEMENTS & EMAIL WORKFLOW DETAILS
 
-**Email Automation** — Complete workflow: Auto-Ack (2min), DecisionBot (10min), FeedbackBot (2h), Task Approvals (2h), Creative Review (4h), Morning Brief (daily)
+**Complete Email Automation Stack (6 agents):**
+- **Auto-Ack Bot** (2min) — Immediate email acknowledgment with ETA and categorization
+- **DecisionBot** (10min) — Processes Joey's replies (approve/reject/feedback routing)
+- **FeedbackBot** (2hr) — Routes creative feedback to appropriate ops/ files  
+- **Task Approval Emailer** (2hr, dual instances) — Sends pending task notifications
+- **Creative Review Emailer** (4hr) — Comprehensive content review workflow
+- **CEO Morning Brief** (daily 8am CST) — Complete operational summary
+
 **Dashboard Integration** — Real-time messaging via joey-backup GitHub (Dashboard Messenger every 2min)
-**Launch Coordination** — Dedicated Launch Coordinator tracking March 24 soft launch (8 days remaining)
-**Agent Consolidation** — Unified Ops Monitor replaces separate monitoring bots
+**Launch Coordination** — Dedicated Launch Coordinator tracking March 24 soft launch (7 days remaining)
+**Agent Consolidation** — Unified Ops Monitor replaces 5 separate monitoring bots (Railway, Stripe, Poe, Patrol, etc.)
+**Backup Systems** — Archivist + Sync Auditor ensuring comprehensive data protection
 
-**GOVERNANCE FINDINGS** (2026-03-17 09:55 UTC): System is operating at 32 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
+**GOVERNANCE FINDINGS** (2026-03-17 10:59 UTC): System is operating at 39 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
 
-**Current Issues Requiring Attention:**
-- **OnboardBot** — 1 timeout error on last run (timeout after 180s, non-critical)
-- **Daily GitHub Sync** — WhatsApp delivery error but job functional
-- **Weekly Full Refresh** — WhatsApp delivery error but job functional  
-- **Weekly Opus Sweep** — WhatsApp delivery error but job functional
-- **Critical Digest Pipeline** — Only 3 digests sent in 24h (normally 15-20/day), launch-blocking issue escalated
+**Current Issues Requiring Immediate Attention:**
+- **CRITICAL**: Launch Coordinator escalated digest pipeline stall (LAUNCH BLOCKER - only 3 digests sent/24h vs normal 15-20/day)
+- **DocBot** — 2 consecutive timeout errors (180s limit, investigating)
+- **Launch Coordinator** — 1 file edit error on recent run (non-critical)
+- **WhatsApp Delivery** — 3 scheduled jobs affected (functional but notifications fail)
 
-**System Health**: Core operations stable with real-time agents (2-15min cycles) all functioning. Email workflow complete and dashboard messaging active. Launch coordination on track for March 24, but digest pipeline stall requires immediate attention.
+**System Health**: Core operations stable with real-time agents (2-15min cycles) all functioning. Email workflow complete and dashboard messaging active. **Launch coordination flagged CRITICAL RISK** due to digest pipeline stall requiring immediate intervention before March 24 launch.
 
-**Operations Dept (4/4 active):**
-- ✅ Patrol (5min Kimi) — 3 cycles today (errors but running)
-- ✅ Sentry (15min Sonnet) — 2 cycles today (100% success)
-- 🔴 RailwayBot (20min Kimi) — 0 cycles (idle)  
-- ✅ Archivist (20min Kimi) — 1 cycle today (100% success)
-- ✅ DC Manager (30min Kimi) — 1 cycle today (errors but running)
+**Operations Dept (4/5 active):**
+- ✅ Dashboard Messenger (2min Sonnet) — Active (dashboard messaging)
+- ✅ Unified Ops Monitor (30min Kimi) — 1 cycle today (replacing 5 separate bots)
+- ✅ Sentry AI (15min Sonnet) — Active (security scans)
+- ✅ Archivist (40min Kimi) — Active (GitHub backup)
+- ✅ Sync Auditor (4hr Kimi) — Active (data integrity)
+- 🔴 RailwayBot (20min Kimi) — DISABLED (replaced by Unified Ops Monitor)
 
-**Intelligence Dept (4/4 active):**  
-- ✅ Wire (15min Kimi) — 1 cycle today (100% success)
-- ✅ ContentPitch (30min Kimi) — 1 cycle today (100% success)
-- ✅ PatternBot (30min Kimi) — 1 cycle today (100% success)
-- ✅ Researcher (10min Sonnet) — 3 cycles today (100% success)
+**Intelligence Dept (3/4 active):**  
+- ✅ Deep Researcher (10min Sonnet) — Active (market research, competitive intel)
+- ✅ ContentPitchBot (1hr Kimi) — Active (content strategy generation)
+- ✅ PatternBot (1hr Kimi) — Active (pattern recognition)
+- 🔴 Wire (15min Kimi) — DISABLED (replaced by Deep Researcher)
 
-**Engineering Dept (3/3 active):**
-- ✅ FrontEndBot (30min Kimi) — 1 cycle today (100% success)
-- ✅ BHABot (30min Kimi) — 1 cycle today (100% success)
-- ✅ DocBot (20min Kimi) — 2 cycles today (100% success)
+**Engineering Dept (3/4 active):**
+- ✅ FrontEndBot (1hr Kimi) — Active (dropanywhere-app monitoring)
+- ✅ BHABot (1hr Kimi) — Active (brutallyhonest-next monitoring) 
+- 🔴 DC Manager (30min Kimi) — DISABLED (replaced by Unified Ops Monitor)
+- ✅ DocBot (40min Kimi) — Active (PRD updates, documentation)
 
 **Meta Dept (3/4 active):**
 - ✅ Opus (15min Opus) — 2 cycles today (100% success)
@@ -128,9 +137,9 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - ✅ LearningBot (30min Kimi) — 1 cycle today (100% success)
 - 🔴 Governance (30min Sonnet) — 0 cycles (manual session)
 
-**Revenue Dept (1/2 active):**  
-- 🔴 StripeBot (30min Kimi) — 0 cycles (idle)
-- ✅ PoeBot (30min Kimi) — 1 cycle today (100% success)
+**Revenue Dept (0/2 active):**  
+- 🔴 StripeBot (30min Kimi) — DISABLED (replaced by Unified Ops Monitor)
+- 🔴 PoeBot (30min Kimi) — DISABLED (replaced by Unified Ops Monitor)
 
 **Marketing Dept (3/3 active):**
 - ✅ ContentBot (20min Sonnet) — 1 cycle today (100% success)
@@ -226,15 +235,15 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **DropAnywhere Frontend**: https://drop-anywhere.com
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
-## Success Metrics (March 17 09:23 UTC - CONSTITUTION REALITY CHECK)  
-- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 32 enabled agents out of 49 total cron jobs)
-- **Department Coverage**: Target 100% (✅ Current: All departments operational + full email workflow automation)
-- **Launch Readiness**: Target March 24 (✅ Launch Coordinator actively tracking, 7 days remaining)
-- **Email Automation**: Target 100% (✅ Complete workflow: auto-ack, decision routing, creative review, morning briefs)
-- **Backup Integrity**: Target <2h GitHub lag (✅ Archivist + Sync Auditor ensuring no data loss)
-- **Service Monitoring**: Target real-time (✅ Unified Ops Monitor every 30min, dashboard messaging every 2min)
+## Success Metrics (March 17 10:59 UTC - GOVERNANCE REALITY CHECK)  
+- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 39 enabled agents out of 49 total cron jobs)
+- **Department Coverage**: Target 100% (✅ Current: All departments operational + complete email workflow automation)
+- **Launch Readiness**: Target March 24 (🔴 **CRITICAL RISK**: Digest pipeline stalled, 7 days remaining)
+- **Email Automation**: Target 100% (✅ Complete 6-agent workflow operational)
+- **Backup Integrity**: Target <2h GitHub lag (✅ Archivist + Sync Auditor + Dashboard Messenger active)
+- **Service Monitoring**: Target real-time (✅ Unified Ops Monitor consolidating 5 bots, 30min cycles)
 - **HITL Compliance**: Target 100% (✅ All production actions require approval, Three Core Laws enforced)
-- **Agent Health**: Target 95% success rate (✅ Current: System stable, WhatsApp delivery issues not operational failures)
+- **Agent Health**: Target 95% success rate (⚠️ Current: 1 agent timeout issue, WhatsApp delivery errors non-operational)
 
 ## Performance by Department (March 16 23:04 UTC)
 - **Executive**: ✅ 77% functional (Chief of Staff active with minor errors)
