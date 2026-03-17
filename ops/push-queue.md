@@ -5,13 +5,13 @@
 
 ## Gaps Found (Local → GitHub)
 
-### social/*.md (8 files)
+### social/*.md (8 files) — 3 PUSHED, 5 QUEUED
 - /root/.openclaw/workspace/social/digest-experience-linkedin.md → specs/social/digest-experience-linkedin.md
-- /root/.openclaw/workspace/social/launch-week-authentic-voice-linkedin-POLISHED.md → specs/social/launch-week-authentic-voice-linkedin-POLISHED.md
+- ✅ /root/.openclaw/workspace/social/launch-week-authentic-voice-linkedin-POLISHED.md → specs/social/launch-week-authentic-voice-linkedin-POLISHED.md
 - /root/.openclaw/workspace/social/launch-week-authentic-voice-linkedin.md → specs/social/launch-week-authentic-voice-linkedin.md
 - /root/.openclaw/workspace/social/launch-week-momentum-linkedin-JOEY-VOICE.md → specs/social/launch-week-momentum-linkedin-JOEY-VOICE.md
-- /root/.openclaw/workspace/social/mindset-shift-linkedin-POLISHED.md → specs/social/mindset-shift-linkedin-POLISHED.md
-- /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-FINAL-POLISH.md → specs/social/no-inbox-philosophy-linkedin-FINAL-POLISH.md
+- ✅ /root/.openclaw/workspace/social/mindset-shift-linkedin-POLISHED.md → specs/social/mindset-shift-linkedin-POLISH.md
+- ✅ /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-FINAL-POLISH.md → specs/social/no-inbox-philosophy-linkedin-FINAL-POLISH.md
 - /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-FINAL.md → specs/social/no-inbox-philosophy-linkedin-FINAL.md
 - /root/.openclaw/workspace/social/no-inbox-philosophy-linkedin-JOEY-VOICE-REWRITE.md → specs/social/no-inbox-philosophy-linkedin-JOEY-VOICE-REWRITE.md
 
