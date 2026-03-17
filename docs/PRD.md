@@ -11,7 +11,7 @@
 
 **March 3-10 velocity:** 29+ PRs shipped across 4 repos. Poe Orchestrator live with 16 shadow bots. DA crossed 65 users (organic). BHA at 211 users, 531 active weekly visitors. 3 Stripe subs confirmed ($21 MRR). Dropper-Code autonomous pipeline operational (12 tasks completed).
 
-**March 17 12:19 UTC metrics:** DA at 103 users (+58%), 903 total drops (+12), 6 active in 24h, 60 drops in 24h. BHA at 262 users (+24%), 62 active weekly, 6 active in 24h, 3 new in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance: 256,290 points.** Burn rate 91,835/6h. Top bots: idealstate (47,793), IdealPrompt (15,530), EpiphanyAI (9,849). PRs #193-199 merged (dropper-code batch). Hub deploy SUCCESS at 10:17 UTC, OpenClaw SUCCESS at 10:44 UTC. **⚠️ Digest pipeline: 0% success rate** (all models exhausted). **⚠️ openclaw CI: failure**.
+**March 17 17:40 UTC metrics:** DA at 105 users (+58%), 913 total drops (+10), 9 active in 24h, 70 drops in 24h. BHA at 266 users (+24%), 64 active weekly, 12 active in 24h, 7 new in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance: 218,251 points.** Burn rate 23,472/6h (much lower). Top bots: theREALrealtalk (14,162), IdealPrompt (4,935), Tippiy (1,615). PRs #193-199 merged (dropper-code batch). Hub deploy SUCCESS at 10:17 UTC, OpenClaw SUCCESS at 17:24 UTC. **⚠️ Digest pipeline: stalled** (2 sent in 24h). **⚠️ openclaw CI: failure**. **⚠️ Dropper-Code: Claude Code out of extra usage** (resets Mar 20).
 
 **March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction - not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
 
@@ -769,33 +769,33 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 17, 17:29 UTC) - Daily Refresh
+## 8. System Health & Metrics (March 17, 17:40 UTC) - Daily Refresh
 
-> **✅ Poe Balance Stable:** 275,527 points. Burn rate **76,243/6h** (100 calls). Top bots: idealstate (47,793), theREALrealtalk (16,956), EpiphanyAI (9,849). ~3.5h runway at current burn. Monitor ongoing.
+> **⚠️ Poe Balance Dropping:** 218,251 points (down 57K). Burn rate **23,472/6h** (100 calls). Top bots: theREALrealtalk (14,162), IdealPrompt (4,935), Tippiy (1,615). ~9h runway at current burn. Much lower burn than earlier.
 
-> **⚠️ Digest Scheduler Stalled:** 3/105 eligible users got digests in 24h (stall persists — needs investigation). Digests sent 24h: 3.
+> **⚠️ Digest Scheduler Stalled:** 2/105 eligible users got digests in 24h (stall persists — needs investigation). Digests sent 24h: 2.
 
 > **✅ Hub Deploy:** SUCCESS at 2026-03-17 04:32 UTC. **✅ OpenClaw:** Latest commit d6cb567 (email-as-product concepts). **✅ Hub PRs:** 0 open (all merged).
 
-| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:51 | Mar 16 20:23 | Mar 16 21:12 | Mar 17 01:17 | Mar 17 03:25 | Mar 17 04:05 | Mar 17 04:51 | Mar 17 05:31 | Mar 17 07:01 | Mar 17 10:12 | Mar 17 11:36 | Mar 17 17:29 | Δ |
-|--------|-------|-------|--------|--------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|---|---|---|---|
-| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | **100** | **100** | **101** | **101** | **103** | **103** | **103** | **103** | **103** | **103** | **105** | **+2** |
+| Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:51 | Mar 16 20:23 | Mar 16 21:12 | Mar 17 01:17 | Mar 17 03:25 | Mar 17 04:05 | Mar 17 04:51 | Mar 17 05:31 | Mar 17 07:01 | Mar 17 10:12 | Mar 17 11:36 | Mar 17 17:29 | Mar 17 17:40 | Δ |
+|--------|-------|-------|--------|--------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|---|---|---|---|---|
+| DA total accounts | 28 | 52 | **218** ⚠️ | **68** | **100** | **100** | **100** | **100** | **101** | **101** | **103** | **103** | **103** | **103** | **103** | **103** | **105** | **105** | stable |
 | DA archived users | - | - | - | **44** | **44** | **44** | **44** | **44** | **44** | **44** | **44** | **44** | **44** | **44** | **44** | **44** | **44** | stable |
 | DA active real users | - | - | **~20** | **24** | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** (active 7d) | **~30** | **~30** | **~30** | **~30** | **~30** | **~30** (46 active 7d) | stable |
-| DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | **7** | **6** | **7** | **8** | **8** | **8** | **8** | **7** | **7** | **6** | **9** | **+3** |
+| DA active 24h | 13 | 16 | **19** | **12** | **12** | **9** | **7** | **6** | **7** | **8** | **8** | **8** | **8** | **7** | **7** | **6** | **9** | **9** | stable |
 | DA active 7d | 24 | 47 | 47+ | **60** | **55** | **55** | **55** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | - |
 | DA drops total | 456 | 589 | **668** | **690** | **843** | **843** | **843** | **845** | **867** | **872** | **881** | **886** | **889** | **889** | **891** | **903** | **913** | **+10** |
-| DA drops 24h | - | - | - | **51** | **33** | **22** | **18** | **18** | **25** | **34** | **43** | **48** | **51** | **49** | **51** | **60** | **58** | **-2** |
+| DA drops 24h | - | - | - | **51** | **33** | **22** | **18** | **18** | **25** | **34** | **43** | **48** | **51** | **49** | **51** | **60** | **58** | **70** | **+12** |
 | DA digests sent 24h | - | - | - | **15** | **3** | **3** | **3** | **3** | **3** | **3** | **3** | **3** | **3** | **3** | **3** | ⚠️ stalled |
-| BHA users | 172 | 198 | **211** | **215** | **259** | **259** | **259** | **259** | **259** | **260** | **261** | **261** | **261** | **261** | **262** | +1 |
-| BHA active 24h | - | - | - | **13** | **11** | **9** | **7** | **6** | **7** | **7** | **7** | **7** | **7** | **6** | **7** | +1 |
+| BHA users | 172 | 198 | **211** | **215** | **259** | **259** | **259** | **259** | **259** | **260** | **261** | **261** | **261** | **261** | **262** | **266** | **+4** |
+| BHA active 24h | - | - | - | **13** | **11** | **9** | **7** | **6** | **7** | **7** | **7** | **7** | **7** | **6** | **7** | **12** | **+5** |
 | BHA active 7d | 38 | 53 | 53+ | **63** | **70** | **70** | **70** | **69** | **69** | **67** | **66** | **66** | **65** | **63** | **64** | +1 |
 | BHA pro subs | - | - | **3** | **2** | **2** | **2** | **2** | **2** | **2** | **2** | **2** | **2** | **2** | **2** | **2** | stable |
-| BHA new users 24h | - | - | - | **7** | **7** | **4** | **4** | **4** | **4** | **4** | **4** | **4** | **4** | **2** | **3** | +1 |
+| BHA new users 24h | - | - | - | **7** | **7** | **4** | **4** | **4** | **4** | **4** | **4** | **4** | **4** | **2** | **3** | **7** | **+4** |
 | BHA weekly visitors (GA) | - | - | **531** | - | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | **-** | - |
 | BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | stable |
-| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **42,770** 🚨 | **39,168** 🚨 | **37,688** 🚨 | **27,027** 🚨🔥 | **14,424** 🚨💀 | **13,869** 🚨💀 | **12,522** 🚨💀 | **283,939** ✅ | **282,771** | **275,527** | -7,244 |
-| Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,379** 🔥 | **37,484** 🔥 | **37,770** 🔥 | **20,612** | **21,692** | **21,128** | **19,695** | **80,030** 🔥 | **77,614** | **76,243** | **76,243** | -1,371 |
+| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **42,770** 🚨 | **39,168** 🚨 | **37,688** 🚨 | **27,027** 🚨🔥 | **14,424** 🚨💀 | **13,869** 🚨💀 | **12,522** 🚨💀 | **283,939** ✅ | **282,771** | **275,527** | **218,251** | -57,276 |
+| Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,379** 🔥 | **37,484** 🔥 | **37,770** 🔥 | **20,612** | **21,692** | **21,128** | **19,695** | **80,030** 🔥 | **77,614** | **76,243** | **76,243** | **23,472** | -52,771 |
 | Poe calls/6h | - | - | - | **100** | **100** | **100** | **100** | **100** | **100** | **100** | **100** | **100** | **100** | **100** | **100** | stable |
 | Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | **100** | **100** | **100** | **100** | **100** ✅ | **100** ✅ | **100** ✅ | **100** ✅ | stable |
 | Email delivery | 100% | 100% | **98%** | **100%** | **98%** | **98%** | **98%** (87/89) | **98%** (98/100) | **98%** (98/100) | **98%** | **98%** (98/100) | **99%** (99/100) ✅ | **99%** (99/100) ✅ | **99%** (99/100) ✅ | **99%** (99/100) ✅ | stable |
@@ -842,6 +842,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 | main.py monolith (24K+ lines) | Tech debt | Long-term maintainability | Future refactor |
 | Local cron jobs may conflict with cloud | Unknown | Audit needed | Joey |
 | Digest email replies go nowhere | Not filed yet | Critical - user feedback lost | TBD |
+| **Dropper-Code Claude usage exhausted** | **Active** - 5 tasks failed, brain-scan failed. Resets Mar 20 3am UTC. | **High** - autonomous pipeline stalled | Dropper-Code |
 
 ---
 
@@ -945,7 +946,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-17 17:29 UTC — Daily Metrics Refresh. Section 8 updated: Mar 17 17:29 column added. **DA: 105 users (+2), 913 drops (+10). Active 9/24h (+3).** Poe stable at 275,527. Hub PRs: 0 open. Digest stall persists: 3/day. 🦜*
+*Last auto-refreshed: 2026-03-17 17:40 UTC — Daily Metrics Refresh. Section 8 updated: Mar 17 17:40 column added. **DA: 105 users (stable), 913 drops (+10). Active 9/24h (stable).** Poe dropped to 218,251 (-57K). Hub PRs: 0 open. Digest stall persists: 2/day. Dropper-Code Claude usage exhausted (resets Mar 20). 🦜*
 
 
 
