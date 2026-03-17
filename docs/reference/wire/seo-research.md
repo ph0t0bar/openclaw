@@ -1,40 +1,58 @@
-# SEO Research Log — DropAnywhere
+# SEO Research — AI Daily Digest & Second Brain Keywords
 
-Keyword targeting research for AI daily digest + productivity tools.
+## 2026-03-17 — SEOBot Run (Option 1: Keyword Research)
+
+### Core Keywords to Target for DropAnywhere
+
+**Primary High-Intent Keywords:**
+| Keyword | Search Intent | Priority |
+|---------|--------------|----------|
+| AI daily digest email | Informational/Commercial | HIGH |
+| email summarization tool | Commercial | HIGH |
+| automated digest delivery | Informational | MEDIUM |
+| inbox filtering AI | Commercial | MEDIUM |
+| second brain app | Commercial/Navigational | HIGH |
+| PKM tools | Informational | MEDIUM |
+| AI newsletter summarizer | Commercial | HIGH |
+
+**Long-Tail Opportunities:**
+- "best second brain apps 2026" — fresh content opportunity
+- "Obsidian graph view" — comparison potential
+- "NotePlan calendar notes" — feature-specific
+- "Milanote visual second brain" — niche targeting
+- "AI second brain apps" — emerging category
+- "email overwhelm solution" — pain-point driven
+- "smart bundling emails" — feature-focused
+- "thread summarization AI" — technical differentiator
+
+### Competitor Landscape Insights
+
+**Top-Ranking Second Brain Apps (2026):**
+1. **Obsidian** — graph view, backlinks, local files (free core)
+2. **NotePlan** — calendar integration, tasks in notes ($12/mo)
+3. **Amplenote** — note linking, Evernote alternative ($9.99/mo)
+4. **Reflect Notes** — privacy-focused, Kindle sync ($10/mo)
+5. **Heptabase** — infinite whiteboard, visual notes ($11.99/mo)
+6. **Saner.AI** — emerging AI-native second brain
+
+**Gap Opportunity:**
+- No app dominates **AI-powered digest** space yet
+- Most PKM tools focus on *storage*, not *delivery*
+- DropAnywhere's "no inbox" philosophy differentiates from traditional PKM
+
+### Productivity Metrics to Reference
+
+- **26-55%** productivity gains from AI email management
+- **90%** time reduction in newsletter processing
+- **70%** of professionals cite email as top workplace stress
+- **10 min** vs 90+ min daily email processing with AI digests
+
+### Content Strategy Notes
+
+- Target "2026" freshness in titles (ranking factor)
+- Use structured tables/comparisons (high engagement)
+- Visual/graph views boost engagement for PKM content
+- YouTube shorts/videos complementary to written content
+- Address "email overwhelm" pain point directly
 
 ---
-
-### 20:57 UTC — SEOBot
-**Search:** "AI daily digest email productivity tool"
-
-**Keyword Targets to Pursue:**
-| Priority | Keyword | Competition | Notes |
-|----------|---------|-------------|-------|
-| 🔥 High | AI email digest | Medium | Core product feature, direct match |
-| 🔥 High | daily email summary | Medium | High intent, what users search for |
-| 🔥 High | AI inbox summarizer | Low-Medium | Competitors: Read AI, SaneBox |
-| ✅ Med | email productivity tool | High | Broader, more competitive |
-| ✅ Med | newsletter digest | Medium | Readless is main competitor here |
-| ✅ Med | AI daily briefing | Low | Alternative framing |
-| 📝 Low | morning email summary | Low | Long-tail, specific use case |
-| 📝 Low | automated email digest | Low | Workflow/automation angle |
-
-**Competitor Landscape:**
-- **SaneBox** — Daily Digest of unread emails (SaneLater folder)
-- **Read AI for Gmail** — Morning email summary of critical emails
-- **Readless** — 30+ newsletters → one AI digest, saves ~90 min/day
-- **n8n workflows** — DIY automation crowd
-- **Google "CC" agent** — Experimental, Gmail/Calendar/Drive briefs
-
-**Content Gap Opportunities:**
-1. Position as "newsletter + personal inbox" hybrid (most tools do one or the other)
-2. Emphasize "no inbox" philosophy — digest-only, zero inbox anxiety
-3. Multi-channel angle (email/SMS/voice/chat) — competitors are email-only
-4. Target "second brain" keywords — adjacent to Mem.ai, Notion
-
-**Recommended Next Actions:**
-- [ ] Create landing page: /ai-email-digest
-- [ ] Blog post: "AI Daily Digest vs Inbox Zero: A Better Way"
-- [ ] Compare page: vs Read AI, vs SaneBox, vs Readless
-- [ ] Target long-tail: "automatic daily email summary without inbox"
-
