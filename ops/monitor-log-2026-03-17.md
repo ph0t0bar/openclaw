@@ -1,0 +1,13 @@
+### 02:19 UTC — Unified Ops Monitor
+- **Hub:** ✅ ok
+- **DropAnywhere:** 101u / 7 active / 40 drops / 3 digests (per policy: digests OFF by design)
+- **BHA:** 260u / 65 active (7d) / 3 new (24h)
+- **Poe:** 19,599 bal / 21,580 burn (6h) — above threshold ✅
+- **Stripe:** 0 charges / 0 failed / $0 rev — no issues ✅
+- **Resend:** 100 sent / 98 delivered / 1 bounced
+- **Dropper-Code:** ✅ ok / 23 completed / 5 failed / last poll 02:18 UTC
+- **Pending Tasks:** 2 (both CUSTOMER-FACING → blocked for Joey approval)
+  - Vault Upgrade Prompt (capacity limit)
+  - BHA Integration (button + capture)
+- **Errors:** None
+- **Alerts:** None triggered
