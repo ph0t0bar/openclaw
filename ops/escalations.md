@@ -1,5 +1,73 @@
 # Escalations Log
 
+## 2026-03-17 23:26 UTC — GOVERNANCE Synthesis
+
+### Current Open Escalations (Synthesized from all sources):
+
+#### 🔴 CRITICAL: Digest Pipeline Stalled (PERSISTENT - 7+ hours)
+- **Status:** Only 2 digests sent in 24h (should be ~100)
+- **Hub Dashboard:** digest_pipeline.attempts = 0 for current window (23:00 UTC)
+- **Impact:** Users not receiving daily digests — retention risk before March 24 launch
+- **Action Required:** Investigate scheduler/cron health on Hub immediately
+- **Owner:** Engineering/Ops
+- **Note:** This is the #1 launch blocker — 6 days to soft launch
+
+#### 🔴 CRITICAL: Dropper-Code Stalled (PERSISTENT)
+- **Status:** Claude Code usage exhausted — 5 tasks failed, brain-scan failed
+- **Impact:** Autonomous pipeline completely halted until Mar 20 3am UTC (~2.5 days away)
+- **Action Required:** Manual intervention or wait for reset
+- **Failed Tasks:** task_1773751545_335, task_1773752442_801, task_1773753772_790, task_1773754790_862, task_1773754891_855
+
+#### 🔴 CRITICAL: Poe Balance Critical (WORSENED)
+- **Status:** 176,764 points, burning 45,858/6h (Kimi-K2.5 dominant)
+- **Trend:** Down from 216,990 earlier today (40K+ points burned in ~6h)
+- **Runway:** ~23 hours at current burn rate
+- **Top Consumer:** Kimi-K2.5 (45,083 points/6h) — OpenClaw cron jobs
+- **Action Required:** Monitor closely; top-up needed within 24h
+
+#### 🟡 WARNING: Agent Timeout Errors (MULTIPLE AGENTS)
+- **Auto-Ack Bot:** 5 consecutive timeout errors — email acknowledgment pipeline at risk
+- **DocBot:** 3 consecutive timeout errors (180s limit) — PRD maintenance blocked
+- **PatternBot:** 1 timeout error on last run
+- **ContentPitchBot:** 1 timeout error on last run
+- **Impact:** Core automation workflows degrading
+- **Action Required:** Review timeout limits or reduce agent workload
+
+#### 🟡 WARNING: openclaw CI Failure (PERSISTENT)
+- **Status:** GitHub CI showing "failure" for openclaw repo
+- **Impact:** Potential deployment blocker
+- **Action Required:** Check GitHub Actions for failure details
+
+#### 🟡 WARNING: Family Retention Risk (PERSISTENT)
+- **lhamer228@gmail.com** — Last drop: 2026-03-04 (13 days ago), engagement 24%
+- **rhamersunsetpartners@gmail.com** — Last drop: 2026-03-07 (10 days ago), engagement 26%
+- **hamer.daniel@gmail.com** — ZERO drops, vault empty, inactive account
+
+---
+
+### ✅ RESOLVED (since 23:11 UTC):
+- **GitHub Token** — Archivist confirms backup operational (last push 22:17 UTC, 9 files) ✅
+- **Agent Health** — All agents posted within 2h window ✅
+- **Hub Core Services** — All green (108 users, 11 active 24h, 77 drops/24h, email 98%) ✅
+- **BHA Metrics** — 269 users (+9 new 24h), 64 active 7d ✅
+
+### Summary
+**4 escalations require immediate attention:**
+1. **Digest pipeline stalled** (2/108 users getting digests — 7+ hour regression, launch risk)
+2. **Dropper-Code autonomous pipeline down** (Claude usage exhausted until Mar 20)
+3. **Poe balance critical** (~23h runway, needs top-up within 24h)
+4. **Multiple agent timeout errors** (Auto-Ack 5x, DocBot 3x — core workflows degrading)
+
+**2 warnings to monitor:**
+- openclaw CI failure
+- Family members at retention risk
+
+---
+
+## 2026-03-17 23:11 UTC — Chief of Staff Gap Check
+
+---
+
 ## 2026-03-17 22:56 UTC — GOVERNANCE Synthesis
 
 ### Current Open Escalations (Synthesized from all sources):
