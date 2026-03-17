@@ -246,3 +246,8 @@ For creative feedback:
 ✅ **COMPASS additions: Find GitHub md files with user scenario exercise** — Archive mining is high-leverage; user scenarios from VAULT add immediate value to onboarding
 🔄 **Verify EMAIL-LOG.md logging** — Important but verify in parallel; don't block revenue tasks on process audit
 💡 **Pattern Recognition** — 6 drops processed in 3 hours = Joey's actively stress-testing the system; FeedbackBot response time is the real product metric
+
+### 07:07 UTC — Opus Vote
+✅ **05:27 EXECUTION DIRECTIVE Lock** — After 24+ strategic notes, the single-task lock is the only proven cure
+❌ **06:29 Sequential Dependencies** — ACK emails can be killed while COMPASS work proceeds in parallel
+💡 **06:47 Archive Mining** — User scenarios from joey-backup VAULT would transform COMPASS from template to personalized guide
