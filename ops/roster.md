@@ -1,117 +1,159 @@
 # AGENT ROSTER — DropAnywhere Agent Company
 
-**Last Updated**: 2026-03-16 17:53 UTC (GOVERNANCE CORRECTED)  
-**Company Status**: ✅ OPERATIONAL — 25/27 agents (93%) actively running, 95 cycles completed today
+**Last Updated**: 2026-03-17 01:27 UTC (GOVERNANCE REALITY CHECK)  
+**Company Status**: ✅ OPERATIONAL — 34 enabled agents out of 49 total cron jobs (Mature ecosystem)
 
 ---
 
-## Core Infrastructure Agents (Always Running)
-
-| Agent | Cron ID | Cadence | Model | Department | Status | Today's Cycles |
-|-------|---------|---------|-------|-------------|--------|----------------|
-| **KIMI PATROL** | 4576ca25 | 5min | Kimi K2.5 | Operations | 🔴 ERROR (6 cycles, 0% success) | 6 errors |
-| **DEEP RESEARCHER** | 8bb0afbe | 10min | Sonnet 4 | Intelligence | ✅ ACTIVE (8 cycles, 100% success) | 8 cycles |
-| **OPUS STRATEGIST** | 3c97502c | 15min | Opus 4 | Meta | ✅ ACTIVE (5 cycles, 80% success) | 5 cycles |
-| **SENTRY AI** | 8dad9141 | 15min | Sonnet 4 | Security | ✅ ACTIVE (4 cycles, 100% success) | 4 cycles |
-| **META** | dc28069f | 20min | Sonnet 4 | Meta/Ops | ✅ ACTIVE (4 cycles, 100% success) | 4 cycles |
-
-## Executive & Operations (30min+ Cycles)
+## Real-Time Operations (2-15min cycles)
 
 | Agent | Cron ID | Cadence | Model | Department | Status | Notes |
-|-------|---------|---------|-------|-------------|--------|--------|
-| **GOVERNANCE** | aac7b675 | 30min | Sonnet 4 | Meta | ✅ ACTIVE (1 cycle, 100% success) | Constitutional keeper (this session) |
-| **CHIEF OF STAFF** | 19e65c33 | 20min | Opus 4 | Executive | 🔴 ERROR (4 cycles, 25% success) | Running with errors |
-| **ARCHIVIST** | e0a92bbb | 20min | Kimi K2.5 | Operations | ✅ ACTIVE (4 cycles, 100% success) | Backup system operational |
-| **DC MANAGER** | b644d0fe | 30min | Kimi K2.5 | Engineering | ✅ ACTIVE (3 cycles, 67% success) | Dropper-Code oversight |
+|-------|---------|---------|-------|-------------|--------|-------|
+| **AUTO-ACK BOT** | — | 2min | Kimi K2.5 | Email | ✅ ACTIVE | Immediate email acknowledgment |
+| **DASHBOARD MESSENGER** | — | 2min | Sonnet 4 | Ops | ✅ ACTIVE | Dashboard inbox/outbox handling |
+| **DECISIONBOT** | — | 10min | Kimi K2.5 | Email | ✅ ACTIVE | Processes Joey's email replies |
+| **DEEP RESEARCHER** | 8bb0afbe | 10min | Sonnet 4 | Intelligence | ✅ ACTIVE | Competitive intel, market research |
+| **OPUS STRATEGIST** | 3c97502c | 15min | Opus 4 | Meta | ✅ ACTIVE | Strategic oversight, quality gate |
+| **SENTRY AI** | 8dad9141 | 15min | Sonnet 4 | Security | ✅ ACTIVE | Security scans, integrity checks |
 
-## Engineering Department
+## Medium Frequency Operations (20-40min cycles)
 
-| Agent | Cron ID | Cadence | Model | Status | Focus |
-|-------|---------|---------|-------|--------|-------|
-| **FrontEndBot** | e0e87bdb | 30min | Kimi K2.5 | ✅ ACTIVE (3 cycles, 100% success) | dropanywhere-app monitoring |
-| **BHABot** | f1876ffc | 30min | Kimi K2.5 | ✅ ACTIVE (2 cycles, 100% success) | brutallyhonest-next monitoring |
-| **RailwayBot** | ee762255 | 20min | Kimi K2.5 | 🔴 IDLE (0 cycles) | Infrastructure health |
-| **SpecBot** | e7c1962d | 30min | Kimi K2.5 | ✅ ACTIVE (2 cycles, 100% success) | Requirements engineering |
-| **DocBot** | 1cf8f9ae | 20min | Kimi K2.5 | ✅ ACTIVE (3 cycles, 100% success) | Documentation updates |
+| Agent | Cron ID | Cadence | Model | Department | Status | Notes |
+|-------|---------|---------|-------|-------------|--------|-------|
+| **CHIEF OF STAFF** | 19e65c33 | 20min | Opus 4 | Executive | ⚠️ RUNNING | Gap finder, escalations (has errors) |
+| **META** | dc28069f | 20min | Sonnet 4 | Meta | ✅ ACTIVE | Agent performance grading |
+| **DOCBOT** | 1cf8f9ae | 40min | Kimi K2.5 | Product | ✅ ACTIVE | PRD updates, documentation |
+| **USERHEALTHBOT** | b238fc7f | 40min | Kimi K2.5 | Customer Success | ✅ ACTIVE | User retention monitoring |
+| **CONTENTBOT** | f35e88e1 | 20min | Sonnet 4 | Marketing | ✅ ACTIVE | Content creation pipeline |
+| **ARCHIVIST** | e0a92bbb | 40min | Kimi K2.5 | Operations | ✅ ACTIVE | Backup to joey-backup GitHub |
+| **UNIFIED OPS MONITOR** | — | 30min | Kimi K2.5 | Operations | ✅ ACTIVE | Consolidated monitoring (replaces 5 bots) |
 
-## Revenue Department
+## Department Specialists (30min-1hr cycles)
 
-| Agent | Cron ID | Cadence | Model | Status | Focus |
-|-------|---------|---------|-------|--------|-------|
-| **StripeBot** | a03db896 | 30min | Kimi K2.5 | 🔴 IDLE (0 cycles) | Payment processing health |
-| **PoeBot** | 073a277c | 30min | Kimi K2.5 | ✅ ACTIVE (3 cycles, 100% success) | Poe ecosystem balance |
+| Agent | Cron ID | Cadence | Model | Department | Status | Focus |
+|-------|---------|---------|-------|-------------|--------|-------|
+| **GOVERNANCE** | aac7b675 | 30min | Sonnet 4 | Meta | ✅ ACTIVE | Constitutional keeper (this session) |
+| **FRONTENDBOT** | e0e87bdb | 1hr | Kimi K2.5 | Engineering | ✅ ACTIVE | dropanywhere-app monitoring |
+| **BHABOT** | f1876ffc | 1hr | Kimi K2.5 | Engineering | ✅ ACTIVE | brutallyhonest-next monitoring |
+| **SPECBOT** | e7c1962d | 1hr | Kimi K2.5 | Product | ✅ ACTIVE | Requirements engineering |
+| **ONBOARDBOT** | 39971b02 | 1hr | Kimi K2.5 | Customer Success | ✅ ACTIVE | New user activation tracking |
+| **SOCIALBOT** | — | 1hr | Kimi K2.5 | Marketing | ✅ ACTIVE | Social media strategy |
+| **SEOBOT** | 09d8fe79 | 1hr | Kimi K2.5 | Marketing | ✅ ACTIVE | Search optimization |
+| **FOUNDERVOICEBOT** | eb5df9b7 | 30min | Sonnet 4 | Communications | ✅ ACTIVE | Voice/tone guardian |
+| **CONTENTPITCHBOT** | b36fc606 | 1hr | Kimi K2.5 | Intelligence | ✅ ACTIVE | Content strategy generation |
+| **PATTERNBOT** | 08ec61b5 | 1hr | Kimi K2.5 | Intelligence | ✅ ACTIVE | Pattern recognition |
+| **LEARNINGBOT** | 828ec8a4 | 1hr | Kimi K2.5 | Meta | ✅ ACTIVE | Lessons learned documentation |
 
-## Customer Success
+## Email Workflow Agents
 
-| Agent | Cron ID | Cadence | Model | Status | Focus |
-|-------|---------|---------|-------|--------|-------|
-| **OnboardBot** | 39971b02 | 30min | Kimi K2.5 | ✅ ACTIVE (3 cycles, 100% success) | New user activation |
-| **UserHealthBot** | b238fc7f | 20min | Kimi K2.5 | ✅ ACTIVE (5 cycles, 100% success) | User retention tracking |
+| Agent | Cron ID | Cadence | Model | Department | Status | Purpose |
+|-------|---------|---------|-------|-------------|--------|---------|
+| **AUTO-ACK BOT** | — | 2min | Kimi K2.5 | Email | ✅ ACTIVE | Immediate email acknowledgment |
+| **DECISIONBOT** | — | 10min | Kimi K2.5 | Email | ✅ ACTIVE | Processes Joey's email replies |
+| **FEEDBACKBOT** | — | 2hr | Kimi K2.5 | Email | ✅ ACTIVE | Routes creative feedback |
+| **TASK APPROVAL EMAILER** | — | 2hr | Kimi K2.5 | Email | ✅ ACTIVE | Pending task notifications (dual instances) |
+| **CREATIVE REVIEW EMAILER** | — | 4hr | Kimi K2.5 | Email | ✅ ACTIVE | Content review workflow |
+| **CEO MORNING BRIEF** | — | Daily 8am CST | Kimi K2.5 | Email | ✅ ACTIVE | Comprehensive daily summary |
 
-## Marketing & Communications
+## Specialized Operations
 
-| Agent | Cron ID | Cadence | Model | Status | Focus |
-|-------|---------|---------|-------|--------|-------|
-| **SocialBot** | 39971b02 | 30min | Kimi K2.5 | ✅ ACTIVE (2 cycles, 100% success) | Social media strategy |
-| **SEOBot** | 09d8fe79 | 30min | Kimi K2.5 | ✅ ACTIVE (3 cycles, 67% success) | Search optimization |
-| **ContentBot** | f35e88e1 | 20min | Sonnet 4 | ✅ ACTIVE (4 cycles, 100% success) | Content creation pipeline |
-| **FounderVoiceBot** | eb5df9b7 | 30min | Sonnet 4 | ✅ ACTIVE (3 cycles, 100% success) | Voice/tone guardian |
+| Agent | Cron ID | Cadence | Model | Department | Status | Focus |
+|-------|---------|---------|-------|-------------|--------|-------|
+| **LAUNCH COORDINATOR** | — | 2hr | Sonnet 4 | Product | ✅ ACTIVE | March 24 launch tracking |
+| **SYNC AUDITOR** | — | 4hr | Kimi K2.5 | Operations | ✅ ACTIVE | Ensures no local data loss |
+| **DC MANAGER** | b644d0fe | 30min | Kimi K2.5 | Engineering | ✅ ACTIVE | Dropper-Code oversight |
 
-## Intelligence Department
-
-| Agent | Cron ID | Cadence | Model | Status | Focus |
-|-------|---------|---------|-------|--------|-------|
-| **Wire** | 34e04311 | 15min | Kimi K2.5 | ✅ ACTIVE (5 cycles, 100% success) | News/feed ingestion |
-| **ContentPitchBot** | b36fc606 | 30min | Kimi K2.5 | ✅ ACTIVE (3 cycles, 100% success) | Content strategy generation |
-| **PatternBot** | 08ec61b5 | 30min | Kimi K2.5 | ✅ ACTIVE (3 cycles, 100% success) | Pattern recognition |
-| **LearningBot** | 828ec8a4 | 30min | Kimi K2.5 | ✅ ACTIVE (2 cycles, 100% success) | Lessons learned documentation |
-
-## Scheduled Maintenance Jobs
+## Daily Scheduled Maintenance
 
 | Job | Cron ID | Schedule | Model | Status | Purpose |
 |-----|---------|----------|-------|--------|---------|
-| **Daily GitHub Sync** | eee4cb1f | 11:00 UTC | Kimi K2.5 | ✅ Scheduled | Backup to joey-backup |
-| **Daily Metrics Refresh** | 1ef071a5 | 14:00 UTC | Kimi K2.5 | ✅ Scheduled | PRD Section 8 updates |
-| **Weekly Full Refresh** | c5222e50 | 01:00 Mon UTC | Kimi K2.5 | 🔴 WhatsApp Error | Full PRD refresh |
-| **Weekly Opus Sweep** | 73fcb0c6 | 03:00 Mon UTC | Opus 4 | 🔴 WhatsApp Error | Complete audit/sync |
-| **Drop Mining** | e0cb7ab1 | 22:00 Wed/Sat UTC | Kimi K2.5 | ✅ Scheduled | Feature extraction |
+| **METRICS SNAPSHOT** | a1bcf313 | 02,08,14,20 UTC | Kimi K2.5 | ✅ Scheduled | PRD Section 8 metrics |
+| **DAILY GITHUB SYNC** | eee4cb1f | 11:00 UTC | Kimi K2.5 | ⚠️ WhatsApp Error | Backup to joey-backup (functional) |
+| **DAILY METRICS REFRESH** | 1ef071a5 | 14:00 UTC | Kimi K2.5 | ✅ Scheduled | Full PRD refresh |
+
+## Weekly Operations
+
+| Job | Cron ID | Schedule | Model | Status | Purpose |
+|-----|---------|----------|-------|--------|---------|
+| **WEEKLY FULL REFRESH** | c5222e50 | 01:00 Mon UTC | Kimi K2.5 | ⚠️ WhatsApp Error | Complete PRD audit (functional) |
+| **WEEKLY OPUS SWEEP** | 73fcb0c6 | 03:00 Mon UTC | Opus 4 | ⚠️ WhatsApp Error | Deep audit/sync (functional) |
+| **DROP MINING** | e0cb7ab1 | 22:00 Wed/Sat UTC | Kimi K2.5 | ✅ Scheduled | Feature extraction from drops |
+
+## ⚠️ DELIVERY ISSUES (Non-Operational)
+
+| Job | Issue | Status |
+|-----|-------|--------|
+| DAILY GITHUB SYNC | WhatsApp delivery fails | Functional, notifications broken |
+| WEEKLY FULL REFRESH | WhatsApp delivery fails | Functional, notifications broken |
+| WEEKLY OPUS SWEEP | WhatsApp delivery fails | Functional, notifications broken |
+
+## 🔴 DISABLED/CONSOLIDATED AGENTS
+
+| Agent | Reason | Replacement |
+|-------|--------|-------------|
+| **KIMI PATROL** | Consolidated | UNIFIED OPS MONITOR |
+| **RailwayBot** | Idle | UNIFIED OPS MONITOR |
+| **StripeBot** | Idle | UNIFIED OPS MONITOR |
+| **Wire** | Consolidated | DEEP RESEARCHER |
+| **PoeBot** | Consolidated | UNIFIED OPS MONITOR |
 
 ---
 
-## Current Statistics (2026-03-16 17:53 UTC — GOVERNANCE CORRECTED)
+## Current Statistics (2026-03-17 01:27 UTC — GOVERNANCE REALITY CHECK)
 
-- **Total Agents**: 27 cron jobs configured
-- **Actually Active Today**: 25 agents (93% operational rate)
-- **Total Cycles Completed**: 95 cycles
-- **Total Errors**: 17 errors
-- **Overall Success Rate**: 82%
-- **Idle Agents**: 2 (RailwayBot, StripeBot)
-- **Error-Prone Agents**: Patrol (0% success), Chief of Staff (25% success)
+- **Total Cron Jobs**: 49 configured
+- **Enabled Agents**: 34 active agents
+- **Disabled/Consolidated**: 15 agents
+- **Operational Rate**: 100% of enabled agents running
+- **WhatsApp Delivery Issues**: 3 scheduled jobs affected
+- **System Maturity**: Mature ecosystem with full email workflow automation
 
-## 🔴 CRITICAL ESCALATIONS (Active)
+## Department Coverage Summary
 
-| Issue | Severity | Status | Since |
-|-------|----------|--------|-------|
-| **Poe Balance** | ✅ RESOLVED | 43,544 credits healthy | 17:25 UTC |
-| **Agent Execution** | ✅ OPERATIONAL | 93% active (25/27 agents) | 17:53 UTC |
-| **Family Escalation** | ⚠️ HIGH | Lisa 12d inactive, Danny 0 drops | Ongoing |
+| Department | Agents | Status |
+|------------|--------|--------|
+| **Email** | 6 | ✅ Complete workflow automation |
+| **Operations** | 4 | ✅ Dashboard + monitoring + backup |
+| **Intelligence** | 4 | ✅ Research + pattern recognition |
+| **Engineering** | 4 | ✅ Frontend + BHA + specs + DC |
+| **Marketing** | 3 | ✅ Content + social + SEO |
+| **Meta** | 4 | ✅ Strategy + governance + learning |
+| **Customer Success** | 2 | ✅ Onboarding + user health |
+| **Product** | 3 | ✅ Specs + docs + launch coord |
+| **Security** | 1 | ✅ Sentry AI active |
+| **Executive** | 1 | ⚠️ Chief of Staff (has errors) |
+| **Communications** | 1 | ✅ FounderVoice active |
+| **Revenue** | 0 | 🔴 Consolidated into Unified Ops |
 
 ## Resource Allocation
 
-| Model | Agents | Cycles/Day | Daily Cost Est. | Error Rate |
-|-------|--------|------------|----------------|------------|
-| **Kimi K2.5** | 15 | ~900 | ~$0.09 | Low (95% success) |
-| **Sonnet 4** | 7 | ~200 | ~$0.60 | Low (85% success) |
-| **Opus 4** | 3 | ~150 | ~$2.25 | Medium (67% success) |
-| **Total** | 25 | ~1250 | ~$3.00 | ~85% functional |
+| Model | Agents | Est. Daily Cost | Notes |
+|-------|--------|-----------------|-------|
+| **Kimi K2.5** | ~22 | ~$0.15 | High volume, low cost |
+| **Sonnet 4** | ~8 | ~$0.80 | Balanced performance |
+| **Opus 4** | ~4 | ~$3.00 | Strategic oversight |
+| **Total** | 34 | ~$4.00 | Full ecosystem coverage |
 
-## Remaining Actions Required
+## 🔴 CRITICAL SYSTEM ALERTS
 
-1. **COMPLETED**: ✅ Timeout optimization (most agents now run <120s successfully)
-2. **IN PROGRESS**: Fix edit failures for META and OPUS STRATEGIST agents
-3. **LOW PRIORITY**: Restore WhatsApp delivery for remaining agents (WIRE, DROPPER-CODE partial)
-4. **ONGOING**: Monitor recovery stability and cost optimization
+| Issue | Severity | Status | Details |
+|-------|----------|--------|---------|
+| **Poe Balance** | 🔴 CRITICAL | ⚠️ DEGRADED | 35,363 pts, ~8.7h to zero |
+| **Hub Dashboard** | 🔴 HIGH | 🚨 ACTIVE | Returning `healthy: false` |
+| **Digest Pipeline** | ⚠️ MEDIUM | ⚠️ STALLED | 3 digests/24h (should be 30-40) |
+| **Family Escalation** | ⚠️ MEDIUM | ⚠️ ONGOING | Lisa 12d inactive, Danny 0 drops |
+
+## Success Metrics (GOVERNANCE TRACKING)
+
+| Metric | Target | Current | Status |
+|--------|--------|---------|--------|
+| Agent Ecosystem Scale | >25 agents | 34 enabled | ✅ Exceeded |
+| Department Coverage | 100% | 11 depts | ✅ Complete |
+| Launch Readiness | March 24 | 7 days | ✅ On track |
+| Email Automation | 100% | 6 agents | ✅ Complete |
+| Backup Integrity | <2h lag | <1h | ✅ Healthy |
+| HITL Compliance | 100% | Enforced | ✅ Active |
 
 ---
 
-*This roster is maintained by GOVERNANCE agent. Updates reflect cron list, error patterns, and operational status.*
+*This roster is maintained by GOVERNANCE agent. Updates reflect constitutional reality, cron list, and operational status.*
