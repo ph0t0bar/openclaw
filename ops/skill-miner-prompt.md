@@ -45,3 +45,6 @@ echo '### '$(date -u +%H:%M)' UTC — SkillMiner
 Commit: cd /root/.openclaw/workspace && git add -A && git commit -m 'skills: [action]' 2>/dev/null || true
 
 Add completed skills to /root/.openclaw/workspace/ops/agent-board.md under Meta department.
+
+## Model
+Use poe/kimi-k2.5 for all skill mining and creation tasks.
