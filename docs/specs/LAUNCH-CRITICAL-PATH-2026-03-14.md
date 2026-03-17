@@ -3,7 +3,7 @@
 
 ---
 
-## Status Update (Mar 17 02:11 UTC - Launch Coordinator)
+## Status Update (Mar 17 04:18 UTC - Launch Coordinator)
 
 **🚨 LAUNCH STATUS: CRITICAL RISK - 7 DAYS REMAINING**
 
@@ -14,40 +14,43 @@
 | **Phase 3: PREPARE** | Mar 20–23 | 🔴 AT RISK — 4 days to solve Phase 1+2 |
 | **Phase 4: LAUNCH** | Mar 24–26 | 🔴 LAUNCH UNLIKELY — Need immediate escalation |
 
-**RECENT WINS (Mar 16):**
+**RECENT WINS (Mar 17):**
 - ✅ Email webhook → OpenClaw (PR #193 merged)
+- ✅ Email address fix: noreply@ → hello@drop-anywhere.com (PR #195 merged)
+- ✅ Drop received emails reply in-thread (PR #198 merged)
+- ✅ Re-engagement emails disabled - only Joey receives (PR #197 merged)
 - ✅ Digest stall alerts suppressed (PR #192 merged)
-- ✅ Task dedup guard added (PR #187 merged)
 - ✅ Zapier integration (PR #189 merged)
-- ✅ Digest pipeline alerting (PR #188 merged)
 
-**CRITICAL BLOCKERS (UNCHANGED - LAUNCH KILLER):**
-- 🚨 **DIGEST STALL UNRESOLVED** — 4 open PRs (#151, #186, #190, #191), multiple failed attempts
-- 🚨 **DROPPER-CODE FAILING** — Last 3 digest fix attempts cancelled/failed
-- ⚠️ **POE BALANCE STATUS UNKNOWN** — Need immediate check
+**CRITICAL BLOCKERS (PERSIST - LAUNCH KILLER):**
+- 🚨 **DIGEST STALL UNRESOLVED** — 2 open PRs (#190, #191), Dropper-Code cancelled latest fix attempt
+- 🚨 **POE BALANCE CRITICAL** — 13,869 points, ~39 min runway at 21K burn/6h from PRD
+- ⚠️ **LAUNCH CHECKLIST ALL BLOCKED** — Cannot test L1-L10 items until digest works
 
-## CRITICAL PATH ANALYSIS (Mar 17 02:11 UTC)
+## CRITICAL PATH ANALYSIS (Mar 17 04:18 UTC)
 
 **SHIPPED ITEMS (7 days):**
 - ✅ Email webhook → OpenClaw integration (PR #193) 
-- ✅ Task dedup guards (PR #187)
+- ✅ Email from-address fix: noreply@ → hello@drop-anywhere.com (PR #195)
+- ✅ Drop received emails reply in-thread with Brooke (PR #198)
+- ✅ Re-engagement emails disabled - only Joey receives (PR #197)
 - ✅ Digest stall alert suppression (PR #192) 
 - ✅ Zapier integration for drop capture (PR #189)
-- ✅ Digest pipeline error budget/alerting (PR #188)
 
-**IN PROGRESS (STALLED):**
-- 🔴 Digest scheduler fix - 4 PRs open (#151, #186, #190, #191) - **LAUNCH BLOCKER**
-- 🔄 Digest QA with Joey (PR #150) - Blocked by stall
-- 🔄 BHA integration button (pending task) - Not launch critical
+**IN PROGRESS (CRITICAL):**
+- 🔴 Digest scheduler fix - 2 PRs open (#190, #191) - **LAUNCH BLOCKER**
+- 🔴 Dropper-Code cancelled latest fix attempt - **ESCALATION NEEDED**
+- 🔄 2 more Dropper-Code tasks in review (PR #194, #196)
 
 **BLOCKED/NOT STARTED:**
-- 🔴 All 10 launch checklist items - Blocked by digest stall
-- ⚠️ Poe balance check - Status unknown 
-- ⚠️ Weekly Catch validation - Cannot test
+- 🔴 All 10 launch checklist items (L1-L10) - Blocked by digest stall
+- 🚨 Poe balance critical - 13,869 points, ~39 min runway
+- ⚠️ Weekly Catch validation - Cannot test until digest works
 
 **7-DAY PROJECTION:**
-- **If digest fixed by Mar 18:** Launch still possible with compressed timeline
-- **If digest not fixed by Mar 18:** Launch delay required (push to Mar 31+)
+- **Current trajectory:** Launch unlikely without immediate intervention
+- **If digest + Poe fixed by Mar 18:** Compressed timeline still possible
+- **If not fixed by Mar 18:** Hard delay to Mar 31+ required
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
