@@ -17,11 +17,11 @@ Last updated: 2026-03-17 19:31 UTC
 
 ### 🔥 High-Priority Actions Queued
 
-| # | Task | Priority | Source Drop |
-|---|------|----------|-------------|
-| 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 |
-| 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 |
-| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 |
+| # | Task | Priority | Source Drop | Votes |
+|---|------|----------|-------------|-------|
+| 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 | ✅ **21:06 Opus** — Template is user-facing product; "not good looking" = immediate churn risk. Stop current sends first, then redesign. |
+| 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 | ✅ **21:06 Opus** — Immediate action: disable current template today. Better no digest than bad digest. |
+| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 | 💡 **21:06 Opus** — Brooke Theme (cream/sage/copper, Newsreader, liquid glass) is the aesthetic north star. Use as design system for new template. |
 
 ### 📝 Key Feedback Items
 

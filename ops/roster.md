@@ -1,7 +1,7 @@
 # AGENT ROSTER — DropAnywhere Agent Company
 
-**Last Updated**: 2026-03-17 10:28 UTC (GOVERNANCE REALITY CHECK)  
-**Company Status**: ✅ OPERATIONAL — 38 enabled agents out of 49 total cron jobs (Mature ecosystem)
+**Last Updated**: 2026-03-17 20:59 UTC (GOVERNANCE REALITY CHECK)  
+**Company Status**: ✅ OPERATIONAL — 39 enabled agents out of 49 total cron jobs (Mature ecosystem)
 
 ---
 
@@ -100,14 +100,26 @@
 
 ---
 
-## Current Statistics (2026-03-17 10:28 UTC — GOVERNANCE REALITY CHECK)
+## Current Statistics (2026-03-17 20:59 UTC — GOVERNANCE REALITY CHECK)
 
 - **Total Cron Jobs**: 49 configured
-- **Enabled Agents**: 38 active agents
-- **Disabled/Consolidated**: 11 agents
-- **Operational Rate**: 100% of enabled agents running
-- **WhatsApp Delivery Issues**: 3 scheduled jobs affected
+- **Enabled Agents**: 39 active agents (Governance now active)
+- **Disabled/Consolidated**: 10 agents
+- **Operational Rate**: 95% of enabled agents running (2 timeout errors)
+- **WhatsApp Delivery Issues**: 3 scheduled jobs affected (non-operational)
 - **System Maturity**: Mature ecosystem with full email workflow automation
+
+## 🔴 CURRENT SYSTEM ISSUES (Updated 2026-03-17 20:59 UTC)
+
+| Issue | Severity | Status | Details |
+|-------|----------|--------|---------|
+| **Auto-Ack Bot** | 🔴 HIGH | 🚨 5 TIMEOUTS | 5 consecutive timeout errors — email acknowledgment pipeline at risk |
+| **DocBot** | 🔴 HIGH | 🚨 3 TIMEOUTS | 3 consecutive timeout errors (180s limit) |
+| **PatternBot** | ⚠️ MEDIUM | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
+| **Creative Review Emailer** | ⚠️ MEDIUM | ⚠️ 2 ERRORS | File edit failure on push-queue.md |
+| **Daily GitHub Sync** | ⚠️ MEDIUM | ⚠️ 2 TIMEOUTS | 300s timeout, WhatsApp delivery also failing |
+| **ContentPitchBot** | ⚠️ MEDIUM | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
+| **WhatsApp Delivery** | ⚠️ MEDIUM | ⚠️ FUNCTIONAL | 3 scheduled jobs work but notifications fail |
 
 ## Department Coverage Summary
 
@@ -135,25 +147,22 @@
 | **Opus 4** | ~4 | ~$3.00 | Strategic oversight |
 | **Total** | 34 | ~$4.00 | Full ecosystem coverage |
 
-## 🔴 CURRENT SYSTEM ISSUES
+## Department Coverage Summary
 
-| Issue | Severity | Status | Details |
-|-------|----------|--------|---------|
-| **OpenRouter Credits** | 🔴 HIGH | 🚨 BILLING ERROR | Kimi K2.5 out of credits, affecting PatternBot |
-| **Governance Agent** | ⚠️ MEDIUM | ⚠️ TIMEOUT | 2 consecutive timeouts (resolving this session) |
-| **SpecBot** | ⚠️ MEDIUM | ⚠️ TIMEOUT | 1 timeout error on last run |
-| **WhatsApp Delivery** | ⚠️ MEDIUM | ⚠️ FUNCTIONAL | 3 scheduled jobs work but notifications fail |
-
-## Success Metrics (GOVERNANCE TRACKING)
-
-| Metric | Target | Current | Status |
-|--------|--------|---------|--------|
-| Agent Ecosystem Scale | >25 agents | 38 enabled | ✅ Exceeded |
-| Department Coverage | 100% | 11 depts | ✅ Complete |
-| Launch Readiness | March 24 | 7 days | ✅ On track |
-| Email Automation | 100% | 6 agents | ✅ Complete |
-| Backup Integrity | <2h lag | <1h | ✅ Healthy |
-| HITL Compliance | 100% | Enforced | ✅ Active |
+| Department | Agents | Status |
+|------------|--------|--------|
+| **Email** | 6 | ✅ Complete workflow automation |
+| **Operations** | 4 | ✅ Dashboard + monitoring + backup |
+| **Intelligence** | 4 | ✅ Research + pattern recognition |
+| **Engineering** | 3 | ✅ Frontend + BHA + specs (DC consolidated) |
+| **Marketing** | 3 | ✅ Content + social + SEO |
+| **Meta** | 4 | ✅ Strategy + governance + learning |
+| **Customer Success** | 2 | ✅ Onboarding + user health |
+| **Product** | 3 | ✅ Specs + docs + launch coord |
+| **Security** | 1 | ✅ Sentry AI active |
+| **Executive** | 1 | ⚠️ Chief of Staff (has errors) |
+| **Communications** | 1 | ✅ FounderVoice active |
+| **Revenue** | 0 | 🔴 Consolidated into Unified Ops |
 
 ---
 

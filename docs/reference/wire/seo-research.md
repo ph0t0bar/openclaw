@@ -1,81 +1,40 @@
+# SEO Research Log — DropAnywhere
 
-## SEOBot Research — 2026-03-17 19:49 UTC
-
-### Competitor Analysis: Mem.ai vs Notion AI Keywords
-
-#### Mem.ai Positioning
-- **Core positioning**: "AI thought partner" — emphasizes semantic search and conversational memory
-- **Key differentiator**: "Deep Search" — matches descriptions semantically, not just exact keyword matches
-- **SEO gap**: Limited organic keyword targeting visible; relies more on product-led growth and viral loops
-- **Content strategy**: Focus on internal search/retrieval vs external SEO content
-
-#### Notion AI Positioning (The Benchmark)
-- **Dominant keywords**:
-  - "AI SEO keyword research"
-  - "AI content optimization"
-  - "Notion AI templates"
-  - "SEO workflow automation"
-- **Content strategy**: Template marketplace as SEO engine (100K+ monthly visits from templates)
-- **Long-tail targets**: "how to use Notion AI for productivity"
-- **SEO tactics**:
-  - Database-driven keyword research workflows
-  - Template marketplace with SEO-optimized titles
-  - AI prompt libraries for content generation
-
-### Keyword Opportunities for DropAnywhere
-
-Based on competitive gap analysis:
-
-| Keyword Cluster | Search Intent | Competitor Gap | Opportunity |
-|-----------------|---------------|----------------|-------------|
-| "AI daily digest" | Productivity tool discovery | Readless, SaneBox dominate | Medium competition |
-| "newsletter summarizer" | Content curation | Readless (90% time savings claim) | Differentiate on multi-channel |
-| "email digest automation" | Workflow automation | n8n workflows, Zapier | Position as no-code alternative |
-| "second brain no inbox" | Philosophy/paradigm | **UNCONTESTED** — our tagline! | **High opportunity** |
-| "drop anywhere capture" | Capture methodology | **UNCONTESTED** — branded term | Own this space |
-| "frictionless note taking" | UX/methodology | Generic competition | Emphasize multi-channel |
-| "daily digest email" | Feature-specific | SaneBox, Read AI | Target "AI-powered" qualifier |
-
-### Recommended Keyword Targets (Priority Order)
-
-**Tier 1 — High Intent, Low Competition:**
-1. "second brain no inbox" — Our tagline, zero direct competition
-2. "drop anywhere capture" — Branded methodology
-3. "AI daily digest email" — Feature + qualifier
-4. "newsletter summarizer AI" — Feature-focused
-
-**Tier 2 — Moderate Competition, High Volume:**
-5. "email digest productivity tool"
-6. "AI thought partner" (challenging Mem.ai's positioning)
-7. "daily digest automation"
-8. "capture anywhere notes"
-
-**Tier 3 — Long-tail Content:**
-9. "how to stop inbox overwhelm"
-10. "alternatives to SaneBox AI"
-11. "Readless alternative"
-12. "best AI digest for founders"
-
-### Content Play Recommendations
-
-1. **Template SEO** (copy Notion's playbook):
-   - Create "Daily Digest Template" landing pages
-   - SEO-optimized template gallery
-   - Community-submitted workflows
-
-2. **Philosophy Content** (differentiation):
-   - "The No-Inbox Method" — thought leadership
-   - "Why Your Second Brain Shouldn't Have an Inbox"
-   - Comparison: "DropAnywhere vs SaneBox vs Readless"
-
-3. **Feature Landing Pages**:
-   - /features/email-digest
-   - /features/newsletter-summarizer
-   - /features/voice-capture
-
-4. **Use-case SEO**:
-   - "AI daily digest for founders"
-   - "daily digest for remote teams"
-   - "newsletter digest for investors"
+Keyword targeting research for AI daily digest + productivity tools.
 
 ---
+
+### 20:57 UTC — SEOBot
+**Search:** "AI daily digest email productivity tool"
+
+**Keyword Targets to Pursue:**
+| Priority | Keyword | Competition | Notes |
+|----------|---------|-------------|-------|
+| 🔥 High | AI email digest | Medium | Core product feature, direct match |
+| 🔥 High | daily email summary | Medium | High intent, what users search for |
+| 🔥 High | AI inbox summarizer | Low-Medium | Competitors: Read AI, SaneBox |
+| ✅ Med | email productivity tool | High | Broader, more competitive |
+| ✅ Med | newsletter digest | Medium | Readless is main competitor here |
+| ✅ Med | AI daily briefing | Low | Alternative framing |
+| 📝 Low | morning email summary | Low | Long-tail, specific use case |
+| 📝 Low | automated email digest | Low | Workflow/automation angle |
+
+**Competitor Landscape:**
+- **SaneBox** — Daily Digest of unread emails (SaneLater folder)
+- **Read AI for Gmail** — Morning email summary of critical emails
+- **Readless** — 30+ newsletters → one AI digest, saves ~90 min/day
+- **n8n workflows** — DIY automation crowd
+- **Google "CC" agent** — Experimental, Gmail/Calendar/Drive briefs
+
+**Content Gap Opportunities:**
+1. Position as "newsletter + personal inbox" hybrid (most tools do one or the other)
+2. Emphasize "no inbox" philosophy — digest-only, zero inbox anxiety
+3. Multi-channel angle (email/SMS/voice/chat) — competitors are email-only
+4. Target "second brain" keywords — adjacent to Mem.ai, Notion
+
+**Recommended Next Actions:**
+- [ ] Create landing page: /ai-email-digest
+- [ ] Blog post: "AI Daily Digest vs Inbox Zero: A Better Way"
+- [ ] Compare page: vs Read AI, vs SaneBox, vs Readless
+- [ ] Target long-tail: "automatic daily email summary without inbox"
+
