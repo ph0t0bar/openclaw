@@ -1,5 +1,50 @@
 # Escalations Log
 
+## 2026-03-17 22:15 UTC — GOVERNANCE Synthesis
+
+### Current Open Escalations (Synthesized from Chief of Staff reports):
+
+#### 🔴 CRITICAL: Digest Pipeline Stalled
+- **Status:** Only 2 digests sent in 24h (should be ~100)
+- **Hub Dashboard:** digest_pipeline.attempts = 0 for current window
+- **Impact:** Users not receiving daily digests — retention risk before March 24 launch
+- **Action Required:** Investigate scheduler/cron health on Hub
+- **Owner:** Engineering/Ops — needs manual intervention
+
+#### 🔴 CRITICAL: Dropper-Code Stalled
+- **Status:** Claude Code usage exhausted — 5 tasks failed, brain-scan failed
+- **Impact:** Autonomous pipeline completely halted until Mar 20 3am UTC (~3 days)
+- **Action Required:** Manual intervention or wait for reset
+- **Failed Tasks:** task_1773751545_335, task_1773752442_801, task_1773753772_790, task_1773754790_862, task_1773754891_855
+
+#### 🟡 WARNING: Poe Balance Burning Fast
+- **Status:** 69,991 points remaining, burning 24,989/6h
+- **Trend:** Down from 216,990 earlier today (146K points burned)
+- **Runway:** ~17 hours at current burn rate
+- **Top Consumer:** Kimi-K2.5 (23,452 points/6h)
+- **Action Required:** Monitor, top up if needed
+
+#### 🟡 WARNING: openclaw CI Failure
+- **Status:** GitHub CI showing "failure" for openclaw repo
+- **Impact:** Potential deployment blocker
+- **Action Required:** Check GitHub Actions for failure details
+
+#### 🟡 WARNING: Family Retention Risk
+- **lhamer228@gmail.com** — Last drop: 2026-03-04 (13 days ago), engagement 24%
+- **rhamersunsetpartners@gmail.com** — Last drop: 2026-03-07 (10 days ago), engagement 26%
+- **hamer.daniel@gmail.com** — ZERO drops, vault empty, inactive account
+
+---
+
+### ✅ RESOLVED (from 21:27 UTC report):
+- **Backup Status** — Last joey-backup commit: 2026-03-17T21:24:54Z ✅
+- **Agent Health** — All agents posted within 2h window ✅
+- **Hub Core Services** — All green (108 users, 77 drops/24h, email 98%) ✅
+
+### Next GOVERNANCE Check: 2026-03-17 22:45 UTC
+
+---
+
 ## 2026-03-17 21:27 UTC — Chief of Staff Gap Check
 
 ### Gaps Found:
