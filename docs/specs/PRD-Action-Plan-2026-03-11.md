@@ -11,7 +11,7 @@
 
 **March 3-10 velocity:** 29+ PRs shipped across 4 repos. Poe Orchestrator live with 16 shadow bots. DA crossed 65 users (organic). BHA at 211 users, 531 active weekly visitors. 3 Stripe subs confirmed ($21 MRR). Dropper-Code autonomous pipeline operational (12 tasks completed).
 
-**March 17 05:31 UTC metrics:** DA at 103 users (+55%), 889 total drops, 7 active in 24h, 49 drops in 24h. BHA at 261 users (+23%), 63 active weekly, 6 active in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance RESTORED: 283,939 points (topped up from 12,522 💀 → 283,939 ✅).** Burn rate 80,030/6h (~3.5h runway). Top bots: idealstate, theREALrealtalk, EpiphanyAI. PRs #190-199 merged (dropper-code: agent auto-drops, digest error budget, misc). Hub deploy SUCCESS at 04:32 UTC.
+**March 17 07:56 UTC metrics:** DA at 103 users (+55%), 891 total drops (+2), 6 active in 24h, 48 drops in 24h. BHA at 262 users (+24%), 63 active weekly, 6 active in 24h, 3 new in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance: 282,276 points.** Burn rate 78,084/6h (~3.5h runway, 100 calls). Top bots: idealstate (47,793), theREALrealtalk (14,551), EpiphanyAI (9,849). PRs #193-199 merged (dropper-code batch). Hub deploy SUCCESS at 04:32 UTC.
 
 **March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction - not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
 
