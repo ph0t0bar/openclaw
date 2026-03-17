@@ -315,6 +315,18 @@
   ],
   "recent": [
     {
+      "header": "11:08 UTC \u2014 Heartbeat",
+      "snippet": "- Dropper-Code: healthy, 29 completed, 5 failed, last poll 11:08 UTC\n- Pending tasks: 2 (both CUSTOMER-FACING, held for "
+    },
+    {
+      "header": "11:08 UTC \u2014 Heartbeat + Intelligence Map Milestone",
+      "snippet": "**MILESTONE: Joey replied \"I LOVE THIS. NAILED IT.\" to the Intelligence Map email.**\n\nThis is the format to protect. The"
+    },
+    {
+      "header": "10:46 UTC \u2014 Sync Auditor",
+      "snippet": "- **61** gaps added to push queue (social/, templates/, ops/ files)\n- **0** /tmp artifacts rescued (no PDFs/HTMLs found)"
+    },
+    {
       "header": "10:38 UTC \u2014 PatternBot",
       "snippet": "- Pattern 209: Cross-Day Execution Paralysis Continuity \u2014 30+ notes, 0 shipped code, 12h+ deferred P0 tasks\n- Pattern 21"
     },
@@ -323,8 +335,8 @@
       "snippet": "- **Joey's reply to welcome email:** \"I'm obsessed. Damn!!!\"\n- **Status:** Onboarding email is landing exactly right\n- *"
     }
   ],
-  "totalCycles": 2,
-  "totalErrors": 0,
-  "successRate": 100,
-  "lastUpdated": "2026-03-17T10:43:20.034279Z"
+  "totalCycles": 5,
+  "totalErrors": 1,
+  "successRate": 80,
+  "lastUpdated": "2026-03-17T11:15:45.820183Z"
 }
