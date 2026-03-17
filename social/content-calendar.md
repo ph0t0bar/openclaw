@@ -327,4 +327,117 @@
 - Prioritize: launch-day-final-REWRITE (9/10) > the-captain-metaphor (9/10) > the-moment-it-clicked (9/10) > mega-make-email (9/10)
 - Twitter/X: 1x daily, shorter punchy versions of each LinkedIn post
 
-**Last updated:** March 17, 2026 by SocialBot (03:55 UTC)
+---
+
+## MEGA Campaign — Week 2 (March 31 – April 7, 2026)
+
+**Theme:** Make Email Great Again 🦜  
+**Assets:** `social/mega-campaign/` folder  
+**Angle:** Contrarian — email is the solution, not the problem
+
+### Pre-MEGA Teaser (March 31)
+
+**Twitter/X — 9:00 AM CT**
+> Something's coming. It's not an app. It's not a platform. It's not a "workspace." But you already have everything you need to use it. 🦜
+
+**LinkedIn — 10:00 AM CT** *(from mega-launch-sequence.md Day -7)*
+> I've been building something for the last few months. It's the opposite of everything the productivity industry tells you to build. No app store listing. No onboarding flow. No workspace setup. You already have the only tool you need. More soon.
+
+---
+
+### The Clue (April 1)
+
+**Twitter/X — 9:00 AM CT** *(from mega-launch-sequence.md Day -5)*
+> Hint: The tool you need to use our product was invented in 1971. Another hint: You checked it 47 times today. Last hint: It rhymes with "schmee-mail."
+
+**Instagram Story** — red cap photo teaser (if visual assets ready)
+
+---
+
+### MEGA Full Reveal (April 2)
+
+**LinkedIn — 9:00 AM CT** ← **SHIP THIS**
+> Full manifesto post from `mega-email-renaissance-linkedin-POST-READY.md`  
+> *(contrarian hook: "I'm more excited about email than any new app")*
+
+**Twitter/X — 10:00 AM CT**
+> Introducing MEGA. Make Email Great Again. 🦜 Your inbox isn't broken. The 47 apps you downloaded to fix it are. Full thread dropping tomorrow.
+
+**Instagram — 11:00 AM or 7:00 PM** ← **SHIP THIS**
+> Post full 5-slide carousel from `mega-instagram-carousel.md`  
+> Caption: "Your inbox isn't broken. The 47 apps you downloaded to fix it are."
+
+---
+
+### MEGA Thread Day (April 3)
+
+**Twitter/X — 9:00 AM CT** ← **HIGH PRIORITY**
+> Post full 10-tweet thread from `mega-campaign/mega-twitter-thread.md`  
+> Pin the thread after posting. Change bio to "Making Email Great Again 🦜"
+
+**LinkedIn — 12:00 PM CT**
+> Stop Rowing Upstream post (`stop-rowing-upstream-linkedin-POLISHED.md`, 8.5/10)  
+> Scheduled here as Week 2 thought leadership to sustain momentum
+
+---
+
+### Social Proof + Deep Dive (April 4–5)
+
+**Twitter/X April 4 — 9:00 AM CT** *(from mega-launch-sequence.md Day +1)*
+> 24 hours of MEGA: [X] drops received. [X] people just emailed a thought and moved on. The best UX is the one you already know.
+
+**Twitter/X April 5 — 9:00 AM CT** *(from mega-launch-sequence.md Day +3)*
+> "Okay but what actually happens after I email drop@drop-anywhere.com?" — The full flow explanation tweet
+
+**LinkedIn April 5 — 11:00 AM CT**
+> Mirror Principle post (`mirror-principle-linkedin-POLISHED.md`, 8.5/10) — thought leadership for Week 3 audience
+
+---
+
+### MEGA Results Post (April 7)
+
+**Twitter/X — 10:00 AM CT** *(from mega-launch-sequence.md Day +7)*
+> One week of Make Email Great Again: [real numbers]. The inbox comeback tour continues.
+
+**LinkedIn — 11:00 AM CT** *(from mega-launch-sequence.md Day +7)*
+> Full Week 2 recap + real user numbers + forward-looking hook
+
+---
+
+## MEGA Campaign Asset Checklist
+
+| Asset | File | Status |
+|-------|------|--------|
+| LinkedIn manifesto | `mega-email-renaissance-linkedin-POST-READY.md` | ✅ Ready |
+| Twitter thread (10 tweets) | `mega-campaign/mega-twitter-thread.md` | ✅ Ready |
+| Instagram carousel (5 slides) | `mega-campaign/mega-instagram-carousel.md` | ✅ Design-ready (needs visual production) |
+| Full launch sequence | `mega-campaign/mega-launch-sequence.md` | ✅ Complete (15-day playbook) |
+| Email sequence | `mega-campaign/mega-email-sequence.md` | ⚠️ Check if exists |
+| One-liner variations | `mega-campaign/mega-one-liner-variations.md` | ✅ Available for ad copy / replies |
+| MEGA Overview | `mega-campaign/MEGA-OVERVIEW.md` | ✅ Campaign brief |
+
+**Visual production needed:**
+- MEGA red cap graphic or slide
+- 5-slide Instagram carousel (dimensions: 1080x1350, Campaign Red + Brooke Cream)
+- Optional: Short Reel — app deletion time-lapse
+
+---
+
+## Master Prioritization (All Posts, Ranked)
+
+| Rank | Post | Rating | Slot |
+|------|------|--------|------|
+| 1 | `launch-day-linkedin-final-REWRITE.md` | 9/10 | Mar 24 AM — PIN |
+| 2 | `the-captain-metaphor-linkedin-POLISHED.md` | 9/10 | Mar 30 AM — Launch week closer |
+| 3 | `the-moment-it-clicked-linkedin-POLISHED.md` | 9/10 | Mar 27 PM — swap for "Real Story" |
+| 4 | `mega-make-email-great-again-linkedin-FINAL.md` | 9/10 | Apr 2 — MEGA reveal anchor |
+| 5 | `mega-campaign/mega-twitter-thread.md` | 9/10 | Apr 3 — pin + bio change |
+| 6 | `mega-email-renaissance-linkedin-POST-READY.md` | 9/10 | Apr 2 — Contrarian email hook |
+| 7 | `stop-rowing-upstream-linkedin-POLISHED.md` | 8.5/10 | Apr 3 — Week 2 thought leadership |
+| 8 | `mirror-principle-linkedin-POLISHED.md` | 8.5/10 | Apr 5 — Week 2 closer |
+| 9 | `simplicity-wins-linkedin-POLISHED.md` | 8.5/10 | Mar 29 — Weekend post |
+| 10 | `future-self-letter-linkedin-POLISHED.md` | 8/10 | Mar 28 PM — Emotional anchor |
+
+**Coverage Status (FINAL):** Launch week (Mar 23–30) + MEGA Week 2 (Mar 31–Apr 7) = 20+ scheduled posts across LinkedIn, Twitter/X, and Instagram. Full 2-week runway ready.
+
+**Last updated:** March 17, 2026 by SocialBot (04:55 UTC) — Added MEGA Campaign Week 2 block, Twitter thread schedule, Instagram carousel slot, asset checklist, and master prioritization table
