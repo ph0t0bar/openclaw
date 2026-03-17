@@ -17,60 +17,60 @@
       "dept": "Operations",
       "model": "Sonnet",
       "cadence": "15m",
-      "cycles_today": 2,
-      "last_entry": "18:41 UTC \u2014 Sentry",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- SECRET SCAN: \ud83d\udfe2 Clean \u2014 no secrets found in recent git diff"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Opus",
       "dept": "Meta",
       "model": "Opus",
       "cadence": "15m",
-      "cycles_today": 5,
-      "last_entry": "19:31 UTC \u2014 Opus",
+      "cycles_today": 1,
+      "last_entry": "20:35 UTC \u2014 Opus",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Added strategic insight to agent-board: Digest Pipeline Crisis Analysis \u2014 PRD shows only 2 digests sent in 24h (regression), contrasted Danny adviso"
+      "last_output": "- Added strategic insight to agent-board.md: \"The Digest Pipeline Stall is a Redundancy Crisis, Not a Bug\"\n- Diagnosed root cause: zero fallback when "
     },
     {
       "name": "Chief of Staff",
       "dept": "Executive",
       "model": "Opus",
       "cadence": "20m",
-      "cycles_today": 3,
-      "last_entry": "19:00 UTC \u2014 Chief of Staff",
-      "errors": 1,
-      "success_rate": 67,
-      "status": "active",
-      "last_output": "- \ud83d\udd34 CRITICAL: Digest pipeline stalled (2/105 users got digests in 24h - 98% missing core value)\n- \ud83d\udd34 CRITICAL: Family engagement crisis (Joey's parents"
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Meta",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 2,
-      "last_entry": "18:57 UTC \u2014 Meta",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- \ud83d\udcca Scorecard: 3 A-grade (38%), 5 B-grade (62%), 0 C-grade\n- \ud83d\udfe2 High performers: PatternBot (execution paralysis analysis), Researcher (Notion AI threa"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "DocBot",
       "dept": "Product",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 1,
-      "last_entry": "18:28 UTC \u2014 DocBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Updated PRD.md Section 8 metrics from Hub dashboard (18:26 UTC)\n  - DA drops: 913 \u2192 918 (+5)\n  - DA drops 24h: 70 \u2192 75 (+5)\n  - Poe balance: 218,251"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "RailwayBot",
@@ -89,48 +89,48 @@
       "dept": "Customer Success",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 2,
-      "last_entry": "19:03 UTC \u2014 UserHealth",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- **Total Users:** 105 (44 archived) | **Active 7d:** 46 | **Active 24h:** 9\n- **Total Drops:** 918 | **Digests Sent:** 179\n\n**\ud83d\udea8 FAMILY MEMBERS AT RIS"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "ContentBot",
       "dept": "Marketing",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 4,
-      "last_entry": "19:26 UTC \u2014 ContentBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Wrote fresh LinkedIn post: \"The Inbox Was a Mistake\" \u2014 anti-inbox angle for launch week positioning DropAnywhere as liberation from notification anx"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Archivist",
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 2,
-      "last_entry": "18:49 UTC \u2014 Archivist",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Git commit: 1 change (e88f37d0bb)\n- Pushed 24 files to joey-backup:\n  \u2022 dashboard/agent-status.json\n  \u2022 sessions/2026-03-17-daily-log.md\n  \u2022 context"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Researcher",
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 5,
-      "last_entry": "19:34 UTC \u2014 Researcher",
+      "cycles_today": 1,
+      "last_entry": "20:37 UTC \u2014 Researcher",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Found Mem.ai 2.0 released early 2026 with proactive AI features (voice capture, smart tags, deep search, Mem Chat, daily digest) - major competitive"
+      "last_output": "- VOICE task complete: Mined Joey's Hub drops for latest thinking\n- Key findings: Extended onboarding vision (beyond 3 emails), \"wish I could like it\""
     },
     {
       "name": "Wire",
@@ -161,36 +161,36 @@
       "dept": "Engineering",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:31 UTC \u2014 FrontEndBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- \u2705 PRs: 0 open\n- \u2705 Issues: 0 open\n- \ud83d\udea6 Status: Clean. No launch-blocking items."
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "BHABot",
       "dept": "Engineering",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:32 UTC \u2014 BHABot (Engineerin",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- **BHA Status:** 266 total users | 64 active (7d) | 7 new (24h) \ud83c\udf89\n- **GitHub PRs:** No open PRs on brutallyhonest-next"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "SpecBot",
       "dept": "Product",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:52 UTC \u2014 SpecBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Created SPEC-Intelligence-Map-Generator.md skeleton in docs/reference/\n- Source: Joey latest thinking + competitive intel (Mem.ai auto-organization)"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "StripeBot",
@@ -221,76 +221,16 @@
       "dept": "Customer Success",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:34 UTC \u2014 OnboardBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- **105 total users** in system\n- **12 new-ish users** (\u22643 vault items) active in last 72h\n  - \u2705 6 activated (2+ drops) \u2014 50% activation rate\n  - \u26a0\ufe0f 6"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "SocialBot",
       "dept": "Marketing",
-      "model": "Kimi",
-      "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:37 UTC \u2014 SocialBot",
-      "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Reviewed ContentBot draft: `launch-week-day3-capture-guilt-linkedin.md`\n- **Rating:** 8.5/10 \u2014 READY TO POST\n- **Key insight:** \"Capturing feels lik"
-    },
-    {
-      "name": "SEOBot",
-      "dept": "Marketing",
-      "model": "Kimi",
-      "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:38 UTC \u2014 SEOBot",
-      "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- CRITICAL: drop-anywhere.com is NOT indexed \u2014 no active site found in search results\n- UK company \"DROPPANYWHERE LTD\" dissolved March 2025, unrelated"
-    },
-    {
-      "name": "FounderVoice",
-      "dept": "Communications",
-      "model": "Sonnet",
-      "cadence": "30m",
-      "cycles_today": 2,
-      "last_entry": "19:07 UTC \u2014 FounderVoice",
-      "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- \u2705 **why-simple-feels-scary-linkedin.md** \u2014 Already in Joey voice. Strong vulnerability, contrarian insight on simplicity vs complexity, quotable lin"
-    },
-    {
-      "name": "ContentPitch",
-      "dept": "Intelligence",
-      "model": "Kimi",
-      "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:38 UTC \u2014 ContentPitch",
-      "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Reality as Mirror: 3 angles generated (LinkedIn anti-hustle manifesto, Twitter flow vs force, blog post on physics of flow)"
-    },
-    {
-      "name": "PatternBot",
-      "dept": "Intelligence",
-      "model": "Kimi",
-      "cadence": "30m",
-      "cycles_today": 1,
-      "last_entry": "18:52 UTC \u2014 PatternBot",
-      "errors": 1,
-      "success_rate": 0,
-      "status": "error",
-      "last_output": "- Pattern 233: Execution Paralysis Meta-Crisis \u2014 35+ notes, 20h debate, 0 shipped code on P0 tasks\n- Pattern 234: Detection-Execution Gap \u2014 100% detec"
-    },
-    {
-      "name": "LearningBot",
-      "dept": "Meta",
       "model": "Kimi",
       "cadence": "30m",
       "cycles_today": 0,
@@ -301,122 +241,102 @@
       "last_output": null
     },
     {
+      "name": "SEOBot",
+      "dept": "Marketing",
+      "model": "Kimi",
+      "cadence": "30m",
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
+    },
+    {
+      "name": "FounderVoice",
+      "dept": "Communications",
+      "model": "Sonnet",
+      "cadence": "30m",
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
+    },
+    {
+      "name": "ContentPitch",
+      "dept": "Intelligence",
+      "model": "Kimi",
+      "cadence": "30m",
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
+    },
+    {
+      "name": "PatternBot",
+      "dept": "Intelligence",
+      "model": "Kimi",
+      "cadence": "30m",
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
+    },
+    {
+      "name": "LearningBot",
+      "dept": "Meta",
+      "model": "Kimi",
+      "cadence": "30m",
+      "cycles_today": 1,
+      "last_entry": "20:29 UTC \u2014 LearningBot",
+      "errors": 0,
+      "success_rate": 100,
+      "status": "active",
+      "last_output": "- [lesson captured] Alert resolution \u2014 digest stall is intentional waitlist policy, not bug (validated against DIGEST-POLICY.md)\n- [lesson captured] 3"
+    },
+    {
       "name": "Governance",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 2,
-      "last_entry": "18:59 UTC \u2014 Governance",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Constitutional reality check complete\n- Updated COMPANY-CONSTITUTION.md with accurate agent counts (39/49 enabled)\n- Synthesized escalations.md with"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     }
   ],
   "recent": [
     {
-      "header": "19:34 UTC \u2014 Researcher",
-      "snippet": "- Found Mem.ai 2.0 released early 2026 with proactive AI features (voice capture, smart tags, deep search, Mem Chat, dai"
+      "header": "20:37 UTC \u2014 Researcher",
+      "snippet": "- VOICE task complete: Mined Joey's Hub drops for latest thinking\n- Key findings: Extended onboarding vision (beyond 3 e"
     },
     {
-      "header": "19:31 UTC \u2014 Opus",
-      "snippet": "- Added strategic insight to agent-board: Digest Pipeline Crisis Analysis \u2014 PRD shows only 2 digests sent in 24h (regres"
+      "header": "20:35 UTC \u2014 Opus",
+      "snippet": "- Added strategic insight to agent-board.md: \"The Digest Pipeline Stall is a Redundancy Crisis, Not a Bug\"\n- Diagnosed r"
     },
     {
-      "header": "19:31 UTC \u2014 Opus",
-      "snippet": "- Added strategic insight to agent-board: Digest Pipeline Crisis Analysis \u2014 PRD shows only 2 digests sent in 24h (regres"
+      "header": "20:33 UTC \u2014 Unified Ops Monitor",
+      "snippet": "**Hub Dashboard:**\n- DropAnywhere: 107 users | 10 active (24h) | 81 drops\n- BHA: 268 users | 66 active (7d) | 9 new (24h"
     },
     {
-      "header": "19:26 UTC \u2014 ContentBot",
-      "snippet": "- Wrote fresh LinkedIn post: \"The Inbox Was a Mistake\" \u2014 anti-inbox angle for launch week positioning DropAnywhere as li"
+      "header": "20:29 UTC \u2014 LearningBot",
+      "snippet": "- [lesson captured] Alert resolution \u2014 digest stall is intentional waitlist policy, not bug (validated against DIGEST-PO"
     },
     {
-      "header": "19:07 UTC \u2014 FounderVoice",
-      "snippet": "- \u2705 **why-simple-feels-scary-linkedin.md** \u2014 Already in Joey voice. Strong vulnerability, contrarian insight on simplici"
-    },
-    {
-      "header": "19:06 UTC \u2014 ContentBot",
-      "snippet": "- Wrote fresh LinkedIn post: \"Why Simple Solutions Feel Scary\" for launch week Day 4/5\n- 2,680 bytes, Joey-authentic voi"
-    },
-    {
-      "header": "19:03 UTC \u2014 UserHealth",
-      "snippet": "- **Total Users:** 105 (44 archived) | **Active 7d:** 46 | **Active 24h:** 9\n- **Total Drops:** 918 | **Digests Sent:** "
-    },
-    {
-      "header": "19:00 UTC \u2014 Chief of Staff",
-      "snippet": "- \ud83d\udd34 CRITICAL: Digest pipeline stalled (2/105 users got digests in 24h - 98% missing core value)\n- \ud83d\udd34 CRITICAL: Family eng"
-    },
-    {
-      "header": "18:59 UTC \u2014 Governance",
-      "snippet": "- Constitutional reality check complete\n- Updated COMPANY-CONSTITUTION.md with accurate agent counts (39/49 enabled)\n- S"
-    },
-    {
-      "header": "18:57 UTC \u2014 Meta",
-      "snippet": "- \ud83d\udcca Scorecard: 3 A-grade (38%), 5 B-grade (62%), 0 C-grade\n- \ud83d\udfe2 High performers: PatternBot (execution paralysis analysis"
-    },
-    {
-      "header": "18:56 UTC \u2014 Researcher",
-      "snippet": "- **COMPETITIVE INTEL**: Notion AI launched Custom Agents (Feb 24) - autonomous 24/7 AI tools with >95% triaging accurac"
-    },
-    {
-      "header": "18:55 UTC \u2014 Opus",
-      "snippet": "- Voted on 3 critical board entries: Emergency Override (\u2705), Reward Structure (\ud83d\udca1), Agent Lock failure (\u274c)"
-    },
-    {
-      "header": "18:52 UTC \u2014 PatternBot",
-      "snippet": "- Pattern 233: Execution Paralysis Meta-Crisis \u2014 35+ notes, 20h debate, 0 shipped code on P0 tasks\n- Pattern 234: Detect"
-    },
-    {
-      "header": "18:52 UTC \u2014 SpecBot",
-      "snippet": "- Created SPEC-Intelligence-Map-Generator.md skeleton in docs/reference/\n- Source: Joey latest thinking + competitive in"
-    },
-    {
-      "header": "18:49 UTC \u2014 Archivist",
-      "snippet": "- Git commit: 1 change (e88f37d0bb)\n- Pushed 24 files to joey-backup:\n  \u2022 dashboard/agent-status.json\n  \u2022 sessions/2026-"
-    },
-    {
-      "header": "18:45 UTC \u2014 Unified Ops Monitor",
-      "snippet": "- DA: 105u/9active/75drops | BHA: 266u/64a7d/7new\n- Poe: 214921bal/19312burn6h (high burn, balance OK)\n- Stripe: 0ok/0fa"
-    },
-    {
-      "header": "18:42 UTC \u2014 Task Approvals",
-      "snippet": "- 0 new tasks (2 already notified, still pending approval)"
-    },
-    {
-      "header": "18:41 UTC \u2014 Sentry",
-      "snippet": "- SECRET SCAN: \ud83d\udfe2 Clean \u2014 no secrets found in recent git diff"
-    },
-    {
-      "header": "18:40 UTC \u2014 Researcher",
-      "snippet": "- Competitive analysis: Mem.ai leading \"second brain\" category with AI-first search, 60% faster queries, zero-setup auto"
-    },
-    {
-      "header": "18:40 UTC \u2014 Opus",
-      "snippet": "- Voted on 3 entries: Pattern Recognition (\u2705), POE runway crisis staleness (\u274c), Emergency Override proposal (\ud83d\udca1)"
-    },
-    {
-      "header": "18:38 UTC \u2014 ContentPitch",
-      "snippet": "- Reality as Mirror: 3 angles generated (LinkedIn anti-hustle manifesto, Twitter flow vs force, blog post on physics of "
-    },
-    {
-      "header": "18:38 UTC \u2014 SEOBot",
-      "snippet": "- CRITICAL: drop-anywhere.com is NOT indexed \u2014 no active site found in search results\n- UK company \"DROPPANYWHERE LTD\" d"
-    },
-    {
-      "header": "18:37 UTC \u2014 SocialBot",
-      "snippet": "- Reviewed ContentBot draft: `launch-week-day3-capture-guilt-linkedin.md`\n- **Rating:** 8.5/10 \u2014 READY TO POST\n- **Key i"
-    },
-    {
-      "header": "18:36 UTC \u2014 ContentBot",
-      "snippet": "- Wrote LinkedIn post: \"Launch Week Day 3 \u2014 The Realization\"\n- Focus: Liberation from capture guilt, reframing the produ"
-    },
-    {
-      "header": "18:34 UTC \u2014 OnboardBot",
-      "snippet": "- **105 total users** in system\n- **12 new-ish users** (\u22643 vault items) active in last 72h\n  - \u2705 6 activated (2+ drops) "
+      "header": "20:25 UTC \u2014 Alert Resolution (Digest Stall)",
+      "snippet": "**Alert ID:** a21b855c-ce71-4896-8a64-cebce21b2163  \n**Issue:** Hub reported digest stall for 15 users  \n**Resolution:**"
     }
   ],
-  "totalCycles": 44,
-  "totalErrors": 5,
-  "successRate": 89,
-  "lastUpdated": "2026-03-17T19:37:31.724497Z"
+  "totalCycles": 5,
+  "totalErrors": 1,
+  "successRate": 80,
+  "lastUpdated": "2026-03-17T20:37:48.108665Z"
 }
