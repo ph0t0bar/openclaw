@@ -667,9 +667,11 @@ DONE (status: completed)
 
 | Time (UTC) | Repo | Commit | What |
 |------------|------|--------|------|
-| 22:38 | opoerator-hub | - | PR #194 - Batch PR (brain-scan follow-up tasks) |
-| 19:23 | opoerator-hub | - | PR #192 - Task completed (details pending) |
+| 22:38 | opoerator-hub | - | PR #194 - Batch PR (brain-scan follow-up tasks: Zapier integration, Agent auto-drops, BHA integration) |
+| 21:09 | opoerator-hub | - | PR #193 - Brain-scan follow-up: Digest scheduler error budget + alerting fixes (task_1773695187_803) |
+| 19:23 | opoerator-hub | - | PR #192 - Task completed (task_1773688785_367 - details pending) |
 | 18:27 | opoerator-hub | - | PR #191 - Agent Auto-drops endpoint (`/api/integrations/auto-drop`) for OpenClaw/Poe bot session summaries |
+| 17:27 | opoerator-hub | - | PR #190 - Digest scheduler error budget + alerting (digest stall fix, task_1773671381_109) |
 | 14:40 | opoerator-hub | - | PR #190 - Digest scheduler error budget + alerting (digest stall fix) |
 | 09:41 | joey-backup | `7145dad` | Snapback Offer - quote additions (quote on organizing thoughts/reminders) |
 | 09:29 | joey-backup | `fd2e3cb` | `specs/snapback-offer-2026-03-11.md` - The Snapback Offer doc ("Bring me one problem, one week, one story") |
@@ -762,9 +764,9 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 16, 21:12 UTC) - DocBot Refresh
+## 8. System Health & Metrics (March 17, 01:17 UTC) - DocBot Refresh
 
-> **🚨 Poe Balance Critical:** Down to **38,162 points** with **37,786 burned/6h** (100 calls). Balance continues declining. Top bots: IdealPrompt (14,190), theREALrealtalk (10,806), Tippiy (10,018). Top-up urgently or disable non-essential bots.
+> **🚨 Poe Balance Critical:** Down to **27,027 points** with **20,612 burned/6h** (100 calls). Top bots: theREALrealtalk (17,477), Kimi-K2.5 (2,860), Gemini-3-Flash (275). Balance continues declining. Top bots: IdealPrompt (14,190), theREALrealtalk (10,806), Tippiy (10,018). Top-up urgently or disable non-essential bots.
 
 > **⚠️ Digest Scheduler Stalled:** 3/100 eligible users got digests in 24h. PR #193 just completed (task_1773695187_803). Active open PRs #186-193. Open issues reduced from 2 to 1.
 
@@ -787,7 +789,7 @@ From the Ingestion hydration context, Joey's Mac runs:
 | BHA new users 24h | - | - | - | **7** | **7** | **4** | **4** | **4** | **4** | steady |
 | BHA weekly visitors (GA) | - | - | **531** | - | **-** | **-** | **-** | **-** | **-** | - |
 | BHA MRR | $21 | $21 | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | **$21** | stable |
-| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **42,770** 🚨 | **39,168** 🚨 | **37,688** 🚨 | -1,480 |
+| Poe balance | 835K | 530K | **427K** | **385K** | **47,297** 🚨 | **44,003** 🚨 | **42,770** 🚨 | **39,168** 🚨 | **37,688** 🚨 | **27,027** 🚨🔥 | -10,661 |
 | Poe burn/6h points | - | - | ~13K | **27,694** | **49,866** 🔥 | **44,055** 🔥 | **43,379** 🔥 | **37,484** 🔥 | **37,770** 🔥 | **26,794** | -10,976 |
 | Poe calls/6h | - | - | - | **100** | **100** | **100** | **100** | **100** | **100** | - |
 | Email sent 24h | 46 | 85 | **100** | **79** | **89** | **87** | **89** | **100** | **100** | stable |
@@ -938,39 +940,4 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-17 00:26 UTC — DocBot metrics refresh. Section 8 updated: DA drops 858 (+13), drops_24h 28 (+10), active_24h 7 (+1), BHA users 260 (+1), active_24h 7 (+1), Poe balance 36,116 🚨 (still critical, burn down to 26,794/6h). 🦜*
-ted items. 🦜*
-ed items. 🦜*
-*
-���*
-ted items. 🦜*
- 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC - Snapback engine + Golden Thread shipped (PR #168).*
-
-*Last auto-refreshed: 2026-03-16 18:36 UTC - DocBot metrics refresh. Section 8 updated: 18:36 column added, drops_24h 18 (-1), PR #191 added to shipping log (Agent Auto-drops endpoint live). Poe balance 42,770 🚨 (burn 43K/6h - critical). Digest stall: 3 sent, 5 PRs open (#186-190, #191). 🦜*
-ted items. 🦜*
-ed items. 🦜*
-*
-���*
-ted items. 🦜*
-�*
-��*
-*
-�*
-��*
-��*
-���*
-ed items. 🦜*
-*
-���*
-ted items. 🦜*
-�*
-��*
-*
-�*
-��*
-��*
-*
-*
-*
-��*
-*
+*Last auto-refreshed: 2026-03-17 01:17 UTC — DocBot metrics refresh. Section 8 updated: Mar 17 01:17 column added, DA drops 867 (+22), drops_24h 34 (+9), active_24h 7 (+1), BHA users 260 (+1), active_7d 67 (-2), Poe balance 27,027 🚨🔥 (still critical, burn down to 20,612/6h). Digest stall: 3 sent. 8 PRs merged today (#190-194). 🦜*
