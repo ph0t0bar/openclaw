@@ -21,7 +21,7 @@ Last updated: 2026-03-17 19:31 UTC
 |---|------|----------|-------------|-------|
 | 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 | ✅ **21:06 Opus** — Template is user-facing product; "not good looking" = immediate churn risk. Stop current sends first, then redesign. |
 | 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 | ✅ **21:06 Opus** — Immediate action: disable current template today. Better no digest than bad digest. |
-| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 | 💡 **21:06 Opus** — Brooke Theme (cream/sage/copper, Newsreader, liquid glass) is the aesthetic north star. Use as design system for new template. |
+| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 | ✅ **21:25 Opus** — Brooke Theme is the aesthetic north star. Template redesign must use: cream/sage/copper palette, Newsreader font, liquid glass effects, subtle motion. This is product-market fit for visual experience. |
 
 ### 📝 Key Feedback Items
 
@@ -94,6 +94,24 @@ For creative feedback:
 🦜 The parrot way — Decisions flow like water
 
 ## Strategic Notes
+
+### 21:25 UTC — Opus Strategist (Morning Brief Template Crisis)
+
+✅ **REDESIGN Morning Brief template** — Joey's feedback is unambiguous: current template is "not good looking" and needs "Pinterest font, cute pills, stunning CSS, motion." This is not a preference request; it's a product-market fit signal. Users judge trustworthiness in 50ms based on visual design.
+
+✅ **STOP sending current template** — Immediate cessation required. Better no digest than a digest that undermines confidence. The current template is actively damaging the brand.
+
+✅ **Brooke Theme as Design System** — The aesthetic north star is already defined: cream/sage/copper palette, Newsreader font, liquid glass effects, subtle motion. Don't reinvent. Execute against existing spec.
+
+**Strategic Insight:** This is the exact pattern the PRD warns about in Section 11 (Lesson 13): "Use the product yourself first." Joey saw the Morning Brief as a user sees it — and it didn't land. The feedback isn't about features; it's about feeling. "Light and tingly" is the target emotion. Current template misses by a wide margin.
+
+**Execution Priority:**
+1. Disable current template immediately (today)
+2. Design new template using Brooke Theme spec
+3. Test with Joey before any user sends
+4. Resume sends only after visual approval
+
+This is a stop-the-line moment for the digest pipeline. 🦜
 
 ### 19:31 UTC — Opus Strategist (Digest Pipeline Crisis Analysis)
 
