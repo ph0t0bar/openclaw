@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.5; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 20px; margin-bottom: 8px; }
+    h2 { font-size: 16px; margin-top: 24px; margin-bottom: 12px; color: #555; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    .meta { color: #888; font-size: 13px; margin-bottom: 20px; }
+    .stats { background: #f8f9fa; padding: 16px; border-radius: 8px; margin-bottom: 20px; }
+    .stat-row { display: flex; justify-content: space-between; margin: 6px 0; }
+    .stat-label { color: #666; }
+    .stat-value { font-weight: 600; }
+    .status-ok { color: #28a745; }
+    .status-warn { color: #ffc107; }
+    .status-bad { color: #dc3545; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 8px; background: #f8f9fa; color: #555; font-weight: 500; }
+    td { padding: 8px; border-bottom: 1px solid #eee; }
+    .agent { font-weight: 500; }
+    .snippet { color: #666; }
+    .alert { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 12px 0; }
+    .alert-info { background: #d1ecf1; border-left-color: #17a2b8; }
+    .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #888; }
+    ul { margin: 8px 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <h1>🦜 Agent Company Status Report</h1>
+  <div class="meta">Monday, March 16, 2026 — 19:04 UTC</div>
+
+  <div class="stats">
+    <div class="stat-row"><span class="stat-label">Total Cycles Today</span><span class="stat-value">167</span></div>
+    <div class="stat-row"><span class="stat-label">Success Rate</span><span class="stat-value status-ok">85%</span></div>
+    <div class="stat-row"><span class="stat-label">Active Agents</span><span class="stat-value">25 / 31</span></div>
+    <div class="stat-row"><span class="stat-label">System Status</span><span class="stat-value status-ok">GREEN</span></div>
+  </div>
+
+  <h2>Latest Agent Outputs</h2>
+  <table>
+    <tr><th>Agent</th><th>Time</th><th>Output</th></tr>
+    <tr><td class="agent">Sentry</td><td>18:52</td><td class="snippet">Secret scan clean — no secrets in last 3 commits</td></tr>
+    <tr><td class="agent">PatternBot</td><td>18:50</td><td class="snippet">Root cause found: dropanywhere-cron service DOWN (404) causing digest stall</td></tr>
+    <tr><td class="agent">OnboardBot</td><td>18:49</td><td class="snippet">100% activation rate — 19 new users active in last 72h, all from BHA</td></tr>
+    <tr><td class="agent">BHABot</td><td>18:48</td><td class="snippet">259 users | 70 active (7d) | 4 new (24h)</td></tr>
+    <tr><td class="agent">FrontEndBot</td><td>18:47</td><td class="snippet">Clean — 0 open PRs, 0 open issues, no launch blockers</td></tr>
+  </table>
+
+  <h2>Systems Status</h2>
+  <table>
+    <tr><th>Service</th><th>Status</th><th>Notes</th></tr>
+    <tr><td>DropAnywhere Hub</td><td class="status-ok">✓ OK</td><td>100 users, 18 drops/24h</td></tr>
+    <tr><td>BrutallyHonest.ai</td><td class="status-ok">✓ OK</td><td>259 users, 4 new today</td></tr>
+    <tr><td>Dropper-Code</td><td class="status-ok">✓ OK</td><td>19 completed, polling healthy</td></tr>
+    <tr><td>Poe Bots</td><td class="status-warn">⚠ Low</td><td>42,770 pts (~6h runway)</td></tr>
+    <tr><td>Stripe</td><td class="status-ok">✓ OK</td><td>No charges (4h), no failures</td></tr>
+    <tr><td>Digest Cron</td><td class="status-bad">✗ DOWN</td><td>dropanywhere-cron 404 — 3/41 digests sent</td></tr>
+  </table>
+
+  <h2>Active Alerts</h2>
+  <div class="alert">
+    <strong>⚠️ Family Retention Risk</strong><br>
+    3 family members flagged: lhamer228 (12d inactive), rhamersunsetpartners (9d inactive), hamer.daniel (never activated)
+  </div>
+  <div class="alert alert-info">
+    <strong>ℹ️ 100-User Milestone Achieved</strong><br>
+    DA hit 100 users (+54% since PRD). BHA driving 100% of new signup activation.
+  </div>
+
+  <h2>In Progress</h2>
+  <ul>
+    <li><strong>Launch Week (Mar 24-30):</strong> 10/10 posts drafted — content calendar complete</li>
+    <li><strong>Goldmine Mining:</strong> 2,422 files cataloged (ChatGPT convos, BHA exports, Claude context)</li>
+    <li><strong>Dropper-Code:</strong> 2 customer-facing tasks pending your approval (Vault Upgrade UI, BHA Integration Button)</li>
+    <li><strong>Digest Fix:</strong> PR #190 ready — needs Railway deploy to restore cron service</li>
+  </ul>
+
+  <div class="footer">
+    Agent Company • 167 cycles today • 0 critical escalations<br>
+    <em>Drop it. Forget it. Wake up lighter. 🦜</em>
+  </div>
+</body>
+</html>
