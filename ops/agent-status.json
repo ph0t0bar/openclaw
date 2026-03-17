@@ -17,60 +17,60 @@
       "dept": "Operations",
       "model": "Sonnet",
       "cadence": "15m",
-      "cycles_today": 11,
-      "last_entry": "05:13 UTC \u2014 Sentry",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- SECRET SCAN: \ud83d\udfe2 No exposed secrets in recent commits\n- Checked: sk_live, sk-ant, github_pat, api_key, secret patterns"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Opus",
       "dept": "Meta",
       "model": "Opus",
       "cadence": "15m",
-      "cycles_today": 11,
-      "last_entry": "05:11 UTC \u2014 Opus",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Voted on 3 entries: execution directive approval, gumroad domino insight, diagnosed board recursion pattern"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Chief of Staff",
       "dept": "Executive",
       "model": "Opus",
       "cadence": "20m",
-      "cycles_today": 8,
-      "last_entry": "05:14' UTC \u2014 Chief of Staff",
+      "cycles_today": 1,
+      "last_entry": "06:53 UTC \u2014 Chief of Staff",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "GAPS FOUND:\n\n**\ud83d\udd25 POE CRISIS:** 12,522 points = ~35min runway at current burn rate\n**\ud83d\udc65 FAMILY CRISIS:** 3 family members disengaged (Lori 13d premium, "
+      "last_output": "- Backup: \u2705 (1h25m ago)\n- Agents: \u2705 (all active within 1h)\n- Digest: \ud83d\udd34 still stalled (0 attempts this hour)\n- Dropper-Code: 7 PRs ready for review (#1"
     },
     {
       "name": "Meta",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 9,
-      "last_entry": "05:20 UTC \u2014 Meta",
+      "cycles_today": 1,
+      "last_entry": "06:58 UTC \u2014 Meta",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- **Scorecard Summary:** 73% A-grade performance (16/22 agents) | 9% C-grade (2 agents)\n- **CRITICAL ESCALATION:** Research coordination catastrophe -"
+      "last_output": "- Scorecard: 6 agents graded (100% A) \u2014 Chief of Staff, FrontEndBot, BHABot, OnboardBot, ContentBot, FounderVoice all delivered real value. Researcher"
     },
     {
       "name": "DocBot",
       "dept": "Product",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 3,
-      "last_entry": "04:53 UTC \u2014 DocBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Updated PRD.md Section 8 metrics: DA drops 889 (+3), drops_24h 51 (+3), BHA stable (261/65 7d/7 24h), Poe balance 12,522 \ud83d\udc80 (-1,347 in 46 min, ~35 mi"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "RailwayBot",
@@ -89,48 +89,48 @@
       "dept": "Customer Success",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 4,
-      "last_entry": "04:22 UTC \u2014 UserHealth",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Total users: 103 (44 archived), 2 premium\n- Active 24h: 8 | Active 7d: 51 | Total drops: 888\n- Weekly drop activity: 266 drops, 52 active users, 38/"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "ContentBot",
       "dept": "Marketing",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 8,
-      "last_entry": "04:48 UTC \u2014 ContentBot",
+      "cycles_today": 1,
+      "last_entry": "06:56 UTC \u2014 ContentBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Created MEGA email renaissance LinkedIn post (mega-email-renaissance-linkedin-POST-READY.md)\n- Contrarian angle: \"Everyone runs from email, we run t"
+      "last_output": "- Wrote LinkedIn post: \"Your Second Brain Has No Inbox\" for DropAnywhere launch week\n- Pulled voice samples from joey-backup/_FROM-JOEY.md (captain me"
     },
     {
       "name": "Archivist",
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 4,
-      "last_entry": "04:47 UTC \u2014 Archivist",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Committed workspace (clean tree)\n- Generated agent status\n- Pushed rotation: dashboard/agent-status.json, sessions/2026-03-17-daily-log.md, context/"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Researcher",
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 21,
-      "last_entry": "05:25 UTC \u2014 Researcher",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- VOICE: Hub API search for Joey latest product thinking - found Jan-Feb 2026 focus on effortless AI systems, session continuity, user autonomy, \"path"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Wire",
@@ -161,36 +161,36 @@
       "dept": "Engineering",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "04:37 UTC \u2014 FrontEndBot",
+      "cycles_today": 1,
+      "last_entry": "06:54 UTC \u2014 FrontEndBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- No open PRs on dropanywhere-app\n- No open issues on dropanywhere-app\n- Status: clean \u2705 No launch-blocking items detected"
+      "last_output": "- **PRs:** 0 open (last merged: #150 - dropper-code task_1773)\n- **Issues:** 0 open\n- **Commits:** Recent activity on main (merge PR #150, digest QA u"
     },
     {
       "name": "BHABot",
       "dept": "Engineering",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "04:39 UTC \u2014 BHABot",
+      "cycles_today": 1,
+      "last_entry": "06:54 UTC \u2014 BHABot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Users: 261 | Active 7d: 65 | New 24h: 4\n- GitHub PRs: none open"
+      "last_output": "- BHA: 262 users | 64 active (7d) | 3 new (24h)\n- GH: No open PRs"
     },
     {
       "name": "SpecBot",
       "dept": "Product",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "05:23 UTC \u2014 SpecBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Compared remote joey-backup/specs vs local docs/specs (55 remote vs 54 local items)\n- Found 4 specs missing locally: STRATEGIC-POLL-Email-Only-2026-"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "StripeBot",
@@ -221,202 +221,134 @@
       "dept": "Customer Success",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "04:40 UTC \u2014 OnboardBot",
+      "cycles_today": 1,
+      "last_entry": "06:55 UTC \u2014 OnboardBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- 103 total users | Most recent drop: 8 min ago \u2705\n- Activation: 24/103 (23%) active in 72h | 51/103 (50%) in 7d | 97/103 (94%) in 30d\n- 4 zero-drop us"
+      "last_output": "**New User Onboarding Check**\n\n**Total Users:** 103 (44 archived)\n\n**Active Users (last 72h - since Mar 14 06:54 UTC):**\n- emmawilcox121@gmail.com \u2014 2"
     },
     {
       "name": "SocialBot",
       "dept": "Marketing",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "04:56 UTC \u2014 SocialBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Reviewed mega-campaign/ folder (5 assets: twitter thread, instagram carousel, launch sequence, email sequence, one-liners)\n- Added MEGA Campaign Wee"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "SEOBot",
       "dept": "Marketing",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 2,
-      "last_entry": "03:25 UTC \u2014 SEOBot",
-      "errors": 1,
-      "success_rate": 50,
-      "status": "active",
-      "last_output": "- BLOCKED: OpenRouter credits too low for Perplexity API (402 error, only 744 tokens available). Competitor SEO research (Mem.ai/Notion AI) skipped. A"
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "FounderVoice",
       "dept": "Communications",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 6,
-      "last_entry": "04:59 UTC \u2014 FounderVoice",
+      "cycles_today": 1,
+      "last_entry": "06:57 UTC \u2014 FounderVoice",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- \u2705 joey-authentic-voice-linkedin-POLISHED.md \u2014 Strong Joey voice. Engine room\u2192bridge metaphor hits perfectly. \"Your tools just suck\" is classic Joey "
+      "last_output": "- \u2705 no-inbox-philosophy-linkedin.md \u2014 Voice is ON. Personal hook (relief not accomplishment), concrete scenes (2am ideas, walking voice notes), \"no in"
     },
     {
       "name": "ContentPitch",
       "dept": "Intelligence",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "04:49 UTC \u2014 ContentPitch",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Drop: \"external reality reflects internal state\" (Poe, Jan 25). Generated 3 angles: LinkedIn (internal state > tools), Twitter thread (5-tweet produ"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "PatternBot",
       "dept": "Intelligence",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "05:07 UTC \u2014 PatternBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Patterns 186-192 discovered: Human signals (Joey Hook) outperform agent consensus; Poe runway calculation inconsistency across agents (35min vs 3.9h"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "LearningBot",
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "05:19 UTC \u2014 LearningBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- 6 new lessons captured (05:18 UTC cycle): Human Hook Signal Supremacy, Poe Runway Calculation Divergence, C-Grade Escalation Without Remediation, Go"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Governance",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 6,
-      "last_entry": "05:21 UTC \u2014 Governance",
-      "errors": 2,
-      "success_rate": 67,
-      "status": "active",
-      "last_output": "- Reviewed Company Constitution and Roster - MATCH CONFIRMED \u2705\n- Constitution shows 34 enabled agents, Roster confirms same count\n- CRITICAL ESCALATIO"
+      "cycles_today": 0,
+      "last_entry": null,
+      "errors": 0,
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     }
   ],
   "recent": [
     {
-      "header": "05:25 UTC \u2014 Researcher",
-      "snippet": "- VOICE: Hub API search for Joey latest product thinking - found Jan-Feb 2026 focus on effortless AI systems, session co"
+      "header": "06:58 UTC \u2014 Meta",
+      "snippet": "- Scorecard: 6 agents graded (100% A) \u2014 Chief of Staff, FrontEndBot, BHABot, OnboardBot, ContentBot, FounderVoice all de"
     },
     {
-      "header": "05:23 UTC \u2014 SpecBot",
-      "snippet": "- Compared remote joey-backup/specs vs local docs/specs (55 remote vs 54 local items)\n- Found 4 specs missing locally: S"
+      "header": "06:57 UTC \u2014 FounderVoice",
+      "snippet": "- \u2705 no-inbox-philosophy-linkedin.md \u2014 Voice is ON. Personal hook (relief not accomplishment), concrete scenes (2am ideas"
     },
     {
-      "header": "05:21 UTC \u2014 Governance",
-      "snippet": "- Reviewed Company Constitution and Roster - MATCH CONFIRMED \u2705\n- Constitution shows 34 enabled agents, Roster confirms s"
+      "header": "06:56 UTC \u2014 ContentBot",
+      "snippet": "- Wrote LinkedIn post: \"Your Second Brain Has No Inbox\" for DropAnywhere launch week\n- Pulled voice samples from joey-ba"
     },
     {
-      "header": "05:20 UTC \u2014 Meta",
-      "snippet": "- **Scorecard Summary:** 73% A-grade performance (16/22 agents) | 9% C-grade (2 agents)\n- **CRITICAL ESCALATION:** Resea"
+      "header": "06:55 UTC \u2014 OnboardBot",
+      "snippet": "**New User Onboarding Check**\n\n**Total Users:** 103 (44 archived)\n\n**Active Users (last 72h - since Mar 14 06:54 UTC):**"
     },
     {
-      "header": "05:19 UTC \u2014 LearningBot",
-      "snippet": "- 6 new lessons captured (05:18 UTC cycle): Human Hook Signal Supremacy, Poe Runway Calculation Divergence, C-Grade Esca"
+      "header": "06:54 UTC \u2014 BHABot",
+      "snippet": "- BHA: 262 users | 64 active (7d) | 3 new (24h)\n- GH: No open PRs"
     },
     {
-      "header": "05:14' UTC \u2014 Chief of Staff",
-      "snippet": "GAPS FOUND:\n\n**\ud83d\udd25 POE CRISIS:** 12,522 points = ~35min runway at current burn rate\n**\ud83d\udc65 FAMILY CRISIS:** 3 family members "
+      "header": "06:54 UTC \u2014 FrontEndBot",
+      "snippet": "- **PRs:** 0 open (last merged: #150 - dropper-code task_1773)\n- **Issues:** 0 open\n- **Commits:** Recent activity on ma"
     },
     {
-      "header": "05:13 UTC \u2014 Sentry",
-      "snippet": "- SECRET SCAN: \ud83d\udfe2 No exposed secrets in recent commits\n- Checked: sk_live, sk-ant, github_pat, api_key, secret patterns"
+      "header": "06:53 UTC \u2014 Chief of Staff",
+      "snippet": "- Backup: \u2705 (1h25m ago)\n- Agents: \u2705 (all active within 1h)\n- Digest: \ud83d\udd34 still stalled (0 attempts this hour)\n- Dropper-Co"
     },
     {
-      "header": "05:13 UTC \u2014 Deep Researcher",
-      "snippet": "- **GOLDMINE CATALOGED**: joey-backup/Ingestion/ archive indexed\n- **Discovery**: 2,422-file historical treasure trove s"
-    },
-    {
-      "header": "05:11 UTC \u2014 Opus",
-      "snippet": "- Voted on 3 entries: execution directive approval, gumroad domino insight, diagnosed board recursion pattern"
-    },
-    {
-      "header": "05:10 UTC \u2014 Task Approvals",
-      "snippet": "- 0 new tasks (2 pending already notified)"
-    },
-    {
-      "header": "05:09 UTC \u2014 FeedbackBot",
-      "snippet": "- 6 feedback items routed (Drops 4-9, COMPASS thread + Drop received UX feedback)\n- 3 product decisions logged: kill ACK"
-    },
-    {
-      "header": "05:07 UTC \u2014 PatternBot",
-      "snippet": "- Patterns 186-192 discovered: Human signals (Joey Hook) outperform agent consensus; Poe runway calculation inconsistenc"
-    },
-    {
-      "header": "05:02 UTC \u2014 Researcher",
-      "snippet": "- GOLDMINE: Cataloged joey-backup/Ingestion/ structure \u2014 0_VAULT contains 1000+ ChatGPT conversations (Dec 2022-Jul 2024"
-    },
-    {
-      "header": "04:59 UTC \u2014 Ops Monitor",
-      "snippet": "- Hub: \u2705 ok | DA: 103u / 8 active / 51 drops | BHA: 261u / 64a7d / 4 new | Resend: 100 sent\n- Poe: 12,522 bal / 19,695 b"
-    },
-    {
-      "header": "04:59 UTC \u2014 FounderVoice",
-      "snippet": "- \u2705 joey-authentic-voice-linkedin-POLISHED.md \u2014 Strong Joey voice. Engine room\u2192bridge metaphor hits perfectly. \"Your too"
-    },
-    {
-      "header": "04:56 UTC \u2014 SocialBot",
-      "snippet": "- Reviewed mega-campaign/ folder (5 assets: twitter thread, instagram carousel, launch sequence, email sequence, one-lin"
-    },
-    {
-      "header": "04:55 UTC \u2014 Meta",
-      "snippet": "- **Scorecard (02:54-04:54):** 77% A-grade, 14% B-grade, 9% C-grade\n- **ESCALATED:** Research coordination catastrophe \u2014"
-    },
-    {
-      "header": "04:54 UTC \u2014 Opus",
-      "snippet": "- Voted on 3 entries: \u2705 EXECUTION DIRECTIVE (locked single-task mode), \u2705 Board Pattern Failure, \ud83d\udca1 ONE Task Focus (Gumroa"
-    },
-    {
-      "header": "04:53 UTC \u2014 DocBot",
-      "snippet": "- Updated PRD.md Section 8 metrics: DA drops 889 (+3), drops_24h 51 (+3), BHA stable (261/65 7d/7 24h), Poe balance 12,5"
-    },
-    {
-      "header": "04:51 UTC \u2014 Sentry",
-      "snippet": "- SECRET SCAN: \ud83d\udfe2 No secrets found in last 3 commits"
-    },
-    {
-      "header": "04:51 UTC \u2014 Deep Researcher",
-      "snippet": "- **GOLDMINE**: Cataloged joey-backup/Ingestion/ contents (2,422 files archive)\n- Created ops/goldmine-index.md with str"
-    },
-    {
-      "header": "04:49 UTC \u2014 ContentPitch",
-      "snippet": "- Drop: \"external reality reflects internal state\" (Poe, Jan 25). Generated 3 angles: LinkedIn (internal state > tools),"
-    },
-    {
-      "header": "04:48 UTC \u2014 ContentBot",
-      "snippet": "- Created MEGA email renaissance LinkedIn post (mega-email-renaissance-linkedin-POST-READY.md)\n- Contrarian angle: \"Ever"
-    },
-    {
-      "header": "04:47 UTC \u2014 Chief of Staff",
-      "snippet": "- \u2705 All systems nominal: backup fresh (0m), agents active (17+), hub operational, launch on track\n- No gaps detected in "
-    },
-    {
-      "header": "04:47 UTC \u2014 Archivist",
-      "snippet": "- Committed workspace (clean tree)\n- Generated agent status\n- Pushed rotation: dashboard/agent-status.json, sessions/202"
+      "header": "06:52 UTC \u2014 Joey Voice Feedback (LinkedIn Posts)",
+      "snippet": "**Issue identified:** LinkedIn posts feel templated and repetitive.\n\n**Problems flagged:**\n1. Same structure: \"I used to"
     }
   ],
-  "totalCycles": 134,
-  "totalErrors": 8,
-  "successRate": 94,
-  "lastUpdated": "2026-03-17T05:26:21.442581Z"
+  "totalCycles": 8,
+  "totalErrors": 0,
+  "successRate": 100,
+  "lastUpdated": "2026-03-17T06:58:55.259926Z"
 }
