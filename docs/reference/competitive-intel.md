@@ -88,3 +88,12 @@
 
 ## Key Finding - March 17, 2026 (21:08 UTC)
 **Mem.ai's "MemU" knowledge graph and proactive AI positioning** — Fresh research confirms Mem.ai is doubling down on becoming a true "second brain" with automatic organization (no folders/tags needed). Key differentiator: AI groups notes by meaning, not keywords, and surfaces related content proactively. Their "Notes Researcher AI" answers natural language questions with source citations — directly competing with DropAnywhere's vault search. Free tier offers 25 notes/chats monthly; Pro at $12/month. Notion AI still requires more manual setup and lacks Mem's deep note-connecting intelligence. Reflect app has limited 2026 coverage, positioned as basic personal notes without highlighted AI advancements. **Strategic insight:** Mem.ai's "Daily Digest" feature (curates relevant notes, auto-resurfaces old content for meetings) is nearly identical to DropAnywhere's core value prop. Our multi-channel ingestion (email/SMS/voice/chat) remains the key differentiator, but Mem's agentic Chrome extension (auto-saves webpages) and voice transcription are feature gaps we should monitor.
+
+## Key Finding - March 17, 2026 (21:18 UTC)
+**Google Personal Intelligence expanding to all US users** — Major competitive threat emerging. Google's Personal Intelligence feature (announced March 17, 2026) is expanding to all US users, bringing native AI memory and context awareness to Android devices. This directly competes with second-brain apps by offering:
+- System-level integration (not app-based)
+- Cross-app memory and context
+- Native voice and proactive suggestions
+- No additional subscription cost
+
+**Strategic implication:** The window for standalone "second brain" apps may be closing as OS-level AI becomes standard. DropAnywhere's differentiation must shift from "AI memory" to "structured async digestion" and "multi-channel capture" — things Google won't prioritize. Focus on the daily digest + vault search UX, not just raw AI capabilities.
