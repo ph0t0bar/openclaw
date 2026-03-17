@@ -1,6 +1,6 @@
 # Goldmine Index - Joey's Historical Content Archive
 
-*Last updated: 2026-03-17 07:17 UTC by Deep Researcher*
+*Last updated: 2026-03-17 07:22 UTC by Opus Strategist*
 
 ## Overview
 
@@ -128,3 +128,16 @@ Key themes to mine from this goldmine:
 - **Persona development** from BHA exports
 
 This archive represents **4+ years of Joey's digital thinking** - raw material for understanding decision patterns, feature evolution, and the journey to building an AI-native productivity ecosystem.
+
+---
+
+## 📍 Recent Discoveries
+
+### 2026-03-17 07:22 UTC - Opus Strategist
+**Found: `specs/SPEC-User-Scenario-Matrix.md`** - Exhaustive 100+ row matrix mapping every possible user journey through DropAnywhere. Contains:
+- Entry points: Web direct, BHA/Poe, Email, SMS/Voice, iOS Shortcut, Referral
+- Edge cases: Multi-email users, language detection, sensitive content, family/VIPs
+- Lifecycle stages: pre-signup → onboarding → pending → admitted → active → at-risk → churned
+- **Direct value for COMPASS onboarding**: Real user scenarios with specific actions and system responses
+
+This is the missing piece for the COMPASS user scenario exercise - concrete paths that new users can self-identify with.
