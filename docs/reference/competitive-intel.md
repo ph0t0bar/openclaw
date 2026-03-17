@@ -97,3 +97,18 @@
 - No additional subscription cost
 
 **Strategic implication:** The window for standalone "second brain" apps may be closing as OS-level AI becomes standard. DropAnywhere's differentiation must shift from "AI memory" to "structured async digestion" and "multi-channel capture" — things Google won't prioritize. Focus on the daily digest + vault search UX, not just raw AI capabilities.
+
+## Key Finding - March 17, 2026 (21:31 UTC)
+**Mem.ai semantic search vs keyword matching — the AI-native advantage** — Fresh competitive intel confirms Mem.ai's core differentiation is semantic understanding over rigid organization. Key capabilities:
+- **Semantic search**: Finds "revenue forecasting" even when notes say "projected income" — meaning-based, not keyword-based
+- **Smart Tags**: AI auto-generates tags from content semantics (client names, themes like "pricing objections") without manual folder creation
+- **Mem Chat**: Conversational interface that queries entire note history with source citations — DropAnywhere vault search competitor
+- **Proactive features**: Daily Digest (curated morning summaries) + Heads Up (resurfaces relevant older notes) — identical to our value prop
+- **Voice capture**: Multi-format including voice, images, files — feature gap in DropAnywhere
+- **Pricing**: Free tier (25 notes/chats/mo) / $12/mo Pro
+
+**Notion AI**: Limited detail in search results; uses memory to reduce repetition and automate ongoing work but lacks Mem's deep semantic intelligence.
+
+**Reflect app**: No specific 2026 coverage found in this search — may be falling behind in AI feature velocity.
+
+**Strategic insight**: Mem.ai and DropAnywhere are converging on the same "proactive second brain" vision. Our multi-channel ingestion (email/SMS/voice/chat) and "no inbox" philosophy remain key differentiators, but Mem's agentic Chrome extension and voice transcription are gaps to monitor. The battleground is shifting from "AI search" to "AI that anticipates what you need before you ask."
