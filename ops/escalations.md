@@ -1,15 +1,16 @@
 # Escalations Log
 
-## 2026-03-17 22:36 UTC — Chief of Staff Gap Check
+## 2026-03-17 22:56 UTC — GOVERNANCE Synthesis
 
-### Gaps Found:
+### Current Open Escalations (Synthesized from all sources):
 
-#### 🔴 CRITICAL: Digest Pipeline Stalled (PERSISTENT - 6+ hours)
+#### 🔴 CRITICAL: Digest Pipeline Stalled (PERSISTENT - 7+ hours)
 - **Status:** Only 2 digests sent in 24h (should be ~100)
 - **Hub Dashboard:** digest_pipeline.attempts = 0 for current window (22:00 UTC)
 - **Impact:** Users not receiving daily digests — retention risk before March 24 launch
 - **Action Required:** Investigate scheduler/cron health on Hub immediately
 - **Owner:** Engineering/Ops
+- **Note:** This is the #1 launch blocker — 6 days to soft launch
 
 #### 🔴 CRITICAL: Dropper-Code Stalled (PERSISTENT)
 - **Status:** Claude Code usage exhausted — 5 tasks failed, brain-scan failed
@@ -17,12 +18,20 @@
 - **Action Required:** Manual intervention or wait for reset
 - **Failed Tasks:** task_1773751545_335, task_1773752442_801, task_1773753772_790, task_1773754790_862, task_1773754891_855
 
-#### 🟡 WARNING: Poe Balance Burning Fast (WORSENED)
+#### 🔴 CRITICAL: Poe Balance Critical (WORSENED)
 - **Status:** 46,292 points remaining, burning 23,699/6h
 - **Trend:** Down from 216,990 earlier today (170K+ points burned)
 - **Runway:** ~12 hours at current burn rate
 - **Top Consumer:** Kimi-K2.5 (22,027 points/6h) — this is OpenClaw cron jobs
 - **Action Required:** Top up Poe balance within 12h or risk BHA organic traffic halt
+
+#### 🟡 WARNING: Agent Timeout Errors (NEW - Multiple Agents)
+- **Auto-Ack Bot:** 5 consecutive timeout errors — email acknowledgment pipeline at risk
+- **DocBot:** 5 consecutive timeout errors (180s limit) — PRD maintenance blocked
+- **PatternBot:** 1 timeout error on last run
+- **ContentPitchBot:** 1 timeout error on last run
+- **Impact:** Core automation workflows degrading
+- **Action Required:** Review timeout limits or reduce agent workload
 
 #### 🟡 WARNING: openclaw CI Failure (PERSISTENT)
 - **Status:** GitHub CI showing "failure" for openclaw repo
@@ -34,34 +43,27 @@
 - **rhamersunsetpartners@gmail.com** — Last drop: 2026-03-07 (10 days ago), engagement 26%
 - **hamer.daniel@gmail.com** — ZERO drops, vault empty, inactive account
 
-#### 🟢 OK: Backup Status
-- **Last joey-backup commit:** 2026-03-17T22:17:20Z (19 min ago)
-- **Status:** Fresh, within 2h window ✅
-
-#### 🟢 OK: Agent Health
-- **Recent agent activity (from memory/2026-03-17.md):**
-  - Sentry: 22:07 UTC ✅
-  - Researcher: 22:34 UTC ✅
-- **All agents posted within 2h window ✅**
-
-#### 🟢 OK: Hub Core Services
-- **Status:** All green (108 users, 77 drops/24h, email delivery 98%)
-- **Deploys:** SUCCESS today at 10:17 UTC (Hub), 17:24 UTC (OpenClaw)
-- **Stripe:** $0 revenue (4h window)
-
 ---
 
+### ✅ RESOLVED (since 22:36 UTC):
+- **Backup Status** — Last joey-backup commit: 2026-03-17T22:17:20Z ✅
+- **Agent Health** — All agents posted within 2h window ✅
+- **Hub Core Services** — All green (108 users, 77 drops/24h, email delivery 98%) ✅
+
 ### Summary
-**3 escalations require immediate attention:**
-1. **Digest pipeline stalled** (2/108 users getting digests — 6+ hour regression, launch risk)
+**4 escalations require immediate attention:**
+1. **Digest pipeline stalled** (2/108 users getting digests — 7+ hour regression, launch risk)
 2. **Dropper-Code autonomous pipeline down** (Claude usage exhausted until Mar 20)
 3. **Poe balance critical** (~12h runway, needs top-up today)
+4. **Multiple agent timeout errors** (Auto-Ack 5x, DocBot 5x — core workflows degrading)
 
 **2 warnings to monitor:**
 - openclaw CI failure
 - Family members at retention risk
 
 ---
+
+## 2026-03-17 22:36 UTC — Chief of Staff Gap Check
 
 ## 2026-03-17 22:15 UTC — GOVERNANCE Synthesis
 
