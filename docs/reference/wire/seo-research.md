@@ -1,91 +1,108 @@
+# SEO Research — DropAnywhere
 
-## SEOBot Run — 2026-03-17 11:25 UTC
-
-### Keyword Research: "AI daily digest email productivity tool"
-
-**Primary Keywords to Target:**
-| Keyword | Search Intent | Competition | Notes |
-|---------|---------------|-------------|-------|
-| `AI daily digest` | High intent | Medium | Core feature keyword — matches our daily email |
-| `email productivity tool` | Commercial | High | Broad but high volume |
-| `AI email summary` | Feature-specific | Medium | Competitors: Read AI, n8n workflows |
-| `newsletter summarizer` | Problem-aware | Medium | Readless ranks here (30+ newsletters → 1 digest) |
-| `inbox zero AI` | Solution-aware | Medium | Saner.AI, Mem competing |
-| `AI second brain` | Category | High | Mem, Reflect, Obsidian dominant |
-| `no inbox productivity` | Unique angle | Low | **DropAnywhere differentiator** — our "no inbox" philosophy |
-| `capture anywhere digest` | Branded feature | Low | **Opportunity** — multi-channel ingestion |
-
-**Competitor Keywords (from research):**
-- **Readless.app**: "newsletter summarizer", "AI news digest", "email digest automation"
-- **Read AI**: "daily email digest", "Gmail summary AI", "morning email summary"
-- **Saner.AI**: "AI second brain", "inbox zero", "quick capture notes"
-- **Mem**: "AI notes", "second brain app", "voice memos to notes"
-- **n8n workflows**: "automate daily email digest", "GPT email summary"
-
-**Long-tail Opportunities (Lower Competition):**
-- "AI digest from SMS and email" — **our multi-channel edge**
-- "daily productivity digest from voice notes"
-- "second brain without folders"
-- "automatic daily recap tool"
-- "AI summarizes my day"
-- "personal daily briefing AI"
-
-**Content Gaps to Fill:**
-1. Nobody owns "no inbox" + AI digest positioning
-2. Multi-channel capture (email + SMS + voice + chat) is underserved
-3. "Your Second Brain Has No Inbox" — unique value prop, zero competition
-
-**Recommended Page Targets:**
-| Page | Primary Keyword | Secondary Keywords |
-|------|-----------------|-------------------|
-| Homepage | AI daily digest | email productivity, daily summary |
-| Features | AI second brain | capture anywhere, no inbox |
-| Use Cases | newsletter summarizer | inbox zero, productivity workflow |
-| Blog | "AI digest vs inbox zero" | comparison content for SEO |
+*Research conducted by SEOBot cron job*
 
 ---
 
-## SEOBot Run — 2026-03-17 12:26 UTC
+## 18:37 UTC — March 17, 2026
 
-### Keyword Deep-Dive: AI Daily Digest Competitive Landscape
+### Task 1: Keyword Research — "AI daily digest email productivity tool"
 
-**Top Competing Tools & Their Positioning:**
+**High-Value Keywords to Target:**
 
-| Tool | Core Keywords | Differentiator | Weakness We Can Exploit |
-|------|---------------|----------------|------------------------|
-| **n8n workflows** | "automate daily email digest", "GPT email summary" | Automation platform | Requires technical setup (10-15 min) |
-| **Read AI** | "daily email digest", "Gmail summary", "morning email summary" | Gmail-native, Slack/Teams integration | Gmail-only, no multi-channel |
-| **Readless** | "newsletter summarizer", "AI news digest" | 30+ newsletters → 1 digest | External news only, not personal content |
-| **SaneBox** | "inbox zero", "email filtering" | Morning summary with bulk actions | Legacy email tool, not AI-native |
-| **Needle Daily AI** | "daily AI news digest", "AI pulse" | Curated AI news automation | Niche content (AI news only) |
+| Keyword | Opportunity | Notes |
+|---------|-------------|-------|
+| `AI daily digest` | High | Core feature match; low brand competition |
+| `email productivity tool` | High | Broad search volume; captures workflow pain point |
+| `newsletter summarizer` | High | Competitor (Readless) ranks here; gap for AI-native solution |
+| `AI second brain` | Medium-High | Mem.ai owns this; opportunity to differentiate with "no inbox" angle |
+| `AI thought partner` | Medium | Mem.ai branding; alternative positioning available |
+| `email overload solution` | High | Pain-point keyword; 70% of professionals cite email as top stress source |
+| `daily email summary` | Medium | Feature-level keyword; good for landing pages |
+| `frictionless capture` | Low-Medium | Unique positioning; potential branded term |
 
-**Emerging Keyword Opportunities (Low Competition, High Relevance):**
+**Key Stats from Research:**
+- Average knowledge worker receives **117 emails daily**
+- Professionals spend **10.8 hours weekly** on non-critical emails
+- AI summarization reduces **90 minutes of reading to 10 minutes** (90% reduction)
+- **70% of professionals** cite email as top workplace stress source
+- **42%** describe their inbox as "out of control"
 
-| Keyword | Volume Signal | Why It Matters for DropAnywhere |
-|---------|---------------|--------------------------------|
-| `AI digest from SMS` | Emerging | **Our multi-channel edge** — nobody else does this |
-| `voice notes to daily summary` | Low competition | Unique capture channel we support |
-| `second brain no inbox` | Niche but growing | Our core philosophy, zero direct competition |
-| `automatic daily recap tool` | Underserved | Bridges productivity + reflection |
-| `personal daily briefing AI` | Professional angle | Executive/founder use case |
-| `AI summarizes my day` | Voice search friendly | Conversational query trend |
-
-**"Second Brain" Keyword Cluster (PKM Space):**
-
-High-value terms from competitive analysis:
-- `Personal Knowledge Management` (PKM) — high authority keyword
-- `AI Knowledge Base` — rising trend with AI auto-org
-- `Visual whiteboard notes` — Heptabase/SecondBrain.io competing
-- `Node-based notes` — Tana's positioning
-- `Semantic search notes` — AI-powered discovery
-- `Journal-first notes` — Logseq's angle
-
-**Key Insight:** No major "second brain" app explicitly markets "no inbox" design. Most use traditional inbox queues (Evernote, Todoist) or folder-based organization. **DropAnywhere's "Your Second Brain Has No Inbox" is a differentiated positioning opportunity.**
-
-**Recommended Content Pieces:**
-1. "The Inbox-Free Second Brain: Why We Ditched the Queue" — thought leadership
-2. "Read AI vs DropAnywhere: Beyond Gmail Daily Digests" — comparison
-3. "Multi-Channel Capture: SMS + Email + Voice = One Daily Briefing" — feature education
-4. "PKM Without the Anxiety: How 'No Inbox' Changes Everything" — philosophy content
+**Competitors in Space:**
+- Read AI for Gmail — daily morning summaries
+- Readless — newsletter aggregation, 30+ subscriptions
+- Gmail + Gemini — native AI summaries
+- Outlook + Copilot — enterprise play
 
 ---
+
+### Task 2: Site Indexing Check — drop-anywhere.com
+
+**CRITICAL FINDING:** ❌ **NOT INDEXED**
+
+Search for `site:drop-anywhere.com` returns **NO active website**.
+
+- A UK company "DROPPANYWHERE LTD" (incorporated Oct 2023, dissolved March 2025) exists in records
+- No operational site or content is indexed by search engines
+- Related/confusing domains: dropoff.com, dropmeanywhere.com
+
+**Action Required:**
+- [ ] Submit sitemap to Google Search Console
+- [ ] Ensure robots.txt allows indexing
+- [ ] Create indexable landing pages with target keywords
+- [ ] Build initial backlink profile
+
+---
+
+### Task 3: Competitor SEO Analysis
+
+#### Mem.ai
+**Ranks For:**
+- `AI note taking`
+- `AI second brain`
+- `AI thought partner`
+- `AI-powered search`
+- `semantic search notes`
+
+**Positioning:** "Your AI Thought Partner" — emphasizes AI-driven organization and search
+
+#### Notion.so
+**Ranks For (99.99% organic traffic is branded):**
+- `notion` (#1 position, highest traffic share)
+- `notion login`
+- `notion.so`
+- `notion ログイン` (Japanese market)
+
+**Stats:**
+- Global rank: #143
+- Category rank: #7 (Computers/Electronics/Technology)
+- 162.5M monthly visits
+- 9.61 pages per visit
+- 7:58 average duration
+
+**Insight:** Notion dominates branded search. Opportunity exists for non-branded keywords like "AI workspace" or "team knowledge base" that Notion doesn't own.
+
+---
+
+## Recommended Keyword Strategy
+
+### Tier 1 — Attack Now (Low Competition, High Intent)
+1. `AI daily digest` — product-core, differentiate from "second brain"
+2. `your second brain has no inbox` — branded/premium positioning
+3. `frictionless capture` — unique value prop
+4. `email to notes AI` — workflow-specific
+
+### Tier 2 — Build Authority (Medium Competition)
+1. `AI note taking` — compete with Mem.ai
+2. `newsletter summarizer` — compete with Readless
+3. `AI productivity assistant` — broad category play
+4. `async knowledge management` — differentiator
+
+### Tier 3 — Long-term (High Competition)
+1. `AI second brain` — Mem.ai territory
+2. `personal knowledge management` — established category
+3. `AI email assistant` — crowded space
+
+---
+
+*Next SEOBot run: Continue monitoring indexing status + track keyword rankings as content is published.*
