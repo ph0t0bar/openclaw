@@ -1,106 +1,102 @@
-# SEO Research — AI Daily Digest / Email Productivity Keywords
+# SEO Research — DropAnywhere
 
-**Research Date:** 2026-03-17 06:42 UTC  
-**Source:** Perplexity Sonar Pro  
-**Job:** SEOBot cron (09d8fe79-2c3c-4a48-8a06-b48e7e1faadb)
+## 2026-03-17 — SEOBot Run
 
 ---
 
-## 🎯 High-Value Keywords to Target
+### 1. Keyword Research: "AI daily digest email productivity tool"
 
-### Primary (High Intent, High Volume)
-| Keyword | Search Intent | Competitor Density | Opportunity |
-|---------|---------------|-------------------|-------------|
-| `AI email summarizer` | Tool discovery | High (NewMail AI, Gemini, Superhuman) | Differentiate on multi-channel |
-| `daily digest email` | Feature-specific | Medium (Read AI, Readless) | ✅ Strong fit for DropAnywhere |
-| `newsletter summarizer` | Tool discovery | Medium (Remy, Scottie, Readless) | ✅ underserved niche |
-| `AI daily briefing` | Feature-specific | Low | 🟢 Green field |
+**Search Volume Indicators:**
+- High intent keywords with clear user pain points
+- 117 emails/day average (Microsoft 2025 data)
+- 70% cite email as top workplace stressor
+- 42% describe inbox as "out of control"
 
-### Long-Tail Opportunities (Lower Competition)
-| Keyword | Notes | Content Angle |
-|---------|-------|---------------|
-| `automated daily email digest` | Workflow/automation intent | n8n/Zapier integration content |
-| `email digest from multiple sources` | Multi-input value prop | vs. single-source competitors |
-| `AI inbox summary every morning` | Time-specific | Read AI competitor comparison |
-| `newsletter aggregator AI` | Aggregation focus | Readless, Remy alternatives |
-| `no inbox email productivity tool` | Philosophy alignment | DropAnywhere's "no inbox" angle |
-| `second brain email digest` | PKM overlap | Roam/Obsidian adjacent |
+**Target Keywords (Priority Order):**
 
-### Adjacent / Content Marketing
-| Keyword | Content Type |
-|---------|--------------|
-| `inbox zero AI tools` | Roundup/comparison post |
-| `email productivity statistics 2024` | Data post (link bait) |
-| `how to stop newsletter overwhelm` | Problem-solution guide |
-| `AI tools for founders email` | Vertical-specific landing |
+| Keyword | Intent | Competition | Notes |
+|---------|--------|-------------|-------|
+| AI daily digest | High | Medium | Core product descriptor |
+| email digest tool | High | High | Generic but volume |
+| newsletter summarizer | High | Medium | **Sweet spot** — less saturated |
+| AI inbox summary | High | Medium | Direct competitor overlap |
+| daily email summary | High | Medium | Long-tail opportunity |
+| automated email digest | Medium | Low | **Quick win** |
+| productivity email tool | Medium | High | Broad, harder to rank |
+| email overload solution | Medium | Low | Pain-point driven |
+| second brain app | Medium | Medium | Brand alignment |
+| capture anywhere app | Medium | Low | **Unique positioning** |
 
----
+**Competitors Ranking:**
+- Readless.app — newsletter summarizer (30+ newsletters → 1 digest)
+- Read AI — Gmail morning digests
+- SaneBox — daily digest + filtering
+- n8n — DIY workflow automation
+- Superhuman — speed-focused summaries
+- BatchedInbox — scheduled batching
 
-## 🏆 Competitor Analysis
-
-### Direct Competitors (Daily Digest Focus)
-| Competitor | URL | Keywords They Rank For | Weakness |
-|------------|-----|------------------------|----------|
-| **NewMail AI** | newmail.ai | "AI email summarizer", "daily briefing" | Gmail-only, $15/mo |
-| **Readless** | readless.app | "newsletter summarizer", "AI news digest" | News-focused, not personal |
-| **Remy** | remyreads.nl | "Gmail newsletter digest" | Gmail-only, limited scope |
-| **Read AI** | read.ai | "daily email digest", "meeting summaries" | Expensive, enterprisey |
-| **Shortwave** | shortwave.com | "AI email bundles" | Leaves Gmail UI, friction |
-
-### Indirect Competitors (Feature Overlap)
-| Competitor | Threat Level | Differentiation |
-|------------|--------------|-----------------|
-| **Gemini (Gmail)** | High | Native, but Gmail-only, $20/mo |
-| **Superhuman** | Medium | Speed-focused, $30/mo premium |
-| **ChatGPT** | Medium | Manual, no inbox integration |
-| **n8n workflows** | Low | DIY, technical audience |
-
-### Keyword Gaps (Opportunities)
-- **Multi-channel ingestion**: No competitor owns "SMS + email + voice digest"
-- **No-inbox philosophy**: Unique angle ("your second brain has no inbox")
-- **Founder-specific**: Vertical not targeted by general tools
-- **Frictionless capture**: "Drop anywhere" concept
+**Content Gap Opportunities:**
+- None focus on "no inbox" philosophy (our differentiator)
+- Most are Gmail-only or extension-based
+- Multi-channel capture (SMS/voice/email/chat) is unique to us
 
 ---
 
-## 📊 Search Intent Mapping
+### 2. Current Site Indexing: drop-anywhere.com
 
-```
-[Discovery]     AI email summarizer → Comparison content
-[Consideration] daily digest email → Feature landing page  
-[Comparison]    newmail ai vs → vs page / alternative post
-[Transactional] best AI email digest tool → Product page
-[Problem-aware] newsletter overwhelm → Blog/guide content
-```
+**Status: ❌ NOT INDEXED**
 
----
+Search results show:
+- No active website found at drop-anywhere.com
+- DROPPANYWHERE LTD (UK company) dissolved March 2025 — unrelated retail business
+- Confusion risk with dropmeanywhere.com (travel company)
 
-## 📝 Content Recommendations
-
-### Immediate (Low Effort, High Impact)
-1. **Comparison page**: "NewMail AI vs DropAnywhere" — capture branded search
-2. **Alternative post**: "5 Best Readless Alternatives for Personal Email Digests"
-3. **Feature landing**: "Daily Digest Email" — optimize for exact match
-
-### Short-term (1-2 months)
-1. **Guide**: "How to Build an AI Daily Digest (Without Coding)"
-2. **Roundup**: "7 AI Tools to Tame Newsletter Overload"
-3. **Landing page**: "Newsletter Summarizer for Founders"
-
-### Long-term (Ongoing)
-1. **Data content**: "The State of Email Productivity 2026" (annual)
-2. **Integration guides**: n8n, Zapier, Make.com workflows
-3. **Vertical landing pages**: "AI Email Digest for [Persona]"
+**Action Items:**
+- [ ] Submit sitemap to Google Search Console
+- [ ] Ensure robots.txt allows crawling
+- [ ] Create basic landing page with target keywords
+- [ ] Build initial backlinks from Joey's properties (GitHub, BrutallyHonest.ai)
 
 ---
 
-## 🔍 Next Research Tasks
+### 3. Competitor SEO: Mem.ai
 
-- [ ] Search volume data (Ahrefs/SEMrush) for priority keywords
-- [ ] Check drop-anywhere.com current indexing status
-- [ ] Backlink gap analysis vs NewMail AI, Readless
-- [ ] SERP feature opportunities (featured snippets, People Also Ask)
+**Positioning:**
+- "Thought partner" — AI note-taking & organization
+- Semantic search ("Deep Search") rather than keyword matching
+- Focus: meetings, research, idea organization
+
+**Keywords They Likely Target:**
+- AI note-taking app
+- personal knowledge management (PKM)
+- meeting notes AI
+- smart notes organization
+- AI second brain
+
+**SEO Weakness (Opportunity):**
+- No public SEO ranking data available
+- Heavy on "AI organization" not "AI capture"
+- Our angle: capture → digest (vs. their organize → recall)
 
 ---
 
-*Append-only log. Next entry: [timestamp]*
+## Strategic Recommendations
+
+### Immediate (This Week)
+1. Create `/blog` on drop-anywhere.com
+2. First post: "The 117 Email Problem: How AI Digests Save 90 Minutes/Day"
+3. Target: "email digest tool", "newsletter summarizer"
+
+### Short-term (This Month)
+1. Build comparison pages vs. Read AI, SaneBox
+2. Guest post on productivity blogs with backlinks
+3. Submit to AI tool directories (Futurepedia, TheresAnAIForThat)
+
+### Long-term (This Quarter)
+1. Own "no inbox" positioning in PKM space
+2. Rank for "second brain app" — high volume, medium competition
+3. Video content: "DropAnywhere vs Mem.ai" (YouTube SEO)
+
+---
+
+*Last updated: 2026-03-17 by SEOBot*
