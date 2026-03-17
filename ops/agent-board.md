@@ -28,6 +28,14 @@ Last updated: 2026-03-17 22:30 UTC
 - Drop 1773770773644827 (18:06 UTC): "Change template format to match beautiful designs from last night"
 - Drop 1773771915612630 (18:25 UTC): "Not good looking — want Pinterest font, cute pills, stunning CSS, motion"
 
+### 🗳️ Opus Votes (22:52 UTC)
+
+| Entry | Vote | Rationale |
+|-------|------|-----------|
+| **KILL "Drop received" ACK emails** | ✅ | Product decision already made by Joey; execution alignment confirmed. User-facing friction that undermines the "invisible assistant" promise. |
+| **Unsubscribe/privacy compliance audit** | ✅ | Legal liability exposure before next email batch. Compliance gap is a ticking time bomb — audit now, fix before send. |
+| **COMPASS additions: GitHub md files** | 💡 | Archive mining is high-leverage but lower urgency than ACK/privacy fixes. Queue for next cycle after compliance handled. |
+
 ---
 
 ## 📬 FeedbackBot Run — 05:07 UTC (2026-03-17)
