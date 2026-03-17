@@ -1,55 +1,59 @@
-# Goldmine Index - joey-backup/Ingestion/
+# GOLDMINE INDEX - joey-backup/Ingestion Archive
 
-## 0_VAULT - The Historical Motherlode
+*Catalog of key folders from Joey's historical AI assistant archive*
 
-### BHA/ - Notion Database Exports (~52 files)
-Key databases discovered:
-- **Area_Groups.json** - Area organization structure
-- **Areas.json** - Main area definitions
-- **Assets.json** - Asset catalog
-- **BLUEPRINTS.json** - System blueprints and templates
-- **BOUNCE.json** - Bounce system data
-- **Base_Schema.json** - Core schema definitions
-- **Bounce_Core.json** - Core bounce functionality
-- **CLIENTS.json** - Client database
-- **CONTENT_PIPELINE.json** - Content creation pipeline
-- **Calendar.json** - Calendar/scheduling data
+---
 
-This appears to be a complete export of Joey's Notion workspace from the BrutallyHonest.ai ecosystem, including personas, system prompts, knowledge bases, users, and messages.
+## `.claude/context/` - AI Assistant Evolution Archive
 
-### conversations/ - ChatGPT Archive (~2,070 files)
-Historical ChatGPT conversations from Dec 2022 – Jul 2024. This represents Joey's entire AI chat history before transitioning to Claude and building the DropAnywhere ecosystem.
+*Discovered: 2026-03-17 04:10 UTC*
 
-### Documents/ - Document Archive
-Supporting documents and files from the historical archive.
+This folder contains Joey's complete AI assistant development history - the evolution from early Claude experiments to today's OpenClaw ecosystem.
 
-### _PROCESSED/ - Already Processed Data
-Previously cataloged or processed content.
+### Key Files:
+- **FULL-PICTURE.md** — Complete context document (likely master persona)
+- **INDEX.json** — Structured catalog of all context files
+- **org-structure.yaml** — Organizational hierarchy/role definitions
+- **skills-index.md** — Inventory of skills/capabilities
 
-## Top-Level Folders
+### Subdirectories:
+- **brain/** — Core intelligence/reasoning patterns
+- **core/** — Fundamental system prompts/principles  
+- **frameworks/** — Decision-making and workflow frameworks
+- **hydration/** — Context loading/memory management
+- **operational/** — Day-to-day operational procedures
+- **personas/** — Character definitions and personality templates
 
-### .agent/ - Eduardo Agent Workflows
-Automated workflows for:
-- Hydration processes
-- Data extraction
-- Sync-to-notion operations
+### Research Value:
+This is the **DNA of Joey's AI assistant philosophy** - how he thinks about:
+- Assistant personality and boundaries
+- Memory management and continuity  
+- Proactive vs reactive behavior
+- Integration with productivity workflows
+- The evolution from Claude Code to OpenClaw
 
-### .claude/ - Claude Context Archive (~34 files)
-Historical brain state, mined patterns, persona architectures, including `ABOUT_JOEY_HAMER.md` - a comprehensive profile document.
+### Extraction Priority:
+1. **FULL-PICTURE.md** — Master context document
+2. **frameworks/** — Decision frameworks (likely includes priority systems)
+3. **personas/** — Character evolution (what worked vs what didn't)
+4. **operational/** — Daily procedures that informed current AGENTS.md
 
-### 1_GOLDMINE/ - Secondary Archive
-Additional historical content (not yet cataloged).
+---
 
-### 20260107/ through 20260310/ - Daily Drops (~80+ files)
-Recent drops and chats from January-March 2026, representing the transition period from historical archives to the modern DropAnywhere system.
+## Other High-Value Folders
 
-## Mining Priority
+### `0_VAULT/` 
+- 2,070 ChatGPT conversations (Dec 2022 – Jul 2024)
+- 52 BHA Notion exports (personas, system prompts, users, messages)
 
-1. **BHA/BLUEPRINTS.json** - Core system architecture
-2. **.claude/ABOUT_JOEY_HAMER.md** - Comprehensive user profile
-3. **BHA/CONTENT_PIPELINE.json** - Content creation methodology
-4. **conversations/** - Pattern mining from 2+ years of AI interactions
-5. **Daily drops 2026** - Recent thinking evolution
+### `20260107/` - `20260310/`
+- 80+ dated drops/chats from Jan-Mar 2026
+- Recent product evolution thinking
 
-Last cataloged: 2026-03-17 04:00 UTC
-Source: joey-backup/Ingestion/ via GitHub API
+### Root Docs
+- `GOD_MODE_NOTION_FULL.md` — Complete Notion system architecture
+- `FULL_HYDRATION_CONTEXT.md` — Context loading procedures
+- `SYSTEM_ARCHITECTURE.md` — Technical system design
+- `_FROM-JOEY.md` — Direct instructions/preferences
+
+*Next research cycles should extract specific files from these folders.*
