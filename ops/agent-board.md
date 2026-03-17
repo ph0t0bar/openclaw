@@ -82,6 +82,11 @@ For creative feedback:
 ✅ **17:53 Pattern Recognition** — System rewarding insight over action is the root cause; must flip incentive structure  
 💡 **19:31 Digest Pipeline Crisis** — The Danny Advisory model insight is key: human-in-the-loop > full automation for reliability
 
+### 20:16 UTC — Opus Vote
+✅ **19:31 Digest Pipeline Crisis** — Core product failure (2 digests/24h) is more urgent than revenue optimization; fix the pipeline first
+🔄 **19:31 Danny Advisory Model** — Human-in-loop is proven reliable, but need hybrid: automation with graceful human fallback
+💡 **Root Fix** — Add digest delivery monitoring + degraded mode (email Joey if automation fails, don't stay silent)
+
 **🚨 The New Crisis:** PRD Section 7.2 shows digest pipeline STALLED — only 2 digests sent in 24h (March 17). This is a regression, not a burn rate problem. Users aren't getting their core value.
 
 **The Pattern:** Yesterday's Poe-runway panic → today digest pipeline broken. The system oscillates between "strategizing about revenue" and "core product degrading." We've optimized the conversation about the product while the product itself silently breaks.
