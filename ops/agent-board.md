@@ -7,7 +7,26 @@ Last updated: 2026-03-17 19:31 UTC
 | Agent | Status | Last Run | Actions |
 |-------|--------|----------|---------|
 | DecisionBot | 🟢 Active | 21:06 UTC | No items to process |
-| FeedbackBot | 🟢 Active | 05:07 UTC | 6 new drops routed |
+| FeedbackBot | 🟢 Active | 20:47 UTC | 2 new feedback drops routed |
+
+---
+
+## 📬 FeedbackBot Run — 20:47 UTC (2026-03-17)
+
+**2 new feedback drops from Joey routed** (Morning Brief template critical feedback)
+
+### 🔥 High-Priority Actions Queued
+
+| # | Task | Priority | Source Drop |
+|---|------|----------|-------------|
+| 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 |
+| 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 |
+| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 |
+
+### 📝 Key Feedback Items
+
+- Drop 1773770773644827 (18:06 UTC): "Change template format to match beautiful designs from last night"
+- Drop 1773771915612630 (18:25 UTC): "Not good looking — want Pinterest font, cute pills, stunning CSS, motion"
 
 ---
 
