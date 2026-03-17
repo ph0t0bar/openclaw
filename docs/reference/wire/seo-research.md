@@ -1,161 +1,106 @@
-# SEO Research — DropAnywhere Keywords
+# SEO Research — AI Daily Digest / Email Productivity Keywords
 
-## Research Date: 2026-03-17
-
----
-
-## 03:24 UTC — Competitor SEO Research (Blocked)
-
-**Task:** Research what Mem.ai and Notion AI rank for
-**Status:** ⚠️ BLOCKED — OpenRouter credits insufficient for Perplexity API queries
-**Error:** "This request requires more credits" (402) — only 744 tokens available, needs 8000
-**Action needed:** Top up OpenRouter credits at https://openrouter.ai/settings/credits
-
-**Next run:** Will retry competitor SEO research (Mem.ai / Notion AI keyword gaps) once credits restored
+**Research Date:** 2026-03-17 06:42 UTC  
+**Source:** Perplexity Sonar Pro  
+**Job:** SEOBot cron (09d8fe79-2c3c-4a48-8a06-b48e7e1faadb)
 
 ---
 
-## 1. Primary Keywords: AI Daily Digest Email Productivity
+## 🎯 High-Value Keywords to Target
 
-### High-Intent Keywords to Target
-| Keyword | Intent | Competition | Notes |
-|---------|--------|-------------|-------|
-| AI daily digest | Informational/Transactional | Medium | Core phrase used by SaneBox, Readless, Read AI |
-| AI email summary | Transactional | Medium | "Read AI for Gmail" dominates SERP |
-| daily email digest | Informational | Medium | 90 min → 10 min time savings messaging works |
-| automate daily digest | Transactional | Low-Medium | n8n/Zapier workflows rank here |
-| newsletter digest | Informational | Medium | Readless owns this space |
-| inbox digest | Transactional | Low | Gmail-specific, InboxDigest.co competes |
-| AI-powered digest | Informational | Low | Emerging term, low competition |
+### Primary (High Intent, High Volume)
+| Keyword | Search Intent | Competitor Density | Opportunity |
+|---------|---------------|-------------------|-------------|
+| `AI email summarizer` | Tool discovery | High (NewMail AI, Gemini, Superhuman) | Differentiate on multi-channel |
+| `daily digest email` | Feature-specific | Medium (Read AI, Readless) | ✅ Strong fit for DropAnywhere |
+| `newsletter summarizer` | Tool discovery | Medium (Remy, Scottie, Readless) | ✅ underserved niche |
+| `AI daily briefing` | Feature-specific | Low | 🟢 Green field |
 
-### Competitors in This Space
-1. **Readless** — newsletter consolidation, 90% time savings claim
-2. **SaneBox** — SaneLater folder, Gmail/Outlook/Yahoo
-3. **Read AI** — morning summary, critical email prioritization
-4. **n8n workflows** — DIY automation (not a direct competitor)
-5. **LikeClaw** — "saves 45 min/day" positioning
+### Long-Tail Opportunities (Lower Competition)
+| Keyword | Notes | Content Angle |
+|---------|-------|---------------|
+| `automated daily email digest` | Workflow/automation intent | n8n/Zapier integration content |
+| `email digest from multiple sources` | Multi-input value prop | vs. single-source competitors |
+| `AI inbox summary every morning` | Time-specific | Read AI competitor comparison |
+| `newsletter aggregator AI` | Aggregation focus | Readless, Remy alternatives |
+| `no inbox email productivity tool` | Philosophy alignment | DropAnywhere's "no inbox" angle |
+| `second brain email digest` | PKM overlap | Roam/Obsidian adjacent |
 
-### Messaging Angles That Work
-- "Save 90 minutes per day" (Readless)
-- "Reduce morning ramp-up time by half" (Read AI)
-- "117 emails/day → 10 min summary" (Readless)
-- "90% time savings" (Readless)
-- "3-minute setup" (LikeClaw)
-
----
-
-## 2. Secondary Keywords: Second Brain Apps
-
-### Target Keywords
-| Keyword | Intent | Competition | Notes |
-|---------|--------|-------------|-------|
-| second brain app | Informational | High | Dominated by Obsidian, Amplenote, Capacities |
-| AI note taking | Transactional | High | Notion AI, Mem.ai battleground |
-| knowledge management | Informational | High | Enterprise-heavy |
-| notes capture tool | Transactional | Medium | Gap for frictionless capture positioning |
-| second brain software | Informational | Medium | Alternative to "app" |
-
-### Top Ranking Competitors
-1. **Obsidian** — free personal use, 1,500+ plugins, backlinks
-2. **Amplenote** — modern Evernote alternative
-3. **Capacities** — AI-forward, 2026 rankings
-4. **Heptabase** — visual/spatial thinkers
-5. **NotePlan** — $8.33-12/mo, task + calendar integration
-6. **Reflect Notes** — privacy-focused, Kindle integration
-
-### Pricing Intelligence
-- NotePlan: $8.33–$12/month
-- Milanote Pro: $9.99/month or $99/year
-- Obsidian: free (personal) + paid sync
-- Logseq: free core + upcoming Pro
+### Adjacent / Content Marketing
+| Keyword | Content Type |
+|---------|--------------|
+| `inbox zero AI tools` | Roundup/comparison post |
+| `email productivity statistics 2024` | Data post (link bait) |
+| `how to stop newsletter overwhelm` | Problem-solution guide |
+| `AI tools for founders email` | Vertical-specific landing |
 
 ---
 
-## 3. Competitor Deep Dive: Mem.ai vs Notion AI
+## 🏆 Competitor Analysis
 
-### Mem.ai SEO Strengths
-- Positioning: "AI-first second brain"
-- Key phrases: "proactive organization," "automatic linking," "Smart Search"
-- Frictionless capture: "one-keypress, SMS"
-- No folders philosophy — "messy notes OK"
+### Direct Competitors (Daily Digest Focus)
+| Competitor | URL | Keywords They Rank For | Weakness |
+|------------|-----|------------------------|----------|
+| **NewMail AI** | newmail.ai | "AI email summarizer", "daily briefing" | Gmail-only, $15/mo |
+| **Readless** | readless.app | "newsletter summarizer", "AI news digest" | News-focused, not personal |
+| **Remy** | remyreads.nl | "Gmail newsletter digest" | Gmail-only, limited scope |
+| **Read AI** | read.ai | "daily email digest", "meeting summaries" | Expensive, enterprisey |
+| **Shortwave** | shortwave.com | "AI email bundles" | Leaves Gmail UI, friction |
 
-### Notion AI SEO Strengths
-- Positioning: "versatile AI assistance"
-- Key phrases: "customizable workflows," "real-time collaboration"
-- Database + wiki + project flexibility
-- Templates ecosystem
+### Indirect Competitors (Feature Overlap)
+| Competitor | Threat Level | Differentiation |
+|------------|--------------|-----------------|
+| **Gemini (Gmail)** | High | Native, but Gmail-only, $20/mo |
+| **Superhuman** | Medium | Speed-focused, $30/mo premium |
+| **ChatGPT** | Medium | Manual, no inbox integration |
+| **n8n workflows** | Low | DIY, technical audience |
 
-### Feature Gap Opportunities
-| Feature | Mem.ai | Notion | Opportunity for DropAnywhere |
-|---------|--------|--------|------------------------------|
-| Multi-channel capture | Limited | Limited | **Email/SMS/Voice/Chat** — our strength |
-| Daily digest delivery | No | No | **Core differentiator** |
-| AI summarization | Yes | Yes | Table stakes |
-| Frictionless capture | Yes | No | Compete with Mem here |
-| Structured workflows | No | Yes | Not our space |
-
----
-
-## 4. Keyword Recommendations for DropAnywhere
-
-### Tier 1: Primary Targets (High Intent, Achievable)
-1. **AI daily digest email** — blend our two core features
-2. **capture anywhere digest once** — branded/unique positioning
-3. **no inbox second brain** — "no inbox" angle
-4. **SMS voice email notes** — multi-channel capture
-5. **daily digest productivity** — broader than just email
-
-### Tier 2: Content Marketing Targets
-1. **second brain no organization** — anti-Mem.ai positioning
-2. **automatic note linking** — feature-focused
-3. **newsletter summary tool** — compete with Readless
-4. **email overload solution** — pain-point driven
-5. **AI note capture** — transactional
-
-### Tier 3: Long-Tail Opportunities
-1. "how to stop checking email all day"
-2. "automatic daily email summary"
-3. "capture notes while walking"
-4. "second brain without folders"
-5. "digest instead of inbox"
+### Keyword Gaps (Opportunities)
+- **Multi-channel ingestion**: No competitor owns "SMS + email + voice digest"
+- **No-inbox philosophy**: Unique angle ("your second brain has no inbox")
+- **Founder-specific**: Vertical not targeted by general tools
+- **Frictionless capture**: "Drop anywhere" concept
 
 ---
 
-## 5. Content Angles to Test
+## 📊 Search Intent Mapping
 
-### Proven Messaging (from competitors)
-- Time saved: "90 min → 10 min daily"
-- Setup speed: "3-minute setup"
-- Volume handled: "117 emails/day"
-- Percentage improvement: "90% time savings"
-
-### DropAnywhere Differentiators
-1. **"Your Second Brain Has No Inbox"** — core tagline
-2. **Multi-channel capture** — email/SMS/voice/chat all flow to one digest
-3. **Async by design** — not real-time, not addictive
-4. **Frictionless** — reply to email, text a number, voice note
+```
+[Discovery]     AI email summarizer → Comparison content
+[Consideration] daily digest email → Feature landing page  
+[Comparison]    newmail ai vs → vs page / alternative post
+[Transactional] best AI email digest tool → Product page
+[Problem-aware] newsletter overwhelm → Blog/guide content
+```
 
 ---
 
-## 6. Next Steps
+## 📝 Content Recommendations
 
-1. **Validate keywords** with Google Keyword Planner or Ahrefs
-2. **Create landing page** for "AI daily digest" targeting
-3. **Blog content** comparing DropAnywhere to Readless/SaneBox
-4. **Optimize for** "second brain no inbox" unique positioning
-5. **Monitor** Mem.ai and Notion AI for new feature/keyword opportunities
+### Immediate (Low Effort, High Impact)
+1. **Comparison page**: "NewMail AI vs DropAnywhere" — capture branded search
+2. **Alternative post**: "5 Best Readless Alternatives for Personal Email Digests"
+3. **Feature landing**: "Daily Digest Email" — optimize for exact match
+
+### Short-term (1-2 months)
+1. **Guide**: "How to Build an AI Daily Digest (Without Coding)"
+2. **Roundup**: "7 AI Tools to Tame Newsletter Overload"
+3. **Landing page**: "Newsletter Summarizer for Founders"
+
+### Long-term (Ongoing)
+1. **Data content**: "The State of Email Productivity 2026" (annual)
+2. **Integration guides**: n8n, Zapier, Make.com workflows
+3. **Vertical landing pages**: "AI Email Digest for [Persona]"
 
 ---
 
-*Last updated: 2026-03-17 by SEOBot*
+## 🔍 Next Research Tasks
+
+- [ ] Search volume data (Ahrefs/SEMrush) for priority keywords
+- [ ] Check drop-anywhere.com current indexing status
+- [ ] Backlink gap analysis vs NewMail AI, Readless
+- [ ] SERP feature opportunities (featured snippets, People Also Ask)
 
 ---
 
-## 05:27 UTC — 2026-03-17 — Competitor SEO Research (Skipped)
-
-**Status:** ❌ Skipped — OpenRouter Perplexity credits insufficient (402 error)
-
-**Planned research:** Mem.ai + Notion AI organic keyword rankings
-
-**Action needed:** Replenish OpenRouter credits at https://openrouter.ai/settings/credits to resume SEO research crons.
-
+*Append-only log. Next entry: [timestamp]*
