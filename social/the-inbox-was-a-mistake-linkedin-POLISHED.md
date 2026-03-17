@@ -7,9 +7,9 @@
 
 Email inboxes are where good ideas go to die.
 
-Not spam — the important stuff. The client update. The article your friend sent. That voice note you left yourself at 2am.
+Not spam — the important stuff. The client update. The article your friend sent. That voice note at 2am.
 
-All in the same pile. Growing faster than you can clear it.
+Same pile. Growing faster than you can clear it.
 
 Here's what nobody admits: the inbox was built for other people's priorities. Every message is someone asking for your attention. Your time. Your response.
 
@@ -21,7 +21,7 @@ I stopped using my inbox as a to-do list years ago. But seventeen different apps
 
 A place where MY stuff comes first.
 
-Voice note becomes a plan. Screenshot connects to other ideas. Everything I drop comes back to me — processed overnight, one morning read.
+Voice note becomes a plan. Screenshot connects to other ideas. Everything I drop comes back to me, processed overnight, in one morning read.
 
 No unread count. No red badges. No anxiety.
 
@@ -33,11 +33,9 @@ Your brain doesn't need another inbox. It needs a system that works FOR you.
 
 → drop-anywhere.com
 
----
-
 When did you last find a great idea in your email?
 
 ---
 
-**CONTENT STATUS:** ✅ POLISHED — Joey Voice
-*Anti-inbox angle with direct energy. Tightened for punch. Ready to post.*
+**CONTENT STATUS:** ✅ READY TO POST — Joey Voice
+*Anti-inbox angle with lighter energy. Drop it, forget it, wake up lighter.*
