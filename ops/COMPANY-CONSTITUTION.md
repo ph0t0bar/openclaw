@@ -5,7 +5,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 00:43 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (34 enabled agents out of 38 total cron jobs - Governance Updated 2026-03-17 08:17 UTC)
+### ✅ CURRENTLY ACTIVE AGENTS (30 enabled agents out of 38 total cron jobs - Governance Updated 2026-03-17 08:49 UTC)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -59,6 +59,23 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **WEEKLY OPUS SWEEP** — 03:00 Mon UTC — Opus 4 — ⚠️ WhatsApp delivery error (functional)
 - **DROP MINING** — 22:00 Wed/Sat UTC — Kimi K2.5 — ✅ Scheduled
 
+### 🔴 DISABLED AGENTS (8 agents temporarily disabled)
+
+**Backlog Grinder Series** (one-time tasks completed):
+- DISABLED: Backlog Grinder — LinkedIn Post + Carousel (completed 2026-03-16)
+- DISABLED: Backlog Grinder — Reel Polish (completed 2026-03-16)  
+- DISABLED: Backlog Grinder — Builder Pack Spec (completed 2026-03-16)
+- DISABLED: Backlog Grinder — Launch Checklist Audit (completed 2026-03-16)
+- DISABLED: Backlog Grinder — Soft Launch User List (completed 2026-03-16)
+
+**Experimental/Replaced Agents**:
+- DISABLED: Feed Ingestion / News Wire (15min) — replaced by Deep Researcher
+- DISABLED: Sonnet Deep Work (10min) — replaced by department-specific agents
+- DISABLED: PoeBot — Revenue (30min) — monitoring moved to Unified Ops Monitor
+- DISABLED: StripeBot — Revenue (30min) — monitoring moved to Unified Ops Monitor  
+- DISABLED: Dropper-Code Trigger (30min) — monitoring moved to Unified Ops Monitor
+- DISABLED: RailwayBot — Operations (20min) — monitoring moved to Unified Ops Monitor
+
 ### ⚠️ DELIVERY ISSUES (Not operational failures)
 
 **Daily/Weekly Scheduled Jobs** — ⚠️ WhatsApp delivery errors (jobs complete successfully but cannot notify)
@@ -73,7 +90,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **Launch Coordination** — Dedicated Launch Coordinator tracking March 24 soft launch (8 days remaining)
 **Agent Consolidation** — Unified Ops Monitor replaces separate monitoring bots
 
-**GOVERNANCE FINDINGS** (2026-03-17 08:17 UTC): System is operating at 34 enabled agents out of 38 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
+**GOVERNANCE FINDINGS** (2026-03-17 08:49 UTC): System is operating at 30 enabled agents out of 38 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
 
 **Current Issues Requiring Attention:**
 - **OnboardBot** — 1 timeout error on last run (timeout after 180s, non-critical)
@@ -146,10 +163,10 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Daily GitHub Sync** successful (last: 11:00 UTC)
 - **All real-time agents** (2min-30min cycles) operating normally
 
-## System Status (March 17 08:17 UTC - GOVERNANCE UPDATED)
+## System Status (March 17 08:49 UTC - GOVERNANCE UPDATED)
 
 ### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem  
-**Current Status**: 34 enabled agents (of 38 total cron jobs) with comprehensive email workflow and operations coverage
+**Current Status**: 30 enabled agents (of 38 total cron jobs) with comprehensive email workflow and operations coverage
 **Architecture**: Full-stack operations including automated email workflows, dashboard messaging, and proactive monitoring
 **Performance**: Stable operations with proper HITL controls and escalation paths
 
@@ -206,8 +223,8 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **DropAnywhere Frontend**: https://drop-anywhere.com
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
-## Success Metrics (March 17 08:17 UTC - CONSTITUTION REALITY CHECK)  
-- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 34 enabled agents out of 38 total cron jobs)
+## Success Metrics (March 17 08:49 UTC - CONSTITUTION REALITY CHECK)  
+- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 30 enabled agents out of 38 total cron jobs)
 - **Department Coverage**: Target 100% (✅ Current: All departments operational + full email workflow automation)
 - **Launch Readiness**: Target March 24 (✅ Launch Coordinator actively tracking, 8 days remaining)
 - **Email Automation**: Target 100% (✅ Complete workflow: auto-ack, decision routing, creative review, morning briefs)
