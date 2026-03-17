@@ -1,56 +1,55 @@
 # Goldmine Index - joey-backup/Ingestion/
 
-## 0_VAULT Directory Catalog
-**Cataloged:** 2026-03-17 03:52 UTC  
-**Path:** `joey-backup/Ingestion/0_VAULT`  
-**Purpose:** Core historical data archive - THE MOTHERLODE as referenced in TOOLS.md
+## 0_VAULT - The Historical Motherlode
 
-### Structure Overview
-- **Total items:** 4 directories
-- **Purpose:** Historical content archive containing 2,422+ files from Joey's digital ecosystem
+### BHA/ - Notion Database Exports (~52 files)
+Key databases discovered:
+- **Area_Groups.json** - Area organization structure
+- **Areas.json** - Main area definitions
+- **Assets.json** - Asset catalog
+- **BLUEPRINTS.json** - System blueprints and templates
+- **BOUNCE.json** - Bounce system data
+- **Base_Schema.json** - Core schema definitions
+- **Bounce_Core.json** - Core bounce functionality
+- **CLIENTS.json** - Client database
+- **CONTENT_PIPELINE.json** - Content creation pipeline
+- **Calendar.json** - Calendar/scheduling data
 
-### Directory Structure
+This appears to be a complete export of Joey's Notion workspace from the BrutallyHonest.ai ecosystem, including personas, system prompts, knowledge bases, users, and messages.
 
-#### 📁 **BHA** 
-- **Type:** Directory
-- **Purpose:** 52 Notion database exports 
-- **Contains:** Personas, System Prompts, Knowledge Base, Users, Messages, etc.
-- **Significance:** Complete BrutallyHonest.ai business data export
+### conversations/ - ChatGPT Archive (~2,070 files)
+Historical ChatGPT conversations from Dec 2022 – Jul 2024. This represents Joey's entire AI chat history before transitioning to Claude and building the DropAnywhere ecosystem.
 
-#### 📁 **conversations**
-- **Type:** Directory  
-- **Purpose:** 2,070 ChatGPT conversations (Dec 2022 – Jul 2024)
-- **Significance:** MASSIVE conversation history - nearly 2 years of AI interactions
-- **Time Span:** December 2022 through July 2024
+### Documents/ - Document Archive
+Supporting documents and files from the historical archive.
 
-#### 📁 **Documents**
-- **Type:** Directory
-- **Purpose:** Document storage (contents unknown)
-- **Status:** Needs further exploration
+### _PROCESSED/ - Already Processed Data
+Previously cataloged or processed content.
 
-#### 📁 **_PROCESSED**
-- **Type:** Directory
-- **Purpose:** Processed/archived content (contents unknown)
-- **Status:** Needs further exploration
+## Top-Level Folders
 
-### Research Value
-This directory represents Joey's complete AI conversation history and business data - perfect for:
-- Understanding Joey's evolution of AI thinking (2022-2024)
-- Mining historical context for current projects
-- Analyzing conversation patterns and preferences
-- BHA business intelligence
+### .agent/ - Eduardo Agent Workflows
+Automated workflows for:
+- Hydration processes
+- Data extraction
+- Sync-to-notion operations
 
-### Next Steps for Full Catalog
-1. ✅ 0_VAULT (completed)
-2. 🔄 .claude/ - Brain state, mined patterns, persona architectures
-3. 🔄 .agent/ - Eduardo agent workflows 
-4. 🔄 Dated drops (20260107-20260312) - Recent drops/chats
-5. 🔄 Root files - GOD_MODE_NOTION_FULL.md, SYSTEM_ARCHITECTURE.md, etc.
+### .claude/ - Claude Context Archive (~34 files)
+Historical brain state, mined patterns, persona architectures, including `ABOUT_JOEY_HAMER.md` - a comprehensive profile document.
 
-### Technical Notes
-- **Source:** GitHub API via GITHUB_TOKEN
-- **Repo:** ph0t0bar/joey-backup  
-- **Auth:** Working GITHUB_TOKEN from .env.local
-- **Access Method:** `curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/ph0t0bar/joey-backup/contents/...`
+### 1_GOLDMINE/ - Secondary Archive
+Additional historical content (not yet cataloged).
 
-*This catalog will be expanded with each research cycle.*
+### 20260107/ through 20260310/ - Daily Drops (~80+ files)
+Recent drops and chats from January-March 2026, representing the transition period from historical archives to the modern DropAnywhere system.
+
+## Mining Priority
+
+1. **BHA/BLUEPRINTS.json** - Core system architecture
+2. **.claude/ABOUT_JOEY_HAMER.md** - Comprehensive user profile
+3. **BHA/CONTENT_PIPELINE.json** - Content creation methodology
+4. **conversations/** - Pattern mining from 2+ years of AI interactions
+5. **Daily drops 2026** - Recent thinking evolution
+
+Last cataloged: 2026-03-17 04:00 UTC
+Source: joey-backup/Ingestion/ via GitHub API
