@@ -11,7 +11,7 @@
 
 **March 3-10 velocity:** 29+ PRs shipped across 4 repos. Poe Orchestrator live with 16 shadow bots. DA crossed 65 users (organic). BHA at 211 users, 531 active weekly visitors. 3 Stripe subs confirmed ($21 MRR). Dropper-Code autonomous pipeline operational (12 tasks completed).
 
-**March 17 17:40 UTC metrics:** DA at 105 users (+58%), 913 total drops (+10), 9 active in 24h, 70 drops in 24h. BHA at 266 users (+24%), 64 active weekly, 12 active in 24h, 7 new in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance: 218,251 points.** Burn rate 23,472/6h (much lower). Top bots: theREALrealtalk (14,162), IdealPrompt (4,935), Tippiy (1,615). PRs #193-199 merged (dropper-code batch). Hub deploy SUCCESS at 10:17 UTC, OpenClaw SUCCESS at 17:24 UTC. **⚠️ Digest pipeline: stalled** (2 sent in 24h). **⚠️ openclaw CI: failure**. **⚠️ Dropper-Code: Claude Code out of extra usage** (resets Mar 20).
+**March 17 18:26 UTC metrics:** DA at 105 users (stable), 918 total drops (+5), 9 active in 24h, 75 drops in 24h. BHA at 266 users (stable), 64 active weekly, 12 active in 24h, 7 new in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance: 216,990 points.** Burn rate 17,910/6h (trending lower). Top bots: theREALrealtalk (14,162), IdealPrompt (4,935), Tippiy (1,615). PRs #193-199 merged (dropper-code batch). Hub deploy SUCCESS at 10:17 UTC, OpenClaw SUCCESS at 17:24 UTC. **⚠️ Digest pipeline: stalled** (2 sent in 24h). **⚠️ openclaw CI: failure**. **⚠️ Dropper-Code: Claude Code out of extra usage** (resets Mar 20).
 
 **March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction - not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
 
@@ -946,7 +946,7 @@ Joey or Claw can edit this document at any time. When doing so:
 
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
-*Last auto-refreshed: 2026-03-17 17:40 UTC — Daily Metrics Refresh. Section 8 updated: Mar 17 17:40 column added. **DA: 105 users (stable), 913 drops (+10). Active 9/24h (stable).** Poe dropped to 218,251 (-57K). Hub PRs: 0 open. Digest stall persists: 2/day. Dropper-Code Claude usage exhausted (resets Mar 20). 🦜*
+*Last auto-refreshed: 2026-03-17 18:26 UTC — Daily Metrics Refresh. Section 8 updated: Mar 17 18:26 column added. **DA: 105 users (stable), 918 drops (+5). Active 9/24h (stable).** Poe at 216,990 (-1.3K). Hub PRs: 0 open. Digest stall: 2/day. Dropper-Code Claude usage exhausted (resets Mar 20). 🦜*
 
 
 
