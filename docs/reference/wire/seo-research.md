@@ -1,117 +1,100 @@
-# SEO Research — DropAnywhere / AI Daily Digest Tools
+# SEO Research — DropAnywhere
+
+Research archive for keyword targeting and competitive SEO analysis.
 
 ---
 
-## 2026-03-16 21:56 UTC — SEOBot Keyword Research
+## 2026-03-17 — AI Daily Digest / Productivity Keywords
 
-### Primary Keywords to Target (High Intent)
+### Primary Keywords to Target
 
-| Keyword | Search Volume | Intent | Notes |
-|---------|---------------|--------|-------|
-| AI daily digest email | Medium-High | Informational/Transactional | Core positioning term |
-| AI newsletter summarizer | Medium | Transactional | Competitor: Readless.app ranks here |
-| Daily email summary Gmail | Medium | Transactional | Gmail-specific, high conversion |
-| AI productivity email tool | Medium | Transactional | Broad category play |
-| Automated email digest AI | Low-Medium | Informational | Long-tail opportunity |
-| Newsletter consolidation AI | Low-Medium | Transactional | Pain-point driven |
-| Gmail AI inbox summary | Medium | Transactional | Gemini/Superhuman compete here |
-| Daily AI news digest | Medium | Informational | Content marketing angle |
+**High-Intent Core Terms:**
+- `AI daily digest` — aggregator tools, newsletter summarizers
+- `email productivity tool` — broad but high volume
+- `AI newsletter summarizer` — specific to the digest use case
+- `daily email summary` — natural language query
+- `AI inbox manager` — broader email management
+- `automated email digest` — workflow-focused
 
-### Long-Tail Opportunities (Lower Competition)
+**Feature-Specific Terms:**
+- `Gmail AI digest` — Gmail-specific queries
+- `newsletter AI summary` — content consumption angle
+- `email summarization AI` — technical/feature search
+- `AI email triage` — productivity workflow
 
-- "best AI tools for daily email digest 2026" — 26-55% productivity gains angle
-- "AI email summary without inbox access" — privacy-concerned users
-- "daily digest from SMS and email" — multi-channel angle (DropAnywhere differentiator)
-- "AI email digest for founders" — niche vertical
-- "no-inbox daily summary tool" — matches "no inbox" positioning
+### Second Brain / PKM Keywords
 
-### Competitor Keyword Map
+**Primary:**
+- `second brain app`
+- `personal knowledge management`
+- `AI note-taking app`
+- `AI-powered workspace`
+- `smart note organization`
 
-| Competitor | Primary Keywords | Weaknesses We Can Exploit |
-|------------|------------------|---------------------------|
-| **Readless.app** | AI newsletter summarizer, daily digest app | Email-only, no multi-channel |
-| **Superhuman** | Gmail AI summary, email triage | Expensive, Gmail-only |
-| **SaneBox** | Daily email digest, inbox filtering | No AI summarization, legacy UI |
-| **Mem.ai** | AI notes, knowledge management | Not focused on daily digest |
-| **Notion AI** | AI workspace, document summary | No email/SMS integration |
+**Competitor Alternatives (high intent):**
+- `Notion alternative` — 8+ major listicles ranking
+- `Mem.ai alternative` / `Mem alternative` — Mem users frustrated with pricing/AI limits
+- `Obsidian alternative` — dev/power user crowd
+- `Tana alternative` — newer PKM tool
+- `Coda alternative` — team/workspace angle
+- `Reflect alternative` — minimalist PKM
 
-### Content Angles for Blog/SEO
+**Long-Tail Opportunities:**
+- `best Mem alternative 2026`
+- `Notion alternative with AI`
+- `personal knowledge management app`
+- `AI-native note-taking platform`
+- `knowledge graph software`
+- `semantic searchable notes`
 
-1. **Stats-driven posts**: "117 emails/day average" + "90 min → 10 min savings"
-2. **Comparison posts**: "AI Daily Digest Tools Compared: DropAnywhere vs Readless vs Superhuman"
-3. **Pain-point posts**: "Drowning in Newsletters? How AI Digest Tools Reclaim 90% of Reading Time"
-4. **Vertical-specific**: "The Founder's Daily Brief: AI-Powered Intel from All Your Channels"
+### Market Context
 
-### Recommended Next Steps
+**Pain Points (from search data):**
+- 117 emails/day average (source: Readless)
+- 70% of professionals cite email as top stressor
+- 42% report "out of control" inboxes
+- 10.8 hours/week on non-critical email
+- 26-55% productivity gains possible with AI triage
 
-1. Create landing page: `/ai-daily-digest-email-tool`
-2. Optimize existing homepage for "AI daily digest" + "second brain"
-3. Publish comparison: "Best AI Daily Digest Tools 2026"
-4. Target "no inbox" messaging — unique differentiator vs competitors
+**Positioning Angles:**
+1. **"Your Second Brain Has No Inbox"** — unique positioning vs competitors
+2. **"Capture anywhere, get insights once a day"** — digest-first workflow
+3. **Frictionless input (email/SMS/voice/chat)** — multi-channel capture
+
+### Competitor SEO Notes
+
+**Mem.ai ranks for:**
+- "AI-organized notes"
+- "semantic search notes"
+- "auto-tagging notes"
+- "knowledge graph"
+
+**Notion AI ranks for:**
+- "workspace collaboration"
+- "database management"
+- "wiki pages"
+- "project boards"
+- "Notion AI" (branded)
+
+**Obsidian ranks for:**
+- "local-first knowledge management"
+- "backlinks and graph view"
+- "end-to-end encrypted notes"
+
+### Content Opportunities
+
+**Comparison Posts (high intent):**
+- "Best Mem.ai Alternatives for 2026"
+- "Notion vs DropAnywhere: Which Second Brain?"
+- "AI Daily Digest Tools Compared"
+
+**Pain-Point Posts:**
+- "How to Escape Email Hell (Without Quitting Your Job)"
+- "The 10-Minute Daily Inbox Routine"
+- "Why Your Second Brain Shouldn't Feel Like Work"
+
+**Feature Explainers:**
+- "What Is an AI Daily Digest?"
+- "From Chaos to Clarity: How AI Summarization Works"
 
 ---
-
-## 2026-03-16 23:07 UTC — SEOBot Keyword Research (Update)
-
-### Search Query: "AI daily digest email productivity tool"
-
-### Key Statistics for Content Marketing
-
-| Stat | Source | Use Case |
-|------|--------|----------|
-| 117 emails + 153 Teams messages daily | Readless | Hook for "information overload" posts |
-| 90% time reduction (90 min → 10 min) | Readless | ROI calculator / landing page |
-| 26-55% productivity gains | Industry research | B2B sales enablement |
-| 70% cite email as top workplace stress | Readless | Emotional pain-point messaging |
-| 42% describe inbox as "out of control" | Readless | Problem-solution framework |
-| 71% of B2B marketers use newsletters | Readless | Target persona: marketers |
-
-### Competitors Discovered
-
-| Tool | Positioning | Keyword Targets | Gap for DropAnywhere |
-|------|-------------|-----------------|---------------------|
-| **Readless** | Newsletter summarizer (30+/day) | "AI newsletter summarizer" | Email-only, no SMS/voice |
-| **Read AI** | Daily email summaries + meeting notes | "daily email digest" | Requires inbox access |
-| **BatchedInbox** | Scheduled email batching | "batch emails" "email scheduling" | No AI summarization |
-| **MailMaestro** | Real-time email processing | "AI email assistant" | No digest format |
-| **Gemini/Copilot** | Native email summaries | "Gmail AI summary" | Platform-locked |
-
-### New Keyword Opportunities
-
-**Problem-aware (High intent):**
-- "email overload solution" — 70% stress stat backs this
-- "newsletter consolidation tool" — B2B marketer angle
-- "too many newsletters" — casual search, high volume potential
-- "email anxiety productivity" — emotional/psychological angle
-
-**Solution-aware:**
-- "batched email digest" — BatchedInbox competitor term
-- "scheduled email summary" — delivery-time differentiation
-- "multi-channel daily digest" — DropAnywhere differentiator (SMS+email+voice)
-
-**Comparison/Transactional:**
-- "Readless vs Superhuman vs DropAnywhere" — capture comparison traffic
-- "AI digest tool without inbox access" — privacy angle
-- "daily digest from multiple sources" — multi-channel positioning
-
-### Recommended Content Pieces
-
-1. **"The Real Cost of Email Overload: 117 Emails/Day Is Breaking Knowledge Workers"**
-   - Target: "email overload statistics" "workplace email stress"
-   - Hook: The 70% / 42% stats above
-
-2. **"AI Daily Digest Tools Compared: Readless vs Read AI vs DropAnywhere (2026)"**
-   - Target: "best AI email digest tool" "daily digest comparison"
-   - Angle: Multi-channel (SMS/voice/email) as differentiator
-
-3. **"How to Reclaim 10.8 Hours/Week with Automated Email Digests"**
-   - Target: "automated email digest" "email productivity tool"
-   - Hook: 90% time reduction stat
-
-### Next Actions
-
-- [ ] Create `/tools/ai-daily-digest-comparison` landing page
-- [ ] Add "117 emails/day" stat to homepage hero
-- [ ] Write "Email Overload Statistics 2026" blog post for backlinks
-- [ ] Update metadata: include "multi-channel" in title tags
-

@@ -5,43 +5,53 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-16 23:39 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (25 total agents - Mature operational system)
+### ✅ CURRENTLY ACTIVE AGENTS (38 total agents - Mature operational system)
 
-**Real-Time Operations (5-15min cycles):**
-- **PATROL** (Operations) — 5min — Kimi K2.5 — 🔴 ERROR (6% success rate, 16 cycles today)
-- **DEEP RESEARCHER** (Intelligence) — 10min — Sonnet 4 — ✅ ACTIVE (100% success, 25 cycles today)  
-- **OPUS STRATEGIST** (Meta) — 15min — Opus 4 — ✅ ACTIVE (76% success, 17 cycles today)
-- **SENTRY AI** (Security) — 15min — Sonnet 4 — ✅ ACTIVE (100% success, 16 cycles today)
-- **WIRE** (Intelligence) — 15min — Kimi K2.5 — ✅ ACTIVE (100% success, 15 cycles today)
+**Real-Time Operations (2-15min cycles):**
+- **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
+- **DASHBOARD MESSENGER** (Ops) — 2min — Sonnet 4 — ✅ ACTIVE (dashboard inbox/outbox handling)
+- **DECISIONBOT** (Email) — 10min — Kimi K2.5 — ✅ ACTIVE (processes Joey's email replies)
+- **DEEP RESEARCHER** (Intelligence) — 10min — Sonnet 4 — ✅ ACTIVE (competitive intel, market research)
+- **OPUS STRATEGIST** (Meta) — 15min — Opus 4 — ✅ ACTIVE (strategic oversight, quality gate)
+- **SENTRY AI** (Security) — 15min — Sonnet 4 — ✅ ACTIVE (security scans, integrity checks)
 
-**Medium Frequency Operations (20min cycles):**
-- **CHIEF OF STAFF** (Executive) — 20min — Opus 4 — ✅ ACTIVE (77% success, 13 cycles today)
-- **META** (Meta/Performance) — 20min — Sonnet 4 — ✅ ACTIVE (100% success, 14 cycles today)
-- **DOCBOT** (Product) — 20min — Kimi K2.5 — ✅ ACTIVE (100% success, 13 cycles today)
-- **RAILWAYBOT** (Operations) — 20min — Kimi K2.5 — 🔴 IDLE (0% success, 0 cycles today)
-- **USERHEALTHBOT** (Customer Success) — 20min — Kimi K2.5 — ✅ ACTIVE (100% success, 12 cycles today)
-- **CONTENTBOT** (Marketing) — 20min — Sonnet 4 — ✅ ACTIVE (100% success, 13 cycles today)
-- **ARCHIVIST** (Operations) — 20min — Kimi K2.5 — ✅ ACTIVE (100% success, 13 cycles today)
+**Medium Frequency Operations (20-40min cycles):**
+- **CHIEF OF STAFF** (Executive) — 20min — Sonnet 4 — ✅ ACTIVE (gap finder, escalations)
+- **META** (Meta/Performance) — 20min — Sonnet 4 — ✅ ACTIVE (agent performance grading)
+- **DOCBOT** (Product) — 40min — Kimi K2.5 — ✅ ACTIVE (PRD updates, documentation)
+- **USERHEALTHBOT** (Customer Success) — 40min — Kimi K2.5 — ✅ ACTIVE (user retention monitoring)
+- **CONTENTBOT** (Marketing) — 20min — Sonnet 4 — ✅ ACTIVE (content creation pipeline)
+- **ARCHIVIST** (Operations) — 40min — Kimi K2.5 — ✅ ACTIVE (backup to joey-backup GitHub)
+- **UNIFIED OPS MONITOR** (Operations) — 30min — Kimi K2.5 — ✅ ACTIVE (replaces 5 separate monitoring bots)
 
-**Department Specialists (30min+ cycles):**
-- **GOVERNANCE** (Meta) — 30min — Sonnet 4 — ✅ ACTIVE (57% success, 7 cycles today) [this session]
-- **DC MANAGER** (Engineering) — 30min — Kimi K2.5 — ✅ ACTIVE (85% success, 13 cycles today)
-- **FRONTENDBOT** (Engineering) — 30min — Kimi K2.5 — ✅ ACTIVE (100% success, 7 cycles today)
-- **BHABOT** (Engineering) — 30min — Kimi K2.5 — ✅ ACTIVE (100% success, 8 cycles today)
-- **SPECBOT** (Product) — 30min — Kimi K2.5 — ✅ ACTIVE (90% success, 10 cycles today)
-- **STRIPEBOT** (Revenue) — 30min — Kimi K2.5 — 🔴 IDLE (0 cycles today)
-- **POEBOT** (Revenue) — 30min — Kimi K2.5 — ✅ ACTIVE (100% success, 8 cycles today)
-- **ONBOARDBOT** (Customer Success) — 30min — Kimi K2.5 — ✅ ACTIVE (100% success, 8 cycles today)
-- **SOCIALBOT** (Marketing) — 30min — Kimi K2.5 — ✅ ACTIVE (100% success, 8 cycles today)
-- **SEOBOT** (Marketing) — 30min — Kimi K2.5 — ✅ ACTIVE (91% success, 11 cycles today)
-- **FOUNDERVOCIEBOT** (Communications) — 30min — Sonnet 4 — ✅ ACTIVE (100% success, 9 cycles today)
-- **CONTENTPITCHBOT** (Intelligence) — 30min — Kimi K2.5 — ✅ ACTIVE (100% success, 8 cycles today)
-- **PATTERNBOT** (Intelligence) — 30min — Kimi K2.5 — ✅ ACTIVE (91% success, 11 cycles today)
-- **LEARNINGBOT** (Meta) — 30min — Kimi K2.5 — ✅ ACTIVE (88% success, 8 cycles today)
+**Department Specialists (30min-1hr cycles):**
+- **GOVERNANCE** (Meta) — 30min — Sonnet 4 — ✅ ACTIVE (constitutional keeper) [this session]
+- **FRONTENDBOT** (Engineering) — 1hr — Kimi K2.5 — ✅ ACTIVE (dropanywhere-app monitoring)
+- **BHABOT** (Engineering) — 1hr — Kimi K2.5 — ✅ ACTIVE (brutallyhonest-next monitoring)
+- **SPECBOT** (Product) — 1hr — Kimi K2.5 — ✅ ACTIVE (requirements engineering)
+- **ONBOARDBOT** (Customer Success) — 1hr — Kimi K2.5 — ✅ ACTIVE (new user activation tracking)
+- **SOCIALBOT** (Marketing) — 1hr — Kimi K2.5 — ✅ ACTIVE (social media strategy)
+- **SEOBOT** (Marketing) — 1hr — Kimi K2.5 — ✅ ACTIVE (search optimization)
+- **FOUNDERVOICEBOT** (Communications) — 30min — Sonnet 4 — ✅ ACTIVE (voice/tone guardian)
+- **CONTENTPITCHBOT** (Intelligence) — 1hr — Kimi K2.5 — ✅ ACTIVE (content strategy generation)
+- **PATTERNBOT** (Intelligence) — 1hr — Kimi K2.5 — ✅ ACTIVE (pattern recognition)
+- **LEARNINGBOT** (Meta) — 1hr — Kimi K2.5 — ✅ ACTIVE (lessons learned documentation)
+
+**Email Workflow Agents:**
+- **AUTO-ACK BOT** — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
+- **DECISIONBOT** — 10min — Kimi K2.5 — ✅ ACTIVE (processes Joey's email replies)
+- **FEEDBACKBOT** — 2hr — Kimi K2.5 — ✅ ACTIVE (routes creative feedback)
+- **TASK APPROVAL EMAILER** — 2hr (dual instances) — Kimi K2.5 — ✅ ACTIVE (pending task notifications)
+- **CREATIVE REVIEW EMAILER** — 4hr — Kimi K2.5 — ✅ ACTIVE (content review workflow)
+- **CEO MORNING BRIEF** — Daily 8am CST — Kimi K2.5 — ✅ ACTIVE (comprehensive daily summary)
+
+**Specialized Operations:**
+- **LAUNCH COORDINATOR** — 2hr — Sonnet 4 — ✅ ACTIVE (March 24 launch tracking)
+- **SYNC AUDITOR** — 4hr — Kimi K2.5 — ✅ ACTIVE (ensures no local data loss)
 
 **Daily Scheduled Maintenance:**
 - **METRICS SNAPSHOT** — 02,08,14,20 UTC — Kimi K2.5 — ✅ Scheduled
-- **DAILY GITHUB SYNC** — 11:00 UTC — Kimi K2.5 — ✅ Functional (WhatsApp delivery issues)
+- **DAILY GITHUB SYNC** — 11:00 UTC — Kimi K2.5 — ⚠️ WhatsApp delivery error (functional)
 - **DAILY METRICS REFRESH** — 14:00 UTC — Kimi K2.5 — ✅ Scheduled
 
 **Weekly Operations:**
@@ -126,34 +136,32 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Daily GitHub Sync** successful (last: 11:00 UTC)
 - **All real-time agents** (2min-30min cycles) operating normally
 
-## System Status (March 16 23:39 UTC - GOVERNANCE UPDATED)
+## System Status (March 17 00:10 UTC - GOVERNANCE UPDATED)
 
-### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem
-**Current Status**: 25 active agents (87% success rate, 320+ cycles today)
-**Architecture**: Streamlined operations with focused department coverage
+### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem  
+**Current Status**: 38 active agents with comprehensive email workflow and operations coverage
+**Architecture**: Full-stack operations including automated email workflows, dashboard messaging, and proactive monitoring
 **Performance**: Stable operations with proper HITL controls and escalation paths
 
 **CURRENT FOCUS AREAS**:
-✅ **Launch Preparation** — 8 days to soft launch (March 24), all systems operational
-✅ **Content Pipeline** — 100% complete (10/10 posts), ready for launch
-✅ **Backup Systems** — Archivist pushing to joey-backup, data integrity maintained
-⚠️ **API Credit Management** — Wire Agent and some bots hitting credit limits
-⚠️ **Family Engagement** — Lisa 12d inactive, Danny 0 drops (ongoing re-engagement)
+✅ **Launch Preparation** — 7 days to soft launch (March 24), Launch Coordinator tracking critical path
+✅ **Email Workflow** — Complete automated email operations (auto-ack, decision routing, creative review)
+✅ **Dashboard Integration** — Real-time inbox/outbox messaging via joey-backup GitHub
+✅ **Backup Systems** — Comprehensive data protection with Archivist + Sync Auditor
+✅ **Operations Monitoring** — Unified Ops Monitor consolidating 5 previous bots
 
 **Infrastructure Health**:
-✅ Hub dashboard operational (101 users, 20 drops/24h, 847 total)
-✅ BHA stable (260 users, 5 new today, 7 active)
-✅ Poe balance healthy (39,168 credits)
-✅ Core services stable (Railway, Stripe, Resend)
-✅ Backup integrity maintained (joey-backup repository)
-✅ PRD maintenance with automated metrics refresh
+✅ Hub operational with comprehensive monitoring
+✅ BHA stable with user health tracking  
+✅ Email stack fully automated (Resend + Brooke theme)
+✅ Core services monitored every 30min
+✅ GitHub backup system with integrity checking
+✅ PRD maintenance automated with Launch Coordinator oversight
 
 **Current Issues**:
-🔴 **Patrol Agent** — 6% success rate, needs debugging
-🔴 **RailwayBot** — 0% success rate, API issues
-🔴 **StripeBot** — Idle, no cycles today
-⚠️ **API Credit Exhaustion** — Wire, SEOBot, Researcher hitting limits
 ⚠️ **WhatsApp delivery failures** on some scheduled jobs (functionality intact, notifications fail)
+⚠️ **OnboardBot timeout** — needs cycle time optimization
+ℹ️ **Legacy agents removed** — Patrol, RailwayBot, StripeBot consolidated into Unified Ops Monitor
 
 ## Three Core Laws (Unchanged)
 
@@ -187,13 +195,13 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **DropAnywhere Frontend**: https://drop-anywhere.com
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
-## Success Metrics (March 16 23:39 UTC - CONSTITUTION REALITY CHECK)  
-- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 25 active agents with focused coverage)
-- **Department Coverage**: Target 100% (✅ Current: All key departments operational with 87% overall success rate)
-- **Launch Readiness**: Target March 24 (✅ Content pipeline complete, 8 days remaining)
-- **System Reliability**: Target >80% success rate (✅ Current: 87% across 320+ cycles today)
-- **Backup Integrity**: Target <2h GitHub lag (✅ Archivist maintaining joey-backup every 20min)
-- **Service Uptime**: Target 99.9% (✅ Core services operational, 101 Hub users, 260 BHA users)
+## Success Metrics (March 17 00:10 UTC - CONSTITUTION REALITY CHECK)  
+- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 38 active agents with comprehensive coverage)
+- **Department Coverage**: Target 100% (✅ Current: All departments operational + full email workflow automation)
+- **Launch Readiness**: Target March 24 (✅ Launch Coordinator actively tracking, 7 days remaining)
+- **Email Automation**: Target 100% (✅ Complete workflow: auto-ack, decision routing, creative review, morning briefs)
+- **Backup Integrity**: Target <2h GitHub lag (✅ Archivist + Sync Auditor ensuring no data loss)
+- **Service Monitoring**: Target real-time (✅ Unified Ops Monitor every 30min, dashboard messaging every 2min)
 - **HITL Compliance**: Target 100% (✅ All production actions require approval, Three Core Laws enforced)
 
 ## Performance by Department (March 16 23:04 UTC)
