@@ -5,15 +5,15 @@
 
 Three years ago I was drowning in my own productivity system.
 
-47 apps. Color-coded tags. The works.
+47 apps. Color-coded tags. Automation workflows that took longer to build than the tasks they were supposed to handle.
 
 Still felt like I was losing my mind.
 
 The problem wasn't the system. It was the philosophy.
 
-Every productivity tool assumes you want to manage your thoughts.
+Every productivity tool assumes you want to *manage* your thoughts.
 
-But what if thoughts don't need managing? What if they need space to breathe?
+But what if thoughts don't need managing? What if they just need space to exist?
 
 **DropAnywhere launched this week.**
 
