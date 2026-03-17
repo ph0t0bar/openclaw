@@ -159,3 +159,23 @@
 | Organization | AI-auto | Manual + templates |
 
 **Strategic insight for DropAnywhere**: Mem.ai's "zero-setup" positioning directly competes with our "no inbox" simplicity promise. Both target users who want AI to do the work. Our multi-channel capture (email/SMS/voice/chat) and async daily digest remain differentiators, but Mem's instant AI organization is the benchmark for user expectations. Consider emphasizing "capture from anywhere, digest once daily" as the counter-position to Mem's "always-available AI chat" model.
+
+## Key Finding - March 17, 2026 (22:33 UTC)
+**Mem.ai Notes Researcher AI vs Notion AI setup tradeoff** — Fresh research confirms Mem.ai's core differentiation:
+- **Notes Researcher AI**: Natural language queries ("What did the client say about pricing?") with source citations across all notes
+- **Smart AI Writer**: Generates drafts from existing knowledge, adapts to user writing style over time
+- **AI Organizer/Note Finder**: Auto-groups notes by meaning (semantic), not keywords — no folders/tags required
+- **Claimed metrics**: 60% faster search, 20%+ productivity gains
+- **Mem0 framework**: Emerging persistent memory layer for AI agents (semantic search, multi-level storage)
+
+**Notion AI**: Broader workspace features (databases, wikis) but steeper setup requirements. Mem.ai wins on instant-on AI; Notion wins on comprehensive workspace flexibility.
+
+**Reflect app**: No specific 2026 coverage found — may be losing visibility in AI feature race vs Mem.ai and Notion.
+
+| Tool | Setup | AI Search | Best For |
+|------|-------|-----------|----------|
+| **Mem.ai** | Zero manual | Deep semantic | Personal second brain |
+| **Notion AI** | Significant | Surface-level | Team workspaces |
+| **Reflect** | Unknown | Unknown | (Limited 2026 data) |
+
+**Strategic implication**: Mem.ai's "zero-manual-organization" positioning validates DropAnywhere's "no inbox" simplicity. Both target users who want AI to handle the work. Our multi-channel capture (email/SMS/voice/chat) and async daily digest remain key differentiators, but Mem's instant AI organization sets the benchmark for user expectations. Position: "capture from anywhere, digest once daily" as counter to Mem's "always-available AI chat" model.
