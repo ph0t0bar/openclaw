@@ -1,6 +1,6 @@
 # 🤖 Agent Board — DecisionBot Operations
 
-Last updated: 2026-03-17 19:31 UTC
+Last updated: 2026-03-17 22:01 UTC
 
 ## Current Status
 
@@ -19,9 +19,9 @@ Last updated: 2026-03-17 19:31 UTC
 
 | # | Task | Priority | Source Drop | Votes |
 |---|------|----------|-------------|-------|
-| 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 | ✅ **21:06 Opus** — Template is user-facing product; "not good looking" = immediate churn risk. Stop current sends first, then redesign. <br> ✅ **21:43 Opus** — Confirmed: visual design IS product-market fit for consumer apps. This is not a cosmetic issue; it's a trust signal. Users judge in 50ms. |
-| 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 | ✅ **21:06 Opus** — Immediate action: disable current template today. Better no digest than bad digest. <br> ✅ **21:43 Opus** — Emergency stop required. Current template actively damages brand perception. Every send while redesigning = lost trust. |
-| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 | ✅ **21:25 Opus** — Brooke Theme is the aesthetic north star. Template redesign must use: cream/sage/copper palette, Newsreader font, liquid glass effects, subtle motion. This is product-market fit for visual experience. <br> ✅ **21:43 Opus** — "Light and tingly" is the emotional target. Brooke Theme spec already exists in workspace/templates/ — execute against it, don't reinvent. |
+| 1 | **REDESIGN Morning Brief template** — Pinterest font, cute pills, stunning CSS, motion | 🚨 CRITICAL | 1773770773644827 | ✅ **21:06 Opus** — Template is user-facing product; "not good looking" = immediate churn risk. Stop current sends first, then redesign. <br> ✅ **21:43 Opus** — Confirmed: visual design IS product-market fit for consumer apps. This is not a cosmetic issue; it's a trust signal. Users judge in 50ms. <br> ✅ **22:01 Opus** — PRD Section 8 shows digest pipeline stalled (2/107 users). Template redesign is moot if digests aren't sending. Fix pipeline first, then redesign. |
+| 2 | **STOP sending current template** — "not good looking" per Joey | 🚨 CRITICAL | 1773771915612630 | ✅ **21:06 Opus** — Immediate action: disable current template today. Better no digest than bad digest. <br> ✅ **21:43 Opus** — Emergency stop required. Current template actively damages brand perception. Every send while redesigning = lost trust. <br> ✅ **22:01 Opus** — Agreed: emergency stop still required. But note: only 2 digests sent in 24h means this is already effectively stopped. Use this window to fix the pipeline AND redesign. |
+| 3 | **Implement "light and tingly" feeling** — Brooke Theme full compliance | ⚙️ ACTION | 1773771915612630 | ✅ **21:25 Opus** — Brooke Theme is the aesthetic north star. Template redesign must use: cream/sage/copper palette, Newsreader font, liquid glass effects, subtle motion. This is product-market fit for visual experience. <br> ✅ **21:43 Opus** — "Light and tingly" is the emotional target. Brooke Theme spec already exists in workspace/templates/ — execute against it, don't reinvent. <br> 🔄 **22:01 Opus** — Brooke Theme execution is correct, but sequence matters: (1) Fix digest pipeline (Dropper-Code down, Claude exhausted), (2) Redesign template, (3) Resume sends with new design. Don't redesign into a broken pipe. |
 
 ### 📝 Key Feedback Items
 
