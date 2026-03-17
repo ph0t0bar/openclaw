@@ -1,143 +1,83 @@
----
+# Lessons Learned Log
 
-### 21:38 UTC — LearningBot (2026-03-17)
-
-**Lesson:** Visual Design Crisis = User Churn Trigger (Pattern 251)
-
-**What happened:**
-- Joey feedback "not good looking" on Morning Brief template triggered 25-minute unanimous agent consensus
-- Response speed: 25min for visual crisis vs 20+ hours for infrastructure failures
-- 6 agents pivoted from revenue debates to execution prescription
-- Template redesign prioritized over Dropper-Code stall
-
-**Why this matters:**
-User-facing aesthetics trigger faster organizational response than technical failures. This reveals a truth: perceived quality (design) drives retention more than backend reliability — until the backend fails completely. The pattern shows emotional/user-visible issues create urgency invisible/system issues don't.
-
-**Root cause:**
-- Design lacks objective quality gates (no "is this Brooke Theme compliant?" check)
-- Template quality assessed only at user complaint, not at generation
-- No automated visual regression testing for PDF/email templates
-- Subjective feedback loop: user sees → user complains → agents scramble
-
-**How to prevent:**
-- Pre-flight template validation: automated Brooke Theme compliance check before send
-- Visual regression tests: compare generated digest to approved baseline
-- Design system enforcement at CI level, not human review level
-- "Would Joey say this looks good?" heuristic: whitespace ratio, font consistency, color compliance
-
-**How to replicate success:**
-The fast consensus was healthy — when design fails, execution speed matters. The issue was *waiting for user complaint* before acting. Success = same speed, earlier detection.
+Operational lessons, failures, and improvements captured by LearningBot.
 
 ---
 
-**Lesson:** Claude Quota as Single Point of Failure (Pattern 254)
+### 22:50 UTC — LearningBot (2026-03-17)
 
-**What happened:**
-- Dropper-Code stalled: 5 tasks failed due to Claude usage exhausted
-- Hard stop until March 20 (3 days downtime)
-- No automatic fallback to GPT-4o, Gemini, or other models
-- Chief of Staff flagged at 21:28 UTC — no remediation possible, just observation
+**LESSON: GitHub Token as Recurring Single Point of Failure**
+- **What happened:** SpecBot and SkillMiner both failed GitHub API authentication (bad credentials) during the same 30-min window
+- **Why:** `GITHUB_TOKEN` expired (confirmed in TOOLS.md as "EXPIRED, bad credentials"), forcing agents to pivot to degraded workflows
+- **Impact:** 2 agent workflows blocked, specs couldn't sync from joey-backup, GitHub mining skipped
+- **How to prevent:** 
+  - Refresh GH_TOKEN before expiration (TOOLS.md shows working PAT is `GH_TOKEN`, not `GITHUB_TOKEN`)
+  - Add token health check to Sentry's secret scan routine
+  - Document token refresh date in TOOLS.md with 90-day reminder
+- **Replicate when:** Any GitHub-dependent skill needs to verify token health first
 
-**Why this matters:**
-Autonomous code agents require LLM access. Single-provider dependency creates hard failure mode. 3-day stall on autonomous improvements blocks the entire dropper-code workflow: brain-scan → propose tasks → approve → execute → PR.
+**LESSON: Digest Pipeline Regression = Launch Risk**
+- **What happened:** Only 2/108 users received digests in 24h — a 98% failure rate persisting 6+ hours
+- **Why:** Dropper-Code stalled due to Claude usage exhaustion (resets Mar 20), blocking digest generation
+- **Impact:** Core value proposition compromised during launch week; family members at risk flagged repeatedly
+- **How to prevent:**
+  - Implement LLM fallback when Claude quota exhausted (Gemini, GPT-4o via OpenRouter)
+  - Add digest pipeline monitoring with 2h failure threshold alert
+  - Pre-generate digest templates before quota windows
+- **Pattern reference:** Pattern 234 (persistent), Pattern 253 (6hr+), Pattern 260 (launch readiness paradox)
 
-**Root cause:**
-- Dropper-Code hardcoded to Claude (no model abstraction layer)
-- No quota monitoring with graceful degradation
-- No fallback provider configuration
-- "All eggs in Anthropic basket" architecture
+**LESSON: Visual Crisis Response Speed > Infrastructure Crisis Response**
+- **What happened:** Morning Brief template crisis ("not good looking" feedback) achieved 25-minute unanimous consensus across agents
+- **Why:** User-facing visual issues trigger faster response than backend failures
+- **Impact:** Strategic sequencing agreed (fix pipeline → redesign → resume) but not yet implemented
+- **How to replicate:** 
+  - Frame infrastructure issues as "user-facing" to accelerate response
+  - Use visual mockups/prototypes for technical issues (makes them concrete)
+- **Pattern reference:** Pattern 251, Meta-Pattern: Crisis type determines response speed
 
-**How to prevent:**
-- Multi-provider abstraction: primary (Claude) → fallback (GPT-4o) → fallback (Gemini)
-- Quota-aware request routing: when Claude 429s, switch provider automatically
-- Pre-flight quota check: check remaining quota before accepting tasks
-- Circuit breaker pattern: after N Claude failures, switch to fallback for M minutes
+**LESSON: Content Pipeline Velocity Success vs Digest Pipeline Failure**
+- **What happened:** 7 LinkedIn posts created, polished, and delivered in 1 hour while digest pipeline remained stalled for 6+ hours
+- **Why:** Content pipeline has clear owner (ContentBot), review process (FounderVoice), and no external dependencies; digests depend on Dropper-Code + Claude quota
+- **Impact:** Launch week content ready, but core product value (daily digests) unavailable
+- **How to replicate:**
+  - Remove external dependencies from critical paths
+  - Give digest pipeline same ownership clarity as content pipeline
+- **Pattern reference:** Pattern 258
 
-**How to replicate success:**
-The Chief of Staff detection worked — issue was flagged within minutes. Success = detection + automatic remediation. Currently we have detection only.
+**LESSON: Agent Grade Inflation Without Execution**
+- **What happened:** Meta scorecard improved from 75% → 83% → 92% value production while 4 critical operational gaps persisted
+- **Why:** Grading based on activity volume, not outcome delivery; "A" grades for research/patterns even when core systems broken
+- **Impact:** False confidence in system health; Launch Coordinator showed GREEN while digest pipeline RED
+- **How to prevent:**
+  - Weight grades by customer impact (digest failure = auto C regardless of other activity)
+  - Require "fixed" confirmation before upgrading failed system grades
+- **Pattern reference:** Pattern 259, Pattern 260 (launch readiness paradox)
 
----
+**LESSON: Family Retention Risk as System Health Canary**
+- **What happened:** 3 family members flagged as at-risk (lhamer228, rhamersunsetpartners, hamer.daniel) — zero drops, empty vaults, 10-13 days inactive
+- **Why:** If personal stakes don't trigger execution, nothing will; indicates systemic engagement failure
+- **Impact:** Emotional + business cost; family should be easiest cohort to retain
+- **How to prevent:**
+  - Family members get priority digest queue (guaranteed delivery even during outages)
+  - Personal onboarding call for family vault emptiness
+  - Auto-escalate family inactivity to Claw immediate notification
+- **Pattern reference:** Pattern 264
 
-**Lesson:** Template Crisis Reveals Design System Gap (Pattern 252)
+**LESSON: Poe Balance as Hidden Launch Risk**
+- **What happened:** Poe balance burned 37K→46K→64K→remaining (erratic reporting), ~12h runway at peak burn
+- **Why:** BHA depends on Poe for organic traffic; Kimi-K2.5 model burning 22K/6h
+- **Impact:** If Poe depleted, BHA loses primary acquisition channel during launch week
+- **How to prevent:**
+  - Poe balance check in Unified Ops Monitor with 48h runway alert
+  - Implement PoeBalanceGuardian skill (SPEC created 22:19 UTC)
+  - Auto-switch to lower-cost models when balance < 100K
+- **Pattern reference:** Pattern 254 (Claude quota SPOF applies to Poe too)
 
-**What happened:**
-- Morning Brief template failed Brooke Theme compliance
-- Brooke Theme spec exists in `docs/reference/brooke-theme-spec.md`
-- No enforcement mechanism — templates generated without compliance check
-- No CI validation for template HTML/CSS against design system
-
-**Why this matters:**
-Specs without enforcement are just documentation. A design system exists only when it prevents non-compliant output, not when it describes what compliant output should look like. The gap between "we have a spec" and "all output matches spec" is where user-visible failures happen.
-
-**Root cause:**
-- Spec is reference, not enforced rule
-- Template generation doesn't import/validate against design tokens
-- No automated "design linting" for email/PDF templates
-- Manual review catch failures, automation doesn't prevent them
-
-**How to prevent:**
-- Design tokens as code: colors, fonts, spacing in config file, not human memory
-- Template linter: fail build on non-compliant CSS (wrong font, off-brand color, bad spacing)
-- Pre-generation validation: reject template render that violates constraints
-- Compliance badge: generated digests include "Brooke Theme v1.2" metadata for audit
-
-**How to replicate success:**
-SpecBot successfully synced 26 specs at 21:11 UTC. The infrastructure for documentation exists. Success = same automation for enforcement.
-
----
-
-**Lesson:** Digest Pipeline Regression Persistence (Pattern 253 / Pattern 234)
-
-**What happened:**
-- 6+ hours of "digest pipeline stalled" alert
-- 2/107 users receiving digests (98% failure rate)
-- Pattern 234 identified earlier, still no improvement
-- Chief of Staff flagged at 21:28 UTC alongside Dropper-Code stall
-
-**Why this matters:**
-Persistent regressions indicate either: (a) can't fix, (b) won't fix, or (c) don't know how to fix. Any of these is a critical failure. 98% digest failure for 6+ hours is a tier-1 incident, yet it's been tagged "yellow" not "red".
-
-**Root cause:**
-- Alert fatigue: "digest_stall" has fired before, was intentional (waitlist), now ignored
-- No automated rollback: when digest success rate drops below threshold, no auto-mitigation
-- Missing runbook: no documented "digest pipeline down" response procedure
-- Possibly conflated with intentional waitlist pause — unclear if this is "feature" or "bug"
-
-**How to prevent:**
-- Severity escalation: >50% digest failure for >1h = automatic page/alert
-- Success rate dashboard: real-time "X% of users got today's digest"
-- Auto-rollback: if success rate < threshold, pause new digests, preserve queue, alert
-- Clear signal: separate "intentional_waitlist_pause" from "pipeline_failure"
-
-**How to replicate success:**
-The alert system works (Chief of Staff detected it). The gap is response. Success = detection + automated remediation + human escalation if auto-remediation fails.
-
----
-
-**Lesson:** Researcher Competitive Intel Escalating (Pattern 255)
-
-**What happened:**
-- 21:20 UTC: Google Personal Intelligence threat intel (OS-level AI memory)
-- 21:32 UTC: Mem.ai competitive analysis (semantic search, AI-native features)
-- 12-minute gap between major competitive threats analyzed
-- System strategizing while core product (digest) is broken
-
-**Why this matters:**
-Strategic analysis during operational crisis is a luxury. The organization is generating competitive intelligence while failing to deliver basic functionality. This creates a "smart but broken" pattern — deep insight, shallow execution.
-
-**Root cause:**
-- Agent specialization: Researcher isn't responsible for digest pipeline
-- No priority-weighting: competitive intel and operational fixes have equal scheduling
-- Missing "all hands on deck" signal: operational crisis should pause non-critical research
-- Individual agent success metrics vs system success metrics
-
-**How to prevent:**
-- Priority framework: operational health > competitive intel when health is red
-- Crisis mode: when digest pipeline <50%, pause non-essential research, redirect to ops
-- Cross-functional triage: Researcher findings routed to affected systems (digest team)
-- Meta-awareness: agents check system health before starting discretionary work
-
-**How to replicate success:**
-The competitive intel was high quality (Google PI + Mem.ai analysis). Success = same quality, appropriate timing. Research is valuable; research during operational crisis is distraction.
-
----
+**LESSON: Skill Mining Works — Implementation Doesn't**
+- **What happened:** SkillMiner identified 10 skill ideas, 5 gaps, Tier 1 priority for PoeBalanceGuardian — but no implementation triggered
+- **Why:** Mining is automated, implementation requires manual decision/approval
+- **Impact:** Knowledge without action; same patterns identified repeatedly (PatternBot, LearningBot both captured same insights)
+- **How to replicate:**
+  - Auto-create GitHub issues for Tier 1 skill gaps
+  - Add "implement highest priority skill" as mandatory agent action
+- **Pattern reference:** Pattern 262 (strategic consensus without implementation)
