@@ -3,29 +3,36 @@
 
 ---
 
-## Status Update (Mar 17 04:18 UTC - Launch Coordinator)
+## Status Update (Mar 17 06:25 UTC - Launch Coordinator)
 
 **🚨 LAUNCH STATUS: CRITICAL RISK - 7 DAYS REMAINING**
 
 | Phase | Window | Status |
 |-------|--------|--------|
-| **Phase 1: SURVIVAL** | Mar 14–15 | 🔴 FAILED — Digest stall unresolved, Poe balance unknown |
+| **Phase 1: SURVIVAL** | Mar 14–15 | 🟡 PARTIAL — Poe balance RESTORED ✅, Digest stall persists |
 | **Phase 2: STABILIZE** | Mar 16–19 | 🔴 BLOCKED — Cannot test launch items while digest pipeline is broken |
-| **Phase 3: PREPARE** | Mar 20–23 | 🔴 AT RISK — 4 days to solve Phase 1+2 |
-| **Phase 4: LAUNCH** | Mar 24–26 | 🔴 LAUNCH UNLIKELY — Need immediate escalation |
+| **Phase 3: PREPARE** | Mar 20–23 | 🔴 AT RISK — 3 days to solve Phase 1+2 |
+| **Phase 4: LAUNCH** | Mar 24–26 | 🔴 LAUNCH AT RISK — Digest is make-or-break |
 
-**RECENT WINS (Mar 17):**
+**RECENT WINS (Mar 17 06:25 UTC):**
+- ✅ **POE BALANCE RESTORED** — Topped up to 283,939 points (was 12,522 💀). Burn ~80K/6h.
 - ✅ Email webhook → OpenClaw (PR #193 merged)
 - ✅ Email address fix: noreply@ → hello@drop-anywhere.com (PR #195 merged)
 - ✅ Drop received emails reply in-thread (PR #198 merged)
 - ✅ Re-engagement emails disabled - only Joey receives (PR #197 merged)
 - ✅ Digest stall alerts suppressed (PR #192 merged)
+- ✅ Auto-response emails fixed — disabled at free tier + `<thinking>` stripped (PR #199 merged)
 - ✅ Zapier integration (PR #189 merged)
 
-**CRITICAL BLOCKERS (PERSIST - LAUNCH KILLER):**
-- 🚨 **DIGEST STALL UNRESOLVED** — 2 open PRs (#190, #191), Dropper-Code cancelled latest fix attempt
-- 🚨 **POE BALANCE CRITICAL** — 13,869 points, ~39 min runway at 21K burn/6h from PRD
+**CRITICAL BLOCKERS (LAUNCH KILLER):**
+- 🚨 **DIGEST STALL UNRESOLVED** — Only 3/103 eligible users received digests in 24h
+  - Open PRs: #190, #191 (opoerator-hub) — no active Dropper-Code tasks
+  - Open PR: #151 (dropanywhere-app) — "URGENT: Investigate and fix digest stall"
+  - **NO ACTIVE WORK ON FIX** — Requires immediate escalation
 - ⚠️ **LAUNCH CHECKLIST ALL BLOCKED** — Cannot test L1-L10 items until digest works
+
+**ESCALATION REQUIRED:**
+Digest stall is 72+ hours unresolved. PRs are open but no active development. Manual intervention or new Dropper-Code task needed immediately.
 
 ## CRITICAL PATH ANALYSIS (Mar 17 04:18 UTC)
 
