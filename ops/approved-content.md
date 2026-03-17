@@ -54,6 +54,25 @@ Content approved by Joey — cleared for publishing / use.
 ---
 
 ## 2026-03-17 — FeedbackBot Batch
-- ✅ THE COMPASS blueprint concept (with modifications)
-- ✅ General launch sprint direction
-- 💚 "Love this" — onboarding flow concept approved
+
+### ✅ THE COMPASS — "This is a work of art, nicely done!"
+**Approved:** 2026-03-17 04:10 UTC  
+**Joey's words:** "Love this. A few modifications!" → "This is a work of art, nicely done!"  
+**Files:** `ops/COMPASS.md`, `ops/COMPASS-MASTER-LAUNCH-BLUEPRINT.md`
+
+**Modifications Requested:**
+1. Expand onboarding beyond 3 emails (educate, entertain, ask questions)
+2. Intelligence Map always available (not just post-onboarding)
+3. Add unsubscribe + privacy compliance to ALL emails
+4. Create comprehensive content generation log (no recreating work)
+5. Kill standalone "Drop received" emails → threaded Brooke-themed replies
+6. Cover all user scenarios (find prior GitHub exercise)
+7. Agency backend validation → future Enterprise tier framing
+
+**Status:** APPROVED with action items — see `ops/feedback/compass-feedback-2026-03-17.md`
+
+---
+
+### ✅ Email-Only Pivot Direction
+**Approved:** Ongoing  
+**Direction:** Email-first launch, dashboard deferred post-launch
