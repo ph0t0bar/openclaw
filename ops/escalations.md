@@ -1,6 +1,6 @@
 # ESCALATIONS - Chief of Staff Gap Report
 
-**Generated:** 2026-03-17 05:13 UTC  
+**Generated:** 2026-03-17 05:19 UTC  
 **Officer:** Chief of Staff / Gap Finder
 
 ---
@@ -12,6 +12,13 @@
 - **Burn Rate:** ~21K points per 6 hours  
 - **Impact:** Total system shutdown in <1 hour without top-up
 - **Action Required:** Immediate Poe balance top-up
+
+### AGENT COORDINATION FAILURE
+- **Researcher Agent:** 4+ consecutive C-grades (coordination breakdown)
+- **Deep Researcher Agent:** 3+ consecutive C-grades (duplicate work)
+- **Issue:** No shared "already done" state → 13 duplicate reports in 2h
+- **Impact:** Wasted cycles, coordination catastrophe
+- **Action Required:** Prompt redesign or temporary disable
 
 ---
 
@@ -46,4 +53,4 @@
 ---
 
 **Next Review:** 6h (next heartbeat cycle)
-**Priority Order:** POE → Family → Revenue → Digest
+**Priority Order:** POE → Agent Coordination → Family → Revenue → Digest
