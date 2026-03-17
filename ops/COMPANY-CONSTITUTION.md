@@ -5,7 +5,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 00:43 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (35 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 09:23 UTC)
+### ✅ CURRENTLY ACTIVE AGENTS (32 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 09:55 UTC)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -59,22 +59,24 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **WEEKLY OPUS SWEEP** — 03:00 Mon UTC — Opus 4 — ⚠️ WhatsApp delivery error (functional)
 - **DROP MINING** — 22:00 Wed/Sat UTC — Kimi K2.5 — ✅ Scheduled
 
-### 🔴 DISABLED AGENTS (14 agents temporarily disabled)
+### 🔴 DISABLED AGENTS (17 agents temporarily disabled)
 
-**Backlog Grinder Series** (one-time tasks completed 2026-03-16):
-- DISABLED: Backlog Grinder — LinkedIn Post + Carousel (delivery error)
-- DISABLED: Backlog Grinder — Reel Polish (delivery error)  
+**Backlog Grinder Series** (one-time tasks completed/failed 2026-03-16):
+- DISABLED: Backlog Grinder — LinkedIn Post + Carousel (WhatsApp delivery error)
+- DISABLED: Backlog Grinder — Reel Polish (WhatsApp delivery error)  
 - DISABLED: Backlog Grinder — Builder Pack Spec (timeout)
 - DISABLED: Backlog Grinder — Launch Checklist Audit (timeout)
-- DISABLED: Backlog Grinder — Soft Launch User List (delivery error)
+- DISABLED: Backlog Grinder — Soft Launch User List (WhatsApp delivery error)
 
-**Replaced/Consolidated Agents**:
+**Revenue/Ops Monitoring** (consolidated into Unified Ops Monitor):
+- DISABLED: PoeBot — Revenue (30min) — functionality moved to Unified Ops Monitor
+- DISABLED: StripeBot — Revenue (30min) — functionality moved to Unified Ops Monitor  
+- DISABLED: Dropper-Code Trigger (30min) — functionality moved to Unified Ops Monitor
+- DISABLED: RailwayBot — Operations (20min) — functionality moved to Unified Ops Monitor
+
+**Replaced by Specialist Agents**:
 - DISABLED: Feed Ingestion / News Wire (15min) — replaced by Deep Researcher
 - DISABLED: Sonnet Deep Work (10min) — replaced by department-specific agents
-- DISABLED: PoeBot — Revenue (30min) — consolidated into Unified Ops Monitor
-- DISABLED: StripeBot — Revenue (30min) — consolidated into Unified Ops Monitor  
-- DISABLED: Dropper-Code Trigger (30min) — consolidated into Unified Ops Monitor
-- DISABLED: RailwayBot — Operations (20min) — consolidated into Unified Ops Monitor
 
 ### ⚠️ DELIVERY ISSUES (Non-Operational Failures)
 
@@ -91,7 +93,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **Launch Coordination** — Dedicated Launch Coordinator tracking March 24 soft launch (8 days remaining)
 **Agent Consolidation** — Unified Ops Monitor replaces separate monitoring bots
 
-**GOVERNANCE FINDINGS** (2026-03-17 08:49 UTC): System is operating at 30 enabled agents out of 38 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
+**GOVERNANCE FINDINGS** (2026-03-17 09:55 UTC): System is operating at 32 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging, GitHub backup, and launch tracking all functioning normally.
 
 **Current Issues Requiring Attention:**
 - **OnboardBot** — 1 timeout error on last run (timeout after 180s, non-critical)
@@ -167,7 +169,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 ## System Status (March 17 09:23 UTC - GOVERNANCE UPDATED)
 
 ### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem  
-**Current Status**: 35 enabled agents (of 49 total cron jobs) with comprehensive email workflow and operations coverage
+**Current Status**: 32 enabled agents (of 49 total cron jobs) with comprehensive email workflow and operations coverage
 **Architecture**: Full-stack operations including automated email workflows, dashboard messaging, and proactive monitoring
 **Performance**: Stable operations with proper HITL controls and escalation paths
 
@@ -225,7 +227,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **BrutallyHonest.ai**: https://app.brutallyhonest.ai
 
 ## Success Metrics (March 17 09:23 UTC - CONSTITUTION REALITY CHECK)  
-- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 35 enabled agents out of 49 total cron jobs)
+- **Agent Ecosystem Scale**: Target >25 agents (✅ Current: 32 enabled agents out of 49 total cron jobs)
 - **Department Coverage**: Target 100% (✅ Current: All departments operational + full email workflow automation)
 - **Launch Readiness**: Target March 24 (✅ Launch Coordinator actively tracking, 7 days remaining)
 - **Email Automation**: Target 100% (✅ Complete workflow: auto-ack, decision routing, creative review, morning briefs)
