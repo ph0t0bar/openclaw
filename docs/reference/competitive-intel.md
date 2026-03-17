@@ -36,4 +36,49 @@ Web search for current competitive landscape (Mem.ai, Notion AI, Reflect) was bl
 
 ---
 
+---
+
+## March 17, 2026 — Mem.ai Competitive Intelligence (06:48 UTC)
+
+**Source:** Web search (Perplexity)  
+**Query:** Mem.ai OR Notion AI OR Reflect app 2026
+
+### Mem.ai Positioning
+The leading **"zero-manual-organization AI"** second brain tool:
+
+| Feature | Mem.ai | Notion AI | Reflect |
+|---------|--------|-----------|---------|
+| AI Search Speed | ⭐⭐⭐⭐⭐ (60% faster) | ⭐⭐⭐ | Not ranked |
+| Auto-organization | Zero setup required | Manual structure | Backlinks only |
+| Pricing (Pro) | $12/mo | $10/mo | Unknown |
+| Rating | 4.0/5 | 4.5/5 | — |
+
+### Mem.ai 2026 Features
+- **Notes Researcher AI**: Plain English search, auto-links unrelated info, cites sources
+- **Smart AI Writer**: Drafts in your voice from existing notes
+- **AI Organizer/Note Finder**: Auto-groups without folders/tags
+- **Summarization + Templates**: Meeting minutes, journal formats
+- **Calendar Integration**: Google Calendar sync
+
+### Pricing (2026)
+| Plan | Price | Key Limitation |
+|------|-------|----------------|
+| Free | $0 | Limited AI features |
+| Pro | $12/mo | Unlimited AI |
+| Teams | Custom | Collaboration tools |
+
+### Strategic Insights
+1. **Market Positioning:** Mem.ai = "parallel mind" for workflows; Notion = structured collaboration; Reflect not competitive in AI search
+2. **Moat:** Zero-setup auto-organization vs Notion's manual structure
+3. **Weakness:** iOS app "occasionally buggy" — opportunity for DropAnywhere mobile
+4. **Reflect App:** Effectively absent from 2026 competitive conversation
+
+### Comparison: DropAnywhere vs Mem.ai
+| Dimension | Mem.ai | DropAnywhere Opportunity |
+|-----------|--------|--------------------------|
+| Capture | Manual app | Multi-channel (email/SMS/voice) |
+| Organization | Auto-AI | Human+AI hybrid |
+| Delivery | On-demand search | Daily digest (async) |
+| Philosophy | "Second brain" | "Second brain has no inbox" |
+
 *Research Task: Rotate between competitive analysis, market trends, goldmine cataloging, and voice research.*
