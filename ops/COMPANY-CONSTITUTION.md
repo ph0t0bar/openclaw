@@ -5,7 +5,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 10:59 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (38 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 11:33 UTC)
+### ✅ CURRENTLY ACTIVE AGENTS (39 enabled agents out of 49 total cron jobs - Governance Updated 2026-03-17 18:57 UTC)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -104,9 +104,9 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **GOVERNANCE FINDINGS** (2026-03-17 11:33 UTC): System is operating at 38 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging active, GitHub backup functional with some timeouts, and launch tracking active with file edit errors.
 
 **Current Issues Requiring Immediate Attention:**
-- **DocBot** — 2 consecutive timeout errors (180s limit, needs review)
-- **Launch Coordinator** — 1 consecutive error (file edit failure, needs review)
-- **Unified Ops Monitor** — 1 consecutive error (message delivery failed)
+- **SpecBot** — 1 consecutive timeout error (180s limit exceeded)
+- **Launch Coordinator** — 1 consecutive error (file edit failure on LAUNCH-CRITICAL-PATH)
+- **Creative Review Emailer** — 2 consecutive errors (file edit failure on push-queue.md)
 - **Daily GitHub Sync** — 2 consecutive timeout errors (300s limit)
 - **WhatsApp Delivery** — 3 scheduled jobs affected (functional but notifications fail)
 
@@ -179,7 +179,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 ## System Status (March 17 09:23 UTC - GOVERNANCE UPDATED)
 
 ### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem  
-**Current Status**: 32 enabled agents (of 49 total cron jobs) with comprehensive email workflow and operations coverage
+**Current Status**: 39 enabled agents (of 49 total cron jobs) with comprehensive email workflow and operations coverage
 **Architecture**: Full-stack operations including automated email workflows, dashboard messaging, and proactive monitoring
 **Performance**: Stable operations with proper HITL controls and escalation paths
 

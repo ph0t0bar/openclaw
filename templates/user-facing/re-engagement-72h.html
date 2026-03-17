@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Your Vault is Quiet — DropAnywhere</title>
+<style>
+  @media (prefers-color-scheme: dark) {
+    body { background-color: #1a1917 !important; }
+    .outer-wrap { background-color: #1a1917 !important; }
+    .card { background-color: #2D2A26 !important; border-color: #3A3733 !important; }
+    .body-text { color: #e0ddd8 !important; }
+    .muted-text { color: #9e9a94 !important; }
+    .footer-text { color: #7a7670 !important; }
+  }
+  @media only screen and (max-width: 620px) {
+    .inner-wrap { padding: 16px !important; }
+    .card { padding: 20px !important; }
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#FAF8F5;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;">
+<!-- Preheader -->
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Your vault hasn't heard from you in a while. One drop is all it takes.&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</div>
+
+<table role="presentation" class="outer-wrap" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FAF8F5;">
+<tr><td align="center" style="padding:24px 16px;">
+<table role="presentation" class="inner-wrap" width="580" cellpadding="0" cellspacing="0" style="max-width:580px;width:100%;">
+
+<!-- QUIET VAULT HERO -->
+<tr><td>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(150deg,#2D2A26,#3A3733);border-radius:22px;box-shadow:0 2px 16px rgba(45,42,38,0.12);">
+  <tr><td style="padding:44px 36px;text-align:center;">
+    <p style="margin:0 0 16px;font-size:32px;">🌙</p>
+    <h1 style="margin:0 0 8px;font-size:24px;font-weight:700;color:#FFFEFA;line-height:1.2;">Your vault is quiet</h1>
+    <p style="margin:0;font-size:14px;color:rgba(255,255,255,0.5);line-height:1.5;">It's been {{days_inactive}} days since your last drop.<br>Your vault is still here, waiting.</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- PROMPT CARD -->
+<tr><td style="padding:20px 0 0;">
+  <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" style="background:#FFFEFA;border:0.5px solid rgba(45,42,38,0.08);border-radius:22px;box-shadow:0 1px 8px rgba(45,42,38,0.04);padding:28px;text-align:center;">
+  <tr><td>
+    <p style="margin:0 0 8px;font-size:10px;color:#9e9a94;letter-spacing:1.5px;text-transform:uppercase;">Quick Drop Prompt</p>
+    <p class="body-text" style="margin:0 0 20px;font-size:18px;color:#2D2A26;line-height:1.5;font-weight:600;">{{prompt_text}}</p>
+    <p class="muted-text" style="margin:0 0 20px;font-size:13px;color:#9e9a94;line-height:1.5;">Reply to this email with your answer — it'll go straight to your vault.</p>
+    <a href="mailto:{{drop_email}}?subject=Drop&body=" style="display:inline-block;background:#2D2A26;color:#FFFEFA;font-size:14px;font-weight:600;text-decoration:none;padding:16px 36px;border-radius:100px;">Drop It Now</a>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- VAULT STATUS -->
+<tr><td style="padding:20px 0 0;">
+  <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" style="background:#FFFEFA;border:0.5px solid rgba(45,42,38,0.08);border-radius:22px;box-shadow:0 1px 8px rgba(45,42,38,0.04);padding:24px 28px;">
+  <tr><td>
+    <p style="margin:0 0 16px;font-size:10px;color:#9e9a94;letter-spacing:1.5px;text-transform:uppercase;">Your Vault</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:8px;">
+        <p style="margin:0;font-size:24px;font-weight:700;color:#2D2A26;">{{total_drops}}</p>
+        <p style="margin:4px 0 0;font-size:10px;color:#9e9a94;letter-spacing:0.5px;text-transform:uppercase;">Total Drops</p>
+      </td>
+      <td align="center" style="padding:8px;border-left:1px solid rgba(45,42,38,0.06);">
+        <p style="margin:0;font-size:24px;font-weight:700;color:#2D2A26;">{{total_themes}}</p>
+        <p style="margin:4px 0 0;font-size:10px;color:#9e9a94;letter-spacing:0.5px;text-transform:uppercase;">Themes</p>
+      </td>
+      <td align="center" style="padding:8px;border-left:1px solid rgba(45,42,38,0.06);">
+        <p style="margin:0;font-size:24px;font-weight:700;color:#2D2A26;">{{streak_best}}</p>
+        <p style="margin:4px 0 0;font-size:10px;color:#9e9a94;letter-spacing:0.5px;text-transform:uppercase;">Best Streak</p>
+      </td>
+    </tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- SOFT NUDGE -->
+<tr><td style="padding:24px 0 0;text-align:center;">
+  <p class="muted-text" style="margin:0;font-size:13px;color:#9e9a94;line-height:1.6;font-style:italic;">One drop is all it takes to restart.<br>Your vault remembers everything — even when you forget.</p>
+</td></tr>
+
+<!-- FOOTER -->
+<tr><td style="padding:28px 0 0;text-align:center;">
+  <p class="footer-text" style="margin:0 0 8px;font-size:13px;color:#9e9a94;font-style:italic;">Your second brain has no inbox.</p>
+  <p style="margin:0 0 12px;font-size:20px;">🦜</p>
+  <p class="footer-text" style="margin:0;font-size:11px;color:#b8b4ae;">
+    <a href="{{unsubscribe_url}}" style="color:#9e9a94;text-decoration:underline;">Unsubscribe</a>
+    &nbsp;&middot;&nbsp;
+    <a href="{{preferences_url}}" style="color:#9e9a94;text-decoration:underline;">Preferences</a>
+    &nbsp;&middot;&nbsp;
+    <a href="{{privacy_url}}" style="color:#9e9a94;text-decoration:underline;">Privacy</a>
+  </p>
+  <p class="footer-text" style="margin:8px 0 0;font-size:10px;color:#ccc;">DropAnywhere · Chicago, IL</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>
