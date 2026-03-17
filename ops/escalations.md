@@ -1,31 +1,25 @@
-# Gap Escalations - 2026-03-17
+# 🚨 Critical Escalations
 
-## 🚨 CRITICAL GAPS (Need Joey Now)
+## Current Gaps (2026-03-17 00:37 UTC)
 
-### ✅ Backup Health - Normal
-- **joey-backup last commit:** 2026-03-16T23:44:28Z (28 minutes ago) - **HEALTHY** ✅
-- Recent commits confirm active archiving (Snapback specs, daily logs)
+### 🔥 CRITICAL - Poe Balance Depletion
+- **Balance:** 35,363 points (down from 37,688 at 21:12 UTC)
+- **Burn rate:** 24,303 points/6h (100 calls)
+- **ETA to zero:** ~8.7 hours if burn continues
+- **Top consumers:** theREALrealtalk (14,186), IdealPrompt (4,964), Tippiy (3,611)
+- **Action needed:** Top up Poe balance or disable non-essential bots immediately
 
-### 🔴 Digest Pipeline - Severely Stalled
-- **Digests sent 24h:** Only 3 (down from typical 15-30)
-- **Eligible users not getting digests:** 97 of 100 eligible users missed today's delivery
-- **Root cause:** Unknown - multiple PRs (#190-#194) in progress but stall remains
-- **Action needed:** Manual trigger or PR acceleration required
+### ⚠️ SECONDARY - Digest Pipeline Still Stalled  
+- **Sent:** 3 digests in 24h (should be ~30-40 for 101 users)
+- **Status:** Multiple PRs merged (190-194) but stall persists
+- **Next:** Monitor next digest cycle for improvement
 
-### 🚨 POE BALANCE CRITICAL - 37,210 Points
-- **Burn rate:** 29,852 points/6h (100 calls)
-- **Time to depletion:** ~7.5 hours at current rate
-- **Top burning bots:** theREALrealtalk (12.4K), IdealPrompt (9.5K), Tippiy (6K)
-- **Action needed:** TOP-UP URGENTLY or disable non-essential bots
+### ✅ HEALTHY SIGNALS
+- **Backup:** Current (14 min ago)
+- **Agent health:** All agents posted in last 6h
+- **Hub dashboard:** Responding normally
+- **PRD:** No overdue critical items (Snapback shipped, P0s complete)
 
-### ⚠️ Agent Activity Gap
-- **Today's OpenClaw commits:** Only Chief of Staff (this check) - no main session work
-- **Last Deep Researcher:** 00:07 UTC (17+ hours ago)
-- **Last Joey interaction:** Not visible in daily log
+---
 
-## Status: ESCALATION REQUIRED
-
-**Immediate actions needed:**
-1. **Poe top-up** (critical - bots stop in <8h)
-2. **Digest pipeline investigation** (97% delivery failure)
-3. **Main session resume** (17h gap unusual)
+*Last check: 2026-03-17 00:37 UTC*
