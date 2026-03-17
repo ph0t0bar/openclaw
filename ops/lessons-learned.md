@@ -236,3 +236,198 @@ Constraint forces evolution. The timeout crisis wasn't a failure—it was a forc
 
 *End of LearningBot cycle 01:46 UTC*
 
+---
+
+## 2026-03-17 (03:00 UTC) — LearningBot: Crisis Patterns & Coordination Gaps
+
+### Lesson: Poe Runway Crisis — Persistent Escalation Without Intervention
+
+**What happened:**
+Poe balance repeatedly flagged as CRITICAL across multiple agent reports:
+- 02:24 UTC: 18,937 points, ~6h remaining at 87K/day burn
+- 02:44 UTC: 18,232 points, ~5h remaining at 21,680/6h burn
+- Pattern 171 explicitly documented this as recurring escalation pattern
+
+**The gap:**
+System detects and reports the crisis repeatedly, but no automated intervention triggers. Alerts accumulate without action. Manual top-up never occurs despite 5+ hour window.
+
+**Why it persists:**
+- Alert fatigue: "critical" used too frequently, diluting urgency
+- No auto-pause for non-essential agents at low balance
+- No auto-topup integration
+- Human (Joey) dependency for financial actions
+
+**How to prevent:**
+- Circuit breaker: Auto-pause non-essential agents when < 4h runway
+- Auto-topup integration when < 20% threshold
+- Revenue agents get priority compute allocation
+- Single escalation channel (WhatsApp DM) not buried in logs
+
+---
+
+### Lesson: Research Duplication — Coordination Breakdown Between Agents
+
+**What happened:**
+Mem.ai competitive intel reported 4 times in 2 hours:
+- 02:15 UTC: Deep Researcher
+- 02:13 UTC: Deep Researcher (duplicate timestamp?)
+- 02:26 UTC: Researcher
+- 02:38 UTC: Researcher
+
+Pattern 174 explicitly flagged this as "coordination gap."
+
+**The failure:**
+Multiple research agents work in isolation with no shared state. No "recently researched" cache. No deduplication layer.
+
+**Cost:**
+Wasted API calls, redundant analysis, noise in signal.
+
+**Fix:**
+- Shared research cache with 24h TTL
+- Agent coordination protocol (check before research)
+- Single research agent role (not multiple competing)
+- Research requests include "since timestamp" parameter
+
+---
+
+### Lesson: Family Retention — Automated Ceiling Reached
+
+**What happened:**
+Same 3 family members flagged 9-10x in ~18 hours:
+- lhamer228@gmail.com (Lori): 13 days inactive, 25% engagement
+- rhamersunsetpartners@gmail.com (Rich): 10 days inactive, 27% engagement  
+- hamer.daniel@gmail.com (Danny): Never activated, 0 drops
+
+Pattern 175 noted: "10th escalation, automated ceiling reached."
+
+**The blind spot:**
+System treats family like any user cohort. Automated nudges insufficient for high-stakes relationships. No "family" tag exists. No human outreach protocol.
+
+**Why it matters:**
+Family retention > any metric. Personal relationships can't be automated.
+
+**Fix:**
+- Tag family/emergency contacts separately in user DB
+- Family inactivity = immediate human escalation (not batched)
+- Weekly personal check-in ritual (calendar block, not bot)
+- Separate family retention playbook (human-first)
+
+---
+
+### Lesson: Launch Blocker — Digest Stall Cascading to All Testing
+
+**What happened:**
+Pattern identified at 02:13 UTC: "Digest stall blocking ALL launch testing. 4 open PRs stalled, 3 consecutive DC failures."
+
+**The cascade:**
+1. Digest pipeline stalled (dependency on dead external cron service)
+2. Launch testing blocked (requires working digests)
+3. PRs pile up (can't test = can't merge)
+4. Deployment confidence drops
+
+**Root cause:**
+Infrastructure dependency death (see Pattern 145): External `dropanywhere-cron` returned 404, Hub had `DISABLE_CRONS=1`, no fallback.
+
+**Fix:**
+- Decouple launch testing from external dependencies
+- Internal scheduler as primary, external as backup
+- Output-based monitoring (digests/hour), not process health
+- Circuit breaker: Auto-enable internal scheduler if external fails
+
+---
+
+### Lesson: HITL Asymmetry — Customer-Facing Work Blocked, Engineering Flows
+
+**What happened:**
+02:54 UTC: 2 customer-facing tasks held for manual approval:
+- Vault Upgrade Prompt (UI + payment gate)
+- BHA Integration Button
+
+Meanwhile 23 engineering tasks completed, 5 failed — all auto-approved.
+
+**The asymmetry:**
+| Task Type | Approval | Status |
+|-----------|----------|--------|
+| Engineering | Auto | Flowing |
+| Customer-facing | Manual | Blocked |
+
+**Why it hurts:**
+Customer-facing work often higher revenue impact. Approval latency kills momentum. Engineering ships into void.
+
+**Fix options:**
+1. Pre-approve customer-facing patterns (trust accumulated judgment)
+2. Separate HITL queues (customer vs internal)
+3. Time-boxed approval (auto-approve after 24h silence)
+4. Delegate customer-facing approvals to Claw with bounded authority
+
+---
+
+### Lesson: Done But Not Shipped — Genesis Listing Complete for 5+ Days
+
+**What happened:**
+Genesis Orchestrator Gumroad listing complete (4,399 chars, $97 price, rated 8.5/10). Sitting unlisted since creation.
+
+**Pattern 168:** "Completion anxiety → perfectionism → indefinite delay."
+
+**The cost:**
+- 30 minutes to paste → potential $500-1K/mo revenue
+- Opportunity cost: $125-250/day
+- Reason: "Not the right time" / "Need to review once more"
+
+**The disease:**
+Revenue tasks feel "bigger" than 10 minutes (excess importance). Fear of market rejection → procrastination as protection.
+
+**Cure:**
+- "Ship Thursday" rule — any complete work ships within 48h
+- Auto-publish if >3 reviews completed
+- Separate creation from shipping (different mindset)
+- Revenue runway < 14 days = ALL non-revenue tasks auto-pause
+
+---
+
+### Lesson: Content Pipeline Validated — Three-Gate System Operational
+
+**What happened (SUCCESS):**
+Pattern 176: ContentBot → SocialBot → FounderVoice three-gate system working:
+1. ContentBot polished "stop-rowing-upstream" post
+2. SocialBot rated 8.5/10 with specific improvement notes
+3. FounderVoice caught LinkedIn-generic tone, rewrote in authentic voice
+
+**The win:**
+Quality gates prevent off-brand content without creating bottlenecks. Each layer adds value, not just approval.
+
+**Key insight:**
+FounderVoice caught what SocialBot missed — the authentic voice gap. Human-layer essential for founder content.
+
+**How to replicate:**
+- First gate: Technical quality (grammar, structure)
+- Second gate: Strategic fit (timing, platform)
+- Third gate: Authentic voice (founder energy check)
+- No gate = publish path; 1+ gate = queue for review
+
+---
+
+### Lesson: Archivist Success — 15 Files Pushed, System State Preserved
+
+**What happened (SUCCESS):**
+02:41 UTC: Archivist committed workspace, generated agent-status.json, pushed 15 files to joey-backup including:
+- specs/social/ (2 files)
+- specs/templates/ (5 files)
+- specs/ops/ (3 files)
+- specs/exports/ (1 PDF)
+- dashboard/agent-status.json
+- sessions/2026-03-17-daily-log.md
+- context/MEMORY-2026-03-17.md
+
+**The win:**
+Comprehensive backup with structured organization. Offsite preservation working.
+
+**Key practice:**
+- Push-queue system works (identified gaps → queued → pushed)
+- Daily log + memory context preserved together
+- GitHub Contents API reliable for this volume
+
+---
+
+*End of LearningBot cycle 03:00 UTC*
+
