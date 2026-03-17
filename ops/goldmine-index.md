@@ -184,6 +184,16 @@ Eduardo agent workflows:
 - **Transformation Operators:** Gut-punch reframes, visual math, binary choices, proof stacking, countdown clocks
 - Shows Joey as **psychological architect masquerading as technologist** — the bots receive "digital confessions" and shatter the illusion of "unique brokenness"
 
+### 2026-03-17 01:13 UTC — Opus Strategist  
+**File:** `Ingestion/0_VAULT/Documents/20260101_050349_MIC DROP BMM SURPIPHANY - Poe.md`  
+**Discovery:** The "toll booth on the highway" breakthrough — Jan 1, 2026 New Year's insight  
+**Key Insights:**
+- **The Heist (dna.ai.extraction4.5):** "You have 68,000 users. You have 221 bots. You have Stripe. The money isn't in building new engines. It's in putting a toll booth on the highway you already own."
+- **Path of Least Resistance (templa.ai-BIG):** Template architecture for monetizing existing assets vs building new features
+- **Transurfing Core (Surpiphany):** "The true path of least resistance is to change the image within you" — "meh, we'll see" as the antidote to excess importance
+- **CRITICAL RELEVANCE:** Poe currently has 70K users (matching the 68K figure), burning 37K points/6h. The PRD's P0 items (5.1-5.3) ARE the toll booth — cross-promo descriptions, funnel prompts, Gumroad listing. Not new features. Monetizing existing highway.
+- **The Pattern:** Joey keeps rediscovering this insight. Jan 2026: toll booth on highway. Mar 2026: same situation, different crisis (Poe burn). The answer hasn't changed.
+
 ---
 
 *This index auto-updates via Deep Researcher cron (8bb0afbe-cd33-42ed-a9df-8031898494d0)*
