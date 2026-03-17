@@ -11,7 +11,7 @@
 
 **March 3-10 velocity:** 29+ PRs shipped across 4 repos. Poe Orchestrator live with 16 shadow bots. DA crossed 65 users (organic). BHA at 211 users, 531 active weekly visitors. 3 Stripe subs confirmed ($21 MRR). Dropper-Code autonomous pipeline operational (12 tasks completed).
 
-**March 16 metrics update:** DA now at 100 users (+54%), 843 total drops, 7 active in 24h. BHA at 259 users (+23%), 70 active weekly, 7 active in 24h. 2 Pro subs via Stripe. Poe balance critical at 42,770 points (burning ~43K/6h).
+**March 16 metrics update:** DA now at 101 users (+55%), 872 total drops, 7 active in 24h, 38 drops in 24h. BHA at 260 users (+23%), 66 active weekly, 6 active in 24h. 2 Pro subs via Stripe. Poe balance critical at 21,723 points (burning ~21K/6h).
 
 **March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction - not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
 
@@ -67,7 +67,7 @@ The method of loci visualization that anchors every decision. First person, all 
 | **Capture** | DropAnywhere | Live (65 users) | Freemium → Pro ($9/mo planned) |
 | **Process** | oPOErator Hub | Live | Backend, no direct revenue |
 | **Consume** | DA Web App | Live | Part of DA |
-| **Monetize** | BrutallyHonest.ai | Live (211 users, $21 MRR) | Credits + Subscriptions |
+| **Monetize** | BrutallyHonest.ai | Live (260 users, $21 MRR) | Credits + Subscriptions |
 | **Distribute** | Poe Fleet (467 bots) | Live (70K+ users) | Poe points + BHA funnel |
 | **Assist** | OpenClaw | Live | Internal tool |
 | **Execute** | Dropper-Code | Live | Internal automation |
@@ -941,3 +941,4 @@ Joey or Claw can edit this document at any time. When doing so:
 *First published: 2026-03-10. Last manually updated: 2026-03-11 14:04 UTC — Snapback engine + Golden Thread shipped (PR #168).*
 
 *Last auto-refreshed: 2026-03-17 01:17 UTC — DocBot metrics refresh. Section 8 updated: Mar 17 01:17 column added, DA drops 867 (+22), drops_24h 34 (+9), active_24h 7 (+1), BHA users 260 (+1), active_7d 67 (-2), Poe balance 27,027 🚨🔥 (still critical, burn down to 20,612/6h). Digest stall: 3 sent. 8 PRs merged today (#190-194). 🦜*
+
