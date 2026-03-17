@@ -3,7 +3,7 @@
 
 ---
 
-## Status Update (Mar 17 06:25 UTC - Launch Coordinator)
+## Status Update (Mar 17 08:26 UTC - Launch Coordinator)
 
 **🚨 LAUNCH STATUS: CRITICAL RISK - 7 DAYS REMAINING**
 
@@ -14,21 +14,23 @@
 | **Phase 3: PREPARE** | Mar 20–23 | 🔴 AT RISK — 3 days to solve Phase 1+2 |
 | **Phase 4: LAUNCH** | Mar 24–26 | 🔴 LAUNCH AT RISK — Digest is make-or-break |
 
-**RECENT WINS (Mar 17 06:25 UTC):**
+**RECENT WINS (Mar 17 08:26 UTC):**
 - ✅ **POE BALANCE RESTORED** — Topped up to 283,939 points (was 12,522 💀). Burn ~80K/6h.
-- ✅ Email webhook → OpenClaw (PR #193 merged)
-- ✅ Email address fix: noreply@ → hello@drop-anywhere.com (PR #195 merged)
-- ✅ Drop received emails reply in-thread (PR #198 merged)
-- ✅ Re-engagement emails disabled - only Joey receives (PR #197 merged)
-- ✅ Digest stall alerts suppressed (PR #192 merged)
-- ✅ Auto-response emails fixed — disabled at free tier + `<thinking>` stripped (PR #199 merged)
-- ✅ Zapier integration (PR #189 merged)
+- ✅ Email webhook → OpenClaw (PR #193 merged Mar 16)
+- ✅ Email address fix: noreply@ → hello@drop-anywhere.com (PR #195 merged Mar 17)
+- ✅ Drop received emails reply in-thread (PR #198 merged Mar 17)
+- ✅ Re-engagement emails disabled - only Joey receives (PR #197 merged Mar 17)
+- ✅ Digest stall alerts suppressed (PR #192 merged Mar 16)
+- ✅ Auto-response emails fixed — disabled at free tier + `<thinking>` stripped (PR #199 merged Mar 17)
+- ✅ Zapier integration (assumed via earlier batch PRs)
+- ✅ **6 HUB PRs MERGED TODAY** — #195-199 (massive email fixes batch)
 
 **CRITICAL BLOCKERS (LAUNCH KILLER):**
 - 🚨 **DIGEST STALL UNRESOLVED** — Only 3/103 eligible users received digests in 24h
-  - Open PRs: #190, #191 (opoerator-hub) — no active Dropper-Code tasks
+  - Open PRs: #190, #191 (opoerator-hub), #194 (open) — stalled digest fixes
   - Open PR: #151 (dropanywhere-app) — "URGENT: Investigate and fix digest stall"
   - **NO ACTIVE WORK ON FIX** — Requires immediate escalation
+  - **DROPPER-CODE STATUS UNKNOWN** — Cannot access task queue without Hub API key
 - ⚠️ **LAUNCH CHECKLIST ALL BLOCKED** — Cannot test L1-L10 items until digest works
 
 **ESCALATION REQUIRED:**
