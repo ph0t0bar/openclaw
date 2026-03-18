@@ -839,3 +839,4 @@ That third answer is why this spec exists. The system figures it out.
 
 *"We should absolutely have screenshots captured from the tool — not fake ones — legit ones that showcase stuff that are specific to their scenario."*  
 — Joey, March 11, 2026
+
