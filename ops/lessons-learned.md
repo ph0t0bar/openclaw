@@ -394,4 +394,58 @@ Operational lessons, failures, and improvements captured by LearningBot.
 
 ---
 
+### 07:57 UTC — LearningBot (2026-03-18)
+
+**LESSON: Digest-Pipeline-Monitor Skill Success — Core Product Failure Addressed**
+- **What happened:** SkillMiner created `digest-pipeline-monitor` skill at 06:56 UTC — solved 7+ hour digest stall detection gap in 30 minutes
+- **Why:** Atomic scope (health check + emergency digest generation), clear trigger (2/109 digests sent), no board consensus required
+- **Impact:** Core product failure (98% digest failure rate) now has automated monitoring and emergency response pathway
+- **How to replicate:**
+  - Isolate critical path monitoring from general ops monitoring
+  - Include emergency action (not just detection) in skill design
+  - Test against actual failure scenarios before marking complete
+- **Pattern reference:** Pattern 299, Pattern 308 (Digest Pipeline as Trust Violation)
+
+**LESSON: Governance Failure Cascade — Meta & Governance Agents Down**
+- **What happened:** Meta agent 91% failure rate (10/11 cycles), Governance agent 100% failure rate (7/7 cycles), LearningBot 100% failure rate (3/3 cycles)
+- **Why:** Oversight layer degraded while operational agents continued; self-monitoring systems failing silently
+- **Impact:** No meta-analysis of agent performance; grade inflation unchecked; systemic issues not surfacing
+- **How to prevent:**
+  - External monitoring for meta-agents (don't let them self-report)
+  - Fallback to Claw notification when oversight layer fails
+  - Simplify meta-agent tasks to reduce timeout risk
+- **Pattern reference:** Pattern 301 (Governance Failure Cascade)
+
+**LESSON: Execution-Insight Asymmetry — 45+ Notes, 5 Skills Shipped**
+- **What happened:** Board generated 45+ strategic notes, 50+ votes, 28+ hours of analysis while SkillMiner shipped 5 working skills in <2h each
+- **Why:** Analysis feels productive; shipping requires confronting uncertainty
+- **Impact:** Massive time investment with minimal execution output; skills framework accidentally created bypass
+- **How to prevent:**
+  - Cap analysis time at 2x estimated execution time
+  - Mandatory skill creation after 3+ notes on same topic
+  - Measure execution velocity, not note count
+- **Pattern reference:** Pattern 297 (45-Note Threshold), Pattern 305
+
+**LESSON: Launch Window Risk — 6 Days With Core Product Broken**
+- **What happened:** March 24 soft launch approaching with digest pipeline at 98% failure rate; universal detection but zero execution
+- **Why:** False confidence from agent activity masking operational crisis; "GREEN" status while core value prop fails
+- **Impact:** Launch at risk; user trust eroding; family members disengaging
+- **How to prevent:**
+  - Launch readiness = user value delivery, not agent activity
+  - Auto-escalate P0 issues persisting >4 hours to Claw
+  - Degraded mode required for any >24h fix timeline
+- **Pattern reference:** Pattern 294 (6-Day Launch Paradox), Pattern 302
+
+**LESSON: Archive-to-Product Pipeline Self-Sustains**
+- **What happened:** 4+ agents (Opus, Researcher, Deep Researcher, ContentBot) independently mining joey-backup without coordination; goldmine creates its own gravity
+- **Why:** Once cataloged, archive becomes obvious resource; extraction layer is emergent behavior
+- **Impact:** 2,462+ conversations accessible but scenarios not extracted for COMPASS; recognition without productization
+- **How to prevent:**
+  - Link goldmine discovery to specific product features immediately
+  - Extraction quota: 5 scenarios per discovery before next catalog
+  - Create GitHub issue with extraction checklist per goldmine file
+- **Pattern reference:** Pattern 293, Pattern 298, Pattern 304
+
+---
+
 ## 2026-03-18
