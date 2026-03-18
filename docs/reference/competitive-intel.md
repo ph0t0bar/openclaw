@@ -195,23 +195,33 @@
 
 ---
 
-## Key Finding - March 17, 2026 (22:54 UTC)
-**Mem.ai's AI-driven "second brain" positioning — 60% faster note retrieval** — Latest competitive research confirms Mem.ai's continued momentum in 2026:
-- **Notes Researcher AI**: Answers natural language questions across all notes (e.g., "What did the client say about pricing?") with source citations
-- **Smart AI Writer**: Drafts content from existing notes, adapting to user's writing style over time
-- **AI Organizer/Note Finder**: Auto-groups similar notes without folders/tags; surfaces related content by meaning (semantic), not keywords
-- **Performance claims**: Users find notes 60% faster, productivity boosts 20%+
-- **Mem0 framework**: Powers persistent AI agent memory using vector search — Mem.ai's tech is being adopted by the broader AI agent ecosystem
-- **Mem 2.0 features**: Daily Digest (curates relevant notes), Voice Mode (transcribes brain dumps), Agentic Chrome Extension (auto-saves webpages)
+## Key Finding - March 18, 2026 (01:44 UTC)
+**Notion AI Custom Agents vs Mem.ai's Zero-Setup Approach** — Fresh competitive intelligence reveals two distinct AI productivity strategies emerging in 2026:
 
-**Notion AI**: Positioned for flexible workspace features (databases, wikis) but requires more manual setup. Lacks Mem.ai's depth in automatic note connections.
+**Notion AI's "Agent-First" Approach:**
+- **Custom Agents**: 24/7 autonomous tools (Q&A, task routing, status updates) launching May 2026 with credit system
+- **Enterprise integrations**: Deep MCP support (Linear, Figma, HubSpot) for complex workflows
+- **Early success**: 21,000+ agents built by testers, 2,800 running at Notion
+- **Free trial through May 3, 2026** then paid credits model
+- **Strategic position**: Comprehensive workspace automation
 
-**Reflect app**: Limited 2026 coverage; serves as personal knowledge tool with networked notes but fewer highlighted AI advancements vs Mem.ai.
+**Mem.ai's "Zero-Effort" Approach:**
+- **Notes Researcher AI**: Natural language queries with source citations
+- **AI Organizer**: Auto-groups notes by meaning without manual setup
+- **Performance claims**: 60% faster search, 20%+ productivity gains
+- **Mem 2.0 features**: Daily Digest, Voice Mode, Agentic Chrome Extension
+- **Strategic position**: Instant-on AI personal assistant
 
-| Tool | Key Strength | AI Edge | Best For |
-|------|--------------|---------|----------|
-| **Mem.ai** | Zero-effort organization | Deep semantic search, proactive AI | Personal second brain |
-| **Notion AI** | Comprehensive workspace | Flexible structure | Team collaboration |
-| **Reflect** | Privacy/encryption | GPT-4 chat, backlinks | Privacy-first users |
+**Reflect App**: Fresh changelog review shows focus on editor improvements (templates, YJS sync, history browser) but minimal AI advancement in 2026 — may be ceding the AI productivity race.
 
-**Strategic insight**: Mem.ai is positioning as an "active AI assistant" vs manual organization tools. Their convergence on the "proactive second brain" vision validates DropAnywhere's direction. Key differentiators to emphasize: our multi-channel ingestion (email/SMS/voice/chat) and "no inbox" async digest model vs Mem's always-available AI chat interface. Voice capture and agentic web clipping remain feature gaps to monitor.
+| Tool | 2026 Strategy | Key AI Features | Target User |
+|------|---------------|----------------|-------------|
+| **Notion AI** | Agent automation | Custom Agents, enterprise integrations | Teams, complex workflows |
+| **Mem.ai** | Zero-setup intelligence | Semantic search, proactive insights | Individuals, knowledge workers |
+| **Reflect** | Editor refinement | Basic GPT-4 chat, privacy-first | Privacy-conscious personal users |
+
+**Strategic implications for DropAnywhere:**
+1. **Timing advantage**: Free Notion Agent trial through May could pull users, but validates our async automation vision
+2. **Positioning opportunity**: "No inbox" simplicity vs Notion's complexity, "daily digest" vs always-on noise
+3. **Feature gaps**: Voice capture (Mem.ai) and automated web clipping emerging as table stakes
+4. **Differentiation**: Multi-channel ingestion (email/SMS/voice/chat) remains unique in this landscape
