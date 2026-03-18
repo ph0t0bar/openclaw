@@ -108,5 +108,26 @@ personas/                # Identity/role definitions
 
 **Research Priority:** 🔥 **CRITICAL** — INDEX.json contains 272KB of structured intelligence
 
+## 🏆 Gold Strikes
+
+### 2026-03-18 03:06 UTC — Opus Strategist
+**File:** `.claude/context/FULL-PICTURE.md` (293 lines)
+**Value:** Joey's core identity and strategic philosophy revealed
+
+**Key Insights:**
+- **Identity:** "Human psychologist using AI to build frameworks that help people transcend limitations" (not just AI entrepreneur)
+- **Core Pattern:** Problems > features, Layers (5 deep) > steps, Velocity > perfection (415+ bots shipped)
+- **The Vulnerability Gap:** Modern phenomenon where AI becomes safe confessor for "too shameful for humans" confessions
+- **Council System:** 3-10 AI models in parallel for major decisions (Trinity structure)
+- **Business Philosophy:** "Stop bossing, start doing" — filter for AI operators
+- **Enterprise Background:** 12 years ad-tech, survived two $1.2B acquisitions, trained Disney/Google/Intel/Ford
+
+**Strategic Revelation:** BrutallyHonest.ai isn't a chatbot marketplace — it's a **digital confession booth** solving the "Illusion of Unique Brokenness" (users think their pain is uniquely shameful; Joey shows them it's universal).
+
+**Application to Current Crisis:**
+- Digest stalls aren't technical failures — they're trust violations
+- Template redesign isn't about aesthetics — it's about creating safe psychological containers
+- Revenue tactics miss the point — this is about building frameworks for human transformation
+
 ---
 *This index represents the tip of the iceberg. Each folder contains years of strategic thinking, product development, and AI experimentation.*
