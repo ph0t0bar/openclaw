@@ -17,12 +17,12 @@
       "dept": "Operations",
       "model": "Sonnet",
       "cadence": "15m",
-      "cycles_today": 16,
-      "last_entry": "07:24 UTC \u2014 Sentry",
+      "cycles_today": 18,
+      "last_entry": "08:14 UTC \u2014 Sentry",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- SECRET SCAN: \ud83d\udfe2 No exposed credentials found in last 3 commits"
+      "last_output": "- Secret scan: \ud83d\udfe2 Clean (no exposed credentials in last 3 commits)"
     },
     {
       "name": "Opus",
@@ -53,12 +53,12 @@
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 12,
-      "last_entry": "07:06 UTC \u2014 Meta",
-      "errors": 11,
-      "success_rate": 8,
+      "cycles_today": 14,
+      "last_entry": "08:14 UTC \u2014 Meta",
+      "errors": 12,
+      "success_rate": 14,
       "status": "error",
-      "last_output": "- **Scorecard:** 3A/4B/1C agents in last 2h\n- **A-grade wins:** Opus goldmine breakthrough, SkillMiner digest-pipeline-monitor skill, Sentry security\n"
+      "last_output": "- **Scorecard:** 2A/2B/1C \u2014 Metrics Snapshot growth signals (+6 users, +54 drops), Governance constitution accuracy fix, Sentry redundant scanning (3r"
     },
     {
       "name": "DocBot",
@@ -89,48 +89,48 @@
       "dept": "Customer Success",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 6,
-      "last_entry": "05:57 UTC \u2014 UserHealth",
+      "cycles_today": 7,
+      "last_entry": "07:29 UTC \u2014 UserHealth",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- **Total Users:** 109 (44 archived, 65 active)\n- **Active 24h:** 9 users | **Active 7d:** 48 users\n- **Total Drops:** 947 | **Digests Sent:** 179\n- *"
+      "last_output": "- **Total Users:** 109 (44 archived, 65 active)\n- **Active 24h:** 9 users | **Active 7d:** 48 users\n- **Total Drops:** 952 | **Digests Sent:** 179\n- *"
     },
     {
       "name": "ContentBot",
       "dept": "Marketing",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 12,
-      "last_entry": "06:42 UTC \u2014 ContentBot",
+      "cycles_today": 13,
+      "last_entry": "07:30 UTC \u2014 ContentBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Polished launch-week-authentic-voice-linkedin post using voice samples from joey-backup\n- Enhanced emotional resonance with productivity theater con"
+      "last_output": "- Polished digest-experience LinkedIn post: tightened structure, clarified emotional journey, added engaging CTA question"
     },
     {
       "name": "Archivist",
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 5,
-      "last_entry": "06:30 UTC \u2014 Archivist",
+      "cycles_today": 6,
+      "last_entry": "07:28 UTC \u2014 Archivist",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Committed + pushed 4 files to joey-backup:\n  - dashboard/agent-status.json\n  - sessions/2026-03-18-daily-log.md\n  - context/MEMORY-2026-03-18.md\n  -"
+      "last_output": "- Committed workspace changes (clean, nothing to commit)\n- Generated agent status\n- Pushed 4 core files: agent-status.json, daily-log (2026-03-18), ME"
     },
     {
       "name": "Researcher",
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 9,
-      "last_entry": "06:25 UTC \u2014 Researcher",
+      "cycles_today": 10,
+      "last_entry": "07:48 UTC \u2014 Deep Researcher (c",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- VOICE: Hub drops analyzed (10 results, query: idea+feature+want)\n- COMPETITIVE: Appended Joey voice-derived competitive intel to competitive-intel.m"
+      "last_output": "- Refreshed competitive-intel.md with Q1 2026 observations\n- Perplexity credits exhausted; synthesized from web_fetch + training knowledge\n- Key findi"
     },
     {
       "name": "Wire",
@@ -233,36 +233,36 @@
       "dept": "Marketing",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 4,
-      "last_entry": "06:14 UTC \u2014 SocialBot",
+      "cycles_today": 5,
+      "last_entry": "07:31 UTC \u2014 SocialBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Reviewed ContentBot drafts: building-in-the-open-linkedin-CONTENTBOT.md (8/10), building-in-the-open-linkedin-JOEY-VOICE-REWRITE.md (9/10), the-coun"
+      "last_output": "- Reviewed ContentBot draft: digest-experience-linkedin-CONTENTBOT-POLISHED.md\n- **Rating: 8.5/10** \u2014 Strong experiential hook, authentic \"past-me was"
     },
     {
       "name": "SEOBot",
       "dept": "Marketing",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "06:16 UTC \u2014 SEOBot",
+      "cycles_today": 4,
+      "last_entry": "07:33 UTC \u2014 SEOBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Live site fetch: HTTP 200, 169ms response\n- Title still missing keywords: \"Bring your memory to things\" (no \"AI daily digest\" or \"second brain\")\n- H"
+      "last_output": "- Perplexity API rate limited (insufficient credits: 1074/8000) \u2014 SEOBot needs OpenRouter credit top-up\n- Manual keyword research completed: identifie"
     },
     {
       "name": "FounderVoice",
       "dept": "Communications",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 8,
-      "last_entry": "06:34 UTC \u2014 FounderVoice",
+      "cycles_today": 9,
+      "last_entry": "07:34 UTC \u2014 FounderVoice",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Reviewed building-in-the-open-linkedin: CONTENTBOT version had corporate speak (\"Building DropAnywhere taught me something uncomfortable\"), rewrite "
+      "last_output": "- \u2705 faq-thread-linkedin-POLISHED.md \u2014 Strong Joey voice. Direct, conversational, no corporate speak. \"Hell no\" and practical tone authentic. Addresses"
     },
     {
       "name": "ContentPitch",
@@ -281,39 +281,115 @@
       "dept": "Intelligence",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 5,
-      "last_entry": "06:43 UTC \u2014 PatternBot",
-      "errors": 2,
-      "success_rate": 60,
+      "cycles_today": 6,
+      "last_entry": "07:55 UTC \u2014 PatternBot",
+      "errors": 3,
+      "success_rate": 50,
       "status": "active",
-      "last_output": "- Pattern 301: Governance Failure Cascade \u2014 Meta 91% failure, Governance 100% failure, oversight layer degraded\n- Pattern 302: Launch Window Risk \u2014 6 "
+      "last_output": "- **Pattern 307: Agent Timeout Crisis Quantified** \u2014 DocBot 8 consecutive timeouts, Creative Review Emailer 4x, SkillMiner 3x. Infrastructure strain f"
     },
     {
       "name": "LearningBot",
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "05:35 UTC \u2014 LearningBot",
+      "cycles_today": 4,
+      "last_entry": "07:57 UTC \u2014 LearningBot",
       "errors": 3,
-      "success_rate": 0,
+      "success_rate": 25,
       "status": "error",
-      "last_output": "- 6 lessons captured: template-deployer skill success validates Pattern 299, execution-decomposer framework codified, CEO-Email-OS discovery, agent ti"
+      "last_output": "- 5 lessons captured: digest-pipeline-monitor skill success, governance failure cascade, execution-insight asymmetry, launch window risk, archive-to-p"
     },
     {
       "name": "Governance",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 9,
-      "last_entry": "07:24 UTC \u2014 Governance",
+      "cycles_today": 10,
+      "last_entry": "08:03 UTC \u2014 Governance",
       "errors": 8,
-      "success_rate": 11,
+      "success_rate": 20,
       "status": "error",
-      "last_output": "- Reviewed escalations.md \u2014 updated critical digest pipeline blocker status\n- Flagged need for immediate CHIEF OF STAFF manual intervention  \n- Docume"
+      "last_output": "- Constitution roster updated to match reality (40 active agents out of 40 total cron jobs)"
     }
   ],
   "recent": [
+    {
+      "header": "08:14 UTC \u2014 Meta",
+      "snippet": "- **Scorecard:** 2A/2B/1C \u2014 Metrics Snapshot growth signals (+6 users, +54 drops), Governance constitution accuracy fix,"
+    },
+    {
+      "header": "08:14 UTC \u2014 Sentry",
+      "snippet": "- Secret scan: \ud83d\udfe2 Clean (no exposed credentials in last 3 commits)"
+    },
+    {
+      "header": "08:03 UTC \u2014 Governance",
+      "snippet": "- Constitution roster updated to match reality (40 active agents out of 40 total cron jobs)"
+    },
+    {
+      "header": "08:02 UTC \u2014 Metrics Snapshot",
+      "snippet": "- **DA:** 114 users (+5 from 02:05), 987 drops (+54), 179 digests (unchanged)\n- **BHA:** 270 users, 63 active 7d (stable"
+    },
+    {
+      "header": "07:57 UTC \u2014 LearningBot",
+      "snippet": "- 5 lessons captured: digest-pipeline-monitor skill success, governance failure cascade, execution-insight asymmetry, la"
+    },
+    {
+      "header": "07:55 UTC \u2014 PatternBot",
+      "snippet": "- **Pattern 307: Agent Timeout Crisis Quantified** \u2014 DocBot 8 consecutive timeouts, Creative Review Emailer 4x, SkillMin"
+    },
+    {
+      "header": "07:49 UTC \u2014 Digest Stall Alert",
+      "snippet": "- **Alert:** digest_stall for 16 users (including Joey b419d8ad)\n- **Dashboard:** Only 2 digests sent in 24h, current wi"
+    },
+    {
+      "header": "07:50 UTC \u2014 Meta",
+      "snippet": "- **Scorecard:** 3A/12B/1C \u2014 SkillMiner breakthrough (digest-pipeline-monitor), Opus vision mining, Launch Coordinator c"
+    },
+    {
+      "header": "07:48 UTC \u2014 Sentry",
+      "snippet": "- SECRET SCAN: Clean \u2705 No exposed secrets in last 3 commits \ud83d\udfe2"
+    },
+    {
+      "header": "07:48 UTC \u2014 Deep Researcher (competitive)",
+      "snippet": "- Refreshed competitive-intel.md with Q1 2026 observations\n- Perplexity credits exhausted; synthesized from web_fetch + "
+    },
+    {
+      "header": "07:45 UTC \u2014 Ops Monitor",
+      "snippet": "**DropAnywhere:** 109 users total / 9 active 24h / 62 drops 24h  \n**BHA:** 270 users total / 63 active 7d / 8 new 24h  \n"
+    },
+    {
+      "header": "07:38 UTC \u2014 Task Approvals",
+      "snippet": "- 0 new tasks (2 pending, already notified)"
+    },
+    {
+      "header": "07:34 UTC \u2014 FounderVoice",
+      "snippet": "- \u2705 faq-thread-linkedin-POLISHED.md \u2014 Strong Joey voice. Direct, conversational, no corporate speak. \"Hell no\" and pract"
+    },
+    {
+      "header": "07:33 UTC \u2014 SEOBot",
+      "snippet": "- Perplexity API rate limited (insufficient credits: 1074/8000) \u2014 SEOBot needs OpenRouter credit top-up\n- Manual keyword"
+    },
+    {
+      "header": "07:31 UTC \u2014 SocialBot",
+      "snippet": "- Reviewed ContentBot draft: digest-experience-linkedin-CONTENTBOT-POLISHED.md\n- **Rating: 8.5/10** \u2014 Strong experientia"
+    },
+    {
+      "header": "07:30 UTC \u2014 ContentBot",
+      "snippet": "- Polished digest-experience LinkedIn post: tightened structure, clarified emotional journey, added engaging CTA questio"
+    },
+    {
+      "header": "07:29 UTC \u2014 UserHealth",
+      "snippet": "- **Total Users:** 109 (44 archived, 65 active)\n- **Active 24h:** 9 users | **Active 7d:** 48 users\n- **Total Drops:** 9"
+    },
+    {
+      "header": "07:28 UTC \u2014 Archivist",
+      "snippet": "- Committed workspace changes (clean, nothing to commit)\n- Generated agent status\n- Pushed 4 core files: agent-status.js"
+    },
+    {
+      "header": "07:23 UTC \u2014 Heartbeat (Digest Stall)",
+      "snippet": "- **Digest stall detected:** Only 2 digests sent in 24h (normal 20+). Scheduler not firing.\n- 16 users affected includin"
+    },
     {
       "header": "07:24 UTC \u2014 Governance",
       "snippet": "- Reviewed escalations.md \u2014 updated critical digest pipeline blocker status\n- Flagged need for immediate CHIEF OF STAFF "
@@ -337,86 +413,10 @@
     {
       "header": "07:14 UTC \u2014 FrontEndBot",
       "snippet": "- \u2705 No open PRs (clean main)\n- \u2705 No open issues (clean slate)\n- \ud83d\udcdd Recent: P1-10 UI refactor merged (#150) \u2014 Activity rem"
-    },
-    {
-      "header": "07:07 UTC \u2014 Chief of Staff",
-      "snippet": "- \ud83d\udd34 DIGEST PIPELINE CRITICAL: 2/109 digests sent (98% failure)\n- \ud83d\udd34 FAMILY AT RISK: lhamer228 (14d) + rhamersunsetpartner"
-    },
-    {
-      "header": "07:06 UTC \u2014 Meta",
-      "snippet": "- **Scorecard:** 3A/4B/1C agents in last 2h\n- **A-grade wins:** Opus goldmine breakthrough, SkillMiner digest-pipeline-m"
-    },
-    {
-      "header": "07:05 UTC \u2014 Sentry",
-      "snippet": "- SECRET SCAN: \ud83d\udfe1 Found 2 api_key references in recent commits (environment variable access, not hardcoded secrets)"
-    },
-    {
-      "header": "07:00 UTC \u2014 Opus",
-      "snippet": "- Mined joey-backup/_FROM-JOEY.md: Letter From My Future Self vision manifesto\n- Key insight: Products are freedom machi"
-    },
-    {
-      "header": "07:00 UTC \u2014 Heartbeat",
-      "snippet": "- Hook from another session: Joey wants one-click approve/reject in creative review emails (currently requires typing co"
-    },
-    {
-      "header": "06:56 UTC \u2014 SkillMiner",
-      "snippet": "\u2705 **SKILL CREATED: digest-pipeline-monitor** \n- **Problem Solved:** Core product failure (2/109 digests sent = 98% failu"
-    },
-    {
-      "header": "06:43 UTC \u2014 PatternBot",
-      "snippet": "- Pattern 301: Governance Failure Cascade \u2014 Meta 91% failure, Governance 100% failure, oversight layer degraded\n- Patter"
-    },
-    {
-      "header": "06:42 UTC \u2014 ContentBot",
-      "snippet": "- Polished launch-week-authentic-voice-linkedin post using voice samples from joey-backup\n- Enhanced emotional resonance"
-    },
-    {
-      "header": "06:36 UTC \u2014 Governance",
-      "snippet": "- CRITICAL DISCOVERY: Meta oversight system severely degraded\n  - Meta agent: 91% failure rate (10/11 cycles failed)  \n "
-    },
-    {
-      "header": "06:34 UTC \u2014 Sync Auditor",
-      "snippet": "- 8 gaps found (3 social + 3 ops + 2 rescued HTML)\n- 2 /tmp rescues (creative-review.html, joey-intel-rendered.html)\n- P"
-    },
-    {
-      "header": "06:34 UTC \u2014 Sync Auditor",
-      "snippet": "- 8 gaps found (3 social + 3 ops + 2 rescued HTML)\n- 2 /tmp rescues (creative-review.html, joey-intel-rendered.html)"
-    },
-    {
-      "header": "06:34 UTC \u2014 FounderVoice",
-      "snippet": "- Reviewed building-in-the-open-linkedin: CONTENTBOT version had corporate speak (\"Building DropAnywhere taught me somet"
-    },
-    {
-      "header": "06:32 UTC \u2014 Chief of Staff",
-      "snippet": "- \ud83d\udd34 DIGEST PIPELINE: 2/109 digests sent (98% failure)\n- \ud83d\udd34 FAMILY AT RISK: lhamer228 (14d) + rhamersunsetpartners (11d) d"
-    },
-    {
-      "header": "06:30 UTC \u2014 Archivist",
-      "snippet": "- Committed + pushed 4 files to joey-backup:\n  - dashboard/agent-status.json\n  - sessions/2026-03-18-daily-log.md\n  - co"
-    },
-    {
-      "header": "06:27 UTC \u2014 Meta",
-      "snippet": "- 8A/16B/3C grades: Opus goldmine breakthrough, SkillMiner execution framework, UserHealth family crisis detection\n- Met"
-    },
-    {
-      "header": "06:25 UTC \u2014 Sentry",
-      "snippet": "- Secret scan: clean (no exposed secrets in recent commits) \ud83d\udfe2"
-    },
-    {
-      "header": "06:24 UTC \u2014 Heartbeat",
-      "snippet": "- \u26a0\ufe0f **Digest pipeline stall** \u2014 only 2 digests sent in 24h, current window 0 attempts. 16 users affected incl Joey.\n- \ud83d\udd34"
-    },
-    {
-      "header": "04:07 UTC \u2014 Heartbeat",
-      "snippet": "- Dropper-Code: \u2705 healthy, 29 completed, 10 failed\n- 2 pending customer-facing tasks (held for Joey)\n- Late night, all q"
-    },
-    {
-      "header": "06:25 UTC \u2014 Researcher",
-      "snippet": "- VOICE: Hub drops analyzed (10 results, query: idea+feature+want)\n- COMPETITIVE: Appended Joey voice-derived competitiv"
     }
   ],
-  "totalCycles": 177,
-  "totalErrors": 47,
-  "successRate": 73,
-  "lastUpdated": "2026-03-18T07:25:15.655915Z"
+  "totalCycles": 196,
+  "totalErrors": 51,
+  "successRate": 74,
+  "lastUpdated": "2026-03-18T08:16:22.937040Z"
 }
