@@ -6,9 +6,9 @@
 ## Priority Order (work top to bottom)
 
 ### P0 — Launch Blockers
-- [ ] Email-only onboarding flow (new user → first email → first digest)
-- [ ] Stripe payment fix (3 failed charges, 0 succeeded — investigate)
-- [ ] Landing page copy finalized for email-only pivot
+- [ ] Email-only onboarding flow (new user → first email → first digest) *[TASK: task_1773828520_702 - APPROVED]*
+- [ ] Stripe payment fix (3 failed charges, 0 succeeded — investigate) *[TASK: task_1773828541_578 - APPROVED]*
+- [ ] Landing page copy finalized for email-only pivot *[TASK: task_1773828571_815 - APPROVED]*
 - [ ] Email ingestion reliability (drops via email must never fail)
 
 ### P1 — Launch Critical
