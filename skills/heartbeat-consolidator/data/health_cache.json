@@ -1,0 +1,243 @@
+{
+  "timestamp": "2026-03-18T08:31:03.862369+00:00",
+  "collection_time": 1773822668.6374366,
+  "hub_dashboard": {
+    "timestamp": "2026-03-18T08:31:03.918104",
+    "status": "ok",
+    "dropanywhere": {
+      "users_total": 119,
+      "users_active_24h": 19,
+      "users_with_email": 119,
+      "drops_24h": 147,
+      "drops_total": 1039,
+      "digests_sent_24h": 2
+    },
+    "brutallyhonest": {
+      "total": 270,
+      "active_24h": 10,
+      "active_7d": 63,
+      "pro": 2,
+      "new_24h": 8,
+      "pro_source": "stripe"
+    },
+    "poe": {
+      "balance": 2259153,
+      "usage_6h_points": 57271,
+      "usage_6h_calls": 100,
+      "top_bots_6h": {
+        "Kimi-K2.5": 54001,
+        "Gemini-3-Flash": 2700,
+        "theREALrealtalk": 570
+      }
+    },
+    "stripe": {
+      "charges_4h": 0,
+      "succeeded": 0,
+      "revenue_4h": 0.0,
+      "failed": 0
+    },
+    "resend": {
+      "sent_24h": 100,
+      "events": {
+        "delivered": 97,
+        "delivery_delayed": 1,
+        "bounced": 2
+      }
+    },
+    "github": {
+      "dropanywhere-app": {
+        "ci": "unknown",
+        "open_issues": 0
+      },
+      "opoerator-hub": {
+        "ci": "unknown",
+        "open_issues": 1
+      },
+      "openclaw": {
+        "ci": "failure",
+        "open_issues": 0
+      },
+      "brutallyhonest-next": {
+        "ci": "unknown",
+        "open_issues": 0
+      },
+      "dropanywhere-cron": {
+        "ci": "unknown",
+        "open_issues": 0
+      },
+      "joey-backup": {
+        "ci": "unknown",
+        "open_issues": 0
+      }
+    },
+    "railway": {
+      "hub": [
+        {
+          "status": "SUCCESS",
+          "created": "2026-03-18T07:47:56.166Z"
+        },
+        {
+          "status": "REMOVED",
+          "created": "2026-03-17T10:17:02.044Z"
+        },
+        {
+          "status": "REMOVED",
+          "created": "2026-03-17T04:32:37.766Z"
+        }
+      ],
+      "openclaw": [
+        {
+          "status": "SUCCESS",
+          "created": "2026-03-18T00:41:17.114Z"
+        },
+        {
+          "status": "REMOVED",
+          "created": "2026-03-18T00:40:34.878Z"
+        },
+        {
+          "status": "REMOVED",
+          "created": "2026-03-18T00:39:27.067Z"
+        }
+      ]
+    },
+    "errors": {},
+    "digest_pipeline": {
+      "window_hour": "2026-03-18-08",
+      "attempts": 0
+    },
+    "messages": [
+      {
+        "id": "msg_1773721418_30",
+        "from": "unknown",
+        "message": "Task completed: task_1773721150_704\nPR ready for review: https://github.com/ph0t0bar/opoerator-hub/pull/199",
+        "priority": "normal",
+        "topic": "general",
+        "ts": "2026-03-17T04:23:38.503308+00:00"
+      },
+      {
+        "id": "msg_1773751727_31",
+        "from": "unknown",
+        "message": "Task failed: task_1773751545_335\nClaude Code failed (exit 1): You're out of extra usage \u00b7 resets Mar 20, 3am (UTC)",
+        "priority": "high",
+        "topic": "general",
+        "ts": "2026-03-17T12:48:47.670019+00:00"
+      },
+      {
+        "id": "msg_1773752632_23",
+        "from": "unknown",
+        "message": "Task failed: task_1773752442_801\nClaude Code failed (exit 1): You're out of extra usage \u00b7 resets Mar 20, 3am (UTC)",
+        "priority": "high",
+        "topic": "general",
+        "ts": "2026-03-17T13:03:52.192019+00:00"
+      },
+      {
+        "id": "msg_1773753790_24",
+        "from": "unknown",
+        "message": "Brain scan failed: You're out of extra usage \u00b7 resets Mar 20, 3am (UTC)",
+        "priority": "low",
+        "topic": "general",
+        "ts": "2026-03-17T13:23:10.961182+00:00"
+      },
+      {
+        "id": "msg_1773753836_25",
+        "from": "unknown",
+        "message": "Task failed: task_1773753772_790\nClaude Code failed (exit 1): You're out of extra usage \u00b7 resets Mar 20, 3am (UTC)",
+        "priority": "high",
+        "topic": "general",
+        "ts": "2026-03-17T13:23:56.307560+00:00"
+      },
+      {
+        "id": "msg_1773755053_26",
+        "from": "unknown",
+        "message": "Task failed: task_1773754790_862\nClaude Code failed (exit 1): You're out of extra usage \u00b7 resets Mar 20, 3am (UTC)",
+        "priority": "high",
+        "topic": "general",
+        "ts": "2026-03-17T13:44:13.806662+00:00"
+      },
+      {
+        "id": "msg_1773755057_27",
+        "from": "unknown",
+        "message": "Task failed: task_1773754891_855\nClaude Code failed (exit 1): You're out of extra usage \u00b7 resets Mar 20, 3am (UTC)",
+        "priority": "high",
+        "topic": "general",
+        "ts": "2026-03-17T13:44:17.860504+00:00"
+      },
+      {
+        "id": "msg_1773817778_28",
+        "from": "unknown",
+        "message": "Task completed: task_1773817253_164\nPR ready for review: https://github.com/ph0t0bar/opoerator-hub/pull/200",
+        "priority": "normal",
+        "topic": "general",
+        "ts": "2026-03-18T07:09:38.816858+00:00"
+      },
+      {
+        "id": "msg_1773819083_27",
+        "from": "unknown",
+        "message": "Task failed: task_1773818799_113\nClaude Code failed (exit 1): API Error: Headers.append: \"Bearer sk-ant-oat01-GgOnC1ECc_PuB3lribdZM-yOhhVtWvaeJtkFiL9rkTyx4OYNkeJt9NOXiEcBu8aWF0m\nFZLw6PLBWS-P5UAaYFw-hRPk4QAA\" is an invalid header value.",
+        "priority": "high",
+        "topic": "general",
+        "ts": "2026-03-18T07:31:23.782306+00:00"
+      },
+      {
+        "id": "msg_1773819598_28",
+        "from": "unknown",
+        "message": "Task completed: task_1773818799_113\nPR ready for review: https://github.com/ph0t0bar/opoerator-hub/pull/201",
+        "priority": "normal",
+        "topic": "general",
+        "ts": "2026-03-18T07:39:58.781700+00:00"
+      }
+    ]
+  },
+  "digest_pipeline": {
+    "status": "unknown",
+    "digests_sent_24h": 0,
+    "digest_attempts": 0,
+    "total_users": 0,
+    "delivery_rate": 0
+  },
+  "da_users": {
+    "total_users": 0,
+    "active_24h": 0,
+    "active_7d": 0,
+    "total_drops": 0,
+    "drops_24h": 0,
+    "premium_users": 0
+  },
+  "bha_users": {
+    "total_users": 0,
+    "active_7d": 0,
+    "new_24h": 0,
+    "pro_users": 0
+  },
+  "poe_balance": {
+    "balance": 0,
+    "burn_6h": 0,
+    "runway_hours": Infinity,
+    "status": "critical"
+  },
+  "errors": {
+    "errors_24h": 0,
+    "last_error_hour": null,
+    "error_rate": 0
+  },
+  "family_users": {
+    "family_count": 3,
+    "at_risk_count": 2,
+    "engagement_issues": [
+      "lhamer228",
+      "rhamersunsetpartners"
+    ]
+  },
+  "ci_status": {
+    "status": "unknown",
+    "note": "CI check not implemented yet"
+  },
+  "stripe": {
+    "succeeded_4h": 0,
+    "failed_4h": 0,
+    "revenue_4h": 0
+  },
+  "changes": {
+    "all_new": true
+  }
+}

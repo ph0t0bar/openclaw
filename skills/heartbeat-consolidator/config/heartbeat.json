@@ -1,0 +1,59 @@
+{
+  "cache_ttl_seconds": 1800,
+  "collection_interval": 1800,
+  "emergency_override_keywords": ["critical", "down", "failed", "error", "family"],
+  "agent_filters": {
+    "chief-of-staff": {
+      "metrics": ["digest_pipeline", "family_users", "ci_status", "poe_balance", "errors"],
+      "alert_keywords": ["critical", "failed", "family", "digest"],
+      "format": "status_summary",
+      "priority": "high"
+    },
+    "ops-monitor": {
+      "metrics": ["da_users", "bha_users", "poe_balance", "stripe", "errors"],
+      "alert_keywords": ["degraded", "error", "revenue"],
+      "format": "metrics_table",
+      "priority": "medium"
+    },
+    "unified-ops-monitor": {
+      "metrics": ["da_users", "bha_users", "poe_balance", "stripe", "errors"],
+      "alert_keywords": ["degraded", "error", "revenue"],
+      "format": "metrics_table",
+      "priority": "low",
+      "note": "Duplicate of ops-monitor - candidate for deprecation"
+    },
+    "user-health": {
+      "metrics": ["da_users", "family_users", "digest_pipeline"],
+      "alert_keywords": ["family", "engagement", "retention"],
+      "format": "user_focus",
+      "priority": "high"
+    },
+    "patrol": {
+      "metrics": ["da_users", "bha_users", "poe_balance", "errors", "ci_status"],
+      "alert_keywords": ["critical", "down", "failed"],
+      "format": "alert_focus",
+      "priority": "high"
+    }
+  },
+  "thresholds": {
+    "digest_delivery_rate": {
+      "critical": 0.1,
+      "degraded": 0.5,
+      "healthy": 0.8
+    },
+    "poe_balance": {
+      "critical": 50000,
+      "warning": 200000,
+      "healthy": 500000
+    },
+    "error_rate": {
+      "warning": 10,
+      "critical": 50
+    }
+  },
+  "emergency_contacts": {
+    "family_risk": ["whatsapp", "webhook"],
+    "poe_critical": ["webhook"],
+    "digest_critical": ["webhook"]
+  }
+}
