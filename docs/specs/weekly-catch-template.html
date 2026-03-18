@@ -1,0 +1,37 @@
+<!--
+  Weekly Catch Email Template — Brooke Theme
+  Used by: DropAnywhere Weekly Catch / Snapback system
+  Style: Watercolor accent bar, Georgia serif, Inter body, copper/sage accents
+  
+  Variables to replace:
+    {{DATE_RANGE}}     — e.g. "March 9 – 15, 2026"
+    {{BODY_HTML}}      — Main narrative content (paragraphs, quotes, callouts)
+    {{METRICS_TABLE}}  — HTML table with week-over-week metrics
+    {{ACTION_BOXES}}   — Cream callout boxes for action items
+    {{USER_NAME}}      — Recipient first name (optional personalization)
+-->
+<div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto; padding: 40px 24px; color: #2D2A26; line-height: 1.7;">
+
+  <!-- Watercolor accent bar -->
+  <div style="width: 100%; height: 6px; background: linear-gradient(to right, #A8B5A0 0%, #B5BFA8 18%, #C9C4B0 32%, #D4B8A0 48%, #D4A5A5 62%, #C9B5A8 78%, #BDB8A5 100%); opacity: 0.7; margin-bottom: 32px;"></div>
+
+  <!-- Title block -->
+  <h1 style="font-family: Georgia, serif; font-size: 28px; font-weight: 400; color: #2D2A26; margin: 0 0 4px 0; letter-spacing: -0.5px;">The Weekly Catch</h1>
+  <p style="font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; color: #9B9590; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 24px 0;">{{DATE_RANGE}}</p>
+
+  <hr style="border: none; border-top: 1px solid #D5CEC5; margin: 24px 0;">
+
+  <!-- === BODY CONTENT === -->
+  {{BODY_HTML}}
+
+  <!-- === CLOSING === -->
+  <hr style="border: none; border-top: 1px solid #D5CEC5; margin: 32px 0;">
+
+  <p style="font-family: Georgia, serif; font-style: italic; color: #9B9590; text-align: center;">Drop everything else. Catch it Sunday.</p>
+
+  <!-- Bottom accent -->
+  <div style="text-align: center; margin-top: 32px;">
+    <div style="width: 40px; height: 2px; background: #C4A484; margin: 0 auto;"></div>
+  </div>
+
+</div>
