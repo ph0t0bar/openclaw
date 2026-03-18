@@ -6,7 +6,7 @@
 ## Content Pieces (work top to bottom)
 
 ### Must Have (by Mar 23)
-- [ ] LinkedIn announcement post — founder story, email-only pivot, personal
+- [x] LinkedIn announcement post — founder story, email-only pivot, personal
 - [ ] Launch email to soft-launch list (10-15 people, personal, warm)
 - [ ] Blog post: "Why Your Second Brain Should Live in Email" (1500 words)
 - [ ] Twitter/X thread (8-10 tweets, problem → solution arc)
@@ -33,3 +33,6 @@
 
 ## Completed
 _(GROW DRIVER moves items here with date)_
+
+### 2026-03-18
+- [x] LinkedIn announcement post — founder story, email-only pivot, personal (saved to social/drafts/)
