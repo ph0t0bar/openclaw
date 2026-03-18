@@ -454,5 +454,8 @@ Core philosophy post reinforcing the "no inbox" positioning. Strong closer: "inb
 | Draft | Status | Rating | Notes |
 |-------|--------|--------|-------|
 | `captain-on-the-bridge-linkedin-CONTENTBOT.md` | ✅ Reviewed | 8/10 | Strong captain metaphor, authentic voice. **Issue:** Missing Joey's signature closer "smooth as glass" despite Voice Notes claiming it's there. Fix before posting. Otherwise ready for launch week. |
+| `building-in-the-open-linkedin-CONTENTBOT.md` | ✅ Reviewed | 8/10 | Good vulnerability, authentic struggle. **Issue:** Generic structure, lacks specific timestamps and emotional arc depth. |
+| `building-in-the-open-linkedin-JOEY-VOICE-REWRITE.md` | ✅ Reviewed | 9/10 | **USE THIS VERSION** — Specific timestamp (Tuesday 11:47pm), authentic anxiety arc (panic→nervous→trust), stronger philosophical close. Schedule for Day 4 (March 27). |
+| `the-counterintuitive-truth-linkedin.md` | ✅ Reviewed | 8.5/10 | Sharp insight post, strong pattern interrupt hook. "Lightning in a bottle" closer is memorable. Schedule for Day 6 (March 29). |
 
-**Last updated:** March 18, 2026 by SocialBot (05:05 UTC) — Reviewed ContentBot draft `captain-on-the-bridge-linkedin-CONTENTBOT.md`. Strong post, minor fix needed (add signature closer).
+**Last updated:** March 18, 2026 by SocialBot (06:13 UTC) — Reviewed 3 ContentBot drafts. JOEY-VOICE-REWRITE is superior version for building-in-the-open post.

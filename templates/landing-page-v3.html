@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DropAnywhere — The smartest app you never have to download</title>
+  <meta name="description" content="Drop any thought, file, or to-do into your email. Wake up to one organized digest. No app. No dashboard. Just your inbox.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cream: #FAF8F5;
+      --warm-white: #FFFEFA;
+      --soft-black: #2D2A26;
+      --muted: #8B8680;
+      --accent: #C4A484;
+      --accent-light: #E8DFD5;
+      --rose: #D4A5A5;
+      --sage: #A8B5A0;
+      --deep-sage: #8B9D83;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--soft-black);
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .serif { font-family: 'Newsreader', Georgia, serif; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    .container-wide { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    /* FLOATING ANIMATIONS */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      33% { transform: translateY(-8px) rotate(1deg); }
+      66% { transform: translateY(-4px) rotate(-0.5deg); }
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(1.5deg); }
+    }
+    @keyframes float-gentle {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(4px, -6px) rotate(1deg); }
+      50% { transform: translate(-2px, -10px) rotate(-0.5deg); }
+      75% { transform: translate(3px, -4px) rotate(0.5deg); }
+    }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes glow-pulse {
+      0%, 100% { filter: drop-shadow(0 4px 12px rgba(168, 181, 160, 0.2)); }
+      50% { filter: drop-shadow(0 8px 24px rgba(168, 181, 160, 0.35)); }
+    }
+
+    .float { animation: float 6s ease-in-out infinite; }
+    .float-slow { animation: float-slow 8s ease-in-out infinite; }
+    .float-gentle { animation: float-gentle 5s ease-in-out infinite; }
+    .drift { animation: drift 10s ease-in-out infinite; }
+    .glow { animation: glow-pulse 4s ease-in-out infinite; }
+    .fade-in { animation: fade-in-up 0.8s ease-out both; }
+    .fade-in-d1 { animation: fade-in-up 0.8s ease-out 0.15s both; }
+    .fade-in-d2 { animation: fade-in-up 0.8s ease-out 0.3s both; }
+    .fade-in-d3 { animation: fade-in-up 0.8s ease-out 0.45s both; }
+
+    /* NAV */
+    nav {
+      padding: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--soft-black);
+    }
+    nav .logo span {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+    nav .logo img { animation: float-gentle 5s ease-in-out infinite; }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+    }
+    .hero h1 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: var(--soft-black);
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta-primary {
+      display: inline-block;
+      background: var(--soft-black);
+      color: white;
+      padding: 16px 40px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cta-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(45, 42, 38, 0.15);
+    }
+    .cta-note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 24px;
+    }
+    section.alt {
+      background: var(--warm-white);
+    }
+    .section-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--sage);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      color: var(--soft-black);
+    }
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 480px;
+      line-height: 1.7;
+    }
+
+    /* WHAT IT IS — new section */
+    .what-it-is {
+      position: relative;
+      overflow: hidden;
+    }
+    .what-it-is-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .what-it-is-text p {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .what-it-is-text p strong {
+      color: var(--soft-black);
+      font-weight: 600;
+    }
+    .what-it-is-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .what-it-is-visual img {
+      border-radius: 20px;
+      width: 100%;
+      max-width: 380px;
+    }
+
+    /* HOW IT WORKS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .step {
+      text-align: center;
+    }
+    .step img {
+      transition: transform 0.3s ease;
+    }
+    .step:hover img {
+      transform: scale(1.08);
+    }
+    .step h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .step p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* PERSONAS */
+    .personas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .persona-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+      border-left: 3px solid var(--sage);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .persona-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .persona-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .persona-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .persona-card:nth-child(2) { border-left-color: var(--accent); }
+    .persona-card:nth-child(3) { border-left-color: var(--rose); }
+    .persona-card img { transition: transform 0.3s ease; }
+    .persona-card:hover img { transform: scale(1.1); }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .feature {
+      text-align: center;
+      padding: 24px;
+    }
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    .feature h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .feature p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      text-align: center;
+      padding: 100px 24px;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%);
+    }
+    .final-cta h2 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+    .final-cta p {
+      color: var(--muted);
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+    .final-cta img {
+      animation: float-slow 8s ease-in-out infinite;
+      filter: drop-shadow(0 4px 12px rgba(168, 181, 160, 0.2));
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--accent-light);
+    }
+    footer p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .steps, .personas, .features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .what-it-is-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .what-it-is-visual { order: -1; }
+      .hero { padding: 60px 20px 40px; }
+      section { padding: 60px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="logo">
+      <img src="https://pfst.cf2.poecdn.net/base/image/c2569ac4f8a476caba1d0f3bf31600e24aeab531c7806755da3f42564969efbb?pmaid=587987696" width="32" height="32" alt="DropAnywhere">
+      <span class="serif">dropanywhere</span>
+    </a>
+  </nav>
+
+  <!-- HERO (UNTOUCHED — Joey loves this) -->
+  <div class="hero">
+    <p class="section-label fade-in">Your mind just got an outbox</p>
+    <h1 class="fade-in-d1">The smartest app you<br><em>never have to download.</em></h1>
+    <p class="subtitle fade-in-d2">
+      DropAnywhere lives entirely in your email. No dashboards, no new passwords, nothing to learn. 
+      If you have an email address, you already know how to use it.
+    </p>
+    <div class="fade-in-d3" style="margin-bottom: 32px;">
+      <img src="https://pfst.cf2.poecdn.net/base/image/cf19ed884e97523af2f1090e877792dbe85184979028f478972f480750840b89?w=1024&h=1024" width="140" height="140" alt="" class="float glow" style="display: inline-block; border-radius: 50%;">
+    </div>
+    <a href="#signup" class="cta-primary fade-in-d3">Get Your Vault Address</a>
+    <p class="cta-note fade-in-d3">Free to start. No credit card required.</p>
+  </div>
+
+  <!-- ✨ NEW: WHAT IT IS — right after hero -->
+  <section class="what-it-is alt">
+    <div class="container-wide">
+      <div class="what-it-is-grid">
+        <div class="what-it-is-text">
+          <p class="section-label">What is DropAnywhere?</p>
+          <h2 class="section-title">Your email is the app.</h2>
+          <p>
+            DropAnywhere gives you a <strong>private email address</strong> — your Vault. 
+            Send it anything: a thought, a to-do, a PDF, a voice note, a forwarded flight confirmation.
+          </p>
+          <p>
+            Behind the scenes, <strong>AI reads and organizes everything you send</strong>. 
+            Then every morning, you get one clean email — your Daily Digest — with 
+            your priorities sorted, your ideas captured, and your chaos turned into clarity.
+          </p>
+          <p>
+            <strong>No app to install. No account to manage. No habits to build.</strong><br>
+            You already know how to send an email. That's all it takes.
+          </p>
+        </div>
+        <div class="what-it-is-visual">
+          <img src="https://pfst.cf2.poecdn.net/base/image/20be5d1094c6bca5965c45d7cf9478112307b37bda14eb6b167ab2e837abaa6c?w=1024&h=576" alt="Email becoming organized insight" class="drift glow" style="border-radius: 20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="container" style="text-align: center;">
+      <p class="section-label">How it works</p>
+      <h2 class="section-title">Just hit send.</h2>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        Whether it's a fleeting thought, a PDF, a voice note, or a chaotic grocery list — just "drop" it.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <img src="https://pfst.cf2.poecdn.net/base/image/9569d1a1164e2c599b70ee74f9e077119e6fa09f3b0a91b26d154a67cfed039f" width="64" height="64" alt="" class="float" style="margin-bottom: 12px;">
+          <h3>The Drop</h3>
+          <p>Send an email, forward a flight itinerary, or attach a voice note to your private Vault address.</p>
+        </div>
+        <div class="step">
+          <img src="https://pfst.cf2.poecdn.net/base/image/d632f2f03e93689b01c98b9de1fd4155f7984d16c8ecb3f0b862c5736ee72c34" width="64" height="64" alt="" class="float-slow" style="margin-bottom: 12px;">
+          <h3>The AI Thread</h3>
+          <p>Behind the scenes, AI reads, analyzes, and organizes your drops. Turning chaos into structure.</p>
+        </div>
+        <div class="step">
+          <img src="https://pfst.cf2.poecdn.net/base/image/9655fd1e6d09f6c9b878a6f4d781902c291fe48f4cbf44295e37c147515ecea2" width="64" height="64" alt="" class="float-gentle" style="margin-bottom: 12px;">
+          <h3>The Digest</h3>
+          <p>Every morning, you receive a single, beautiful email. No noise — just the reminders and insights you need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="alt">
+    <div class="container" style="text-align: center;">
+      <p class="section-label">Built for the over-capacity brain</p>
+      <h2 class="section-title">"I have ten tabs open in my browser<br>and fifty more open in my head."</h2>
+      <p class="section-subtitle" style="margin: 0 auto;">If that sounds like you, DropAnywhere was built for you. It's the digital safety net for anyone who already uses email to keep their life running.</p>
+
+      <div class="personas">
+        <div class="persona-card">
+          <img src="https://pfst.cf2.poecdn.net/base/image/c111a2ac230d134e752ead31f97bb8e79211a7504344d16def4baebf3525ef27" width="40" height="40" alt="" class="float-gentle" style="margin-bottom: 12px;">
+          <h3>The Busy Parent</h3>
+          <p>Forward school flyers, jot down doctor's appointments, email yourself "don't forget" lists. We'll hand it back to you exactly when you need it.</p>
+        </div>
+        <div class="persona-card">
+          <img src="https://pfst.cf2.poecdn.net/base/image/bc0b1fbbaa4533af1bd409608e2fb61c4b2af166e8c15d3648e8510ff4e0e13b" width="40" height="40" alt="" class="float" style="margin-bottom: 12px;">
+          <h3>The Creative</h3>
+          <p>Email yourself inspiration, voice memos, and sketches without breaking your flow or opening a distracting app.</p>
+        </div>
+        <div class="persona-card">
+          <img src="https://pfst.cf2.poecdn.net/base/image/2a23e342c1b5506a5c3cd3b31047bd44dc8fe92e41fda9dcb856a747787112d3" width="40" height="40" alt="" class="float-slow" style="margin-bottom: 12px;">
+          <h3>The Professional</h3>
+          <p>Clear your inbox faster by forwarding "read later" documents and actionable requests straight to the Vault.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE POWER OF THE INBOX -->
+  <section>
+    <div class="container" style="text-align: center;">
+      <p class="section-label">No dashboard. No password. Nothing to learn.</p>
+      <h2 class="section-title">The power of the inbox.</h2>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        We believe the best tool is the one that stays out of your way.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">🌍</div>
+          <h3>Universal Access</h3>
+          <p>Works on any device, anywhere in the world. All you need is your inbox.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🧠</div>
+          <h3>AI-Powered Digest</h3>
+          <p>Your drops aren't just stored — they're analyzed, connected, and delivered as one beautiful morning email.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h3>Total Privacy</h3>
+          <p>Your drops are processed securely, encrypted at rest. Your thoughts stay yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOUR DIGEST LOOKS LIKE -->
+  <section class="alt">
+    <div class="container" style="text-align: center;">
+      <p class="section-label">What you wake up to</p>
+      <h2 class="section-title">One email. Everything organized.</h2>
+      <p class="section-subtitle" style="margin: 0 auto 40px; max-width: 500px;">
+        You dropped 6 things yesterday. We turned them into this.
+      </p>
+      <div class="float-gentle" style="background: white; border-radius: 16px; padding: 32px; box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06); text-align: left; max-width: 520px; margin: 0 auto;">
+        <p style="font-size: 11px; color: var(--sage); letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 16px;">Your Morning Digest</p>
+        <p style="font-size: 10px; color: var(--muted); margin-bottom: 20px;">Tuesday, March 18 · 6 drops</p>
+        
+        <p style="font-size: 13px; font-weight: 600; color: var(--soft-black); margin-bottom: 6px;">🎯 Top Priorities</p>
+        <p style="font-size: 14px; color: var(--muted); margin-bottom: 4px; padding-left: 20px;">Call the pediatrician — schedule Maya's check-up</p>
+        <p style="font-size: 14px; color: var(--muted); margin-bottom: 16px; padding-left: 20px;">Sign the permission slip — deadline is tomorrow</p>
+        
+        <p style="font-size: 13px; font-weight: 600; color: var(--soft-black); margin-bottom: 6px;">💡 Late-Night Idea</p>
+        <p style="font-size: 14px; color: var(--muted); margin-bottom: 4px; padding-left: 20px; font-style: italic;">"Revamp the landing page to focus on emotional relief"</p>
+        <p style="font-size: 12px; color: var(--accent); padding-left: 20px;">Dropped at 1:45 AM · saved to Ideas</p>
+      </div>
+      <p style="margin-top: 16px; font-size: 13px; color: var(--muted); font-style: italic;">
+        Real example. Real drops. No setup required.
+      </p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <div class="final-cta" id="signup">
+    <img src="https://pfst.cf2.poecdn.net/base/image/c2569ac4f8a476caba1d0f3bf31600e24aeab531c7806755da3f42564969efbb?pmaid=587987696" width="48" height="48" alt="" style="margin-bottom: 20px;">
+    <h2 class="serif">Ready to clear your mind?</h2>
+    <p>Drop it. Forget it. Wake up lighter.</p>
+    <a href="mailto:hello@drop-anywhere.com?subject=I want in&body=Sign me up for DropAnywhere!" class="cta-primary">Get Your Vault Address</a>
+    <p class="cta-note">Just send us an email. Yes, really. That's how it starts.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p style="font-style: italic; color: var(--accent); margin-bottom: 12px;" class="serif">
+      Drop it. Forget it. Wake up lighter. 🦜
+    </p>
+    <p>
+      DropAnywhere · Chicago, IL<br>
+      <a href="mailto:hello@drop-anywhere.com">hello@drop-anywhere.com</a> · 
+      <a href="/privacy">Privacy Policy</a>
+    </p>
+    <p style="margin-top: 8px; font-size: 11px; color: #ccc;">© 2026 DropAnywhere. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
