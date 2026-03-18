@@ -62,3 +62,43 @@ Joey's latest thinking (March 17 Compass emails):
 ### Next Research Priority
 When credits restore: search "Mem.ai 2026 pricing", "Notion AI enterprise 2026", "Reflect app acquisition"
 
+
+---
+
+## Research Update — 2026-03-18 06:24 UTC
+
+### Status
+Web search credits exhausted (OpenRouter 402). Research conducted via Hub voice analysis.
+
+### Joey's Active Competitive Intelligence (from Hub drops)
+From Hub search (query: "idea feature want"), 10 results analyzed:
+
+**Signals from Joey's recent drops:**
+- **MEGA Campaign** (Mar 16): "Your inbox isn't broken. The 47 apps you downloaded to fix it are." — direct positioning vs. Notion/Obsidian/Mem fragmentation
+- **BandLab** (Mar 15): Joey exploring music creation tools — indicates interest in creative capture apps
+- **Ben's Bites** (Mar 13): Forwarded "How (and what) I'm building this week" as resource — tracking AI builder stacks, especially stack-sharing trend
+- **HARO** (Mar 13): Testing HARO as signal source — tracking media/PR angles for competitive positioning
+
+### Competitive Moat Analysis (derived from drop content)
+Based on Joey's framing in drops and Compass emails:
+
+| Competitor | Their Pitch | DropAnywhere Advantage |
+|-----------|-------------|----------------------|
+| **Notion AI** | "AI on top of your database" | Zero friction input; no structured entry required |
+| **Mem.ai** | "Auto-organizes your notes" | Auto-generates *insights* from life streams, not just organization |
+| **Reflect** | "Networked notes, AI links" | Automated digest + intelligence layer; no manual linking |
+| **Obsidian** | "Markdown vault, local-first" | No setup, no plugins, just email forward → insight |
+| **Readwise** | "Highlights + spaced repetition" | Captures from any source; digest is curated intelligence not raw highlights |
+
+### The "47 Apps" Insight
+Joey's MEGA campaign crystallizes the competitive positioning:
+- **Problem framing:** Users download 47 apps to fix email, none solve it
+- **DropAnywhere answer:** One email forward = second brain entry
+- **Differentiator:** Email-only launch March 24 — lowest friction possible
+
+### Next Research Priority (when credits restore)
+- Mem.ai 2026 pricing/feature changes
+- Notion AI enterprise expansion
+- Reflect app funding/acquisition rumors
+- AI productivity market size 2026
+
