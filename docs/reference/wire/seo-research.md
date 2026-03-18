@@ -56,3 +56,72 @@
 - Address "email overwhelm" pain point directly
 
 ---
+
+## 2026-03-18 — SEOBot Run (Option 3: Competitor SEO Research)
+
+### Notion AI SEO Analysis
+
+**Keywords Notion AI Ranks For (from page content):**
+| Keyword | Evidence | Priority |
+|---------|----------|----------|
+| AI team | "Meet your AI team" — H1 tag | HIGH |
+| Notion AI | Branded, repeated throughout | HIGH |
+| AI meeting notes | Featured as "New" feature | MEDIUM |
+| Enterprise search | Listed as Beta feature | MEDIUM |
+| AI workflow automation | "Custom Agents" feature | MEDIUM |
+| Team collaboration AI | "Infinite minds, built for teamwork" | MEDIUM |
+| AI knowledge base | Workspace context emphasis | MEDIUM |
+
+**Notion AI Positioning:**
+- **Tagline:** "Meet your AI team" — frames AI as teammates, not tools
+- **Key differentiators:** Model agnostic, zero data retention, HIPAA compliance
+- **Trust signals:** SOC 2 Type 2, ISO 27001, GDPR/CCPA compliance prominently featured
+- **Target audience:** Enterprise teams (Ramp, Braintrust cited as customers)
+
+**SEO Content Strategy Observed:**
+- Heavy focus on security/compliance (enterprise buyer concern)
+- Feature-benefit pairing ("Answer questions, prioritize tasks, write reports")
+- Social proof from recognizable companies (Ramp, Braintrust)
+- Clear pricing tiers with AI credit usage tracking
+
+### Mem.ai SEO Analysis
+
+**Status:** Unable to fetch content — site requires modern browser (likely heavy JS)
+
+**Implication:** Mem.ai may rely on client-side rendering, which can hurt SEO crawlability. This is a potential gap for DropAnywhere to exploit with server-rendered, SEO-friendly pages.
+
+### DropAnywhere.com Current State
+
+**Homepage Content Analysis:**
+- **Title:** "DropAnywhere — Bring your memory to things"
+- **Current messaging:** "Capture. Drop in under 10 seconds. Any thought, any device, zero friction."
+- **Value prop:** "You sleep. We read your mind."
+
+**SEO Gaps Identified:**
+| Issue | Impact | Recommendation |
+|-------|--------|----------------|
+| No keyword-rich H1 | MEDIUM | Add "AI daily digest" or "second brain" to main headline |
+| Missing meta description optimization | MEDIUM | Include target keywords in meta desc |
+| No structured data visible | LOW | Add Product/SoftwareApplication schema |
+| Limited long-tail content | HIGH | Create landing pages for specific use cases |
+
+### Competitor Keyword Opportunities (Notion AI Gaps)
+
+**Keywords Notion AI is NOT targeting (opportunity for DropAnywhere):**
+| Keyword | Why It Matters | DropAnywhere Angle |
+|---------|----------------|-------------------|
+| daily digest email | High volume, low competition | Core feature — own this |
+| second brain no inbox | Unique positioning | "Your Second Brain Has No Inbox" |
+| email summarization | Pain point driven | "Dropped. Go forget about it." |
+| frictionless note taking | UX-focused | "Drop in under 10 seconds" |
+| voice to notes | Multi-modal input | SMS/Voice/Email capture |
+| overnight processing | Async workflow | "Processing overnight" |
+
+### Action Items
+
+1. **Immediate:** Update homepage H1 to include "AI daily digest" or "second brain app"
+2. **Short-term:** Create dedicated landing page for "AI daily digest email" keyword
+3. **Medium-term:** Build comparison content ("DropAnywhere vs Notion AI" for digest use case)
+4. **Ongoing:** Monitor Mem.ai's SEO strategy once their site is crawlable
+
+---
