@@ -1,9 +1,8 @@
 # 🧭 THE COMPASS — Complete Pre-Launch Blueprint
 
-**Version:** 2026-03-17 v2 (CEO Feedback Incorporated)  
+**Version:** 2026-03-17 FINAL  
 **Status:** Single Source of Truth for March 24 Launch  
-**Supersedes:** All prior Compass emails, audit reports, and strategic docs  
-**Changes in v2:** User scenarios integrated, agency backend team noted, planned obsolescence narrative added, email routing clarified, "Own Your Data" positioning added, premium features expanded with cost modeling
+**Supersedes:** All prior Compass emails, audit reports, and strategic docs
 
 ---
 
@@ -55,26 +54,6 @@ That was always an email promise, not a dashboard promise. The Danny Advisory Pa
 3. Admission flow (waitlist → welcome → first digest)
 4. Stripe billing (trial → payment without friction)
 5. Hub webhook → instant processing
-
-### Email Routing
-- **Ingest address:** `drop@drop-anywhere.com` — where users send drops
-- **System address:** `hello@drop-anywhere.com` — where digest emails come FROM, and where replies go
-- **Multi-email support:** Users may want to associate multiple email addresses with one account (work + personal). This is a **premium feature** (Lite+). Implementation: canonical identity via `user_id`, additional emails verified via confirmation link. Free tier = 1 email only.
-
-### Agency Backend Team
-Joey's agency team will be working on backend QA and integration testing to ensure everything works properly before launch. This team is expected to evolve into a **future Enterprise tier** offering — managed DropAnywhere instances with dedicated support, custom integrations, and SLAs.
-
-### User Scenario Coverage
-All user scenarios are mapped exhaustively in the **User Scenario Matrix** (`docs/specs/SPEC-User-Scenario-Matrix.md`). This covers:
-- **20 web direct scenarios** (A1-A14 + edge cases)
-- **10 BHA/Poe bot scenarios** (B1-B10) — cross-product journeys
-- **5 email ingest scenarios** (C1-C5) — including reply capture
-- **3 SMS/voice scenarios** (D1-D3)
-- **2 API/shortcut scenarios** (E1-E2)
-- **6 referral/social scenarios** (F1-F3)
-- **20 edge cases** (G1-G20) — spam, language mismatch, power users, churned users
-
-Every scenario has: current behavior, target behavior, lifecycle stage, and automated response. Full lifecycle state machine with BHA parallel track included.
 
 ---
 
@@ -192,43 +171,6 @@ The funnel adapts — behavioral triggers override fixed timing.
 - Pay-as-you-go overages: $0.10/drop above limit
 - Pause anytime (data retained, resume later)
 - Annual option: TBD (Joey to decide)
-
-### Premium Features (Expanded)
-
-| Feature | Free | Lite ($7) | Pro ($15) | Custom ($49) |
-|---------|------|-----------|-----------|--------------|
-| Drops/mo | 10 | 100 | 500 | Unlimited |
-| Digest frequency | Weekly | Daily/Weekly | Daily/Weekly | Custom schedule |
-| Intelligence Map | Basic themes | Full map | Full map | Full map |
-| **Reminders** | ❌ | ✅ Scheduled email reminders | ✅ | ✅ |
-| **Calendar prep** | ❌ | ❌ | ✅ Pre-event briefs | ✅ |
-| **Custom content deliverables** | ❌ | ❌ | ✅ Custom digest formats | ✅ Fully custom |
-| **Instant Clarity** | ❌ | ❌ | ✅ <60s AI response per drop | ✅ |
-| **Multiple email addresses** | 1 only | ✅ Up to 3 | ✅ Up to 5 | ✅ Unlimited |
-| **API access** | ❌ | ❌ | ✅ | ✅ |
-| **Team features** | ❌ | ❌ | ❌ | ✅ |
-
-### AI Cost Modeling Per Tier
-
-The key constraint is **which models get routed and how expensive each call is.**
-
-| Operation | Model | Est. Cost/Call | Free Tier | Lite Tier | Pro Tier |
-|-----------|-------|---------------|-----------|-----------|----------|
-| Drop ingestion + classify | GPT-4o-mini | ~$0.001 | ✅ | ✅ | ✅ |
-| Theme extraction | GPT-4o-mini | ~$0.002 | ✅ | ✅ | ✅ |
-| Basic digest (weekly) | GPT-4o-mini | ~$0.01 | ✅ (weekly only) | ✅ | ✅ |
-| Full Intelligence Map | GPT-4o / Gemini 2.5 | ~$0.05 | ❌ | ✅ | ✅ |
-| Cross-drop connections | GPT-4o | ~$0.03 | ❌ | ✅ | ✅ |
-| Instant Clarity response | Claude Sonnet | ~$0.02 | ❌ | ❌ | ✅ |
-| Calendar prep brief | GPT-4o | ~$0.04 | ❌ | ❌ | ✅ |
-| Reminder scheduling | Minimal (rule-based) | ~$0.001 | ❌ | ✅ | ✅ |
-| Custom deliverables | GPT-4o / Claude | ~$0.10 | ❌ | ❌ | ✅ |
-
-**Scaling math:**
-- Free user (10 drops/mo, weekly digest): ~$0.03/mo AI cost → sustainable at scale
-- Lite user (100 drops/mo, daily digest): ~$2.50/mo AI cost → $7 price covers it (64% margin)
-- Pro user (500 drops/mo, daily + instant + calendar): ~$8/mo AI cost → $15 price covers it (47% margin)
-- Custom: negotiate per-account based on usage
 
 ### Alternative Simpler Model (from Strategic Answers)
 Some analysis suggests launching with just **Free ($0) + Pro ($9/mo)** to reduce complexity. Free = 10 drops/week, 3x/week digest. Pro = unlimited, daily, custom timing. Joey needs to decide which tier structure to use.
@@ -434,43 +376,6 @@ Some analysis suggests launching with just **Free ($0) + Pro ($9/mo)** to reduce
 
 ---
 
-## 10b. CONTENT NARRATIVES (CEO-Defined)
-
-### Narrative 1: Planned Obsolescence
-**Joey's framing:** Planned obsolescence shaped how he looks at and interacts with tech. Companies design products to break so you buy again. Software does the same — lock-in, forced upgrades, subscription fatigue.
-
-**DropAnywhere's counter:** We remove all the friction associated with greed. No lock-in (export your data anytime). No feature bloat to justify price hikes. No dark patterns. Email is the most open protocol on the planet — we lean INTO that instead of trying to replace it. Your data lives in your inbox, not our servers.
-
-**Content angles:**
-- LinkedIn post: "Planned obsolescence taught me to distrust every product I use. So I built one that doesn't need you to keep paying to keep your data."
-- Campaign tie-in: MEGA narrative ("Your inbox isn't broken") → planned obsolescence is what broke everything else
-- Landing page copy block for "Why Email?" section
-
-### Narrative 2: Own Your Data
-**Joey's framing:** He built Facebook dynamic feeds. Saw people as dollar signs. Everyone did. But algorithms are now too powerful, and the best way to own them is to understand them.
-
-**DropAnywhere's counter:** This service empowers you with YOUR data. Instead of letting it build up and compile across 47 apps where it's mined and sold — we keep things here, within your email. Dashboard coming soon, but email is all you need. Let us do the tech stuff, so you can do your stuff.
-
-**Key messaging:**
-- "I built the thing that targets you. Now I'm building the thing that protects you."
-- "Your thoughts shouldn't be someone else's training data."
-- "Email is the only protocol you actually own. We just make it smarter."
-- This is the founder credibility story — Joey was INSIDE the machine. Now he's building the antidote.
-
-**Content angles:**
-- Founder story post (Mar 28 slot — can weave this in)
-- Landing page "Why" section
-- PR/media pitch angle (former Facebook ad tech → privacy-first AI)
-
-### Narrative 3: Poe Conversation Archive (Coming Soon)
-Joey has thousands of conversations from Poe.com (not just OpenAI ChatGPT archive already in joey-backup). These will be added to GitHub for:
-- Deeper understanding of product evolution
-- More gold to mine for Intelligence Map context
-- Voice profile enrichment
-- Product roadmap insight from 18+ months of iterative thinking
-
----
-
 ## 11. LIVE METRICS
 
 | Metric | Value | Note |
@@ -594,12 +499,9 @@ No work. Joey rests. Drop monitors.
 | 13 | Admission velocity — how many users/day after launch? |
 | 14 | Waitlist cap — soft limit at 50? 100? |
 | 15 | Dashboard timeline — commit to Q2 publicly? |
-| 16 | Team tier priority — is B2B the growth engine? → Agency team = future Enterprise tier |
+| 16 | Team tier priority — is B2B the growth engine? |
 | 17 | BHA migration — automated campaign or personal outreach? |
 | 18 | Annual pricing — when to introduce? |
-| 19 | Multi-email pricing: how many addresses per tier? (Proposed: Free=1, Lite=3, Pro=5, Custom=unlimited) |
-| 20 | Reminder feature scope: email-only or also SMS/push? |
-| 21 | Calendar integration: Google Calendar API or manual drop-based? |
 
 ---
 
