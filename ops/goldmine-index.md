@@ -81,5 +81,32 @@
 - Timeline analysis of feature development
 - Extract reusable prompts/workflows
 
+## 🧠 .claude/context/ Deep Dive (34 files)
+*Cataloged: 2026-03-18 02:49 UTC*
+
+**Strategic Intelligence Files:**
+- **FULL-PICTURE.md** (10.7KB) — Comprehensive overview
+- **INDEX.json** (272KB) — Massive structured index
+- **org-structure.yaml** (3.3KB) — System architecture
+- **skills-index.md** (3.2KB) — Capability mapping
+
+**Organized Brain Folders:**
+```
+brain/                    # Core cognitive patterns
+core/                     # Fundamental frameworks
+frameworks/               # Strategic methodologies  
+hydration/               # Data sync workflows
+operational/             # Execution protocols
+personas/                # Identity/role definitions
+```
+
+**High-Value Assets:**
+1. **272KB INDEX.json** — Likely contains comprehensive conversation mapping
+2. **FULL-PICTURE.md** — Strategic overview document
+3. **org-structure.yaml** — System architecture blueprint
+4. **brain/ folder** — Core cognitive patterns and learnings
+
+**Research Priority:** 🔥 **CRITICAL** — INDEX.json contains 272KB of structured intelligence
+
 ---
 *This index represents the tip of the iceberg. Each folder contains years of strategic thinking, product development, and AI experimentation.*
