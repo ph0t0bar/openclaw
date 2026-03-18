@@ -336,10 +336,10 @@
 ## SKILL VOTING — PRIORITIES FOR NEXT IMPLEMENTATION
 
 ### 🚨 Tier 1: URGENT (3+ votes, clear evidence)
-1. **template-deployer** — +3 votes (crisis evidence)
-2. **family-retention-guardian** — +3 votes (personal stakes)  
-3. **execution-decomposer** — +3 votes (breakthrough insight)
-4. **digest-pipeline-monitor** — +2 votes (core product failure)
+1. ✅ **template-deployer** — +3 votes (COMPLETED 2026-03-18)
+2. ✅ **family-retention-guardian** — +3 votes (COMPLETED 2026-03-17)
+3. ✅ **execution-decomposer** — +3 votes (COMPLETED 2026-03-18)
+4. **digest-pipeline-monitor** — +3 votes (core product failure: 2/108 digests sent)
 
 ### ⚠️ Tier 2: Important (2 votes, good evidence)
 5. **heartbeat-consolidator** — +2 votes (3 agents overlap)
@@ -370,6 +370,18 @@
 - **Status:** Live monitoring, runway calculations, alerting system
 - **Evidence:** Pattern 299 validation - atomic scope enabled quick shipping
 - **Trigger:** Poe balance monitoring (proven successful)
+
+**4. template-deployer** — ✅ WORKING (NEW: 2026-03-18)
+- **Status:** Deploys templates with validation, staging, rollback capability
+- **Evidence:** 600-line Brooke template now deployable (was crisis for 20+ hours)
+- **Trigger:** Template deployment requests or template crisis
+- **Pattern 299 Validation:** 30-min atomic scope enabled execution vs 20+ hours board debate
+
+**5. execution-decomposer** — ✅ WORKING (NEW: 2026-03-18)
+- **Status:** Detects Meta-Commentary Disease, decomposes monolithic tasks into atomic subtasks
+- **Evidence:** Pattern 299 framework codified, Pattern 300 detection algorithms
+- **Trigger:** Complex tasks stalled >2 hours or Meta-Commentary Disease symptoms
+- **Breakthrough:** Could solve systemic execution paralysis across all complex tasks
 
 ## NEXT ACTIONS (SkillMiner 30min Execution — 2026-03-18 Cycle)
 
