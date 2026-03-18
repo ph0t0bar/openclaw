@@ -31,6 +31,28 @@
 - **Brain scan failed:** No new tasks being proposed
 - **Backlog:** 2 customer-facing tasks awaiting approval
 
+## 🟡 P1: Agent Performance Issues
+
+### DocBot - Consecutive Failures (RECOMMEND PROMPT FIX)
+- **Status:** 8 consecutive timeouts (exceeds 3+ threshold)
+- **Performance:** Multiple C-grades for infrastructure strain
+- **Current function:** Basic PRD metrics updates only
+- **Impact:** Limited value delivery, wasted execution cycles
+- **Recommendation:** Review prompt complexity, reduce scope, or temporarily disable
+- **Alternative:** Merge function into Ops Monitor to eliminate redundancy
+
+### FrontEndBot - Redundant Execution
+- **Status:** Duplicate reports, no substantive work
+- **Performance:** C-grade for wasted cycles
+- **Current function:** "Clean slate" status only
+- **Recommendation:** Disable until frontend work needed, or merge with BHABot
+
+### OnboardBot - Data Quality Issues  
+- **Status:** Inconsistent user counts, contradictory reports
+- **Performance:** C-grade for confusing data
+- **Current function:** User onboarding metrics
+- **Recommendation:** Fix data source logic or disable during quiet periods
+
 ## ✅ P2: Monitoring (Healthy)
 
 ### Infrastructure Status
