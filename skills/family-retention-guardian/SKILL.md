@@ -1,183 +1,169 @@
 ---
 name: family-retention-guardian
-description: Monitor family member engagement and automate re-engagement outreach when family members become inactive in DropAnywhere. Use when family engagement alerts are triggered or when analyzing user retention patterns for family accounts.
+description: Monitor family member engagement and create automated re-engagement tasks when family members become inactive. Prevents family relationship strain from productivity system neglect.
 ---
 
 # Family Retention Guardian
 
-Proactive monitoring and re-engagement system for family member accounts in DropAnywhere.
+Monitors Joey's family members in DropAnywhere and creates automated re-engagement workflows when they become inactive. Because family relationships matter more than product metrics.
 
 ## When to Use
 
-- Family member shows engagement decline (score < 50%)
-- Family member inactive >7 days  
-- UserHealth escalates family retention risk
-- Periodic family engagement health checks
-- Manual family user review requested
+**AUTOMATIC TRIGGERS:**
+- Family member inactive >7 days
+- Family member engagement score <50%
+- Family member has vault_count=0 but account exists
+- Family member getting digests but not dropping
 
-## Family Member Detection
+**MANUAL TRIGGERS:**
+- "Check family retention"
+- "Family engagement audit"
+- After UserHealth escalations mention family
 
-Family members are identified by:
-- Email domains: `@gmail.com` with surnames: `hamer`, `lhamer` 
-- Known family emails:
-  - `lhamer228@gmail.com` (Lisa Hamer)
-  - `rhamersunsetpartners@gmail.com` (Ryan Hamer) 
-  - `hamer.daniel@gmail.com` (Daniel Hamer)
-  - `mitch.p.hamer@gmail.com` (Mitch Hamer)
+## Family Members (Auto-Detected)
 
-## Engagement Scoring Algorithm
+Based on email patterns + user data:
+- `lhamer228@gmail.com` (family)
+- `rhamersunsetpartners@gmail.com` (family) 
+- `hamer.daniel@gmail.com` (family)
+- Any user with "hamer" in email or profile
+- Any user manually tagged as family
 
-**Score Components (0-100):**
-- Recency: 50% (days since last drop: 0d=50pts, 7d=25pts, 14d=0pts)
-- Frequency: 30% (drops per week: 5+=30pts, 3-4=20pts, 1-2=10pts, 0=0pts)  
-- Depth: 20% (vault size: 10+=20pts, 5-9=15pts, 1-4=10pts, 0=0pts)
+## Problem Solved
 
-**Risk Levels:**
-- 80-100: Healthy 🟢
-- 60-79: Watch 🟡  
-- 40-59: At Risk 🟠
-- 20-39: Critical 🔴
-- 0-19: Emergency 🚨
+**Pattern 285:** "Family Retention as Execution Canary"
+- If personal stakes don't override paralysis, nothing will
+- 8+ UserHealth escalations, 0 action taken
+- lhamer228@gmail.com: 13 days inactive, 12 digests since last engagement
+- rhamersunsetpartners@gmail.com: 10 days inactive, 8 digests since engagement  
+- hamer.daniel@gmail.com: ZERO drops ever, digest enabled but unused
 
-## Re-engagement Pipeline
+## Features
 
-### Level 1: Gentle Nudge (score 40-59)
-- Personalized email with recent family updates
-- "Saw you haven't dropped anything lately..." tone
-- Include 1-2 recent interesting vault finds
+### 1. Family Detection
+- Scans Hub user database for Hamer family emails
+- Identifies engagement patterns vs general users
+- Tags family accounts for special monitoring
 
-### Level 2: Direct Outreach (score 20-39)  
-- Personal message from Joey via WhatsApp/text
-- "Hey [name], everything okay? Haven't heard from you..."
-- Offer to help with any DropAnywhere issues
+### 2. Risk Assessment
+```
+HEALTHY: <7d since last drop, engagement >70%
+AT_RISK: 7-14d since last drop, engagement 30-70%  
+CRITICAL: >14d since last drop, engagement <30%
+ABANDONED: >30d since last drop OR vault_count=0
+```
 
-### Level 3: Emergency Alert (score 0-19)
-- Immediate alert to Joey via WhatsApp
-- Full context: last activity, digest history, vault status
-- Suggested personal intervention actions
+### 3. Automated Interventions
+- **AT_RISK:** Gentle check-in message via DropAnywhere
+- **CRITICAL:** Personal outreach via WhatsApp to Joey
+- **ABANDONED:** Strategy session with Joey (relationship repair)
 
-## Core Workflow
+### 4. Escalation Ladder
+```
+Day 7: System notification (silent)
+Day 10: Gentle re-engagement task created  
+Day 14: Joey WhatsApp alert (urgent but respectful)
+Day 21: Strategy session scheduled (relationship focus)
+Day 30: Relationship repair consultation
+```
 
-1. **Family Detection**: Query Hub API for family email patterns
-2. **Engagement Analysis**: Calculate scores using Hub activity data  
-3. **Risk Assessment**: Categorize each family member by risk level
-4. **Action Dispatch**: Execute appropriate re-engagement based on score
-5. **Tracking**: Log all actions and outcomes for pattern analysis
+## Quick Start
 
-## Hub API Integration
-
-**Required Endpoints:**
-- `/api/admin/users` - Get user list with activity data
-- `/api/search` - Check vault content for engagement depth  
-- `/api/alerts` - Send re-engagement alerts to Joey
-- `/api/memory` - Log family retention actions for tracking
-
-**Authentication:** Uses `HUB_API_KEY` from environment
-
-## Usage Examples
-
-**Check all family members:**
 ```bash
-python scripts/check_family_health.py --all
+# Check all family members
+python3 scripts/check_family.py
+
+# Check specific family member  
+python3 scripts/check_family.py --email lhamer228@gmail.com
+
+# Generate re-engagement plan
+python3 scripts/create_engagement_plan.py --user-id b419d8ad5d23513f
 ```
 
-**Monitor specific family member:**  
+## Scripts
+
+### `scripts/check_family.py`
+Main family monitoring script:
+- Fetches family user data from Hub API
+- Calculates engagement scores and inactivity periods
+- Generates status report with recommendations
+- Creates re-engagement tasks when thresholds hit
+
+### `scripts/create_engagement_plan.py` 
+Re-engagement workflow generator:
+- Analyzes user's previous drop patterns
+- Suggests personalized re-engagement approach
+- Creates task with specific messaging strategy
+- Schedules follow-up checks
+
+### `scripts/family_detector.py`
+Family member detection and tagging:
+- Scans user database for family patterns
+- Updates family tags in user profiles
+- Maintains family member registry
+
+## Environment Variables
+
 ```bash
-python scripts/check_family_health.py --email lhamer228@gmail.com
+# Hub API access (same as other skills)
+HUB_API_KEY=your_hub_api_key
+HUB_URL=https://hub-production-f423.up.railway.app
+
+# WhatsApp alerts for critical family issues
+FAMILY_ALERT_WEBHOOK=your_whatsapp_webhook
 ```
 
-**Generate family engagement report:**
-```bash
-python scripts/family_report.py --format json
+## Example Output
+
+```json
+{
+  "family_status": "CRITICAL", 
+  "members": [
+    {
+      "email": "lhamer228@gmail.com",
+      "user_id": "920d4d339900efd5", 
+      "status": "CRITICAL",
+      "last_drop": "2026-03-04",
+      "days_inactive": 13,
+      "engagement_score": 24,
+      "digests_since_engagement": 12,
+      "action": "WhatsApp alert to Joey + gentle outreach task created"
+    }
+  ],
+  "tasks_created": [
+    {
+      "type": "gentle_outreach",
+      "target": "lhamer228@gmail.com", 
+      "message": "Hey! Missing your drops. Everything okay? No pressure, just checking in. 💜",
+      "deadline": "2026-03-20"
+    }
+  ]
+}
 ```
 
-**Test re-engagement templates:**
-```bash  
-python scripts/test_templates.py --dry-run
-```
+## Integration
 
-## Templates
-
-### Email Template: Gentle Nudge
-```
-Subject: Missing your updates! 
-
-Hey [name],
-
-I noticed you haven't sent anything to DropAnywhere lately. Everything okay?
-
-Your vault has some great stuff in it - just saw your note about [recent_vault_item]. 
-
-If you're having any trouble with the system or just been busy, no worries! Just wanted to check in.
-
-Love,
-Joey 
-```
-
-### WhatsApp Template: Direct Outreach  
-```
-Hey [name] - haven't seen you drop anything in DropAnywhere for a couple weeks. Everything good? Let me know if you need help with anything or if the system isn't working right for you! 😊
-```
-
-## Error Handling
-
-- **Hub API failures**: Graceful degradation, retry with exponential backoff
-- **Email delivery failures**: Log error, flag for manual follow-up
-- **Missing family data**: Continue with available data, warn about gaps  
-- **Score calculation errors**: Use conservative defaults (mark as "watch")
+- **UserHealth:** Triggered after family escalations
+- **Chief of Staff:** Reports to family status in daily briefings
+- **WhatsApp:** Sends critical alerts directly to Joey
+- **Hub API:** Creates re-engagement tasks in task queue
 
 ## Success Metrics
 
-- Family member re-engagement rate within 7 days of outreach
-- Reduction in family members reaching "critical" risk level  
-- Time to Joey awareness of family retention issues
-- False positive rate (healthy members flagged as at-risk)
+- Reduced family escalation frequency
+- Increased family member engagement
+- Faster intervention response time (target: <24h)
+- Maintained family relationships despite product focus
 
-## Testing
+## Tips
 
-Run test suite:
-```bash
-python scripts/test_family_guardian.py
-```
+- **Personal > Product:** Always prioritize relationship over metrics
+- **Gentle Touch:** Re-engagement should feel supportive, not naggy
+- **Context Aware:** Consider why someone might be inactive (busy, upset, confused)
+- **Joey's Voice:** All outreach should sound like Joey, not a bot
 
-**Test Coverage:**
-- Family member detection accuracy
-- Engagement scoring algorithm  
-- Template personalization
-- Hub API integration
-- Error handling scenarios
-- Alert delivery confirmation
+## Notes
 
-## Automation Integration
+This skill addresses **Pattern 285** from SkillMiner analysis: "If personal stakes don't override paralysis, nothing will." Family retention is the canary in the coal mine for execution capability.
 
-**Heartbeat Integration:**
-- Add family check to heartbeat routine (every 6-12 hours)
-- Include family status in heartbeat summary
-
-**Cron Integration:**
-- Daily family health check at 08:00 UTC  
-- Weekly family engagement report on Sundays
-- Emergency alerts triggered immediately (no scheduling)
-
-## Privacy & Sensitivity
-
-This skill handles family relationships with extra care:
-- Personal, warm tone (not corporate)
-- Respect privacy boundaries  
-- Clear escalation to Joey for serious concerns
-- No automated public/social posts about family issues
-- Logs exclude sensitive personal details
-
-## Dependencies
-
-- Hub API access via `HUB_API_KEY`
-- WhatsApp integration for Joey alerts
-- Email integration for gentle nudges
-- JSON file storage for family member configuration
-
----
-
-**Implementation Status:** Ready for testing
-**Created:** 2026-03-18 by SkillMiner  
-**Priority:** URGENT - Pattern 285 evidence (8+ escalations, 0 action)
-**Success Pattern:** Atomic scope (detection → scoring → outreach → escalation)
+Created by SkillMiner on 2026-03-18.

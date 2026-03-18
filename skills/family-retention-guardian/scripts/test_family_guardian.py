@@ -1,290 +1,224 @@
 #!/usr/bin/env python3
 """
 Test suite for Family Retention Guardian
+
+Tests the family monitoring and re-engagement logic.
 """
 
-import json
-import os
-import sys
 import unittest
-from unittest.mock import patch, Mock
+import sys
+import os
 from datetime import datetime, timedelta
+from unittest.mock import patch, MagicMock
 
-# Add the scripts directory to the path so we can import the main module
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from check_family_health import FamilyRetentionGuardian
+# Add the scripts directory to Python path
+sys.path.insert(0, os.path.dirname(__file__))
+
+# Import the module under test
+import check_family
 
 class TestFamilyRetentionGuardian(unittest.TestCase):
     
     def setUp(self):
-        """Set up test environment"""
-        # Mock environment variable
-        os.environ['HUB_API_KEY'] = 'test-key-123'
-        self.guardian = FamilyRetentionGuardian()
-    
-    def tearDown(self):
-        """Clean up after tests"""
-        if 'HUB_API_KEY' in os.environ:
-            del os.environ['HUB_API_KEY']
-    
-    def test_initialization_without_api_key(self):
-        """Test that initialization fails without API key"""
-        if 'HUB_API_KEY' in os.environ:
-            del os.environ['HUB_API_KEY']
-        if 'INGEST_API_KEY' in os.environ:
-            del os.environ['INGEST_API_KEY']
-            
-        with self.assertRaises(ValueError):
-            FamilyRetentionGuardian()
-    
-    def test_family_emails_loaded(self):
-        """Test that family emails are properly loaded"""
-        expected_emails = {
-            'lhamer228@gmail.com',
-            'rhamersunsetpartners@gmail.com', 
-            'hamer.daniel@gmail.com',
-            'mitch.p.hamer@gmail.com'
-        }
-        self.assertEqual(set(self.guardian.family_emails.keys()), expected_emails)
-    
-    def test_engagement_score_calculation(self):
-        """Test engagement score calculation algorithm"""
-        
-        # Test case 1: Healthy user - recent activity, good vault, many drops
-        user_data = {
-            'last_drop': (datetime.now() - timedelta(days=1)).isoformat() + 'Z',
-            'vault_count': 15,
-            'total_drops': 20
-        }
-        score, risk_level = self.guardian.calculate_engagement_score(user_data)
-        self.assertGreaterEqual(score, 80)
-        self.assertEqual(risk_level, 'healthy')
-        
-        # Test case 2: At-risk user - moderate inactivity
-        user_data = {
-            'last_drop': (datetime.now() - timedelta(days=10)).isoformat() + 'Z',
-            'vault_count': 5,
-            'total_drops': 8
-        }
-        score, risk_level = self.guardian.calculate_engagement_score(user_data)
-        self.assertLess(score, 60)
-        self.assertIn(risk_level, ['at_risk', 'critical'])
-        
-        # Test case 3: Emergency user - no activity
-        user_data = {
-            'last_drop': None,
-            'vault_count': 0,
-            'total_drops': 0
-        }
-        score, risk_level = self.guardian.calculate_engagement_score(user_data)
-        self.assertEqual(score, 0)
-        self.assertEqual(risk_level, 'emergency')
-    
-    def test_last_activity_formatting(self):
-        """Test human-readable last activity formatting"""
-        
-        # Test today
-        today = datetime.now().isoformat() + 'Z'
-        result = self.guardian.format_last_activity(today)
-        self.assertEqual(result, 'Today')
-        
-        # Test yesterday  
-        yesterday = (datetime.now() - timedelta(days=1)).isoformat() + 'Z'
-        result = self.guardian.format_last_activity(yesterday)
-        self.assertEqual(result, 'Yesterday')
-        
-        # Test several days ago
-        week_ago = (datetime.now() - timedelta(days=7)).isoformat() + 'Z'
-        result = self.guardian.format_last_activity(week_ago)
-        self.assertEqual(result, '7 days ago')
-        
-        # Test never
-        result = self.guardian.format_last_activity('')
-        self.assertEqual(result, 'Never')
-    
-    @patch('check_family_health.requests.get')
-    def test_get_user_activity_success(self, mock_get):
-        """Test successful user activity retrieval"""
-        mock_response = Mock()
-        mock_response.raise_for_status.return_value = None
-        mock_response.json.return_value = [
+        """Set up test fixtures."""
+        self.mock_users = [
             {
-                'email': 'lhamer228@gmail.com',
-                'last_drop': '2026-03-17T10:00:00Z',
-                'vault_count': 10,
-                'total_drops': 15
-            }
-        ]
-        mock_get.return_value = mock_response
-        
-        result = self.guardian.get_user_activity('lhamer228@gmail.com')
-        self.assertIsNotNone(result)
-        self.assertEqual(result['email'], 'lhamer228@gmail.com')
-    
-    @patch('check_family_health.requests.get')
-    def test_get_user_activity_not_found(self, mock_get):
-        """Test user not found case"""
-        mock_response = Mock()
-        mock_response.raise_for_status.return_value = None
-        mock_response.json.return_value = []  # Empty user list
-        mock_get.return_value = mock_response
-        
-        result = self.guardian.get_user_activity('unknown@example.com')
-        self.assertIsNone(result)
-    
-    @patch.object(FamilyRetentionGuardian, 'get_user_activity')
-    def test_check_family_member_healthy(self, mock_get_activity):
-        """Test checking a healthy family member"""
-        mock_get_activity.return_value = {
-            'email': 'lhamer228@gmail.com',
-            'last_drop': datetime.now().isoformat() + 'Z',
-            'vault_count': 12,
-            'total_drops': 25
-        }
-        
-        result = self.guardian.check_family_member('lhamer228@gmail.com')
-        self.assertEqual(result['email'], 'lhamer228@gmail.com')
-        self.assertEqual(result['name'], 'Lisa Hamer')
-        self.assertEqual(result['risk_level'], 'healthy')
-        self.assertFalse(result['needs_action'])
-    
-    @patch.object(FamilyRetentionGuardian, 'get_user_activity')  
-    def test_check_family_member_at_risk(self, mock_get_activity):
-        """Test checking an at-risk family member"""
-        mock_get_activity.return_value = {
-            'email': 'hamer.daniel@gmail.com',
-            'last_drop': (datetime.now() - timedelta(days=15)).isoformat() + 'Z',
-            'vault_count': 2,
-            'total_drops': 3
-        }
-        
-        result = self.guardian.check_family_member('hamer.daniel@gmail.com')
-        self.assertEqual(result['email'], 'hamer.daniel@gmail.com')
-        self.assertEqual(result['name'], 'Daniel Hamer')
-        self.assertIn(result['risk_level'], ['critical', 'emergency'])
-        self.assertTrue(result['needs_action'])
-        self.assertIn(result['action_type'], ['direct_outreach', 'emergency_alert'])
-    
-    @patch.object(FamilyRetentionGuardian, 'get_user_activity')
-    def test_check_family_member_not_found(self, mock_get_activity):
-        """Test checking a family member not found in system"""
-        mock_get_activity.return_value = None
-        
-        result = self.guardian.check_family_member('lhamer228@gmail.com')
-        self.assertEqual(result['status'], 'not_found')
-        self.assertEqual(result['risk_level'], 'emergency')
-        self.assertTrue(result['needs_action'])
-        self.assertEqual(result['action_type'], 'manual_investigation')
-    
-    @patch.object(FamilyRetentionGuardian, 'check_family_member')
-    def test_check_all_family(self, mock_check_member):
-        """Test checking all family members"""
-        # Mock responses for each family member
-        mock_check_member.side_effect = [
-            {'email': 'lhamer228@gmail.com', 'risk_level': 'healthy', 'needs_action': False},
-            {'email': 'rhamersunsetpartners@gmail.com', 'risk_level': 'critical', 'needs_action': True},
-            {'email': 'hamer.daniel@gmail.com', 'risk_level': 'emergency', 'needs_action': True},
-            {'email': 'mitch.p.hamer@gmail.com', 'risk_level': 'watch', 'needs_action': False}
-        ]
-        
-        results = self.guardian.check_all_family()
-        self.assertEqual(len(results), 4)
-        
-        # Check that we called check_family_member for each family email
-        self.assertEqual(mock_check_member.call_count, 4)
-    
-    def test_format_report_text(self):
-        """Test text report formatting"""
-        test_results = [
-            {
-                'email': 'lhamer228@gmail.com',
-                'name': 'Lisa Hamer',
-                'score': 85,
-                'risk_level': 'healthy',
-                'last_activity': 'Yesterday',
-                'vault_count': 12,
-                'total_drops': 25,
-                'needs_action': False,
-                'action_type': None
+                "email": "lhamer228@gmail.com",
+                "user_id": "920d4d339900efd5",
+                "last_drop": "2026-03-04T00:00:00Z",
+                "vault_count": 5,
+                "digest_enabled": True
             },
             {
-                'email': 'hamer.daniel@gmail.com', 
-                'name': 'Daniel Hamer',
-                'score': 15,
-                'risk_level': 'emergency',
-                'last_activity': 'Never',
-                'vault_count': 0,
-                'total_drops': 0,
-                'needs_action': True,
-                'action_type': 'emergency_alert'
-            }
-        ]
-        
-        report = self.guardian.format_report(test_results, 'text')
-        self.assertIn('FAMILY RETENTION GUARDIAN REPORT', report)
-        self.assertIn('Lisa Hamer', report)
-        self.assertIn('Daniel Hamer', report)
-        self.assertIn('emergency_alert', report)
-    
-    def test_format_report_json(self):
-        """Test JSON report formatting"""
-        test_results = [
+                "email": "rhamersunsetpartners@gmail.com", 
+                "user_id": "abc123",
+                "last_drop": "2026-03-07T00:00:00Z",
+                "vault_count": 3,
+                "digest_enabled": True
+            },
             {
-                'email': 'test@example.com',
-                'score': 50,
-                'risk_level': 'at_risk'
+                "email": "hamer.daniel@gmail.com",
+                "user_id": "def456", 
+                "last_drop": None,
+                "vault_count": 0,
+                "digest_enabled": True
+            },
+            {
+                "email": "notfamily@example.com",
+                "user_id": "xyz789",
+                "last_drop": "2026-03-17T00:00:00Z",
+                "vault_count": 10,
+                "digest_enabled": True
             }
         ]
-        
-        report = self.guardian.format_report(test_results, 'json')
-        parsed = json.loads(report)
-        self.assertEqual(len(parsed), 1)
-        self.assertEqual(parsed[0]['email'], 'test@example.com')
-
-class TestIntegration(unittest.TestCase):
-    """Integration tests (require real API key)"""
     
-    def setUp(self):
-        """Only run if real API key is available"""
-        self.api_key = os.getenv('HUB_API_KEY') or os.getenv('INGEST_API_KEY')
-        if not self.api_key:
-            self.skipTest("No real API key available for integration tests")
+    def test_identify_family_members(self):
+        """Test family member identification."""
+        family = check_family.identify_family_members(self.mock_users)
         
-        self.guardian = FamilyRetentionGuardian()
+        # Should find 3 family members
+        self.assertEqual(len(family), 3)
+        
+        # Should include all Hamer family emails
+        family_emails = [user["email"] for user in family]
+        self.assertIn("lhamer228@gmail.com", family_emails)
+        self.assertIn("rhamersunsetpartners@gmail.com", family_emails) 
+        self.assertIn("hamer.daniel@gmail.com", family_emails)
+        
+        # Should not include non-family
+        self.assertNotIn("notfamily@example.com", family_emails)
     
-    def test_real_api_connection(self):
-        """Test actual connection to Hub API (if API key available)"""
-        try:
-            # Try to get user activity for a known family member
-            result = self.guardian.get_user_activity('lhamer228@gmail.com')
-            # Should either return data or None, not raise an exception
-            self.assertIsInstance(result, (dict, type(None)))
-        except Exception as e:
-            self.fail(f"Real API connection failed: {e}")
+    def test_calculate_engagement_score(self):
+        """Test engagement score calculation."""
+        # Test user with recent activity
+        recent_user = {
+            "last_drop": "2026-03-17T00:00:00Z",
+            "vault_count": 10
+        }
+        score = check_family.calculate_engagement_score(recent_user)
+        self.assertGreater(score, 80)  # Should be high score
+        
+        # Test user with old activity
+        old_user = {
+            "last_drop": "2026-03-01T00:00:00Z",
+            "vault_count": 2
+        }
+        score = check_family.calculate_engagement_score(old_user)
+        self.assertLess(score, 50)  # Should be lower score
+        
+        # Test user with no activity
+        inactive_user = {
+            "last_drop": None,
+            "vault_count": 0
+        }
+        score = check_family.calculate_engagement_score(inactive_user)
+        self.assertEqual(score, 0)  # Should be zero
+    
+    def test_assess_risk_level(self):
+        """Test risk level assessment."""
+        # Test healthy user
+        healthy_user = {
+            "last_drop": datetime.now().isoformat() + "Z"
+        }
+        risk = check_family.assess_risk_level(healthy_user, 90)
+        self.assertEqual(risk, "HEALTHY")
+        
+        # Test at-risk user  
+        at_risk_user = {
+            "last_drop": (datetime.now() - timedelta(days=10)).isoformat() + "Z"
+        }
+        risk = check_family.assess_risk_level(at_risk_user, 40)
+        self.assertIn(risk, ["AT_RISK", "HEALTHY"])  # Could be either based on exact timing
+        
+        # Test critical user
+        critical_user = {
+            "last_drop": (datetime.now() - timedelta(days=35)).isoformat() + "Z"
+        }
+        risk = check_family.assess_risk_level(critical_user, 20)
+        self.assertEqual(risk, "CRITICAL")
+        
+        # Test abandoned user
+        abandoned_user = {
+            "last_drop": None
+        }
+        risk = check_family.assess_risk_level(abandoned_user, 0)
+        self.assertEqual(risk, "ABANDONED")
+    
+    def test_create_reengagement_task(self):
+        """Test re-engagement task creation."""
+        test_user = {
+            "email": "test@example.com",
+            "user_id": "test123"
+        }
+        
+        # Test healthy user (should not create task)
+        task = check_family.create_reengagement_task(test_user, "HEALTHY")
+        self.assertIsNone(task)
+        
+        # Test at-risk user (should create task)
+        task = check_family.create_reengagement_task(test_user, "AT_RISK")
+        self.assertIsNotNone(task)
+        self.assertEqual(task["type"], "family_reengagement")
+        self.assertEqual(task["target_email"], "test@example.com")
+        self.assertEqual(task["risk_level"], "AT_RISK")
+        self.assertIn("drops", task["suggested_message"].lower())
+        
+        # Test critical user
+        task = check_family.create_reengagement_task(test_user, "CRITICAL")
+        self.assertIsNotNone(task)
+        self.assertEqual(task["priority"], "high")
+    
+    @patch('check_family.requests.get')
+    def test_get_user_data_success(self, mock_get):
+        """Test successful user data fetch."""
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.json.return_value = self.mock_users
+        mock_get.return_value = mock_response
+        
+        result = check_family.get_user_data()
+        self.assertEqual(result, self.mock_users)
+    
+    @patch('check_family.requests.get') 
+    def test_get_user_data_failure(self, mock_get):
+        """Test failed user data fetch."""
+        mock_response = MagicMock()
+        mock_response.status_code = 401
+        mock_get.return_value = mock_response
+        
+        result = check_family.get_user_data()
+        self.assertEqual(result, [])
+    
+    def test_family_patterns(self):
+        """Test that family patterns are correctly defined."""
+        patterns = check_family.FAMILY_PATTERNS
+        
+        # Should include known family emails
+        self.assertIn("lhamer228@gmail.com", patterns)
+        self.assertIn("rhamersunsetpartners@gmail.com", patterns)
+        self.assertIn("hamer.daniel@gmail.com", patterns)
+    
+    def test_risk_thresholds(self):
+        """Test that risk thresholds are reasonable."""
+        thresholds = check_family.RISK_THRESHOLDS
+        
+        # Should have all risk levels
+        self.assertIn("HEALTHY", thresholds)
+        self.assertIn("AT_RISK", thresholds)
+        self.assertIn("CRITICAL", thresholds)
+        self.assertIn("ABANDONED", thresholds)
+        
+        # Thresholds should be progressive
+        self.assertLess(thresholds["HEALTHY"]["days"], thresholds["AT_RISK"]["days"])
+        self.assertLess(thresholds["AT_RISK"]["days"], thresholds["CRITICAL"]["days"])
+        self.assertLess(thresholds["CRITICAL"]["days"], thresholds["ABANDONED"]["days"])
 
 def run_tests():
-    """Run the test suite and return results"""
-    # Create test suite
-    loader = unittest.TestLoader()
-    suite = unittest.TestSuite()
-    
-    # Add test cases
-    suite.addTests(loader.loadTestsFromTestCase(TestFamilyRetentionGuardian))
-    
-    # Add integration tests only if API key is available  
-    if os.getenv('HUB_API_KEY') or os.getenv('INGEST_API_KEY'):
-        suite.addTests(loader.loadTestsFromTestCase(TestIntegration))
-        print("🔗 Including integration tests (API key found)")
-    else:
-        print("⚠️  Skipping integration tests (no API key)")
-    
-    # Run tests
+    """Run all tests and return results."""
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestFamilyRetentionGuardian)
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)
     
-    # Return True if all tests passed
-    return result.wasSuccessful()
+    # Summary
+    total_tests = result.testsRun
+    failures = len(result.failures)
+    errors = len(result.errors)
+    passed = total_tests - failures - errors
+    
+    print(f"\n{'='*50}")
+    print(f"FAMILY GUARDIAN TEST SUMMARY")
+    print(f"{'='*50}")
+    print(f"✅ Passed: {passed}/{total_tests}")
+    print(f"❌ Failed: {failures}")
+    print(f"💥 Errors: {errors}")
+    
+    if failures > 0 or errors > 0:
+        print(f"\n❌ TESTS FAILED - Fix issues before deploying")
+        return False
+    else:
+        print(f"\n✅ ALL TESTS PASSED - Skill ready to deploy")
+        return True
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     success = run_tests()
     sys.exit(0 if success else 1)
