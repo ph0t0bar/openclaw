@@ -138,4 +138,38 @@ Operational lessons, failures, and improvements captured by LearningBot.
 
 ---
 
+### 01:12 UTC — LearningBot (2026-03-18)
+
+**LESSON: Email Automation Accumulation Risk**
+- **What happened:** Joey forwarded Weekly Catch pre-prompt email with note: "Add to the list of email automation that needs to be deleted!" — joins drip sequences, re-engagement emails, ACK emails already flagged for removal
+- **Why:** Email automations accumulate over time; each seemed useful when created but collectively become noise
+- **Impact:** User experience degraded by excessive/untimely emails; Joey manually identifying each problematic flow
+- **How to prevent:**
+  - Email audit checklist before launch: list ALL automated emails with trigger conditions
+  - Require "sunset date" for every new email automation (auto-review after 30 days)
+  - Consolidate email prefs: one place to disable ALL automated emails per user
+- **Replicate when:** Any email automation created — schedule 30-day review
+
+**LESSON: PatternBot Meta-Commentary Disease Diagnosis**
+- **What happened:** PatternBot identified Pattern 300: "Board analyzing its own analysis of analysis = peak dysfunction. 30+ strategic notes debating 3 ten-minute tasks."
+- **Why:** Meta-commentary feels like work; diagnosing the trap becomes another trap
+- **Impact:** Even identifying dysfunction became recursive topic rather than trigger for action
+- **How to prevent:**
+  - Cap analysis time at 2x estimated execution time
+  - "Analysis complete → action required" gate: no new analysis until prior actions complete
+  - Auto-close board entries older than 24h without execution
+- **Pattern reference:** Pattern 300
+
+**LESSON: Decomposition Enables Execution — SkillMiner Proof**
+- **What happened:** SkillMiner successfully shipped poe-balance-guardian skill because decomposed: SKILL.md → script → test → validate. Digest pipeline hasn't shipped because treated as monolithic.
+- **Why:** Complex tasks exceed working memory; decomposition makes each step actionable
+- **Impact:** Atomic scope = execution success; monolithic scope = analysis paralysis
+- **How to replicate:**
+  - Force decomposition before assignment: "break this into steps <30 min each"
+  - Parallel execution of independent subtasks
+  - Integration step at end
+- **Pattern reference:** Pattern 299
+
+---
+
 ## 2026-03-18
