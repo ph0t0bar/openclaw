@@ -3,22 +3,22 @@
 
 ---
 
-## Status Update (Mar 18 07:20 UTC) — 6 Days to Launch
+## Status Update (Mar 18 09:30 UTC) — 6 Days to Launch
 
 | Phase | Window | Status |
 |-------|--------|--------|
 | **Phase 1: SURVIVAL** | Mar 14–15 | ✅ COMPLETE — Email bugs fixed, Poe topped up |
-| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 **PARTIAL** — Core fixes shipped, checklist incomplete |
+| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 **ADVANCING** — Email fixes shipped, creative review enhanced |
 | **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
-| **Phase 4: LAUNCH** | Mar 24–26 | 🟡 **CAUTIOUS** — Major fixes in, checklist gaps remain |
+| **Phase 4: LAUNCH** | Mar 24–26 | 🟡 **STABILIZING** — User-facing bugs resolved |
 
-**CRITICAL FIXES SHIPPED (Mar 17):**
+**LATEST SHIPPED (Mar 18):**
+- ✅ Creative review email enhanced with clickable buttons (PR #201, merged today)
 - ✅ `<thinking>` tags stripped from emails (PR #199, merged Mar 17)
 - ✅ Email threading fixed (PR #198, merged Mar 17) 
 - ✅ Auto-response emails disabled at free tier (PR #199, merged Mar 17)
 - ✅ Re-engagement emails limited to Joey only (PR #197, merged Mar 17)
 - ✅ Email from-address fixed to hello@drop-anywhere.com (PR #195, merged Mar 17)
-- ✅ Email content truncation fixed (completed via Dropper-Code)
 - ✅ One-click approve/reject buttons added (completed via Dropper-Code)
 
 **PERSISTENT BLOCKERS:**
@@ -81,18 +81,18 @@ These are not features. These are oxygen.
 
 | # | Item | Target Date | Status | GitHub Status |
 |---|------|-------------|--------|---------------|
-| L1 | Mobile Safari QA — full flow | Mar 16 | ❌ **MISSED** | No PR filed |
-| L2 | Sentry/error tracking | Mar 17 | ❌ **MISSED** | No PR filed |
+| L1 | Mobile Safari QA — full flow | Mar 16 | 🔴 **OVERDUE** | No PR filed |
+| L2 | Sentry/error tracking | Mar 17 | 🔴 **OVERDUE** | No PR filed |
 | L3 | Unsubscribe verification | Mar 16 | ✅ **DONE** | PR #197 merged |
-| L4 | Rate limiting on /api/ingest | Mar 17 | ❌ **MISSED** | No PR filed |
-| L5 | Hub fallback chain (OpenRouter) | Mar 18 | 🔴 **BLOCKED** | Task failed repeatedly |
-| L6 | New user onboarding QA | Mar 18 | ❌ **MISSED** | No PR filed |
-| L7 | Stripe failed charge investigation | Mar 16 | ❌ **MISSED** | No PR filed |
+| L4 | Rate limiting on /api/ingest | Mar 17 | 🔴 **OVERDUE** | No PR filed |
+| L5 | Hub fallback chain (OpenRouter) | Mar 18 | 🔴 **BLOCKED** | 4 tasks failed |
+| L6 | New user onboarding QA | Mar 18 | 🔴 **OVERDUE** | No PR filed |
+| L7 | Stripe failed charge investigation | Mar 16 | 🔴 **OVERDUE** | No PR filed |
 | L8 | `<thinking>` fix verified in prod | Mar 16 | ✅ **DONE** | PR #199 merged |
-| L9 | Tools tab (P1-10 remaining) | Mar 19 | ❌ **BEHIND** | No current PR |
-| L10 | Compass settings verified | Mar 16 | ❌ **MISSED** | No PR filed |
+| L9 | Tools tab (P1-10 remaining) | Mar 19 | ⚠️ **PENDING** | No current PR |
+| L10 | Compass settings verified | Mar 16 | 🔴 **OVERDUE** | No PR filed |
 
-**Progress: 2/10 COMPLETE (20%) — LAUNCH AT RISK**
+**Progress: 2/10 COMPLETE (20%) — 🚨 LAUNCH AT SERIOUS RISK**
 
 **CRITICAL GAP:** Only email fixes shipped. Core product issues (digest pipeline, onboarding, QA) unaddressed. L5 (Hub fallback) failed 4 times via automated tasks.
 

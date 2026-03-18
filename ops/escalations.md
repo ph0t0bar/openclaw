@@ -1,68 +1,49 @@
-# Escalations - 2026-03-18
+# Launch Escalations - March 18, 2026
 
-## 🔴 CRITICAL ISSUES (Immediate Action Required)
+## 🚨 CRITICAL: Launch-Blocking Items Behind Schedule
 
-### 1. DIGEST PIPELINE FAILURE (P0)
-- **Status**: 2/119 users received digests in 24h (98% failure rate)
-- **Evidence**: `digests_sent_24h: 2` from Hub dashboard
-- **Impact**: Core product broken for 117 users including family members
-- **Duration**: 7+ hours with 0 pipeline attempts in current window
-- **Family Risk**: lhamer228 (14d disengaged), rhamersunsetpartners (11d disengaged)
-- **Action Needed**: Manual digest scheduler investigation/restart
+**6 days to soft launch (March 24)**  
+**8/10 critical path items OVERDUE**
 
-### 2. ANTHROPIC API KEY EXPOSURE (Security)
-- **Status**: API key `sk-ant-oat01-GgOnC1EC...` exposed in git commits
-- **Evidence**: Sentry scan detected in workspace files
-- **Impact**: Security breach, potential unauthorized usage
-- **Action Needed**: Immediate key rotation + git history cleanup
+### Immediate Action Required
 
-### 3. OPENCLAW CI FAILURE (Deployment Blocker)
-- **Status**: GitHub Actions failing on openclaw repo
-- **Evidence**: `"openclaw":{"ci":"failure","open_issues":0}` from Hub
-- **Impact**: Cannot deploy fixes or updates
-- **Action Needed**: CI pipeline investigation
+| Item | Target | Days Overdue | Impact |
+|------|--------|--------------|---------|
+| **L1: Mobile Safari QA** | Mar 16 | **2 days** | Users can't use product on mobile |
+| **L2: Sentry error tracking** | Mar 17 | **1 day** | No visibility into prod issues |
+| **L4: Rate limiting** | Mar 17 | **1 day** | API abuse vulnerability |
+| **L5: Hub fallback chain** | Mar 18 | **TODAY** | Single point of failure (Poe) |
+| **L6: Onboarding QA** | Mar 18 | **TODAY** | New users hit broken flows |
+| **L7: Stripe investigation** | Mar 16 | **2 days** | Payment issues unresolved |
+| **L10: Compass settings** | Mar 16 | **2 days** | Core feature broken |
 
-## 🟡 HIGH PRIORITY ISSUES
+### Critical Analysis
 
-### 4. DROPPER-CODE EXHAUSTED
-- **Status**: Claude Code usage limit hit, resets Mar 20 3am UTC  
-- **Evidence**: Multiple task failures since Mar 17 12:48 UTC
-- **Impact**: No automated fixes until reset
-- **Workaround**: Manual intervention required for P0 issues
+**Email fixes were prioritized correctly** — user-facing embarrassment resolved.  
+**But core product stability was neglected** — 8/10 launch items still broken.
 
-### 5. FAMILY RETENTION CRISIS
-- **Lisa (lhamer228)**: 14 days no drops, 12 digests sent without engagement
-- **Dad (rhamersunsetpartners)**: 11 days no drops, 8 digests sent without engagement  
-- **Action**: Personal outreach needed (email or WhatsApp)
+**Pattern:** Dropper-Code successfully handles straightforward fixes but **consistently fails** on complex issues:
+- 4 failed attempts at digest pipeline recovery
+- 0 attempts at mobile QA, Sentry, rate limiting
+- Hub fallback chain deemed too complex
 
-## ⚠️ MEDIUM PRIORITY
+### Recommendations
 
-### 6. AGENT TIMEOUT CLUSTER
-- **DocBot**: 8 consecutive timeouts (91% failure rate)
-- **Creative Review Emailer**: 4 consecutive timeouts
-- **Meta/Governance**: 91-100% failure rates on oversight functions
-- **System Success**: 73% (below 95% target)
+1. **PAUSE automated task generation** until current backlog cleared
+2. **Manual intervention required** for L1, L2, L4, L6, L7, L10
+3. **Consider launch delay** if <7/10 items aren't resolved by EOD Mar 19
+4. **Triage meeting needed** to assess realistic launch readiness
 
-### 7. LAUNCH WINDOW RISK
-- **Timeline**: 6 days to March 24 email-only launch
-- **Completion**: 2/10 items (20% - down from 60%)
-- **Core Product**: Broken during critical pre-launch period
+### Risk Assessment
 
-## 📊 SYSTEM STATUS SUMMARY
+**If launching Mar 24 with current state:**
+- New users will hit broken onboarding flows
+- Mobile users (majority) will have poor experience  
+- No error monitoring = flying blind
+- Payment issues may persist
+- Single point of failure (Poe) unaddressed
 
-**Green**: 
-- Hub healthy (status: ok)
-- Backup current (last: 2026-03-18 09:05 UTC)
-- Poe balance recovered (2M+ points)
-- User growth (+10 users today to 119 total)
-
-**Red**: 
-- Digest delivery (2/119 = 98% failure)
-- Security (API key exposed)
-- CI/CD (openclaw deployment blocked)
-- Family engagement (2/3 family members at risk)
-
-**Next Review**: 12:00 UTC (4h decision window)
+**Recommendation: DELAY SOFT LAUNCH** to Mar 26-27 unless dramatic progress in next 24h.
 
 ---
-*Last updated: 2026-03-18 09:21 UTC by Chief of Staff*
+*Generated: Mar 18 09:30 UTC by Launch Coordinator*
