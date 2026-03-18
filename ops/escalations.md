@@ -35,8 +35,9 @@
 **Evidence:** 
 - DocBot: 8 consecutive timeouts
 - Creative Review Emailer: 4 consecutive timeouts  
+- Sentry: 3+ redundant scans (wasted cycles)
 - System success rate: 73% (below 95% target)
-**Action Required:** Prompt optimization or agent disabling  
+**Action Required:** Prompt optimization or agent disabling for chronic offenders  
 
 ---
 
