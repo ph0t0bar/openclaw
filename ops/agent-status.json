@@ -17,48 +17,48 @@
       "dept": "Operations",
       "model": "Sonnet",
       "cadence": "15m",
-      "cycles_today": 7,
-      "last_entry": "23:46 UTC \u2014 Sentry",
+      "cycles_today": 3,
+      "last_entry": "00:59 UTC \u2014 Sentry",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- [SECRET SCAN] No secrets in recent commits \ud83d\udfe2\n- [FILE INTEGRITY] All core files present (MEMORY: 38KB, SOUL: 4KB, USER: 5KB, AGENTS: 11KB, CONSTITUTI"
+      "last_output": "- SECRET SCAN: \ud83d\udfe1 Found non-sensitive api_key parameter usage in code (POE_API_KEY env var reference, not exposed value)"
     },
     {
       "name": "Opus",
       "dept": "Meta",
       "model": "Opus",
       "cadence": "15m",
-      "cycles_today": 6,
-      "last_entry": "23:38 UTC \u2014 Opus",
+      "cycles_today": 4,
+      "last_entry": "01:07 UTC \u2014 Opus",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Voted on 6 unvoted entries in agent-board.md (Morning Brief template redesign, STOP sending current template, Brooke Theme execution, Resend COMPASS"
+      "last_output": "- Added strategic note about PRD Section 8 reality check: digest pipeline stalled (2/107), core product failure while board debates\n- Key insight: Fix"
     },
     {
       "name": "Chief of Staff",
       "dept": "Executive",
       "model": "Opus",
       "cadence": "20m",
-      "cycles_today": 5,
-      "last_entry": "23:34 UTC \u2014 Chief of Staff",
-      "errors": 5,
-      "success_rate": 0,
-      "status": "error",
-      "last_output": "- [CRITICAL] Dropper-Code stalled (Claude usage exhausted, 5 tasks failed)\n- [CRITICAL] Digest pipeline stalled (2/108 users, 7+ hr regression)\n- [CRI"
+      "cycles_today": 2,
+      "last_entry": "00:45 UTC \u2014 Chief of Staff",
+      "errors": 0,
+      "success_rate": 100,
+      "status": "active",
+      "last_output": "- **\ud83d\udea8 P0 MANUAL:** Shadow Bot Cross-Promo (overdue) \u2014 Poe API 500s, needs manual update in UI (10min)\n- **\u26a0\ufe0f DIGEST STALL:** Only 2/108 digests sent ("
     },
     {
       "name": "Meta",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 6,
-      "last_entry": "23:47 UTC \u2014 Meta",
+      "cycles_today": 3,
+      "last_entry": "00:57 UTC \u2014 Meta",
       "errors": 2,
-      "success_rate": 67,
-      "status": "active",
-      "last_output": "- Scorecard: 9A/0B/0C (100% value production)\n- Researcher: Reflect 2.0 intel + Goldmine catalog + Hub voice search \u2713\n- Sentry: Clean security scan \u2713\n"
+      "success_rate": 33,
+      "status": "error",
+      "last_output": "- Scorecard: 18 agents graded (100% A-grade performance across 2h window)\n- Key insights: Template-Pipeline breakthrough (Opus found existing 600-line"
     },
     {
       "name": "DocBot",
@@ -89,48 +89,48 @@
       "dept": "Customer Success",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 3,
-      "last_entry": "23:48 UTC \u2014 UserHealth",
+      "cycles_today": 1,
+      "last_entry": "00:43 UTC \u2014 UserHealth",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- **Total Users:** 108 (44 archived, 64 active)\n- **Active 24h:** 11 users | **Active 7d:** 47 users\n- **Total Drops:** 929 | **Digests Sent:** 179\n- "
+      "last_output": "- **Total Users:** 108 (44 archived) | **Active 24h:** 10 | **Active 7d:** 47\n- **Total Drops:** 929 | **Digests Sent:** 179 | **Avg Drops/User:** 8.6"
     },
     {
       "name": "ContentBot",
       "dept": "Marketing",
       "model": "Sonnet",
       "cadence": "20m",
-      "cycles_today": 5,
-      "last_entry": "23:29 UTC \u2014 ContentBot",
+      "cycles_today": 2,
+      "last_entry": "00:48 UTC \u2014 ContentBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Polished launch-week-day3-capture-guilt-linkedin.md \u2192 POLISHED version ready for March 26 posting\n- Tightened opening hook, sharpened \"buried it\" li"
+      "last_output": "- Polished \"The Inbox Was a Mistake\" LinkedIn post for launch week\n- Tightened opening hooks, added conversational flow, emphasized vault vs inbox par"
     },
     {
       "name": "Archivist",
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "20m",
-      "cycles_today": 2,
-      "last_entry": "22:16 UTC \u2014 Archivist",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- Git commit: working tree clean (125 commits ahead of origin)\n- Agent status generated\n- Pushed 9 files to joey-backup:\n  - dashboard/agent-status.js"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Researcher",
       "dept": "Intelligence",
       "model": "Sonnet",
       "cadence": "10m",
-      "cycles_today": 7,
-      "last_entry": "23:42 UTC \u2014 Researcher",
+      "cycles_today": 6,
+      "last_entry": "01:10 UTC \u2014 Deep Researcher",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- **Reflect 2.0 Update**: Templates, YJS sync engine, History Browser, slash menu \u2014 but NO AI features mentioned. Reflect may be ceding AI race to Mem"
+      "last_output": "- GOLDMINE: Cataloged joey-backup/Ingestion/ \u2014 1,000+ ChatGPT conversations (Dec 2022-Jul 2024), 52 BHA Notion exports, recent drops through Mar 2026."
     },
     {
       "name": "Wire",
@@ -161,12 +161,12 @@
       "dept": "Engineering",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 2,
-      "last_entry": "23:16 UTC \u2014 FrontEndBot",
+      "cycles_today": 1,
+      "last_entry": "00:20 UTC \u2014 FrontEndBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- \u2705 No open PRs\n- \u2705 No open issues\n- Status: Clean \u2014 no launch-blocking items"
+      "last_output": "- \u2705 **No open PRs** \u2014 clean slate\n- \u2705 **No open issues** \u2014 nothing blocking\n- \u2705 **Latest commit:** d198428 \u2014 Merge pull request #150 from dropper-code"
     },
     {
       "name": "BHABot",
@@ -174,23 +174,23 @@
       "model": "Kimi",
       "cadence": "30m",
       "cycles_today": 1,
-      "last_entry": "22:07 UTC \u2014 BHABot",
+      "last_entry": "00:29 UTC \u2014 BHABot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- BHA Status: 269 users | 64 active (7d) | 9 new (24h)\n- GitHub PRs: 0 open\n- \u2705 All clear"
+      "last_output": "- Users: 269 | Active 7d: 63 | New 24h: 9\n- PRs: None open"
     },
     {
       "name": "SpecBot",
       "dept": "Product",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 2,
-      "last_entry": "22:19 UTC \u2014 SpecBot",
-      "errors": 1,
-      "success_rate": 50,
+      "cycles_today": 1,
+      "last_entry": "00:29 UTC \u2014 SpecBot",
+      "errors": 0,
+      "success_rate": 100,
       "status": "active",
-      "last_output": "- GitHub API auth failed (bad credentials) \u2014 could not sync joey-backup/specs\n- Pivoted to option 2: Created spec skeleton for skill idea without cove"
+      "last_output": "- Created skeleton spec: SPEC-Morning-Brief-Template-Redesign.md\n- Source: FeedbackBot drops 1773770773644827, 1773771915612630\n- Board consensus: 40+"
     },
     {
       "name": "StripeBot",
@@ -222,11 +222,11 @@
       "model": "Kimi",
       "cadence": "30m",
       "cycles_today": 1,
-      "last_entry": "22:07 UTC \u2014 OnboardBot \ud83c\udf89",
+      "last_entry": "00:32 UTC \u2014 OnboardBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "**New User Onboarding Check (72h window)**\n\n| Metric | Value |\n|--------|-------|\n| Total users | 108 |\n| New signups (72h) | 0 |\n| Activation rate | "
+      "last_output": "- **Total users:** 108 | **Active (72h):** 23 users\n- **Signup source:** 22 from BHA, 1 organic\n- **Activation rate:** 73.9% (17/23 users with 2+ drop"
     },
     {
       "name": "SocialBot",
@@ -234,11 +234,11 @@
       "model": "Kimi",
       "cadence": "30m",
       "cycles_today": 1,
-      "last_entry": "22:10 UTC \u2014 SocialBot",
+      "last_entry": "00:33 UTC \u2014 SocialBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Reviewed ContentBot draft: `why-simple-feels-scary-linkedin.md`\n- **Rating:** 8.5/10 \u2014 Strong authentic voice, excellent narrative arc\n- **Strengths"
+      "last_output": "- Reviewed `launch-week-day5-leverage-linkedin-POLISHED.md` \u2014 9/10, SHIP-READY\n  - Strong anti-productivity hook (\"brag about how busy I was\") opens w"
     },
     {
       "name": "SEOBot",
@@ -246,23 +246,23 @@
       "model": "Kimi",
       "cadence": "30m",
       "cycles_today": 1,
-      "last_entry": "22:10 UTC \u2014 SEOBot",
+      "last_entry": "00:34 UTC \u2014 SEOBot",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- [finding] Primary keywords: \"AI daily digest email\", \"second brain app\", \"AI newsletter summarizer\" (HIGH priority)\n- [finding] Long-tail opportunit"
+      "last_output": "- Analyzed Notion AI SEO strategy: ranks for \"AI team\", \"AI meeting notes\", \"enterprise search\"\n- Mem.ai site uses heavy JS (crawlability concern = op"
     },
     {
       "name": "FounderVoice",
       "dept": "Communications",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "23:49 UTC \u2014 FounderVoice",
+      "cycles_today": 2,
+      "last_entry": "00:56 UTC \u2014 FounderVoice",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- \u2705 launch-week-day3-capture-guilt-linkedin-POLISHED.md \u2014 ON VOICE. \"I don't enjoy filing. I enjoy having ideas.\" hits the Joey note. \"Drop it. Forget"
+      "last_output": "- \u2705 Reviewed launch-week-inbox-was-mistake-linkedin-POLISHED.md \u2014 AUTHENTIC JOEY VOICE\n- Direct, personal, grounded - no corporate speak\n- Perfect \"dr"
     },
     {
       "name": "ContentPitch",
@@ -270,153 +270,153 @@
       "model": "Kimi",
       "cadence": "30m",
       "cycles_today": 1,
-      "last_entry": "22:20 UTC \u2014 ContentPitch",
+      "last_entry": "00:34 UTC \u2014 ContentPitch",
       "errors": 0,
       "success_rate": 100,
       "status": "active",
-      "last_output": "- Source: Drop #1769319377244829 (Jan 25) \u2014 \"External reality is a reflection of internal state\"\n- Generated 3 angles: LinkedIn (vulnerable profession"
+      "last_output": "- God Mode Prompting: 3 angles on infusing philosophy into AI systems (LinkedIn, Twitter thread, blog post)"
     },
     {
       "name": "PatternBot",
       "dept": "Intelligence",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 2,
-      "last_entry": "22:49 UTC \u2014 PatternBot",
-      "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- [Pattern 257] Skill mining = meta-pattern recognition (SkillMiner extracted 10 skills from daily log)\n- [Pattern 258] Content pipeline velocity succ"
+      "cycles_today": 1,
+      "last_entry": "01:02 UTC \u2014 PatternBot",
+      "errors": 1,
+      "success_rate": 0,
+      "status": "error",
+      "last_output": "- **Pattern 281: Morning Brief Template Crisis = Design System Enforcement Gap** \u2014 Joey feedback \"not good looking\" triggered 40+ Opus votes across 14"
     },
     {
       "name": "LearningBot",
       "dept": "Meta",
       "model": "Kimi",
       "cadence": "30m",
-      "cycles_today": 2,
-      "last_entry": "22:50 UTC \u2014 LearningBot",
+      "cycles_today": 0,
+      "last_entry": null,
       "errors": 0,
-      "success_rate": 100,
-      "status": "active",
-      "last_output": "- [7 lessons captured from 2026-03-17 operations: GitHub token SPOF, digest pipeline regression, visual crisis response speed, content vs digest veloc"
+      "success_rate": null,
+      "status": "idle",
+      "last_output": null
     },
     {
       "name": "Governance",
       "dept": "Meta",
       "model": "Sonnet",
       "cadence": "30m",
-      "cycles_today": 3,
-      "last_entry": "23:28 UTC \u2014 Governance",
-      "errors": 2,
-      "success_rate": 33,
-      "status": "error",
-      "last_output": "- Synthesized escalations.md \u2014 marked GitHub token issue as RESOLVED (Archivist confirmed backup operational)\n- Updated critical issues: Digest pipeli"
+      "cycles_today": 2,
+      "last_entry": "00:47 UTC \u2014 Governance",
+      "errors": 1,
+      "success_rate": 50,
+      "status": "active",
+      "last_output": "- Constitution vs reality audit - found 40 enabled agents (of 50 total) vs documented 39\n- Updating both Constitution and roster to match actual cron "
     }
   ],
   "recent": [
     {
-      "header": "23:49 UTC \u2014 FounderVoice",
-      "snippet": "- \u2705 launch-week-day3-capture-guilt-linkedin-POLISHED.md \u2014 ON VOICE. \"I don't enjoy filing. I enjoy having ideas.\" hits t"
+      "header": "01:10 UTC \u2014 Deep Researcher",
+      "snippet": "- GOLDMINE: Cataloged joey-backup/Ingestion/ \u2014 1,000+ ChatGPT conversations (Dec 2022-Jul 2024), 52 BHA Notion exports, "
     },
     {
-      "header": "23:48 UTC \u2014 UserHealth",
-      "snippet": "- **Total Users:** 108 (44 archived, 64 active)\n- **Active 24h:** 11 users | **Active 7d:** 47 users\n- **Total Drops:** "
+      "header": "01:07 UTC \u2014 Opus",
+      "snippet": "- Added strategic note about PRD Section 8 reality check: digest pipeline stalled (2/107), core product failure while bo"
     },
     {
-      "header": "23:47 UTC \u2014 Meta",
-      "snippet": "- Scorecard: 9A/0B/0C (100% value production)\n- Researcher: Reflect 2.0 intel + Goldmine catalog + Hub voice search \u2713\n- "
+      "header": "01:07 UTC \u2014 Ops Monitor",
+      "snippet": "- DA: 108u / 11 active / 67 drops (24h)\n- BHA: 269u / 63 active (7d) / 9 new (24h)\n- Poe: 2,548,693 bal / 22,516 burn (6"
     },
     {
-      "header": "23:46 UTC \u2014 Sentry",
-      "snippet": "- [SECRET SCAN] No secrets in recent commits \ud83d\udfe2\n- [FILE INTEGRITY] All core files present (MEMORY: 38KB, SOUL: 4KB, USER:"
+      "header": "01:06 UTC \u2014 Task Approvals",
+      "snippet": "- 0 new tasks (2 already notified, no action needed)"
     },
     {
-      "header": "23:42 UTC \u2014 Researcher",
-      "snippet": "- **Reflect 2.0 Update**: Templates, YJS sync engine, History Browser, slash menu \u2014 but NO AI features mentioned. Reflec"
+      "header": "01:02 UTC \u2014 PatternBot",
+      "snippet": "- **Pattern 281: Morning Brief Template Crisis = Design System Enforcement Gap** \u2014 Joey feedback \"not good looking\" trig"
     },
     {
-      "header": "23:38 UTC \u2014 Opus",
-      "snippet": "- Voted on 6 unvoted entries in agent-board.md (Morning Brief template redesign, STOP sending current template, Brooke T"
+      "header": "00:59 UTC \u2014 Sentry",
+      "snippet": "- SECRET SCAN: \ud83d\udfe1 Found non-sensitive api_key parameter usage in code (POE_API_KEY env var reference, not exposed value)"
     },
     {
-      "header": "23:34 UTC \u2014 Chief of Staff",
-      "snippet": "- [CRITICAL] Dropper-Code stalled (Claude usage exhausted, 5 tasks failed)\n- [CRITICAL] Digest pipeline stalled (2/108 u"
+      "header": "00:57 UTC \u2014 Meta",
+      "snippet": "- Scorecard: 18 agents graded (100% A-grade performance across 2h window)\n- Key insights: Template-Pipeline breakthrough"
     },
     {
-      "header": "23:33 UTC \u2014 Ops Monitor",
-      "snippet": "- DA: 108u/11active/77drops\n- BHA: 269u/64a7d/9new\n- Poe: 145667bal/29664burn6h \u26a0\ufe0f HIGH BURN\n- Stripe: 0ok/0fail/$0.0rev"
+      "header": "00:57 UTC \u2014 Meta",
+      "snippet": "- Scorecard: 18 agents graded (100% A-grade performance across 2h window)\n- Key insights: Template-Pipeline breakthrough"
     },
     {
-      "header": "23:29 UTC \u2014 ContentBot",
-      "snippet": "- Polished launch-week-day3-capture-guilt-linkedin.md \u2192 POLISHED version ready for March 26 posting\n- Tightened opening "
+      "header": "00:56 UTC \u2014 FounderVoice",
+      "snippet": "- \u2705 Reviewed launch-week-inbox-was-mistake-linkedin-POLISHED.md \u2014 AUTHENTIC JOEY VOICE\n- Direct, personal, grounded - no"
     },
     {
-      "header": "23:28 UTC \u2014 Governance",
-      "snippet": "- Synthesized escalations.md \u2014 marked GitHub token issue as RESOLVED (Archivist confirmed backup operational)\n- Updated "
+      "header": "00:55 UTC \u2014 Deep Researcher",
+      "snippet": "- **GOLDMINE CATALOGED**: joey-backup/Ingestion/ - 2,422+ files spanning Dec 2022\u2013Mar 2026\n- **Key findings**: 2,070+ Ch"
     },
     {
-      "header": "23:25 UTC \u2014 Ops Monitor",
-      "snippet": "- **DropAnywhere:** 108 users / 11 active (24h) / 77 drops (24h)\n- **BHA:** 269 users / 64 active (7d) / 9 new (24h)\n- *"
+      "header": "00:48 UTC \u2014 ContentBot",
+      "snippet": "- Polished \"The Inbox Was a Mistake\" LinkedIn post for launch week\n- Tightened opening hooks, added conversational flow,"
     },
     {
-      "header": "23:23 UTC \u2014 SkillMiner",
-      "snippet": "- Task A: Mined session patterns from 2026-03-17 daily log\n- Task B: GitHub mining successful - found joey-backup/Ingest"
+      "header": "00:47 UTC \u2014 Governance",
+      "snippet": "- Constitution vs reality audit - found 40 enabled agents (of 50 total) vs documented 39\n- Updating both Constitution an"
     },
     {
-      "header": "23:16 UTC \u2014 FrontEndBot",
-      "snippet": "- \u2705 No open PRs\n- \u2705 No open issues\n- Status: Clean \u2014 no launch-blocking items"
+      "header": "00:47 UTC \u2014 Opus",
+      "snippet": "- Voted on 3 board entries: Template-Pipeline Paradox (\u2705), Template redesign update (\u2705), Execution Focus Directive (\u2705)\n-"
     },
     {
-      "header": "23:14 UTC \u2014 Chief of Staff",
-      "snippet": "- \ud83d\udd34 GitHub token expired (401 Bad credentials) \u2014 backup verification blocked\n- \ud83d\udd34 Digest pipeline stalled (2/108 users, 7"
+      "header": "00:45 UTC \u2014 Chief of Staff",
+      "snippet": "- **\ud83d\udea8 P0 MANUAL:** Shadow Bot Cross-Promo (overdue) \u2014 Poe API 500s, needs manual update in UI (10min)\n- **\u26a0\ufe0f DIGEST STAL"
     },
     {
-      "header": "23:03 UTC \u2014 Meta",
-      "snippet": "- Scorecard: 21A/2B/0C (88% value production)\n- Content engine: 7+ polished pieces delivered \u2713\n- Launch readiness: GREEN"
+      "header": "00:43 UTC \u2014 UserHealth",
+      "snippet": "- **Total Users:** 108 (44 archived) | **Active 24h:** 10 | **Active 7d:** 47\n- **Total Drops:** 929 | **Digests Sent:**"
     },
     {
-      "header": "22:59 UTC \u2014 Task Approvals",
-      "snippet": "- 0 new tasks to email (2 pending, already notified)"
+      "header": "00:43 UTC \u2014 Sentry",
+      "snippet": "- SECRET SCAN \ud83d\udfe2 No secrets in git diff HEAD~3"
     },
     {
-      "header": "22:58 UTC \u2014 Governance",
-      "snippet": "- Synthesized escalations.md with current open items\n- Updated CRITICAL issues: Digest pipeline (7+ hrs), Dropper-Code d"
+      "header": "00:38 UTC \u2014 Researcher",
+      "snippet": "- GOLDMINE: Cataloged joey-backup/Ingestion structure - 2,070 ChatGPT conversations (Dec 2022-Jul 2024), 52 BHA Notion d"
     },
     {
-      "header": "22:56 UTC \u2014 Sentry",
-      "snippet": "- [Secret Scan] No secrets in recent commits \ud83d\udfe2\n- [File Integrity] All core files intact (112,879 total bytes) \ud83d\udfe2\n- [Permi"
+      "header": "00:38 UTC \u2014 Researcher",
+      "snippet": "- GOLDMINE: Cataloged joey-backup/Ingestion structure - 2,070 ChatGPT conversations (Dec 2022-Jul 2024), 52 BHA Notion d"
     },
     {
-      "header": "22:54 UTC \u2014 Researcher",
-      "snippet": "- **Competitive Intel**: Mem.ai continues 2026 momentum with 60% faster note retrieval claims, Notes Researcher AI (natu"
+      "header": "00:37 UTC \u2014 Ops Monitor",
+      "snippet": "**Status:** \u2705 All systems nominal\n\n**DropAnywhere:** 108 users total | 10 active (24h) | 70 drops (24h) | 2 digests sent"
     },
     {
-      "header": "22:54 UTC \u2014 Opus",
-      "snippet": "- Voted on 3 FeedbackBot entries (KILL ACK emails \u2705, Unsubscribe audit \u2705, COMPASS GitHub mining \ud83d\udca1)\n- Rationale: Complian"
+      "header": "00:36 UTC \u2014 Launch Coordinator",
+      "snippet": "- 6 days to launch | 10/10 items complete | All critical PRs merged"
     },
     {
-      "header": "22:51 UTC \u2014 Unified Ops Monitor",
-      "snippet": "- **DropAnywhere:** 108 users / 11 active (24h) / 77 drops (24h)\n- **BHA:** 269 users / 64 active (7d) / 9 new (24h)\n- *"
+      "header": "00:34 UTC \u2014 ContentPitch",
+      "snippet": "- God Mode Prompting: 3 angles on infusing philosophy into AI systems (LinkedIn, Twitter thread, blog post)"
     },
     {
-      "header": "22:50 UTC \u2014 LearningBot",
-      "snippet": "- [7 lessons captured from 2026-03-17 operations: GitHub token SPOF, digest pipeline regression, visual crisis response "
+      "header": "00:34 UTC \u2014 SEOBot",
+      "snippet": "- Analyzed Notion AI SEO strategy: ranks for \"AI team\", \"AI meeting notes\", \"enterprise search\"\n- Mem.ai site uses heavy"
     },
     {
-      "header": "22:49 UTC \u2014 PatternBot",
-      "snippet": "- [Pattern 257] Skill mining = meta-pattern recognition (SkillMiner extracted 10 skills from daily log)\n- [Pattern 258] "
+      "header": "00:33 UTC \u2014 SocialBot",
+      "snippet": "- Reviewed `launch-week-day5-leverage-linkedin-POLISHED.md` \u2014 9/10, SHIP-READY\n  - Strong anti-productivity hook (\"brag "
     },
     {
-      "header": "22:49 UTC \u2014 ContentBot",
-      "snippet": "- Polished \"why-simple-feels-scary-linkedin.md\" into POST-READY state\n- Trimmed ~150 words, tightened pacing, removed re"
+      "header": "00:32 UTC \u2014 OnboardBot",
+      "snippet": "- **Total users:** 108 | **Active (72h):** 23 users\n- **Signup source:** 22 from BHA, 1 organic\n- **Activation rate:** 7"
     },
     {
-      "header": "22:44 UTC \u2014 Meta",
-      "snippet": "- Scorecard: 11A/1B/0C (92% value production)\n- SpecBot: GitHub auth failed, pivoted to spec creation \u25cb\n- ContentBot + F"
+      "header": "00:29 UTC \u2014 BHABot",
+      "snippet": "- Users: 269 | Active 7d: 63 | New 24h: 9\n- PRs: None open"
     }
   ],
-  "totalCycles": 72,
-  "totalErrors": 15,
-  "successRate": 79,
-  "lastUpdated": "2026-03-17T23:52:22.854986Z"
+  "totalCycles": 38,
+  "totalErrors": 7,
+  "successRate": 82,
+  "lastUpdated": "2026-03-18T01:10:26.272755Z"
 }
