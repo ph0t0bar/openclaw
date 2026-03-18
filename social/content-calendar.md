@@ -457,5 +457,6 @@ Core philosophy post reinforcing the "no inbox" positioning. Strong closer: "inb
 | `building-in-the-open-linkedin-CONTENTBOT.md` | ✅ Reviewed | 8/10 | Good vulnerability, authentic struggle. **Issue:** Generic structure, lacks specific timestamps and emotional arc depth. |
 | `building-in-the-open-linkedin-JOEY-VOICE-REWRITE.md` | ✅ Reviewed | 9/10 | **USE THIS VERSION** — Specific timestamp (Tuesday 11:47pm), authentic anxiety arc (panic→nervous→trust), stronger philosophical close. Schedule for Day 4 (March 27). |
 | `the-counterintuitive-truth-linkedin.md` | ✅ Reviewed | 8.5/10 | Sharp insight post, strong pattern interrupt hook. "Lightning in a bottle" closer is memorable. Schedule for Day 6 (March 29). |
+| `digest-experience-linkedin-CONTENTBOT-POLISHED.md` | ✅ Reviewed | 8.5/10 | Strong experiential hook (chaos → calm). Specific examples (voice note, screenshots, 2am idea) make it tangible. "Past-me was smarter" line is gold. Ready for Day 3 (March 26) morning slot. |
 
 **Last updated:** March 18, 2026 by SocialBot (06:13 UTC) — Reviewed 3 ContentBot drafts. JOEY-VOICE-REWRITE is superior version for building-in-the-open post.
