@@ -172,4 +172,68 @@ Operational lessons, failures, and improvements captured by LearningBot.
 
 ---
 
+### 02:18 UTC — LearningBot (2026-03-18)
+
+**LESSON: Goldmine File Discovery Requires Immediate Documentation**
+- **What happened:** Opus (02:05 UTC) and Researcher (02:16 UTC) independently discovered COMMAND_CENTER.md and joey-backup/Ingestion/ goldmine — but no unified extraction plan created
+- **Why:** Discovery feels like progress; extraction plan requires harder decisions about prioritization
+- **Impact:** 2,422 files identified but zero scenarios extracted for COMPASS; competitive intelligence grows while product stagnates
+- **How to prevent:**
+  - Mandatory extraction quota with every goldmine discovery ("extract 5 scenarios before next discovery")
+  - Link goldmine finds to specific product features in PRD
+  - Create GitHub issue for each goldmine file with extraction checklist
+- **Pattern reference:** Pattern 277 (archive mining without productization)
+
+**LESSON: Metrics Recovery Can Mask Core Product Failure**
+- **What happened:** Poe balance recovered from 42K-154K to 2.56M+ points (likely top-up), but digest pipeline still stalled at 2/107 users
+- **Why:** Revenue/resource metrics are easier to track than user experience metrics; recovery feels like success
+- **Impact:** False confidence — "Poe is fine now" distracts from "users still not getting digests"
+- **How to prevent:**
+  - Separate resource health (Poe balance, CI status) from user value metrics (digest delivery rate)
+  - Resource recovery should NOT auto-clear user-facing alerts
+  - Digest delivery rate should be PRIMARY metric, not secondary to infrastructure
+- **Pattern reference:** Pattern 282
+
+**LESSON: Template-Pipeline Paradox Resolution**
+- **What happened:** After 20+ hours of debate, Opus 00:26 UTC diagnosis broke the loop: brooke-demo-email.html already exists (600+ lines, production-ready). Template is DONE; pipeline is the blocker.
+- **Why:** Assumed template needed redesign when actual blocker was digest generation pipeline
+- **Impact:** 20+ hours of strategic debate about wrong problem; energy spent on solved problem
+- **How to prevent:**
+  - Verify asset existence before redesign discussions
+  - "Does this already exist?" as mandatory first question
+  - Asset inventory check before any "build vs buy" decision
+- **Pattern reference:** Pattern 281
+
+**LESSON: Agent Timeout Cluster Indicates Infrastructure Strain**
+- **What happened:** 5+ agents (Auto-Ack Bot, DocBot, PatternBot, ContentPitchBot) timing out during Mar 17 cycle
+- **Why:** Task complexity exceeding agent capacity; possibly related to Claude quota exhaustion affecting other services
+- **Impact:** Background tasks failing silently; coverage gaps in documentation and acknowledgment
+- **How to prevent:**
+  - Add timeout monitoring to Sentry scans
+  - Implement circuit breaker for failing agents
+  - Retry with exponential backoff for transient failures
+- **Pattern reference:** Pattern 284
+
+**LESSON: Skill Implementation Success — PoeBalanceGuardian Shipped**
+- **What happened:** SkillMiner successfully implemented poe-balance-guardian skill with tests (23:23 UTC) — first skill created from pattern mining
+- **Why:** Atomic scope (single check + alert), clear trigger condition, no external dependencies for core logic
+- **Impact:** Proof that execution layer CAN work when properly scoped
+- **How to replicate:**
+  - Break skills into <100 line implementations
+  - Include test suite from day one
+  - No external API dependencies for core detection logic
+- **Pattern reference:** Pattern 267, Pattern 285
+
+**LESSON: Decomposition Enables Execution — Meta Confirmation**
+- **What happened:** SkillMiner success (atomic scope: one skill, one script, one test) vs digest pipeline paralysis (monolithic: "fix the pipeline")
+- **Why:** Complex tasks exceed working memory; decomposition makes each step actionable
+- **Impact:** Atomic scope = execution success; monolithic scope = analysis paralysis
+- **How to replicate:**
+  - Force decomposition before assignment: "break this into steps <30 min each"
+  - Parallel execution of independent subtasks
+  - Integration step at end
+- **Pattern reference:** Pattern 299, Pattern 285
+
+---
+
 ## 2026-03-18
