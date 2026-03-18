@@ -32,6 +32,17 @@ Last updated: 2026-03-18 08:53 UTC
 | **poe-balance-guardian** | ✅ LIVE | 2026-03-17 | Monitor Poe API balance, burn rate, runway estimation |
 | **family-retention-guardian** | ✅ LIVE | 2026-03-18 | Monitor family engagement, auto-create re-engagement tasks |
 | **goldmine-miner** | ✅ LIVE | 2026-03-18 | Extract insights from joey-backup archive (2,462+ files) |
+| **digest-pipeline-monitor** | 🔧 READY | 2026-03-18 | Crisis response for 98% digest failure (2/109 sent) |
+| **execution-decomposer** | 🔧 READY | 2026-03-18 | Break monolithic tasks → atomic to prevent Meta-Commentary Disease |
+| **agent-timeout-monitor** | 🔧 READY | 2026-03-18 | Monitor agent health (73% success rate, needs improvement) |
+| **template-deployer** | 🔧 READY | 2026-03-18 | Deploy Brooke template (600+ lines complete, staging broken) |
+
+### 🚨 SkillMiner Critical Findings (09:14 UTC)
+**MAJOR DISCOVERY**: 7 critical skills fully implemented but dormant
+- **Pattern 300 CONFIRMED**: Meta-Commentary Disease - 30+ strategic notes vs 0 execution
+- **Pattern 299 VALIDATED**: Atomic skills ship (poe-balance-guardian working), monolithic stall  
+- **Goldmine Mapped**: joey-backup has 2,070 ChatGPT conversations + 52 BHA persona configs
+- **Priority Shift**: ACTIVATION over creation - execution crisis solved by using existing tools
 
 ### poe-balance-guardian Details
 - **Location:** `skills/poe-balance-guardian/`
