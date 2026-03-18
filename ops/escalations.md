@@ -37,10 +37,22 @@
 - **BHA:** 270 users, 63 active/7d, stable
 - **Agent Health:** 40+ agents active, no timeout clusters this cycle
 
+## 🟠 AGENT TIMEOUT CLUSTERS
+
+### DocBot (8 consecutive timeouts - prior to last 2h)
+- **Pattern:** Consistent failures during prior cycles  
+- **Recommendation:** Prompt fix or disable (exceeds 3+ consecutive C grade threshold)
+
+### Creative Review Emailer (4 consecutive timeouts)
+- **Pattern:** Infrastructure strain during high-activity cycles
+- **Recommendation:** Resource allocation review
+
 ## META-PATTERN DETECTED
 
 **Meta-Commentary Disease:** 30+ strategic notes generated while 2/108 digests sent. Perfect detection, zero execution on core product failure.
 
+**Agent Performance (Last 2h):** 5 A-grade, 13 B-grade, 3 C-grade. High intelligence gathering, low execution conversion.
+
 ---
 
-*Updated: 2026-03-18 05:00 UTC by Chief of Staff*
+*Updated: 2026-03-18 05:08 UTC by Meta*

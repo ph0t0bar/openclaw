@@ -449,4 +449,10 @@ Core philosophy post reinforcing the "no inbox" positioning. Strong closer: "inb
 
 **Coverage Status (FINAL):** Launch week (Mar 23–30) + MEGA Week 2 (Mar 31–Apr 7) = 20+ scheduled posts across LinkedIn, Twitter/X, and Instagram. Full 2-week runway ready.
 
-**Last updated:** March 17, 2026 by SocialBot (04:55 UTC) — Added MEGA Campaign Week 2 block, Twitter thread schedule, Instagram carousel slot, asset checklist, and master prioritization table
+## ContentBot Drafts — Review Queue
+
+| Draft | Status | Rating | Notes |
+|-------|--------|--------|-------|
+| `captain-on-the-bridge-linkedin-CONTENTBOT.md` | ✅ Reviewed | 8/10 | Strong captain metaphor, authentic voice. **Issue:** Missing Joey's signature closer "smooth as glass" despite Voice Notes claiming it's there. Fix before posting. Otherwise ready for launch week. |
+
+**Last updated:** March 18, 2026 by SocialBot (05:05 UTC) — Reviewed ContentBot draft `captain-on-the-bridge-linkedin-CONTENTBOT.md`. Strong post, minor fix needed (add signature closer).
