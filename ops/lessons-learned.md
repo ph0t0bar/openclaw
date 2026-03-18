@@ -236,4 +236,98 @@ Operational lessons, failures, and improvements captured by LearningBot.
 
 ---
 
+### 03:27 UTC — LearningBot (2026-03-18)
+
+**LESSON: Meta-Commentary Disease Confirmed at Scale**
+- **What happened:** PatternBot identified Pattern 300: "Meta-Commentary Disease" — 30+ strategic notes debating 3 ten-minute tasks while 2/108 digests actually sent
+- **Why:** Analysis feels like work; execution requires confronting failure
+- **Impact:** Board became recursive loop of self-analysis rather than action trigger
+- **How to prevent:**
+  - Hard cap: 3 strategic notes per operational crisis, then mandatory action
+  - Auto-close board entries after 24h without execution
+  - Distinguish "understanding" from "doing" — they are not the same
+- **Pattern reference:** Pattern 300, Pattern 286
+
+**LESSON: Family Retention as Execution Canary — Confirmed**
+- **What happened:** 8+ UserHealth escalations for family retention (lhamer228, rhamersunsetpartners, hamer.daniel) → 0 human action = execution failure indicator
+- **Why:** If personal stakes don't override system paralysis, nothing will
+- **Impact:** Emotional + business cost; proves execution layer broken, not detection layer
+- **How to prevent:**
+  - Family members get automatic Claw notification (not just agent board)
+  - Personal onboarding call triggered at 7 days inactivity for family
+  - Family digest delivery = priority queue (guaranteed even during outages)
+- **Pattern reference:** Pattern 287, Pattern 264
+
+**LESSON: Agent Timeout Cluster — Infrastructure Strain**
+- **What happened:** 5+ agents (Auto-Ack Bot, DocBot, PatternBot, ContentPitchBot, SkillMiner) timing out during Mar 17-18 cycle
+- **Why:** Task complexity exceeding agent capacity; Claude quota exhaustion may be cascading
+- **Impact:** Background tasks failing silently; coverage gaps
+- **How to prevent:**
+  - Add timeout monitoring to Sentry scans
+  - Implement circuit breaker for failing agents
+  - Retry with exponential backoff for transient failures
+- **Pattern reference:** Pattern 284, Pattern 265
+
+**LESSON: Skill Implementation Success — Validated**
+- **What happened:** SkillMiner shipped poe-balance-guardian skill (23:23 UTC) and family-retention-guardian detection (03:15 UTC) — both working
+- **Why:** Atomic scope (single check + alert), clear trigger, no external dependencies
+- **Impact:** Proof execution layer CAN work when properly scoped
+- **How to replicate:**
+  - Break skills into <100 line implementations
+  - Include test suite from day one
+  - No external API dependencies for core detection logic
+- **Pattern reference:** Pattern 267, Pattern 285, Pattern 288
+
+**LESSON: Decomposition Enables Execution — Confirmed**
+- **What happened:** SkillMiner success (atomic: one skill, one script, one test) vs digest pipeline paralysis (monolithic: "fix the pipeline")
+- **Why:** Complex tasks exceed working memory; decomposition makes each step actionable
+- **Impact:** Atomic scope = execution; monolithic = analysis paralysis
+- **How to replicate:**
+  - Force decomposition before assignment: "break into steps <30 min each"
+  - Parallel execution of independent subtasks
+  - Integration step at end
+- **Pattern reference:** Pattern 299, Pattern 285, Pattern 288
+
+**LESSON: Goldmine Discovery Without Extraction Plan**
+- **What happened:** Opus (02:05 UTC) mined COMMAND_CENTER.md, Researcher (02:16 UTC) cataloged joey-backup/Ingestion/ — 2,422+ files identified, zero scenarios extracted for COMPASS
+- **Why:** Discovery feels like progress; extraction requires harder prioritization decisions
+- **Impact:** Archive identified but not mined; competitive intelligence grows while product stagnates
+- **How to prevent:**
+  - Mandatory extraction quota with every goldmine discovery ("extract 5 scenarios before next discovery")
+  - Link goldmine finds to specific PRD features
+  - Create GitHub issue for each goldmine file with extraction checklist
+- **Pattern reference:** Pattern 277, Pattern 289
+
+**LESSON: Metrics Recovery Masks Core Product Failure**
+- **What happened:** Poe balance recovered from 42K-154K to 2.56M+ points (likely top-up), but digest pipeline still stalled at 2/107 users
+- **Why:** Revenue/resource metrics easier to track than user experience; recovery feels like success
+- **Impact:** False confidence — "Poe is fine" distracts from "users not getting digests"
+- **How to prevent:**
+  - Separate resource health (Poe balance, CI status) from user value metrics (digest delivery rate)
+  - Resource recovery should NOT auto-clear user-facing alerts
+  - Digest delivery rate = PRIMARY metric, not secondary
+- **Pattern reference:** Pattern 282
+
+**LESSON: Template-Pipeline Paradox Resolution**
+- **What happened:** After 20+ hours of debate, Opus 00:26 UTC diagnosis broke loop: brooke-demo-email.html already exists (600+ lines, production-ready). Template DONE; pipeline is blocker.
+- **Why:** Assumed template needed redesign when actual blocker was digest generation
+- **Impact:** 20+ hours strategic debate about wrong problem; energy spent on solved problem
+- **How to prevent:**
+  - Verify asset existence before redesign discussions
+  - "Does this already exist?" as mandatory first question
+  - Asset inventory check before any "build vs buy" decision
+- **Pattern reference:** Pattern 281
+
+**LESSON: Detection-Execution Gap Persists**
+- **What happened:** 100% detection coverage (digest failure, Poe burn, CI failure, family risk, competitive threats) vs ~10% execution coverage. Only SkillMiner's poe-balance-guardian shipped.
+- **Why:** Agents excel at identifying problems but execution requires human approval or external dependencies
+- **Impact:** Same issues flagged repeatedly across 6+ hours without resolution
+- **How to prevent:**
+  - Auto-approve degraded-mode fixes (no HITL for band-aids)
+  - Create execution bot with pre-approved fallback actions
+  - Distinguish "detect" from "escalate" — not every detection needs human review
+- **Pattern reference:** Pattern 280, Pattern 285
+
+---
+
 ## 2026-03-18
