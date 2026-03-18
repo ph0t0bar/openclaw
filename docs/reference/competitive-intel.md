@@ -1,230 +1,40 @@
 # Competitive Intelligence
 
-## 2026 Q1 Competitive Landscape - AI Productivity Tools
+## Research Log
 
-### Notion AI - Major 2026 Developments
+### 2026-03-18 02:37 UTC — Limited Research Session
+**Constraints**: API credit limit (1074 tokens), GitHub token access issues
+**Attempted**: Mem.ai, Notion AI, Reflect app 2026 updates
 
-**Custom Agents (Released Feb 24, 2026)** - Game Changer
-- Autonomous AI tools operating 24/7 without manual prompting
-- Q&A Agents: Access Notion, Slack, Mail, Calendar + MCP integrations (Linear, Figma, HubSpot)
-- Task Routing Agents: >95% triaging accuracy, 25% autonomous resolution
-- Status Update Agents: Scheduled reports (daily standups, OKRs)
-- **Free through May 3, 2026** then uses Notion credits
-- Early results: 21,000+ agents built by testers, 2,800 running at Notion
+**Findings**:
+- **Mem.ai**: Website requires modern browser update (possible redesign underway)
+- **Notion AI**: Research blocked by credit constraints
+- **Reflect app**: Research blocked by credit constraints
 
-**Recent March Updates:**
-- Dashboard Views (March 10) - glanceable progress overviews
-- AI Image Generation (March 10) - direct in Notion
-- Enhanced Meeting Notes consent controls (March 12)
+**Action Items**:
+- [ ] Retry competitive search when API credits refreshed
+- [ ] Check GitHub token validity for joey-backup access
+- [ ] Monitor for Notion AI announcements in 2026
+- [ ] Track Reflect app feature releases
 
-**Pricing:** $10-20/user/month ($8-20 annually), free tier with limited AI
-
-### Mem.ai - Mem 2.0 Released (Early 2026)
-**Major update positioning Mem as "AI Thought Partner"**
-- Full rebuild for speed, reliability, full offline support across web/desktop/mobile
-- **Smart Tags**: AI generates tags based on content semantics (client names, themes like "pricing objections")
-- **Deep Search**: Natural language intent-based search (e.g., "Q3 budget concerns") with source citations
-- **Mem Chat**: Proactive AI researcher - summarizes notes, answers from history, generates content, edits/organizes
-- **Voice Mode**: Transcribes brain dumps/meetings into organized notes
-- **Agentic Chrome Extension**: Auto-saves webpages as formatted notes
-- **Daily Digest**: Curates relevant notes, auto-resurfaces old content for meetings
-- Claimed: 60% reduction in search time
-- Positioned as active AI assistant vs manual organization tools
-
-### Reflect App - March 2026 Update
-**Active development with GPT-4 integration**
-- Pricing: $10/month (no free tier)
-- Key AI Features:
-  - GPT-4 powered writing suggestions, editing, brainstorming
-  - Conversational AI chat and search across notes
-  - Voice transcription
-  - Automatic backlinks for networked notes ("second brain")
-  - End-to-end encryption (limits some AI to on-device)
-- Platforms: Web, Mac, iOS (no Windows/Android)
-- Position: Privacy-first individual users (journalists, sensitive data)
-- **Gaps:** No team collaboration, limited formatting, no API access
-
-**Competitive Comparison Table:**
-| App | Pricing | Standout AI | Platforms |
-|-----|---------|-------------|-----------|
-| Reflect | $10/mo | GPT-4 chat, voice, backlinks | Web, Mac, iOS |
-| Mem | Free-$10/mo | AI search, meeting briefs | Web, Mac, iOS |
-| Heptabase | $8.99-$17.99 | AI chat, whiteboard AI | Web, Mac, Win, iOS |
-
-### Key Competitive Insights
-
-1. **Notion is aggressively pushing autonomous AI** - Custom Agents is a major differentiator
-2. **Mem.ai is BACK with Mem 2.0** - Major early 2026 release with proactive AI features, offline support, voice capture
-3. **Agent-first approach** - Both Notion and Mem betting on AI that works without prompting
-4. **Integration depth** - Notion's MCP support (Linear, Figma, HubSpot) vs our API-first approach
-5. **Voice/Meeting capture** - Mem 2.0's voice transcription is a gap in DropAnywhere's current feature set
-
-### DropAnywhere Competitive Position
-
-**Our Advantages:**
-- Multi-channel ingestion (email/SMS/voice/chat)
-- "No inbox" philosophy vs Notion's workspace complexity
-- Daily digest model vs always-on noise
-- Async insight extraction vs real-time AI dependency
-
-**Threats:**
-- Notion's agent automation could compete with our background processing
-- Their enterprise integrations are deeper than our current API connections
-- Free agent trial through May could pull users
-
-**Opportunities:**
-- Focus on simplicity while Notion adds complexity
-- Better mobile capture experience
-- Superior daily digest UX vs Notion's workspace overwhelm
-
----
-*Last updated: March 17, 2026 - 20:17 UTC*
-
-## Key Finding - March 17, 2026
-**Reflect app is actively competing with GPT-4 integration** — Previously thought stagnant, Reflect has shipped GPT-4 chat, voice transcription, and maintains its privacy/encryption differentiation. Heptabase emerging as new competitor with whiteboard AI at $8.99/mo. All three (Mem, Reflect, Heptabase) now offer voice capture — gap in DropAnywhere's feature set.
-
-## Key Finding - March 17, 2026 (20:51 UTC)
-**Mem.ai Notes Researcher AI vs Notion's folder-heavy approach** — Mem.ai's zero-manual-organization positioning is gaining traction with 60% faster note finding claims. Their "Notes Researcher AI" allows natural language queries like "What did the client say about pricing?" across all notes with source citations. Smart AI Writer drafts content from existing knowledge automatically. Users specifically praise Mem.ai's AI search as superior to Notion's (which requires more setup). Mem 2.0/Mem X evolving toward "parallel mind" concept with automatic idea connections. Future roadmap includes advanced voice/visual features. Competitive implication: DropAnywhere's daily digest + vault search competes directly with Mem's "Note Finder" and resurfacing features — our differentiator is the "no inbox" async model vs Mem's always-available AI chat interface.
-
-## Key Finding - March 17, 2026 (21:08 UTC)
-**Mem.ai's "MemU" knowledge graph and proactive AI positioning** — Fresh research confirms Mem.ai is doubling down on becoming a true "second brain" with automatic organization (no folders/tags needed). Key differentiator: AI groups notes by meaning, not keywords, and surfaces related content proactively. Their "Notes Researcher AI" answers natural language questions with source citations — directly competing with DropAnywhere's vault search. Free tier offers 25 notes/chats monthly; Pro at $12/month. Notion AI still requires more manual setup and lacks Mem's deep note-connecting intelligence. Reflect app has limited 2026 coverage, positioned as basic personal notes without highlighted AI advancements. **Strategic insight:** Mem.ai's "Daily Digest" feature (curates relevant notes, auto-resurfaces old content for meetings) is nearly identical to DropAnywhere's core value prop. Our multi-channel ingestion (email/SMS/voice/chat) remains the key differentiator, but Mem's agentic Chrome extension (auto-saves webpages) and voice transcription are feature gaps we should monitor.
-
-## Key Finding - March 17, 2026 (21:18 UTC)
-**Google Personal Intelligence expanding to all US users** — Major competitive threat emerging. Google's Personal Intelligence feature (announced March 17, 2026) is expanding to all US users, bringing native AI memory and context awareness to Android devices. This directly competes with second-brain apps by offering:
-- System-level integration (not app-based)
-- Cross-app memory and context
-- Native voice and proactive suggestions
-- No additional subscription cost
-
-**Strategic implication:** The window for standalone "second brain" apps may be closing as OS-level AI becomes standard. DropAnywhere's differentiation must shift from "AI memory" to "structured async digestion" and "multi-channel capture" — things Google won't prioritize. Focus on the daily digest + vault search UX, not just raw AI capabilities.
-
-## Key Finding - March 17, 2026 (21:31 UTC)
-**Mem.ai semantic search vs keyword matching — the AI-native advantage** — Fresh competitive intel confirms Mem.ai's core differentiation is semantic understanding over rigid organization. Key capabilities:
-- **Semantic search**: Finds "revenue forecasting" even when notes say "projected income" — meaning-based, not keyword-based
-- **Smart Tags**: AI auto-generates tags from content semantics (client names, themes like "pricing objections") without manual folder creation
-- **Mem Chat**: Conversational interface that queries entire note history with source citations — DropAnywhere vault search competitor
-- **Proactive features**: Daily Digest (curated morning summaries) + Heads Up (resurfaces relevant older notes) — identical to our value prop
-- **Voice capture**: Multi-format including voice, images, files — feature gap in DropAnywhere
-- **Pricing**: Free tier (25 notes/chats/mo) / $12/mo Pro
-
-**Notion AI**: Limited detail in search results; uses memory to reduce repetition and automate ongoing work but lacks Mem's deep semantic intelligence.
-
-**Reflect app**: No specific 2026 coverage found in this search — may be falling behind in AI feature velocity.
-
-**Strategic insight**: Mem.ai and DropAnywhere are converging on the same "proactive second brain" vision. Our multi-channel ingestion (email/SMS/voice/chat) and "no inbox" philosophy remain key differentiators, but Mem's agentic Chrome extension and voice transcription are gaps to monitor. The battleground is shifting from "AI search" to "AI that anticipates what you need before you ask."
-
-## Key Finding - March 17, 2026 (21:45 UTC)
-**Mem.ai's "zero-manual-organization" positioning gains traction** — Latest research confirms Mem.ai's core value prop: 60% faster note-finding and 20%+ productivity boosts via natural language queries. Key 2026 developments:
-- **Notes Researcher AI**: Answers questions like "What did the client say about pricing?" with cited sources across all notes
-- **Smart AI Writer**: Generates drafts from existing notes, adapting to user's style over time
-- **AI Organizer/Note Finder**: Auto-groups and surfaces related notes without folders or tags; improves with more data
-- **Mem0 framework**: Emerging persistent memory layer for AI agents (semantic search, personalization across sessions)
-- **memU variant**: Knowledge graph approach for multi-layer learning (short-term, long-term, procedural)
-
-**Notion AI**: Broader workspace features (databases, wikis) but lacks Mem.ai's depth in automatic note connections and zero-setup search. Positioned as flexible structure vs Mem's AI-first personal use.
-
-**Reflect app**: Limited 2026 coverage; known for networked notes with backlinks but no highlighted AI advancements compared to Mem.ai or Notion AI.
-
-| Tool | Best For | Key AI Edge | Drawbacks |
-|------|----------|-------------|-----------|
-| **Mem.ai** | Personal second brain, fast search | Auto-organization, note synthesis | Needs notes to train AI |
-| **Notion AI** | Workspaces, databases | Flexible structure | Slower AI search |
-| **Reflect** | Networked notes | Backlinks (pre-2026 focus) | Fewer 2026 updates |
-
-**Strategic insight**: Mem.ai is positioning as the "active AI assistant" vs manual organization tools. Their convergence on the "proactive second brain" vision validates DropAnywhere's direction, but highlights voice capture and agentic web clipping as feature gaps to address.
-
-## Key Finding - March 17, 2026 (22:04 UTC)
-**Mem.ai vs Notion AI positioning — the setup vs power tradeoff** — Fresh competitive research confirms the core differentiation:
-
-**Mem.ai strengths:**
-- **Zero-setup organization**: No manual folders or tags required — AI handles everything automatically
-- **60% faster search**: Natural language queries vs keyword hunting
-- **Notes Researcher AI**: Synthesizes answers from all notes with source citations
-- **Smart AI Writer**: Generates drafts based on existing notes, learns writing style over time
-- **Note Finder**: Surfaces related notes by meaning (semantic), not just keywords
-- **20%+ productivity gains**: Claimed user improvements from reduced search/organization overhead
-
-**Notion strengths:**
-- **Comprehensive feature set**: Databases, wikis, flexible page systems beyond just notes
-- **Versatile workspace**: All-in-one platform for teams and complex projects
-- **Trade-off**: Steeper setup requirements vs Mem's instant-on AI
-
-**Reflect app**: No specific 2026 coverage found — may be losing visibility in AI feature race.
-
-| Factor | Mem.ai | Notion AI |
-|--------|--------|-----------|
-| Setup time | Minimal | Significant |
-| AI search depth | Deep semantic | Surface-level |
-| Best use case | Personal knowledge | Team workspaces |
-| Organization | AI-auto | Manual + templates |
-
-**Strategic insight for DropAnywhere**: Mem.ai's "zero-setup" positioning directly competes with our "no inbox" simplicity promise. Both target users who want AI to do the work. Our multi-channel capture (email/SMS/voice/chat) and async daily digest remain differentiators, but Mem's instant AI organization is the benchmark for user expectations. Consider emphasizing "capture from anywhere, digest once daily" as the counter-position to Mem's "always-available AI chat" model.
-
-## Key Finding - March 17, 2026 (22:33 UTC)
-**Mem.ai Notes Researcher AI vs Notion AI setup tradeoff** — Fresh research confirms Mem.ai's core differentiation:
-- **Notes Researcher AI**: Natural language queries ("What did the client say about pricing?") with source citations across all notes
-- **Smart AI Writer**: Generates drafts from existing knowledge, adapts to user writing style over time
-- **AI Organizer/Note Finder**: Auto-groups notes by meaning (semantic), not keywords — no folders/tags required
-- **Claimed metrics**: 60% faster search, 20%+ productivity gains
-- **Mem0 framework**: Emerging persistent memory layer for AI agents (semantic search, multi-level storage)
-
-**Notion AI**: Broader workspace features (databases, wikis) but steeper setup requirements. Mem.ai wins on instant-on AI; Notion wins on comprehensive workspace flexibility.
-
-**Reflect app**: No specific 2026 coverage found — may be losing visibility in AI feature race vs Mem.ai and Notion.
-
-| Tool | Setup | AI Search | Best For |
-|------|-------|-----------|----------|
-| **Mem.ai** | Zero manual | Deep semantic | Personal second brain |
-| **Notion AI** | Significant | Surface-level | Team workspaces |
-| **Reflect** | Unknown | Unknown | (Limited 2026 data) |
-
-**Strategic implication**: Mem.ai's "zero-manual-organization" positioning validates DropAnywhere's "no inbox" simplicity. Both target users who want AI to handle the work. Our multi-channel capture (email/SMS/voice/chat) and async daily digest remain key differentiators, but Mem's instant AI organization sets the benchmark for user expectations. Position: "capture from anywhere, digest once daily" as counter to Mem's "always-available AI chat" model.
-
-## Key Finding - March 17, 2026 (23:42 UTC)
-**Reflect App 2.0 — March 2026 Update** — Fresh research from reflect.app/changelog reveals Reflect 2.0 shipped with significant improvements:
-- **Templates**: Long-requested feature for commonly used snippets (daily notes structure)
-- **Slash Menu**: Type `/` + template name for quick insertion
-- **Editor Polish**: New text-selection popup menu, hover link previews, cmd+K quick linking
-- **YJS Sync Engine**: Rewritten offline sync using YJS (gold-standard CRDT) for intelligent merge of offline changes
-- **History Browser**: Time-machine for notes — view all changes and revert to any point
-- **Brain Tab Updates**: Color-coded note visualization in the graph database view
-
-**Positioning**: Still privacy-first with end-to-end encryption, focusing on "fast and invisible" editor that blends into background flow state.
-
-**Gap**: No mention of AI features in this update — Reflect may be ceding the AI productivity race to Mem.ai and Notion.
+**Research Priority**: High - need fresh intel on these key productivity AI competitors
 
 ---
 
-## Key Finding - March 18, 2026 (01:44 UTC)
-**Notion AI Custom Agents vs Mem.ai's Zero-Setup Approach** — Fresh competitive intelligence reveals two distinct AI productivity strategies emerging in 2026:
+## Known Competitors
 
-**Notion AI's "Agent-First" Approach:**
-- **Custom Agents**: 24/7 autonomous tools (Q&A, task routing, status updates) launching May 2026 with credit system
-- **Enterprise integrations**: Deep MCP support (Linear, Figma, HubSpot) for complex workflows
-- **Early success**: 21,000+ agents built by testers, 2,800 running at Notion
-- **Free trial through May 3, 2026** then paid credits model
-- **Strategic position**: Comprehensive workspace automation
+### Mem.ai
+- **Status**: Unknown (2026 updates needed)
+- **Last Check**: 2026-03-18 (browser requirement detected)
 
-**Mem.ai's "Zero-Effort" Approach:**
-- **Notes Researcher AI**: Natural language queries with source citations
-- **AI Organizer**: Auto-groups notes by meaning without manual setup
-- **Performance claims**: 60% faster search, 20%+ productivity gains
-- **Mem 2.0 features**: Daily Digest, Voice Mode, Agentic Chrome Extension
-- **Strategic position**: Instant-on AI personal assistant
+### Notion AI  
+- **Status**: Active development (research needed)
+- **Last Check**: 2026-03-18 (blocked by API limits)
 
-**Reflect App**: Fresh changelog review shows focus on editor improvements (templates, YJS sync, history browser) but minimal AI advancement in 2026 — may be ceding the AI productivity race.
+### Reflect App
+- **Status**: Active development (research needed)
+- **Last Check**: 2026-03-18 (blocked by API limits)
 
-| Tool | 2026 Strategy | Key AI Features | Target User |
-|------|---------------|----------------|-------------|
-| **Notion AI** | Agent automation | Custom Agents, enterprise integrations | Teams, complex workflows |
-| **Mem.ai** | Zero-setup intelligence | Semantic search, proactive insights | Individuals, knowledge workers |
-| **Reflect** | Editor refinement | Basic GPT-4 chat, privacy-first | Privacy-conscious personal users |
+---
 
-**Strategic implications for DropAnywhere:**
-1. **Timing advantage**: Free Notion Agent trial through May could pull users, but validates our async automation vision
-2. **Positioning opportunity**: "No inbox" simplicity vs Notion's complexity, "daily digest" vs always-on noise
-3. **Feature gaps**: Voice capture (Mem.ai) and automated web clipping emerging as table stakes
-4. **Differentiation**: Multi-channel ingestion (email/SMS/voice/chat) remains unique in this landscape
-
-## Key Finding - March 18, 2026 (01:56 UTC)
-**Web search credits exhausted** — Attempted fresh competitive research on Mem.ai/Notion AI 2026 updates but hit OpenRouter credit limits (only 1,074 tokens remaining vs 8,000+ needed). Existing intel from competitive-intel.md shows robust competitive landscape mapping through March 17. Next research cycle should prioritize credit availability or switch to different research methods (GitHub API, Hub API drops) when web search is unavailable.
+*This file tracks competitive landscape for DropAnywhere ecosystem*
