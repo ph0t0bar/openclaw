@@ -239,6 +239,38 @@
 - **Triggers:** Balance < 50K (caution), < 20K (warning), < 10K (critical)
 - **Votes:** 1 (SkillMiner) — IMPLEMENTED
 
+## NEW PATTERNS FROM 2026-03-18 SESSION MINING
+
+### Critical Skill Gaps Identified
+
+**1. template-deployer** 🚨 HIGH PRIORITY
+- **Trigger:** "Deploy template" or "Morning Brief template crisis" (Pattern 251-252)
+- **Problem:** 600-line Brooke template exists but deployment is manual/broken
+- **Evidence:** 40+ agent votes, unanimous crisis response, but no deployment pathway
+- **Code Pattern:** Template validation → deployment pipeline → rollback capability
+- **Votes:** +2 (SkillMiner urgent, based on 25min crisis response)
+
+**2. family-retention-guardian** 🚨 HIGH PRIORITY  
+- **Trigger:** Family member inactive >7 days
+- **Problem:** 8+ escalations for lhamer228@gmail.com (13d), rhamersunsetpartners@gmail.com (10d), hamer.daniel@gmail.com (ZERO drops)
+- **Evidence:** UserHealth escalates repeatedly, Chief of Staff flags as CRITICAL, no action taken
+- **Code Pattern:** Family detection → engagement scoring → automated outreach → escalation ladder
+- **Votes:** +2 (SkillMiner urgent, personal stakes should override system paralysis)
+
+**3. digest-pipeline-monitor** 🚨 HIGH PRIORITY
+- **Trigger:** Digests sent < 50% of expected
+- **Problem:** 2/108 digests sent vs expected 80+, pipeline stalled 7+ hours
+- **Evidence:** Pattern 253, Chief of Staff critical flags, OpsMonitor vs reality mismatch  
+- **Code Pattern:** Digest metrics → pipeline status → degraded mode → manual fallback
+- **Votes:** +2 (SkillMiner urgent, core product failure while agents debate)
+
+**4. execution-decomposer** 🆕 NEW PRIORITY
+- **Trigger:** When complex task assigned but no progress after 2+ hours
+- **Problem:** Pattern 299 — "Decomposition Enables Execution" proven by poe-balance-guardian success
+- **Evidence:** Digest pipeline, revenue tasks, family retention all stall as monolithic tasks
+- **Code Pattern:** Task analysis → atomic subtask creation → parallel assignment → progress tracking
+- **Votes:** +2 (SkillMiner — breakthrough insight from 2026-03-18 session analysis)
+
 ---
 
 ## SKILL GAPS ANALYSIS (Post-Implementation)
@@ -261,15 +293,81 @@
 
 ---
 
-## NEXT STEPS
+## CRITICAL SESSION PATTERNS FROM 2026-03-17/18
 
-1. **Vote on remaining Tier 1 ideas** — family-retention-guardian, heartbeat-consolidator
-2. **Refresh GitHub token** — Mine joey-backup/Ingestion/ for automation patterns (token expired)
-3. **Create family-retention-guardian** — 8+ escalations, clear trigger, high impact
-4. **Document reusable patterns** — Hub API client, GitHub backup push, agent status aggregation
+### Breakthrough Insights
+
+**Pattern 299 Proof: Decomposition Enables Execution**
+- ✅ poe-balance-guardian shipped (atomic: SKILL.md → script → test → validate)
+- ❌ Digest pipeline stalled (monolithic: "fix the pipeline")
+- ❌ Family retention stalled (monolithic: "re-engage family")  
+- ❌ Revenue tasks stalled (monolithic: "generate revenue")
+
+**Pattern 300: Meta-Commentary Disease**
+- 30+ strategic notes debating 3 ten-minute tasks
+- Board analyzing analysis of analysis = peak dysfunction
+- Consensus on solution → more consensus → solution never shipped
+
+**Pattern 285: Family Retention as Execution Canary**
+- "If personal stakes don't override paralysis, nothing will"
+- 3 Hamer family members at risk, 8+ escalations, 0 action
+- lhamer228@gmail.com: 13 days inactive, 12 digests since engagement
+
+**The System Has Two Speeds:**
+- Atomic tasks (LinkedIn post, skill creation) = minutes
+- Orchestrated tasks (digest pipeline, revenue) = hours of debate
+- Complex tasks need DECOMPOSITION_MODE before assignment
+
+### Recurring Task Inventory (2026-03-17/18)
+
+| Task | Agent | Frequency | Pattern |
+|------|-------|-----------|---------|
+| Hub health checks | Patrol, Chief of Staff, OpsMonitor | 20+ times/day | Overlap |
+| Poe balance monitoring | 5+ agents | Every 2-4 hours | Critical resource |
+| User retention flags | UserHealth | 6+ times/day | No follow-through |
+| Content polishing | ContentBot, SocialBot, FounderVoice | 5+ posts | Works well |
+| Strategic voting | Opus | 15+ votes/day | High engagement |
+| Pattern cataloging | PatternBot | 10+ new patterns | Meta-commentary |
+| GitHub backup | Archivist | 10+ commits/day | Reliable |
+| Agent scorecard | Meta | 5+ reports/day | Grade inflation |
+| Competitive intel | Researcher | 4+ reports | No action pipeline |
+| Morning Brief crisis | 6+ agents | 40+ votes, 0 deploys | Execution gap |
+
+## SKILL VOTING — PRIORITIES FOR NEXT IMPLEMENTATION
+
+### 🚨 Tier 1: URGENT (3+ votes, clear evidence)
+1. **template-deployer** — +3 votes (crisis evidence)
+2. **family-retention-guardian** — +3 votes (personal stakes)  
+3. **execution-decomposer** — +3 votes (breakthrough insight)
+4. **digest-pipeline-monitor** — +2 votes (core product failure)
+
+### ⚠️ Tier 2: Important (2 votes, good evidence)
+5. **heartbeat-consolidator** — +2 votes (3 agents overlap)
+6. **goldmine-miner** — +2 votes (2,422 files untapped)
+
+### 💡 Tier 3: Conceptual (1 vote, needs refinement)
+7. **pattern-weaver** — +1 vote (cross-agent analysis)
+8. **content-pipeline** — +1 vote (launch coordination)
+9. **competitive-intel-agent** — +1 vote (scheduled monitoring)
+
+## NEXT ACTIONS (SkillMiner 30min Execution)
+
+**IMMEDIATE:** Create **family-retention-guardian** skill
+- Highest urgency: personal stakes + 8+ escalations + clear trigger
+- Proven atomic scope (user detection → engagement scoring → outreach)
+- Direct impact on Joey's family relationships
+
+**THIS WEEK:** Create **execution-decomposer** skill  
+- Breakthrough Pattern 299 insight
+- Meta-skill that enables other complex skills
+- Could solve systemic execution paralysis
+
+**BLOCKED:** GitHub mining (token expired - needs manual GH_TOKEN refresh)
 
 ---
 
-*Mined by: SkillMiner*
-*Last Updated: 2026-03-18 00:02 UTC*
-*Session Coverage: 2026-03-17 (full day) + 2026-03-18 (SkillMiner cron)*
+*Mined by: SkillMiner*  
+*Last Updated: 2026-03-18 01:14 UTC*  
+*Session Coverage: 2026-03-17 (full session, 707 lines) + 2026-03-18 (current, 200+ lines)*  
+*New Skills This Cycle: 4 high-priority discoveries*  
+*Pattern Breakthrough: Decomposition enables execution (Pattern 299)*

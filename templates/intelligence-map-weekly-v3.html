@@ -127,7 +127,9 @@
   </div>
 </div>
 
-<!-- OPEN QUESTIONS -->
+<!-- {{/projects}} -->
+<!-- SECTION: OPEN QUESTIONS — optional, show if user has question-type drops -->
+<!-- Variable: {{#questions}} -->
 <div style="background:white;border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,0.04),0 4px 12px rgba(0,0,0,0.03);">
   <div style="display:flex;align-items:center;margin-bottom:20px;">
     <div style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#D4A5A5,#c08e8e);text-align:center;line-height:28px;font-size:14px;margin-right:10px;color:white;">?</div>
@@ -152,7 +154,9 @@
   </div>
 </div>
 
-<!-- REMINDERS & TASKS -->
+<!-- {{/questions}} -->
+<!-- SECTION: REMINDERS — optional, show if user has reminder/task drops -->
+<!-- Variable: {{#reminders}} -->
 <div style="background:white;border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,0.04),0 4px 12px rgba(0,0,0,0.03);">
   <div style="display:flex;align-items:center;margin-bottom:20px;">
     <div style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C4A484,#a88c6c);text-align:center;line-height:28px;font-size:14px;margin-right:10px;color:white;">!</div>
@@ -180,7 +184,8 @@
   </table>
 </div>
 
-<!-- KEY IDEAS -->
+<!-- {{/reminders}} -->
+<!-- SECTION: KEY IDEAS — always shown (core value prop) -->
 <div style="background:white;border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,0.04),0 4px 12px rgba(0,0,0,0.03);">
   <div style="display:flex;align-items:center;margin-bottom:20px;">
     <div style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#A8B5A0,#C4A484);text-align:center;line-height:28px;font-size:14px;margin-right:10px;color:white;">&#10024;</div>
@@ -204,7 +209,7 @@
   </div>
 </div>
 
-<!-- CONNECTIONS -->
+<!-- SECTION: CONNECTIONS — always shown (core value prop, the magic) -->
 <div style="background:white;border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,0.04),0 4px 12px rgba(0,0,0,0.03);">
   <p style="margin:0 0 4px;font-size:15px;color:#2D2A26;font-weight:700;">Connections</p>
   <p style="margin:0 0 18px;font-size:12px;color:#8B8680;">Threads your conscious mind might have missed</p>
@@ -228,7 +233,8 @@
   </div>
 </div>
 
-<!-- DOMAIN BALANCE -->
+<!-- SECTION: DOMAIN BALANCE — optional, show for users who care about life balance tracking -->
+<!-- Variable: {{#show_domains}} -->
 <div style="background:white;border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,0.04),0 4px 12px rgba(0,0,0,0.03);">
   <p style="margin:0 0 16px;font-size:15px;color:#2D2A26;font-weight:700;">Life Domain Balance</p>
   
@@ -285,7 +291,8 @@
   </div>
 </div>
 
-<!-- SUGGESTED FOCUS -->
+<!-- {{/show_domains}} -->
+<!-- SECTION: SUGGESTED FOCUS — always shown (the closer) -->
 <div style="background:linear-gradient(135deg,#A8B5A0,#8B9D83);border-radius:16px;padding:28px;margin-bottom:28px;box-shadow:0 1px 4px rgba(0,0,0,0.04),0 8px 24px rgba(168,181,160,0.2);">
   <p style="margin:0 0 12px;font-size:10px;color:rgba(255,255,255,0.7);letter-spacing:2px;font-weight:600;">SUGGESTED FOCUS</p>
   <p style="margin:0;font-size:15px;color:white;line-height:1.75;">Your creative side showed up 3 times this week without being invited. The emotional data says you're 40% hopeful — that's the highest positive signal in weeks. <strong>Lean into it.</strong> One comedy bit. One page of writing. One weird idea you don't judge. Drop it when it happens — we'll map it.</p>
