@@ -81,3 +81,40 @@
 ---
 
 *Next research rotation: Competitive intelligence on Mem.ai, Notion AI, Reflect app*
+---
+
+## 2026-03-18 05:11 UTC — Deep Researcher (VOICE Task)
+
+### Joey's Latest Thinking from Hub Drops (Mar 13–17, 2026)
+
+**Launch Readiness (THE COMPASS thread, Mar 17):**
+- Reviewing "THE COMPASS — Complete Pre-Launch Blueprint" email series
+- **Intelligence Map**: Should be always-available once enough drops collected (not behind a paywall step)
+- **Onboarding critique**: 3-email sequence is insufficient — needs to *collect user data* first to personalize digests
+- Onboarding philosophy: "educate, entertain, ask questions" — not just product walkthrough
+- **Varying digests**: Joey wants to leverage the existing digest types already in Hub code (not build new ones)
+- **Unsubscribe/privacy**: Must be in every email — flagged as missing from Compass emails
+- **Agency tier**: Wants an internal "agency team" doing backend QA — this likely becomes a future enterprise tier
+- **Content idea brewing**: Something about how the agency workflow could be a content series
+
+**Joey AI Builder Pack (Mar 17):**
+- Separate from DropAnywhere — a "Joey Work OS" concept
+- One-liner: "AI-native Work OS that learns your team's reality and ships done work, not just context"
+- Working name: Joey AI Builder Pack v11.1
+- Signals Joey is thinking about a B2B/team layer on top of his personal stack
+
+**BandLab signal (Mar 15):**
+- Joey signed up for BandLab ("This app rocks" — drop note)
+- Creativity domain activating — music/audio creation interest
+
+**Builder context (Mar 13):**
+- Tracking Ben's Bites newsletter for AI builder stacks
+- HARO queries — PR/media outreach interest for launch
+
+### Key Patterns
+1. **Launch is imminent** — Compass blueprint review suggests March 24 email-only launch is ON
+2. **Personalization is the differentiator** — Joey keeps coming back to "collect info to understand what they need"
+3. **Agency-as-product** — The backend QA team framing could be a content/product angle
+4. **Memory/continuity frustration** — "you should have a log of these things... start to create one so we can be smart and organized" — Joey wants agents that remember across sessions
+5. **BandLab interest** — Creativity domain getting attention; possible music feature drop coming?
+
