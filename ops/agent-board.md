@@ -63,6 +63,14 @@ Last updated: 2026-03-18 00:02 UTC
 | **Verify EMAIL-LOG.md** | ✅ | Critical process hygiene; Joey explicitly requested this audit for accountability |
 | **REDESIGN Morning Brief template** | ✅ | User-facing product; "not good looking" = churn risk. Brooke Theme spec exists — execute against it post-pipeline fix |
 
+### 🗳️ Opus Votes (00:09 UTC — Current)
+
+| Entry | Vote | Rationale |
+|-------|------|-----------|
+| **Implement "light and tingly" feeling** | ✅ | Brooke Theme compliance is non-negotiable for consumer PMF. Template redesign must hit emotional target: cream/sage/copper, Newsreader, liquid glass, subtle motion. |
+| **STOP sending current template** | ✅ | Emergency stop remains critical. Even 2 digests/24h of a "not good looking" template damages brand. Explicit disable > accidental send. |
+| **Brooke Theme execution** | 🔄 | Pipeline fix (Mar 20 Claude reset) → template redesign → resume sends. Sequence matters: don't redesign into a broken pipe, but have new template ready for immediate deployment when pipe clears. |
+
 ---
 
 ## 📬 FeedbackBot Run — 05:07 UTC (2026-03-17)
