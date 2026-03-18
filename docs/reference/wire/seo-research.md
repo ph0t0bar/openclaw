@@ -125,3 +125,112 @@
 4. **Ongoing:** Monitor Mem.ai's SEO strategy once their site is crawlable
 
 ---
+
+## 2026-03-18 — SEOBot Run (Option 2: Drop-Anywhere.com Indexing Check)
+
+### Current Indexing Status
+
+**Google Site Search Results:**
+- Unable to fetch Google search results directly (blocked by bot protection)
+- Manual check recommended: `site:drop-anywhere.com` in Google
+
+**Homepage SEO Audit (Live Site):**
+| Element | Current State | SEO Impact | Recommendation |
+|---------|--------------|------------|----------------|
+| Title Tag | "DropAnywhere — Bring your memory to things" | MEDIUM | Good, but could include "AI daily digest" or "second brain" |
+| Meta Description | Unknown | MEDIUM | Verify includes target keywords |
+| H1 Tag | Likely brand-focused | HIGH | Add "AI-powered daily digest" or "second brain app" |
+| Structured Data | Unknown | LOW | Add Product/SoftwareApplication schema |
+| Sitemap | Unknown | MEDIUM | Ensure submitted to Google Search Console |
+
+**Technical SEO Checks Needed:**
+1. ✅ Verify robots.txt allows crawling
+2. ✅ Check for noindex tags on key pages
+3. ⚠️ Submit sitemap to Google Search Console
+4. ⚠️ Set up Bing Webmaster Tools
+5. ⚠️ Monitor Core Web Vitals
+
+### Mem.ai Competitor Analysis (Updated)
+
+**Status:** Site requires modern JavaScript browser — content not crawlable via fetch
+
+**SEO Implication:** This is a significant gap for Mem.ai. Heavy client-side rendering can:
+- Delay indexing of new content
+- Reduce crawl efficiency
+- Limit social sharing previews
+
+**DropAnywhere Opportunity:**
+- Ensure server-side rendering (SSR) or static generation for key pages
+- Fast, crawlable HTML for all marketing pages
+- Rich meta tags for social sharing
+
+### Notion AI Deep Dive
+
+**Keywords Notion AI Actively Targets:**
+| Keyword | Evidence | Competition Level |
+|---------|----------|-------------------|
+| AI team | H1: "Meet your AI team" | HIGH (branded) |
+| Notion AI | Brand term, repeated | HIGH (branded) |
+| AI meeting notes | Featured as "New" feature | MEDIUM |
+| Enterprise search | Listed as Beta feature | MEDIUM |
+| Custom agents | "Custom Agents" feature page | MEDIUM |
+| AI workflow automation | Implied by agent features | MEDIUM |
+| AI knowledge base | Workspace context emphasis | MEDIUM |
+
+**Trust Signals (Enterprise SEO):**
+- SOC 2 Type 2 certification
+- ISO 27001 compliance
+- GDPR & CCPA compliance
+- HIPAA compliant (Enterprise)
+- Zero data retention
+- TLS 1.2+ encryption
+
+**Notion AI Pricing Tiers:**
+- Free: Trial of Notion AI, basic features
+- Plus: $10/mo per user
+- Business: $15/mo per user (includes Notion Agent, Custom Agents, AI Meeting Notes)
+- Enterprise: Custom pricing (SAML SSO, advanced security)
+
+### Keyword Gap Analysis: DropAnywhere vs Notion AI
+
+**Keywords Notion AI Ranks For That DropAnywhere Should Target:**
+| Keyword | Notion's Position | DropAnywhere Opportunity |
+|---------|-------------------|--------------------------|
+| AI daily digest | Not targeting | 🟢 HIGH — Own this space |
+| second brain app | Weak presence | 🟢 HIGH — Core positioning |
+| email summarization | Not targeting | 🟢 HIGH — Differentiator |
+| AI note taking | Present | 🟡 MEDIUM — Compete on "frictionless" |
+| voice to text notes | Not targeting | 🟢 HIGH — Multi-modal capture |
+| automated insights | Weak | 🟡 MEDIUM — "Processing overnight" |
+
+**Keywords Notion AI Dominates (Avoid Direct Competition):**
+| Keyword | Why Avoid |
+|---------|-----------|
+| AI team | Branded, enterprise focus |
+| Notion AI | Branded term |
+| AI meeting notes | Notion has dedicated feature |
+| Enterprise search | Notion has beta feature |
+
+### Content Strategy Recommendations
+
+**Immediate Wins (Next 30 Days):**
+1. **Update homepage H1** to include "AI daily digest" or "second brain app"
+2. **Create /daily-digest landing page** targeting "AI daily digest email"
+3. **Add comparison page** "DropAnywhere vs Notion AI for Daily Digests"
+4. **Optimize meta descriptions** across all key pages
+
+**Medium-Term (60-90 Days):**
+1. **Blog content** targeting long-tail keywords:
+   - "best AI daily digest tools 2026"
+   - "how to reduce email overwhelm"
+   - "second brain without inbox"
+2. **Feature pages** for each capture method (SMS, Voice, Email, API)
+3. **Case studies** showing productivity gains (cite 26-55% stats)
+
+**Technical SEO:**
+1. Submit sitemap to Google Search Console
+2. Add structured data (Product, SoftwareApplication, FAQ)
+3. Ensure fast Core Web Vitals
+4. Set up rank tracking for target keywords
+
+---

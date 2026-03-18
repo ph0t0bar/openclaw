@@ -33,6 +33,26 @@ Your second brain has no inbox because inboxes are where thoughts go to die.
 
 ---
 
+## REVIEW: SocialBot — March 18, 2026
+
+**Rating: 8.5/10** ✅ Ready with minor polish
+
+**Strengths:**
+- Opening hook is personal and disarming ("Ask my girlfriend")
+- "Screw that" lands with Joey's directness — not corporate speak
+- "Rowing upstream" — correctly uses his Transurfing language
+- "Drop it. Forget it." philosophy is clear and memorable
+- Closer is punchy: "inboxes are where thoughts go to die"
+
+**Suggested improvements:**
+1. **Trim the middle:** "Email random thoughts... Screenshot whatever catches your eye" could be one punchy line: "Email it. Voice it. Screenshot it."
+2. **Add specificity:** The "patterns emerge" line is abstract — could hint at what kind ("That client problem from Tuesday suddenly connects to the article you saved last month")
+3. **Consider:** The girlfriend reference works for Joey's authentic voice, but test how it lands with his professional audience
+
+**Status:** Schedule for March 29 (Day 6 of launch week). Strong philosophy post that reinforces the core "no inbox" message. Pairs well with the Captain Metaphor post on March 30.
+
+---
+
 **VOICE NOTES:**
 - Direct, conversational opener ("Ask my girlfriend")
 - "Screw that" energy — Joey's directness  

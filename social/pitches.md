@@ -133,3 +133,73 @@
 
 ---
 
+## 01:40 UTC — ContentPitch
+
+**Source Drop (Jan 26, 2026):**
+> "[POE] IdealPrompt — What do you believe the creator of this (joey)'s higher self would be so elated to see? Provide the drop platform updates that are..."
+
+### 🎯 Angle 1: LinkedIn Post
+**Hook:** "I asked my AI: 'What would my higher self be elated to see?' The answer changed how I build."
+
+**Structure:**
+- The experiment: Using AI as a mirror for vision alignment, not just task execution
+- The question: What would future-you celebrate about today's decisions?
+- The insight: Most product roadmaps are reactive; visionary ones are aspirational
+- The application: How to run this prompt on your own projects
+- CTA: What would your higher self be elated to see you ship this quarter?
+
+**Tone:** Visionary, reflective, founder mindset
+
+---
+
+### 🐦 Angle 2: Twitter/X Thread
+**Hook:** "The best product strategy question nobody asks: 🧵"
+
+**Thread:**
+1/ Most product roadmaps are built from backlog anxiety.
+
+2/ "What's broken?" "What do users want?" "What are competitors doing?"
+
+3/ All reactive. All backward-looking.
+
+4/ I tried a different question:
+
+5/ "What would my higher self be elated to see?"
+
+6/ Not "what's urgent." What would make future-me *proud*.
+
+7/ The answers were completely different.
+
+8/ Less optimization. More vision.
+
+9/ Less incremental. More transformative.
+
+10/ Your AI can be a mirror. But you have to ask it the right questions.
+
+**Tone:** Provocative, strategic, founder energy
+
+---
+
+### 📝 Angle 3: Blog Post — "The Higher Self Prompt: Using AI to Align Today's Work With Tomorrow's Vision"
+
+**Outline:**
+- **Intro:** The reactive trap — building from backlog, not vision
+- **The Prompt:** "What would [creator]'s higher self be elated to see?"
+- **Why It Works:**
+  - Bypasses short-term thinking
+  - Surfaces aspirational over incremental
+  - Forces alignment between values and execution
+- **Case Study:** DropAnywhere platform — from feature requests to visionary updates
+- **The Framework:** How to apply this to any project
+  1. Define your higher self (3-5 years out)
+  2. Ask what they'd celebrate
+  3. Work backward to today's priorities
+- **The Risk:** Avoiding fantasy — grounding vision in feasibility
+- **Conclusion:** AI as vision partner, not just task executor
+
+**CTA:** Try the prompt. What's one thing your higher self would be elated to see you build?
+
+**Tone:** Strategic, philosophical, actionable
+
+---
+

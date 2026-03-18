@@ -222,6 +222,13 @@
 >
 > The best productivity tool is the one you forget you're using.
 
+### Sunday — Philosophy Post (Day 6)
+**Time:** 3:00 PM CT (March 29)
+
+> `your-second-brain-has-no-inbox-linkedin-JOEY-VOICE.md`
+
+Core philosophy post reinforcing the "no inbox" positioning. Strong closer: "inboxes are where thoughts go to die."
+
 ### Sunday Reflection Post
 **Time:** 6:00 PM CT (March 29)
 
