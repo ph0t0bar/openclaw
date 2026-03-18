@@ -46,8 +46,9 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **CEO MORNING BRIEF** — Daily 8am CST — Kimi K2.5 — ✅ ACTIVE (comprehensive daily summary)
 
 **Specialized Operations:**
-- **LAUNCH COORDINATOR** — 2hr — Sonnet 4 — ✅ ACTIVE (March 24 launch tracking)
+- **LAUNCH COORDINATOR** — 2hr — Sonnet 4 — ✅ ACTIVE (March 24 launch tracking — 6 days remaining)
 - **SYNC AUDITOR** — 4hr — Kimi K2.5 — ✅ ACTIVE (ensures no local data loss)
+- **SKILLMINER** — 30min — Sonnet 4 — ✅ ACTIVE (mines skills from sessions and GitHub)
 
 **Daily Scheduled Maintenance:**
 - **METRICS SNAPSHOT** — 02,08,14,20 UTC — Kimi K2.5 — ✅ Scheduled

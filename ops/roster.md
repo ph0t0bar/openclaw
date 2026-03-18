@@ -1,7 +1,7 @@
 # AGENT ROSTER — DropAnywhere Agent Company
 
-**Last Updated**: 2026-03-17 20:59 UTC (GOVERNANCE REALITY CHECK)  
-**Company Status**: ✅ OPERATIONAL — 39 enabled agents out of 49 total cron jobs (Mature ecosystem)
+**Last Updated**: 2026-03-18 00:14 UTC (GOVERNANCE REALITY CHECK)  
+**Company Status**: ✅ OPERATIONAL — 40 enabled agents out of 50 total cron jobs (Mature ecosystem)
 
 ---
 
@@ -22,7 +22,7 @@
 |-------|---------|---------|-------|-------------|--------|-------|
 | **CHIEF OF STAFF** | 19e65c33 | 20min | Opus 4 | Executive | ⚠️ RUNNING | Gap finder, escalations (has errors) |
 | **META** | dc28069f | 20min | Sonnet 4 | Meta | ✅ ACTIVE | Agent performance grading |
-| **DOCBOT** | 1cf8f9ae | 40min | Kimi K2.5 | Product | ✅ ACTIVE | PRD updates, documentation |
+| **DOCBOT** | 1cf8f9ae | 40min | Kimi K2.5 | Product | 🔴 CRITICAL | PRD updates, documentation (6x timeout) |
 | **USERHEALTHBOT** | b238fc7f | 40min | Kimi K2.5 | Customer Success | ✅ ACTIVE | User retention monitoring |
 | **CONTENTBOT** | f35e88e1 | 20min | Sonnet 4 | Marketing | ✅ ACTIVE | Content creation pipeline |
 | **ARCHIVIST** | e0a92bbb | 40min | Kimi K2.5 | Operations | ✅ ACTIVE | Backup to joey-backup GitHub |
@@ -42,7 +42,8 @@
 | **FOUNDERVOICEBOT** | eb5df9b7 | 30min | Sonnet 4 | Communications | ✅ ACTIVE | Voice/tone guardian |
 | **CONTENTPITCHBOT** | b36fc606 | 1hr | Kimi K2.5 | Intelligence | ✅ ACTIVE | Content strategy generation |
 | **PATTERNBOT** | 08ec61b5 | 1hr | Kimi K2.5 | Intelligence | ✅ ACTIVE | Pattern recognition |
-| **LEARNINGBOT** | 828ec8a4 | 1hr | Kimi K2.5 | Meta | ✅ ACTIVE | Lessons learned documentation |
+| **LEARNINGBOT** | 828ec8a4 | 1hr | Kimi K2.5 | Meta | ⚠️ DEGRADED | Lessons learned documentation (1 timeout) |
+| **SKILLMINER** | 1b98e23c | 30min | Sonnet 4 | Meta | ✅ ACTIVE | Mines skills from sessions/GitHub |
 
 ## Email Workflow Agents
 
@@ -52,14 +53,14 @@
 | **DECISIONBOT** | — | 10min | Kimi K2.5 | Email | ✅ ACTIVE | Processes Joey's email replies |
 | **FEEDBACKBOT** | — | 2hr | Kimi K2.5 | Email | ✅ ACTIVE | Routes creative feedback |
 | **TASK APPROVAL EMAILER** | — | 2hr | Kimi K2.5 | Email | ✅ ACTIVE | Pending task notifications (dual instances) |
-| **CREATIVE REVIEW EMAILER** | — | 4hr | Kimi K2.5 | Email | ✅ ACTIVE | Content review workflow |
+| **CREATIVE REVIEW EMAILER** | — | 4hr | Kimi K2.5 | Email | 🔴 CRITICAL | Content review workflow (3x timeout) |
 | **CEO MORNING BRIEF** | — | Daily 8am CST | Kimi K2.5 | Email | ✅ ACTIVE | Comprehensive daily summary |
 
 ## Specialized Operations
 
 | Agent | Cron ID | Cadence | Model | Department | Status | Focus |
 |-------|---------|---------|-------|-------------|--------|-------|
-| **LAUNCH COORDINATOR** | — | 2hr | Sonnet 4 | Product | ✅ ACTIVE | March 24 launch tracking |
+| **LAUNCH COORDINATOR** | — | 2hr | Sonnet 4 | Product | ✅ ACTIVE | March 24 launch tracking (6 days remaining) |
 | **SYNC AUDITOR** | — | 4hr | Kimi K2.5 | Operations | ✅ ACTIVE | Ensures no local data loss |
 | **DC MANAGER** | b644d0fe | 30min | Kimi K2.5 | Engineering | ✅ ACTIVE | Dropper-Code oversight |
 
@@ -68,7 +69,7 @@
 | Job | Cron ID | Schedule | Model | Status | Purpose |
 |-----|---------|----------|-------|--------|---------|
 | **METRICS SNAPSHOT** | a1bcf313 | 02,08,14,20 UTC | Kimi K2.5 | ✅ Scheduled | PRD Section 8 metrics |
-| **DAILY GITHUB SYNC** | eee4cb1f | 11:00 UTC | Kimi K2.5 | ⚠️ WhatsApp Error | Backup to joey-backup (functional) |
+| **DAILY GITHUB SYNC** | eee4cb1f | 11:00 UTC | Kimi K2.5 | ⚠️ TIMEOUT | 2 consecutive 300s timeouts |
 | **DAILY METRICS REFRESH** | 1ef071a5 | 14:00 UTC | Kimi K2.5 | ✅ Scheduled | Full PRD refresh |
 
 ## Weekly Operations
@@ -83,7 +84,7 @@
 
 | Job | Issue | Status |
 |-----|-------|--------|
-| DAILY GITHUB SYNC | WhatsApp delivery fails | Functional, notifications broken |
+| DAILY GITHUB SYNC | Timeout + WhatsApp delivery fails | Functional, notifications broken |
 | WEEKLY FULL REFRESH | WhatsApp delivery fails | Functional, notifications broken |
 | WEEKLY OPUS SWEEP | WhatsApp delivery fails | Functional, notifications broken |
 
@@ -100,25 +101,23 @@
 
 ---
 
-## Current Statistics (2026-03-17 20:59 UTC — GOVERNANCE REALITY CHECK)
+## Current Statistics (2026-03-18 00:14 UTC — GOVERNANCE REALITY CHECK)
 
-- **Total Cron Jobs**: 49 configured
-- **Enabled Agents**: 39 active agents (Governance now active)
+- **Total Cron Jobs**: 50 configured
+- **Enabled Agents**: 40 active agents (Governance now active)
 - **Disabled/Consolidated**: 10 agents
-- **Operational Rate**: 95% of enabled agents running (2 timeout errors)
+- **Operational Rate**: 92% of enabled agents running (4 agents with errors)
 - **WhatsApp Delivery Issues**: 3 scheduled jobs affected (non-operational)
 - **System Maturity**: Mature ecosystem with full email workflow automation
 
-## 🔴 CURRENT SYSTEM ISSUES (Updated 2026-03-17 20:59 UTC)
+## 🔴 CURRENT SYSTEM ISSUES (Updated 2026-03-18 00:14 UTC)
 
 | Issue | Severity | Status | Details |
 |-------|----------|--------|---------|
-| **Auto-Ack Bot** | 🔴 HIGH | 🚨 5 TIMEOUTS | 5 consecutive timeout errors — email acknowledgment pipeline at risk |
-| **DocBot** | 🔴 HIGH | 🚨 3 TIMEOUTS | 3 consecutive timeout errors (180s limit) |
-| **PatternBot** | ⚠️ MEDIUM | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
-| **Creative Review Emailer** | ⚠️ MEDIUM | ⚠️ 2 ERRORS | File edit failure on push-queue.md |
+| **DocBot** | 🔴 HIGH | 🚨 6 TIMEOUTS | 6 consecutive timeout errors (180s limit) — documentation pipeline at risk |
+| **Creative Review Emailer** | 🔴 HIGH | 🚨 3 TIMEOUTS | 3 consecutive timeout errors (240s limit) — creative review stalled |
 | **Daily GitHub Sync** | ⚠️ MEDIUM | ⚠️ 2 TIMEOUTS | 300s timeout, WhatsApp delivery also failing |
-| **ContentPitchBot** | ⚠️ MEDIUM | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
+| **LearningBot** | 🟢 LOW | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
 | **WhatsApp Delivery** | ⚠️ MEDIUM | ⚠️ FUNCTIONAL | 3 scheduled jobs work but notifications fail |
 
 ## Department Coverage Summary
@@ -130,7 +129,7 @@
 | **Intelligence** | 4 | ✅ Research + pattern recognition |
 | **Engineering** | 3 | ✅ Frontend + BHA + specs (DC consolidated) |
 | **Marketing** | 3 | ✅ Content + social + SEO |
-| **Meta** | 4 | ✅ Strategy + governance + learning |
+| **Meta** | 5 | ✅ Strategy + governance + learning + skill mining |
 | **Customer Success** | 2 | ✅ Onboarding + user health |
 | **Product** | 3 | ✅ Specs + docs + launch coord |
 | **Security** | 1 | ✅ Sentry AI active |
@@ -142,27 +141,10 @@
 
 | Model | Agents | Est. Daily Cost | Notes |
 |-------|--------|-----------------|-------|
-| **Kimi K2.5** | ~22 | ~$0.15 | High volume, low cost |
-| **Sonnet 4** | ~8 | ~$0.80 | Balanced performance |
+| **Kimi K2.5** | ~23 | ~$0.16 | High volume, low cost |
+| **Sonnet 4** | ~9 | ~$0.90 | Balanced performance |
 | **Opus 4** | ~4 | ~$3.00 | Strategic oversight |
-| **Total** | 34 | ~$4.00 | Full ecosystem coverage |
-
-## Department Coverage Summary
-
-| Department | Agents | Status |
-|------------|--------|--------|
-| **Email** | 6 | ✅ Complete workflow automation |
-| **Operations** | 4 | ✅ Dashboard + monitoring + backup |
-| **Intelligence** | 4 | ✅ Research + pattern recognition |
-| **Engineering** | 3 | ✅ Frontend + BHA + specs (DC consolidated) |
-| **Marketing** | 3 | ✅ Content + social + SEO |
-| **Meta** | 4 | ✅ Strategy + governance + learning |
-| **Customer Success** | 2 | ✅ Onboarding + user health |
-| **Product** | 3 | ✅ Specs + docs + launch coord |
-| **Security** | 1 | ✅ Sentry AI active |
-| **Executive** | 1 | ⚠️ Chief of Staff (has errors) |
-| **Communications** | 1 | ✅ FounderVoice active |
-| **Revenue** | 0 | 🔴 Consolidated into Unified Ops |
+| **Total** | 36 | ~$4.06 | Full ecosystem coverage |
 
 ---
 
