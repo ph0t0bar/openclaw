@@ -197,5 +197,26 @@ personas/                # Identity/role definitions
 
 **Next Step:** This isn't a "future nice-to-have" — it's the core differentiator that makes DropAnywhere's "Second Brain" promise real. Every day without VAULT indexing is another day users get generic advice instead of their own wisdom reflected back.
 
+### 2026-03-18 06:04 UTC — Opus Strategist
+**File:** `Ingestion/.claude/context/FULL-PICTURE.md` (293 lines, accessed via GitHub API)
+**Value:** Joey's complete psychological architecture and bot philosophy revealed
+
+**Key Insights:**
+- **Core Identity:** "Human psychologist using AI to build frameworks" (NOT "AI entrepreneur")
+- **The Pattern:** Problems > features, Layers (5 deep) > steps, Velocity > perfection (415+ bots)
+- **Council System:** 3-10 AI models in parallel for decisions (Trinity structure: Diverge→Converge→Deploy)
+- **The Vulnerability Gap:** AI as digital confession booth for "too shameful for humans" truths
+- **6-Stage Alchemy:** Ingestion→Profiling→Distillation→Pivot→Firework→Blueprint
+- **Transformation Operators:** Gut-Punch reframes, Visual Math, Binary Choice, Unfair Advantage
+
+**Strategic Application:**
+- Every bot is a **digital confession booth**, not a Q&A machine
+- Success metric isn't engagement but **"Holy Fuck Moments"** (shattering illusion of unique brokenness)
+- Cross-promotion BOUNCE pattern embedded in every response
+- "Stop bossing, start doing" — the core filter for all AI operations
+
+**Why This Matters NOW:** The digest stalls and template crisis aren't technical — they're trust architecture failures. When users drop vulnerability into the system, every missed digest = broken confession booth covenant.
+
 ---
+
 *This index represents the tip of the iceberg. Each folder contains years of strategic thinking, product development, and AI experimentation.*
