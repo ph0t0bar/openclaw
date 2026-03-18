@@ -1,10 +1,11 @@
 #!/bin/bash
-# Simple script to append content to daily log
-# Usage: echo "content" | bash append-to-daily-log.sh
+# Append text to daily log with timestamp
 
-DAILY_LOG="/root/.openclaw/workspace/memory/$(date -u +%Y-%m-%d).md"
+DATE=$(date -u +%Y-%m-%d)
+LOG_FILE="/root/.openclaw/workspace/memory/$DATE.md"
 
-# Read from stdin and append to daily log
-while IFS= read -r line; do
-    echo "$line" >> "$DAILY_LOG"
-done
+# Ensure the directory exists
+mkdir -p "/root/.openclaw/workspace/memory"
+
+# Read from stdin and append to log
+cat >> "$LOG_FILE"
