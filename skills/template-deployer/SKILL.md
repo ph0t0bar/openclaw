@@ -1,102 +1,162 @@
 ---
 name: template-deployer
-description: Deploy, validate, and manage email templates with rollback capability. Use when dealing with template deployment crises, template validation failures, or requests to deploy/rollback templates. Triggers on "deploy template", "template crisis", "template deployment broken", "rollback template", or when template deployment paralysis occurs (Pattern 300 - Meta-Commentary Disease prevention).
+description: Deploy email templates to production with validation and rollback capability. Use when user says "deploy template" or during template crises like Pattern 281-282.
 ---
 
 # Template Deployer
 
-Deploy and manage email templates with validation and rollback capabilities. Prevents template deployment paralysis through deterministic automation.
+Deploy email templates to production with validation, staging, and rollback capability.
 
-## Crisis Background
+## When to Use
 
-This skill addresses Pattern 300 (Meta-Commentary Disease) where 40+ agent votes on template deployment resulted in zero technical action. The Morning Brief template crisis took 25 minutes of coordination with no execution because deployment lacked automation.
+- User says "deploy template" or "template crisis"
+- Morning Brief template issues (Pattern 281-282)
+- Template exists but deployment pipeline is blocked
+- Need to rollback a template deployment
+- Template validation before production
 
-## Core Operations
+**Trigger Phrases:**
+- "deploy template"
+- "template crisis" 
+- "brooke template"
+- "morning brief template"
+- "rollback template"
 
-### 1. Template Validation
+## Prerequisites
+
+- Hub API access (`HUB_API_KEY`)
+- Template files in `templates/` directory
+- Production deployment permissions
+
+## Usage
+
+### Deploy Template
 ```bash
-python scripts/validate_template.py <template_path>
+python3 ~/.openclaw/workspace/skills/template-deployer/scripts/deploy_template.py \
+  --template brooke-demo-email.html \
+  --environment production \
+  --validate
 ```
-- HTML structure validation
-- Required section verification  
-- Asset dependency checks
-- Compatibility testing
 
-### 2. Template Deployment
+### Stage Template (Test First)
 ```bash
-python scripts/deploy_template.py <template_path> --mode [staging|prod]
+python3 ~/.openclaw/workspace/skills/template-deployer/scripts/deploy_template.py \
+  --template brooke-demo-email.html \
+  --environment staging \
+  --validate
 ```
-- Staging deployment with testing
-- Production deployment with backup
-- Rollback preparation
-- Deployment verification
 
-### 3. Rollback Management
+### Rollback Template
 ```bash
-python scripts/rollback_template.py --version [previous|specific]
+python3 ~/.openclaw/workspace/skills/template-deployer/scripts/deploy_template.py \
+  --rollback \
+  --environment production
 ```
-- Immediate rollback to previous version
-- Version-specific rollback
-- Deployment history tracking
 
-### 4. Integration Testing
+### Validate Template Only
 ```bash
-python scripts/test_template.py <template_path>
+python3 ~/.openclaw/workspace/skills/template-deployer/scripts/validate_template.py \
+  --template brooke-demo-email.html
 ```
-- Render testing across email clients
-- Link validation
-- Asset accessibility verification
-- Performance benchmarks
 
-## Template Locations
+## Template Crisis Context
 
-- **Source templates:** `/root/.openclaw/workspace/templates/`
-- **Deployed templates:** Target system endpoints (configured per environment)
-- **Backup versions:** Automatic versioning with timestamps
+**Pattern 281-282: Template-Pipeline Paradox**
+- 600-line brooke-demo-email.html EXISTS and is production-ready
+- 40+ agent votes and 20+ hours of debate generated zero deployments
+- Template is DONE; deployment pipeline was the blocker
+- This skill bridges template→pipeline gap with atomic deployment capability
 
-## Environment Configuration
+**Evidence from Sessions:**
+- 2026-03-17: Template crisis consumed 25min of unanimous agent response
+- brooke-demo-email.html: 600+ lines, production-ready, Brooke Theme compliant
+- Multiple escalations for "Deploy template" with no execution pathway
 
-Templates deploy to different targets:
-- **Staging:** Test environment for validation
-- **Production:** Live email service integration
-- **Backup:** Automatic backup before each deployment
+## Features
 
-## Usage Patterns
+- ✅ Template validation (HTML, CSS, responsive design)
+- ✅ Staging deployment for testing
+- ✅ Production deployment with confirmation
+- ✅ Automatic rollback capability
+- ✅ Template comparison (current vs new)
+- ✅ Deployment history tracking
+- ✅ Hub API integration for live templates
+
+## Template Validation Checks
+
+1. **HTML Structure**: Valid HTML5, proper email-friendly tags
+2. **CSS Compatibility**: Inline CSS, email client compatibility  
+3. **Responsive Design**: Mobile-friendly layout
+4. **Variables**: Template variables properly formatted
+5. **Content**: Required sections present (header, body, footer)
+6. **Brooke Theme**: Color palette compliance (cream/sage/copper)
+
+## Deployment Flow
+
+```
+Template File → Validate → Stage → Test → Deploy → Confirm → Rollback Available
+```
+
+1. **Validation**: Check HTML structure, CSS, responsiveness
+2. **Staging**: Deploy to staging environment for testing
+3. **Testing**: Send test emails, verify rendering
+4. **Production**: Deploy to live environment
+5. **Confirmation**: Verify production deployment success
+6. **Rollback**: Previous version preserved for emergency rollback
+
+## Examples
+
+### Deploy Brooke Template (Crisis Solution)
+```bash
+# The template crisis fix - atomic 30-minute execution
+python3 ~/.openclaw/workspace/skills/template-deployer/scripts/deploy_template.py \
+  --template brooke-demo-email.html \
+  --environment production \
+  --validate \
+  --confirm
+```
+
+### Emergency Rollback
+```bash
+# If new template causes issues
+python3 ~/.openclaw/workspace/skills/template-deployer/scripts/deploy_template.py \
+  --rollback \
+  --environment production \
+  --reason "Template rendering issues on mobile"
+```
+
+### Test New Template
+```bash
+# Safe testing workflow
+python3 ~/.openclaw/workspace/skills/template-deployer/scripts/deploy_template.py \
+  --template new-template.html \
+  --environment staging \
+  --validate \
+  --test-email joey@photobarchicago.com
+```
+
+## Files
+
+- `scripts/deploy_template.py` - Main deployment script
+- `scripts/validate_template.py` - Template validation
+- `scripts/test_template.py` - Template testing
+- `templates/` - Template directory (workspace-level)
+
+## Implementation Notes
+
+**Atomic Scope (Pattern 299):**
+- Single command deploys a template
+- 30-minute execution window
+- Clear success/failure states
+- No complex orchestration required
 
 **Crisis Response:**
-```bash
-# Immediate crisis validation and deployment
-python scripts/validate_template.py templates/brooke-demo-email.html
-python scripts/deploy_template.py templates/brooke-demo-email.html --mode staging
-python scripts/test_template.py templates/brooke-demo-email.html
-python scripts/deploy_template.py templates/brooke-demo-email.html --mode prod
-```
+- Solves 600-line brooke-demo-email.html deployment gap
+- Ends 20+ hour template debate loops
+- Enables launch week template deployment
 
-**Safe Deployment:**
-```bash
-# Standard deployment workflow
-python scripts/deploy_template.py new-template.html --mode staging
-# [manual verification]
-python scripts/deploy_template.py new-template.html --mode prod
-```
-
-**Emergency Rollback:**
-```bash
-# Quick rollback when deployment fails
-python scripts/rollback_template.py --version previous
-```
-
-## Pattern 299 Compliance
-
-This skill follows atomic scope principles:
-- Single responsibility: template deployment only
-- Deterministic scripts prevent debate paralysis  
-- Clear success/failure states
-- No complex orchestration dependencies
-
-## Integration Points
-
-- **Resend API:** Production email template deployment
-- **Hub Dashboard:** Template status monitoring
-- **WhatsApp alerts:** Deployment success/failure notifications
-- **Git tracking:** Template version control
+**Integration:**
+- Hub API for live template updates
+- Railway deployment integration  
+- WhatsApp alerts for deployment status
+- Git tracking for template versions

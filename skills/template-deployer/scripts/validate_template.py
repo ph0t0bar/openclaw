@@ -1,167 +1,258 @@
 #!/usr/bin/env python3
 """
-Template Validator - Validates email template structure and requirements
-Prevents deployment of broken templates that cause agent crisis loops
+Template Validator - Validate email templates for deployment
+Part of template-deployer skill
 """
 
-import os
-import sys
-import json
+import argparse
 import re
+import sys
 from pathlib import Path
-from html.parser import HTMLParser
-from urllib.parse import urlparse
 
-class TemplateValidator(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.errors = []
-        self.warnings = []
-        self.required_sections = set()
-        self.found_sections = set()
-        self.links = []
-        self.images = []
-        self.current_tag = None
-        
-    def handle_starttag(self, tag, attrs):
-        self.current_tag = tag
-        attrs_dict = dict(attrs)
-        
-        # Check for required sections
-        if tag == 'div' and 'class' in attrs_dict:
-            classes = attrs_dict['class'].split()
-            for cls in classes:
-                if cls in ['header', 'content', 'footer', 'digest-item', 'title-section']:
-                    self.found_sections.add(cls)
-                    
-        # Collect links and images for validation
-        if tag == 'a' and 'href' in attrs_dict:
-            self.links.append(attrs_dict['href'])
-        elif tag == 'img' and 'src' in attrs_dict:
-            self.images.append(attrs_dict['src'])
-            
-        # Check for inline styles (should be minimal)
-        if 'style' in attrs_dict and len(attrs_dict['style']) > 100:
-            self.warnings.append(f"Large inline style on {tag} - consider CSS classes")
-            
-    def validate_structure(self):
-        """Validate basic HTML structure"""
-        # Define required sections for email templates
-        self.required_sections = {'header', 'content', 'footer'}
-        
-        missing_sections = self.required_sections - self.found_sections
-        if missing_sections:
-            self.errors.append(f"Missing required sections: {', '.join(missing_sections)}")
-            
-    def validate_links(self):
-        """Validate all links are properly formatted"""
-        for link in self.links:
-            if not link.startswith(('http://', 'https://', 'mailto:', '#')):
-                self.warnings.append(f"Suspicious link format: {link}")
-                
-    def validate_images(self):
-        """Validate image sources"""
-        for img_src in self.images:
-            if not img_src.startswith(('http://', 'https://', 'data:')):
-                self.warnings.append(f"Local image path may not work in email: {img_src}")
+WORKSPACE_ROOT = Path("/root/.openclaw/workspace")
+TEMPLATES_DIR = WORKSPACE_ROOT / "templates"
 
-def validate_template_file(template_path):
-    """Main validation function"""
-    if not os.path.exists(template_path):
-        return {
-            'valid': False,
-            'errors': [f"Template file not found: {template_path}"],
-            'warnings': []
-        }
-        
+def validate_html_structure(content):
+    """Validate basic HTML structure"""
+    issues = []
+    
+    # Check DOCTYPE
+    if not content.strip().startswith('<!DOCTYPE html>'):
+        issues.append("Missing or incorrect DOCTYPE declaration")
+    
+    # Check required HTML elements
+    required = {
+        '<html': 'Missing <html> tag',
+        '<head': 'Missing <head> section', 
+        '<body': 'Missing <body> section',
+        '<title': 'Missing <title> tag'
+    }
+    
+    for tag, message in required.items():
+        if tag.lower() not in content.lower():
+            issues.append(message)
+    
+    return issues
+
+def validate_email_compatibility(content):
+    """Check email client compatibility"""
+    issues = []
+    
+    # Check for problematic elements
+    problematic = [
+        ('<script', 'JavaScript not supported in most email clients'),
+        ('<iframe', 'iFrames not supported in email'),
+        ('<embed', 'Embed tags not supported in email'),
+        ('<object', 'Object tags not supported in email'),
+        ('position: fixed', 'Fixed positioning not supported in email'),
+        ('position: absolute', 'Absolute positioning limited in email'),
+        ('background-attachment', 'Background attachment not widely supported')
+    ]
+    
+    for element, message in problematic:
+        if element.lower() in content.lower():
+            issues.append(message)
+    
+    # Check for inline CSS preference
+    style_tags = len(re.findall(r'<style[^>]*>', content, re.IGNORECASE))
+    style_attributes = len(re.findall(r'style\s*=', content, re.IGNORECASE))
+    
+    if style_tags > 0 and style_attributes == 0:
+        issues.append("Consider using inline CSS for better email client support")
+    
+    return issues
+
+def validate_brooke_theme(content):
+    """Check Brooke theme compliance"""
+    issues = []
+    
+    # Brooke theme colors
+    brooke_colors = {
+        '#f9f7f4': 'cream background',
+        '#8d9f87': 'sage green',
+        '#d4854c': 'copper accent',
+        '#2d3748': 'dark text',
+        '#4a5568': 'medium text'
+    }
+    
+    # Check for theme colors
+    found_colors = []
+    for color, description in brooke_colors.items():
+        if color.lower() in content.lower():
+            found_colors.append(description)
+    
+    # Also check for color names
+    color_names = ['cream', 'sage', 'copper']
+    for color in color_names:
+        if color in content.lower():
+            found_colors.append(color)
+    
+    if not found_colors:
+        issues.append("No Brooke theme colors detected. Expected: cream/sage/copper palette")
+    else:
+        print(f"✅ Brooke theme colors found: {', '.join(found_colors)}")
+    
+    # Check for Newsreader font (Brooke theme standard)
+    if 'newsreader' not in content.lower():
+        issues.append("Consider using Newsreader font for Brooke theme compliance")
+    
+    return issues
+
+def validate_responsive_design(content):
+    """Check responsive design elements"""
+    issues = []
+    
+    # Check for viewport meta tag
+    if 'viewport' not in content.lower():
+        issues.append("Missing viewport meta tag for mobile responsiveness")
+    
+    # Check for media queries
+    if '@media' not in content.lower():
+        issues.append("No media queries found. Consider adding responsive styles.")
+    
+    # Check for table-based layout (common for email)
+    if '<table' not in content.lower():
+        issues.append("Consider using table-based layout for email compatibility")
+    
+    return issues
+
+def validate_required_sections(content):
+    """Check for required email sections"""
+    issues = []
+    
+    # Common email sections
+    sections = {
+        'header': ['header', 'logo', 'masthead'],
+        'footer': ['footer', 'unsubscribe', 'contact'],
+        'content': ['main', 'content', 'body']
+    }
+    
+    for section, keywords in sections.items():
+        found = any(keyword in content.lower() for keyword in keywords)
+        if not found:
+            issues.append(f"Missing {section} section (looked for: {', '.join(keywords)})")
+    
+    return issues
+
+def check_file_size(content):
+    """Check template file size"""
+    issues = []
+    
+    size_bytes = len(content.encode('utf-8'))
+    size_kb = size_bytes / 1024
+    
+    # Gmail clips emails over 102KB
+    if size_bytes > 102 * 1024:
+        issues.append(f"Template is {size_kb:.1f}KB. Gmail clips emails over 102KB.")
+    elif size_bytes > 50 * 1024:
+        issues.append(f"Template is {size_kb:.1f}KB. Consider optimization for faster loading.")
+    
+    print(f"📊 Template size: {size_kb:.1f}KB ({size_bytes:,} bytes)")
+    
+    return issues
+
+def main():
+    parser = argparse.ArgumentParser(description="Validate email template")
+    parser.add_argument('--template', type=str, required=True, help="Template filename")
+    parser.add_argument('--strict', action='store_true', help="Strict validation (warnings become errors)")
+    
+    args = parser.parse_args()
+    
+    template_path = TEMPLATES_DIR / args.template
+    
+    if not template_path.exists():
+        print(f"❌ Template not found: {template_path}")
+        return 1
+    
+    print(f"🔍 Validating template: {template_path}")
+    
+    # Read template content
     try:
         with open(template_path, 'r', encoding='utf-8') as f:
             content = f.read()
-    except Exception as e:
-        return {
-            'valid': False,
-            'errors': [f"Could not read template file: {str(e)}"],
-            'warnings': []
-        }
-        
-    # Basic size check
-    size_kb = len(content) / 1024
-    warnings = []
-    if size_kb > 200:
-        warnings.append(f"Template size is {size_kb:.1f}KB - may be too large for email")
-        
-    # HTML validation
-    validator = TemplateValidator()
-    try:
-        validator.feed(content)
-        validator.validate_structure()
-        validator.validate_links()
-        validator.validate_images()
-    except Exception as e:
-        return {
-            'valid': False,
-            'errors': [f"HTML parsing error: {str(e)}"],
-            'warnings': warnings
-        }
-        
-    # Check for common email template requirements
-    errors = validator.errors
+    except UnicodeDecodeError:
+        print("❌ Template contains non-UTF-8 characters")
+        return 1
     
-    # Must have DOCTYPE
-    if not content.strip().startswith('<!DOCTYPE'):
-        errors.append("Missing DOCTYPE declaration")
-        
-    # Should have viewport meta tag for mobile
-    if 'viewport' not in content.lower():
-        warnings.append("Missing viewport meta tag for mobile compatibility")
-        
-    # Check for table-based layout (recommended for email)
-    if '<table' not in content.lower():
-        warnings.append("No table layout detected - may not render well in all email clients")
-        
-    all_warnings = warnings + validator.warnings
+    # Run all validations
+    all_issues = []
     
-    return {
-        'valid': len(errors) == 0,
-        'errors': errors,
-        'warnings': all_warnings,
-        'size_kb': round(size_kb, 1),
-        'sections_found': list(validator.found_sections),
-        'links_count': len(validator.links),
-        'images_count': len(validator.images)
-    }
-
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python validate_template.py <template_path>")
-        sys.exit(1)
-        
-    template_path = sys.argv[1]
-    result = validate_template_file(template_path)
+    print("\n📋 Running validation checks...")
     
-    # Always output JSON for script integration when requested
-    if '--json' in sys.argv:
-        print(json.dumps(result, indent=2))
-        sys.exit(0 if result['valid'] else 1)
-    
-    print(f"Validating: {template_path}")
-    print(f"Size: {result['size_kb']}KB")
-    
-    if result['valid']:
-        print("✅ Template validation PASSED")
-        print(f"Sections found: {', '.join(result['sections_found'])}")
-        print(f"Links: {result['links_count']}, Images: {result['images_count']}")
+    # HTML Structure
+    issues = validate_html_structure(content)
+    if issues:
+        print("⚠️  HTML Structure issues:")
+        for issue in issues:
+            print(f"   - {issue}")
+        all_issues.extend(issues)
     else:
-        print("❌ Template validation FAILED")
-        for error in result['errors']:
-            print(f"  ERROR: {error}")
-            
-    if result['warnings']:
-        print("\nWarnings:")
-        for warning in result['warnings']:
-            print(f"  WARNING: {warning}")
-        
-    sys.exit(0 if result['valid'] else 1)
+        print("✅ HTML structure valid")
+    
+    # Email Compatibility  
+    issues = validate_email_compatibility(content)
+    if issues:
+        print("⚠️  Email compatibility issues:")
+        for issue in issues:
+            print(f"   - {issue}")
+        all_issues.extend(issues)
+    else:
+        print("✅ Email compatibility good")
+    
+    # Brooke Theme
+    issues = validate_brooke_theme(content)
+    if issues:
+        print("⚠️  Brooke theme issues:")
+        for issue in issues:
+            print(f"   - {issue}")
+        all_issues.extend(issues)
+    else:
+        print("✅ Brooke theme compliant")
+    
+    # Responsive Design
+    issues = validate_responsive_design(content)
+    if issues:
+        print("⚠️  Responsive design issues:")
+        for issue in issues:
+            print(f"   - {issue}")
+        all_issues.extend(issues)
+    else:
+        print("✅ Responsive design elements found")
+    
+    # Required Sections
+    issues = validate_required_sections(content)
+    if issues:
+        print("⚠️  Section issues:")
+        for issue in issues:
+            print(f"   - {issue}")
+        all_issues.extend(issues)
+    else:
+        print("✅ Required sections present")
+    
+    # File Size
+    issues = check_file_size(content)
+    if issues:
+        print("⚠️  File size issues:")
+        for issue in issues:
+            print(f"   - {issue}")
+        all_issues.extend(issues)
+    
+    # Summary
+    print(f"\n📊 Validation complete:")
+    print(f"   Template: {args.template}")
+    print(f"   Size: {len(content):,} characters")
+    print(f"   Issues: {len(all_issues)}")
+    
+    if all_issues:
+        if args.strict:
+            print("\n❌ Validation failed (strict mode)")
+            return 1
+        else:
+            print(f"\n⚠️  {len(all_issues)} issues found (warnings)")
+            return 0
+    else:
+        print("\n✅ Template validation passed!")
+        return 0
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    sys.exit(main())

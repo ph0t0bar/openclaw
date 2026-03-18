@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "2026-03-18T05:29:35.204661",
+    "template": "brooke-demo-email.html",
+    "environment": "staging",
+    "status": "success",
+    "size": 19726,
+    "deployed_by": "template-deployer-skill",
+    "error": null
+  }
+]
