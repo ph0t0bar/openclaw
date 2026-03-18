@@ -9,6 +9,8 @@ Last updated: 2026-03-18 00:02 UTC
 | Skill | Status | Created | Purpose |
 |-------|--------|---------|---------|
 | **poe-balance-guardian** | ✅ LIVE | 2026-03-17 | Monitor Poe API balance, burn rate, runway estimation |
+| **family-retention-guardian** | ✅ LIVE | 2026-03-18 | Monitor family engagement, auto-create re-engagement tasks |
+| **goldmine-miner** | ✅ LIVE | 2026-03-18 | Extract insights from joey-backup archive (2,462+ files) |
 
 ### poe-balance-guardian Details
 - **Location:** `skills/poe-balance-guardian/`
@@ -16,6 +18,20 @@ Last updated: 2026-03-18 00:02 UTC
 - **Features:** 6h usage tracking, burn rate calc, runway estimation, 5-tier alerts
 - **Scripts:** `check_balance.py`, `test_balance.py` (all tests passing)
 - **Mined from:** Pattern #10 (Poe burn crisis) + 43K pts/6h burn rate observations
+
+### family-retention-guardian Details
+- **Location:** `skills/family-retention-guardian/`
+- **Trigger:** Family member inactive >7 days or engagement <50%
+- **Features:** Family detection, engagement scoring, escalation ladder, WhatsApp alerts
+- **Scripts:** `check_family.py`, `test_family_guardian.py` (working, 5 family members detected)
+- **Mined from:** Pattern #285 (Family Retention as Execution Canary) + 8+ UserHealth escalations
+
+### goldmine-miner Details  
+- **Location:** `skills/goldmine-miner/`
+- **Trigger:** Research Joey's archive or "mine the goldmine"
+- **Features:** Search 2,070+ conversations, extract insights, content generation from archive
+- **Scripts:** `search_conversations.py`, `extract_insights.py` (archive accessible)
+- **Mined from:** Pattern #283 (Goldmine Discovery) + 4+ agents independently identifying strategic value
 
 ---
 
