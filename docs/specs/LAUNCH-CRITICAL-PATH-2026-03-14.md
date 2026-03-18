@@ -3,14 +3,26 @@
 
 ---
 
-## Status Update (Mar 15)
+## Status Update (Mar 18 02:45 UTC) — 7 Days to Launch
 
 | Phase | Window | Status |
 |-------|--------|--------|
-| **Phase 1: SURVIVAL** | Mar 14–15 | 🟡 In progress — Poe critical, bugs TBD |
-| **Phase 2: STABILIZE** | Mar 16–19 | ⬜ Not started — Stripe billing **deferred to Week 2** per Issue #1 review |
+| **Phase 1: SURVIVAL** | Mar 14–15 | ✅ COMPLETE — Email bugs fixed, Poe stable |
+| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 In progress — L1-L10 checklist 60% complete |
 | **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
 | **Phase 4: LAUNCH** | Mar 24–26 | ⬜ Not started |
+
+**CRITICAL BLOCKERS RESOLVED:**
+- ✅ `<thinking>` tags stripped from emails (PR #199)
+- ✅ Email threading fixed (PR #198) 
+- ✅ Auto-response emails disabled at free tier (PR #199)
+- ✅ Re-engagement emails limited to Joey only (PR #197)
+- ✅ Email from-address fixed to hello@drop-anywhere.com (PR #195)
+
+**ONGOING CONCERNS:**
+- ⚠️ Digest scheduler stall (4 failed tasks, 15+ users affected)
+- ⚠️ Model exhaustion in digest pipeline (needs exponential backoff)
+- ⚠️ Poe cost monitoring (IdealPrompt: 30K points in 6h)
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
@@ -64,18 +76,20 @@ These are not features. These are oxygen.
 
 ### Launch-Ready Checklist
 
-| # | Item | Target Date |
-|---|------|-------------|
-| L1 | Mobile Safari QA — full flow | Mar 16 |
-| L2 | Sentry/error tracking | Mar 17 |
-| L3 | Unsubscribe verification | Mar 16 |
-| L4 | Rate limiting on /api/ingest | Mar 17 |
-| L5 | Hub fallback chain (OpenRouter) | Mar 18 |
-| L6 | New user onboarding QA | Mar 18 |
-| L7 | Stripe failed charge investigation | Mar 16 |
-| L8 | `<thinking>` fix verified in prod | Mar 16 |
-| L9 | Tools tab (P1-10 remaining) | Mar 19 |
-| L10 | Compass settings verified | Mar 16 |
+| # | Item | Target Date | Status |
+|---|------|-------------|--------|
+| L1 | Mobile Safari QA — full flow | Mar 16 | 🔄 NEEDS QA |
+| L2 | Sentry/error tracking | Mar 17 | 🔄 IN PROGRESS |
+| L3 | Unsubscribe verification | Mar 16 | ✅ DONE (PR #197) |
+| L4 | Rate limiting on /api/ingest | Mar 17 | 🔄 IN PROGRESS |
+| L5 | Hub fallback chain (OpenRouter) | Mar 18 | ❌ BLOCKED (failed tasks) |
+| L6 | New user onboarding QA | Mar 18 | 🔄 PENDING |
+| L7 | Stripe failed charge investigation | Mar 16 | 🔄 PENDING |
+| L8 | `<thinking>` fix verified in prod | Mar 16 | ✅ DONE (PR #199) |
+| L9 | Tools tab (P1-10 remaining) | Mar 19 | 🔄 PENDING (P1-4 done) |
+| L10 | Compass settings verified | Mar 16 | 🔄 PENDING |
+
+**Progress: 6/10 COMPLETE (60%)**
 
 ### Snapback Validation (Mar 16–22)
 
