@@ -7,35 +7,29 @@
 
 I used to be down in the engine room, shoveling coal.
 
-Every morning started the same way. Grab the phone. Check notifications. Feel that familiar anxiety creep up my chest: "Did I forget something? Is the project moving? Am I doing enough?"
+Every morning: grab the phone, check notifications, feel that knot in my stomach. "Did I forget something? Is this urgent? Am I behind?"
 
-I was trying to do a machine's job with a human brain. 
+I was trying to do a machine's job with a human brain.
 
-Managing. Organizing. Remembering. Filing. Triaging. All the stuff that machines are actually good at.
+Managing. Filing. Remembering. All the stuff computers are actually good at.
 
-Meanwhile, the stuff I'm actually good at — creating, connecting, building — got pushed to "later" because I was too busy keeping the engine running.
+Meanwhile, the stuff I'm actually good at — thinking, creating, connecting ideas — got pushed to "later" because I was too busy being a human inbox.
 
-Last month I finally got out of my own way.
+Last month I stopped.
 
-I built DropAnywhere.
+I built DropAnywhere for one reason: to get back on the bridge.
 
-Not as another productivity tool. As a way to get back on the bridge.
+Now when I wake up, no phone grab. No anxiety spiral. The system already worked through everything overnight. That voice note from yesterday's walk? Already connected to three other ideas. That random email I sent myself? Already outlined.
 
-Now when I wake up, there's no frantic reach for the phone. The system already triaged the world for me. That voice note from yesterday's walk? Already outlined. That random idea I emailed myself? Already connected to three other thoughts from last week.
+14 minutes later, I know what matters today.
 
-I press "Approve" on the insights. I press "Schedule" on the content.
+Here's what changed: I'm the captain again, not the engine.
 
-Time elapsed: 14 minutes. Work status: Complete.
+Your brain wasn't designed to be a filing cabinet. It was designed to have ideas.
 
-The feeling? I'm finally the captain of my own ship instead of being trapped in the engine room.
-
-Your brain wasn't built to be a filing cabinet. It was built to have ideas.
-
-Let DropAnywhere do the filing. You do the creating.
+Drop it. Forget it. Wake up lighter.
 
 → drop-anywhere.com
-
-The water is smooth as glass.
 
 ---
 
