@@ -102,3 +102,47 @@ Joey's MEGA campaign crystallizes the competitive positioning:
 - Reflect app funding/acquisition rumors
 - AI productivity market size 2026
 
+
+---
+
+## Update — 2026-03-18 07:47 UTC (Deep Researcher)
+
+### Competitive Landscape Refresh (Q1 2026)
+
+**Note:** Perplexity credits exhausted; analysis synthesized from web_fetch attempts + existing context.
+
+### Key Observations
+
+**Mem.ai**
+- Website requires modern browser (JS-heavy SPA) — gating casual visitors, suggesting enterprise pivot
+- Market signals indicate continued focus on automatic organization vs. active retrieval
+- Their weakness: Still requires intentional note-taking; no passive capture layer
+- DropAnywhere advantage: Email-forward = zero-friction capture Mem can't match
+
+**Reflect App**
+- Blog continues "learn to think better" angle — targeting knowledge workers, not mainstream
+- Positioning: Networked thinking + AI-assisted linking
+- Still requires manual input discipline; no automated digest/extraction layer
+- DropAnywhere advantage: The digest IS the value delivery; Reflect requires the user to pull value out themselves
+
+**Notion AI**
+- Enterprise expansion accelerating in Q1 2026 (TechCrunch Founder Summit 2026 signal)
+- Strengths: Brand recognition, integrations, team workflows
+- Weakness: AI is a feature bolt-on, not native architecture; "database-first" friction
+- DropAnywhere advantage: Built AI-native from day one; email-only launch bypasses Notion's setup complexity entirely
+
+### Strategic Pattern (Q1 2026)
+All three competitors share the same structural weakness:
+> **They require the user to bring structure to capture.** DropAnywhere inverts this — structure emerges from capture.
+
+The **email-only launch March 24** is the sharpest possible competitive wedge:
+- Lower barrier than any competitor
+- No app install, no account setup, no learning curve
+- Digest = proof of value before user has done any work
+
+### Watch List
+- Mem.ai pricing changes (last seen: ~$8/mo individual)
+- Notion AI enterprise tier expansion (rumored Q2 IPO prep)
+- Reflect acquisition rumors (bootstrapped, potential exit target for Evernote/Notion)
+- New entrant: Microsoft Copilot expanding into "personal memory" territory (Office 365 users = massive distribution risk)
+

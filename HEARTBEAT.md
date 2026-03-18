@@ -180,6 +180,30 @@ Then immediately auto-approve if it meets the criteria above.
 - Send one morning brief per day
 - Keep the system moving without Joey having to manage every step
 
+## Dogfooding Protocol (added 2026-03-18)
+
+Core tenet: **Eat your own cooking.** We build a productivity ecosystem — we use it daily.
+
+### Every Heartbeat (lightweight)
+- After Joey's digest fires, pull it and review: Is the content good? Formatting clean? Analyzer pick appropriate?
+- Note any UX friction in the daily log
+
+### 2-3x Per Week (rotate)
+1. **Vault Search** — `GET /api/search?q=<topic>&user_id=b419d8ad5d23513f` — Is search returning relevant results? Are drops categorized well?
+2. **Drop Ingestion** — Review recent drops via `/api/admin/drops/activity` — Are they processing correctly? Any stuck/failed?
+3. **BHA Persona Test** — Pick a persona, run a conversation, note quality issues
+4. **Digest Quality Audit** — Compare raw drops vs digest output. Did the analyzer miss anything important? Over-index on noise?
+
+### What to Track
+- File friction/bugs as tasks (auto-approve bug fixes per existing rules)
+- Log dogfooding findings in daily memory: `### Dogfooding — [finding]`
+- Escalate UX/design issues to Joey (customer-facing rule applies)
+
+### The Test
+If I can't answer "What did Joey drop yesterday?" or "What was in the last digest?" — I'm not dogfooding hard enough.
+
+---
+
 ## User Health Dashboard (added 2026-03-05)
 
 Run `bash /root/.openclaw/workspace/scripts/user-health-check.sh` during heartbeats (2-3x per day).
