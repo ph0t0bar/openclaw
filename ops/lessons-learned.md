@@ -448,4 +448,62 @@ Operational lessons, failures, and improvements captured by LearningBot.
 
 ---
 
+### 09:11 UTC — LearningBot (2026-03-18)
+
+**LESSON: Anthropic API Key Exposure — Security-First Governance Activation**
+- **What happened:** Sentry detected Anthropic API key (sk-ant-oat01-...) exposed in git diff at 08:33 UTC; Governance invoked Constitutional Section 4.2 crisis protocol within 20 minutes
+- **Why:** Secret scan routine caught credential before exploitation; clear escalation path to ops/escalations.md
+- **Impact:** Potential security breach averted; exposure window limited to recent commits only
+- **How to prevent:**
+  - Rotate exposed key immediately (if not already done)
+  - Add pre-commit hooks for secret detection
+  - Audit all commits since key creation for unauthorized access
+  - Store keys in environment variables only, never in code
+- **Pattern reference:** Pattern 312 (Security-First Governance Activation)
+
+**LESSON: Heartbeat-Consolidator Skill Success — Coordination Efficiency**
+- **What happened:** SkillMiner created `heartbeat-consolidator` skill at 08:31 UTC — reduced 20+ duplicate Hub API calls/day to 2/day with 30min cache
+- **Why:** Chief of Staff, Ops Monitor, Unified Ops Monitor all polling same endpoints independently; 90% API pressure was redundant
+- **Impact:** Reduced Hub API load, faster agent response times, single source of truth for metrics
+- **How to replicate:**
+  - Identify overlapping data collection across agents
+  - Implement cached "source of truth" with change detection
+  - Agent-specific filtering (each agent gets formatted data it needs)
+  - Emergency override for critical situations
+- **Pattern reference:** Pattern 314 (Skills Framework Infrastructure Threshold)
+
+**LESSON: ContentBot-FounderVoice Collaboration Loop — Content Velocity**
+- **What happened:** 20+ LinkedIn posts created, polished, and delivered in 24h via ContentBot → FounderVoice assembly line
+- **Why:** Clear handoff process: ContentBot drafts → FounderVoice voice-checks → rewrites if needed → SocialBot schedules
+- **Impact:** Launch week content library fully stocked; Joey voice consistency maintained across all posts
+- **How to replicate:**
+  - Separate generation from validation (different agents)
+  - Clear quality gate (FounderVoice approval required)
+  - Rewrite loop for off-voice content (not just rejection)
+  - Assembly line beats single-agent creation
+- **Pattern reference:** Pattern 315 (ContentBot-FounderVoice Collaboration Loop)
+
+**LESSON: Governance Failure Cascade — Oversight Layer Degraded**
+- **What happened:** Meta agent 91% failure rate (10/11 cycles), Governance 100% failure (7/7), LearningBot 100% failure (3/3) — oversight systems failing silently
+- **Why:** Meta-agents have complex synthesis tasks prone to timeouts; no external monitoring of the monitors
+- **Impact:** Grade inflation unchecked; systemic issues not surfacing; agents grading themselves
+- **How to prevent:**
+  - External monitoring for meta-agents (Claw notification on failure)
+  - Simplify meta-agent tasks to reduce timeout risk
+  - Fallback to manual review when oversight layer fails >50%
+- **Pattern reference:** Pattern 301 (Governance Failure Cascade), Pattern 317 (Timeout Crisis as Capacity Signal)
+
+**LESSON: Skills Framework Infrastructure Threshold Crossed**
+- **What happened:** 6 working skills validated in 24h: family-retention-guardian, goldmine-miner, poe-balance-guardian, template-deployer, execution-decomposer, digest-pipeline-monitor
+- **Why:** Pattern 299 (Decomposition Enables Execution) + Pattern 296 (Skills as Execution Islands) = systematic execution capability
+- **Impact:** Skills ecosystem now self-sustaining; execution no longer blocked by board consensus
+- **How to replicate:**
+  - Atomic scope (<100 lines, <30 min per subtask)
+  - No board access required (isolation = execution)
+  - Include tests and validation from day one
+  - Clear success criteria (not open-ended)
+- **Pattern reference:** Pattern 314 (Skills Framework Infrastructure Threshold), Pattern 299 (Decomposition Enables Execution)
+
+---
+
 ## 2026-03-18
