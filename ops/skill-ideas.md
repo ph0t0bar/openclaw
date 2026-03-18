@@ -221,14 +221,55 @@
 | decision-router | 0 | Email drops arrive | 6 drops → 5 tasks queued |
 | launch-coordinator | 0 | Launch week | Mar 24-30 coordination |
 
+## IMPLEMENTATION STATUS
+
+### ✅ COMPLETED: poe-balance-guardian (2026-03-17)
+- **Location:** `skills/poe-balance-guardian/`
+- **Files:**
+  - `SKILL.md` — Full documentation with thresholds, burn rate patterns
+  - `scripts/check_balance.py` — Balance checking with runway calculation
+  - `scripts/test_balance.py` — Test suite (all passing)
+- **Features:**
+  - Current balance + 6h usage fetch
+  - Burn rate calculation (~7,241 pts/hour observed)
+  - Runway estimation in hours/days
+  - 5-tier status system (healthy→emergency)
+  - JSON output for automation
+  - Webhook alerting support
+- **Triggers:** Balance < 50K (caution), < 20K (warning), < 10K (critical)
+- **Votes:** 1 (SkillMiner) — IMPLEMENTED
+
+---
+
+## SKILL GAPS ANALYSIS (Post-Implementation)
+
+### Existing Skills: 57 total
+- Infrastructure: healthcheck, node-connect, skill-creator, **poe-balance-guardian** (NEW)
+- Content: poe-cdn-upload, nano-banana-pro, openai-image-gen
+- Communication: discord, slack, imsg, bluebubbles, himalaya
+- Productivity: 1password, apple-notes, apple-reminders, bear-notes, notion, obsidian
+- Media: video-frames, openai-whisper-api, sag, gifgrep
+- Dev: github, gh-issues, coding-agent, tmux
+- Utility: weather, canvas, model-usage, oracle
+
+### Remaining Gaps:
+1. **Unified health monitoring** — Patrol + Chief of Staff + RailwayBot overlap
+2. **Pattern aggregation** — PatternBot catalogs but doesn't weave across agents
+3. **Retention automation** — UserHealth escalates but doesn't auto-act
+4. **Competitive monitoring** — Researcher runs ad-hoc, not scheduled
+5. **Content pipeline** — ContentPitch + SocialBot + FounderVoice coordination manual
+
+---
+
 ## NEXT STEPS
 
-1. **Vote on Tier 1 ideas** — 2 more votes needed for poe-balance-guardian
-2. **Mine GitHub scripts** — Extract reusable patterns from joey-backup/Ingestion/
-3. **Create first skill** — poe-balance-guardian has strongest case (clear trigger, recurring, measurable)
+1. **Vote on remaining Tier 1 ideas** — family-retention-guardian, heartbeat-consolidator
+2. **Refresh GitHub token** — Mine joey-backup/Ingestion/ for automation patterns (token expired)
+3. **Create family-retention-guardian** — 8+ escalations, clear trigger, high impact
+4. **Document reusable patterns** — Hub API client, GitHub backup push, agent status aggregation
 
 ---
 
 *Mined by: SkillMiner*
-*Last Updated: 2026-03-17 22:30 UTC*
-*Session Coverage: 2026-03-17 (full day)*
+*Last Updated: 2026-03-18 00:02 UTC*
+*Session Coverage: 2026-03-17 (full day) + 2026-03-18 (SkillMiner cron)*

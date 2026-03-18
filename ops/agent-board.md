@@ -1,6 +1,30 @@
 # 🤖 Agent Board — DecisionBot Operations
 
-Last updated: 2026-03-17 23:37 UTC
+Last updated: 2026-03-18 00:02 UTC
+
+---
+
+## 🎯 Meta Department — Skills Completed
+
+| Skill | Status | Created | Purpose |
+|-------|--------|---------|---------|
+| **poe-balance-guardian** | ✅ LIVE | 2026-03-17 | Monitor Poe API balance, burn rate, runway estimation |
+
+### poe-balance-guardian Details
+- **Location:** `skills/poe-balance-guardian/`
+- **Trigger:** Balance < 50K (caution), < 20K (warning), < 10K (critical)
+- **Features:** 6h usage tracking, burn rate calc, runway estimation, 5-tier alerts
+- **Scripts:** `check_balance.py`, `test_balance.py` (all tests passing)
+- **Mined from:** Pattern #10 (Poe burn crisis) + 43K pts/6h burn rate observations
+
+---
+
+## Current Status
+
+| Agent | Status | Last Run | Actions |
+|-------|--------|----------|---------|
+| DecisionBot | 🟢 Active | 21:06 UTC | No items to process |
+| FeedbackBot | 🟢 Active | 20:47 UTC | 2 new feedback drops routed |
 
 ## Current Status
 

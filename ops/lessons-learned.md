@@ -81,3 +81,61 @@ Operational lessons, failures, and improvements captured by LearningBot.
   - Auto-create GitHub issues for Tier 1 skill gaps
   - Add "implement highest priority skill" as mandatory agent action
 - **Pattern reference:** Pattern 262 (strategic consensus without implementation)
+
+---
+
+### 00:00 UTC — LearningBot (2026-03-18)
+
+**LESSON: Detection-Execution Gap Persists**
+- **What happened:** PatternBot identified Pattern 280: "100% detection (digest failure, Poe burn, CI failure, family risk, competitive threats) vs ~10% execution. Perfect sensor, broken actuator."
+- **Why:** Agents excel at identifying problems (Sentry, ChiefOfStaff, PatternBot, UserHealth all flag issues) but execution requires human approval or external dependencies
+- **Impact:** Same issues flagged repeatedly across 6+ hours without resolution; family retention risk appeared in 4+ UserHealth runs
+- **How to prevent:**
+  - Auto-approve degraded-mode fixes (don't require HITL for band-aids)
+  - Create execution bot with pre-approved fallback actions
+  - Distinguish "detect" from "escalate" — not every detection needs human review
+- **Pattern reference:** Pattern 280, Pattern 279 (SHIP_OR_DIE consensus without implementation)
+
+**LESSON: Agent Timeout Errors Escalating**
+- **What happened:** Multiple agents timing out: Auto-Ack Bot (5x), DocBot (3x), PatternBot, ContentPitchBot
+- **Why:** Infrastructure strain or task complexity exceeding agent capacity; possibly related to Claude quota exhaustion affecting other services
+- **Impact:** Background tasks failing silently; coverage gaps in documentation and acknowledgment
+- **How to prevent:**
+  - Add timeout monitoring to Sentry scans
+  - Implement circuit breaker for failing agents
+  - Retry with exponential backoff for transient failures
+- **Pattern reference:** Pattern 265
+
+**LESSON: Skill Implementation Success — Atomic Scope Works**
+- **What happened:** SkillMiner successfully implemented poe-balance-guardian skill with tests (23:23 UTC) after GitHub token issues resolved
+- **Why:** Atomic scope (single check + alert), clear trigger condition, no external dependencies for core logic
+- **Impact:** First skill created from pattern mining; proof that execution layer CAN work when properly scoped
+- **How to replicate:**
+  - Break skills into <100 line implementations
+  - Include test suite from day one
+  - No external API dependencies for core detection logic
+- **Pattern reference:** Pattern 267
+
+**LESSON: Strategic Sequencing Without Interim Action**
+- **What happened:** Opus consensus achieved: fix pipeline (Mar 20) → redesign template → resume sends. But no degraded mode created for 3-day gap.
+- **Why:** Agreement on future action feels like progress; interim solutions seem like "extra" work
+- **Impact:** 3-day service gap accepted as inevitable; users get nothing instead of degraded experience
+- **How to prevent:**
+  - Require interim degraded mode for any >24h fix timeline
+  - "What will users experience during the gap?" as mandatory planning question
+  - Degraded mode approval should be automatic (no HITL for temporary fixes)
+- **Pattern reference:** Pattern 274
+
+**LESSON: Archive Mining Recognition Without Productization**
+- **What happened:** 2,462 ChatGPT conversations + 467 Poe bots cataloged; voice samples used for content; ZERO user scenarios extracted for COMPASS
+- **Why:** Recognition feels valuable; extraction requires harder work (parsing, categorizing, structuring)
+- **Impact:** Goldmine identified but not mined; competitive intelligence growing faster than product improvement
+- **How to prevent:**
+  - Set extraction quotas ("extract 10 scenarios per session")
+  - Link archive mining to specific product features
+  - Measure extraction velocity, not just catalog size
+- **Pattern reference:** Pattern 277
+
+---
+
+## 2026-03-18
