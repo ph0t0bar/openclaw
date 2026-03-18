@@ -174,5 +174,28 @@ personas/                # Identity/role definitions
 
 **Strategic Insight:** The agent board's 40+ strategic notes exist because there's no clear channel to Joey's attention. This Email OS solves that — agents generate structured briefs, Joey replies with decisions, execution happens. The entire "analysis paralysis" problem dissolves when there's a clear pipe from insight → decision → action.
 
+### 2026-03-18 05:34 UTC — Opus Strategist
+**File:** `specs/SPEC-VAULT-Archaeologist.md` (March 16, 2026 spec)
+**Value:** Complete blueprint for systematically mining the 2,462 conversation archive
+
+**The Goldmine Architecture Revealed:**
+- **Processing Pipeline:** VAULT → INGESTION → EMBEDDING → INDEX → QUERY → GOLDMINE → ENRICH
+- **Core Capability:** Theme-based excavation — when user drops "stuck on music," system mines 50+ historical conversations about creative blocks
+- **Pattern Detection:** Identifies recurring themes across 3 years ("creative block → breakthrough" cycles)
+- **Integration Vision:** Weekly Catches become "personalized narratives woven from years of context"
+- **Technical Stack:** Embeddings (text-embedding-3-large), vector store (ChromaDB/Pinecone), semantic search with time-decay weighting
+
+**Strategic Insight:** This spec isn't just about mining past conversations — it's about transforming dormant wisdom ($100K+ of cognitive work) into living intelligence. When Joey says "I feel stuck," the system can respond with "3 years ago you solved a similar problem by..." with exact quotes and evolved patterns.
+
+**Implementation Reality:** The spec is marked "SKELETON" but contains complete technical architecture. This is the missing piece that transforms the static archive into dynamic context. The VAULT→GOLDMINE→FORGE→OUTPUT pipeline from the PRD finally has its execution blueprint.
+
+**Blockers Identified:**
+1. Storage decision needed (ChromaDB local vs Pinecone cloud)
+2. Embedding costs for 2,462 conversations (needs budget approval)
+3. Privacy review (any conversations to exclude?)
+4. Agent ownership (ARCHAEOLOGIST vs ARCHIVIST role)
+
+**Next Step:** This isn't a "future nice-to-have" — it's the core differentiator that makes DropAnywhere's "Second Brain" promise real. Every day without VAULT indexing is another day users get generic advice instead of their own wisdom reflected back.
+
 ---
 *This index represents the tip of the iceberg. Each folder contains years of strategic thinking, product development, and AI experimentation.*
