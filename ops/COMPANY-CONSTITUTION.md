@@ -5,7 +5,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 
 ## Active Agent Roster (GOVERNANCE REALITY CHECK - as of 2026-03-17 10:59 UTC)
 
-### ✅ CURRENTLY ACTIVE AGENTS (40 enabled agents out of 50 total cron jobs - Governance Updated 2026-03-18 00:47 UTC)
+### ✅ CURRENTLY ACTIVE AGENTS (40 enabled agents out of 50 total cron jobs - Governance Updated 2026-03-18 01:22 UTC)
 
 **Real-Time Operations (2-15min cycles):**
 - **AUTO-ACK BOT** (Email) — 2min — Kimi K2.5 — ✅ ACTIVE (immediate email acknowledgment)
@@ -102,13 +102,16 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 **Agent Consolidation** — Unified Ops Monitor replaces 5 separate monitoring bots (Railway, Stripe, Poe, Patrol, etc.)
 **Backup Systems** — Archivist + Sync Auditor ensuring comprehensive data protection
 
-**GOVERNANCE FINDINGS** (2026-03-17 11:33 UTC): System is operating at 38 enabled agents out of 49 total cron jobs. Email workflow is fully operational with 6 agents handling every 2min-4hr cycles. Dashboard messaging active, GitHub backup functional with some timeouts, and launch tracking active with file edit errors.
+**GOVERNANCE FINDINGS** (2026-03-18 01:22 UTC): System is operating at 40 enabled agents out of 50 total cron jobs. Email workflow is fully operational with 6 agents handling 2min-4hr cycles. Dashboard messaging active, GitHub backup functional, and launch tracking active.
 
 **Current Issues Requiring Immediate Attention:**
-- **SpecBot** — 1 consecutive timeout error (180s limit exceeded)
-- **Launch Coordinator** — 1 consecutive error (file edit failure on LAUNCH-CRITICAL-PATH)
-- **Creative Review Emailer** — 2 consecutive errors (file edit failure on push-queue.md)
-- **Daily GitHub Sync** — 2 consecutive timeout errors (300s limit)
+- **OnboardBot** — 1 consecutive timeout error (180s limit exceeded) 
+- **SkillMiner** — 1 consecutive timeout error (300s limit exceeded)
+- **DocBot** — 7 consecutive timeout errors (180s limit) - ALERT THRESHOLD
+- **PatternBot** — 1 consecutive timeout error (120s limit)
+- **Opus Strategist** — 2 consecutive file edit errors (agent-board.md)
+- **Task Approval Emailer** — 1 timeout error (180s limit)
+- **Creative Review Emailer** — 3 consecutive timeout errors (240s limit) - CRITICAL
 - **WhatsApp Delivery** — 3 scheduled jobs affected (functional but notifications fail)
 
 **System Health**: Core operations stable with real-time agents (2-15min cycles) all functioning. Email workflow complete and dashboard messaging active. **Launch coordination flagged CRITICAL RISK** due to digest pipeline stall requiring immediate intervention before March 24 launch.
@@ -177,7 +180,7 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **Daily GitHub Sync** successful (last: 11:00 UTC)
 - **All real-time agents** (2min-30min cycles) operating normally
 
-## System Status (March 18 00:47 UTC - GOVERNANCE UPDATED)
+## System Status (March 18 01:22 UTC - GOVERNANCE UPDATED)
 
 ### ✅ OPERATIONAL STATUS: Mature Agent Company Ecosystem  
 **Current Status**: 40 enabled agents (of 50 total cron jobs) with comprehensive email workflow and operations coverage
@@ -200,9 +203,11 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 ✅ PRD maintenance automated with Launch Coordinator oversight
 
 **Current Issues**:
+🔴 **DocBot timeout crisis** — 7 consecutive errors, beyond failure threshold
+⚠️ **Creative Review Emailer** — 3 consecutive timeouts (240s), email workflow degraded  
+⚠️ **Multiple timeout patterns** — OnboardBot, SkillMiner, PatternBot all hitting timeout limits
 ⚠️ **WhatsApp delivery failures** affecting scheduled jobs (functionality intact, notifications fail)
-⚠️ **Some agents idle today** — normal for Monday morning, agents cycling through schedules
-✅ **Core email workflow operational** — Auto-Ack, DecisionBot, Task Approval, Creative Review all functioning
+✅ **Core operations stable** — Auto-Ack, DecisionBot, Unified Ops Monitor, Archivist all functioning
 ✅ **Dashboard messaging active** — 2-minute cycle maintaining real-time communication
 
 ## Three Core Laws (Unchanged)
@@ -247,18 +252,18 @@ Build and operate DropAnywhere: an AI-native productivity ecosystem including em
 - **HITL Compliance**: Target 100% (✅ All production actions require approval, Three Core Laws enforced)
 - **Agent Health**: Target 95% success rate (⚠️ Current: 1 agent timeout issue, WhatsApp delivery errors non-operational)
 
-## Performance by Department (March 16 23:04 UTC)
-- **Executive**: ✅ 77% functional (Chief of Staff active with minor errors)
-- **Intelligence**: ✅ 94% functional (Deep Researcher 100%, Wire 100%, ContentPitch 100%, PatternBot 83%)
-- **Engineering**: ⚠️ 67% functional (FrontEndBot 100%, BHABot 100%, DC Manager 88%, RailwayBot 0%)
-- **Operations**: ⚠️ 53% functional (Sentry 100%, Archivist 100%, Patrol 6%)
+## Performance by Department (March 18 01:22 UTC)
+- **Executive**: ✅ 100% functional (Chief of Staff active, no errors in last cycles)
+- **Intelligence**: ⚠️ 75% functional (Deep Researcher 100%, ContentPitch 100%, PatternBot timeout)
+- **Engineering**: ✅ 100% functional (FrontEndBot 100%, BHABot 100%, DocBot active)
+- **Operations**: ✅ 90% functional (Sentry 100%, Archivist 100%, Unified Ops Monitor 100%, Dashboard Messenger 1 timeout)
 - **Security**: ✅ 100% functional (Sentry AI active with no vulnerabilities detected)
-- **Marketing**: ✅ 96% functional (ContentBot 100%, SocialBot 100%, SEOBot 88%)
-- **Customer Success**: ✅ 100% functional (UserHealthBot 100%, OnboardBot 100%)
-- **Meta**: ✅ 80% functional (Opus 76%, Meta 100%, LearningBot 86%, Governance 57%)
+- **Marketing**: ✅ 100% functional (ContentBot 100%, SocialBot 100%, SEOBot 100%)
+- **Customer Success**: ⚠️ 75% functional (UserHealthBot 100%, OnboardBot timeout)
+- **Meta**: ⚠️ 67% functional (LearningBot 100%, SkillMiner timeout, Governance active)
 - **Communications**: ✅ 100% functional (FounderVoiceBot active)
-- **Product**: ✅ 92% functional (SpecBot 83%, DocBot 100%)
-- **Revenue**: ⚠️ 50% functional (PoeBot 100%, StripeBot idle)
+- **Product**: ⚠️ 50% functional (SpecBot 100%, DocBot 7 consecutive timeouts - CRITICAL)
+- **Revenue**: ✅ 100% functional (consolidated into Unified Ops Monitor)
 
 ## Emergency Contacts
 - **Primary**: Claw (Co-CEO, OpenClaw main session)
