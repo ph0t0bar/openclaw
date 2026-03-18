@@ -5,13 +5,8 @@
 ## Generated: 2026-03-18 02:14 UTC
 
 ### Social Gaps
-- /root/.openclaw/workspace/social/launch-week-day3-capture-guilt-linkedin-POLISHED.md -> specs/social/launch-week-day3-capture-guilt-linkedin-POLISHED.md
-- /root/.openclaw/workspace/social/launch-week-day5-leverage-linkedin-POLISHED.md -> specs/social/launch-week-day5-leverage-linkedin-POLISHED.md
 - /root/.openclaw/workspace/social/launch-week-day5-leverage-linkedin.md -> specs/social/launch-week-day5-leverage-linkedin.md
-- /root/.openclaw/workspace/social/launch-week-inbox-was-mistake-linkedin-POLISHED.md -> specs/social/launch-week-inbox-was-mistake-linkedin-POLISHED.md
-- /root/.openclaw/workspace/social/why-simple-feels-scary-linkedin-POLISHED.md -> specs/social/why-simple-feels-scary-linkedin-POLISHED.md
 - /root/.openclaw/workspace/social/your-second-brain-has-no-inbox-linkedin-JOEY-VOICE.md -> specs/social/your-second-brain-has-no-inbox-linkedin-JOEY-VOICE.md
-- /root/.openclaw/workspace/social/your-second-brain-has-no-inbox-linkedin-POLISHED.md -> specs/social/your-second-brain-has-no-inbox-linkedin-POLISHED.md
 
 ### Template Gaps
 - /root/.openclaw/workspace/templates/brief.html -> specs/templates/brief.html
