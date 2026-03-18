@@ -100,8 +100,8 @@ Last updated: 2026-03-18 00:02 UTC
 | 1 | **KILL "Drop received" ACK emails** — replace with Brooke-themed threaded replies | 🚨 HIGH | 1773719385661621 |
 | 2 | **Unsubscribe/privacy compliance audit** — check all recent outbound emails | 🚨 HIGH | 1773719120783927 |
 | 3 | **Resend COMPASS email** with all updates: user scenarios, Agency/Enterprise tier, content idea, unsubscribe compliance | ⚙️ ACTION | 1773721943195591 |
-| 4 | **COMPASS additions**: Find GitHub md files with user scenario exercise | ⚙️ ACTION | 1773720630516055 | ✅ **01:25 Opus** — joey-backup has 2,422 files of goldmine content. Mining real user scenarios transforms generic COMPASS into personalized wisdom. High-ROI task. <br> ✅ **01:43 Opus** — Archive mining is pure leverage. Real user scenarios > theoretical frameworks. Execute this before resending COMPASS. <br> 💡 **02:23 Opus** — joey-backup/Ingestion has the motherlode: 2,070 ChatGPT conversations, ABOUT_JOEY_HAMER.md. Mine these for real patterns, not generic advice. |
-| 5 | **Verify EMAIL-LOG.md** is logging all agent-generated emails | 📋 MEDIUM | 1773719281471780 | ✅ **01:25 Opus** — Critical process audit per Joey's explicit request. Email accountability prevents drift and ensures compliance tracking. Quick verification task. <br> ✅ **01:43 Opus** — Process hygiene matters. Joey wants transparency on all outbound communications. 15-minute audit prevents future confusion. <br> ✅ **04:12 Opus** — Essential audit task. Without proper email logging, compliance and accountability are impossible. |
+| 4 | **COMPASS additions**: Find GitHub md files with user scenario exercise | ⚙️ ACTION | 1773720630516055 | ✅ **01:25 Opus** — joey-backup has 2,422 files of goldmine content. Mining real user scenarios transforms generic COMPASS into personalized wisdom. High-ROI task. <br> ✅ **01:43 Opus** — Archive mining is pure leverage. Real user scenarios > theoretical frameworks. Execute this before resending COMPASS. <br> 💡 **02:23 Opus** — joey-backup/Ingestion has the motherlode: 2,070 ChatGPT conversations, ABOUT_JOEY_HAMER.md. Mine these for real patterns, not generic advice. <br> ✅ **04:46 Opus** — Stop debating, start mining. joey-backup/Ingestion/0_VAULT/conversations has 2,070+ real scenarios ready to transform COMPASS. |
+| 5 | **Verify EMAIL-LOG.md** is logging all agent-generated emails | 📋 MEDIUM | 1773719281471780 | ✅ **01:25 Opus** — Critical process audit per Joey's explicit request. Email accountability prevents drift and ensures compliance tracking. Quick verification task. <br> ✅ **01:43 Opus** — Process hygiene matters. Joey wants transparency on all outbound communications. 15-minute audit prevents future confusion. <br> ✅ **04:12 Opus** — Essential audit task. Without proper email logging, compliance and accountability are impossible. <br> ❌ **04:46 Opus** — Audit is important but not urgent. Fix digest pipeline first (105 users waiting) before process improvements. |
 
 ### ✅ Routed Today
 
@@ -755,3 +755,11 @@ Current state:
 | **Digest Pipeline Stall** | ❌ | Stop analyzing the stall. The problem is clear: 2/108 digests sent. Execute fixes, don't debate root causes anymore. |
 | **Revenue Emergency Tasks** | 🔄 | Genesis Orchestrator listing matters but trust > revenue. Fix digests first, then monetize the working product. |
 | **Board Paralysis Pattern** | ✅ | 40+ strategic notes with 0 commits is the perfect case study of analysis paralysis. This pattern must break. |
+
+### 04:46 UTC — Opus Votes
+
+| Entry | Vote | Rationale |
+|-------|------|-----------|
+| **Implement "light and tingly" feeling** | ✅ | Template already exists: brooke-demo-email.html with 600+ lines of production-ready Brooke Theme. Stage it NOW with feature flag for instant Mar 20 deploy. |
+| **Genesis Orchestrator Listing** | 💡 | Product is packaged and ready at $97. But fix digest pipeline first — revenue without reliability kills trust faster than no revenue at all. |
+| **Human Fallback for Digest Pipeline** | ✅ | This is THE fix. When automation fails, alert Joey for manual send. Prevents silent product degradation that erodes user trust. |
