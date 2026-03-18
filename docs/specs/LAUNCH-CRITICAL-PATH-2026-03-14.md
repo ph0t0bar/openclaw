@@ -3,26 +3,28 @@
 
 ---
 
-## Status Update (Mar 18 02:45 UTC) — 7 Days to Launch
+## Status Update (Mar 18 04:51 UTC) — 7 Days to Launch
 
 | Phase | Window | Status |
 |-------|--------|--------|
 | **Phase 1: SURVIVAL** | Mar 14–15 | ✅ COMPLETE — Email bugs fixed, Poe stable |
-| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 In progress — L1-L10 checklist 60% complete |
+| **Phase 2: STABILIZE** | Mar 16–19 | 🔴 **BLOCKED** — L1-L10 checklist stalled at 60% |
 | **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
-| **Phase 4: LAUNCH** | Mar 24–26 | ⬜ Not started |
+| **Phase 4: LAUNCH** | Mar 24–26 | ⚠️ **AT RISK** |
 
 **CRITICAL BLOCKERS RESOLVED:**
-- ✅ `<thinking>` tags stripped from emails (PR #199)
-- ✅ Email threading fixed (PR #198) 
-- ✅ Auto-response emails disabled at free tier (PR #199)
-- ✅ Re-engagement emails limited to Joey only (PR #197)
-- ✅ Email from-address fixed to hello@drop-anywhere.com (PR #195)
+- ✅ `<thinking>` tags stripped from emails (PR #199, merged Mar 17)
+- ✅ Email threading fixed (PR #198, merged Mar 17) 
+- ✅ Auto-response emails disabled at free tier (PR #199, merged Mar 17)
+- ✅ Re-engagement emails limited to Joey only (PR #197, merged Mar 17)
+- ✅ Email from-address fixed to hello@drop-anywhere.com (PR #195, merged Mar 17)
+- ✅ OpenClaw hook payload fixed (completed via Dropper-Code)
 
-**ONGOING CONCERNS:**
-- ⚠️ Digest scheduler stall (4 failed tasks, 15+ users affected)
-- ⚠️ Model exhaustion in digest pipeline (needs exponential backoff)
-- ⚠️ Poe cost monitoring (IdealPrompt: 30K points in 6h)
+**URGENT NEW BLOCKERS:**
+- 🔴 **Digest pipeline completely broken** — 15+ users missed digests, 4 consecutive failed Dropper-Code tasks
+- 🔴 **Model exhaustion causing cascade failures** — exponential backoff task failed
+- 🔴 **Digest scheduler not recovering after redeploys** — recovery task cancelled
+- ⚠️ Poe cost spike continues (IdealPrompt: 30K points in 6h, investigation task failed)
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
@@ -76,20 +78,20 @@ These are not features. These are oxygen.
 
 ### Launch-Ready Checklist
 
-| # | Item | Target Date | Status |
-|---|------|-------------|--------|
-| L1 | Mobile Safari QA — full flow | Mar 16 | 🔄 NEEDS QA |
-| L2 | Sentry/error tracking | Mar 17 | 🔄 IN PROGRESS |
-| L3 | Unsubscribe verification | Mar 16 | ✅ DONE (PR #197) |
-| L4 | Rate limiting on /api/ingest | Mar 17 | 🔄 IN PROGRESS |
-| L5 | Hub fallback chain (OpenRouter) | Mar 18 | ❌ BLOCKED (failed tasks) |
-| L6 | New user onboarding QA | Mar 18 | 🔄 PENDING |
-| L7 | Stripe failed charge investigation | Mar 16 | 🔄 PENDING |
-| L8 | `<thinking>` fix verified in prod | Mar 16 | ✅ DONE (PR #199) |
-| L9 | Tools tab (P1-10 remaining) | Mar 19 | 🔄 PENDING (P1-4 done) |
-| L10 | Compass settings verified | Mar 16 | 🔄 PENDING |
+| # | Item | Target Date | Status | GitHub Status |
+|---|------|-------------|--------|---------------|
+| L1 | Mobile Safari QA — full flow | Mar 16 | ❌ **MISSED** | No PR activity |
+| L2 | Sentry/error tracking | Mar 17 | ❌ **MISSED** | No PR activity |
+| L3 | Unsubscribe verification | Mar 16 | ✅ **DONE** | PR #197 merged |
+| L4 | Rate limiting on /api/ingest | Mar 17 | ❌ **MISSED** | No PR activity |
+| L5 | Hub fallback chain (OpenRouter) | Mar 18 | 🔴 **BLOCKED** | Task failed |
+| L6 | New user onboarding QA | Mar 18 | ❌ **MISSED** | No PR activity |
+| L7 | Stripe failed charge investigation | Mar 16 | ❌ **MISSED** | No PR activity |
+| L8 | `<thinking>` fix verified in prod | Mar 16 | ✅ **DONE** | PR #199 merged |
+| L9 | Tools tab (P1-10 remaining) | Mar 19 | ❌ **BEHIND** | No current PR |
+| L10 | Compass settings verified | Mar 16 | ❌ **MISSED** | No PR activity |
 
-**Progress: 6/10 COMPLETE (60%)**
+**Progress: 2/10 COMPLETE (20%) — CRITICAL DECLINE**
 
 ### Snapback Validation (Mar 16–22)
 
