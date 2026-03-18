@@ -527,3 +527,89 @@ Based on prior SEO research and industry knowledge, here are the **keywords Drop
 2. Add structured data (Product, SoftwareApplication, FAQ)
 3. Ensure fast Core Web Vitals
 4. Set up rank tracking for target keywords
+
+## SEOBot Run — 2026-03-18 09:56 UTC
+
+### Research Focus: AI Productivity Tool Keywords + Competitor Analysis
+
+**Data Source:** Zapier's "Best AI Productivity Tools 2026" (50+ tools analyzed)
+
+---
+
+### 🔑 High-Value Keywords to Target for DropAnywhere
+
+Based on competitor landscape analysis:
+
+| Keyword Category | Specific Keywords | Search Intent | Competitor Ranking |
+|-----------------|-------------------|---------------|-------------------|
+| **Core Product** | AI daily digest | Informational/Commercial | Low competition |
+| | Daily digest email | Commercial | Mem, Notion adjacent |
+| | Second brain app | Commercial | Notion, Mem |
+| | AI knowledge management | Commercial | Mem, Notion, Evernote |
+| **Feature-Based** | Email ingestion AI | Commercial | Uncontested |
+| | Multi-channel capture | Commercial | Uncontested |
+| | Voice to notes AI | Commercial | Growing |
+| | SMS to notes | Commercial | Uncontested |
+| **Problem-Based** | No inbox productivity | Informational | **UNIQUE ANGLE** |
+| | Frictionless note taking | Commercial | Low competition |
+| | Capture anywhere app | Commercial | Low competition |
+| **Category** | AI note taking app | Commercial | High competition |
+| | AI productivity tools | Informational | Saturated |
+
+---
+
+### 🎯 Competitor SEO Insights
+
+**Mem.ai positioning:**
+- Keywords: "AI-powered notes", "self-organizing workspace", "smart tags"
+- Differentiator: Automatic tagging/connection without manual organization
+- Gap: No daily digest feature; focused on search not curation
+
+**Notion AI positioning:**
+- Keywords: "AI workspace", "second brain", "knowledge base"
+- Differentiator: All-in-one workspace with AI Q&A on your data
+- Gap: Heavy manual setup; no automated daily summary
+
+**Evernote AI positioning:**
+- Keywords: "AI note cleanup", "PDF scanning", "handwriting recognition"
+- Differentiator: Legacy brand with AI cleanup tools
+- Gap: Dated UI; no modern digest/insight features
+
+**Shortwave (Email AI):**
+- Keywords: "AI email assistant", "smart inbox"
+- Differentiator: AI-native email client
+- Gap: Email-only; not multi-channel capture
+
+---
+
+### 💡 Recommended Keyword Strategy for DropAnywhere
+
+**Tier 1 (Primary) — Target Now:**
+- "AI daily digest" — Low competition, high relevance
+- "daily digest email tool" — Specific, commercial intent
+- "second brain no inbox" — Unique positioning angle
+- "capture anywhere notes" — Brand-adjacent
+
+**Tier 2 (Secondary) — Build Content:**
+- "AI knowledge management" — Broader category play
+- "frictionless note taking" — Problem-focused
+- "multi-channel note capture" — Feature-focused
+- "SMS voice email to notes" — Long-tail specificity
+
+**Tier 3 (Aspirational) — Long Term:**
+- "AI productivity tools" — High volume, high competition
+- "best second brain app" — Comparison keywords
+- "AI note taking" — Category leader ambition
+
+---
+
+### 📊 Content Gap Opportunities
+
+1. **"No Inbox" Philosophy** — No competitor owns this positioning
+2. **Multi-Channel Capture** — Email/SMS/Voice/Chat in one place
+3. **Daily Digest as Core Feature** — Most competitors treat summarization as add-on
+4. **Async-First Productivity** — Contrast with real-time notification culture
+
+---
+
+*Next SEOBot run: Check actual Google indexing status for drop-anywhere.com*
