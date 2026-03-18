@@ -6,13 +6,13 @@
 ## Priority Order (work top to bottom)
 
 ### P0 — Launch Blockers
-- [ ] Email-only onboarding flow (new user → first email → first digest) *[TASK: task_1773828520_702 - APPROVED]*
-- [ ] Stripe payment fix (3 failed charges, 0 succeeded — investigate) *[TASK: task_1773828541_578 - APPROVED]*
-- [ ] Landing page copy finalized for email-only pivot *[TASK: task_1773828571_815 - APPROVED]*
-- [ ] Email ingestion reliability (drops via email must never fail)
+- [x] Email-only onboarding flow (new user → first email → first digest) *[DONE: 2026-03-18]*
+- [x] Stripe payment fix (3 failed charges, 0 succeeded — investigate) *[DONE: 2026-03-18]*
+- [x] Landing page copy finalized for email-only pivot *[DONE: 2026-03-18 - PR #152 ready to merge]*
+- [ ] Email ingestion reliability (drops via email must never fail) *[TASK: task_1773835740_369 - APPROVED]*
 
 ### P1 — Launch Critical
-- [ ] Soft launch invite email template (personal, warm, Brooke theme)
+- [ ] Soft launch invite email template (personal, warm, Brooke theme) *[TASK: task_1773835770_833 - APPROVED]*
 - [ ] First-run experience: user emails in → gets confirmation → gets first digest
 - [ ] Digest quality audit (pull a real digest, verify formatting + content)
 - [ ] Error handling: what happens when email parsing fails?
@@ -24,4 +24,6 @@
 - [ ] Mobile email rendering verified
 
 ### Completed
-_(BUILD DRIVER moves items here with date + PR#)_
+- Email-only onboarding flow (2026-03-18) ✅
+- Stripe payment fix (2026-03-18) ✅  
+- Landing page copy finalized (2026-03-18, PR #152 ready to merge) ✅
