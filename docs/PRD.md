@@ -11,7 +11,7 @@
 
 **March 3-10 velocity:** 29+ PRs shipped across 4 repos. Poe Orchestrator live with 16 shadow bots. DA crossed 65 users (organic). BHA at 211 users, 531 active weekly visitors. 3 Stripe subs confirmed ($21 MRR). Dropper-Code autonomous pipeline operational (12 tasks completed).
 
-**March 18 00:59 UTC metrics:** DA at 108 users (+3), 931 total drops (+2), 10 active in 24h, 68 drops in 24h. BHA at 269 users (stable), 63 active weekly, 13 active in 24h, 9 new in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance: 2,560,398 points** (burning 17,010/6h). Top bots: Kimi-K2.5 (16,132), theREALrealtalk (431), PROproductphotos (390). PRs #193-199 merged. Hub deploy SUCCESS at 10:17 UTC, OpenClaw SUCCESS at 00:41 UTC. **⚠️ Digest pipeline: stalled** (2 sent in 24h). **⚠️ openclaw CI: failure**. **⚠️ Dropper-Code: Claude Code out of extra usage** (resets Mar 20, 5 tasks failed, brain-scan failed).
+**March 18 02:07 UTC metrics:** DA at 108 users (+3), 933 total drops (+4), 10 active in 24h, 60 drops in 24h. BHA at 269 users (stable), 63 active weekly, 12 active in 24h, 9 new in 24h. 2 Pro subs via Stripe ($21 MRR). **Poe balance: 2,526,300 points** (burning 17,177/6h). Top bots: Kimi-K2.5 (16,190), Gemini-3-Flash (559), theREALrealtalk (428). PRs #193-199 merged. Hub deploy SUCCESS at 10:17 UTC, OpenClaw SUCCESS at 00:41 UTC. **⚠️ Digest pipeline: stalled** (2 sent in 24h). **⚠️ openclaw CI: failure**. **⚠️ Dropper-Code: Claude Code out of extra usage** (resets Mar 20, 5 tasks failed, brain-scan failed).
 
 **March 11 (3am) breakthrough:** Snapback / The Weekly Catch emerged as the core product direction - not a feature, the entire experience. Joey used the system on himself (dropped a feeling about being stuck on music → got a narrative Snap Back → made music → started a 30-day songwriting challenge with Brooke). The loop proved itself in a single session. Full integration spec committed to joey-backup. Daily digest → Weekly Catch is the strategic pivot. See Section 5.12 (promoted from P2 to P0).
 
@@ -771,13 +771,13 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ## 8. System Health & Metrics (March 17, 23:55 UTC) - Daily Refresh
 
-> **⚠️ Poe Balance Burning:** 117,501 points (down 63K from 17:40). Burn rate **25,415/6h** (100 calls). Top bots: Kimi-K2.5 (19,960), theREALrealtalk (5,455). ~4.5h runway at current burn.
+> **⚠️ Poe Balance:** 2,526,300 points. Burn rate **17,177/6h** (100 calls). Top bots: Kimi-K2.5 (16,190), Gemini-3-Flash (559), theREALrealtalk (428). Stable.
 
 > **⚠️ Digest Scheduler Stalled:** 2/108 eligible users got digests in 24h (stall persists — needs investigation). Digests sent 24h: 2.
 
 > **⚠️ Dropper-Code Stalled:** Claude Code usage exhausted. 5 tasks failed, brain-scan failed. Resets Mar 20 3am UTC.
 
-> **✅ Hub Deploy:** SUCCESS at 2026-03-17 10:17 UTC. **✅ OpenClaw:** SUCCESS at 2026-03-17 23:24 UTC. **✅ Hub PRs:** 0 open (all merged).
+> **✅ Hub Deploy:** SUCCESS at 2026-03-17 10:17 UTC. **✅ OpenClaw:** SUCCESS at 2026-03-18 00:41 UTC. **✅ Hub PRs:** 0 open (all merged).
 
 | Metric | Mar 6 | Mar 9 | Mar 10 | Mar 11 | Mar 16 14:04 | Mar 16 16:35 | Mar 16 17:51 | Mar 16 20:23 | Mar 16 21:12 | Mar 17 01:17 | Mar 17 03:25 | Mar 17 04:05 | Mar 17 04:51 | Mar 17 05:31 | Mar 17 07:01 | Mar 17 10:12 | Mar 17 11:36 | Mar 17 17:29 | Mar 17 17:40 | Δ |
 |--------|-------|-------|--------|--------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|---|---|---|---|---|

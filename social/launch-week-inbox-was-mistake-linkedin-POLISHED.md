@@ -12,11 +12,13 @@ Here's what nobody tells you: the inbox was designed for *senders*, not receiver
 
 So I stopped playing that game.
 
-I built something that works the way my brain works. Drop anything — email, voice note, screenshot, random text. The system extracts what matters, connects it to what you already know, and delivers insights when you actually need them.
+I built something that works the way thoughts actually work. You have an idea while driving. You get an important email at dinner. You screenshot something worth remembering.
+
+Drop it. Anywhere. The system finds what connects, what matters, what you actually need to remember.
 
 No folders. No tags. No "inbox zero" guilt.
 
-Just: have the thought, drop it anywhere, get the insight later.
+Just: have the thought, drop it anywhere, wake up with the insights.
 
 Your second brain has no inbox. It has a vault. And the vault doesn't judge you for having 847 unread items. It just finds the good stuff when you need it.
 
@@ -25,4 +27,4 @@ Your second brain has no inbox. It has a vault. And the vault doesn't judge you 
 ---
 
 **READY TO POST** ✅
-*Polish notes: Tightened opening hooks, added "that game" for more conversational flow, emphasized the vault concept over inbox paradigm.*
+*Voice edit: Made the system description more human, added "wake up with insights" to echo the slide energy, removed feature-speak*
