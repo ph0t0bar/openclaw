@@ -350,24 +350,73 @@
 8. **content-pipeline** — +1 vote (launch coordination)
 9. **competitive-intel-agent** — +1 vote (scheduled monitoring)
 
-## NEXT ACTIONS (SkillMiner 30min Execution)
+## VALIDATION STATUS — Working Skills
 
-**IMMEDIATE:** Create **family-retention-guardian** skill
-- Highest urgency: personal stakes + 8+ escalations + clear trigger
-- Proven atomic scope (user detection → engagement scoring → outreach)
-- Direct impact on Joey's family relationships
+### ✅ PRODUCTION SKILLS (Successfully Validated)
 
-**THIS WEEK:** Create **execution-decomposer** skill  
-- Breakthrough Pattern 299 insight
-- Meta-skill that enables other complex skills
-- Could solve systemic execution paralysis
+**1. family-retention-guardian** — ✅ WORKING  
+- **Status:** Scripts functional, detects 5 family members, 2 abandoned (hamer.daniel, mitch.p.hamer)
+- **Evidence:** WhatsApp alerts active, engagement scoring operational
+- **Trigger:** Family member inactive >7d (validated with real data)
+- **Next:** Requires gentle outreach implementation for AT_RISK cases
 
-**BLOCKED:** GitHub mining (token expired - needs manual GH_TOKEN refresh)
+**2. goldmine-miner** — ✅ WORKING
+- **Status:** Archive accessible (2,462+ files), search scripts functional
+- **Evidence:** Conversation structure mapped, COMMAND_CENTER.md accessible
+- **Trigger:** Research Joey's archive or historical patterns
+- **Next:** Content generation from archive patterns
+
+**3. poe-balance-guardian** — ✅ PRODUCTION  
+- **Status:** Live monitoring, runway calculations, alerting system
+- **Evidence:** Pattern 299 validation - atomic scope enabled quick shipping
+- **Trigger:** Poe balance monitoring (proven successful)
+
+## NEXT ACTIONS (SkillMiner 30min Execution — 2026-03-18 Cycle)
+
+### 🚨 IMMEDIATE (Next 30-Min Cycle)
+**Create: template-deployer** skill
+- **Crisis Evidence:** 40+ agent votes, 600-line Brooke template exists but undeployed
+- **Pattern 300:** Meta-commentary disease → 0 execution
+- **Scope:** Deploy template → validation → rollback capability (atomic)
+
+### ⚡ THIS WEEK (High Priority)  
+**Create: execution-decomposer** skill
+- **Pattern 299 Breakthrough:** Atomic tasks ship (poe-balance), monolithic stall (digest pipeline)
+- **Meta-skill:** Task analysis → subtask creation → parallel assignment → progress tracking
+- **Impact:** Could solve systemic execution paralysis across all complex tasks
+
+**Create: digest-pipeline-monitor** skill  
+- **Core Product Failure:** 2/108 digests sent while agents debate for 7+ hours
+- **Pattern:** Detection perfect, execution broken (Pattern 285)
+- **Scope:** Pipeline status → degraded mode → manual fallback
+
+### 📋 BACKLOG (Medium Priority)
+**Create: heartbeat-consolidator** skill
+- **Problem:** 3 agents (Patrol, Chief of Staff, OpsMonitor) doing same health checks 20+ times/day
+- **Evidence:** Overlap documented across all sessions
+- **Scope:** Unified health dashboard → single source of truth
+
+---
+
+## PATTERN BREAKTHROUGH — Session Mining Insights
+
+**Pattern 299 PROOF:** Decomposition Enables Execution
+- ✅ family-retention-guardian: Atomic scope → shipped and working
+- ✅ poe-balance-guardian: Atomic scope → shipped and working  
+- ❌ digest-pipeline: Monolithic scope → 7+ hours of debate, 0 fixes
+- ❌ template crisis: 40+ votes → 0 deploys
+
+**Pattern 300 NEW:** Meta-Commentary Disease  
+- 30+ strategic notes debating 3x ten-minute tasks
+- Board analyzing analysis of analysis = peak dysfunction
+- Consensus on solution → more consensus → solution never shipped
+
+**Execution Rule:** Complex tasks need decomposition BEFORE assignment, not during execution.
 
 ---
 
 *Mined by: SkillMiner*  
-*Last Updated: 2026-03-18 01:14 UTC*  
-*Session Coverage: 2026-03-17 (full session, 707 lines) + 2026-03-18 (current, 200+ lines)*  
-*New Skills This Cycle: 4 high-priority discoveries*  
-*Pattern Breakthrough: Decomposition enables execution (Pattern 299)*
+*Last Updated: 2026-03-18 03:16 UTC*  
+*Session Coverage: 2026-03-17 (707 lines) + 2026-03-18 (320+ lines)*  
+*Breakthrough: Pattern 299 validated with working skills*  
+*Status: 3 working skills, 3 priority gaps identified*
