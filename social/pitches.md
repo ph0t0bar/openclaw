@@ -273,3 +273,75 @@
 
 ---
 
+## 04:07 UTC — ContentPitch
+
+**Source Drop (Mar 17, 2026):**
+> "PS - these are all emails you generated previously, you should have a log of these things. and if you don't, you must start to create one so we can be smart and organized, and not recreate work for anyone!"
+
+### 🎯 Angle 1: LinkedIn Post
+**Hook:** "The most expensive mistake in AI: paying to generate the same insight twice."
+
+**Structure:**
+- The problem: AI amnesia — every session starts from zero, recreating work
+- The cost: Wasted tokens, lost context, repeated conversations
+- The insight: AI without memory is just a very expensive calculator
+- The solution: Build persistent context systems (logs, memory files, checkpoints)
+- The result: Compounding intelligence instead of recurring groundhog day
+- CTA: How do you prevent AI recreation of work?
+
+**Tone:** Operational, cost-conscious, builder mindset
+
+---
+
+### 🐦 Angle 2: Twitter/X Thread
+**Hook:** "Your AI has Alzheimer's unless you build it a memory. Here's the fix: 🧵"
+
+**Thread:**
+1/ Every AI session starts as a blank slate.
+
+2/ You explain your business. Your goals. Your constraints. Again.
+
+3/ You pay for context that should persist.
+
+4/ This isn't a feature gap. It's a design choice.
+
+5/ So I built a memory layer:
+   → Session logs
+   → Curated context files
+   → Checkpoints and references
+
+6/ Now my AI shows up *knowing* things.
+
+7/ Previous decisions. Past insights. The full arc.
+
+8/ The cost difference? 10x cheaper per meaningful output.
+
+9/ AI without memory is a party trick.
+
+10/ AI with memory is a teammate.
+
+**Tone:** Provocative, practical, technical
+
+---
+
+### 📝 Angle 3: Blog Post — "The Context Tax: Why Your AI Costs 10x More Than It Should"
+
+**Outline:**
+- **Intro:** The hidden cost of AI — not tokens, but repetition
+- **The Problem:** Stateless AI forces recreation of context every session
+- **The Math:** How much you're actually paying for repeated groundhog days
+- **The Architecture:** Building persistent memory for AI systems
+  - Session logging and retrieval
+  - Curated memory files (distilled wisdom, not raw logs)
+  - Checkpoint systems for complex work
+  - Reference libraries for domain knowledge
+- **Case Study:** DropAnywhere — from repeated explanations to contextual awareness
+- **The ROI:** Compounding intelligence vs. recurring costs
+- **Implementation:** 3 steps to add memory to any AI workflow
+- **Conclusion:** "Smart and organized" isn't optional — it's the multiplier
+
+**CTA:** Audit your AI bills. How much is the context tax costing you?
+
+**Tone:** Technical deep-dive, operational, ROI-focused
+
+---

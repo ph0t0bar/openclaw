@@ -1,5 +1,128 @@
 # SEO Research — AI Daily Digest & Second Brain Keywords
 
+## 2026-03-18 — SEOBot Run (Option 2: Drop-Anywhere.com Indexing Check + Competitor Refresh)
+
+### Drop-Anywhere.com Live Site Analysis
+
+**Current Homepage (as of 2026-03-18):**
+| Element | Current State | SEO Assessment |
+|---------|--------------|----------------|
+| Title Tag | "DropAnywhere — Bring your memory to things" | ⚠️ Missing target keywords |
+| H1 | "it all lands here" / "processing overnight" | ⚠️ Brand-focused, not keyword-rich |
+| Subheadline | "Drop in under 10 seconds. Any thought, any device, zero friction." | ✅ Good UX messaging |
+| CTA | "Dropped. Go forget about it." | ✅ On-brand, memorable |
+| Value Prop | "You sleep. We read your mind." | ✅ Unique positioning |
+| Capture Methods | Web, Email, Voice, SMS (listed) | ✅ Multi-modal differentiation |
+
+**SEO Gaps Identified:**
+1. **No "AI daily digest" or "second brain" in title/H1** — primary keywords missing
+2. **No meta description visible** — may be auto-generated
+3. **No structured data** — missing Product/SoftwareApplication schema
+4. **No blog/content section** — limits long-tail keyword capture
+5. **Single-page structure** — limited indexable content
+
+### Mem.ai Competitor Analysis (Updated)
+
+**Status:** ❌ Site requires modern JavaScript browser — content not crawlable via fetch
+
+**SEO Implication:** Heavy client-side rendering = SEO disadvantage
+- Search engines may struggle to index content
+- Social sharing previews may fail
+- Slower time-to-first-contentful-paint
+
+**DropAnywhere Opportunity:**
+- Ensure server-side rendering (SSR) for all marketing pages
+- Fast, crawlable HTML for SEO-critical content
+- Rich meta tags for social sharing
+
+### Notion AI Competitive Positioning
+
+**Current Messaging (notion.com/product/ai):**
+- **Tagline:** "Meet your AI team" — frames AI as teammates
+- **Subheadline:** "Infinite minds, built for teamwork. Answer questions, prioritize tasks, and write reports—all while you sleep."
+
+**Keywords Notion AI Targets:**
+| Keyword | Evidence | Priority |
+|---------|----------|----------|
+| AI team | H1 tag | HIGH (branded) |
+| Notion AI | Brand term | HIGH |
+| AI meeting notes | Featured as "New" | MEDIUM |
+| Enterprise search | Listed as "Beta" | MEDIUM |
+| Custom agents | Feature name | MEDIUM |
+| AI workflow automation | Implied | MEDIUM |
+
+**Trust Signals (Enterprise SEO):**
+- SOC 2 Type 2 & ISO 27001
+- GDPR & CCPA compliance
+- Zero data retention (Enterprise)
+- HIPAA compliant (Enterprise)
+- TLS 1.2+ encryption
+
+**Pricing Tiers:**
+- Free: Trial of Notion AI
+- Plus: $10/mo per user
+- Business: $15/mo per user (includes Notion Agent, Custom Agents, AI Meeting Notes)
+- Enterprise: Custom pricing
+
+### Keyword Gap Analysis: DropAnywhere vs Notion AI
+
+**🟢 HIGH Opportunity — Notion NOT targeting:**
+| Keyword | Why It Matters | DropAnywhere Angle |
+|---------|----------------|-------------------|
+| AI daily digest email | Core feature gap | "Processing overnight" |
+| second brain no inbox | Unique positioning | "Your Second Brain Has No Inbox" |
+| email summarization tool | Pain point driven | "Dropped. Go forget about it." |
+| voice to notes AI | Multi-modal capture | SMS/Voice/Email/API |
+| frictionless note taking | UX differentiator | "Drop in under 10 seconds" |
+
+**🟡 MEDIUM Opportunity — Weak competition:**
+| Keyword | Notion's Presence | DropAnywhere Angle |
+|---------|-------------------|-------------------|
+| automated insights | Weak | "We read your mind" |
+| overnight processing | None | "Processing overnight" |
+| capture anywhere | None | Multi-channel ingestion |
+
+**🔴 AVOID — Notion dominates:**
+| Keyword | Why Avoid |
+|---------|-----------|
+| AI team | Branded, enterprise focus |
+| AI meeting notes | Dedicated feature page |
+| Enterprise search | Beta feature, heavy investment |
+
+### Action Items (Prioritized)
+
+**🔥 URGENT (This Week):**
+1. Update homepage title: "DropAnywhere — AI Daily Digest & Second Brain App"
+2. Add H1: "Your AI-Powered Daily Digest" or "The Second Brain With No Inbox"
+3. Optimize meta description to include "AI daily digest email"
+
+**📋 SHORT-TERM (Next 30 Days):**
+4. Create `/daily-digest` landing page targeting "AI daily digest email"
+5. Create `/second-brain` landing page targeting "second brain app"
+6. Add structured data (Product, SoftwareApplication, FAQ schema)
+7. Submit sitemap to Google Search Console
+
+**🎯 MEDIUM-TERM (60-90 Days):**
+8. Build comparison page: "DropAnywhere vs Notion AI for Daily Digests"
+9. Create blog content targeting long-tail keywords:
+   - "best AI daily digest tools 2026"
+   - "how to reduce email overwhelm"
+   - "second brain without inbox anxiety"
+10. Add feature pages for each capture method (SMS, Voice, Email)
+
+### Technical SEO Checklist
+
+- [ ] Verify robots.txt allows all crawling
+- [ ] Check for noindex tags on key pages
+- [ ] Submit sitemap.xml to Google Search Console
+- [ ] Set up Bing Webmaster Tools
+- [ ] Add Product schema markup
+- [ ] Optimize Core Web Vitals (LCP, FID, CLS)
+- [ ] Ensure mobile responsiveness
+- [ ] Add canonical tags
+
+---
+
 ## 2026-03-17 — SEOBot Run (Option 1: Keyword Research)
 
 ### Core Keywords to Target for DropAnywhere
@@ -207,7 +330,6 @@
 | Keyword | Why Avoid |
 |---------|-----------|
 | AI team | Branded, enterprise focus |
-| Notion AI | Branded term |
 | AI meeting notes | Notion has dedicated feature |
 | Enterprise search | Notion has beta feature |
 
@@ -232,5 +354,3 @@
 2. Add structured data (Product, SoftwareApplication, FAQ)
 3. Ensure fast Core Web Vitals
 4. Set up rank tracking for target keywords
-
----
