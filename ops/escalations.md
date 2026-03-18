@@ -1,15 +1,16 @@
 # Security Escalations
 
-## 2026-03-18 08:33 UTC - SECRET EXPOSURE
+## 2026-03-18 08:51 UTC - CRITICAL: API Key Exposure
 
-**Severity:** HIGH 🔴
-**Type:** API Key Leak
-**Found:** Anthropic API key (`sk-ant-oat01-GgOnC1EC...`) exposed in git diff within last 3 commits
-**Location:** git diff HEAD~3 shows key in error message
-**Action Required:** 
-1. Rotate Anthropic API key immediately
-2. Review commit history for other exposed secrets
-3. Audit error logging to prevent future key exposure in logs
+**Finding:** Anthropic API key `sk-ant-oat01-GgOnC1EC...` exposed in git history (last 3 commits)
 
-**Detection:** Sentry automated secret scan
-**Reporter:** Claw (Sentry AI)
+**Risk:** HIGH - Live API key in version control
+**Location:** Git diff shows key in error message/log output
+**Immediate Action Required:**
+1. Rotate the Anthropic API key immediately
+2. Review git history for other exposed secrets
+3. Update ANTHROPIC_API_KEY environment variable
+4. Consider git history rewrite if key is in committed files
+
+**Detection:** Sentry automated scan (15min rotation)
+**Status:** OPEN - Requires immediate attention
