@@ -1,134 +1,81 @@
-# ESCALATIONS - Chief of Staff Findings
+# Launch Escalations - March 18, 2026
 
-**Updated:** 2026-03-18 07:06 UTC
+## 🚨 6 DAYS TO SOFT LAUNCH - BEHIND SCHEDULE
 
-## 🔴 CRITICAL (Immediate Action Required)
-
-### Digest Pipeline Failure
-- **Issue:** Only 2/109 users received digests in last 24h (98% failure rate)
-- **Impact:** Core product broken, user trust at risk
-- **Evidence:** Hub dashboard shows 0 attempts in current cycle (2026-03-18-06)
-- **Timeline:** Failing since ~2026-03-17 afternoon
-- **Root cause:** Possibly related to 24 errors at 2026-03-17-19:00 UTC
-- **Recommendation:** Restart Hub service digest scheduler or escalate to manual fallback
-- **Status:** ONGOING - no improvement detected
-
-### Family Member Disengagement
-- **Issue:** 2/3 family members showing severe disengagement
-  - lhamer228@gmail.com (Lisa): 14 days inactive, 12 digests without engagement (24% score)
-  - rhamersunsetpartners@gmail.com (Dad/Rob): 11 days inactive, 8 digests without engagement (26% score)
-  - hamer.daniel@gmail.com (Danny): 0 drops, digest frequency "none"
-- **Impact:** Personal stakes - family using product = validation signal
-- **Action:** WhatsApp outreach to Joey about family retention
-- **Status:** ESCALATED - family retention guardian active but no human response
-
-## ⚠️ HIGH PRIORITY
-
-### OpenClaw CI Failure
-- **Issue:** openclaw repo showing "failure" status on GitHub
-- **Impact:** Blocks deployments and development workflow
-- **Action:** Investigate and fix CI pipeline
-- **Status:** ONGOING - failure persists
-
-### Dropper-Code Capacity Exhausted
-- **Issue:** Claude Code usage limit hit, 5+ tasks failed since Mar 17 12:48 UTC
-- **Impact:** Autonomous development pipeline offline until Mar 20 03:00 UTC
-- **Blocked tasks:** Brain scans and code generation tasks
-- **Timeline:** Resets Mar 20 at 3am UTC
-- **Status:** WAITING - manual intervention not possible
-
-## 🟡 MEDIUM PRIORITY
-
-### Agent Timeout Cluster
-- **Issue:** Multiple agents showing consecutive failures
-  - DocBot: 8 consecutive timeouts
-  - Creative Review Emailer: 4 consecutive timeouts  
-  - SkillMiner: 3 consecutive timeouts
-- **Impact:** Infrastructure strain, reduced agent effectiveness
-- **Pattern:** Possibly related to task complexity exceeding capacity
-- **NEW:** Meta oversight degraded - Meta agent 91% failure rate, Governance 100% failure rate
-
-## 🟢 HEALTHY SYSTEMS
-
-- ✅ Hub API responding (ok status)
-- ✅ Poe balance healthy (2.42M points, 16.8K burn/6h)
-- ✅ BHA metrics stable (270 users, 63 active/7d)
-- ✅ Resend email delivery (97% success rate)
-- ✅ Railway deployments successful
-- ✅ No Stripe failures
-- ✅ Backup current (30 minutes ago)
-
-## CHIEF OF STAFF GAPS (07:06 UTC)
-
-### 🔴 BACKUP STATUS
-- **Status:** ✅ Current - last commit 37 minutes ago (06:29:47Z)
-- **Gap:** None - backup system healthy
-
-### 🔴 AGENT HEALTH  
-- **Active agents:** 25/50 in last 2h window
-- **Critical gaps:** Meta-Commentary Disease confirmed - 30+ strategic notes while 2/108 digests sent
-- **Missing agents:** Governance (100% failure rate), Meta (91% failure), LearningBot (100% failure)
-
-### 🔴 LAUNCH READINESS
-- **Status:** 6 days to March 24 launch
-- **Gap:** Core product 98% broken (digest pipeline failure)
-- **Risk:** Launching with fundamental product failure = trust destruction
-- **Recommendation:** Go/No-Go decision by March 22
-
-### 🔴 HUB STATUS
-- **API Health:** ✅ Responding normally
-- **Digest Pipeline:** ❌ CRITICAL - 0 attempts in current cycle, only 2 sent in 24h
-- **Dropper-Code:** ❌ OUT OF CREDITS - Claude Code exhausted until Mar 20 3am UTC
-- **Error Spike:** 24 errors at 2026-03-17-19:00 UTC (possible trigger event)
-
-## NEW GAPS IDENTIFIED (06:31 UTC)
-
-### Meta-Commentary Disease
-- **Pattern:** 30+ strategic notes generated while 2/108 digests sent
-- **Symptom:** Perfect detection (100%), minimal execution (~10%)
-- **Evidence:** Agent board has 45+ entries, 50+ votes, 28+ hours of analysis
-- **Impact:** System optimizing for appearing productive vs being productive
-- **Gap:** Execution requires isolation from consensus (skills framework works because it bypasses board)
-
-### Launch Window Risk
-- **Issue:** 6 days to March 24 launch, core product 98% broken
-- **Evidence:** Launch Coordinator shows 20% completion (down from 60%)
-- **Risk:** Launching with broken digest system undermines trust
-- **Recommendation:** Go/No-Go decision needed by March 22
-
-## PATTERN ANALYSIS
-
-### Skills Framework Success
-- **Evidence:** 5+ atomic skills shipped (family-retention-guardian, poe-balance-guardian, template-deployer, execution-decomposer, goldmine-miner)
-- **Pattern:** Isolated scope enables execution; board access creates paralysis
-- **Insight:** Decomposition into atomic tasks (≤30 min) enables shipping
-
-### Archive Mining Self-Sustaining
-- **Evidence:** 4+ agents independently mining joey-backup without coordination
-- **Pattern:** Goldmine creates its own gravity once cataloged
-- **Value:** 2,462+ files accessible, strategic intelligence extraction active
-
-## RECOMMENDATIONS
-
-**Immediate (4h window):**
-1. Restart Hub digest scheduler service
-2. WhatsApp Joey about family member retention crisis
-3. Investigate OpenClaw CI failure
-4. Go/No-Go decision on March 24 launch (core product failing)
-
-**Short-term (24h window):**
-1. Manual digest fallback for high-value users
-2. DocBot timeout investigation (reduce prompt complexity or disable)
-3. Family retention outreach campaign
-4. Template deployment (600-line Brooke template ready via template-deployer skill)
-
-**Medium-term (48h window):**
-1. Digest pipeline redundancy system
-2. Agent timeout monitoring and auto-recovery
-3. Dropper-Code capacity planning for post-Mar-20
-4. Execution decomposition framework for complex tasks
+**Launch Target:** March 24, 2026 (soft launch to 10-15 users)
+**Current Status:** BEHIND — Only 2/10 critical items complete
 
 ---
 
-*Generated by Chief of Staff cron job at 06:31 UTC*
-*Next check: 06:51 UTC*
+## Critical Blockers
+
+### 1. Digest Pipeline Stall (SEVERE)
+**Status:** 4 consecutive Dropper-Code tasks FAILED
+**Impact:** Only 3/103 eligible users received digests in last 24h
+**Failed Tasks:**
+- Fix digest scheduler stall affecting 15 users
+- Fix digest pipeline model exhaustion - add exponential backoff
+- Fix digest scheduler does not recover after Hub redeploy
+- Add AI credit monitoring and fallback analyzer chain
+
+**Recommendation:** Manual intervention required. Automated fixes not working.
+
+### 2. Launch Checklist Gaps (HIGH)
+**Completed:** 2/10 items (20%)
+**Missing:**
+- L1: Mobile Safari QA
+- L2: Sentry/error tracking  
+- L4: Rate limiting on /api/ingest
+- L5: Hub fallback chain (OpenRouter) ← FAILED 4 times
+- L6: New user onboarding QA
+- L7: Stripe failed charge investigation
+- L9: Tools tab completion
+- L10: Compass settings verification
+
+**Recommendation:** Focus on L5 (Hub fallback) first — this is existential.
+
+### 3. Dropper-Code Task Failure Rate (MEDIUM)
+**Recent failures:**
+- Fix Docker build failure on openclaw CI
+- Investigate IdealPrompt Poe cost spike (30K points in 6h)
+- All digest pipeline related tasks
+
+**Pattern:** Complex system issues failing automated resolution.
+
+---
+
+## Positive Signals
+
+✅ **Email pipeline fixed** — All critical email bugs resolved (PR #195-199)
+✅ **Poe balance restored** — Crisis averted, 283,939 points available
+✅ **Core product stable** — Users still dropping, no critical crashes
+✅ **Hub deployment working** — SUCCESS at 04:32 UTC
+
+---
+
+## Launch Decision Framework
+
+**PROCEED if by March 22:**
+- Digest pipeline restored (users receive digests reliably)
+- Hub fallback chain working (OpenRouter integration)
+- Mobile Safari QA complete
+- Onboarding flow tested
+
+**DELAY if:**
+- Digest delivery rate < 80%
+- No OpenRouter fallback (single point of failure)
+- Major mobile issues discovered
+
+---
+
+## Next Steps
+
+1. **Immediate (today):** Manual digest pipeline investigation
+2. **Tomorrow:** Hub fallback chain manual implementation
+3. **March 20:** Final go/no-go decision
+4. **March 22:** Soft launch user list finalized
+
+---
+
+*Generated: March 18, 2026 07:20 UTC*
+*Next review: March 19, 2026 07:00 UTC*

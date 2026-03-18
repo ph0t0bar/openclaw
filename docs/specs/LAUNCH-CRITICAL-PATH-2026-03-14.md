@@ -3,28 +3,29 @@
 
 ---
 
-## Status Update (Mar 18 04:51 UTC) — 7 Days to Launch
+## Status Update (Mar 18 07:20 UTC) — 6 Days to Launch
 
 | Phase | Window | Status |
 |-------|--------|--------|
-| **Phase 1: SURVIVAL** | Mar 14–15 | ✅ COMPLETE — Email bugs fixed, Poe stable |
-| **Phase 2: STABILIZE** | Mar 16–19 | 🔴 **BLOCKED** — L1-L10 checklist stalled at 60% |
+| **Phase 1: SURVIVAL** | Mar 14–15 | ✅ COMPLETE — Email bugs fixed, Poe topped up |
+| **Phase 2: STABILIZE** | Mar 16–19 | 🟡 **PARTIAL** — Core fixes shipped, checklist incomplete |
 | **Phase 3: PREPARE** | Mar 20–23 | ⬜ Not started |
-| **Phase 4: LAUNCH** | Mar 24–26 | ⚠️ **AT RISK** |
+| **Phase 4: LAUNCH** | Mar 24–26 | 🟡 **CAUTIOUS** — Major fixes in, checklist gaps remain |
 
-**CRITICAL BLOCKERS RESOLVED:**
+**CRITICAL FIXES SHIPPED (Mar 17):**
 - ✅ `<thinking>` tags stripped from emails (PR #199, merged Mar 17)
 - ✅ Email threading fixed (PR #198, merged Mar 17) 
 - ✅ Auto-response emails disabled at free tier (PR #199, merged Mar 17)
 - ✅ Re-engagement emails limited to Joey only (PR #197, merged Mar 17)
 - ✅ Email from-address fixed to hello@drop-anywhere.com (PR #195, merged Mar 17)
-- ✅ OpenClaw hook payload fixed (completed via Dropper-Code)
+- ✅ Email content truncation fixed (completed via Dropper-Code)
+- ✅ One-click approve/reject buttons added (completed via Dropper-Code)
 
-**URGENT NEW BLOCKERS:**
-- 🔴 **Digest pipeline completely broken** — 15+ users missed digests, 4 consecutive failed Dropper-Code tasks
-- 🔴 **Model exhaustion causing cascade failures** — exponential backoff task failed
-- 🔴 **Digest scheduler not recovering after redeploys** — recovery task cancelled
-- ⚠️ Poe cost spike continues (IdealPrompt: 30K points in 6h, investigation task failed)
+**PERSISTENT BLOCKERS:**
+- 🔴 **Digest pipeline recovery** — 4 Dropper-Code tasks failed to fix scheduler stall
+- ⚠️ **Digest stalls persist** — Only 3/103 eligible users received digests in 24h
+- ✅ **Poe balance restored** — Topped up from 12,522 → 283,939 points (crisis averted)
+- ✅ **OpenClaw hook payload** — Fixed and working
 
 **Issue #1 items incorporated:** Mobile Safari QA, Sentry, unsubscribe verification, rate limiting all confirmed in L1-L10 checklist. Stripe Pro billing moved to Week 2.
 
@@ -80,18 +81,20 @@ These are not features. These are oxygen.
 
 | # | Item | Target Date | Status | GitHub Status |
 |---|------|-------------|--------|---------------|
-| L1 | Mobile Safari QA — full flow | Mar 16 | ❌ **MISSED** | No PR activity |
-| L2 | Sentry/error tracking | Mar 17 | ❌ **MISSED** | No PR activity |
+| L1 | Mobile Safari QA — full flow | Mar 16 | ❌ **MISSED** | No PR filed |
+| L2 | Sentry/error tracking | Mar 17 | ❌ **MISSED** | No PR filed |
 | L3 | Unsubscribe verification | Mar 16 | ✅ **DONE** | PR #197 merged |
-| L4 | Rate limiting on /api/ingest | Mar 17 | ❌ **MISSED** | No PR activity |
-| L5 | Hub fallback chain (OpenRouter) | Mar 18 | 🔴 **BLOCKED** | Task failed |
-| L6 | New user onboarding QA | Mar 18 | ❌ **MISSED** | No PR activity |
-| L7 | Stripe failed charge investigation | Mar 16 | ❌ **MISSED** | No PR activity |
+| L4 | Rate limiting on /api/ingest | Mar 17 | ❌ **MISSED** | No PR filed |
+| L5 | Hub fallback chain (OpenRouter) | Mar 18 | 🔴 **BLOCKED** | Task failed repeatedly |
+| L6 | New user onboarding QA | Mar 18 | ❌ **MISSED** | No PR filed |
+| L7 | Stripe failed charge investigation | Mar 16 | ❌ **MISSED** | No PR filed |
 | L8 | `<thinking>` fix verified in prod | Mar 16 | ✅ **DONE** | PR #199 merged |
 | L9 | Tools tab (P1-10 remaining) | Mar 19 | ❌ **BEHIND** | No current PR |
-| L10 | Compass settings verified | Mar 16 | ❌ **MISSED** | No PR activity |
+| L10 | Compass settings verified | Mar 16 | ❌ **MISSED** | No PR filed |
 
-**Progress: 2/10 COMPLETE (20%) — CRITICAL DECLINE**
+**Progress: 2/10 COMPLETE (20%) — LAUNCH AT RISK**
+
+**CRITICAL GAP:** Only email fixes shipped. Core product issues (digest pipeline, onboarding, QA) unaddressed. L5 (Hub fallback) failed 4 times via automated tasks.
 
 ### Snapback Validation (Mar 16–22)
 
