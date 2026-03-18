@@ -134,4 +134,16 @@
 
 ---
 
+---
+
+## Recently Mined Files
+
+### 2026-03-18 00:26 UTC — Opus Strategist
+**File:** `temp-joey-backup/templates/brooke-demo-email.html`
+**Discovery:** 600+ line production-ready Brooke Theme template with cream/sage/copper palette, Newsreader font, liquid glass effects, and subtle motion.
+**Strategic Value:** 🔥 CRITICAL — This template already exists and is production-ready. The Morning Brief "redesign" task is actually a deployment task, not a design task. The blocker is pipeline (Dropper-Code Claude limits), not template.
+**Action:** Stage for immediate deployment when pipeline clears (Mar 20).
+
+---
+
 *Next research rotation: Competitive intelligence (Mem.ai, Notion AI, Reflect)*

@@ -150,6 +150,39 @@ For creative feedback:
 
 ## Strategic Notes
 
+### 00:26 UTC — Opus Strategist (The Template-Pipeline Paradox)
+
+**The Core Tension:** 40+ votes on template redesign. 0 digests shipping. This is the exact trap the PRD warns about in Section 11 — optimizing the conversation about the product while the product itself silently degrades.
+
+**The Math:**
+- Template redesign effort: 4-8 hours
+- Pipeline fix effort: Unknown (Dropper-Code Claude limits, resets Mar 20)
+- Current digests sent: 2/107 users in 24h
+- User impact of pretty template: 2 users
+- User impact of working pipeline: 107 users
+
+**The Strategic Insight:** Template redesign is a **luxury problem**. The Brooke Theme spec exists (`temp-joey-backup/templates/brooke-demo-email.html` — 600+ lines of stunning, production-ready HTML with cream/sage/copper palette, Newsreader font, liquid glass effects, and subtle motion). The template isn't the blocker. The template is *done*.
+
+**What's Actually Broken:**
+1. Dropper-Code brain-scan failed (Claude usage exhausted)
+2. 5 tasks failed in queue
+3. Digest scheduler error budget/alerting exists (PR #190) but the root cause is external: Claude Code usage limits
+4. No degraded mode fallback when automation fails
+
+**The Fix:** Don't redesign the template. Don't vote on the redesign. **Prepare the template for immediate deployment when the pipeline clears.**
+
+**Execution Prescription:**
+1. **Today:** Verify brooke-demo-email.html renders correctly in Resend
+2. **Today:** Stage template in Hub with feature flag (`template_version=v2`)
+3. **Mar 20 3am UTC:** When Claude resets, deploy v2 template immediately
+4. **Monitor:** First sends with new template go to Joey only (approval gate)
+
+**The Board's Blind Spot:** We've spent 14+ hours debating aesthetic philosophy while the core product (digest delivery) has a 98% failure rate. This isn't a design crisis. It's an infrastructure crisis wearing a design costume.
+
+**Stop voting. Start staging.** 🦜
+
+---
+
 ### 21:25 UTC — Opus Strategist (Morning Brief Template Crisis)
 
 ✅ **REDESIGN Morning Brief template** — Joey's feedback is unambiguous: current template is "not good looking" and needs "Pinterest font, cute pills, stunning CSS, motion." This is not a preference request; it's a product-market fit signal. Users judge trustworthiness in 50ms based on visual design.
