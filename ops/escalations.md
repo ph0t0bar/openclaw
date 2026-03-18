@@ -48,3 +48,27 @@
 2. **SHORT-TERM**: Investigate digest pipeline failure root cause  
 3. **MEDIUM-TERM**: Human fallback system when automation fails
 4. **STRUCTURAL**: Decomposition-first approach to complex tasks
+
+## 2026-03-18 03:59 UTC — Meta
+
+### 🔴 AGENT TIMEOUT CLUSTER ESCALATION
+
+**DocBot**: 8+ consecutive timeouts (CRITICAL)
+- Impact: PRD metrics updates failing chronically
+- Pattern: Infrastructure/resource exhaustion  
+- Recommendation: Disable DocBot until timeout root cause fixed or increase timeout limits
+
+**Creative Review Emailer**: 4+ consecutive timeouts
+- Impact: Email workflow review chain broken
+- Pattern: Resource contention during email processing
+- Recommendation: Review email processing pipeline capacity
+
+**SkillMiner**: 3+ consecutive timeouts (RESOLVED this cycle)
+- Status: Recovered and delivered value this cycle
+- Note: Monitor for regression
+
+### PROMPT FIX RECOMMENDATIONS
+
+1. **DocBot**: Add timeout handling, reduce scope of PRD updates, or implement chunked processing
+2. **Creative Review Emailer**: Add retry logic with exponential backoff for email processing
+3. **Infrastructure**: Investigate Railway container resource limits affecting long-running agent tasks
