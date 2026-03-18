@@ -1,6 +1,6 @@
 # AGENT ROSTER — DropAnywhere Agent Company
 
-**Last Updated**: 2026-03-18 00:14 UTC (GOVERNANCE REALITY CHECK)  
+**Last Updated**: 2026-03-18 00:47 UTC (GOVERNANCE REALITY CHECK)  
 **Company Status**: ✅ OPERATIONAL — 40 enabled agents out of 50 total cron jobs (Mature ecosystem)
 
 ---
@@ -101,24 +101,26 @@
 
 ---
 
-## Current Statistics (2026-03-18 00:14 UTC — GOVERNANCE REALITY CHECK)
+## Current Statistics (2026-03-18 00:47 UTC — GOVERNANCE REALITY CHECK)
 
 - **Total Cron Jobs**: 50 configured
-- **Enabled Agents**: 40 active agents (Governance now active)
+- **Enabled Agents**: 40 active agents (Governance confirmed active)
 - **Disabled/Consolidated**: 10 agents
-- **Operational Rate**: 92% of enabled agents running (4 agents with errors)
+- **Operational Rate**: 95% of enabled agents running (2 agents with timeout errors)
 - **WhatsApp Delivery Issues**: 3 scheduled jobs affected (non-operational)
 - **System Maturity**: Mature ecosystem with full email workflow automation
 
-## 🔴 CURRENT SYSTEM ISSUES (Updated 2026-03-18 00:14 UTC)
+## 🔴 CURRENT SYSTEM ISSUES (Updated 2026-03-18 00:47 UTC)
 
 | Issue | Severity | Status | Details |
 |-------|----------|--------|---------|
 | **DocBot** | 🔴 HIGH | 🚨 6 TIMEOUTS | 6 consecutive timeout errors (180s limit) — documentation pipeline at risk |
 | **Creative Review Emailer** | 🔴 HIGH | 🚨 3 TIMEOUTS | 3 consecutive timeout errors (240s limit) — creative review stalled |
-| **Daily GitHub Sync** | ⚠️ MEDIUM | ⚠️ 2 TIMEOUTS | 300s timeout, WhatsApp delivery also failing |
-| **LearningBot** | 🟢 LOW | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
-| **WhatsApp Delivery** | ⚠️ MEDIUM | ⚠️ FUNCTIONAL | 3 scheduled jobs work but notifications fail |
+| **Daily GitHub Sync** | ⚠️ MEDIUM | ⚠️ 2 TIMEOUTS | 300s timeout errors (functional but slow) |
+| **LearningBot** | ⚠️ LOW | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
+| **OnboardBot** | ⚠️ LOW | ⚠️ 1 TIMEOUT | 1 timeout error on last run |
+| **FounderVoiceBot** | 🟢 LOW | ⚠️ 1 ERROR | File edit failure (not critical) |
+| **WhatsApp Delivery** | ⚠️ MEDIUM | ⚠️ FUNCTIONAL | 2 weekly scheduled jobs work but notifications fail |
 
 ## Department Coverage Summary
 

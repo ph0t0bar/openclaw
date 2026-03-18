@@ -4,11 +4,12 @@
 <body style="margin:0;padding:0;background:#f5f0e8;font-family:Georgia,'Times New Roman',serif;">
 <div style="max-width:640px;margin:0 auto;padding:32px 20px;">
 
-<!-- HEADER -->
-<div style="text-align:center;margin-bottom:28px;">
-  <p style="margin:0;font-size:13px;color:#8B6914;letter-spacing:2px;">YOUR WEEKLY</p>
+<!-- LOGO -->
+<div style="text-align:center;margin-bottom:32px;">
+  <img src="https://pfst.cf2.poecdn.net/base/image/c2569ac4f8a476caba1d0f3bf31600e24aeab531c7806755da3f42564969efbb?pmaid=587987696" width="48" height="48" alt="DropAnywhere" style="display:inline-block;border:0;margin-bottom:20px;" />
+  <p style="margin:0;font-size:11px;color:#8B6914;letter-spacing:2px;text-transform:uppercase;">Your Weekly</p>
   <h1 style="margin:4px 0 0;font-size:32px;color:#2d5016;font-weight:normal;letter-spacing:0.3px;">Intelligence Map</h1>
-  <p style="margin:8px 0 0;font-size:12px;color:#b8a88a;">March 17 — 23, 2026</p>
+  <p style="margin:8px 0 0;font-size:12px;color:#b8a88a;">{{week_range}}</p>
 </div>
 
 <!-- PULSE CARD -->
@@ -290,17 +291,18 @@
 </div>
 
 <!-- FOOTER -->
-<div style="text-align:center;padding-top:20px;border-top:1px solid #d4c5a9;">
+<div style="text-align:center;padding-top:24px;border-top:1px solid #d4c5a9;">
   <p style="margin:0;font-size:13px;color:#8B6914;font-style:italic;">Drop it. Forget it. Wake up lighter.</p>
   <p style="margin:8px 0 0;font-size:18px;">&#x1F99C;</p>
-  <p style="margin:10px 0 0;font-size:11px;color:#ccc;">
+  <p style="margin:12px 0 0;font-size:11px;color:#b8a88a;">
     <a href="mailto:hello@drop-anywhere.com" style="color:#b8a88a;text-decoration:none;">hello@drop-anywhere.com</a>
   </p>
-  <p style="margin:6px 0 0;font-size:10px;color:#ddd;">
+  <p style="margin:8px 0 0;font-size:10px;color:#b8a88a;line-height:1.8;">
     DropAnywhere &middot; Chicago, IL<br>
-    <a href="#" style="color:#ccc;text-decoration:none;">Unsubscribe</a> &middot; 
-    <a href="#" style="color:#ccc;text-decoration:none;">Change to daily</a> &middot; 
-    <a href="#" style="color:#ccc;text-decoration:none;">Privacy</a>
+    <a href="{{unsubscribe_url}}" style="color:#b8a88a;text-decoration:underline;">Unsubscribe</a> &middot; 
+    <a href="mailto:drop@drop-anywhere.com?subject=weekly" style="color:#b8a88a;text-decoration:underline;">Switch to weekly</a> &middot; 
+    <a href="mailto:drop@drop-anywhere.com?subject=daily" style="color:#b8a88a;text-decoration:underline;">Switch to daily</a> &middot; 
+    <a href="https://drop-anywhere.com/privacy" style="color:#b8a88a;text-decoration:underline;">Privacy Policy</a>
   </p>
 </div>
 
