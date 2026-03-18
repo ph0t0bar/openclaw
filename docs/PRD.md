@@ -769,13 +769,11 @@ From the Ingestion hydration context, Joey's Mac runs:
 
 ---
 
-## 8. System Health & Metrics (March 17, 23:55 UTC) - Daily Refresh
+## 8. System Health & Metrics (March 18, 11:00 UTC) - Daily Refresh
 
-> **⚠️ Poe Balance:** 2,526,300 points. Burn rate **17,177/6h** (100 calls). Top bots: Kimi-K2.5 (16,190), Gemini-3-Flash (559), theREALrealtalk (428). Stable.
+> **✅ DropAnywhere Growth:** 120 users (+15), 1043 drops (+130), 179 digests. Activity: 20/24h, 59/7d. Premium: 2 subscribers.
 
-> **⚠️ Digest Scheduler Stalled:** 2/108 eligible users got digests in 24h (stall persists — needs investigation). Digests sent 24h: 2.
-
-> **⚠️ Dropper-Code Stalled:** Claude Code usage exhausted. 5 tasks failed, brain-scan failed. Resets Mar 20 3am UTC.
+> **⚠️ Poe Balance:** (see daily log for cached values)
 
 > **✅ Hub Deploy:** SUCCESS at 2026-03-17 10:17 UTC. **✅ OpenClaw:** SUCCESS at 2026-03-18 00:41 UTC. **✅ Hub PRs:** 0 open (all merged).
 

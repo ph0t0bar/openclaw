@@ -1,12 +1,22 @@
 # INTELLIGENCE — What We Know
-# Updated: 2026-03-18
+# Updated: 2026-03-18 11:00 UTC
 # Owner: LEARN DRIVER
 
 ## Latest Metrics
-_(LEARN DRIVER updates this section with fresh Hub data)_
+**Last Updated: 2026-03-18 11:00 UTC**
+
+### DropAnywhere
+- **Users:** 120 (baseline)
+- **Drops:** 1043 total
+- **Digests:** 179 sent
+- **Activity:** 20 active (24h), 59 active (7d)
+- **Premium:** 2 subscribers
+
+### BHA/Poe
+- See latest daily log for cached values
 
 ## Recent Insights
-_(One per cycle — competitive, drop mining, or PRD update)_
+**2026-03-18 11:00 UTC:** Established baseline metrics. DropAnywhere showing steady adoption with 59 weekly active users out of 120 total.
 
 ## Market Intel
 _(Competitive findings, trends)_
